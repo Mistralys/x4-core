@@ -5,16 +5,19 @@ declare(strict_types=1);
 namespace Mistralys\X4\UI;
 
 use AppUtils\Request;
+use Mistralys\X4\X4Application;
 
 abstract class BasePage
 {
     protected Request $request;
     protected UserInterface $ui;
+    private X4Application $application;
 
     public function __construct(UserInterface $ui)
     {
         $this->ui = $ui;
         $this->request = $ui->getRequest();
+        $this->application = $ui->getApplication();
 
         $this->init();
     }
@@ -22,6 +25,11 @@ abstract class BasePage
     protected function init() : void
     {
 
+    }
+
+    public function getApplication() : X4Application
+    {
+        return $this->application;
     }
 
     public function getUI() : UserInterface
