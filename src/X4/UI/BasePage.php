@@ -9,10 +9,12 @@ use AppUtils\Request;
 abstract class BasePage
 {
     protected Request $request;
+    protected UserInterface $ui;
 
-    public function __construct()
+    public function __construct(UserInterface $ui)
     {
-        $this->request = new Request();
+        $this->ui = $ui;
+        $this->request = $ui->getRequest();
 
         $this->init();
     }
@@ -20,6 +22,11 @@ abstract class BasePage
     protected function init() : void
     {
 
+    }
+
+    public function getUI() : UserInterface
+    {
+        return $this->ui;
     }
 
     public function getID() : string

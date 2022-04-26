@@ -56,6 +56,11 @@ class UserInterface
         return $this->application->getTitle();
     }
 
+    public function getRequest() : Request
+    {
+        return $this->request;
+    }
+
     public function registerPage(string $urlName, string $className) : void
     {
         $this->pages[$urlName] = $className;
