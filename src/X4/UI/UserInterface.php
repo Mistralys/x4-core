@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace Mistralys\X4\UI;
 
 use AppUtils\Request;
-use Mistralys\X4\UserInterface\UIException;
+use Mistralys\X4\UserInterface\DataGrid\DataGrid;use Mistralys\X4\UserInterface\UIException;
 use Mistralys\X4\X4Application;
 
 /**
@@ -59,6 +59,11 @@ class UserInterface
     public function getRequest() : Request
     {
         return $this->request;
+    }
+
+    public function createDataGrid() : DataGrid
+    {
+        return new DataGrid();
     }
 
     public function registerPage(string $urlName, string $className) : void
