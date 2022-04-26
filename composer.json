@@ -1,0 +1,25 @@
+{
+  "name": "mistralys/x4-core",
+  "description": "Core files for all X4 tools.",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sebastian Mordziol",
+      "email": "s.mordziol@mistralys.eu"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src"
+    ]
+  },
+  "require": {
+    "mistralys/application-utils": "^1.9.1",
+    "twbs/bootstrap": "^v4.6.0",
+    "components/jquery": "^3.5.1",
+    "fortawesome/font-awesome": "^5.15.3",
+    "ext-simplexml": "*",
+    "ext-json": "*"
+  }
+}
