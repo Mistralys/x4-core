@@ -32,9 +32,8 @@ trait ValueFetcherTrait
         throw new DataGridException(
             'Method does not exist in object',
             sprintf(
-                'The method [%s] for column [%s] does not exist in object of class [%s].',
+                'The method [%s] does not exist in object of class [%s].',
                 $methodName,
-                $this->column->getKeyName(),
                 get_class($subject)
             ),
             ValueFetcherInterface::ERROR_METHOD_DOES_NOT_EXIST
@@ -57,9 +56,8 @@ trait ValueFetcherTrait
         throw new DataGridException(
             'Property does not exist in object',
             sprintf(
-                'The property [$%s] for column [%s] does not exist in object of class [%s].',
+                'The property [$%s] does not exist in object of class [%s].',
                 $propertyName,
-                $this->column->getKeyName(),
                 get_class($subject)
             ),
             ValueFetcherInterface::ERROR_PROPERTY_DOES_NOT_EXIST
