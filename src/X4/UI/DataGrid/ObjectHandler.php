@@ -45,6 +45,26 @@ class ObjectHandler extends BaseHandler
     }
 
     /**
+     * Uses the second value in a callable array as
+     * the method name to call. Use this to specify a
+     * method name, while retaining the refactoring
+     * capabilities of your IDE.
+     *
+     * Example:
+     *
+     * <pre>
+     * setMethod(array(TestObject::class, 'methodName'));
+     * </pre>
+     *
+     * @param array $callback
+     * @return $this
+     */
+    public function setMethod(array $callback) : self
+    {
+        return $this->setMethodName($callback[1]);
+    }
+
+    /**
      * @param string $propertyName
      * @return ObjectHandler
      */
