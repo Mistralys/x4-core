@@ -2,6 +2,7 @@
   "name": "mistralys/x4-core",
   "description": "Core files for all X4 tools.",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
@@ -14,12 +15,23 @@
       "src"
     ]
   },
+  "autoload-dev": {
+    "classmap": [
+      "src",
+      "tests/X4Tests/Helpers"
+    ]
+  },
   "require": {
     "mistralys/application-utils": "^1.9.1",
     "twbs/bootstrap": "^v4.6.0",
     "components/jquery": "^3.5.1",
     "fortawesome/font-awesome": "^5.15.3",
     "ext-simplexml": "*",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=9.5.20",
+    "phpstan/phpstan": ">=1.6.1"
   }
 }
