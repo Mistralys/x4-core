@@ -2,12 +2,16 @@
 /**
  * @package X4Core
  * @subpackage UserInterface
- * @see \Mistralys\X4\UserInterface\DataGrid\BaseHandler
+ * @see \Mistralys\X4\UserInterface\DataGrid\Column\BaseHandler
  */
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\UserInterface\DataGrid;
+namespace Mistralys\X4\UserInterface\DataGrid\Column;
+
+use Mistralys\X4\UserInterface\DataGrid\GridColumn;
+use Mistralys\X4\UserInterface\DataGrid\ValueFetcherInterface;
+use Mistralys\X4\UserInterface\DataGrid\ValueFetcherTrait;
 
 /**
  * Base abstract class for column configuration
@@ -16,8 +20,10 @@ namespace Mistralys\X4\UserInterface\DataGrid;
  * @package X4Core
  * @subpackage UserInterface
  */
-abstract class BaseHandler
+abstract class BaseHandler implements ValueFetcherInterface
 {
+    use ValueFetcherTrait;
+
     protected GridColumn $column;
 
     public function __construct(GridColumn $column)
@@ -29,19 +35,6 @@ abstract class BaseHandler
      * @return GridColumn
      */
     public function getColumn() : GridColumn
-    {
-        return $this->column;
-    }
-
-    /**
-     * Utility method for chaining: When using the
-     * column's {@see GridColumn::object()} method,
-     * use this to go back to the column instance once
-     * you have configured the object handler.
-     *
-     * @return GridColumn
-     */
-    public function done() : GridColumn
     {
         return $this->column;
     }

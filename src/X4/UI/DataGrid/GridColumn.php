@@ -11,7 +11,11 @@ namespace Mistralys\X4\UserInterface\DataGrid;
 
 use AppUtils\Interface_Classable;
 use AppUtils\Traits_Classable;
-use X4\DataGrid\ObjectHandler;
+use Mistralys\X4\UI\DataGrid\GridCell;
+use Mistralys\X4\UserInterface\DataGrid\Column\DecorationHandler;
+use Mistralys\X4\UserInterface\DataGrid\Column\FormatHandler;
+use phpDocumentor\Reflection\Types\Expression;
+use Mistralys\X4\UserInterface\DataGrid\Column\ObjectHandler;
 
 /**
  * A column in the data grid: used to configure
@@ -31,8 +35,14 @@ class GridColumn implements Interface_Classable
 
     private string $label;
     private string $keyName;
-    private ObjectHandler $objectHandler;
+    private Column\ObjectHandler $objectHandler;
     private FormatHandler $formatHandler;
+    private DecorationHandler $decorationHandler;
+
+    /**
+     * @var callable|NULL
+     */
+    private $linkCallback;
 
     public function __construct(string $keyName, string $label)
     {
@@ -40,6 +50,7 @@ class GridColumn implements Interface_Classable
         $this->keyName = $keyName;
         $this->objectHandler = new ObjectHandler($this);
         $this->formatHandler = new FormatHandler($this);
+        $this->decorationHandler = new DecorationHandler($this);
     }
 
     public function getKeyName() : string
@@ -77,7 +88,7 @@ class GridColumn implements Interface_Classable
         return $this;
     }
 
-    public function configObject() : ObjectHandler
+    public function useObjectValues() : ObjectHandler
     {
         return $this->objectHandler;
     }
@@ -85,6 +96,11 @@ class GridColumn implements Interface_Classable
     public function chooseFormat() : FormatHandler
     {
         return $this->formatHandler;
+    }
+
+    public function decorateWith() : DecorationHandler
+    {
+        return $this->decorationHandler;
     }
 
     /**
@@ -100,8 +116,13 @@ class GridColumn implements Interface_Classable
         return $this->objectHandler->getValue($subject);
     }
 
-    public function formatValue($value) : string
+    public function applyFormattings($value) : string
     {
         return $this->formatHandler->formatValue($value);
+    }
+
+    public function applyDecorations(GridCell $cell, string $value) : string
+    {
+        return $this->decorationHandler->decorate($cell, $value);
     }
 }

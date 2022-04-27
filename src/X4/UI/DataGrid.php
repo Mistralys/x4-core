@@ -49,6 +49,12 @@ class DataGrid
         return OutputBuffering::get();
     }
 
+    public function display() : self
+    {
+        echo $this->render();
+        return $this;
+    }
+
     public function addColumn(string $keyName, string $label) : GridColumn
     {
         $column = new GridColumn($keyName, $label);
@@ -64,14 +70,18 @@ class DataGrid
         return $this;
     }
 
-    public function createRow(array $data) : GridRow
+    public function createRow() : GridRow
     {
-        return new GridRow($data);
+        return new GridRow($this);
     }
 
-    public function addRowFromArray(array $data) : self
+    /**
+     * @param array<string,mixed> $values
+     * @return $this
+     */
+    public function addRowFromArray(array $values) : self
     {
-        return $this->addRow($this->createRow($data));
+        return $this->addRow($this->createRow()->setValues($values));
     }
 
     /**
@@ -84,15 +94,10 @@ class DataGrid
      */
     public function addRowFromObject(object $object) : self
     {
-        $data = array();
-        $columns = $this->getColumns();
+        $row = $this->createRow(array());
+        $row->setObject($object);
 
-        foreach($columns as $column)
-        {
-            $data[$column->getKeyName()] = $column->getValueFromObject($object);
-        }
-
-        $this->addRowFromArray($data);
+        $this->addRow($row);
 
         return $this;
     }
@@ -155,12 +160,11 @@ class DataGrid
         <tbody>
         <?php
         $entries = $this->getRows();
-        $columns = $this->getColumns();
         foreach($entries as $entry)
         {
             ?>
             <tr <?php echo $entry->classesToAttribute() ?>>
-                <?php $entry->displayColumns($columns) ?>
+                <?php $entry->displayColumns() ?>
             </tr>
             <?php
         }

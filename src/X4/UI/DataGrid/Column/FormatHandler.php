@@ -2,12 +2,12 @@
 /**
  * @package X4Core
  * @subpackage UserInterface
- * @see \Mistralys\X4\UserInterface\DataGrid\FormatHandler
+ * @see \Mistralys\X4\UserInterface\DataGrid\Column\FormatHandler
  */
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\UserInterface\DataGrid;
+namespace Mistralys\X4\UserInterface\DataGrid\Column;
 
 use AppUtils\ConvertHelper;
 use DateTime;

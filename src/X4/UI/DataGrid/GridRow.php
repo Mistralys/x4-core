@@ -6,34 +6,97 @@ namespace Mistralys\X4\UserInterface\DataGrid;
 
 use AppUtils\Interface_Classable;
 use AppUtils\Traits_Classable;
+use Mistralys\X4\UI\DataGrid\GridCell;
 
 class GridRow implements Interface_Classable
 {
     use Traits_Classable;
 
     private array $data;
+    private ?object $object = null;
+    private DataGrid $grid;
 
-    public function __construct(array $data=array())
+    /**
+     * @var array<string,GridCell>
+     */
+    private array $cells = array();
+
+    public function __construct(DataGrid $grid, array $data=array())
     {
+        $this->grid = $grid;
         $this->data = $data;
     }
 
-    public function getValue(GridColumn $column) : string
+    public function getGrid() : DataGrid
     {
+        return $this->grid;
+    }
+
+    public function getValue(GridCell $cell) : string
+    {
+        $column = $cell->getColumn();
+
+        if(isset($this->object))
+        {
+            return $column->getValueFromObject($this->object);
+        }
+
         return $this->data[$column->getKeyName()] ?? '';
     }
 
     /**
-     * @param GridColumn[] $columns
-     * @return void
+     * @return object|null
      */
-    public function displayColumns(array $columns) : void
+    public function getObject() : ?object
     {
+        return $this->object;
+    }
+
+    public function setValue(GridColumn $column, string $value) : self
+    {
+        $this->data[$column->getKeyName()] = $value;
+        return $this;
+    }
+
+    public function getCell(GridColumn $column) : GridCell
+    {
+        $key = $column->getKeyName();
+
+        if(isset($this->cells[$key]))
+        {
+            return $this->cells[$key];
+        }
+
+        $cell = new GridCell($column, $this);
+
+        $this->cells[$key] = $cell;
+
+        return $cell;
+    }
+
+    public function setObject(object $subject) : self
+    {
+        $this->object = $subject;
+        return $this;
+    }
+
+    public function setValues(array $values) : self
+    {
+        $this->data = $values;
+        return $this;
+    }
+
+    public function displayColumns() : void
+    {
+        $columns = $this->grid->getColumns();
+
         foreach($columns as $column)
         {
+            $cell = $this->getCell($column);
+
             ?>
                 <td <?php echo $column->classesToAttribute() ?>>
-                    <?php echo $column->formatValue($this->getValue($column)) ?>
+                    <?php $cell->display() ?>
                 </td>
             <?php
         }
