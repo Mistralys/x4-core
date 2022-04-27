@@ -7,7 +7,7 @@ namespace Mistralys\X4\UserInterface\DataGrid;
 use AppUtils\Interface_Classable;
 use AppUtils\Traits_Classable;
 
-class GridEntry implements Interface_Classable
+class GridRow implements Interface_Classable
 {
     use Traits_Classable;
 
@@ -18,7 +18,7 @@ class GridEntry implements Interface_Classable
         $this->data = $data;
     }
 
-    public function getColumnValue(GridColumn $column) : string
+    public function getValue(GridColumn $column) : string
     {
         return $this->data[$column->getKeyName()] ?? '';
     }
@@ -33,7 +33,7 @@ class GridEntry implements Interface_Classable
         {
             ?>
                 <td <?php echo $column->classesToAttribute() ?>>
-                    <?php echo $this->getColumnValue($column) ?>
+                    <?php echo $column->formatValue($this->getValue($column)) ?>
                 </td>
             <?php
         }

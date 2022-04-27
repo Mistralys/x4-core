@@ -1,4 +1,9 @@
 <?php
+/**
+ * @package X4Core
+ * @subpackage UserInterface
+ * @see \Mistralys\X4\UserInterface\DataGrid\DataGrid
+ */
 
 declare(strict_types=1);
 
@@ -6,6 +11,13 @@ namespace Mistralys\X4\UserInterface\DataGrid;
 
 use AppUtils\OutputBuffering;
 
+/**
+ * Utility class used to generate the HTML code for
+ * data grids, using a friendly object-oriented interface.
+ *
+ * @package X4Core
+ * @subpackage UserInterface
+ */
 class DataGrid
 {
     /**
@@ -14,9 +26,9 @@ class DataGrid
     private array $columns = array();
 
     /**
-     * @var GridEntry[]
+     * @var GridRow[]
      */
-    private array $entries = array();
+    private array $rows = array();
 
     public function render() : string
     {
@@ -27,7 +39,7 @@ class DataGrid
             <table class="table table-striped table-sm">
             <?php
             $this->renderHeader();
-            $this->renderEntries();
+            $this->renderRows();
             $this->renderFooter();
             ?>
             </table>
@@ -46,20 +58,58 @@ class DataGrid
         return $column;
     }
 
-    public function appendEntry(GridEntry $entry) : self
+    public function addRow(GridRow $entry) : self
     {
-        $this->entries[] = $entry;
+        $this->rows[] = $entry;
         return $this;
     }
 
-    public function createEntry(array $data) : GridEntry
+    public function createRow(array $data) : GridRow
     {
-        return new GridEntry($data);
+        return new GridRow($data);
     }
 
-    public function appendFromArray(array $data) : self
+    public function addRowFromArray(array $data) : self
     {
-        return $this->appendEntry($this->createEntry($data));
+        return $this->addRow($this->createRow($data));
+    }
+
+    /**
+     * Appends an entry using the specified object as source
+     * for the cell values.
+     *
+     * @param object $object
+     * @return $this
+     * @throws DataGridException
+     */
+    public function addRowFromObject(object $object) : self
+    {
+        $data = array();
+        $columns = $this->getColumns();
+
+        foreach($columns as $column)
+        {
+            $data[$column->getKeyName()] = $column->getValueFromObject($object);
+        }
+
+        $this->addRowFromArray($data);
+
+        return $this;
+    }
+
+    /**
+     * @param object[] $objects
+     * @return $this
+     * @throws DataGridException
+     */
+    public function addRowsFromObjects(array $objects) : self
+    {
+        foreach($objects as $object)
+        {
+            $this->addRowFromObject($object);
+        }
+
+        return $this;
     }
 
     /**
@@ -71,11 +121,11 @@ class DataGrid
     }
 
     /**
-     * @return GridEntry[]
+     * @return GridRow[]
      */
-    public function getEntries() : array
+    public function getRows() : array
     {
-        return $this->entries;
+        return $this->rows;
     }
 
     private function renderHeader() : void
@@ -99,12 +149,12 @@ class DataGrid
         <?php
     }
 
-    private function renderEntries() : void
+    private function renderRows() : void
     {
         ?>
         <tbody>
         <?php
-        $entries = $this->getEntries();
+        $entries = $this->getRows();
         $columns = $this->getColumns();
         foreach($entries as $entry)
         {
