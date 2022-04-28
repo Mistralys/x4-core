@@ -22,10 +22,15 @@ class ModuleCategories
         $this
             ->add('dockarea', t('Docking modules'))
             ->add('pier', t('Docking modules'))
+            ->add('dockingbay', t('Docking modules'))
             ->add('prod', t('Production modules'))
             ->add('hab', t('Habitats'))
             ->add('struct', t('Structural elements'))
-            ->add('storage', t('Storage modules'));
+            ->add('storage', t('Storage modules'))
+            ->add('defence', t('Defence'))
+            ->add('welfare', t('Welfare'))
+            ->add('proc', t('Processing'))
+            ->add('buildmodule', t('Build module'));
     }
 
     public static function getInstance() : ModuleCategories
