@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4;
 
+use Mistralys\X4\UI\BasePage;
 use Mistralys\X4\UI\UserInterface;
 
 /**
@@ -20,6 +21,13 @@ use Mistralys\X4\UI\UserInterface;
  */
 abstract class X4Application
 {
+    protected UserInterface $ui;
+
+    public function __construct(UserInterface $ui)
+    {
+        $this->ui = $ui;
+    }
+
     abstract public function getTitle() : string;
 
     abstract public function registerPages(UserInterface $ui) : void;
