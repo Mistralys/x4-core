@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4;
 
-use Mistralys\X4\UI\BasePage;
+use AppLocalize\Localization;
 use Mistralys\X4\UI\UserInterface;
 
 /**
@@ -30,6 +30,30 @@ abstract class X4Application
     abstract public function getDefaultPageID() : ?string;
 
     abstract public function getVersion() : string;
+
+    public function __construct()
+    {
+        $this->initLocalization();
+    }
+
+    private function initLocalization() : void
+    {
+        Localization::addAppLocale('de_DE');
+
+        Localization::addSourceFolder(
+            'x4-core',
+            'X4 core libraries',
+            'X4',
+            __DIR__.'/../../localization',
+            __DIR__.'/../'
+        );
+
+        Localization::configure(
+            __DIR__.'/../../localization/cache.json'
+        );
+
+        Localization::setClientLibrariesCacheKey($this->getVersion());
+    }
 
     public function getUI() : UserInterface
     {
