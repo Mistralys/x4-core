@@ -37,6 +37,8 @@ class UserInterface implements RenderableInterface
     private X4Application $application;
     private Request $request;
     private string $webrootURL;
+    private string $vendorURL;
+    private string $unitTestingURL;
 
     /**
      * @var array<string,string>
@@ -53,10 +55,16 @@ class UserInterface implements RenderableInterface
      */
     private array $stylesheets = array();
 
-    public function __construct(X4Application $application, string $webrootURL)
+    /**
+     * @var string[]
+     */
+    private array $javascripts = array();
+
+    public function __construct(X4Application $application, string $webrootURL, string $vendorURL)
     {
         $this->application = $application;
         $this->webrootURL = $webrootURL;
+        $this->vendorURL = $vendorURL;
         $this->request = new Request();
 
         $this->application->registerPages($this);
@@ -77,6 +85,12 @@ class UserInterface implements RenderableInterface
     public function getWebrootURL() : string
     {
         return $this->webrootURL;
+    }
+
+    public function setUnitTestingURL(string $unitTestingURL) : self
+    {
+        $this->unitTestingURL = $unitTestingURL;
+        return $this;
     }
 
     public function createDataGrid() : DataGrid
@@ -181,8 +195,8 @@ class UserInterface implements RenderableInterface
 
     public function addInternalStylesheet(string $file) : self
     {
-        return $this->addExternalStylesheet(sprintf(
-            '%s/%s',
+        return $this->addToCollection($this->stylesheets, sprintf(
+            '%s/css/%s',
             $this->webrootURL,
             $file
         ));
@@ -190,19 +204,50 @@ class UserInterface implements RenderableInterface
 
     public function addExternalStylesheet(string $url) : self
     {
-        if(!in_array($url, $this->stylesheets, true))
+        return $this->addToCollection($this->stylesheets, $url);
+    }
+
+    public function addVendorStylesheet(string $packageName, string $file) : self
+    {
+        return $this->addVendorInclude($packageName, $file, $this->stylesheets);
+    }
+
+    public function addVendorJS(string $packageName, string $file) : self
+    {
+        return $this->addVendorInclude($packageName, $file, $this->javascripts);
+    }
+
+    private function addToCollection(array &$collection, $url) : self
+    {
+        if(!in_array($url, $collection, true))
         {
-            $this->stylesheets[] = $url;
+            $collection[] = $url;
         }
 
         return $this;
     }
 
-    public function addVendorStylesheet(string $packageName, string $file) : self
+    protected function addVendorInclude(string $packageName, string $file, &$collection) : self
     {
-        return $this->addExternalStylesheet(sprintf(
-            '%s/vendor/%s/%s',
-            $this->webrootURL,
+        if($packageName === 'mistralys/x4-core' && !empty($this->unitTestingURL))
+        {
+            return $this->addToCollection($collection, sprintf(
+                '%s/%s',
+                $this->unitTestingURL,
+                $file
+            ));
+        }
+
+        $baseURL = $this->webrootURL.'/vendor';
+
+        if(!empty($this->vendorURL))
+        {
+            $baseURL = $this->vendorURL;
+        }
+
+        return $this->addToCollection($collection, sprintf(
+            '%s/%s/%s',
+            $baseURL,
             $packageName,
             $file
         ));
@@ -215,6 +260,9 @@ class UserInterface implements RenderableInterface
         $this->addVendorStylesheet('fortawesome/font-awesome', 'css/solid.css');
         $this->addVendorStylesheet('mistralys/x4-core', 'css/ui-dark.css');
 
+        $this->addVendorJS('components/jquery', 'jquery.slim.js');
+        $this->addVendorJS('twbs/bootstrap', 'dist/js/bootstrap.js');
+
         $content = $this->activePage->render();
 
         ?><!doctype html>
@@ -226,7 +274,9 @@ class UserInterface implements RenderableInterface
                 <?php
                 foreach($this->stylesheets as $url)
                 {
-                    ?><link rel="stylesheet" href="<?php echo $url ?>"><?php
+                    ?>
+                    <link rel="stylesheet" href="<?php echo $url ?>">
+                    <?php
                 }
                 ?>
             </head>
@@ -263,9 +313,14 @@ class UserInterface implements RenderableInterface
                         </footer>
                     </div>
                 </div>
-
-                <script src="vendor/components/jquery/jquery.slim.js"></script>
-                <script src="vendor/twbs/bootstrap/dist/js/bootstrap.js"></script>
+                <?php
+                foreach($this->javascripts as $url)
+                {
+                    ?>
+                    <script src="<?php echo $url ?>"></script>
+                    <?php
+                }
+                ?>
             </body>
         </html><?php
     }
