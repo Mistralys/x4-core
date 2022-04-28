@@ -55,14 +55,14 @@ abstract class X4Application
         Localization::setClientLibrariesCacheKey($this->getVersion());
     }
 
-    public function getUI() : UserInterface
+    public function createUI(string $webrootURL) : UserInterface
     {
         if(isset($this->ui))
         {
             return $this->ui;
         }
 
-        $ui = new UserInterface($this);
+        $ui = new UserInterface($this, $webrootURL);
 
         $this->ui = $ui;
 
