@@ -9,7 +9,10 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UserInterface\DataGrid;
 
-use AppUtils\OutputBuffering;
+use AppUtils\Interface_Classable;
+use AppUtils\Interfaces\RenderableInterface;
+use AppUtils\Traits\RenderableBufferedTrait;
+use AppUtils\Traits_Classable;
 
 /**
  * Utility class used to generate the HTML code for
@@ -18,8 +21,11 @@ use AppUtils\OutputBuffering;
  * @package X4Core
  * @subpackage UserInterface
  */
-class DataGrid
+class DataGrid implements RenderableInterface, Interface_Classable
 {
+    use RenderableBufferedTrait;
+    use Traits_Classable;
+
     /**
      * @var array<string,GridColumn>
      */
@@ -29,31 +35,6 @@ class DataGrid
      * @var GridRow[]
      */
     private array $rows = array();
-
-    public function render() : string
-    {
-        OutputBuffering::start();
-
-        ?>
-        <div class="table-responsive">
-            <table class="table table-striped table-sm">
-            <?php
-            $this->renderHeader();
-            $this->renderRows();
-            $this->renderFooter();
-            ?>
-            </table>
-        </div>
-        <?php
-
-        return OutputBuffering::get();
-    }
-
-    public function display() : self
-    {
-        echo $this->render();
-        return $this;
-    }
 
     public function addColumn(string $keyName, string $label) : GridColumn
     {
@@ -90,22 +71,15 @@ class DataGrid
      *
      * @param object $object
      * @return $this
-     * @throws DataGridException
      */
     public function addRowFromObject(object $object) : self
     {
-        $row = $this->createRow(array());
-        $row->setObject($object);
-
-        $this->addRow($row);
-
-        return $this;
+        return $this->addRow($this->createRow()->setObject($object));
     }
 
     /**
      * @param object[] $objects
      * @return $this
-     * @throws DataGridException
      */
     public function addRowsFromObjects(array $objects) : self
     {
@@ -133,7 +107,24 @@ class DataGrid
         return $this->rows;
     }
 
-    private function renderHeader() : void
+    // region: Rendering
+
+    protected function generateOutput() : void
+    {
+        ?>
+        <div class="table-responsive">
+            <table class="table table-striped table-sm <?php echo $this->classesToString() ?>">
+                <?php
+                $this->generateHeader();
+                $this->generateRows();
+                $this->generateFooter();
+                ?>
+            </table>
+        </div>
+        <?php
+    }
+
+    private function generateHeader() : void
     {
         ?>
         <thead>
@@ -154,7 +145,7 @@ class DataGrid
         <?php
     }
 
-    private function renderRows() : void
+    private function generateRows() : void
     {
         ?>
         <tbody>
@@ -164,7 +155,7 @@ class DataGrid
         {
             ?>
             <tr <?php echo $entry->classesToAttribute() ?>>
-                <?php $entry->displayColumns() ?>
+                <?php $entry->display() ?>
             </tr>
             <?php
         }
@@ -173,8 +164,10 @@ class DataGrid
         <?php
     }
 
-    private function renderFooter() : void
+    private function generateFooter() : void
     {
 
     }
+
+    // endregion
 }

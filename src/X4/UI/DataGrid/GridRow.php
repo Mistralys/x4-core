@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Mistralys\X4\UserInterface\DataGrid;
 
 use AppUtils\Interface_Classable;
+use AppUtils\Interfaces\RenderableInterface;
+use AppUtils\Traits\RenderableBufferedTrait;
 use AppUtils\Traits_Classable;
 use Mistralys\X4\UI\DataGrid\GridCell;
 
-class GridRow implements Interface_Classable
+class GridRow implements Interface_Classable, RenderableInterface
 {
     use Traits_Classable;
+    use RenderableBufferedTrait;
 
     private array $data;
     private ?object $object = null;
@@ -86,7 +89,7 @@ class GridRow implements Interface_Classable
         return $this;
     }
 
-    public function displayColumns() : void
+    protected function generateOutput() : void
     {
         $columns = $this->grid->getColumns();
 
@@ -95,9 +98,9 @@ class GridRow implements Interface_Classable
             $cell = $this->getCell($column);
 
             ?>
-                <td <?php echo $column->classesToAttribute() ?>>
-                    <?php $cell->display() ?>
-                </td>
+            <td <?php echo $column->classesToAttribute() ?>>
+                <?php $cell->display() ?>
+            </td>
             <?php
         }
     }

@@ -4,11 +4,15 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI\DataGrid;
 
+use AppUtils\Interfaces\RenderableInterface;
+use AppUtils\Traits\RenderableTrait;
 use Mistralys\X4\UserInterface\DataGrid\GridColumn;
 use Mistralys\X4\UserInterface\DataGrid\GridRow;
 
-class GridCell
+class GridCell implements RenderableInterface
 {
+    use RenderableTrait;
+
     private GridColumn $column;
     private GridRow $row;
 
@@ -38,10 +42,10 @@ class GridCell
         return $this->row->getObject();
     }
 
-    public function display() : void
+    public function render() : string
     {
         $value = $this->column->applyFormattings($this->getValue());
 
-        $this->column->applyDecorations($this, $value);
+        return $this->column->applyDecorations($this, $value);
     }
 }
