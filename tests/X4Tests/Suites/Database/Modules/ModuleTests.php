@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace X4Tests\Suites\Database\Modules;
 
+use Mistralys\X4\Database\Modules\ModuleCategories;
+use Mistralys\X4\Database\Modules\ModuleCategory;
 use Mistralys\X4\Database\Modules\ModuleDef;
 use Mistralys\X4\Database\Modules\ModuleDefs;
 use X4Tests\Helpers\X4TestCase;
@@ -43,5 +45,24 @@ class ModuleTests extends X4TestCase
         $this->expectExceptionCode(ModuleDef::ERROR_COULD_NOT_DETECT_RACE);
 
         ModuleDefs::getInstance()->getByID($id)->getRace();
+    }
+
+    public function test_getCategory() : void
+    {
+        $id = 'pier_arg_harbor_03_macro';
+
+        $this->assertSame(
+            'pier',
+            ModuleDefs::getInstance()->getByID($id)->getCategory()->getID()
+        );
+    }
+
+    public function test_getCategoryException() : void
+    {
+        $id = 'unknown_category_module';
+
+        $this->expectExceptionCode(ModuleCategories::ERROR_UNKNOWN_CATEGORY_ID);
+
+        ModuleDefs::getInstance()->getByID($id)->getCategory();
     }
 }
