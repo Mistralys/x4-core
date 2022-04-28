@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "491fa16f599e8e7690a06b9a7d13e480",
+    "content-hash": "edaff249e59d0a52b9b05aeddd465f85",
     "packages": [
         {
             "name": "components/jquery",
@@ -172,16 +172,16 @@
         },
         {
             "name": "mistralys/application-utils",
-            "version": "1.9.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mistralys/application-utils.git",
-                "reference": "689ec58cd25286ff85f3f6be0831aee9d5f1cb48"
+                "reference": "1f9a7978b5cf19635f9b02f092147df059c869d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mistralys/application-utils/zipball/689ec58cd25286ff85f3f6be0831aee9d5f1cb48",
-                "reference": "689ec58cd25286ff85f3f6be0831aee9d5f1cb48",
+                "url": "https://api.github.com/repos/Mistralys/application-utils/zipball/1f9a7978b5cf19635f9b02f092147df059c869d3",
+                "reference": "1f9a7978b5cf19635f9b02f092147df059c869d3",
                 "shasum": ""
             },
             "require": {
@@ -193,18 +193,18 @@
                 "ext-simplexml": "*",
                 "ext-zip": "*",
                 "geshi/geshi": ">=1.0.9.1",
-                "mistralys/html_quickform2": ">=2.1.2",
                 "neitanod/forceutf8": ">=2.0.4",
                 "parsecsv/php-parsecsv": "1.2.*",
-                "php": ">=7.3"
+                "php": ">=7.4"
             },
             "require-dev": {
-                "phpstan/phpstan": ">=0.12.74",
-                "phpunit/phpunit": ">=8.5"
+                "phpstan/phpstan": ">=1.5",
+                "phpunit/phpunit": ">=9.5"
             },
             "suggest": {
                 "mistralys/application-localization": "Required to translate available texts, from date related methods or file size labels for example."
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -214,7 +214,8 @@
                     "AppUtils\\": "src/"
                 },
                 "classmap": [
-                    "src/"
+                    "src/",
+                    "tests/TestClasses"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -231,75 +232,9 @@
             "description": "Drop-in utilities for PHP applications.",
             "support": {
                 "issues": "https://github.com/Mistralys/application-utils/issues",
-                "source": "https://github.com/Mistralys/application-utils/tree/1.9.1"
+                "source": "https://github.com/Mistralys/application-utils/tree/master"
             },
-            "time": "2022-01-10T21:02:52+00:00"
-        },
-        {
-            "name": "mistralys/html_quickform2",
-            "version": "2.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Mistralys/HTML_QuickForm2.git",
-                "reference": "ccafac485aa663f5f826b334882d8c9553346122"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Mistralys/HTML_QuickForm2/zipball/ccafac485aa663f5f826b334882d8c9553346122",
-                "reference": "ccafac485aa663f5f826b334882d8c9553346122",
-                "shasum": ""
-            },
-            "require": {
-                "pear/html_common2": "^2.1",
-                "pear/pear_exception": "^1.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": ">=0.12.70",
-                "phpunit/phpunit": "8.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "HTML_QuickForm2": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Alexey Borzov",
-                    "email": "avb@php.net",
-                    "role": "Lead"
-                },
-                {
-                    "name": "Bertrand Mansion",
-                    "email": "golgote@mamasam.com",
-                    "role": "Lead"
-                },
-                {
-                    "name": "Sebastian Mordziol",
-                    "email": "s.mordziol@mistralys.eu",
-                    "role": "Contributor"
-                }
-            ],
-            "description": "Provides methods to create, validate and render HTML forms in PHP.",
-            "homepage": "https://pear.php.net/package/HTML_QuickForm2/",
-            "keywords": [
-                "Forms",
-                "PEAR",
-                "javascript",
-                "quickform",
-                "validation",
-                "wizard"
-            ],
-            "support": {
-                "docs": "https://pear.php.net/manual/en/package.html.html-quickform2.php",
-                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=HTML_QuickForm2",
-                "source": "https://github.com/pear/HTML_QuickForm2"
-            },
-            "time": "2021-01-28T08:54:13+00:00"
+            "time": "2022-04-28T06:18:16+00:00"
         },
         {
             "name": "neitanod/forceutf8",
@@ -405,121 +340,6 @@
                 "source": "https://github.com/parsecsv/parsecsv-for-php"
             },
             "time": "2020-04-25T17:17:04+00:00"
-        },
-        {
-            "name": "pear/html_common2",
-            "version": "v2.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pear/HTML_Common2.git",
-                "reference": "136670628a11bd9e150db2d8201187ad44d2f8d0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pear/HTML_Common2/zipball/136670628a11bd9e150db2d8201187ad44d2f8d0",
-                "reference": "136670628a11bd9e150db2d8201187ad44d2f8d0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "yoast/phpunit-polyfills": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "HTML_Common2": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Alexey Borzov",
-                    "email": "avb@php.net",
-                    "role": "Lead"
-                },
-                {
-                    "name": "Klaus Guenther",
-                    "email": "thesaur@php.net",
-                    "role": "Lead"
-                }
-            ],
-            "description": "Abstract base class for HTML classes (PHP5 port of HTML_Common package).",
-            "homepage": "https://pear.php.net/package/HTML_Common2",
-            "keywords": [
-                "PEAR",
-                "attribute",
-                "element",
-                "html"
-            ],
-            "support": {
-                "issues": "https://github.com/pear/HTML_Common2/issues",
-                "source": "https://github.com/pear/HTML_Common2"
-            },
-            "time": "2022-03-31T11:16:13+00:00"
-        },
-        {
-            "name": "pear/pear_exception",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
-                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "<9"
-            },
-            "type": "class",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "PEAR/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "."
-            ],
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Helgi Thormar",
-                    "email": "dufuz@php.net"
-                },
-                {
-                    "name": "Greg Beaver",
-                    "email": "cellog@php.net"
-                }
-            ],
-            "description": "The PEAR Exception base class.",
-            "homepage": "https://github.com/pear/PEAR_Exception",
-            "keywords": [
-                "exception"
-            ],
-            "support": {
-                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR_Exception",
-                "source": "https://github.com/pear/PEAR_Exception"
-            },
-            "time": "2021-03-21T15:43:46+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -2738,7 +2558,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "mistralys/application-utils": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
