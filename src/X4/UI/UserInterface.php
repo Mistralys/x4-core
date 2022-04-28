@@ -36,6 +36,7 @@ class UserInterface implements RenderableInterface
     private BasePage $activePage;
     private X4Application $application;
     private Request $request;
+    private string $webrootURL;
 
     /**
      * @var array<string,string>
@@ -47,9 +48,15 @@ class UserInterface implements RenderableInterface
      */
     private array $pageInstances = array();
 
-    public function __construct(X4Application $application)
+    /**
+     * @var string[]
+     */
+    private array $stylesheets = array();
+
+    public function __construct(X4Application $application, string $webrootURL)
     {
         $this->application = $application;
+        $this->webrootURL = $webrootURL;
         $this->request = new Request();
 
         $this->application->registerPages($this);
@@ -65,6 +72,11 @@ class UserInterface implements RenderableInterface
     public function getRequest() : Request
     {
         return $this->request;
+    }
+
+    public function getWebrootURL() : string
+    {
+        return $this->webrootURL;
     }
 
     public function createDataGrid() : DataGrid
@@ -167,8 +179,42 @@ class UserInterface implements RenderableInterface
         return key($this->pages);
     }
 
+    public function addInternalStylesheet(string $file) : self
+    {
+        return $this->addExternalStylesheet(sprintf(
+            '%s/%s',
+            $this->webrootURL,
+            $file
+        ));
+    }
+
+    public function addExternalStylesheet(string $url) : self
+    {
+        if(!in_array($url, $this->stylesheets, true))
+        {
+            $this->stylesheets[] = $url;
+        }
+
+        return $this;
+    }
+
+    public function addVendorStylesheet(string $packageName, string $file) : self
+    {
+        return $this->addExternalStylesheet(sprintf(
+            '%s/vendor/%s/%s',
+            $this->webrootURL,
+            $packageName,
+            $file
+        ));
+    }
+
     protected function generateOutput() : void
     {
+        $this->addVendorStylesheet('mistralys/x4-core', 'css/bootstrap-dark.min.css');
+        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/fontawesome.css');
+        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/solid.css');
+        $this->addVendorStylesheet('mistralys/x4-core', 'css/ui-dark.css');
+
         $content = $this->activePage->render();
 
         ?><!doctype html>
@@ -177,12 +223,12 @@ class UserInterface implements RenderableInterface
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 <title><?php echo $this->getTitle() ?></title>
-
-                <!-- Bootstrap core CSS -->
-                <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
-                <link rel="stylesheet" href="vendor/fortawesome/font-awesome/css/fontawesome.css">
-                <link rel="stylesheet" href="vendor/fortawesome/font-awesome/css/solid.css">
-                <link rel="stylesheet" href="vendor/mistralys/x4-core/css/ui.css">
+                <?php
+                foreach($this->stylesheets as $url)
+                {
+                    ?><link rel="stylesheet" href="<?php echo $url ?>"><?php
+                }
+                ?>
             </head>
             <body>
                 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
