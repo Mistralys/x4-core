@@ -7,12 +7,13 @@ namespace X4Tests\Helpers;
 use Mistralys\X4\UI\UserInterface;
 use Mistralys\X4\X4Application;
 use X4Tests\Helpers\TestApplication\Pages\TestPageMain;
+use function AppUtils\t;
 
 class TestApplication extends X4Application
 {
     public function getTitle() : string
     {
-        return 'Test application';
+        return t('Test application');
     }
 
     public function registerPages(UserInterface $ui) : void

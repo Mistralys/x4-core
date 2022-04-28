@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace X4Tests\Helpers\TestApplication\Pages;
 
 use Mistralys\X4\UI\BasePage;
+use function AppLocalize\pt;
+use function AppUtils\t;
 
 class TestPageMain extends BasePage
 {
@@ -12,7 +14,7 @@ class TestPageMain extends BasePage
 
     public function getTitle() : string
     {
-        return 'Main page';
+        return t('Test page');
     }
 
     protected function preRender() : void
@@ -21,7 +23,11 @@ class TestPageMain extends BasePage
 
     protected function _render() : void
     {
-
+        ?>
+        <p>
+            <?php pt('This is an X4 application test page.') ?>
+        </p>
+        <?php
     }
 
     public function getNavItems() : array
