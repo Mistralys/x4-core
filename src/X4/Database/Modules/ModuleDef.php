@@ -15,6 +15,7 @@ class ModuleDef
     private string $id;
     private string $label;
     private ?RaceDef $race;
+    private ?ModuleCategory $category;
 
     public function __construct(string $moduleID, string $label)
     {
@@ -30,6 +31,21 @@ class ModuleDef
     public function getLabel() : string
     {
         return $this->label;
+    }
+
+    public function getCategory() : ModuleCategory
+    {
+        if(isset($this->category))
+        {
+            return $this->category;
+        }
+
+        $parts = explode('_', $this->id);
+        $categories = ModuleCategories::getInstance();
+
+        $category = $categories->getByID(array_shift($parts));
+        $this->category = $category;
+        return $category;
     }
 
     /**
