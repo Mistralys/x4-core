@@ -9,9 +9,13 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI;
 
-use AppUtils\Interfaces\RenderableInterface;use AppUtils\Request;
-use AppUtils\Traits\RenderableBufferedTrait;use Mistralys\X4\UserInterface\DataGrid\DataGrid;use Mistralys\X4\UserInterface\UIException;
+use AppUtils\Interfaces\RenderableInterface;
+use AppUtils\Request;
+use AppUtils\Traits\RenderableBufferedTrait;
+use Mistralys\X4\UserInterface\DataGrid\DataGrid;
+use Mistralys\X4\UserInterface\UIException;
 use Mistralys\X4\X4Application;
+use function AppLocalize\pt;
 
 /**
  * User interface handler: renders the UI.
@@ -183,7 +187,7 @@ class UserInterface implements RenderableInterface
             <body>
                 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
                     <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="?"><?php echo $this->getTitle() ?></a>
-                    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="<?php pt('Toggle navigation') ?>">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </nav>
