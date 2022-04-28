@@ -53,8 +53,12 @@ abstract class BasePage implements RenderableInterface
 
     protected function generateOutput() : void
     {
+        $this->preRender();
+
         $this->_render();
     }
+
+    abstract protected function preRender() : void;
 
     abstract protected function _render() : void;
 
