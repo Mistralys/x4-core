@@ -15,6 +15,10 @@ class TestPageMain extends BasePage
         return 'Main page';
     }
 
+    protected function preRender() : void
+    {
+    }
+
     protected function _render() : void
     {
 
