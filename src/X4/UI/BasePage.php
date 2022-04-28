@@ -4,11 +4,17 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI;
 
+use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Request;
+use AppUtils\Traits\RenderableBufferedTrait;
 use Mistralys\X4\X4Application;
 
-abstract class BasePage
+abstract class BasePage implements RenderableInterface
 {
+    use RenderableBufferedTrait;
+
+    public const REQUEST_PARAM_PAGE = 'page';
+
     protected Request $request;
     protected UserInterface $ui;
     private X4Application $application;
@@ -45,11 +51,9 @@ abstract class BasePage
 
     abstract public function getTitle() : string;
 
-    public function render() : string
+    protected function generateOutput() : void
     {
-        ob_start();
         $this->_render();
-        return ob_get_clean();
     }
 
     abstract protected function _render() : void;
@@ -76,7 +80,7 @@ abstract class BasePage
 
     public function getURL(array $params=array()) : string
     {
-        $params['page'] = $this->getID();
+        $params[self::REQUEST_PARAM_PAGE] = $this->getID();
 
         $params = array_merge($params, $this->getURLParams());
 
