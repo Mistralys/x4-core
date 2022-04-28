@@ -14,7 +14,6 @@ use AppUtils\Traits_Classable;
 use Mistralys\X4\UI\DataGrid\GridCell;
 use Mistralys\X4\UserInterface\DataGrid\Column\DecorationHandler;
 use Mistralys\X4\UserInterface\DataGrid\Column\FormatHandler;
-use phpDocumentor\Reflection\Types\Expression;
 use Mistralys\X4\UserInterface\DataGrid\Column\ObjectHandler;
 
 /**
