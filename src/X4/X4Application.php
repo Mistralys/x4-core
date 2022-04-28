@@ -21,12 +21,7 @@ use Mistralys\X4\UI\UserInterface;
  */
 abstract class X4Application
 {
-    protected UserInterface $ui;
-
-    public function __construct(UserInterface $ui)
-    {
-        $this->ui = $ui;
-    }
+    private ?UserInterface $ui = null;
 
     abstract public function getTitle() : string;
 
@@ -35,4 +30,18 @@ abstract class X4Application
     abstract public function getDefaultPageID() : ?string;
 
     abstract public function getVersion() : string;
+
+    public function getUI() : UserInterface
+    {
+        if(isset($this->ui))
+        {
+            return $this->ui;
+        }
+
+        $ui = new UserInterface($this);
+
+        $this->ui = $ui;
+
+        return $ui;
+    }
 }
