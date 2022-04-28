@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "edaff249e59d0a52b9b05aeddd465f85",
+    "content-hash": "5c2a95f4b12192f8cb46b6f1c1ef3163",
     "packages": [
         {
             "name": "components/jquery",
@@ -171,6 +171,61 @@
             "time": "2019-10-20T20:54:46+00:00"
         },
         {
+            "name": "mistralys/application-localization",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mistralys/application-localization.git",
+                "reference": "ff0cce325c07a1999b1ddde567f4d133fc82ee82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mistralys/application-localization/zipball/ff0cce325c07a1999b1ddde567f4d133fc82ee82",
+                "reference": "ff0cce325c07a1999b1ddde567f4d133fc82ee82",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "mistralys/application-utils": ">=1.2.0",
+                "mistralys/jtokenizer": ">=1.0.1",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "8.2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "AppLocalize\\": "src/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Mordziol",
+                    "email": "s.mordziol@mistralys.eu",
+                    "role": "Lead"
+                }
+            ],
+            "description": "PHP and Javascript localization library.",
+            "support": {
+                "issues": "https://github.com/Mistralys/application-localization/issues",
+                "source": "https://github.com/Mistralys/application-localization/tree/1.4.1"
+            },
+            "time": "2021-08-10T11:40:20+00:00"
+        },
+        {
             "name": "mistralys/application-utils",
             "version": "dev-master",
             "source": {
@@ -235,6 +290,61 @@
                 "source": "https://github.com/Mistralys/application-utils/tree/master"
             },
             "time": "2022-04-28T06:18:16+00:00"
+        },
+        {
+            "name": "mistralys/jtokenizer",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mistralys/jtokenizer.git",
+                "reference": "e1cda4df1f56df5693290e9d71237c0d08e96f40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mistralys/jtokenizer/zipball/e1cda4df1f56df5693290e9d71237c0d08e96f40",
+                "reference": "e1cda4df1f56df5693290e9d71237c0d08e96f40",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": ">=0.12",
+                "phpunit/phpunit": ">=8.2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Constants.php"
+                ],
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Whitlock",
+                    "homepage": "https://timwhitlock.info",
+                    "role": "Lead developer"
+                },
+                {
+                    "name": "Sebastian Mordziol",
+                    "email": "s.mordziol@mistralys.eu",
+                    "homepage": "https://mistralys.eu",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Modernized, composer compatible version of Tim Whitlock's JTokenizer PHP Javascript parser and tokenizer library.",
+            "homepage": "https://github.com/Mistralys/jtokenizer",
+            "support": {
+                "issues": "https://github.com/Mistralys/jtokenizer/issues",
+                "source": "https://github.com/Mistralys/jtokenizer/tree/1.0.1"
+            },
+            "time": "2021-03-12T08:55:11+00:00"
         },
         {
             "name": "neitanod/forceutf8",
@@ -923,16 +1033,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.6.2",
+            "version": "1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "becb9603a31d70f5007d505877a7b812598dfe46"
+                "reference": "6128620b98292e0b69ea6d799871d77163681c8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/becb9603a31d70f5007d505877a7b812598dfe46",
-                "reference": "becb9603a31d70f5007d505877a7b812598dfe46",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6128620b98292e0b69ea6d799871d77163681c8e",
+                "reference": "6128620b98292e0b69ea6d799871d77163681c8e",
                 "shasum": ""
             },
             "require": {
@@ -958,7 +1068,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.6.2"
+                "source": "https://github.com/phpstan/phpstan/tree/1.6.3"
             },
             "funding": [
                 {
@@ -978,7 +1088,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-27T11:05:24+00:00"
+            "time": "2022-04-28T11:27:53+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
