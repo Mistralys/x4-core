@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI;
 
-use AppUtils\Request;
-use Mistralys\X4\UserInterface\DataGrid\DataGrid;use Mistralys\X4\UserInterface\UIException;
+use AppUtils\Interfaces\RenderableInterface;use AppUtils\Request;
+use AppUtils\Traits\RenderableBufferedTrait;use Mistralys\X4\UserInterface\DataGrid\DataGrid;use Mistralys\X4\UserInterface\UIException;
 use Mistralys\X4\X4Application;
 
 /**
@@ -20,8 +20,10 @@ use Mistralys\X4\X4Application;
  * @subpackage UserInterface
  * @author Sebastian Mordziol <s.mordziol@mistralys.eu>
  */
-class UserInterface
+class UserInterface implements RenderableInterface
 {
+    use RenderableBufferedTrait;
+
     public const ERROR_NO_PAGES_REGISTERED = 105801;
     public const ERROR_PAGE_CLASS_NOT_FOUND = 105802;
     public const ERROR_INVALID_PAGE_CLASS = 105803;
@@ -161,7 +163,7 @@ class UserInterface
         return key($this->pages);
     }
 
-    public function display() : void
+    protected function generateOutput() : void
     {
         $content = $this->activePage->render();
 
