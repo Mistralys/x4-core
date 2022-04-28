@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Modules;
 
-use Mistralys\X4\Database\Races\Race;
+use Mistralys\X4\Database\Races\RaceDef;
 use Mistralys\X4\Database\Races\RaceDefs;
 use Mistralys\X4\Database\Races\RaceException;
 
-class Module
+class ModuleDef
 {
     public const ERROR_COULD_NOT_DETECT_RACE = 106201;
 
     private string $id;
     private string $label;
-    private ?Race $race;
+    private ?RaceDef $race;
 
     public function __construct(string $moduleID, string $label)
     {
@@ -33,11 +33,11 @@ class Module
     }
 
     /**
-     * @return Race
+     * @return RaceDef
      * @throws ModuleException
      * @throws RaceException
      */
-    public function getRace() : Race
+    public function getRace() : RaceDef
     {
         if(isset($this->race))
         {

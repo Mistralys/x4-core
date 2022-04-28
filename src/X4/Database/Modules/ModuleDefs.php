@@ -11,9 +11,9 @@ class ModuleDefs
     private static ?ModuleDefs $instance = null;
 
     /**
-     * @var array<string,Module>
+     * @var array<string,ModuleDef>
      */
-    private static array $types = array();
+    private array $defs = array();
 
     private function __construct()
     {
@@ -21,6 +21,10 @@ class ModuleDefs
             ->add('struct_arg_base_01_macro', t('Base Connection Structure %1$s', '01'))
             ->add('struct_arg_base_02_macro', t('Base Connection Structure %1$s', '02'))
             ->add('struct_arg_cross_01_macro', t('Cross Connection Structure %1$s', '01'));
+
+        uasort($this->defs, static function(ModuleDef $a, ModuleDef $b) {
+            return strnatcasecmp($a->getLabel(), $b->getLabel());
+        });
     }
 
     public static function getInstance() : ModuleDefs
@@ -35,19 +39,32 @@ class ModuleDefs
         return $defs;
     }
 
-    private function add(string $id, string $label) : self
+    private function add(string $moduleID, string $label) : self
     {
-        self::$types[$id] = new Module($id, $label);
+        $this->defs[$moduleID] = new ModuleDef($moduleID, $label);
         return $this;
     }
 
-    public function getType(string $typeID) : Module
+    /**
+     * @return ModuleDef[]
+     */
+    public function getAll() : array
     {
-        if(!isset(self::$types[$typeID]))
+        return array_values($this->defs);
+    }
+
+    public function idExists(string $moduleID) : bool
+    {
+        return isset($this->defs[$moduleID]);
+    }
+
+    public function getByID(string $moduleID) : ModuleDef
+    {
+        if(!isset($this->defs[$moduleID]))
         {
-            self::$types[$typeID] = new Module($typeID, $typeID);
+            $this->defs[$moduleID] = new ModuleDef($moduleID, $moduleID);
         }
 
-        return self::$types[$typeID];
+        return $this->defs[$moduleID];
     }
 }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace X4Tests\Suites\Database\Modules;
 
-use Mistralys\X4\Database\Modules\Module;
+use Mistralys\X4\Database\Modules\ModuleDef;
 use Mistralys\X4\Database\Modules\ModuleDefs;
 use X4Tests\Helpers\X4TestCase;
 
@@ -16,7 +16,7 @@ class ModuleTests extends X4TestCase
 
         $this->assertSame(
             'arg',
-            ModuleDefs::getInstance()->getType($id)->getRace()->getID()
+            ModuleDefs::getInstance()->getByID($id)->getRace()->getID()
         );
     }
 
@@ -31,7 +31,7 @@ class ModuleTests extends X4TestCase
         $this->assertSame(
             $id,
             ModuleDefs::getInstance()
-                ->getType($id)
+                ->getByID($id)
                 ->getLabel()
         );
     }
@@ -40,8 +40,8 @@ class ModuleTests extends X4TestCase
     {
         $id = 'unknown_module';
 
-        $this->expectExceptionCode(Module::ERROR_COULD_NOT_DETECT_RACE);
+        $this->expectExceptionCode(ModuleDef::ERROR_COULD_NOT_DETECT_RACE);
 
-        ModuleDefs::getInstance()->getType($id)->getRace();
+        ModuleDefs::getInstance()->getByID($id)->getRace();
     }
 }

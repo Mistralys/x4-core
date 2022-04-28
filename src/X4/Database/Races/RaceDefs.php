@@ -11,9 +11,9 @@ class RaceDefs
     private static ?RaceDefs $instance = null;
 
     /**
-     * @var array<string,Race>
+     * @var array<string,RaceDef>
      */
-    private static array $races = array();
+    private static array $defs = array();
 
     private function __construct()
     {
@@ -25,7 +25,7 @@ class RaceDefs
             ->add('gen', 'Generic')
             ->add('xen', 'Xenon');
 
-        uasort(self::$races, static function(Race $a, Race $b) {
+        uasort(self::$defs, static function(RaceDef $a, RaceDef $b) {
             return strnatcasecmp($a->getLabel(), $b->getLabel());
         });
     }
@@ -42,44 +42,44 @@ class RaceDefs
         return $defs;
     }
 
-    private function add(string $id, string $label) : self
+    private function add(string $raceID, string $label) : self
     {
-        self::$races[$id] = new Race($id, $label);
+        self::$defs[$raceID] = new RaceDef($raceID, $label);
         return $this;
     }
 
     /**
-     * @return Race[]
+     * @return RaceDef[]
      */
     public function getAll() : array
     {
-        return array_values(self::$races);
+        return array_values(self::$defs);
     }
 
-    public function idExists(string $id) : bool
+    public function idExists(string $raceID) : bool
     {
-        return isset(self::$races[strtolower($id)]);
+        return isset(self::$defs[strtolower($raceID)]);
     }
 
     /**
-     * @param string $id
-     * @return Race
+     * @param string $raceID
+     * @return RaceDef
      * @throws RaceException
      */
-    public function getByID(string $id) : Race
+    public function getByID(string $raceID) : RaceDef
     {
-        $id = strtolower($id);
+        $raceID = strtolower($raceID);
 
-        if(isset(self::$races[$id]))
+        if(isset(self::$defs[$raceID]))
         {
-            return self::$races[$id];
+            return self::$defs[$raceID];
         }
 
         throw new RaceException(
             'Unknown race ID.',
             sprintf(
                 'Unknown race ID [%s]. Known race IDs are: [%s].',
-                $id,
+                $raceID,
                 implode(', ', $this->getIDs())
             ),
             self::ERROR_UNKNOWN_RACE_ID
@@ -91,7 +91,7 @@ class RaceDefs
      */
     public function getIDs() : array
     {
-        $ids = array_keys(self::$races);
+        $ids = array_keys(self::$defs);
         sort($ids);
         return $ids;
     }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Races;
 
-class Race
+class RaceDef
 {
     private string $id;
     private string $label;
