@@ -5,14 +5,11 @@
       <path value="$PROJECT_DIR$/vendor/components/jquery" />
       <path value="$PROJECT_DIR$/vendor/fortawesome/font-awesome" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/pear/html_common2" />
-      <path value="$PROJECT_DIR$/vendor/pear/pear_exception" />
       <path value="$PROJECT_DIR$/vendor/neitanod/forceutf8" />
       <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
       <path value="$PROJECT_DIR$/vendor/parsecsv/php-parsecsv" />
       <path value="$PROJECT_DIR$/vendor/geshi/geshi" />
       <path value="$PROJECT_DIR$/vendor/mistralys/application-utils" />
-      <path value="$PROJECT_DIR$/vendor/mistralys/html_quickform2" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
@@ -52,6 +49,11 @@
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/vendor/bin/phpstan" />
+    </PhpStan_settings>
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
