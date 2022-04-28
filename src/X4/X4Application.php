@@ -11,6 +11,7 @@ namespace Mistralys\X4;
 
 use AppLocalize\Localization;
 use Mistralys\X4\UI\UserInterface;
+use Mistralys\X4\UserInterface\UIException;
 
 /**
  * Base class for an X4 application.
@@ -21,6 +22,8 @@ use Mistralys\X4\UI\UserInterface;
  */
 abstract class X4Application
 {
+    public const ERROR_UI_INSTANCE_NOT_CREATED = 106501;
+
     private ?UserInterface $ui = null;
 
     abstract public function getTitle() : string;
@@ -67,5 +70,19 @@ abstract class X4Application
         $this->ui = $ui;
 
         return $ui;
+    }
+
+    public function getUI() : UserInterface
+    {
+        if(isset($this->ui))
+        {
+            return $this->ui;
+        }
+
+        throw new UIException(
+            'No user interface has been created.',
+            'The user interface instance must be created with [createUI] first.',
+            self::ERROR_UI_INSTANCE_NOT_CREATED
+        );
     }
 }
