@@ -12,4 +12,5 @@ FOOTER{
     border-top-color: var(--bs-secondary);
     padding-top: 1rem;
     font-size: 0.7rem;
+    padding-bottom: 6rem;
 }
