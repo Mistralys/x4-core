@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace X4Tests\Helpers\TestApplication\Pages;
 
-use Mistralys\X4\UI\BasePage;
-use Mistralys\X4\UI\NavItem;
+use Mistralys\X4\UI\Page\BasePage;
+use Mistralys\X4\UI\Page\NavItem;
 use function AppLocalize\pt;
 use function AppUtils\t;
 
@@ -16,6 +16,11 @@ class TestPageMain extends BasePage
     public function getTitle() : string
     {
         return t('Test page');
+    }
+
+    public function getNavTitle() : string
+    {
+        return t('Test');
     }
 
     protected function preRender() : void
