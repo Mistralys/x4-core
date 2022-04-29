@@ -57,14 +57,20 @@ class UserInterface implements RenderableInterface
     /**
      * @var string[]
      */
-    private array $stylesheets = array();
+    private array $styleSheets = array();
 
     /**
      * @var string[]
      */
-    private array $javascripts = array();
+    private array $javaScripts = array();
 
-    public function __construct(X4Application $application, string $webrootURL, string $vendorURL)
+    /**
+     * @param X4Application $application
+     * @param string $webrootURL
+     * @param string $vendorURL Optional: Custom URL to access the composer vendor folder.
+     * @throws UIException
+     */
+    public function __construct(X4Application $application, string $webrootURL, string $vendorURL='')
     {
         $this->application = $application;
         $this->webrootURL = $webrootURL;
@@ -107,6 +113,15 @@ class UserInterface implements RenderableInterface
         $this->pages[$urlName] = $className;
     }
 
+    /**
+     * Retrieves the class name of the target page, by its ID (url name).
+     *
+     * @param string $id
+     * @return string
+     *
+     * @throws UIException
+     * @see UserInterface::ERROR_UNKNOWN_PAGE_ID
+     */
     public function getPageClass(string $id) : string
     {
         if(isset($this->pages[$id]))
@@ -125,6 +140,14 @@ class UserInterface implements RenderableInterface
         );
     }
 
+    /**
+     * @param string $id
+     * @return BasePage
+     *
+     * @throws UIException
+     * @see UserInterface::ERROR_PAGE_CLASS_NOT_FOUND
+     * @see UserInterface::ERROR_INVALID_PAGE_CLASS
+     */
     public function createPage(string $id) : BasePage
     {
         if(isset($this->pageInstances[$id]))
@@ -167,6 +190,12 @@ class UserInterface implements RenderableInterface
         return $this->application;
     }
 
+    /**
+     * @return string
+     *
+     * @throws UIException
+     * @see UserInterface::ERROR_NO_PAGES_REGISTERED
+     */
     public function getActivePageID() : string
     {
         if(empty($this->pages))
@@ -199,7 +228,7 @@ class UserInterface implements RenderableInterface
 
     public function addInternalStylesheet(string $file) : self
     {
-        return $this->addToCollection($this->stylesheets, sprintf(
+        return $this->addToCollection($this->styleSheets, sprintf(
             '%s/css/%s',
             $this->webrootURL,
             $file
@@ -208,17 +237,17 @@ class UserInterface implements RenderableInterface
 
     public function addExternalStylesheet(string $url) : self
     {
-        return $this->addToCollection($this->stylesheets, $url);
+        return $this->addToCollection($this->styleSheets, $url);
     }
 
     public function addVendorStylesheet(string $packageName, string $file) : self
     {
-        return $this->addVendorInclude($packageName, $file, $this->stylesheets);
+        return $this->addVendorInclude($packageName, $file, $this->styleSheets);
     }
 
     public function addVendorJS(string $packageName, string $file) : self
     {
-        return $this->addVendorInclude($packageName, $file, $this->javascripts);
+        return $this->addVendorInclude($packageName, $file, $this->javaScripts);
     }
 
     private function addToCollection(array &$collection, $url) : self
@@ -280,7 +309,7 @@ class UserInterface implements RenderableInterface
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 <title><?php echo $this->getTitle() ?></title>
                 <?php
-                foreach($this->stylesheets as $url)
+                foreach($this->styleSheets as $url)
                 {
                     ?>
                     <link rel="stylesheet" href="<?php echo $url ?>">
@@ -315,7 +344,7 @@ class UserInterface implements RenderableInterface
                     </footer>
                 </div>
                 <?php
-                foreach($this->javascripts as $url)
+                foreach($this->javaScripts as $url)
                 {
                     ?>
                     <script src="<?php echo $url ?>"></script>
