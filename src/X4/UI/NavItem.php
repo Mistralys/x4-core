@@ -30,4 +30,9 @@ class NavItem
     {
         return $this->url;
     }
+
+    public function isActive() : bool
+    {
+        return false;
+    }
 }
