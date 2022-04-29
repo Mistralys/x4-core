@@ -14,3 +14,13 @@ FOOTER{
     font-size: 0.7rem;
     padding-bottom: 6rem;
 }
+
+TD.align-right,
+TH.align-right{
+    text-align: right;
+}
+
+TD.align-center,
+TH.align-center{
+    text-align: center;
+}
