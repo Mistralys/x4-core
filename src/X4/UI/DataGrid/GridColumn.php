@@ -115,6 +115,10 @@ class GridColumn implements Interface_Classable
         return $this->objectHandler->getValue($subject);
     }
 
+    /**
+     * @param mixed|NULL $value
+     * @return string
+     */
     public function applyFormattings($value) : string
     {
         return $this->formatHandler->formatValue($value);

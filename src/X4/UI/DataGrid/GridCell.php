@@ -32,7 +32,10 @@ class GridCell implements RenderableInterface
         return $this->row;
     }
 
-    public function getValue() : string
+    /**
+     * @return mixed|NULL
+     */
+    public function getValue()
     {
         return $this->row->getValue($this);
     }

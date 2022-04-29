@@ -35,7 +35,12 @@ class GridRow implements Interface_Classable, RenderableInterface
         return $this->grid;
     }
 
-    public function getValue(GridCell $cell) : string
+    /**
+     * @param GridCell $cell
+     * @return mixed|NULL
+     * @throws DataGridException
+     */
+    public function getValue(GridCell $cell)
     {
         $column = $cell->getColumn();
 
@@ -44,7 +49,7 @@ class GridRow implements Interface_Classable, RenderableInterface
             return $column->getValueFromObject($this->object);
         }
 
-        return $this->data[$column->getKeyName()] ?? '';
+        return $this->data[$column->getKeyName()] ?? null;
     }
 
     /**
