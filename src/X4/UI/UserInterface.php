@@ -33,12 +33,15 @@ class UserInterface implements RenderableInterface
     public const ERROR_INVALID_PAGE_CLASS = 105803;
     public const ERROR_UNKNOWN_PAGE_ID = 105804;
 
+    public const THEME_SUPERHERO = 'superhero';
+
     private BasePage $activePage;
     private X4Application $application;
     private Request $request;
     private string $webrootURL;
     private string $vendorURL;
     private string $unitTestingURL;
+    private string $theme = self::THEME_SUPERHERO;
 
     /**
      * @var array<string,string>
@@ -253,15 +256,19 @@ class UserInterface implements RenderableInterface
         ));
     }
 
-    protected function generateOutput() : void
+    private function initIncludes() : void
     {
-        $this->addVendorStylesheet('mistralys/x4-core', 'css/bootstrap-dark.min.css');
-        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/fontawesome.css');
+        $this->addVendorStylesheet('thomaspark/bootswatch', 'dist/'.$this->theme.'/bootstrap.min.css');        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/fontawesome.css');
         $this->addVendorStylesheet('fortawesome/font-awesome', 'css/solid.css');
-        $this->addVendorStylesheet('mistralys/x4-core', 'css/ui-dark.css');
+        $this->addVendorStylesheet('mistralys/x4-core', 'css/ui.css');
 
         $this->addVendorJS('components/jquery', 'jquery.slim.js');
         $this->addVendorJS('twbs/bootstrap', 'dist/js/bootstrap.js');
+    }
+
+    protected function generateOutput() : void
+    {
+        $this->initIncludes();
 
         $content = $this->activePage->render();
 
@@ -281,37 +288,30 @@ class UserInterface implements RenderableInterface
                 ?>
             </head>
             <body>
-                <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-                    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="?"><?php echo $this->getTitle() ?></a>
-                    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="<?php pt('Toggle navigation') ?>">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <?php
-                            $items = $this->activePage->getNavItems();
-
-                            if(!empty($items))
-                            {
-                                $this->displayNavigation($items);
-                            }
-                        ?>
-
-                        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-                            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                                <h1 class="h2"><?php echo $this->activePage->getTitle() ?></h1>
-                            </div>
-
-                            <?php echo $content; ?>
-                        </main>
-
-                        <footer>
-                            <?php echo $this->getTitle() ?> v<?php echo $this->application->getVersion() ?><br>
-                        </footer>
+                <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="?"><?php echo $this->getTitle() ?></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarReponsive" aria-controls="navbarReponsive" aria-expanded="false" aria-label="<?php pt('Toggle navigation') ?>">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <?php
+                            $this->displayNavigation();
+                            $this->displayMetaNav();
+                            ?>
+                        </div>
                     </div>
+                </div>
+                <div class="container" id="main-content">
+                    <div class="page-header">
+                        <h1 class="page-title"><?php echo $this->activePage->getTitle() ?></h1>
+                    </div>
+                    <div class="content-container">
+                        <?php echo $content; ?>
+                    </div>
+                    <footer>
+                        <?php echo $this->getTitle() ?> v<?php echo $this->application->getVersion() ?><br>
+                    </footer>
                 </div>
                 <?php
                 foreach($this->javascripts as $url)
@@ -325,32 +325,49 @@ class UserInterface implements RenderableInterface
         </html><?php
     }
 
+    private function displayMetaNav() : void
+    {
+        return;
+
+        ?>
+        <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item">
+                <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/thomaspark/bootswatch/"><i class="fa fa-github"></i> GitHub</a>
+            </li>
+            <li class="nav-item">
+                <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/bootswatch"><i class="fa fa-twitter"></i> Twitter</a>
+            </li>
+        </ul>
+        <?php
+    }
+
     /**
-     * @param NavItem[] $items
      * @return void
      */
-    private function displayNavigation(array $items) : void
+    private function displayNavigation() : void
     {
-        ?>
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-            <div class="sidebar-sticky pt-3">
-                <ul class="nav flex-column">
-                    <?php
-                        foreach($items as $item)
-                        {
-                            ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?php echo $item->getUrl() ?>">
-                                    <?php echo $item->getLabel() ?>
-                                </a>
-                            </li>
-                            <?php
-                        }
-                    ?>
-                </ul>
-            </div>
-        </nav>
+        $items = $this->activePage->getNavItems();
 
+        if(empty($items))
+        {
+            return;
+        }
+
+        ?>
+        <ul class="navbar-nav">
+            <?php
+            foreach($items as $item)
+            {
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link <?php if($item->isActive()) { echo 'active'; } ?>" href="<?php echo $item->getUrl() ?>">
+                        <?php echo $item->getLabel() ?>
+                    </a>
+                </li>
+                <?php
+            }
+            ?>
+        </ul>
         <?php
     }
 }
