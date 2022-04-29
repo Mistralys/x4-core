@@ -12,6 +12,7 @@ namespace Mistralys\X4\UI;
 use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
+use Mistralys\X4\UI\Page\BasePage;
 use Mistralys\X4\UserInterface\DataGrid\DataGrid;
 use Mistralys\X4\UserInterface\UIException;
 use Mistralys\X4\X4Application;
