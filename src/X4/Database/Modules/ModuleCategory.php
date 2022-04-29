@@ -37,6 +37,6 @@ class ModuleCategory
             ||
             $this->getID() === ModuleCategories::CATEGORY_DOCKING_BAY
             ||
-            $this->getID() === ModuleCategories::CATEGORY_DOCKING_PIER
+            $this->getID() === ModuleCategories::CATEGORY_DOCKING_PIER;
     }
 }
