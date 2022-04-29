@@ -27,4 +27,9 @@ class RaceDef
     {
         return $this->label;
     }
+
+    public function isGeneric() : bool
+    {
+        return $this->getID() === RaceDefs::RACE_GENERIC;
+    }
 }
