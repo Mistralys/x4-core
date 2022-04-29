@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI;
 
+use Mistralys\X4\UI\Page\BasePage;
+
 abstract class BaseSubPage
 {
     protected BasePage $page;

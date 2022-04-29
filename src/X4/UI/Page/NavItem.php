@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\UI;
+namespace Mistralys\X4\UI\Page;
 
 class NavItem
 {

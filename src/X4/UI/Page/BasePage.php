@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\UI;
+namespace Mistralys\X4\UI\Page;
 
 use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
+use Mistralys\X4\UI\Page\NavItem;
+use Mistralys\X4\UI\UserInterface;
 use Mistralys\X4\X4Application;
 
 abstract class BasePage implements RenderableInterface
@@ -50,6 +52,8 @@ abstract class BasePage implements RenderableInterface
     }
 
     abstract public function getTitle() : string;
+
+    abstract public function getNavTitle() : string;
 
     protected function generateOutput() : void
     {

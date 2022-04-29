@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\UI;
+namespace Mistralys\X4\UI\Page;
+
+use Mistralys\X4\UI\BaseSubPage;
+use Mistralys\X4\UI\UserInterface;
 
 abstract class BasePageWithNav extends BasePage
 {
@@ -13,9 +16,9 @@ abstract class BasePageWithNav extends BasePage
      */
     protected array $subPages = array();
 
-    public function __construct()
+    public function __construct(UserInterface $ui)
     {
-        parent::__construct();
+        parent::__construct($ui);
 
         $this->initSubPages();
     }
