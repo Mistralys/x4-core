@@ -10,6 +10,18 @@ class ModuleCategories
 {
     public const ERROR_UNKNOWN_CATEGORY_ID = 106401;
 
+    public const CATEGORY_PRODUCTION = 'prod';
+    public const CATEGORY_HABITATS = 'hab';
+    public const CATEGORY_STRUCTURAL_ELEMENTS = 'struct';
+    public const CATEGORY_STORAGE = 'storage';
+    public const CATEGORY_DEFENCE = 'defence';
+    public const CATEGORY_WELFARE = 'welfare';
+    public const CATEGORY_PROCESSING = 'proc';
+    public const CATEGORY_BUILD_MODULE = 'buildmodule';
+    public const CATEGORY_DOCKING_BAY = 'dockingbay';
+    public const CATEGORY_DOCKING_PIER = 'pier';
+    public const CATEGORY_DOCKING_AREA = 'dockarea';
+
     private static ?ModuleCategories $instance = null;
 
     /**
@@ -20,17 +32,17 @@ class ModuleCategories
     private function __construct()
     {
         $this
-            ->add('dockarea', t('Docking modules'))
-            ->add('pier', t('Docking modules'))
-            ->add('dockingbay', t('Docking modules'))
-            ->add('prod', t('Production modules'))
-            ->add('hab', t('Habitats'))
-            ->add('struct', t('Structural elements'))
-            ->add('storage', t('Storage modules'))
-            ->add('defence', t('Defence'))
-            ->add('welfare', t('Welfare'))
-            ->add('proc', t('Processing'))
-            ->add('buildmodule', t('Build module'));
+            ->add(self::CATEGORY_DOCKING_AREA, t('Docking modules'))
+            ->add(self::CATEGORY_DOCKING_PIER, t('Docking modules'))
+            ->add(self::CATEGORY_DOCKING_BAY, t('Docking modules'))
+            ->add(self::CATEGORY_PRODUCTION, t('Production modules'))
+            ->add(self::CATEGORY_HABITATS, t('Habitats'))
+            ->add(self::CATEGORY_STRUCTURAL_ELEMENTS, t('Structural elements'))
+            ->add(self::CATEGORY_STORAGE, t('Storage modules'))
+            ->add(self::CATEGORY_DEFENCE, t('Defence'))
+            ->add(self::CATEGORY_WELFARE, t('Welfare'))
+            ->add(self::CATEGORY_PROCESSING, t('Processing'))
+            ->add(self::CATEGORY_BUILD_MODULE, t('Build module'));
     }
 
     public static function getInstance() : ModuleCategories
