@@ -11,6 +11,7 @@ namespace Mistralys\X4\UserInterface\DataGrid\Column;
 
 use AppUtils\ConvertHelper;
 use DateTime;
+use Mistralys\X4\UserInterface\DataGrid\GridColumn;
 
 /**
  * Handles the value formatting configuration of
@@ -26,7 +27,7 @@ class FormatHandler extends BaseHandler
      */
     private $formatCallback;
 
-    public function boolean(bool $yesNo=false, bool $uppercase=false) : self
+    public function boolean(bool $yesNo=false, bool $uppercase=false) : GridColumn
     {
         return $this->callback(static function ($value) use($yesNo, $uppercase) : string
         {
@@ -44,9 +45,9 @@ class FormatHandler extends BaseHandler
      * Converts the date using the specified date format.
      *
      * @param string $format
-     * @return $this
+     * @return GridColumn
      */
-    public function dateFormat(string $format) : self
+    public function dateFormat(string $format) : GridColumn
     {
         return $this->callback(static function($value) use($format) : string
         {
@@ -65,9 +66,9 @@ class FormatHandler extends BaseHandler
      *
      * @param bool $includeTime
      * @param bool $shortMonth
-     * @return $this
+     * @return GridColumn
      */
-    public function dateAuto(bool $includeTime=false, bool $shortMonth=false) : self
+    public function dateAuto(bool $includeTime=false, bool $shortMonth=false) : GridColumn
     {
         return $this->callback(static function($value) use($includeTime, $shortMonth) : string
         {
@@ -87,12 +88,12 @@ class FormatHandler extends BaseHandler
      * NOTE: The resulting value is cast to string.
      *
      * @param callable $callback
-     * @return $this
+     * @return GridColumn
      */
-    public function callback(callable $callback) : self
+    public function callback(callable $callback) : GridColumn
     {
         $this->formatCallback = $callback;
-        return $this;
+        return $this->getColumn();
     }
 
     /**
