@@ -8,6 +8,13 @@ class RaceDefs
 {
     public const ERROR_UNKNOWN_RACE_ID = 106301;
 
+    public const RACE_ARGON = 'arg';
+    public const RACE_PARANID = 'par';
+    public const RACE_TELADI = 'tel';
+    public const RACE_ANTIGONE = 'ant';
+    public const RACE_GENERIC = 'gen';
+    public const RACE_XENON = 'xen';
+
     private static ?RaceDefs $instance = null;
 
     /**
@@ -18,12 +25,12 @@ class RaceDefs
     private function __construct()
     {
         $this
-            ->add('arg', 'Argon')
-            ->add('par', 'Paranid')
-            ->add('tel', 'Teladi')
-            ->add('ant', 'Antigone')
-            ->add('gen', 'Generic')
-            ->add('xen', 'Xenon');
+            ->add(self::RACE_ARGON, 'Argon')
+            ->add(self::RACE_PARANID, 'Paranid')
+            ->add(self::RACE_TELADI, 'Teladi')
+            ->add(self::RACE_ANTIGONE, 'Antigone')
+            ->add(self::RACE_GENERIC, 'Generic')
+            ->add(self::RACE_XENON, 'Xenon');
 
         uasort(self::$defs, static function(RaceDef $a, RaceDef $b) {
             return strnatcasecmp($a->getLabel(), $b->getLabel());
