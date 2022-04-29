@@ -24,4 +24,19 @@ class ModuleCategory
     {
         return $this->id;
     }
+
+    public function isProduction() : bool
+    {
+        return $this->getID() === ModuleCategories::CATEGORY_PRODUCTION;
+    }
+
+    public function isDockingModule() : bool
+    {
+        return
+            $this->getID() === ModuleCategories::CATEGORY_DOCKING_AREA
+            ||
+            $this->getID() === ModuleCategories::CATEGORY_DOCKING_BAY
+            ||
+            $this->getID() === ModuleCategories::CATEGORY_DOCKING_PIER
+    }
 }
