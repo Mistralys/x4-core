@@ -1,0 +1,15 @@
+#main-content{
+    margin-top: 6rem;
+}
+
+.page-title{
+    font-size: 2rem;
+}
+
+FOOTER{
+    margin-top: 2rem;
+    border-top: solid 1px;
+    border-top-color: var(--bs-secondary);
+    padding-top: 1rem;
+    font-size: 0.7rem;
+}
