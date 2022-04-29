@@ -12,6 +12,7 @@ use AppUtils\BaseException;
 
 /**
  * @package X4Core
+ * @subpackage Exceptions
  */
 class X4Exception extends BaseException
 {
