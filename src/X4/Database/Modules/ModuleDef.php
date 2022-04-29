@@ -82,4 +82,9 @@ class ModuleDef
             self::ERROR_COULD_NOT_DETECT_RACE
         );
     }
+
+    public function isProduction() : bool
+    {
+        return $this->getCategory()->isProduction();
+    }
 }
