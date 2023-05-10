@@ -6,6 +6,7 @@ namespace Mistralys\X4\UI\Page;
 
 use Mistralys\X4\UI\BaseSubPage;
 use Mistralys\X4\UI\UserInterface;
+use Mistralys\X4\X4Exception;
 
 abstract class BasePageWithNav extends BasePage
 {
