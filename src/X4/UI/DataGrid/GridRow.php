@@ -4,11 +4,15 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UserInterface\DataGrid;
 
+use AppUtils\ConvertHelper;
 use AppUtils\Interface_Classable;
+use AppUtils\Interface_Stringable;
 use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Traits\RenderableBufferedTrait;
 use AppUtils\Traits_Classable;
+use DateTime;
 use Mistralys\X4\UI\DataGrid\GridCell;
+use Mistralys\X4\UI\Icon;
 
 class GridRow implements Interface_Classable, RenderableInterface
 {
@@ -60,10 +64,54 @@ class GridRow implements Interface_Classable, RenderableInterface
         return $this->object;
     }
 
-    public function setValue(GridColumn $column, string $value) : self
+    /**
+     * @param GridColumn $column
+     * @param string|number|Interface_Stringable|DateTime|bool|NULL $value
+     * @return $this
+     */
+    public function setValue(GridColumn $column, $value) : self
     {
-        $this->data[$column->getKeyName()] = $value;
+        if($value instanceof DateTime) {
+            return $this->setDate($column, $value);
+        }
+
+        if(is_bool($value)) {
+            return $this->setBool($column, $value);
+        }
+
+        $this->data[$column->getKeyName()] = (string)$value;
         return $this;
+    }
+
+    /**
+     * @param GridColumn $column
+     * @param bool|string|int $value
+     * @return $this
+     */
+    public function setBool(GridColumn $column, $value, ?Icon $trueIcon=null, ?Icon $falseIcon=null) : self
+    {
+        if($trueIcon === null) {
+            $trueIcon = Icon::yes()->colorSuccess();
+        }
+
+        if($falseIcon === null) {
+            $falseIcon = Icon::no()->colorMuted();
+        }
+
+        $converted = $falseIcon;
+        if(ConvertHelper::string2bool($value) === true) {
+            $converted = $trueIcon;
+        }
+
+        return $this->setValue($column, $converted);
+    }
+
+    public function setDate(GridColumn $column, DateTime $date, bool $includeTime=true, bool $shortMonth=false) : self
+    {
+        return $this->setValue(
+            $column,
+            ConvertHelper::date2listLabel($date, $includeTime, $shortMonth)
+        );
     }
 
     public function getCell(GridColumn $column) : GridCell
