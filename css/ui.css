@@ -24,3 +24,9 @@ TD.align-center,
 TH.align-center{
     text-align: center;
 }
+
+.btn.btn-xs{
+    --bs-btn-padding-y: .15rem;
+    --bs-btn-padding-x: .3rem;
+    --bs-btn-font-size: .55rem;
+}
