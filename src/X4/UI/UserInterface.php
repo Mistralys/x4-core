@@ -316,6 +316,13 @@ class UserInterface implements RenderableInterface
                     <?php
                 }
                 ?>
+                <script>
+                    $( document ).ready(function()
+                    {
+                        // Initialize all tooltips
+                        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+                    });
+                </script>
             </head>
             <body>
                 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
