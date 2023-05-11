@@ -32,9 +32,9 @@ abstract class BasePageWithNav extends BasePage
 
         foreach($this->subPages as $subPage)
         {
-            $result[] = array(
-                'label' => $subPage->getTitle(),
-                'url' => $subPage->getURL()
+            $result[] = new NavItem(
+                $subPage->getTitle(),
+                $subPage->getURL()
             );
         }
 
