@@ -13,7 +13,7 @@ use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
 use Mistralys\X4\UI\Page\BasePage;
-use Mistralys\X4\UserInterface\DataGrid\DataGrid;
+use Mistralys\X4\UI\Page\BasePageWithNav;use Mistralys\X4\UserInterface\DataGrid\DataGrid;
 use Mistralys\X4\UserInterface\UIException;
 use Mistralys\X4\X4Application;
 use function AppLocalize\pt;
@@ -43,6 +43,7 @@ class UserInterface implements RenderableInterface
     private string $vendorURL;
     private string $unitTestingURL;
     private string $theme = self::THEME_SUPERHERO;
+    private ?BaseSubPage $activeSubPage = null;
 
     /**
      * @var array<string,string>
@@ -80,6 +81,10 @@ class UserInterface implements RenderableInterface
         $this->application->registerPages($this);
 
         $this->activePage = $this->createPage($this->getActivePageID());
+
+        if($this->activePage instanceof BasePageWithNav) {
+            $this->activeSubPage = $this->activePage->getSubPage();
+        }
     }
 
     public function getTitle() : string
@@ -341,9 +346,68 @@ class UserInterface implements RenderableInterface
                 </div>
                 <div class="container" id="main-content">
                     <div class="page-header">
-                        <h1 class="page-title"><?php echo $this->activePage->getTitle() ?></h1>
+                        <h1 class="page-title">
+                            <?php echo $this->activePage->getTitle() ?>
+                            <?php
+                                $subtitle = $this->activePage->getSubtitle();
+                                if(!empty($subtitle)) {
+                                    ?>
+                                    <div class="page-subtitle text-secondary"><?php echo $subtitle ?></div>
+                                    <?php
+                                }
+                            ?>
+                        </h1>
+                        <?php
+                            $abstract = $this->activePage->getAbstract();
+                            if(!empty($abstract)) {
+                                ?>
+                                <h2 class="page-abstract"><?php echo $abstract ?></h2>
+                                <?php
+                            }
+                        ?>
                     </div>
                     <div class="content-container">
+                        <?php
+                            if(isset($this->activeSubPage))
+                            {
+                                $title = $this->activeSubPage->getTitle();
+                                $subtitle = $this->activeSubPage->getSubtitle();
+                                $abstract = $this->activeSubPage->getAbstract();
+
+                                if(!empty($title) || !empty($subtitle) || !empty($abstract))
+                                {
+                                ?>
+                                <div class="content-header">
+                                    <?php
+                                    if(!empty($title))
+                                    {
+                                        ?>
+                                        <h3 class="content-title">
+                                            <?php echo $title ?>
+                                            <?php
+                                            if(!empty($subtitle))
+                                            {
+                                                ?>
+                                                <div class="content-subtitle text-secondary"><?php echo $subtitle ?></div>
+                                                <?php
+                                            }
+                                            ?>
+                                        </h3>
+                                        <?php
+                                    }
+
+                                    if(!empty($abstract))
+                                    {
+                                        ?>
+                                        <h4 class="content-abstract"><?php echo $abstract ?></h4>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                                }
+                            }
+                         ?>
                         <?php echo $content; ?>
                     </div>
                     <footer>
