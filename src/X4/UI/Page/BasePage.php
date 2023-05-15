@@ -52,6 +52,8 @@ abstract class BasePage implements RenderableInterface
     }
 
     abstract public function getTitle() : string;
+    abstract public function getSubtitle() : string;
+    abstract public function getAbstract() : string;
 
     abstract public function getNavTitle() : string;
 
