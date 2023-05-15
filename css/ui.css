@@ -4,6 +4,24 @@
 
 .page-title{
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-title{
+    font-size: calc(1.0rem + .6vw);
+}
+
+.page-subtitle{
+    font-size: 1.2rem;
+}
+
+.page-abstract,
+.content-abstract{
+    font-size: 0.875rem;
+}
+
+.content-header{
+    margin-bottom: 1.6rem;
 }
 
 FOOTER{
