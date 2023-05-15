@@ -47,4 +47,6 @@ abstract class BaseSubPage
     abstract public function renderContent() : void;
 
     abstract public function getTitle() : string;
+    abstract public function getSubtitle() : string;
+    abstract public function getAbstract() : string;
 }
