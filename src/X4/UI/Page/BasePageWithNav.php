@@ -47,7 +47,7 @@ abstract class BasePageWithNav extends BasePage
      * @return BaseSubPage
      * @throws X4Exception
      */
-    protected function getSubPage() : BaseSubPage
+    public function getSubPage() : BaseSubPage
     {
         $view = $this->request->getParam('view');
 
