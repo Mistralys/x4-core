@@ -14,6 +14,12 @@ class RaceDefs
     public const RACE_ANTIGONE = 'ant';
     public const RACE_GENERIC = 'gen';
     public const RACE_XENON = 'xen';
+    public const RACE_BORON = 'bor';
+    public const RACE_PIRATE = 'pir';
+    public const RACE_SPLIT = 'spl';
+    public const RACE_TERRAN = 'ter';
+    public const RACE_YAKI = 'yak';
+    public const RACE_ATF = 'atf';
 
     private static ?RaceDefs $instance = null;
 
@@ -30,7 +36,13 @@ class RaceDefs
             ->add(self::RACE_TELADI, 'Teladi')
             ->add(self::RACE_ANTIGONE, 'Antigone')
             ->add(self::RACE_GENERIC, 'Generic')
-            ->add(self::RACE_XENON, 'Xenon');
+            ->add(self::RACE_XENON, 'Xenon')
+            ->add(self::RACE_BORON, 'Boron')
+            ->add(self::RACE_PIRATE, 'Pirates')
+            ->add(self::RACE_TERRAN, 'Terran')
+            ->add(self::RACE_SPLIT, 'Split')
+            ->add(self::RACE_YAKI, 'Yaki')
+            ->add(self::RACE_ATF, 'ATF');
 
         uasort(self::$defs, static function(RaceDef $a, RaceDef $b) {
             return strnatcasecmp($a->getLabel(), $b->getLabel());
