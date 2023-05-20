@@ -37,6 +37,8 @@ class DataGrid implements RenderableInterface, Interface_Classable
      * @var GridRow[]
      */
     private array $rows = array();
+    private bool $optionStriped = false;
+    private bool $optionBordered = true;
 
     public function addColumn(string $keyName, string $label) : GridColumn
     {
@@ -119,13 +121,35 @@ class DataGrid implements RenderableInterface, Interface_Classable
         return $this->rows;
     }
 
+    public function optionStriped(bool $enable) : self
+    {
+        $this->optionStriped = $enable;
+        return $this;
+    }
+
+    public function optionBordered(bool $enable) : self
+    {
+        $this->optionBordered = $enable;
+        return $this;
+    }
+
     // region: Rendering
 
     protected function generateOutput() : void
     {
+        $classes = $this->getClasses();
+
+        if($this->optionStriped) {
+            $classes[] = 'table-striped';
+        }
+
+        if($this->optionBordered) {
+            $classes[] = 'table-bordered';
+        }
+
         ?>
         <div class="table-responsive">
-            <table class="table table-striped table-sm <?php echo $this->classesToString() ?>">
+            <table class="table table-sm <?php echo implode(' ', $classes) ?>">
                 <?php
                 $this->generateHeader();
                 $this->generateRows();
