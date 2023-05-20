@@ -144,6 +144,9 @@ class GridColumn implements AttributableInterface, ClassableAttributeInterface
 
     public function renderCell(GridCell $cell) : string
     {
+        // Do this first to allow the cell to init its attributes
+        $content = $cell->render();
+
         $attributes = AttributeCollection::create(array_merge(
             $this->getAttributes()->getRawAttributes(),
             $cell->getAttributes()->getRawAttributes()
@@ -156,7 +159,7 @@ class GridColumn implements AttributableInterface, ClassableAttributeInterface
 
         ?>
         <td <?php echo $attributes->render() ?>>
-            <?php $cell->display(); ?>
+            <?php echo $content ?>
         </td>
         <?php
 
