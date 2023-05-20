@@ -13,6 +13,8 @@ use AppUtils\Interface_Classable;
 use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Traits\RenderableBufferedTrait;
 use AppUtils\Traits_Classable;
+use Mistralys\X4\UI\DataGrid\Row\MergedRow;
+use Mistralys\X4\UI\DataGrid\Row\RegularRow;
 
 /**
  * Utility class used to generate the HTML code for
@@ -51,9 +53,19 @@ class DataGrid implements RenderableInterface, Interface_Classable
         return $this;
     }
 
-    public function createRow() : GridRow
+    public function createRow() : RegularRow
     {
-        return new GridRow($this);
+        return new RegularRow($this);
+    }
+
+    public function countColumns() : int
+    {
+        return count($this->columns);
+    }
+
+    public function createMergedRow() : MergedRow
+    {
+        return new MergedRow($this);
     }
 
     /**
@@ -153,11 +165,7 @@ class DataGrid implements RenderableInterface, Interface_Classable
         $entries = $this->getRows();
         foreach($entries as $entry)
         {
-            ?>
-            <tr <?php echo $entry->classesToAttribute() ?>>
-                <?php $entry->display() ?>
-            </tr>
-            <?php
+            $entry->display();
         }
         ?>
         </tbody>

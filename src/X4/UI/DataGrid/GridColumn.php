@@ -9,8 +9,13 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UserInterface\DataGrid;
 
-use AppUtils\Interface_Classable;
-use AppUtils\Traits_Classable;
+use AppUtils\AttributeCollection;
+use AppUtils\HTMLTag;
+use AppUtils\Interfaces\AttributableInterface;
+use AppUtils\Interfaces\ClassableAttributeInterface;
+use AppUtils\OutputBuffering;
+use AppUtils\Traits\AttributableTrait;
+use AppUtils\Traits\ClassableAttributeTrait;
 use Mistralys\X4\UI\DataGrid\GridCell;
 use Mistralys\X4\UserInterface\DataGrid\Column\DecorationHandler;
 use Mistralys\X4\UserInterface\DataGrid\Column\FormatHandler;
@@ -24,9 +29,10 @@ use Mistralys\X4\UserInterface\DataGrid\Column\ObjectHandler;
  * @package X4Core
  * @subpackage UserInterface
  */
-class GridColumn implements Interface_Classable
+class GridColumn implements AttributableInterface, ClassableAttributeInterface
 {
-    use Traits_Classable;
+    use AttributableTrait;
+    use ClassableAttributeTrait;
 
     public const ALIGN_RIGHT = 'align-right';
     public const ALIGN_CENTER = 'align-center';
@@ -42,6 +48,7 @@ class GridColumn implements Interface_Classable
      * @var callable|NULL
      */
     private $linkCallback;
+    private AttributeCollection $attributes;
 
     public function __construct(string $keyName, string $label)
     {
@@ -50,6 +57,12 @@ class GridColumn implements Interface_Classable
         $this->objectHandler = new ObjectHandler($this);
         $this->formatHandler = new FormatHandler($this);
         $this->decorationHandler = new DecorationHandler($this);
+        $this->attributes = AttributeCollection::create();
+    }
+
+    public function getAttributes() : AttributeCollection
+    {
+        return $this->attributes;
     }
 
     public function getKeyName() : string
@@ -127,5 +140,31 @@ class GridColumn implements Interface_Classable
     public function applyDecorations(GridCell $cell, string $value) : string
     {
         return $this->decorationHandler->decorate($cell, $value);
+    }
+
+    public function renderCell(GridCell $cell) : string
+    {
+        $attributes = AttributeCollection::create(array_merge(
+            $this->getAttributes()->getRawAttributes(),
+            $cell->getAttributes()->getRawAttributes()
+        ));
+
+        $attributes->addClasses($this->getClasses());
+        $attributes->addClasses($cell->getClasses());
+
+        OutputBuffering::start();
+
+        ?>
+        <td <?php echo $attributes->render() ?>>
+            <?php $cell->display(); ?>
+        </td>
+        <?php
+
+        return OutputBuffering::get();
+    }
+
+    public function displayCell(GridCell $cell) : void
+    {
+        echo $this->renderCell($cell);
     }
 }
