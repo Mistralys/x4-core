@@ -4,15 +4,18 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI;
 
+use AppUtils\Request;
 use Mistralys\X4\UI\Page\BasePage;
 
 abstract class BaseSubPage
 {
     protected BasePage $page;
+    protected Request $request;
 
     public function __construct(BasePage $page)
     {
         $this->page = $page;
+        $this->request = $page->getRequest();
 
         $this->init();
     }
