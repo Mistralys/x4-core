@@ -18,9 +18,19 @@ class TestPageMain extends BasePage
         return t('Main test page');
     }
 
+    public function getSubtitle() : string
+    {
+        return t('Main sub-title');
+    }
+
     public function getNavTitle() : string
     {
         return t('Main');
+    }
+
+    public function getAbstract() : string
+    {
+        return t('Page abstract text');
     }
 
     protected function preRender() : void
