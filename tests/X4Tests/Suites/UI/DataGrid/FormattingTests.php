@@ -15,12 +15,12 @@ class FormattingTests extends X4TestCase
         $col = $this->ui
             ->createDataGrid()
             ->addColumn('default', 'Default')
-            ->chooseFormat()->boolean()->done();
+            ->chooseFormat()->boolean();
 
-        $this->assertSame('true', $col->formatValue(true));
-        $this->assertSame('false', $col->formatValue(false));
-        $this->assertSame('true', $col->formatValue('yes'));
-        $this->assertSame('false', $col->formatValue('no'));
+        $this->assertSame('true', $col->applyFormattings(true));
+        $this->assertSame('false', $col->applyFormattings(false));
+        $this->assertSame('true', $col->applyFormattings('yes'));
+        $this->assertSame('false', $col->applyFormattings('no'));
     }
 
     public function test_dateFormat() : void
@@ -28,9 +28,9 @@ class FormattingTests extends X4TestCase
         $col = $this->ui
             ->createDataGrid()
             ->addColumn('default', 'Default')
-            ->chooseFormat()->dateFormat('Y-m-d')->done();
+            ->chooseFormat()->dateFormat('Y-m-d');
 
-        $this->assertSame('2020-05-03', $col->formatValue(new DateTime('2020-05-03')));
+        $this->assertSame('2020-05-03', $col->applyFormattings(new DateTime('2020-05-03')));
     }
 
     public function test_dateAuto() : void
@@ -38,10 +38,10 @@ class FormattingTests extends X4TestCase
         $col = $this->ui
             ->createDataGrid()
             ->addColumn('default', 'Default')
-            ->chooseFormat()->dateAuto(true, true)->done();
+            ->chooseFormat()->dateAuto(true, true);
 
         $date = new DateTime('2020-05-03 12:12:30');
 
-        $this->assertSame(ConvertHelper::date2listLabel($date, true, true), $col->formatValue($date));
+        $this->assertSame(ConvertHelper::date2listLabel($date, true, true), $col->applyFormattings($date));
     }
 }

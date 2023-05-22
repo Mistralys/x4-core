@@ -16,7 +16,7 @@ final class ObjectValueTests extends X4TestCase
         $col = $this->ui
             ->createDataGrid()
             ->addColumn('default', 'Default')
-            ->useObjectValues()->setMethodName('getLabel')->done();
+            ->useObjectValues()->fetchByMethod(array(TestObject::class, 'getLabel'));
 
         $this->assertSame($object->getLabel(), $col->getValueFromObject($object));
     }
@@ -28,7 +28,7 @@ final class ObjectValueTests extends X4TestCase
         $col = $this->ui
             ->createDataGrid()
             ->addColumn('default', 'Default')
-            ->useObjectValues()->fetchByProperty('publicProperty')->done();
+            ->useObjectValues()->fetchByProperty('publicProperty');
 
         $this->assertSame($object->publicProperty, $col->getValueFromObject($object));
     }
@@ -42,7 +42,7 @@ final class ObjectValueTests extends X4TestCase
             ->addColumn('default', 'Default')
             ->useObjectValues()->fetchByCallback(static function(TestObject $object) : int {
                 return $object->getTheAnswer();
-            })->done();
+            });
 
         $this->assertSame($object->getTheAnswer(), $col->getValueFromObject($object));
     }
