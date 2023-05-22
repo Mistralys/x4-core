@@ -30,6 +30,11 @@ abstract class BasePage implements RenderableInterface
         $this->init();
     }
 
+    public function getRequest() : Request
+    {
+        return $this->request;
+    }
+
     protected function init() : void
     {
 
