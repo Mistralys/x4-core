@@ -6,6 +6,7 @@ namespace Mistralys\X4\UI;
 
 use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Traits\RenderableBufferedTrait;
+use PHPStan\Type\Php\PregFilterFunctionReturnTypeExtension;
 
 class Icon implements RenderableInterface
 {
@@ -137,6 +138,11 @@ class Icon implements RenderableInterface
     }
 
     public static function no() : Icon
+    {
+        return self::typeSolid('times-circle');
+    }
+
+    public static function delete() : Icon
     {
         return self::typeSolid('times-circle');
     }
