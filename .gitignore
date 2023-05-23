@@ -6,3 +6,4 @@ composer.phar
 # composer.lock
 .phpunit.result.cache
 tests/X4Tests/ExampleUI/config.php
+tests/tests-config.php
