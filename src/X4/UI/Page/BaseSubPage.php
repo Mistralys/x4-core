@@ -27,9 +27,20 @@ abstract class BaseSubPage
 
     public function getURL() : string
     {
-        $params['view'] = $this->getURLName();
+        $params[BasePage::REQUEST_PARAM_VIEW] = $this->getURLName();
 
         return $this->page->getURL($params);
+    }
+
+    public function generateOutput() : void
+    {
+        $this->preRender();
+        $this->renderContent();
+    }
+
+    protected function preRender() : void
+    {
+
     }
 
     abstract protected function getURLParams() : array;

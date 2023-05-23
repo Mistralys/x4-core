@@ -32,6 +32,10 @@ abstract class BasePageWithNav extends BasePage
 
         foreach($this->subPages as $subPage)
         {
+            if(!$subPage->isInSubnav()) {
+                continue;
+            }
+
             $result[] = new NavItem(
                 $subPage->getTitle(),
                 $subPage->getURL()
@@ -87,6 +91,6 @@ abstract class BasePageWithNav extends BasePage
 
     protected function _render(): void
     {
-        $this->getSubPage()->renderContent();
+        $this->getSubPage()->generateOutput();
     }
 }
