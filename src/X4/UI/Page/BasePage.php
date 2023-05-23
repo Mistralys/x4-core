@@ -16,6 +16,7 @@ abstract class BasePage implements RenderableInterface
     use RenderableBufferedTrait;
 
     public const REQUEST_PARAM_PAGE = 'page';
+    public const REQUEST_PARAM_VIEW = 'view';
 
     protected Request $request;
     protected UserInterface $ui;
@@ -78,7 +79,7 @@ abstract class BasePage implements RenderableInterface
      */
     abstract public function getNavItems() : array;
 
-    protected function redirect(string $url) : void
+    public function redirect(string $url) : void
     {
         header('Location:'.$url);
         exit;
