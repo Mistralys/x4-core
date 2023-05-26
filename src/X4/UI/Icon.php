@@ -157,5 +157,40 @@ class Icon implements RenderableInterface
         return self::typeRegular('hdd');
     }
 
+    public static function back() : Icon
+    {
+        return self::typeSolid('chevron-left');
+    }
+
+    public static function analyze() : Icon
+    {
+        return self::typeSolid('satellite-dish');
+    }
+
+    public static function previous() : Icon
+    {
+        return self::typeSolid('arrow-circle-left');
+    }
+
+    public static function next() : Icon
+    {
+        return self::typeSolid('arrow-circle-right');
+    }
+
+    public static function first() : Icon
+    {
+        return self::typeSolid('step-backward');
+    }
+
+    public static function last() : Icon
+    {
+        return self::typeSolid('step-forward');
+    }
+
+    public static function allItems() : Icon
+    {
+        return self::typeSolid('compress');
+    }
+
     // endregion
 }
