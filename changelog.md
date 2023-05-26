@@ -1,4 +1,4 @@
-## v0.0.2 - Minor tweaks
+## v0.0.2 - Blueprint tweaks
 - UI: Fixed the subpage's `getURL()` not using `getURLParams()`.
 - UI: Added new icon variants.
 - Blueprints: Added `BlupeprintSelection::getCategoryIDs()`.
