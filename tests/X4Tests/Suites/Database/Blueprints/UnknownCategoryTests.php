@@ -19,7 +19,14 @@ final class UnknownCategoryTests extends X4TestCase
 
         foreach($blueprints as $blueprint)
         {
-            $this->assertNotSame(BlueprintDefs::CATEGORY_UNKNOWN, $blueprint->getCategory()->getID());
+            $this->assertNotSame(
+                BlueprintDefs::CATEGORY_UNKNOWN,
+                $blueprint->getCategory()->getID(),
+                sprintf(
+                    'The blueprint [%s] has been filed in the unknown category.',
+                    $blueprint->getID()
+                )
+            );
         }
     }
 }
