@@ -195,6 +195,13 @@ class BlueprintSelection
         return isset($this->filteredCategories[$categoryID]);
     }
 
+    public function getCategoryIDs() : array
+    {
+        $this->filterBlueprints();
+
+        return array_keys($this->filteredCategories);
+    }
+
     /**
      * Allows selecting blueprints by their type (only ships for example).
      *
