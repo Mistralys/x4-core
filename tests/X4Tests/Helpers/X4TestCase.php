@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace X4Tests\Helpers;
 
+use Mistralys\X4\Database\Blueprints\BlueprintDefs;
 use Mistralys\X4\UI\UserInterface;
 use PHPUnit\Framework\TestCase;
 
@@ -24,6 +25,9 @@ class X4TestCase extends TestCase
 
     protected function setUp() : void
     {
+        // Reset the collection to ensure it uses the vanilla list of blueprints every time.
+        BlueprintDefs::reset();
+
         if(!isset($this->application))
         {
             $this->application = self::createTestApp();
