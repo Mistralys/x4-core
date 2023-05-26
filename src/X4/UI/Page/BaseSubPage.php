@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI;
 
+use AppUtils\Interface_Stringable;
 use AppUtils\Request;
 use Mistralys\X4\UI\Page\BasePage;
 
@@ -25,8 +26,14 @@ abstract class BaseSubPage
 
     }
 
-    public function getURL() : string
+    /**
+     * @param array<string,string|Interface_Stringable|NULL|bool|number> $params
+     * @return string
+     */
+    public function getURL(array $params=array()) : string
     {
+        $params = array_merge($this->getURLParams(), $params);
+
         $params[BasePage::REQUEST_PARAM_VIEW] = $this->getURLName();
 
         return $this->page->getURL($params);
