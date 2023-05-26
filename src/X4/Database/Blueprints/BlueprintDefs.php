@@ -19,6 +19,7 @@ use Mistralys\X4\Database\Blueprints\Categories\ThrusterCategory;
 use Mistralys\X4\Database\Blueprints\Categories\TurretCategory;
 use Mistralys\X4\Database\Blueprints\Categories\UnknownCategory;
 use Mistralys\X4\Database\Blueprints\Categories\WeaponCategory;
+use Mistralys\X4\Database\Blueprints\Types\UnknownBlueprint;
 use Mistralys\X4\Database\Races\RaceDef;
 use Mistralys\X4\Database\Races\RaceDefs;
 use function AppUtils\array_remove_values;
@@ -42,6 +43,7 @@ class BlueprintDefs extends BlueprintCategory
     public const CATEGORY_UNKNOWN = 'unknown';
 
     public const ERROR_UNKNOWN_CATEGORY_ID = 136901;
+    public const ERROR_BLUEPRINT_ALREADY_REGISTERED = 136902;
 
     /**
      * @var array<string,class-string>
@@ -62,7 +64,8 @@ class BlueprintDefs extends BlueprintCategory
         'clothingmod' => SkinCategory::class,
         'countermeasure' => CountermeasureCategory::class,
         'missile' => MissileCategory::class,
-        'thruster' => ThrusterCategory::class
+        'thruster' => ThrusterCategory::class,
+        'resource' => DeployableCategory::class
     );
 
     /**
@@ -77,6 +80,11 @@ class BlueprintDefs extends BlueprintCategory
         {
             $this->createBlueprint($blueprintID);
         }
+    }
+
+    public static function reset() : void
+    {
+        self::$instance = null;
     }
 
     public function getID() : string
@@ -127,8 +135,40 @@ class BlueprintDefs extends BlueprintCategory
         return t('All blueprints');
     }
 
+    public function registerUnknownBlueprint(string $blueprintID) : UnknownBlueprint
+    {
+        if(isset($this->blueprints[$blueprintID])) {
+            throw new BlueprintException(
+                'Blueprint already registered.',
+                sprintf(
+                    'The blueprint [%s] cannot be registered as unknown, it already exists as [%s].',
+                    $blueprintID,
+                    get_class($this->blueprints[$blueprintID])
+                ),
+                self::ERROR_BLUEPRINT_ALREADY_REGISTERED
+            );
+        }
+
+        $parts = explode('_', $blueprintID);
+        $race = $this->detectRace($parts);
+
+        $blueprint = ClassHelper::requireObjectInstanceOf(
+            UnknownBlueprint::class,
+            $this->createCategory(UnknownCategory::class)
+                ->registerBlueprint($blueprintID, $race)
+        );
+
+        $this->blueprints[$blueprintID] = $blueprint;
+
+        return $blueprint;
+    }
+
     private function createBlueprint(string $blueprintID) : void
     {
+        if(isset($this->blueprints[$blueprintID])) {
+            return;
+        }
+
         $parts = explode('_', $blueprintID);
         $type = array_shift($parts);
         $race = $this->detectRace($parts);
