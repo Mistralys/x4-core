@@ -19,6 +19,7 @@ use Mistralys\X4\Database\Blueprints\Categories\ThrusterCategory;
 use Mistralys\X4\Database\Blueprints\Categories\TurretCategory;
 use Mistralys\X4\Database\Blueprints\Categories\UnknownCategory;
 use Mistralys\X4\Database\Blueprints\Categories\WeaponCategory;
+use Mistralys\X4\Database\Blueprints\Categories\WelfareCategory;
 use Mistralys\X4\Database\Blueprints\Types\UnknownBlueprint;
 use Mistralys\X4\Database\Races\RaceDef;
 use Mistralys\X4\Database\Races\RaceDefs;
@@ -30,6 +31,7 @@ class BlueprintDefs extends BlueprintCategory
     public const CATEGORY_MODULES = 'modules';
     public const CATEGORY_SHIELDS = 'shields';
     public const CATEGORY_WEAPONS = 'weapons';
+    public const CATEGORY_WELFARE = 'welfare';
     public const CATEGORY_TURRETS = 'turrets';
     public const CATEGORY_ENGINES = 'engines';
     public const CATEGORY_SHIPS = 'ships';
@@ -65,7 +67,8 @@ class BlueprintDefs extends BlueprintCategory
         'countermeasure' => CountermeasureCategory::class,
         'missile' => MissileCategory::class,
         'thruster' => ThrusterCategory::class,
-        'resource' => DeployableCategory::class
+        'resource' => DeployableCategory::class,
+        'welfare' => WelfareCategory::class
     );
 
     /**
