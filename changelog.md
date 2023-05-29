@@ -1,3 +1,7 @@
+## v0.0.3 - Blueprint update
+- Blueprints: Added the "Welfare" category.
+- Blueprints: Added the Boron Art Academy welfare module.
+
 ## v0.0.2 - Blueprint tweaks
 - UI: Fixed the subpage's `getURL()` not using `getURLParams()`.
 - UI: Added new icon variants.
