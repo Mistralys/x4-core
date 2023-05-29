@@ -1040,6 +1040,7 @@ class BlueprintEnum
         "weapon_ter_s_gatling_01_mk1",
         "weapon_ter_s_gatling_01_mk2",
         "weapon_ter_s_laser_01_mk1",
-        "weapon_ter_s_laser_01_mk2"
+        "weapon_ter_s_laser_01_mk2",
+        "welfare_bor_artacademy_01"
     );
 }
