@@ -1,3 +1,6 @@
+## v0.0.4 - Blueprint update
+- Blueprints: Added the Erlking and the Astrid.
+
 ## v0.0.3 - Blueprint update
 - Blueprints: Added the "Welfare" category.
 - Blueprints: Added the Boron Art Academy welfare module.
