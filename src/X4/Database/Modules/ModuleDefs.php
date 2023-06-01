@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Modules;
 
-use function AppUtils\t;
+use AppUtils\FileHelper\JSONFile;
 
 class ModuleDefs
 {
+    public const ERROR_UNKNOWN_MODULE_ID = 137601;
+
     private static ?ModuleDefs $instance = null;
 
     /**
@@ -17,10 +19,23 @@ class ModuleDefs
 
     private function __construct()
     {
-        $this
-            ->add('struct_arg_base_01_macro', t('Base Connection Structure %1$s', '01'))
-            ->add('struct_arg_base_02_macro', t('Base Connection Structure %1$s', '02'))
-            ->add('struct_arg_cross_01_macro', t('Cross Connection Structure %1$s', '01'));
+        $list = JSONFile::factory(__DIR__.'/../../../../data/modules-list.json')
+            ->parse();
+
+        $categories = ModuleCategories::getInstance();
+
+        foreach($list as $categoryID => $moduleIDs)
+        {
+            if(!$categories->idExists($categoryID)) {
+                continue;
+            }
+
+            $category = $categories->getByID($categoryID);
+
+            foreach($moduleIDs as $moduleID) {
+                $this->defs[$moduleID] = new ModuleDef($moduleID, '', $category);
+            }
+        }
 
         uasort($this->defs, static function(ModuleDef $a, ModuleDef $b) {
             return strnatcasecmp($a->getLabel(), $b->getLabel());
@@ -39,12 +54,6 @@ class ModuleDefs
         return $defs;
     }
 
-    private function add(string $moduleID, string $label) : self
-    {
-        $this->defs[$moduleID] = new ModuleDef($moduleID, $label);
-        return $this;
-    }
-
     /**
      * @return ModuleDef[]
      */
@@ -58,13 +67,42 @@ class ModuleDefs
         return isset($this->defs[$moduleID]);
     }
 
+    /**
+     * @param string $moduleID
+     * @return ModuleDef
+     * @throws ModuleException {@see self::ERROR_UNKNOWN_MODULE_ID}
+     */
     public function getByID(string $moduleID) : ModuleDef
     {
-        if(!isset($this->defs[$moduleID]))
+        if(isset($this->defs[$moduleID]))
         {
-            $this->defs[$moduleID] = new ModuleDef($moduleID, $moduleID);
+            return $this->defs[$moduleID];
         }
 
-        return $this->defs[$moduleID];
+        throw new ModuleException(
+            'Unknown module.',
+            sprintf(
+                'Tried to fetch module by ID [%s].',
+                $moduleID
+            ),
+            self::ERROR_UNKNOWN_MODULE_ID
+        );
+    }
+
+    public function findByMacro(string $macro) : ?ModuleDef
+    {
+        $parts = explode('_', $macro);
+        $last = array_pop($parts);
+
+        if($last !== 'macro') {
+            return null;
+        }
+
+        $id = implode('_', $parts);
+        if($this->idExists($id)) {
+            return $this->getByID($id);
+        }
+
+        return null;
     }
 }
