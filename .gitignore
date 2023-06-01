@@ -7,3 +7,4 @@ composer.phar
 .phpunit.result.cache
 tests/X4Tests/ExampleUI/config.php
 tests/tests-config.php
+dev-config.php
