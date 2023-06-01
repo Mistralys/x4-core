@@ -1,3 +1,7 @@
+## v0.0.5 - Modules update
+- Modules: Added a full list of station modules.
+- Modules: Added the `ModuleExtractor` to find modules in the XML data files.
+
 ## v0.0.4 - Blueprint update
 - Blueprints: Added the Erlking and the Astrid.
 
