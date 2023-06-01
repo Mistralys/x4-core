@@ -14,6 +14,7 @@ class ModuleCategories
     public const CATEGORY_HABITATS = 'hab';
     public const CATEGORY_STRUCTURAL_ELEMENTS = 'struct';
     public const CATEGORY_STORAGE = 'storage';
+    public const CATEGORY_VENTURE = 'venture';
     public const CATEGORY_DEFENCE = 'defence';
     public const CATEGORY_WELFARE = 'welfare';
     public const CATEGORY_PROCESSING = 'proc';
