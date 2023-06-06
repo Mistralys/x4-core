@@ -7,6 +7,7 @@ namespace Mistralys\X4\Database\Modules;
 use Mistralys\X4\Database\Races\RaceDef;
 use Mistralys\X4\Database\Races\RaceDefs;
 use Mistralys\X4\Database\Races\RaceException;
+use testsuites\FileHelperTests\ResolvePathTypeTest;
 
 class ModuleDef
 {
@@ -31,7 +32,12 @@ class ModuleDef
 
     public function getLabel() : string
     {
-        return $this->label;
+        if($this->label !== '')
+        {
+            return $this->label;
+        }
+
+        return $this->getID();
     }
 
     public function getCategory() : ModuleCategory
