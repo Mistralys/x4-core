@@ -1,3 +1,9 @@
+## v0.0.6 - Translations
+- Modules: `getLabel()` now returns the ID if no label exists.
+- Modules: Now using translated labels in the data file.
+- Translations: Added extraction of game translation labels.
+- Translations: Added translator for specific language codes.
+
 ## v0.0.5 - Modules update
 - Modules: Added a full list of station modules.
 - Modules: Added the `ModuleExtractor` to find modules in the XML data files.
