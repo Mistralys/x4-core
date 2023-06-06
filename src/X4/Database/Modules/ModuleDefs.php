@@ -32,8 +32,8 @@ class ModuleDefs
 
             $category = $categories->getByID($categoryID);
 
-            foreach($moduleIDs as $moduleID) {
-                $this->defs[$moduleID] = new ModuleDef($moduleID, '', $category);
+            foreach($moduleIDs as $moduleID => $label) {
+                $this->defs[$moduleID] = new ModuleDef($moduleID, $label, $category);
             }
         }
 
