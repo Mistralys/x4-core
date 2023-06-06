@@ -8,3 +8,4 @@ composer.phar
 tests/X4Tests/ExampleUI/config.php
 tests/tests-config.php
 dev-config.php
+data/lang-044-en_EN.json
