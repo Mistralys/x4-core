@@ -1,3 +1,9 @@
+## v0.0.7 - DateGrid update
+- DataGrids: Added collapsible rows.
+- UI: Added `addJSHead()` and `addJSOnload()`.
+- UI: Added `addInternalJS()` and `addExternalJS()`.
+- Icons: Added `save()`.
+
 ## v0.0.6 - Translations
 - Modules: `getLabel()` now returns the ID if no label exists.
 - Modules: Now using translated labels in the data file.
