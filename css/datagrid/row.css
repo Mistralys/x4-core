@@ -1,0 +1,7 @@
+TR.collapsed{
+    display:none !important;
+}
+
+TR.expanded{
+    display: table-row !important;
+}
