@@ -66,6 +66,16 @@ class UserInterface implements RenderableInterface
     private array $javaScripts = array();
 
     /**
+     * @var string[]
+     */
+    private array $jsHead = array();
+
+    /**
+     * @var string[]
+     */
+    private array $jsOnload = array();
+
+    /**
      * @param X4Application $application
      * @param string $webrootURL
      * @param string $vendorURL Optional: Custom URL to access the composer vendor folder.
@@ -85,6 +95,18 @@ class UserInterface implements RenderableInterface
         if($this->activePage instanceof BasePageWithNav) {
             $this->activeSubPage = $this->activePage->getSubPage();
         }
+    }
+
+    public function addJSHead(string $statement) : self
+    {
+        $this->jsHead[] = rtrim($statement, ';').';';
+        return $this;
+    }
+
+    public function addJSOnload(string $statement) : self
+    {
+        $this->jsOnload[] = rtrim($statement, ';').';';
+        return $this;
     }
 
     public function getTitle() : string
@@ -110,7 +132,7 @@ class UserInterface implements RenderableInterface
 
     public function createDataGrid() : DataGrid
     {
-        return new DataGrid();
+        return new DataGrid($this);
     }
 
     public function registerPage(string $urlName, string $className) : void
@@ -250,6 +272,20 @@ class UserInterface implements RenderableInterface
         return $this->addVendorInclude($packageName, $file, $this->styleSheets);
     }
 
+    public function addInternalJS(string $file) : self
+    {
+        return $this->addToCollection($this->javaScripts, sprintf(
+            '%s/js/%s',
+            $this->webrootURL,
+            $file
+        ));
+    }
+
+    public function addExternalJS(string $url) : self
+    {
+        return $this->addToCollection($this->javaScripts, $url);
+    }
+
     public function addVendorJS(string $packageName, string $file) : self
     {
         return $this->addVendorInclude($packageName, $file, $this->javaScripts);
@@ -267,7 +303,7 @@ class UserInterface implements RenderableInterface
 
     protected function addVendorInclude(string $packageName, string $file, &$collection) : self
     {
-        if($packageName === 'mistralys/x4-core' && !empty($this->unitTestingURL))
+        if($packageName === X4Application::PACKAGE_NAME && !empty($this->unitTestingURL))
         {
             return $this->addToCollection($collection, sprintf(
                 '%s/%s',
@@ -295,7 +331,7 @@ class UserInterface implements RenderableInterface
     {
         $this->addVendorStylesheet('thomaspark/bootswatch', 'dist/'.$this->theme.'/bootstrap.min.css');        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/fontawesome.css');
         $this->addVendorStylesheet('fortawesome/font-awesome', 'css/solid.css');
-        $this->addVendorStylesheet('mistralys/x4-core', 'css/ui.css');
+        $this->addVendorStylesheet(X4Application::PACKAGE_NAME, 'css/ui.css');
 
         $this->addVendorJS('components/jquery', 'jquery.slim.js');
         $this->addVendorJS('twbs/bootstrap', 'dist/js/bootstrap.js');
@@ -321,13 +357,6 @@ class UserInterface implements RenderableInterface
                     <?php
                 }
                 ?>
-                <script>
-                    $( document ).ready(function()
-                    {
-                        // Initialize all tooltips
-                        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-                    });
-                </script>
             </head>
             <body>
                 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -422,6 +451,17 @@ class UserInterface implements RenderableInterface
                     <?php
                 }
                 ?>
+                <script>
+                    <?php echo implode(PHP_EOL.str_repeat('    ', 5), $this->jsHead); ?>
+
+                    $(document).ready(function()
+                    {
+                        <?php echo implode(PHP_EOL.str_repeat('    ', 7), $this->jsOnload); ?>
+
+                        // Initialize all tooltips
+                        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+                    });
+                </script>
             </body>
         </html><?php
     }
