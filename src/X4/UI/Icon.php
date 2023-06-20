@@ -192,5 +192,10 @@ class Icon implements RenderableInterface
         return self::typeSolid('compress');
     }
 
+    public static function save() : Icon
+    {
+        return self::typeSolid('save');
+    }
+
     // endregion
 }
