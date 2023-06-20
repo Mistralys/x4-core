@@ -15,6 +15,7 @@ use AppUtils\Traits\RenderableBufferedTrait;
 use AppUtils\Traits_Classable;
 use Mistralys\X4\UI\DataGrid\Row\MergedRow;
 use Mistralys\X4\UI\DataGrid\Row\RegularRow;
+use Mistralys\X4\UI\UserInterface;
 
 /**
  * Utility class used to generate the HTML code for
@@ -39,6 +40,17 @@ class DataGrid implements RenderableInterface, Interface_Classable
     private array $rows = array();
     private bool $optionStriped = false;
     private bool $optionBordered = true;
+    private UserInterface $ui;
+
+    public function __construct(UserInterface $ui)
+    {
+        $this->ui = $ui;
+    }
+
+    public function getUI() : UserInterface
+    {
+        return $this->ui;
+    }
 
     public function addColumn(string $keyName, string $label) : GridColumn
     {
