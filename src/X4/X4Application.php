@@ -22,6 +22,7 @@ use Mistralys\X4\UserInterface\UIException;
  */
 abstract class X4Application
 {
+    public const PACKAGE_NAME = 'mistralys/x4-core';
     public const ERROR_UI_INSTANCE_NOT_CREATED = 106501;
 
     private ?UserInterface $ui = null;
