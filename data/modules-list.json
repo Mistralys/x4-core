@@ -1,344 +1,1582 @@
 {
-    "buildmodule": {
-        "buildmodule_arg_equip_l": "L Ship Maintenance Bay",
-        "buildmodule_arg_equip_xl": "XL Ship Maintenance Bay",
-        "buildmodule_arg_ships_l": "L Ship Fabrication Bay",
-        "buildmodule_arg_ships_m": "M Ship Fabrication Bay",
-        "buildmodule_arg_ships_s": "S Ship Fabrication Bay",
-        "buildmodule_arg_ships_xl": "XL Ship Fabrication Bay",
-        "buildmodule_bor_equip_l": "Boron L Ship Maintenance Bay",
-        "buildmodule_bor_equip_m_dockarea_01": "Boron S\/M Ship Maintenance Bay",
-        "buildmodule_bor_equip_xl": "Boron XL Ship Maintenance Bay",
-        "buildmodule_bor_ships_l": "Boron L Ship Fabrication Bay",
-        "buildmodule_bor_ships_m_dockarea_01": "Boron S\/M Ship Fabrication Bay",
-        "buildmodule_bor_ships_xl": "Boron XL Ship Fabrication Bay",
-        "buildmodule_gen_equip_m_dockarea_01": "S\/M Ship Maintenance Bay",
-        "buildmodule_gen_ships_m_dockarea_01": "S\/M Ship Fabrication Bay",
-        "buildmodule_ter_equip_l": "Terran L Ship Maintenance Bay",
-        "buildmodule_ter_equip_m_dockarea_01": "Terran S\/M Ship Maintenance Bay",
-        "buildmodule_ter_equip_xl": "Terran XL Ship Maintenance Bay",
-        "buildmodule_ter_ships_l": "Terran L Ship Fabrication Bay",
-        "buildmodule_ter_ships_m_dockarea_01": "Terran S\/M Ship Fabrication Bay",
-        "buildmodule_ter_ships_xl": "Terran XL Ship Fabrication Bay",
-        "buildmodule_xen_ships_xl": "XL Ship Assembly Matrix"
+    "buildmodule_arg_equip_l": {
+        "category": "buildmodule",
+        "macro": "buildmodule_gen_equip_l_macro",
+        "label": "L Ship Maintenance Bay"
     },
-    "struct": {
-        "struct_arg_base_01": "Argon Base Connection Structure 01",
-        "struct_arg_base_02": "Argon Base Connection Structure 02",
-        "struct_arg_base_03": "Argon Base Connection Structure 03",
-        "struct_arg_cross_01": "Argon Cross Connection Structure 01",
-        "struct_arg_vertical_01": "Argon Vertical Connection Structure 01",
-        "struct_arg_vertical_02": "Argon Vertical Connection Structure 02",
-        "struct_bor_base_01": "Boron Base Connection Structure 01",
-        "struct_bor_base_02": "Boron Base Connection Structure 02",
-        "struct_bor_base_03": "Boron Base Connection Structure 03",
-        "struct_bor_base_04": "Boron Base Connection Structure 04",
-        "struct_bor_base_05": "Boron Base Connection Structure 05",
-        "struct_bor_cross_01": "Boron Cross Connection Structure 01",
-        "struct_bor_cross_02": "Boron Cross Connection Structure 02",
-        "struct_bor_vertical_01": "Boron Vertical Connection Structure 01",
-        "struct_bor_vertical_02": "Boron Vertical Connection Structure 02",
-        "struct_gen_observationdeck_01": "Conservatory Observation Deck",
-        "struct_gen_observationdeck_02": "Pavilion Observation Deck",
-        "struct_gen_observationdeck_03": "Penthouse Observation Deck",
-        "struct_par_base_01": "Paranid Base Connection Structure 01",
-        "struct_par_base_02": "Paranid Base Connection Structure 02",
-        "struct_par_base_03": "Paranid Base Connection Structure 03",
-        "struct_par_cross_01": "Paranid Cross Connection Structure 01",
-        "struct_par_cross_02": "Paranid Cross Connection Structure 02",
-        "struct_par_cross_03": "Paranid Cross Connection Structure 03",
-        "struct_par_vertical_01": "Paranid Vertical Connection Structure 01",
-        "struct_par_vertical_02": "Paranid Vertical Connection Structure 02",
-        "struct_spl_base_01": "Split Base Connection Structure 01",
-        "struct_spl_base_02": "Split Base Connection Structure 02",
-        "struct_spl_base_03": "Split Base Connection Structure 03",
-        "struct_spl_cross_01": "Split Cross Connection Structure 01",
-        "struct_spl_vertical_01": "Split Vertical Connection Structure 01",
-        "struct_spl_vertical_02": "Split Vertical Connection Structure 02",
-        "struct_tel_base_01": "Teladi Base Connection Structure 01",
-        "struct_tel_base_02": "Teladi Base Connection Structure 02",
-        "struct_tel_base_03": "Teladi Base Connection Structure 03",
-        "struct_tel_cross_01": "Teladi Cross Connection Structure 01",
-        "struct_tel_vertical_01": "Teladi Vertical Connection Structure 01",
-        "struct_tel_vertical_02": "Teladi Vertical Connection Structure 02",
-        "struct_ter_base_01": "Terran Base Connection Structure 01",
-        "struct_ter_base_02": "Terran Base Connection Structure 02",
-        "struct_ter_base_03": "Terran Base Connection Structure 03",
-        "struct_ter_cross_01": "Terran Cross Connection Structure 01",
-        "struct_ter_vertical_01": "Terran Vertical Connection Structure 01",
-        "struct_ter_vertical_02": "Terran Vertical Connection Structure 02",
-        "struct_gen_venturerbase_01": "Venture Base Connection Structure 01",
-        "struct_gen_venturerbase_02": "Venture Base Connection Structure 02",
-        "struct_gen_venturerbase_03": "Venture Base Connection Structure 03",
-        "struct_gen_venturercross_01": "Venture Cross Connection Structure 01",
-        "struct_gen_venturervertical_01": "Venture Vertical Connection Structure 01",
-        "struct_gen_venturervertical_02": "Venture Vertical Connection Structure 02"
+    "buildmodule_arg_equip_xl": {
+        "category": "buildmodule",
+        "macro": "buildmodule_gen_equip_xl_macro",
+        "label": "XL Ship Maintenance Bay"
     },
-    "defence": {
-        "defence_arg_claim_01": "Argon Administrative Centre",
-        "defence_arg_disc_01": "Argon Disc Defence Platform",
-        "defence_arg_tube_01": "Argon Bridge Defence Platform",
-        "defence_bor_claim_01": "Boron Administrative Centre",
-        "defence_bor_disc_01": "Boron Disc Defence Platform",
-        "defence_bor_tube_01": "Boron Bridge Defence Platform",
-        "defence_kha_disc_01": "Kha'ak Defence Platform",
-        "defence_par_claim_01": "Paranid Administrative Centre",
-        "defence_par_disc_01": "Paranid Disc Defence Platform",
-        "defence_par_tube_01": "Paranid Bridge Defence Platform",
-        "defence_spl_claim_01": "Split Administrative Centre",
-        "defence_spl_disc_01": "Split Disc Defence Platform",
-        "defence_spl_tube_01": "Split Bridge Defence Platform",
-        "defence_tel_claim_01": "Teladi Administrative Centre",
-        "defence_tel_disc_01": "Teladi Disc Defence Platform",
-        "defence_tel_tube_01": "Teladi Bridge Defence Platform",
-        "defence_ter_claim_01": "Terran Administrative Centre",
-        "defence_ter_disc_01": "Terran Disc Defence Platform",
-        "defence_ter_tube_01": "Terran Bridge Defence Platform"
+    "buildmodule_arg_ships_l": {
+        "category": "buildmodule",
+        "macro": "buildmodule_gen_ships_l_macro",
+        "label": "L Ship Fabrication Bay"
     },
-    "dockarea": {
-        "dockarea_arg_m_02_tradestation_01": "8M Standard Dock Area",
-        "dockarea_arg_m_ship_01": "Dock Area",
-        "dockarea_arg_m_ship_01_hightech": "Dock Area",
-        "dockarea_arg_m_ship_02": "Dock Area",
-        "dockarea_arg_m_ship_03": "Dock Area",
-        "dockarea_arg_m_station_01": "1M6S Standard Dock Area",
-        "dockarea_arg_m_station_01_hightech": "1M6S Luxury Dock Area",
-        "dockarea_arg_m_station_01_lowtech": "1M6S Basic Dock Area",
-        "dockarea_arg_m_station_02": "3M6S Standard Dock Area",
-        "dockarea_arg_m_station_02_hightech": "3M6S Luxury Dock Area",
-        "dockarea_arg_m_station_02_lowtech": "3M6S Basic Dock Area",
-        "dockarea_arg_s_ship_01": "Dock Area",
-        "dockarea_arg_s_ship_01_hightech": "Dock Area",
-        "dockarea_arg_s_ship_02": "Dock Area",
-        "dockarea_arg_s_ship_03": "Dock Area",
-        "dockarea_arg_s_ship_04": "Dock Area",
-        "dockarea_arg_s_ship_05": "Dock Area",
-        "dockarea_arg_s_ship_06": "Dock Area",
-        "dockarea_arg_s_ship_07": "Dock Area",
-        "dockarea_arg_s_ship_08": "Dock Area",
-        "dockarea_arg_s_ship_09": "Dock Area",
-        "dockarea_arg_s_ship_10": "Dock Area",
-        "dockarea_arg_xl_builder_01": "Dock Area",
-        "dockarea_arg_xl_builder_01_a": "Dock Area",
-        "dockarea_arg_xl_carrier_01": "Dock Area",
-        "dockarea_arg_xl_resupplier_01": "Dock Area",
-        "dockarea_atf_xl_battleship_01": "Dock Area",
-        "dockarea_bor_m_station_01_standard": "Boron 4M14S Luxury Dock Area",
-        "dockarea_gen_m_inv_01": "",
-        "dockarea_gen_s_inv_01": "",
-        "dockarea_par_l_destroyer_01": "Dock Area",
-        "dockarea_par_l_miner_solid_01": "Dock Area",
-        "dockarea_par_m_station_01": "1M6S Basic Dock Area",
-        "dockarea_par_xl_carrier_01": "Dock Area",
-        "dockarea_par_xl_resupplier_01": "Dock Area",
-        "dockarea_pir_xl_battleship_01": "Dock Area",
-        "dockarea_spl_xl_carrier_01": "Dock Area",
-        "dockarea_spl_xl_resupplier_01": "Dock Area",
-        "dockarea_tel_l_transporter_01": "Dock Area",
-        "dockarea_tel_xl_carrier_01": "Dock Area",
-        "dockarea_ter_m_station_01_hightech": "Terran 4M10S Luxury Dock Area",
-        "dockarea_ter_m_station_01_standard": "1M6S Luxury Dock Area",
-        "dockarea_ter_xl_carrier_01": "Dock Area",
-        "dockarea_ter_xl_resupplier_01": "Dock Area",
-        "dockarea_gen_m_venturer_01": "S\/M Venture Sendoff Dock",
-        "dockarea_gen_xl_venturer_01": "L\/XL Venture Sendoff Dock"
+    "buildmodule_arg_ships_m": {
+        "category": "buildmodule",
+        "macro": "buildmodule_xen_ships_m_macro",
+        "label": "M Ship Assembly Matrix"
     },
-    "dockingbay": {
-        "dockingbay_arg_m_01": "M Standard Docking Bay",
-        "dockingbay_arg_m_01_hightech": "M Luxury Docking Bay",
-        "dockingbay_arg_m_01_lowtech": "M Basic Docking Bay",
-        "dockingbay_arg_s_01": "S Standard Docking Bay",
-        "dockingbay_arg_s_01_hightech": "S Luxury Docking Bay",
-        "dockingbay_arg_s_01_lowtech": "S Basic Docking Bay",
-        "dockingbay_gen_l_inv": "Docking Bay",
-        "dockingbay_gen_l_inv_02": "Docking Bay",
-        "dockingbay_gen_m_inv": "Docking Bay",
-        "dockingbay_gen_sm_buildstorage_01": "Docking Bay",
-        "dockingbay_gen_s_inv": "Docking Bay",
-        "dockingbay_gen_xl_inv": "Docking Bay",
-        "dockingbay_gen_xl_inv_02": "Docking Bay",
-        "dockingbay_gen_xl_pier_01": "Docking Bay",
-        "dockingbay_ter_xl_pier_04_a": "Docking Bay",
-        "dockingbay_ter_xl_pier_04_b": "Docking Bay",
-        "dockingbay_gen_lxl_venturer_01": "Docking Bay",
-        "dockingbay_gen_sm_venturer_01": "Docking Bay"
+    "buildmodule_arg_ships_s": {
+        "category": "buildmodule",
+        "macro": "buildmodule_xen_ships_s_macro",
+        "label": "S Ship Assembly Matrix"
     },
-    "pier": {
-        "pier_arg_harbor_01": "Argon 3-Dock T Pier",
-        "pier_arg_harbor_02": "Argon 1-Dock Pier",
-        "pier_arg_harbor_03": "Argon 3-Dock E Pier",
-        "pier_arg_single_01_tradestation_01": "Argon Trading Station 1-Dock Pier",
-        "pier_bor_harbor_01": "Boron 4-Dock T Pier",
-        "pier_bor_harbor_02": "Boron 1-Dock Pier",
-        "pier_bor_harbor_03": "Boron 3-Dock E Pier",
-        "pier_bor_harbor_04": "Boron Trading Station 4-Dock Pier",
-        "pier_bor_tradestation_01": "Boron Trading Station Hexa-Dock Pier",
-        "pier_par_harbor_01": "Paranid 3-Dock T Pier",
-        "pier_par_harbor_02": "Paranid 1-Dock Pier",
-        "pier_par_harbor_03": "Paranid 3-Dock E Pier",
-        "pier_spl_harbor_01": "Split 4-Dock T Pier",
-        "pier_spl_harbor_02": "Split 1-Dock Pier",
-        "pier_spl_harbor_03": "Split 3-Dock E Pier",
-        "pier_tel_harbor_01": "Teladi 3-Dock T Pier",
-        "pier_tel_harbor_02": "Teladi 1-Dock Pier",
-        "pier_tel_harbor_03": "Teladi 3-Dock E Pier",
-        "pier_ter_harbor_01": "Terran 3-Dock T Pier",
-        "pier_ter_harbor_02": "Terran 1-Dock Pier",
-        "pier_ter_harbor_03": "Terran 3-Dock E Pier",
-        "pier_ter_harbor_04": "Terran 4-Dock T Pier",
-        "pier_ter_harbor_05": "Terran 1-Dock Pier",
-        "pier_ter_tradestation_01": "Terran Trading Station Hexa-Dock Pier"
+    "buildmodule_arg_ships_xl": {
+        "category": "buildmodule",
+        "macro": "buildmodule_gen_ships_xl_macro",
+        "label": "XL Ship Fabrication Bay"
     },
-    "hab": {
-        "hab_arg_l_01": "Argon L Habitat",
-        "hab_arg_m_01": "Argon M Habitat",
-        "hab_arg_s_01": "Argon S Habitat",
-        "hab_bor_l_01": "Boron L Oasis",
-        "hab_bor_m_01": "Boron M Oasis",
-        "hab_bor_s_01": "Boron S Oasis",
-        "hab_par_l_01": "Paranid L Dome",
-        "hab_par_m_01": "Paranid M Dome",
-        "hab_par_m_02": "Paranid M Dome",
-        "hab_par_s_01": "Paranid S Dome",
-        "hab_par_s_02": "Paranid S Dome",
-        "hab_par_s_03": "Paranid S Dome",
-        "hab_pir_l_01": "Argon L Dormitory",
-        "hab_pir_m_01": "Argon M Dormitory",
-        "hab_pir_s_01": "Argon S Dormitory",
-        "hab_spl_l_01": "Split L Parlour",
-        "hab_spl_m_01": "Split M Parlour",
-        "hab_spl_s_01": "Split S Parlour",
-        "hab_tel_l_01": "Teladi L Biome",
-        "hab_tel_m_01": "Teladi M Biome",
-        "hab_tel_s_01": "Teladi S Biome",
-        "hab_ter_l_01": "Terran L Living Quarters",
-        "hab_ter_m_01": "Terran M Living Quarters",
-        "hab_ter_s_01": "Terran S Living Quarters"
+    "buildmodule_bor_equip_l": {
+        "category": "buildmodule",
+        "macro": "buildmodule_bor_equip_l_macro",
+        "label": "Boron L Ship Maintenance Bay"
     },
-    "proc": {
-        "proc_gen_scrapworks": "Scrap Processor"
+    "buildmodule_bor_equip_m_dockarea_01": {
+        "category": "buildmodule",
+        "macro": "buildmodule_bor_equip_m_dockarea_01_macro",
+        "label": "Boron S\/M Ship Maintenance Bay"
     },
-    "prod": {
-        "prod_arg_foodrations": "Food Ration Production",
-        "prod_arg_meat": "Meat Production",
-        "prod_arg_spacefuel": "Spacefuel Production",
-        "prod_arg_wheat": "Wheat Production",
-        "prod_bor_bofu": "BoFu Production",
-        "prod_bor_bogas": "BoGas Production",
-        "prod_bor_medicalsupplies": "Boron Medical Supply Production",
-        "prod_bor_plankton": "Plankton Production",
-        "prod_gen_advancedcomposites": "Advanced Composite Production",
-        "prod_gen_advancedelectronics": "Advanced Electronics Production",
-        "prod_gen_antimattercells": "Antimatter Cell Production",
-        "prod_gen_antimatterconverters": "Antimatter Converter Production",
-        "prod_gen_claytronics": "Claytronics Production",
-        "prod_gen_dronecomponents": "Drone Component Production",
-        "prod_gen_energycells": "Energy Cell Production",
-        "prod_gen_engineparts": "Engine Part Production",
-        "prod_gen_fieldcoils": "Field Coil Production",
-        "prod_gen_graphene": "Graphene Production",
-        "prod_gen_hullparts": "Hull Part Production",
-        "prod_gen_medicalsupplies": "Argon Medical Supply Production",
-        "prod_gen_microchips": "Microchip Production",
-        "prod_gen_missilecomponents": "Missile Component Production",
-        "prod_gen_plasmaconductors": "Plasma Conductor Production",
-        "prod_gen_quantumtubes": "Quantum Tube Production",
-        "prod_gen_refinedmetals": "Refined Metal Production",
-        "prod_gen_scanningarrays": "Scanning Array Production",
-        "prod_gen_scrap_recycler": "Scrap Recycler",
-        "prod_gen_shieldcomponents": "Shield Component Production",
-        "prod_gen_siliconwafers": "Silicon Wafer Production",
-        "prod_gen_smartchips": "Smart Chip Production",
-        "prod_gen_spices": "Spice Production",
-        "prod_gen_superfluidcoolant": "Superfluid Coolant Production",
-        "prod_gen_turretcomponents": "Turret Component Production",
-        "prod_gen_water": "Water Production",
-        "prod_gen_weaponcomponents": "Weapon Component Production",
-        "prod_par_majadust": "Maja Dust Production",
-        "prod_par_majasnails": "Maja Snail Production",
-        "prod_par_sojabeans": "Soja Bean Production",
-        "prod_par_sojahusk": "Soja Husk Production",
-        "prod_spl_cheltmeat": "Chelt Production",
-        "prod_spl_scruffinfruit": "Scruffin Production",
-        "prod_tel_nostropoil": "Nostrop Oil Production",
-        "prod_tel_spaceweed": "Spaceweed Production",
-        "prod_tel_sunriseflowers": "Sunrise Flower Production",
-        "prod_tel_swampplants": "Swamp Plant Production",
-        "prod_tel_teladianium": "Teladianium Production",
-        "prod_ter_computronicsubstrate": "Computronic Substrate Production",
-        "prod_ter_energycells": "Terran Energy Cell Production",
-        "prod_ter_medicalsupplies": "Terran Medical Supply Production",
-        "prod_ter_metallicmicrolattice": "Metallic Microlattice Production",
-        "prod_ter_mre": "Terran MRE Production",
-        "prod_ter_proteinpaste": "Protein Paste Production",
-        "prod_ter_scrap_recycler": "Terran Scrap Recycler",
-        "prod_ter_siliconcarbide": "Silicon Carbide Production",
-        "prod_ter_stimulants": "Stimulant Production"
+    "buildmodule_bor_equip_xl": {
+        "category": "buildmodule",
+        "macro": "buildmodule_bor_equip_xl_macro",
+        "label": "Boron XL Ship Maintenance Bay"
     },
-    "storage": {
-        "storage_arg_l_container_01": "Argon L Container Storage",
-        "storage_arg_l_liquid_01": "Argon L Liquid Storage",
-        "storage_arg_l_solid_01": "Argon L Solid Storage",
-        "storage_arg_l_tradestation_01": "Argon L Universal Storage",
-        "storage_arg_m_container_01": "Argon M Container Storage",
-        "storage_arg_m_liquid_01": "Argon M Liquid Storage",
-        "storage_arg_m_solid_01": "Argon M Solid Storage",
-        "storage_arg_s_container_01": "Argon S Container Storage",
-        "storage_arg_s_liquid_01": "Argon S Liquid Storage",
-        "storage_arg_s_solid_01": "Argon S Solid Storage",
-        "storage_bor_l_container_01": "Boron L Container Storage",
-        "storage_bor_l_liquid_01": "Boron L Liquid Storage",
-        "storage_bor_l_solid_01": "Boron L Solid Storage",
-        "storage_bor_m_container_01": "Boron M Container Storage",
-        "storage_bor_m_liquid_01": "Boron M Liquid Storage",
-        "storage_bor_m_solid_01": "Boron M Solid Storage",
-        "storage_bor_s_container_01": "Boron S Container Storage",
-        "storage_bor_s_liquid_01": "Boron S Liquid Storage",
-        "storage_bor_s_solid_01": "Boron S Solid Storage",
-        "storage_par_l_container_01": "Paranid L Container Storage",
-        "storage_par_l_liquid_01": "Paranid L Liquid Storage",
-        "storage_par_l_solid_01": "Paranid L Solid Storage",
-        "storage_par_m_container_01": "Paranid M Container Storage",
-        "storage_par_m_liquid_01": "Paranid M Liquid Storage",
-        "storage_par_m_solid_01": "Paranid M Solid Storage",
-        "storage_par_s_container_01": "Paranid S Container Storage",
-        "storage_par_s_liquid_01": "Paranid S Liquid Storage",
-        "storage_par_s_solid_01": "Paranid S Solid Storage",
-        "storage_pir_l_condensate_01": "Protectyon Shield Generator",
-        "storage_pir_s_condensate_01": "Condensate Containment Facility",
-        "storage_spl_l_container_01": "Split L Container Storage",
-        "storage_spl_l_liquid_01": "Split L Liquid Storage",
-        "storage_spl_l_solid_01": "Split L Solid Storage",
-        "storage_spl_m_container_01": "Split M Container Storage",
-        "storage_spl_m_liquid_01": "Split M Liquid Storage",
-        "storage_spl_m_solid_01": "Split M Solid Storage",
-        "storage_spl_s_container_01": "Split S Container Storage",
-        "storage_spl_s_liquid_01": "Split S Liquid Storage",
-        "storage_spl_s_solid_01": "Split S Solid Storage",
-        "storage_tel_l_container_01": "Teladi L Container Storage",
-        "storage_tel_l_liquid_01": "Teladi L Liquid Storage",
-        "storage_tel_l_solid_01": "Teladi L Solid Storage",
-        "storage_tel_m_container_01": "Teladi M Container Storage",
-        "storage_tel_m_liquid_01": "Teladi M Liquid Storage",
-        "storage_tel_m_solid_01": "Teladi M Solid Storage",
-        "storage_tel_s_container_01": "Teladi S Container Storage",
-        "storage_tel_s_liquid_01": "Teladi S Liquid Storage",
-        "storage_tel_s_solid_01": "Teladi S Solid Storage",
-        "storage_ter_l_container_01": "Terran L Container Storage",
-        "storage_ter_l_liquid_01": "Terran L Liquid Storage",
-        "storage_ter_l_solid_01": "Terran L Solid Storage",
-        "storage_ter_m_container_01": "Terran M Container Storage",
-        "storage_ter_m_container_tradestation_01": "Terran M Trading Station Container Storage",
-        "storage_ter_m_liquid_01": "Terran M Liquid Storage",
-        "storage_ter_m_solid_01": "Terran M Solid Storage",
-        "storage_ter_s_container_01": "Terran S Container Storage",
-        "storage_ter_s_liquid_01": "Terran S Liquid Storage",
-        "storage_ter_s_liquid_tradestation_01": "Terran S Trading Station Liquid Storage",
-        "storage_ter_s_solid_01": "Terran S Solid Storage"
+    "buildmodule_bor_ships_l": {
+        "category": "buildmodule",
+        "macro": "buildmodule_bor_ships_l_macro",
+        "label": "Boron L Ship Fabrication Bay"
     },
-    "welfare": {
-        "welfare_bor_artacademy_01": "Pheromone Art Gallery",
-        "welfare_gen_casino_01": "Casino",
-        "welfare_gen_gamblinghall_01": "Gambling Den"
+    "buildmodule_bor_ships_m_dockarea_01": {
+        "category": "buildmodule",
+        "macro": "buildmodule_bor_ships_m_dockarea_01_macro",
+        "label": "Boron S\/M Ship Fabrication Bay"
+    },
+    "buildmodule_bor_ships_xl": {
+        "category": "buildmodule",
+        "macro": "buildmodule_bor_ships_xl_macro",
+        "label": "Boron XL Ship Fabrication Bay"
+    },
+    "buildmodule_gen_equip_m_dockarea_01": {
+        "category": "buildmodule",
+        "macro": "buildmodule_gen_equip_m_dockarea_01_macro",
+        "label": "S\/M Ship Maintenance Bay"
+    },
+    "buildmodule_gen_ships_m_dockarea_01": {
+        "category": "buildmodule",
+        "macro": "buildmodule_gen_ships_m_dockarea_01_macro",
+        "label": "S\/M Ship Fabrication Bay"
+    },
+    "buildmodule_ter_equip_l": {
+        "category": "buildmodule",
+        "macro": "buildmodule_ter_equip_l_macro",
+        "label": "Terran L Ship Maintenance Bay"
+    },
+    "buildmodule_ter_equip_m_dockarea_01": {
+        "category": "buildmodule",
+        "macro": "buildmodule_ter_equip_m_dockarea_01_macro",
+        "label": "Terran S\/M Ship Maintenance Bay"
+    },
+    "buildmodule_ter_equip_xl": {
+        "category": "buildmodule",
+        "macro": "buildmodule_ter_equip_xl_macro",
+        "label": "Terran XL Ship Maintenance Bay"
+    },
+    "buildmodule_ter_ships_l": {
+        "category": "buildmodule",
+        "macro": "buildmodule_ter_ships_l_macro",
+        "label": "Terran L Ship Fabrication Bay"
+    },
+    "buildmodule_ter_ships_m_dockarea_01": {
+        "category": "buildmodule",
+        "macro": "buildmodule_ter_ships_m_dockarea_01_macro",
+        "label": "Terran S\/M Ship Fabrication Bay"
+    },
+    "buildmodule_ter_ships_xl": {
+        "category": "buildmodule",
+        "macro": "buildmodule_ter_ships_xl_macro",
+        "label": "Terran XL Ship Fabrication Bay"
+    },
+    "buildmodule_xen_ships_xl": {
+        "category": "buildmodule",
+        "macro": "buildmodule_xen_ships_xl_macro",
+        "label": "XL Ship Assembly Matrix"
+    },
+    "struct_arg_base_01": {
+        "category": "struct",
+        "macro": "struct_arg_base_01_macro",
+        "label": "Argon Base Connection Structure 01"
+    },
+    "struct_arg_base_02": {
+        "category": "struct",
+        "macro": "struct_arg_base_02_macro",
+        "label": "Argon Base Connection Structure 02"
+    },
+    "struct_arg_base_03": {
+        "category": "struct",
+        "macro": "struct_arg_base_03_macro",
+        "label": "Argon Base Connection Structure 03"
+    },
+    "struct_arg_cross_01": {
+        "category": "struct",
+        "macro": "struct_arg_cross_01_macro",
+        "label": "Argon Cross Connection Structure 01"
+    },
+    "struct_arg_vertical_01": {
+        "category": "struct",
+        "macro": "struct_arg_vertical_01_macro",
+        "label": "Argon Vertical Connection Structure 01"
+    },
+    "struct_arg_vertical_02": {
+        "category": "struct",
+        "macro": "struct_arg_vertical_02_macro",
+        "label": "Argon Vertical Connection Structure 02"
+    },
+    "struct_bor_base_01": {
+        "category": "struct",
+        "macro": "struct_bor_base_01_macro",
+        "label": "Boron Base Connection Structure 01"
+    },
+    "struct_bor_base_02": {
+        "category": "struct",
+        "macro": "struct_bor_base_02_macro",
+        "label": "Boron Base Connection Structure 02"
+    },
+    "struct_bor_base_03": {
+        "category": "struct",
+        "macro": "struct_bor_base_03_macro",
+        "label": "Boron Base Connection Structure 03"
+    },
+    "struct_bor_base_04": {
+        "category": "struct",
+        "macro": "struct_bor_base_04_macro",
+        "label": "Boron Base Connection Structure 04"
+    },
+    "struct_bor_base_05": {
+        "category": "struct",
+        "macro": "struct_bor_base_05_macro",
+        "label": "Boron Base Connection Structure 05"
+    },
+    "struct_bor_cross_01": {
+        "category": "struct",
+        "macro": "struct_bor_cross_01_macro",
+        "label": "Boron Cross Connection Structure 01"
+    },
+    "struct_bor_cross_02": {
+        "category": "struct",
+        "macro": "struct_bor_cross_02_macro",
+        "label": "Boron Cross Connection Structure 02"
+    },
+    "struct_bor_vertical_01": {
+        "category": "struct",
+        "macro": "struct_bor_vertical_01_macro",
+        "label": "Boron Vertical Connection Structure 01"
+    },
+    "struct_bor_vertical_02": {
+        "category": "struct",
+        "macro": "struct_bor_vertical_02_macro",
+        "label": "Boron Vertical Connection Structure 02"
+    },
+    "struct_gen_observationdeck_01": {
+        "category": "struct",
+        "macro": "struct_gen_observationdeck_01_macro",
+        "label": "Conservatory Observation Deck"
+    },
+    "struct_gen_observationdeck_02": {
+        "category": "struct",
+        "macro": "struct_gen_observationdeck_02_macro",
+        "label": "Pavilion Observation Deck"
+    },
+    "struct_gen_observationdeck_03": {
+        "category": "struct",
+        "macro": "struct_gen_observationdeck_03_macro",
+        "label": "Penthouse Observation Deck"
+    },
+    "struct_par_base_01": {
+        "category": "struct",
+        "macro": "struct_par_base_01_macro",
+        "label": "Paranid Base Connection Structure 01"
+    },
+    "struct_par_base_02": {
+        "category": "struct",
+        "macro": "struct_par_base_02_macro",
+        "label": "Paranid Base Connection Structure 02"
+    },
+    "struct_par_base_03": {
+        "category": "struct",
+        "macro": "struct_par_base_03_macro",
+        "label": "Paranid Base Connection Structure 03"
+    },
+    "struct_par_cross_01": {
+        "category": "struct",
+        "macro": "struct_par_cross_01_macro",
+        "label": "Paranid Cross Connection Structure 01"
+    },
+    "struct_par_cross_02": {
+        "category": "struct",
+        "macro": "struct_par_cross_02_macro",
+        "label": "Paranid Cross Connection Structure 02"
+    },
+    "struct_par_cross_03": {
+        "category": "struct",
+        "macro": "struct_par_cross_03_macro",
+        "label": "Paranid Cross Connection Structure 03"
+    },
+    "struct_par_vertical_01": {
+        "category": "struct",
+        "macro": "struct_par_vertical_01_macro",
+        "label": "Paranid Vertical Connection Structure 01"
+    },
+    "struct_par_vertical_02": {
+        "category": "struct",
+        "macro": "struct_par_vertical_02_macro",
+        "label": "Paranid Vertical Connection Structure 02"
+    },
+    "struct_spl_base_01": {
+        "category": "struct",
+        "macro": "struct_spl_base_01_macro",
+        "label": "Split Base Connection Structure 01"
+    },
+    "struct_spl_base_02": {
+        "category": "struct",
+        "macro": "struct_spl_base_02_macro",
+        "label": "Split Base Connection Structure 02"
+    },
+    "struct_spl_base_03": {
+        "category": "struct",
+        "macro": "struct_spl_base_03_macro",
+        "label": "Split Base Connection Structure 03"
+    },
+    "struct_spl_cross_01": {
+        "category": "struct",
+        "macro": "struct_spl_cross_01_macro",
+        "label": "Split Cross Connection Structure 01"
+    },
+    "struct_spl_vertical_01": {
+        "category": "struct",
+        "macro": "struct_spl_vertical_01_macro",
+        "label": "Split Vertical Connection Structure 01"
+    },
+    "struct_spl_vertical_02": {
+        "category": "struct",
+        "macro": "struct_spl_vertical_02_macro",
+        "label": "Split Vertical Connection Structure 02"
+    },
+    "struct_tel_base_01": {
+        "category": "struct",
+        "macro": "struct_tel_base_01_macro",
+        "label": "Teladi Base Connection Structure 01"
+    },
+    "struct_tel_base_02": {
+        "category": "struct",
+        "macro": "struct_tel_base_02_macro",
+        "label": "Teladi Base Connection Structure 02"
+    },
+    "struct_tel_base_03": {
+        "category": "struct",
+        "macro": "struct_tel_base_03_macro",
+        "label": "Teladi Base Connection Structure 03"
+    },
+    "struct_tel_cross_01": {
+        "category": "struct",
+        "macro": "struct_tel_cross_01_macro",
+        "label": "Teladi Cross Connection Structure 01"
+    },
+    "struct_tel_vertical_01": {
+        "category": "struct",
+        "macro": "struct_tel_vertical_01_macro",
+        "label": "Teladi Vertical Connection Structure 01"
+    },
+    "struct_tel_vertical_02": {
+        "category": "struct",
+        "macro": "struct_tel_vertical_02_macro",
+        "label": "Teladi Vertical Connection Structure 02"
+    },
+    "struct_ter_base_01": {
+        "category": "struct",
+        "macro": "struct_ter_base_01_macro",
+        "label": "Terran Base Connection Structure 01"
+    },
+    "struct_ter_base_02": {
+        "category": "struct",
+        "macro": "struct_ter_base_02_macro",
+        "label": "Terran Base Connection Structure 02"
+    },
+    "struct_ter_base_03": {
+        "category": "struct",
+        "macro": "struct_ter_base_03_macro",
+        "label": "Terran Base Connection Structure 03"
+    },
+    "struct_ter_cross_01": {
+        "category": "struct",
+        "macro": "struct_ter_cross_01_macro",
+        "label": "Terran Cross Connection Structure 01"
+    },
+    "struct_ter_vertical_01": {
+        "category": "struct",
+        "macro": "struct_ter_vertical_01_macro",
+        "label": "Terran Vertical Connection Structure 01"
+    },
+    "struct_ter_vertical_02": {
+        "category": "struct",
+        "macro": "struct_ter_vertical_02_macro",
+        "label": "Terran Vertical Connection Structure 02"
+    },
+    "defence_arg_claim_01": {
+        "category": "defence",
+        "macro": "defence_arg_claim_01_macro",
+        "label": "Argon Administrative Centre"
+    },
+    "defence_arg_disc_01": {
+        "category": "defence",
+        "macro": "defence_arg_disc_01_macro",
+        "label": "Argon Disc Defence Platform"
+    },
+    "defence_arg_tube_01": {
+        "category": "defence",
+        "macro": "defence_arg_tube_01_macro",
+        "label": "Argon Bridge Defence Platform"
+    },
+    "defence_bor_claim_01": {
+        "category": "defence",
+        "macro": "defence_bor_claim_01_macro",
+        "label": "Boron Administrative Centre"
+    },
+    "defence_bor_disc_01": {
+        "category": "defence",
+        "macro": "defence_bor_disc_01_macro",
+        "label": "Boron Disc Defence Platform"
+    },
+    "defence_bor_tube_01": {
+        "category": "defence",
+        "macro": "defence_bor_tube_01_macro",
+        "label": "Boron Bridge Defence Platform"
+    },
+    "defence_kha_disc_01": {
+        "category": "defence",
+        "macro": "defence_kha_disc_01_macro",
+        "label": "Kha'ak Defence Platform"
+    },
+    "defence_par_claim_01": {
+        "category": "defence",
+        "macro": "defence_par_claim_story_01_macro",
+        "label": "Paranid Faction Capital"
+    },
+    "defence_par_disc_01": {
+        "category": "defence",
+        "macro": "defence_par_disc_01_macro",
+        "label": "Paranid Disc Defence Platform"
+    },
+    "defence_par_tube_01": {
+        "category": "defence",
+        "macro": "defence_par_tube_01_macro",
+        "label": "Paranid Bridge Defence Platform"
+    },
+    "defence_spl_claim_01": {
+        "category": "defence",
+        "macro": "defence_spl_claim_01_macro",
+        "label": "Split Administrative Centre"
+    },
+    "defence_spl_disc_01": {
+        "category": "defence",
+        "macro": "defence_spl_disc_01_macro",
+        "label": "Split Disc Defence Platform"
+    },
+    "defence_spl_tube_01": {
+        "category": "defence",
+        "macro": "defence_spl_tube_01_macro",
+        "label": "Split Bridge Defence Platform"
+    },
+    "defence_tel_claim_01": {
+        "category": "defence",
+        "macro": "defence_tel_claim_01_macro",
+        "label": "Teladi Administrative Centre"
+    },
+    "defence_tel_disc_01": {
+        "category": "defence",
+        "macro": "defence_tel_disc_01_macro",
+        "label": "Teladi Disc Defence Platform"
+    },
+    "defence_tel_tube_01": {
+        "category": "defence",
+        "macro": "defence_tel_tube_01_macro",
+        "label": "Teladi Bridge Defence Platform"
+    },
+    "defence_ter_claim_01": {
+        "category": "defence",
+        "macro": "defence_ter_claim_01_macro",
+        "label": "Terran Administrative Centre"
+    },
+    "defence_ter_disc_01": {
+        "category": "defence",
+        "macro": "defence_ter_disc_01_macro",
+        "label": "Terran Disc Defence Platform"
+    },
+    "defence_ter_tube_01": {
+        "category": "defence",
+        "macro": "defence_ter_tube_01_macro",
+        "label": "Terran Bridge Defence Platform"
+    },
+    "dockarea_arg_m_02_tradestation_01": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_02_tradestation_01_macro",
+        "label": "8M Standard Dock Area"
+    },
+    "dockarea_arg_m_ship_01": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_ship_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_m_ship_01_hightech": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_ship_01_hightech_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_m_ship_02": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_ship_02_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_m_ship_03": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_ship_03_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_m_station_01": {
+        "category": "dockarea",
+        "macro": "dockarea_tel_m_station_01_macro",
+        "label": "1M6S Standard Dock Area"
+    },
+    "dockarea_arg_m_station_01_hightech": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_station_01_hightech_macro",
+        "label": "1M6S Luxury Dock Area"
+    },
+    "dockarea_arg_m_station_01_lowtech": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_station_01_lowtech_macro",
+        "label": "1M6S Basic Dock Area"
+    },
+    "dockarea_arg_m_station_02": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_station_02_macro",
+        "label": "3M6S Standard Dock Area"
+    },
+    "dockarea_arg_m_station_02_hightech": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_station_02_hightech_macro",
+        "label": "3M6S Luxury Dock Area"
+    },
+    "dockarea_arg_m_station_02_lowtech": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_m_station_02_lowtech_macro",
+        "label": "3M6S Basic Dock Area"
+    },
+    "dockarea_arg_s_ship_01": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_01_hightech": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_01_hightech_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_02": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_02_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_03": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_03_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_04": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_04_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_05": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_05_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_06": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_06_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_07": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_07_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_08": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_08_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_09": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_09_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_s_ship_10": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_s_ship_10_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_xl_builder_01": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_xl_builder_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_xl_carrier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_xl_carrier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_arg_xl_resupplier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_arg_xl_resupplier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_atf_xl_battleship_01": {
+        "category": "dockarea",
+        "macro": "dockarea_atf_xl_battleship_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_bor_m_station_01_standard": {
+        "category": "dockarea",
+        "macro": "dockarea_bor_m_station_01_standard_macro",
+        "label": "Boron 4M14S Luxury Dock Area"
+    },
+    "dockarea_gen_m_inv_01": {
+        "category": "dockarea",
+        "macro": "dockarea_gen_m_inv_01_macro",
+        "label": ""
+    },
+    "dockarea_gen_s_inv_01": {
+        "category": "dockarea",
+        "macro": "dockarea_gen_s_inv_01_macro",
+        "label": ""
+    },
+    "dockarea_par_l_destroyer_01": {
+        "category": "dockarea",
+        "macro": "dockarea_par_l_destroyer_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_par_l_miner_solid_01": {
+        "category": "dockarea",
+        "macro": "dockarea_par_l_miner_solid_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_par_m_station_01": {
+        "category": "dockarea",
+        "macro": "dockarea_par_m_station_01_macro",
+        "label": "1M6S Basic Dock Area"
+    },
+    "dockarea_par_xl_carrier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_par_xl_carrier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_par_xl_resupplier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_par_xl_resupplier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_pir_xl_battleship_01": {
+        "category": "dockarea",
+        "macro": "dockarea_pir_xl_battleship_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_spl_xl_carrier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_spl_xl_carrier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_spl_xl_resupplier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_spl_xl_resupplier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_tel_l_transporter_01": {
+        "category": "dockarea",
+        "macro": "dockarea_tel_l_transporter_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_tel_xl_carrier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_tel_xl_carrier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_ter_m_station_01_hightech": {
+        "category": "dockarea",
+        "macro": "dockarea_ter_m_station_01_hightech_macro",
+        "label": "Terran 4M10S Luxury Dock Area"
+    },
+    "dockarea_ter_m_station_01_standard": {
+        "category": "dockarea",
+        "macro": "dockarea_ter_m_station_01_standard_macro",
+        "label": "1M6S Luxury Dock Area"
+    },
+    "dockarea_ter_xl_carrier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_ter_xl_carrier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockarea_ter_xl_resupplier_01": {
+        "category": "dockarea",
+        "macro": "dockarea_ter_xl_resupplier_01_macro",
+        "label": "Dock Area"
+    },
+    "dockingbay_arg_m_01": {
+        "category": "dockingbay",
+        "macro": "dockingbay_arg_m_01_macro",
+        "label": "M Standard Docking Bay"
+    },
+    "dockingbay_arg_m_01_hightech": {
+        "category": "dockingbay",
+        "macro": "dockingbay_arg_m_01_hightech_macro",
+        "label": "M Luxury Docking Bay"
+    },
+    "dockingbay_arg_m_01_lowtech": {
+        "category": "dockingbay",
+        "macro": "dockingbay_arg_m_01_lowtech_macro",
+        "label": "M Basic Docking Bay"
+    },
+    "dockingbay_arg_s_01": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_s_playeronly_01_macro",
+        "label": "1M6S Luxury Dock Area"
+    },
+    "dockingbay_arg_s_01_hightech": {
+        "category": "dockingbay",
+        "macro": "dockingbay_arg_s_01_hightech_macro",
+        "label": "S Luxury Docking Bay"
+    },
+    "dockingbay_arg_s_01_lowtech": {
+        "category": "dockingbay",
+        "macro": "dockingbay_arg_s_01_lowtech_macro",
+        "label": "S Basic Docking Bay"
+    },
+    "dockingbay_gen_l_inv": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_l_inv_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_gen_l_inv_02": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_l_inv_02_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_gen_m_inv": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_m_inv_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_gen_sm_buildstorage_01": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_sm_buildstorage_01_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_gen_s_inv": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_s_inv_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_gen_xl_inv": {
+        "category": "dockingbay",
+        "macro": "dockingbay_xen_lxl_inv_macro",
+        "label": ""
+    },
+    "dockingbay_gen_xl_inv_02": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_xl_inv_02_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_gen_xl_pier_01": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_xl_pier_01_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_ter_xl_pier_04_a": {
+        "category": "dockingbay",
+        "macro": "dockingbay_ter_xl_pier_04_a_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_ter_xl_pier_04_b": {
+        "category": "dockingbay",
+        "macro": "dockingbay_ter_xl_pier_04_b_macro",
+        "label": "Docking Bay"
+    },
+    "pier_arg_harbor_01": {
+        "category": "pier",
+        "macro": "pier_arg_harbor_01_macro",
+        "label": "Argon 3-Dock T Pier"
+    },
+    "pier_arg_harbor_02": {
+        "category": "pier",
+        "macro": "pier_arg_harbor_02_macro",
+        "label": "Argon 1-Dock Pier"
+    },
+    "pier_arg_harbor_03": {
+        "category": "pier",
+        "macro": "pier_arg_harbor_03_macro",
+        "label": "Argon 3-Dock E Pier"
+    },
+    "pier_arg_single_01_tradestation_01": {
+        "category": "pier",
+        "macro": "pier_arg_single_01_tradestation_01_macro",
+        "label": "Argon Trading Station 1-Dock Pier"
+    },
+    "pier_bor_harbor_01": {
+        "category": "pier",
+        "macro": "pier_bor_harbor_01_macro",
+        "label": "Boron 4-Dock T Pier"
+    },
+    "pier_bor_harbor_02": {
+        "category": "pier",
+        "macro": "pier_bor_harbor_02_macro",
+        "label": "Boron 1-Dock Pier"
+    },
+    "pier_bor_harbor_03": {
+        "category": "pier",
+        "macro": "pier_bor_harbor_03_macro",
+        "label": "Boron 3-Dock E Pier"
+    },
+    "pier_bor_harbor_04": {
+        "category": "pier",
+        "macro": "pier_bor_harbor_04_macro",
+        "label": "Boron Trading Station 4-Dock Pier"
+    },
+    "pier_bor_tradestation_01": {
+        "category": "pier",
+        "macro": "pier_bor_tradestation_01_macro",
+        "label": "Boron Trading Station Hexa-Dock Pier"
+    },
+    "pier_par_harbor_01": {
+        "category": "pier",
+        "macro": "pier_par_harbor_01_macro",
+        "label": "Paranid 3-Dock T Pier"
+    },
+    "pier_par_harbor_02": {
+        "category": "pier",
+        "macro": "pier_par_harbor_02_macro",
+        "label": "Paranid 1-Dock Pier"
+    },
+    "pier_par_harbor_03": {
+        "category": "pier",
+        "macro": "pier_par_harbor_03_macro",
+        "label": "Paranid 3-Dock E Pier"
+    },
+    "pier_spl_harbor_01": {
+        "category": "pier",
+        "macro": "pier_spl_harbor_01_macro",
+        "label": "Split 4-Dock T Pier"
+    },
+    "pier_spl_harbor_02": {
+        "category": "pier",
+        "macro": "pier_spl_harbor_02_macro",
+        "label": "Split 1-Dock Pier"
+    },
+    "pier_spl_harbor_03": {
+        "category": "pier",
+        "macro": "pier_spl_harbor_03_macro",
+        "label": "Split 3-Dock E Pier"
+    },
+    "pier_tel_harbor_01": {
+        "category": "pier",
+        "macro": "pier_tel_harbor_01_macro",
+        "label": "Teladi 3-Dock T Pier"
+    },
+    "pier_tel_harbor_02": {
+        "category": "pier",
+        "macro": "pier_tel_harbor_02_macro",
+        "label": "Teladi 1-Dock Pier"
+    },
+    "pier_tel_harbor_03": {
+        "category": "pier",
+        "macro": "pier_tel_harbor_03_macro",
+        "label": "Teladi 3-Dock E Pier"
+    },
+    "pier_ter_harbor_01": {
+        "category": "pier",
+        "macro": "pier_ter_harbor_01_macro",
+        "label": "Terran 3-Dock T Pier"
+    },
+    "pier_ter_harbor_02": {
+        "category": "pier",
+        "macro": "pier_ter_harbor_02_macro",
+        "label": "Terran 1-Dock Pier"
+    },
+    "pier_ter_harbor_03": {
+        "category": "pier",
+        "macro": "pier_ter_harbor_03_macro",
+        "label": "Terran 3-Dock E Pier"
+    },
+    "pier_ter_harbor_04": {
+        "category": "pier",
+        "macro": "pier_ter_harbor_04_macro",
+        "label": "Terran 4-Dock T Pier"
+    },
+    "pier_ter_harbor_05": {
+        "category": "pier",
+        "macro": "pier_ter_harbor_05_macro",
+        "label": "Terran 1-Dock Pier"
+    },
+    "pier_ter_tradestation_01": {
+        "category": "pier",
+        "macro": "pier_ter_tradestation_01_macro",
+        "label": "Terran Trading Station Hexa-Dock Pier"
+    },
+    "hab_arg_l_01": {
+        "category": "hab",
+        "macro": "hab_arg_l_01_macro",
+        "label": "Argon L Habitat"
+    },
+    "hab_arg_m_01": {
+        "category": "hab",
+        "macro": "hab_arg_m_01_macro",
+        "label": "Argon M Habitat"
+    },
+    "hab_arg_s_01": {
+        "category": "hab",
+        "macro": "hab_arg_s_01_macro",
+        "label": "Argon S Habitat"
+    },
+    "hab_bor_l_01": {
+        "category": "hab",
+        "macro": "hab_bor_l_01_macro",
+        "label": "Boron L Oasis"
+    },
+    "hab_bor_m_01": {
+        "category": "hab",
+        "macro": "hab_bor_m_01_macro",
+        "label": "Boron M Oasis"
+    },
+    "hab_bor_s_01": {
+        "category": "hab",
+        "macro": "hab_bor_s_01_macro",
+        "label": "Boron S Oasis"
+    },
+    "hab_par_l_01": {
+        "category": "hab",
+        "macro": "hab_par_l_01_macro",
+        "label": "Paranid L Dome"
+    },
+    "hab_par_m_01": {
+        "category": "hab",
+        "macro": "hab_par_m_01_macro",
+        "label": "Paranid M Dome"
+    },
+    "hab_par_s_01": {
+        "category": "hab",
+        "macro": "hab_par_s_01_macro",
+        "label": "Paranid S Dome"
+    },
+    "hab_pir_l_01": {
+        "category": "hab",
+        "macro": "hab_pir_l_01_macro",
+        "label": "Argon L Dormitory"
+    },
+    "hab_pir_m_01": {
+        "category": "hab",
+        "macro": "hab_pir_m_01_macro",
+        "label": "Argon M Dormitory"
+    },
+    "hab_pir_s_01": {
+        "category": "hab",
+        "macro": "hab_pir_s_01_macro",
+        "label": "Argon S Dormitory"
+    },
+    "hab_spl_l_01": {
+        "category": "hab",
+        "macro": "hab_spl_l_01_macro",
+        "label": "Split L Parlour"
+    },
+    "hab_spl_m_01": {
+        "category": "hab",
+        "macro": "hab_spl_m_01_macro",
+        "label": "Split M Parlour"
+    },
+    "hab_spl_s_01": {
+        "category": "hab",
+        "macro": "hab_spl_s_01_macro",
+        "label": "Split S Parlour"
+    },
+    "hab_tel_l_01": {
+        "category": "hab",
+        "macro": "hab_tel_l_01_macro",
+        "label": "Teladi L Biome"
+    },
+    "hab_tel_m_01": {
+        "category": "hab",
+        "macro": "hab_tel_m_01_macro",
+        "label": "Teladi M Biome"
+    },
+    "hab_tel_s_01": {
+        "category": "hab",
+        "macro": "hab_tel_s_01_macro",
+        "label": "Teladi S Biome"
+    },
+    "hab_ter_l_01": {
+        "category": "hab",
+        "macro": "hab_ter_l_01_macro",
+        "label": "Terran L Living Quarters"
+    },
+    "hab_ter_m_01": {
+        "category": "hab",
+        "macro": "hab_ter_m_01_macro",
+        "label": "Terran M Living Quarters"
+    },
+    "hab_ter_s_01": {
+        "category": "hab",
+        "macro": "hab_ter_s_01_macro",
+        "label": "Terran S Living Quarters"
+    },
+    "proc_gen_scrapworks": {
+        "category": "proc",
+        "macro": "proc_gen_scrapworks_macro",
+        "label": "Scrap Processor"
+    },
+    "prod_arg_foodrations": {
+        "category": "prod",
+        "macro": "prod_arg_foodrations_macro",
+        "label": "Food Ration Production"
+    },
+    "prod_arg_meat": {
+        "category": "prod",
+        "macro": "prod_arg_meat_macro",
+        "label": "Meat Production"
+    },
+    "prod_arg_spacefuel": {
+        "category": "prod",
+        "macro": "prod_arg_spacefuel_macro",
+        "label": "Spacefuel Production"
+    },
+    "prod_arg_wheat": {
+        "category": "prod",
+        "macro": "prod_arg_wheat_macro",
+        "label": "Wheat Production"
+    },
+    "prod_bor_bofu": {
+        "category": "prod",
+        "macro": "prod_bor_bofu_macro",
+        "label": "BoFu Production"
+    },
+    "prod_bor_bogas": {
+        "category": "prod",
+        "macro": "prod_bor_bogas_macro",
+        "label": "BoGas Production"
+    },
+    "prod_bor_medicalsupplies": {
+        "category": "prod",
+        "macro": "prod_bor_medicalsupplies_macro",
+        "label": "Boron Medical Supply Production"
+    },
+    "prod_bor_plankton": {
+        "category": "prod",
+        "macro": "prod_bor_plankton_macro",
+        "label": "Plankton Production"
+    },
+    "prod_gen_advancedcomposites": {
+        "category": "prod",
+        "macro": "prod_tel_advancedcomposites_macro",
+        "label": "Teladi Advanced Composite Production"
+    },
+    "prod_gen_advancedelectronics": {
+        "category": "prod",
+        "macro": "prod_gen_advancedelectronics_macro",
+        "label": "Advanced Electronics Production"
+    },
+    "prod_gen_antimattercells": {
+        "category": "prod",
+        "macro": "prod_gen_antimattercells_macro",
+        "label": "Antimatter Cell Production"
+    },
+    "prod_gen_antimatterconverters": {
+        "category": "prod",
+        "macro": "prod_gen_antimatterconverters_macro",
+        "label": "Antimatter Converter Production"
+    },
+    "prod_gen_claytronics": {
+        "category": "prod",
+        "macro": "prod_gen_claytronics_macro",
+        "label": "Claytronics Production"
+    },
+    "prod_gen_dronecomponents": {
+        "category": "prod",
+        "macro": "prod_gen_dronecomponents_macro",
+        "label": "Drone Component Production"
+    },
+    "prod_gen_energycells": {
+        "category": "prod",
+        "macro": "prod_gen_energycells_macro",
+        "label": "Energy Cell Production"
+    },
+    "prod_gen_engineparts": {
+        "category": "prod",
+        "macro": "prod_tel_engineparts_macro",
+        "label": "Teladi Engine Part Production"
+    },
+    "prod_gen_fieldcoils": {
+        "category": "prod",
+        "macro": "prod_gen_fieldcoils_macro",
+        "label": "Field Coil Production"
+    },
+    "prod_gen_graphene": {
+        "category": "prod",
+        "macro": "prod_gen_graphene_macro",
+        "label": "Graphene Production"
+    },
+    "prod_gen_hullparts": {
+        "category": "prod",
+        "macro": "prod_tel_hullparts_macro",
+        "label": "Teladi Hull Part Production"
+    },
+    "prod_gen_medicalsupplies": {
+        "category": "prod",
+        "macro": "prod_tel_medicalsupplies_macro",
+        "label": "Teladi Medical Supply Production"
+    },
+    "prod_gen_microchips": {
+        "category": "prod",
+        "macro": "prod_gen_microchips_macro",
+        "label": "Microchip Production"
+    },
+    "prod_gen_missilecomponents": {
+        "category": "prod",
+        "macro": "prod_gen_missilecomponents_macro",
+        "label": "Missile Component Production"
+    },
+    "prod_gen_plasmaconductors": {
+        "category": "prod",
+        "macro": "prod_gen_plasmaconductors_macro",
+        "label": "Plasma Conductor Production"
+    },
+    "prod_gen_quantumtubes": {
+        "category": "prod",
+        "macro": "prod_gen_quantumtubes_macro",
+        "label": "Quantum Tube Production"
+    },
+    "prod_gen_refinedmetals": {
+        "category": "prod",
+        "macro": "prod_gen_refinedmetals_macro",
+        "label": "Refined Metal Production"
+    },
+    "prod_gen_scanningarrays": {
+        "category": "prod",
+        "macro": "prod_tel_scanningarrays_macro",
+        "label": "Teladi Scanning Array Production"
+    },
+    "prod_gen_scrap_recycler": {
+        "category": "prod",
+        "macro": "prod_gen_scrap_recycler_macro",
+        "label": "Scrap Recycler"
+    },
+    "prod_gen_shieldcomponents": {
+        "category": "prod",
+        "macro": "prod_gen_shieldcomponents_macro",
+        "label": "Shield Component Production"
+    },
+    "prod_gen_siliconwafers": {
+        "category": "prod",
+        "macro": "prod_gen_siliconwafers_macro",
+        "label": "Silicon Wafer Production"
+    },
+    "prod_gen_smartchips": {
+        "category": "prod",
+        "macro": "prod_gen_smartchips_macro",
+        "label": "Smart Chip Production"
+    },
+    "prod_gen_spices": {
+        "category": "prod",
+        "macro": "prod_gen_spices_macro",
+        "label": "Spice Production"
+    },
+    "prod_gen_superfluidcoolant": {
+        "category": "prod",
+        "macro": "prod_gen_superfluidcoolant_macro",
+        "label": "Superfluid Coolant Production"
+    },
+    "prod_gen_turretcomponents": {
+        "category": "prod",
+        "macro": "prod_gen_turretcomponents_macro",
+        "label": "Turret Component Production"
+    },
+    "prod_gen_water": {
+        "category": "prod",
+        "macro": "prod_gen_water_macro",
+        "label": "Water Production"
+    },
+    "prod_gen_weaponcomponents": {
+        "category": "prod",
+        "macro": "prod_gen_weaponcomponents_macro",
+        "label": "Weapon Component Production"
+    },
+    "prod_par_majadust": {
+        "category": "prod",
+        "macro": "prod_par_majadust_macro",
+        "label": "Maja Dust Production"
+    },
+    "prod_par_majasnails": {
+        "category": "prod",
+        "macro": "prod_par_majasnails_macro",
+        "label": "Maja Snail Production"
+    },
+    "prod_par_sojabeans": {
+        "category": "prod",
+        "macro": "prod_par_sojabeans_macro",
+        "label": "Soja Bean Production"
+    },
+    "prod_par_sojahusk": {
+        "category": "prod",
+        "macro": "prod_par_sojahusk_macro",
+        "label": "Soja Husk Production"
+    },
+    "prod_spl_cheltmeat": {
+        "category": "prod",
+        "macro": "prod_spl_cheltmeat_macro",
+        "label": "Chelt Production"
+    },
+    "prod_spl_scruffinfruit": {
+        "category": "prod",
+        "macro": "prod_spl_scruffinfruit_macro",
+        "label": "Scruffin Production"
+    },
+    "prod_tel_nostropoil": {
+        "category": "prod",
+        "macro": "prod_tel_nostropoil_macro",
+        "label": "Nostrop Oil Production"
+    },
+    "prod_tel_spaceweed": {
+        "category": "prod",
+        "macro": "prod_tel_spaceweed_macro",
+        "label": "Spaceweed Production"
+    },
+    "prod_tel_sunriseflowers": {
+        "category": "prod",
+        "macro": "prod_tel_sunriseflowers_macro",
+        "label": "Sunrise Flower Production"
+    },
+    "prod_tel_swampplants": {
+        "category": "prod",
+        "macro": "prod_tel_swampplant_macro",
+        "label": "Swamp Plant Production"
+    },
+    "prod_tel_teladianium": {
+        "category": "prod",
+        "macro": "prod_tel_teladianium_macro",
+        "label": "Teladianium Production"
+    },
+    "prod_ter_computronicsubstrate": {
+        "category": "prod",
+        "macro": "prod_ter_computronicsubstrate_macro",
+        "label": "Computronic Substrate Production"
+    },
+    "prod_ter_energycells": {
+        "category": "prod",
+        "macro": "prod_ter_energycells_macro",
+        "label": "Terran Energy Cell Production"
+    },
+    "prod_ter_medicalsupplies": {
+        "category": "prod",
+        "macro": "prod_ter_medicalsupplies_macro",
+        "label": "Terran Medical Supply Production"
+    },
+    "prod_ter_metallicmicrolattice": {
+        "category": "prod",
+        "macro": "prod_ter_metallicmicrolattice_macro",
+        "label": "Metallic Microlattice Production"
+    },
+    "prod_ter_mre": {
+        "category": "prod",
+        "macro": "prod_ter_mre_macro",
+        "label": "Terran MRE Production"
+    },
+    "prod_ter_proteinpaste": {
+        "category": "prod",
+        "macro": "prod_ter_proteinpaste_macro",
+        "label": "Protein Paste Production"
+    },
+    "prod_ter_scrap_recycler": {
+        "category": "prod",
+        "macro": "prod_ter_scrap_recycler_macro",
+        "label": "Terran Scrap Recycler"
+    },
+    "prod_ter_siliconcarbide": {
+        "category": "prod",
+        "macro": "prod_ter_siliconcarbide_macro",
+        "label": "Silicon Carbide Production"
+    },
+    "prod_ter_stimulants": {
+        "category": "prod",
+        "macro": "prod_ter_stimulants_macro",
+        "label": "Stimulant Production"
+    },
+    "storage_arg_l_container_01": {
+        "category": "storage",
+        "macro": "storage_arg_l_container_01_macro",
+        "label": "Argon L Container Storage"
+    },
+    "storage_arg_l_liquid_01": {
+        "category": "storage",
+        "macro": "storage_arg_l_liquid_01_macro",
+        "label": "Argon L Liquid Storage"
+    },
+    "storage_arg_l_solid_01": {
+        "category": "storage",
+        "macro": "storage_arg_l_solid_01_macro",
+        "label": "Argon L Solid Storage"
+    },
+    "storage_arg_l_tradestation_01": {
+        "category": "storage",
+        "macro": "storage_arg_l_tradestation_01_macro",
+        "label": "Argon L Universal Storage"
+    },
+    "storage_arg_m_container_01": {
+        "category": "storage",
+        "macro": "storage_arg_m_container_01_macro",
+        "label": "Argon M Container Storage"
+    },
+    "storage_arg_m_liquid_01": {
+        "category": "storage",
+        "macro": "storage_arg_m_liquid_01_macro",
+        "label": "Argon M Liquid Storage"
+    },
+    "storage_arg_m_solid_01": {
+        "category": "storage",
+        "macro": "storage_arg_m_solid_01_macro",
+        "label": "Argon M Solid Storage"
+    },
+    "storage_arg_s_container_01": {
+        "category": "storage",
+        "macro": "storage_arg_s_container_01_macro",
+        "label": "Argon S Container Storage"
+    },
+    "storage_arg_s_liquid_01": {
+        "category": "storage",
+        "macro": "storage_arg_s_liquid_01_macro",
+        "label": "Argon S Liquid Storage"
+    },
+    "storage_arg_s_solid_01": {
+        "category": "storage",
+        "macro": "storage_arg_s_solid_01_macro",
+        "label": "Argon S Solid Storage"
+    },
+    "storage_bor_l_container_01": {
+        "category": "storage",
+        "macro": "storage_bor_l_container_01_macro",
+        "label": "Boron L Container Storage"
+    },
+    "storage_bor_l_liquid_01": {
+        "category": "storage",
+        "macro": "storage_bor_l_liquid_01_macro",
+        "label": "Boron L Liquid Storage"
+    },
+    "storage_bor_l_solid_01": {
+        "category": "storage",
+        "macro": "storage_bor_l_solid_01_macro",
+        "label": "Boron L Solid Storage"
+    },
+    "storage_bor_m_container_01": {
+        "category": "storage",
+        "macro": "storage_bor_m_container_01_macro",
+        "label": "Boron M Container Storage"
+    },
+    "storage_bor_m_liquid_01": {
+        "category": "storage",
+        "macro": "storage_bor_m_liquid_01_macro",
+        "label": "Boron M Liquid Storage"
+    },
+    "storage_bor_m_solid_01": {
+        "category": "storage",
+        "macro": "storage_bor_m_solid_01_macro",
+        "label": "Boron M Solid Storage"
+    },
+    "storage_bor_s_container_01": {
+        "category": "storage",
+        "macro": "storage_bor_s_container_01_macro",
+        "label": "Boron S Container Storage"
+    },
+    "storage_bor_s_liquid_01": {
+        "category": "storage",
+        "macro": "storage_bor_s_liquid_01_macro",
+        "label": "Boron S Liquid Storage"
+    },
+    "storage_bor_s_solid_01": {
+        "category": "storage",
+        "macro": "storage_bor_s_solid_01_macro",
+        "label": "Boron S Solid Storage"
+    },
+    "storage_par_l_container_01": {
+        "category": "storage",
+        "macro": "storage_par_l_container_01_macro",
+        "label": "Paranid L Container Storage"
+    },
+    "storage_par_l_liquid_01": {
+        "category": "storage",
+        "macro": "storage_par_l_liquid_01_macro",
+        "label": "Paranid L Liquid Storage"
+    },
+    "storage_par_l_solid_01": {
+        "category": "storage",
+        "macro": "storage_par_l_solid_01_macro",
+        "label": "Paranid L Solid Storage"
+    },
+    "storage_par_m_container_01": {
+        "category": "storage",
+        "macro": "storage_par_m_container_01_macro",
+        "label": "Paranid M Container Storage"
+    },
+    "storage_par_m_liquid_01": {
+        "category": "storage",
+        "macro": "storage_par_m_liquid_01_macro",
+        "label": "Paranid M Liquid Storage"
+    },
+    "storage_par_m_solid_01": {
+        "category": "storage",
+        "macro": "storage_par_m_solid_01_macro",
+        "label": "Paranid M Solid Storage"
+    },
+    "storage_par_s_container_01": {
+        "category": "storage",
+        "macro": "storage_par_s_container_01_macro",
+        "label": "Paranid S Container Storage"
+    },
+    "storage_par_s_liquid_01": {
+        "category": "storage",
+        "macro": "storage_par_s_liquid_01_macro",
+        "label": "Paranid S Liquid Storage"
+    },
+    "storage_par_s_solid_01": {
+        "category": "storage",
+        "macro": "storage_par_s_solid_01_macro",
+        "label": "Paranid S Solid Storage"
+    },
+    "storage_pir_l_condensate_01": {
+        "category": "storage",
+        "macro": "storage_pir_l_condensate_01_macro",
+        "label": "Protectyon Shield Generator"
+    },
+    "storage_pir_s_condensate_01": {
+        "category": "storage",
+        "macro": "storage_pir_s_condensate_01_macro",
+        "label": "Condensate Containment Facility"
+    },
+    "storage_spl_l_container_01": {
+        "category": "storage",
+        "macro": "storage_spl_l_container_01_macro",
+        "label": "Split L Container Storage"
+    },
+    "storage_spl_l_liquid_01": {
+        "category": "storage",
+        "macro": "storage_spl_l_liquid_01_macro",
+        "label": "Split L Liquid Storage"
+    },
+    "storage_spl_l_solid_01": {
+        "category": "storage",
+        "macro": "storage_spl_l_solid_01_macro",
+        "label": "Split L Solid Storage"
+    },
+    "storage_spl_m_container_01": {
+        "category": "storage",
+        "macro": "storage_spl_m_container_01_macro",
+        "label": "Split M Container Storage"
+    },
+    "storage_spl_m_liquid_01": {
+        "category": "storage",
+        "macro": "storage_spl_m_liquid_01_macro",
+        "label": "Split M Liquid Storage"
+    },
+    "storage_spl_m_solid_01": {
+        "category": "storage",
+        "macro": "storage_spl_m_solid_01_macro",
+        "label": "Split M Solid Storage"
+    },
+    "storage_spl_s_container_01": {
+        "category": "storage",
+        "macro": "storage_spl_s_container_01_macro",
+        "label": "Split S Container Storage"
+    },
+    "storage_spl_s_liquid_01": {
+        "category": "storage",
+        "macro": "storage_spl_s_liquid_01_macro",
+        "label": "Split S Liquid Storage"
+    },
+    "storage_spl_s_solid_01": {
+        "category": "storage",
+        "macro": "storage_spl_s_solid_01_macro",
+        "label": "Split S Solid Storage"
+    },
+    "storage_tel_l_container_01": {
+        "category": "storage",
+        "macro": "storage_tel_l_container_01_macro",
+        "label": "Teladi L Container Storage"
+    },
+    "storage_tel_l_liquid_01": {
+        "category": "storage",
+        "macro": "storage_tel_l_liquid_01_macro",
+        "label": "Teladi L Liquid Storage"
+    },
+    "storage_tel_l_solid_01": {
+        "category": "storage",
+        "macro": "storage_tel_l_solid_01_macro",
+        "label": "Teladi L Solid Storage"
+    },
+    "storage_tel_m_container_01": {
+        "category": "storage",
+        "macro": "storage_tel_m_container_01_macro",
+        "label": "Teladi M Container Storage"
+    },
+    "storage_tel_m_liquid_01": {
+        "category": "storage",
+        "macro": "storage_tel_m_liquid_01_macro",
+        "label": "Teladi M Liquid Storage"
+    },
+    "storage_tel_m_solid_01": {
+        "category": "storage",
+        "macro": "storage_tel_m_solid_01_macro",
+        "label": "Teladi M Solid Storage"
+    },
+    "storage_tel_s_container_01": {
+        "category": "storage",
+        "macro": "storage_tel_s_container_01_macro",
+        "label": "Teladi S Container Storage"
+    },
+    "storage_tel_s_liquid_01": {
+        "category": "storage",
+        "macro": "storage_tel_s_liquid_01_macro",
+        "label": "Teladi S Liquid Storage"
+    },
+    "storage_tel_s_solid_01": {
+        "category": "storage",
+        "macro": "storage_tel_s_solid_01_macro",
+        "label": "Teladi S Solid Storage"
+    },
+    "storage_ter_l_container_01": {
+        "category": "storage",
+        "macro": "storage_ter_l_container_01_macro",
+        "label": "Terran L Container Storage"
+    },
+    "storage_ter_l_liquid_01": {
+        "category": "storage",
+        "macro": "storage_ter_l_liquid_01_macro",
+        "label": "Terran L Liquid Storage"
+    },
+    "storage_ter_l_solid_01": {
+        "category": "storage",
+        "macro": "storage_ter_l_solid_01_macro",
+        "label": "Terran L Solid Storage"
+    },
+    "storage_ter_m_container_01": {
+        "category": "storage",
+        "macro": "storage_ter_m_container_01_macro",
+        "label": "Terran M Container Storage"
+    },
+    "storage_ter_m_container_tradestation_01": {
+        "category": "storage",
+        "macro": "storage_ter_m_container_tradestation_01_macro",
+        "label": "Terran M Trading Station Container Storage"
+    },
+    "storage_ter_m_liquid_01": {
+        "category": "storage",
+        "macro": "storage_ter_m_liquid_01_macro",
+        "label": "Terran M Liquid Storage"
+    },
+    "storage_ter_m_solid_01": {
+        "category": "storage",
+        "macro": "storage_ter_m_solid_01_macro",
+        "label": "Terran M Solid Storage"
+    },
+    "storage_ter_s_container_01": {
+        "category": "storage",
+        "macro": "storage_ter_s_container_01_macro",
+        "label": "Terran S Container Storage"
+    },
+    "storage_ter_s_liquid_01": {
+        "category": "storage",
+        "macro": "storage_ter_s_liquid_01_macro",
+        "label": "Terran S Liquid Storage"
+    },
+    "storage_ter_s_liquid_tradestation_01": {
+        "category": "storage",
+        "macro": "storage_ter_s_liquid_tradestation_01_macro",
+        "label": "Terran S Trading Station Liquid Storage"
+    },
+    "storage_ter_s_solid_01": {
+        "category": "storage",
+        "macro": "storage_ter_s_solid_01_macro",
+        "label": "Terran S Solid Storage"
+    },
+    "dockarea_gen_m_venturer_01": {
+        "category": "dockarea",
+        "macro": "dockarea_gen_m_venturer_01_macro",
+        "label": "S\/M Venture Sendoff Dock"
+    },
+    "dockarea_gen_xl_venturer_01": {
+        "category": "dockarea",
+        "macro": "dockarea_gen_xl_venturer_01_macro",
+        "label": "L\/XL Venture Sendoff Dock"
+    },
+    "dockingbay_gen_lxl_venturer_01": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_lxl_venturer_01_macro",
+        "label": "Docking Bay"
+    },
+    "dockingbay_gen_sm_venturer_01": {
+        "category": "dockingbay",
+        "macro": "dockingbay_gen_sm_venturer_01_macro",
+        "label": "Docking Bay"
+    },
+    "struct_gen_venturerbase_01": {
+        "category": "struct",
+        "macro": "struct_gen_venturerbase_01_macro",
+        "label": "Venture Base Connection Structure 01"
+    },
+    "struct_gen_venturerbase_02": {
+        "category": "struct",
+        "macro": "struct_gen_venturerbase_02_macro",
+        "label": "Venture Base Connection Structure 02"
+    },
+    "struct_gen_venturerbase_03": {
+        "category": "struct",
+        "macro": "struct_gen_venturerbase_03_macro",
+        "label": "Venture Base Connection Structure 03"
+    },
+    "struct_gen_venturercross_01": {
+        "category": "struct",
+        "macro": "struct_gen_venturercross_01_macro",
+        "label": "Venture Cross Connection Structure 01"
+    },
+    "struct_gen_venturervertical_01": {
+        "category": "struct",
+        "macro": "struct_gen_venturervertical_01_macro",
+        "label": "Venture Vertical Connection Structure 01"
+    },
+    "struct_gen_venturervertical_02": {
+        "category": "struct",
+        "macro": "struct_gen_venturervertical_02_macro",
+        "label": "Venture Vertical Connection Structure 02"
+    },
+    "welfare_bor_artacademy_01": {
+        "category": "welfare",
+        "macro": "welfare_bor_artacademy_01_macro",
+        "label": "Pheromone Art Gallery"
+    },
+    "welfare_gen_casino_01": {
+        "category": "welfare",
+        "macro": "welfare_gen_casino_01_macro",
+        "label": "Casino"
+    },
+    "welfare_gen_gamblinghall_01": {
+        "category": "welfare",
+        "macro": "welfare_gen_gamblinghall_01_macro",
+        "label": "Gambling Den"
     }
 }
