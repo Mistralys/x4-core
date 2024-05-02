@@ -1,3 +1,8 @@
+## v0.0.8 - Beta 7 update
+- Modules: Added some Beta 7 modules.
+- Translations: Handling replacing references recursively.
+- Translations: Ignoring invalid references.
+
 ## v0.0.7 - DateGrid update
 - DataGrids: Added collapsible rows.
 - UI: Added `addJSHead()` and `addJSOnload()`.
