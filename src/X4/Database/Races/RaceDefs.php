@@ -20,6 +20,7 @@ class RaceDefs
     public const RACE_TERRAN = 'ter';
     public const RACE_YAKI = 'yak';
     public const RACE_ATF = 'atf';
+    public const RACE_KHAAK = 'kha';
 
     private static ?RaceDefs $instance = null;
 
@@ -42,7 +43,8 @@ class RaceDefs
             ->add(self::RACE_TERRAN, 'Terran')
             ->add(self::RACE_SPLIT, 'Split')
             ->add(self::RACE_YAKI, 'Yaki')
-            ->add(self::RACE_ATF, 'ATF');
+            ->add(self::RACE_ATF, 'ATF')
+            ->add(self::RACE_KHAAK, 'Kha\'ak');
 
         uasort(self::$defs, static function(RaceDef $a, RaceDef $b) {
             return strnatcasecmp($a->getLabel(), $b->getLabel());
