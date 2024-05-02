@@ -1,1582 +1,2257 @@
 {
     "buildmodule_arg_equip_l": {
         "category": "buildmodule",
-        "macro": "buildmodule_gen_equip_l_macro",
-        "label": "L Ship Maintenance Bay"
+        "label": "L Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_gen_equip_l_macro"
+        ]
     },
     "buildmodule_arg_equip_xl": {
         "category": "buildmodule",
-        "macro": "buildmodule_gen_equip_xl_macro",
-        "label": "XL Ship Maintenance Bay"
+        "label": "XL Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_gen_equip_xl_macro"
+        ]
     },
     "buildmodule_arg_ships_l": {
         "category": "buildmodule",
-        "macro": "buildmodule_gen_ships_l_macro",
-        "label": "L Ship Fabrication Bay"
+        "label": "L Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_gen_ships_l_macro"
+        ]
     },
     "buildmodule_arg_ships_m": {
         "category": "buildmodule",
-        "macro": "buildmodule_xen_ships_m_macro",
-        "label": "M Ship Assembly Matrix"
+        "label": "M Ship Assembly Matrix",
+        "macros": [
+            "buildmodule_gen_ships_m_macro",
+            "buildmodule_xen_ships_m_macro"
+        ]
     },
     "buildmodule_arg_ships_s": {
         "category": "buildmodule",
-        "macro": "buildmodule_xen_ships_s_macro",
-        "label": "S Ship Assembly Matrix"
+        "label": "S Ship Assembly Matrix",
+        "macros": [
+            "buildmodule_gen_ships_s_macro",
+            "buildmodule_xen_ships_s_macro"
+        ]
     },
     "buildmodule_arg_ships_xl": {
         "category": "buildmodule",
-        "macro": "buildmodule_gen_ships_xl_macro",
-        "label": "XL Ship Fabrication Bay"
+        "label": "XL Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_gen_ships_xl_macro"
+        ]
     },
     "buildmodule_bor_equip_l": {
         "category": "buildmodule",
-        "macro": "buildmodule_bor_equip_l_macro",
-        "label": "Boron L Ship Maintenance Bay"
+        "label": "Boron L Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_bor_equip_l_macro"
+        ]
     },
     "buildmodule_bor_equip_m_dockarea_01": {
         "category": "buildmodule",
-        "macro": "buildmodule_bor_equip_m_dockarea_01_macro",
-        "label": "Boron S\/M Ship Maintenance Bay"
+        "label": "Boron S\/M Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_bor_equip_m_dockarea_01_macro"
+        ]
     },
     "buildmodule_bor_equip_xl": {
         "category": "buildmodule",
-        "macro": "buildmodule_bor_equip_xl_macro",
-        "label": "Boron XL Ship Maintenance Bay"
+        "label": "Boron XL Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_bor_equip_xl_macro"
+        ]
     },
     "buildmodule_bor_ships_l": {
         "category": "buildmodule",
-        "macro": "buildmodule_bor_ships_l_macro",
-        "label": "Boron L Ship Fabrication Bay"
+        "label": "Boron L Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_bor_ships_l_macro"
+        ]
     },
     "buildmodule_bor_ships_m_dockarea_01": {
         "category": "buildmodule",
-        "macro": "buildmodule_bor_ships_m_dockarea_01_macro",
-        "label": "Boron S\/M Ship Fabrication Bay"
+        "label": "Boron S\/M Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_bor_ships_m_dockarea_01_macro"
+        ]
     },
     "buildmodule_bor_ships_xl": {
         "category": "buildmodule",
-        "macro": "buildmodule_bor_ships_xl_macro",
-        "label": "Boron XL Ship Fabrication Bay"
+        "label": "Boron XL Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_bor_ships_xl_macro"
+        ]
     },
     "buildmodule_gen_equip_m_dockarea_01": {
         "category": "buildmodule",
-        "macro": "buildmodule_gen_equip_m_dockarea_01_macro",
-        "label": "S\/M Ship Maintenance Bay"
+        "label": "S\/M Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_gen_equip_m_dockarea_01_macro"
+        ]
     },
     "buildmodule_gen_ships_m_dockarea_01": {
         "category": "buildmodule",
-        "macro": "buildmodule_gen_ships_m_dockarea_01_macro",
-        "label": "S\/M Ship Fabrication Bay"
+        "label": "S\/M Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_gen_ships_m_dockarea_01_macro"
+        ]
     },
     "buildmodule_ter_equip_l": {
         "category": "buildmodule",
-        "macro": "buildmodule_ter_equip_l_macro",
-        "label": "Terran L Ship Maintenance Bay"
+        "label": "Terran L Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_ter_equip_l_macro"
+        ]
     },
     "buildmodule_ter_equip_m_dockarea_01": {
         "category": "buildmodule",
-        "macro": "buildmodule_ter_equip_m_dockarea_01_macro",
-        "label": "Terran S\/M Ship Maintenance Bay"
+        "label": "Terran S\/M Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_ter_equip_m_dockarea_01_macro"
+        ]
     },
     "buildmodule_ter_equip_xl": {
         "category": "buildmodule",
-        "macro": "buildmodule_ter_equip_xl_macro",
-        "label": "Terran XL Ship Maintenance Bay"
+        "label": "Terran XL Ship Maintenance Bay",
+        "macros": [
+            "buildmodule_ter_equip_xl_macro"
+        ]
     },
     "buildmodule_ter_ships_l": {
         "category": "buildmodule",
-        "macro": "buildmodule_ter_ships_l_macro",
-        "label": "Terran L Ship Fabrication Bay"
+        "label": "Terran L Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_ter_ships_l_macro"
+        ]
     },
     "buildmodule_ter_ships_m_dockarea_01": {
         "category": "buildmodule",
-        "macro": "buildmodule_ter_ships_m_dockarea_01_macro",
-        "label": "Terran S\/M Ship Fabrication Bay"
+        "label": "Terran S\/M Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_ter_ships_m_dockarea_01_macro"
+        ]
     },
     "buildmodule_ter_ships_xl": {
         "category": "buildmodule",
-        "macro": "buildmodule_ter_ships_xl_macro",
-        "label": "Terran XL Ship Fabrication Bay"
+        "label": "Terran XL Ship Fabrication Bay",
+        "macros": [
+            "buildmodule_ter_ships_xl_macro"
+        ]
     },
     "buildmodule_xen_ships_xl": {
         "category": "buildmodule",
-        "macro": "buildmodule_xen_ships_xl_macro",
-        "label": "XL Ship Assembly Matrix"
+        "label": "XL Ship Assembly Matrix",
+        "macros": [
+            "buildmodule_xen_ships_xl_macro"
+        ]
     },
     "struct_arg_base_01": {
         "category": "struct",
-        "macro": "struct_arg_base_01_macro",
-        "label": "Argon Base Connection Structure 01"
+        "label": "Argon Base Connection Structure 01",
+        "macros": [
+            "struct_arg_base_01_macro"
+        ]
     },
     "struct_arg_base_02": {
         "category": "struct",
-        "macro": "struct_arg_base_02_macro",
-        "label": "Argon Base Connection Structure 02"
+        "label": "Argon Base Connection Structure 02",
+        "macros": [
+            "struct_arg_base_02_macro"
+        ]
     },
     "struct_arg_base_03": {
         "category": "struct",
-        "macro": "struct_arg_base_03_macro",
-        "label": "Argon Base Connection Structure 03"
+        "label": "Argon Base Connection Structure 03",
+        "macros": [
+            "struct_arg_base_03_macro"
+        ]
     },
     "struct_arg_cross_01": {
         "category": "struct",
-        "macro": "struct_arg_cross_01_macro",
-        "label": "Argon Cross Connection Structure 01"
+        "label": "Argon Cross Connection Structure 01",
+        "macros": [
+            "struct_arg_cross_01_macro"
+        ]
     },
     "struct_arg_vertical_01": {
         "category": "struct",
-        "macro": "struct_arg_vertical_01_macro",
-        "label": "Argon Vertical Connection Structure 01"
+        "label": "Argon Vertical Connection Structure 01",
+        "macros": [
+            "struct_arg_vertical_01_macro"
+        ]
     },
     "struct_arg_vertical_02": {
         "category": "struct",
-        "macro": "struct_arg_vertical_02_macro",
-        "label": "Argon Vertical Connection Structure 02"
+        "label": "Argon Vertical Connection Structure 02",
+        "macros": [
+            "struct_arg_vertical_02_macro"
+        ]
     },
     "struct_bor_base_01": {
         "category": "struct",
-        "macro": "struct_bor_base_01_macro",
-        "label": "Boron Base Connection Structure 01"
+        "label": "Boron Base Connection Structure 01",
+        "macros": [
+            "struct_bor_base_01_macro"
+        ]
     },
     "struct_bor_base_02": {
         "category": "struct",
-        "macro": "struct_bor_base_02_macro",
-        "label": "Boron Base Connection Structure 02"
+        "label": "Boron Base Connection Structure 02",
+        "macros": [
+            "struct_bor_base_02_macro"
+        ]
     },
     "struct_bor_base_03": {
         "category": "struct",
-        "macro": "struct_bor_base_03_macro",
-        "label": "Boron Base Connection Structure 03"
+        "label": "Boron Base Connection Structure 03",
+        "macros": [
+            "struct_bor_base_03_macro"
+        ]
     },
     "struct_bor_base_04": {
         "category": "struct",
-        "macro": "struct_bor_base_04_macro",
-        "label": "Boron Base Connection Structure 04"
+        "label": "Boron Base Connection Structure 04",
+        "macros": [
+            "struct_bor_base_04_macro"
+        ]
     },
     "struct_bor_base_05": {
         "category": "struct",
-        "macro": "struct_bor_base_05_macro",
-        "label": "Boron Base Connection Structure 05"
+        "label": "Boron Base Connection Structure 05",
+        "macros": [
+            "struct_bor_base_05_macro"
+        ]
     },
     "struct_bor_cross_01": {
         "category": "struct",
-        "macro": "struct_bor_cross_01_macro",
-        "label": "Boron Cross Connection Structure 01"
+        "label": "Boron Cross Connection Structure 01",
+        "macros": [
+            "struct_bor_cross_01_macro"
+        ]
     },
     "struct_bor_cross_02": {
         "category": "struct",
-        "macro": "struct_bor_cross_02_macro",
-        "label": "Boron Cross Connection Structure 02"
+        "label": "Boron Cross Connection Structure 02",
+        "macros": [
+            "struct_bor_cross_02_macro"
+        ]
     },
     "struct_bor_vertical_01": {
         "category": "struct",
-        "macro": "struct_bor_vertical_01_macro",
-        "label": "Boron Vertical Connection Structure 01"
+        "label": "Boron Vertical Connection Structure 01",
+        "macros": [
+            "struct_bor_vertical_01_macro"
+        ]
     },
     "struct_bor_vertical_02": {
         "category": "struct",
-        "macro": "struct_bor_vertical_02_macro",
-        "label": "Boron Vertical Connection Structure 02"
+        "label": "Boron Vertical Connection Structure 02",
+        "macros": [
+            "struct_bor_vertical_02_macro"
+        ]
     },
     "struct_gen_observationdeck_01": {
         "category": "struct",
-        "macro": "struct_gen_observationdeck_01_macro",
-        "label": "Conservatory Observation Deck"
+        "label": "Conservatory Observation Deck",
+        "macros": [
+            "struct_gen_observationdeck_01_macro"
+        ]
     },
     "struct_gen_observationdeck_02": {
         "category": "struct",
-        "macro": "struct_gen_observationdeck_02_macro",
-        "label": "Pavilion Observation Deck"
+        "label": "Pavilion Observation Deck",
+        "macros": [
+            "struct_gen_observationdeck_02_macro"
+        ]
     },
     "struct_gen_observationdeck_03": {
         "category": "struct",
-        "macro": "struct_gen_observationdeck_03_macro",
-        "label": "Penthouse Observation Deck"
+        "label": "Penthouse Observation Deck",
+        "macros": [
+            "struct_gen_observationdeck_03_macro"
+        ]
     },
     "struct_par_base_01": {
         "category": "struct",
-        "macro": "struct_par_base_01_macro",
-        "label": "Paranid Base Connection Structure 01"
+        "label": "Paranid Base Connection Structure 01",
+        "macros": [
+            "struct_par_base_01_macro"
+        ]
     },
     "struct_par_base_02": {
         "category": "struct",
-        "macro": "struct_par_base_02_macro",
-        "label": "Paranid Base Connection Structure 02"
+        "label": "Paranid Base Connection Structure 02",
+        "macros": [
+            "struct_par_base_02_macro"
+        ]
     },
     "struct_par_base_03": {
         "category": "struct",
-        "macro": "struct_par_base_03_macro",
-        "label": "Paranid Base Connection Structure 03"
+        "label": "Paranid Base Connection Structure 03",
+        "macros": [
+            "struct_par_base_03_macro"
+        ]
     },
     "struct_par_cross_01": {
         "category": "struct",
-        "macro": "struct_par_cross_01_macro",
-        "label": "Paranid Cross Connection Structure 01"
+        "label": "Paranid Cross Connection Structure 01",
+        "macros": [
+            "struct_par_cross_01_macro"
+        ]
     },
     "struct_par_cross_02": {
         "category": "struct",
-        "macro": "struct_par_cross_02_macro",
-        "label": "Paranid Cross Connection Structure 02"
+        "label": "Paranid Cross Connection Structure 02",
+        "macros": [
+            "struct_par_cross_02_macro"
+        ]
     },
     "struct_par_cross_03": {
         "category": "struct",
-        "macro": "struct_par_cross_03_macro",
-        "label": "Paranid Cross Connection Structure 03"
+        "label": "Paranid Cross Connection Structure 03",
+        "macros": [
+            "struct_par_cross_03_macro"
+        ]
     },
     "struct_par_vertical_01": {
         "category": "struct",
-        "macro": "struct_par_vertical_01_macro",
-        "label": "Paranid Vertical Connection Structure 01"
+        "label": "Paranid Vertical Connection Structure 01",
+        "macros": [
+            "struct_par_vertical_01_macro"
+        ]
     },
     "struct_par_vertical_02": {
         "category": "struct",
-        "macro": "struct_par_vertical_02_macro",
-        "label": "Paranid Vertical Connection Structure 02"
+        "label": "Paranid Vertical Connection Structure 02",
+        "macros": [
+            "struct_par_vertical_02_macro"
+        ]
     },
     "struct_spl_base_01": {
         "category": "struct",
-        "macro": "struct_spl_base_01_macro",
-        "label": "Split Base Connection Structure 01"
+        "label": "Split Base Connection Structure 01",
+        "macros": [
+            "struct_spl_base_01_macro"
+        ]
     },
     "struct_spl_base_02": {
         "category": "struct",
-        "macro": "struct_spl_base_02_macro",
-        "label": "Split Base Connection Structure 02"
+        "label": "Split Base Connection Structure 02",
+        "macros": [
+            "struct_spl_base_02_macro"
+        ]
     },
     "struct_spl_base_03": {
         "category": "struct",
-        "macro": "struct_spl_base_03_macro",
-        "label": "Split Base Connection Structure 03"
+        "label": "Split Base Connection Structure 03",
+        "macros": [
+            "struct_spl_base_03_macro"
+        ]
     },
     "struct_spl_cross_01": {
         "category": "struct",
-        "macro": "struct_spl_cross_01_macro",
-        "label": "Split Cross Connection Structure 01"
+        "label": "Split Cross Connection Structure 01",
+        "macros": [
+            "struct_spl_cross_01_macro"
+        ]
     },
     "struct_spl_vertical_01": {
         "category": "struct",
-        "macro": "struct_spl_vertical_01_macro",
-        "label": "Split Vertical Connection Structure 01"
+        "label": "Split Vertical Connection Structure 01",
+        "macros": [
+            "struct_spl_vertical_01_macro"
+        ]
     },
     "struct_spl_vertical_02": {
         "category": "struct",
-        "macro": "struct_spl_vertical_02_macro",
-        "label": "Split Vertical Connection Structure 02"
+        "label": "Split Vertical Connection Structure 02",
+        "macros": [
+            "struct_spl_vertical_02_macro"
+        ]
     },
     "struct_tel_base_01": {
         "category": "struct",
-        "macro": "struct_tel_base_01_macro",
-        "label": "Teladi Base Connection Structure 01"
+        "label": "Teladi Base Connection Structure 01",
+        "macros": [
+            "struct_tel_base_01_macro"
+        ]
     },
     "struct_tel_base_02": {
         "category": "struct",
-        "macro": "struct_tel_base_02_macro",
-        "label": "Teladi Base Connection Structure 02"
+        "label": "Teladi Base Connection Structure 02",
+        "macros": [
+            "struct_tel_base_02_macro"
+        ]
     },
     "struct_tel_base_03": {
         "category": "struct",
-        "macro": "struct_tel_base_03_macro",
-        "label": "Teladi Base Connection Structure 03"
+        "label": "Teladi Base Connection Structure 03",
+        "macros": [
+            "struct_tel_base_03_macro"
+        ]
     },
     "struct_tel_cross_01": {
         "category": "struct",
-        "macro": "struct_tel_cross_01_macro",
-        "label": "Teladi Cross Connection Structure 01"
+        "label": "Teladi Cross Connection Structure 01",
+        "macros": [
+            "struct_tel_cross_01_macro"
+        ]
     },
     "struct_tel_vertical_01": {
         "category": "struct",
-        "macro": "struct_tel_vertical_01_macro",
-        "label": "Teladi Vertical Connection Structure 01"
+        "label": "Teladi Vertical Connection Structure 01",
+        "macros": [
+            "struct_tel_vertical_01_macro"
+        ]
     },
     "struct_tel_vertical_02": {
         "category": "struct",
-        "macro": "struct_tel_vertical_02_macro",
-        "label": "Teladi Vertical Connection Structure 02"
+        "label": "Teladi Vertical Connection Structure 02",
+        "macros": [
+            "struct_tel_vertical_02_macro"
+        ]
     },
     "struct_ter_base_01": {
         "category": "struct",
-        "macro": "struct_ter_base_01_macro",
-        "label": "Terran Base Connection Structure 01"
+        "label": "Terran Base Connection Structure 01",
+        "macros": [
+            "struct_ter_base_01_macro"
+        ]
     },
     "struct_ter_base_02": {
         "category": "struct",
-        "macro": "struct_ter_base_02_macro",
-        "label": "Terran Base Connection Structure 02"
+        "label": "Terran Base Connection Structure 02",
+        "macros": [
+            "struct_ter_base_02_macro"
+        ]
     },
     "struct_ter_base_03": {
         "category": "struct",
-        "macro": "struct_ter_base_03_macro",
-        "label": "Terran Base Connection Structure 03"
+        "label": "Terran Base Connection Structure 03",
+        "macros": [
+            "struct_ter_base_03_macro"
+        ]
     },
     "struct_ter_cross_01": {
         "category": "struct",
-        "macro": "struct_ter_cross_01_macro",
-        "label": "Terran Cross Connection Structure 01"
+        "label": "Terran Cross Connection Structure 01",
+        "macros": [
+            "struct_ter_cross_01_macro"
+        ]
     },
     "struct_ter_vertical_01": {
         "category": "struct",
-        "macro": "struct_ter_vertical_01_macro",
-        "label": "Terran Vertical Connection Structure 01"
+        "label": "Terran Vertical Connection Structure 01",
+        "macros": [
+            "struct_ter_vertical_01_macro"
+        ]
     },
     "struct_ter_vertical_02": {
         "category": "struct",
-        "macro": "struct_ter_vertical_02_macro",
-        "label": "Terran Vertical Connection Structure 02"
+        "label": "Terran Vertical Connection Structure 02",
+        "macros": [
+            "struct_ter_vertical_02_macro"
+        ]
     },
     "defence_arg_claim_01": {
         "category": "defence",
-        "macro": "defence_arg_claim_01_macro",
-        "label": "Argon Administrative Centre"
+        "label": "Argon Administrative Centre",
+        "macros": [
+            "defence_arg_claim_01_macro"
+        ]
     },
     "defence_arg_disc_01": {
         "category": "defence",
-        "macro": "defence_arg_disc_01_macro",
-        "label": "Argon Disc Defence Platform"
+        "label": "Argon Disc Defence Platform",
+        "macros": [
+            "defence_arg_disc_01_macro"
+        ]
     },
     "defence_arg_tube_01": {
         "category": "defence",
-        "macro": "defence_arg_tube_01_macro",
-        "label": "Argon Bridge Defence Platform"
+        "label": "Argon Bridge Defence Platform",
+        "macros": [
+            "defence_arg_tube_01_macro"
+        ]
     },
     "defence_bor_claim_01": {
         "category": "defence",
-        "macro": "defence_bor_claim_01_macro",
-        "label": "Boron Administrative Centre"
+        "label": "Boron Administrative Centre",
+        "macros": [
+            "defence_bor_claim_01_macro"
+        ]
     },
     "defence_bor_disc_01": {
         "category": "defence",
-        "macro": "defence_bor_disc_01_macro",
-        "label": "Boron Disc Defence Platform"
+        "label": "Boron Disc Defence Platform",
+        "macros": [
+            "defence_bor_disc_01_macro"
+        ]
     },
     "defence_bor_tube_01": {
         "category": "defence",
-        "macro": "defence_bor_tube_01_macro",
-        "label": "Boron Bridge Defence Platform"
+        "label": "Boron Bridge Defence Platform",
+        "macros": [
+            "defence_bor_tube_01_macro"
+        ]
     },
     "defence_kha_disc_01": {
         "category": "defence",
-        "macro": "defence_kha_disc_01_macro",
-        "label": "Kha'ak Defence Platform"
+        "label": "Kha'ak Defence Platform",
+        "macros": [
+            "defence_kha_disc_01_macro"
+        ]
     },
     "defence_par_claim_01": {
         "category": "defence",
-        "macro": "defence_par_claim_story_01_macro",
-        "label": "Paranid Faction Capital"
+        "label": "Paranid Faction Capital",
+        "macros": [
+            "defence_par_claim_01_macro",
+            "defence_par_claim_story_01_macro"
+        ]
     },
     "defence_par_disc_01": {
         "category": "defence",
-        "macro": "defence_par_disc_01_macro",
-        "label": "Paranid Disc Defence Platform"
+        "label": "Paranid Disc Defence Platform",
+        "macros": [
+            "defence_par_disc_01_macro"
+        ]
     },
     "defence_par_tube_01": {
         "category": "defence",
-        "macro": "defence_par_tube_01_macro",
-        "label": "Paranid Bridge Defence Platform"
+        "label": "Paranid Bridge Defence Platform",
+        "macros": [
+            "defence_par_tube_01_macro"
+        ]
     },
     "defence_spl_claim_01": {
         "category": "defence",
-        "macro": "defence_spl_claim_01_macro",
-        "label": "Split Administrative Centre"
+        "label": "Split Administrative Centre",
+        "macros": [
+            "defence_spl_claim_01_macro"
+        ]
     },
     "defence_spl_disc_01": {
         "category": "defence",
-        "macro": "defence_spl_disc_01_macro",
-        "label": "Split Disc Defence Platform"
+        "label": "Split Disc Defence Platform",
+        "macros": [
+            "defence_spl_disc_01_macro"
+        ]
     },
     "defence_spl_tube_01": {
         "category": "defence",
-        "macro": "defence_spl_tube_01_macro",
-        "label": "Split Bridge Defence Platform"
+        "label": "Split Bridge Defence Platform",
+        "macros": [
+            "defence_spl_tube_01_macro"
+        ]
     },
     "defence_tel_claim_01": {
         "category": "defence",
-        "macro": "defence_tel_claim_01_macro",
-        "label": "Teladi Administrative Centre"
+        "label": "Teladi Administrative Centre",
+        "macros": [
+            "defence_tel_claim_01_macro"
+        ]
     },
     "defence_tel_disc_01": {
         "category": "defence",
-        "macro": "defence_tel_disc_01_macro",
-        "label": "Teladi Disc Defence Platform"
+        "label": "Teladi Disc Defence Platform",
+        "macros": [
+            "defence_tel_disc_01_macro"
+        ]
     },
     "defence_tel_tube_01": {
         "category": "defence",
-        "macro": "defence_tel_tube_01_macro",
-        "label": "Teladi Bridge Defence Platform"
+        "label": "Teladi Bridge Defence Platform",
+        "macros": [
+            "defence_tel_tube_01_macro"
+        ]
     },
     "defence_ter_claim_01": {
         "category": "defence",
-        "macro": "defence_ter_claim_01_macro",
-        "label": "Terran Administrative Centre"
+        "label": "Terran Administrative Centre",
+        "macros": [
+            "defence_ter_claim_01_macro"
+        ]
     },
     "defence_ter_disc_01": {
         "category": "defence",
-        "macro": "defence_ter_disc_01_macro",
-        "label": "Terran Disc Defence Platform"
+        "label": "Terran Disc Defence Platform",
+        "macros": [
+            "defence_ter_disc_01_macro"
+        ]
     },
     "defence_ter_tube_01": {
         "category": "defence",
-        "macro": "defence_ter_tube_01_macro",
-        "label": "Terran Bridge Defence Platform"
+        "label": "Terran Bridge Defence Platform",
+        "macros": [
+            "defence_ter_tube_01_macro"
+        ]
     },
     "dockarea_arg_m_02_tradestation_01": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_02_tradestation_01_macro",
-        "label": "8M Standard Dock Area"
+        "label": "8M Standard Dock Area",
+        "macros": [
+            "dockarea_arg_m_02_tradestation_01_macro"
+        ]
     },
     "dockarea_arg_m_ship_01": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_ship_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_m_ship_01_macro"
+        ]
     },
     "dockarea_arg_m_ship_01_hightech": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_ship_01_hightech_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_m_ship_01_hightech_macro"
+        ]
     },
     "dockarea_arg_m_ship_02": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_ship_02_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_m_ship_02_macro"
+        ]
     },
     "dockarea_arg_m_ship_03": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_ship_03_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_m_ship_03_macro"
+        ]
     },
     "dockarea_arg_m_station_01": {
         "category": "dockarea",
-        "macro": "dockarea_tel_m_station_01_macro",
-        "label": "1M6S Standard Dock Area"
+        "label": "1M6S Standard Dock Area",
+        "macros": [
+            "dockarea_arg_m_station_01_macro",
+            "dockarea_tel_m_station_01_macro"
+        ]
     },
     "dockarea_arg_m_station_01_hightech": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_station_01_hightech_macro",
-        "label": "1M6S Luxury Dock Area"
+        "label": "1M6S Luxury Dock Area",
+        "macros": [
+            "dockarea_arg_m_station_01_hightech_macro"
+        ]
     },
     "dockarea_arg_m_station_01_lowtech": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_station_01_lowtech_macro",
-        "label": "1M6S Basic Dock Area"
+        "label": "1M6S Basic Dock Area",
+        "macros": [
+            "dockarea_arg_m_station_01_lowtech_macro"
+        ]
     },
     "dockarea_arg_m_station_02": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_station_02_macro",
-        "label": "3M6S Standard Dock Area"
+        "label": "3M6S Standard Dock Area",
+        "macros": [
+            "dockarea_arg_m_station_02_macro"
+        ]
     },
     "dockarea_arg_m_station_02_hightech": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_station_02_hightech_macro",
-        "label": "3M6S Luxury Dock Area"
+        "label": "3M6S Luxury Dock Area",
+        "macros": [
+            "dockarea_arg_m_station_02_hightech_macro"
+        ]
     },
     "dockarea_arg_m_station_02_lowtech": {
         "category": "dockarea",
-        "macro": "dockarea_arg_m_station_02_lowtech_macro",
-        "label": "3M6S Basic Dock Area"
+        "label": "3M6S Basic Dock Area",
+        "macros": [
+            "dockarea_arg_m_station_02_lowtech_macro"
+        ]
+    },
+    "dockarea_arg_s_01": {
+        "category": "dockarea",
+        "label": "",
+        "macros": []
     },
     "dockarea_arg_s_ship_01": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_01_macro"
+        ]
     },
     "dockarea_arg_s_ship_01_hightech": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_01_hightech_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_01_hightech_macro"
+        ]
     },
     "dockarea_arg_s_ship_02": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_02_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_02_macro"
+        ]
     },
     "dockarea_arg_s_ship_03": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_03_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_03_macro"
+        ]
     },
     "dockarea_arg_s_ship_04": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_04_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_04_macro"
+        ]
     },
     "dockarea_arg_s_ship_05": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_05_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_05_macro"
+        ]
     },
     "dockarea_arg_s_ship_06": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_06_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_06_macro"
+        ]
     },
     "dockarea_arg_s_ship_07": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_07_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_07_macro"
+        ]
     },
     "dockarea_arg_s_ship_08": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_08_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_08_macro"
+        ]
     },
     "dockarea_arg_s_ship_09": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_09_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_09_macro"
+        ]
     },
     "dockarea_arg_s_ship_10": {
         "category": "dockarea",
-        "macro": "dockarea_arg_s_ship_10_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_10_macro"
+        ]
     },
     "dockarea_arg_xl_builder_01": {
         "category": "dockarea",
-        "macro": "dockarea_arg_xl_builder_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_xl_builder_01_macro"
+        ]
+    },
+    "dockarea_arg_xl_builder_01_a": {
+        "category": "dockarea",
+        "label": "",
+        "macros": []
     },
     "dockarea_arg_xl_carrier_01": {
         "category": "dockarea",
-        "macro": "dockarea_arg_xl_carrier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_xl_carrier_01_macro"
+        ]
     },
     "dockarea_arg_xl_resupplier_01": {
         "category": "dockarea",
-        "macro": "dockarea_arg_xl_resupplier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_xl_resupplier_01_macro"
+        ]
     },
     "dockarea_atf_xl_battleship_01": {
         "category": "dockarea",
-        "macro": "dockarea_atf_xl_battleship_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_atf_xl_battleship_01_macro"
+        ]
     },
     "dockarea_bor_m_station_01_standard": {
         "category": "dockarea",
-        "macro": "dockarea_bor_m_station_01_standard_macro",
-        "label": "Boron 4M14S Luxury Dock Area"
+        "label": "Boron 4M14S Luxury Dock Area",
+        "macros": [
+            "dockarea_bor_m_station_01_standard_macro"
+        ]
     },
     "dockarea_gen_m_inv_01": {
         "category": "dockarea",
-        "macro": "dockarea_gen_m_inv_01_macro",
-        "label": ""
+        "label": "",
+        "macros": [
+            "dockarea_gen_m_inv_01_macro"
+        ]
     },
     "dockarea_gen_s_inv_01": {
         "category": "dockarea",
-        "macro": "dockarea_gen_s_inv_01_macro",
-        "label": ""
+        "label": "",
+        "macros": [
+            "dockarea_gen_s_inv_01_macro"
+        ]
     },
     "dockarea_par_l_destroyer_01": {
         "category": "dockarea",
-        "macro": "dockarea_par_l_destroyer_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_par_l_destroyer_01_macro"
+        ]
     },
     "dockarea_par_l_miner_solid_01": {
         "category": "dockarea",
-        "macro": "dockarea_par_l_miner_solid_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_par_l_miner_solid_01_macro"
+        ]
     },
     "dockarea_par_m_station_01": {
         "category": "dockarea",
-        "macro": "dockarea_par_m_station_01_macro",
-        "label": "1M6S Basic Dock Area"
+        "label": "1M6S Basic Dock Area",
+        "macros": [
+            "dockarea_par_m_station_01_macro"
+        ]
     },
     "dockarea_par_xl_carrier_01": {
         "category": "dockarea",
-        "macro": "dockarea_par_xl_carrier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_par_xl_carrier_01_macro"
+        ]
     },
     "dockarea_par_xl_resupplier_01": {
         "category": "dockarea",
-        "macro": "dockarea_par_xl_resupplier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_par_xl_resupplier_01_macro"
+        ]
     },
     "dockarea_pir_xl_battleship_01": {
         "category": "dockarea",
-        "macro": "dockarea_pir_xl_battleship_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_pir_xl_battleship_01_macro"
+        ]
     },
     "dockarea_spl_xl_carrier_01": {
         "category": "dockarea",
-        "macro": "dockarea_spl_xl_carrier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_spl_xl_carrier_01_macro"
+        ]
     },
     "dockarea_spl_xl_resupplier_01": {
         "category": "dockarea",
-        "macro": "dockarea_spl_xl_resupplier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_spl_xl_resupplier_01_macro"
+        ]
     },
     "dockarea_tel_l_transporter_01": {
         "category": "dockarea",
-        "macro": "dockarea_tel_l_transporter_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_tel_l_transporter_01_macro"
+        ]
     },
     "dockarea_tel_xl_carrier_01": {
         "category": "dockarea",
-        "macro": "dockarea_tel_xl_carrier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_tel_xl_carrier_01_macro"
+        ]
     },
     "dockarea_ter_m_station_01_hightech": {
         "category": "dockarea",
-        "macro": "dockarea_ter_m_station_01_hightech_macro",
-        "label": "Terran 4M10S Luxury Dock Area"
+        "label": "Terran 4M10S Luxury Dock Area",
+        "macros": [
+            "dockarea_ter_m_station_01_hightech_macro"
+        ]
     },
     "dockarea_ter_m_station_01_standard": {
         "category": "dockarea",
-        "macro": "dockarea_ter_m_station_01_standard_macro",
-        "label": "1M6S Luxury Dock Area"
+        "label": "1M6S Luxury Dock Area",
+        "macros": [
+            "dockarea_ter_m_station_01_standard_macro"
+        ]
     },
     "dockarea_ter_xl_carrier_01": {
         "category": "dockarea",
-        "macro": "dockarea_ter_xl_carrier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_ter_xl_carrier_01_macro"
+        ]
     },
     "dockarea_ter_xl_resupplier_01": {
         "category": "dockarea",
-        "macro": "dockarea_ter_xl_resupplier_01_macro",
-        "label": "Dock Area"
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_ter_xl_resupplier_01_macro"
+        ]
     },
     "dockingbay_arg_m_01": {
         "category": "dockingbay",
-        "macro": "dockingbay_arg_m_01_macro",
-        "label": "M Standard Docking Bay"
+        "label": "M Standard Docking Bay",
+        "macros": [
+            "dockingbay_arg_m_01_macro"
+        ]
     },
     "dockingbay_arg_m_01_hightech": {
         "category": "dockingbay",
-        "macro": "dockingbay_arg_m_01_hightech_macro",
-        "label": "M Luxury Docking Bay"
+        "label": "M Luxury Docking Bay",
+        "macros": [
+            "dockingbay_arg_m_01_hightech_macro"
+        ]
     },
     "dockingbay_arg_m_01_lowtech": {
         "category": "dockingbay",
-        "macro": "dockingbay_arg_m_01_lowtech_macro",
-        "label": "M Basic Docking Bay"
+        "label": "M Basic Docking Bay",
+        "macros": [
+            "dockingbay_arg_m_01_lowtech_macro"
+        ]
     },
     "dockingbay_arg_s_01": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_s_playeronly_01_macro",
-        "label": "1M6S Luxury Dock Area"
+        "label": "1M6S Luxury Dock Area",
+        "macros": [
+            "dockingbay_arg_s_01_macro",
+            "dockingbay_gen_s_playeronly_01_macro"
+        ]
     },
     "dockingbay_arg_s_01_hightech": {
         "category": "dockingbay",
-        "macro": "dockingbay_arg_s_01_hightech_macro",
-        "label": "S Luxury Docking Bay"
+        "label": "S Luxury Docking Bay",
+        "macros": [
+            "dockingbay_arg_s_01_hightech_macro"
+        ]
     },
     "dockingbay_arg_s_01_lowtech": {
         "category": "dockingbay",
-        "macro": "dockingbay_arg_s_01_lowtech_macro",
-        "label": "S Basic Docking Bay"
+        "label": "S Basic Docking Bay",
+        "macros": [
+            "dockingbay_arg_s_01_lowtech_macro"
+        ]
     },
     "dockingbay_gen_l_inv": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_l_inv_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_l_inv_macro"
+        ]
     },
     "dockingbay_gen_l_inv_02": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_l_inv_02_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_l_inv_02_macro"
+        ]
     },
     "dockingbay_gen_m_inv": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_m_inv_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_m_inv_macro"
+        ]
     },
     "dockingbay_gen_sm_buildstorage_01": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_sm_buildstorage_01_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_sm_buildstorage_01_macro"
+        ]
     },
     "dockingbay_gen_s_inv": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_s_inv_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_s_inv_macro"
+        ]
     },
     "dockingbay_gen_xl_inv": {
         "category": "dockingbay",
-        "macro": "dockingbay_xen_lxl_inv_macro",
-        "label": ""
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_xl_inv_macro",
+            "dockingbay_xen_lxl_inv_macro"
+        ]
     },
     "dockingbay_gen_xl_inv_02": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_xl_inv_02_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_xl_inv_02_macro"
+        ]
     },
     "dockingbay_gen_xl_pier_01": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_xl_pier_01_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_xl_pier_01_macro"
+        ]
     },
     "dockingbay_ter_xl_pier_04_a": {
         "category": "dockingbay",
-        "macro": "dockingbay_ter_xl_pier_04_a_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_ter_xl_pier_04_a_macro"
+        ]
     },
     "dockingbay_ter_xl_pier_04_b": {
         "category": "dockingbay",
-        "macro": "dockingbay_ter_xl_pier_04_b_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_ter_xl_pier_04_b_macro"
+        ]
     },
     "pier_arg_harbor_01": {
         "category": "pier",
-        "macro": "pier_arg_harbor_01_macro",
-        "label": "Argon 3-Dock T Pier"
+        "label": "Argon 3-Dock T Pier",
+        "macros": [
+            "pier_arg_harbor_01_macro"
+        ]
     },
     "pier_arg_harbor_02": {
         "category": "pier",
-        "macro": "pier_arg_harbor_02_macro",
-        "label": "Argon 1-Dock Pier"
+        "label": "Argon 1-Dock Pier",
+        "macros": [
+            "pier_arg_harbor_02_macro"
+        ]
     },
     "pier_arg_harbor_03": {
         "category": "pier",
-        "macro": "pier_arg_harbor_03_macro",
-        "label": "Argon 3-Dock E Pier"
+        "label": "Argon 3-Dock E Pier",
+        "macros": [
+            "pier_arg_harbor_03_macro"
+        ]
     },
     "pier_arg_single_01_tradestation_01": {
         "category": "pier",
-        "macro": "pier_arg_single_01_tradestation_01_macro",
-        "label": "Argon Trading Station 1-Dock Pier"
+        "label": "Argon Trading Station 1-Dock Pier",
+        "macros": [
+            "pier_arg_single_01_tradestation_01_macro"
+        ]
     },
     "pier_bor_harbor_01": {
         "category": "pier",
-        "macro": "pier_bor_harbor_01_macro",
-        "label": "Boron 4-Dock T Pier"
+        "label": "Boron 4-Dock T Pier",
+        "macros": [
+            "pier_bor_harbor_01_macro"
+        ]
     },
     "pier_bor_harbor_02": {
         "category": "pier",
-        "macro": "pier_bor_harbor_02_macro",
-        "label": "Boron 1-Dock Pier"
+        "label": "Boron 1-Dock Pier",
+        "macros": [
+            "pier_bor_harbor_02_macro"
+        ]
     },
     "pier_bor_harbor_03": {
         "category": "pier",
-        "macro": "pier_bor_harbor_03_macro",
-        "label": "Boron 3-Dock E Pier"
+        "label": "Boron 3-Dock E Pier",
+        "macros": [
+            "pier_bor_harbor_03_macro"
+        ]
     },
     "pier_bor_harbor_04": {
         "category": "pier",
-        "macro": "pier_bor_harbor_04_macro",
-        "label": "Boron Trading Station 4-Dock Pier"
+        "label": "Boron Trading Station 4-Dock Pier",
+        "macros": [
+            "pier_bor_harbor_04_macro"
+        ]
     },
     "pier_bor_tradestation_01": {
         "category": "pier",
-        "macro": "pier_bor_tradestation_01_macro",
-        "label": "Boron Trading Station Hexa-Dock Pier"
+        "label": "Boron Trading Station Hexa-Dock Pier",
+        "macros": [
+            "pier_bor_tradestation_01_macro"
+        ]
     },
     "pier_par_harbor_01": {
         "category": "pier",
-        "macro": "pier_par_harbor_01_macro",
-        "label": "Paranid 3-Dock T Pier"
+        "label": "Paranid 3-Dock T Pier",
+        "macros": [
+            "pier_par_harbor_01_macro"
+        ]
     },
     "pier_par_harbor_02": {
         "category": "pier",
-        "macro": "pier_par_harbor_02_macro",
-        "label": "Paranid 1-Dock Pier"
+        "label": "Paranid 1-Dock Pier",
+        "macros": [
+            "pier_par_harbor_02_macro"
+        ]
     },
     "pier_par_harbor_03": {
         "category": "pier",
-        "macro": "pier_par_harbor_03_macro",
-        "label": "Paranid 3-Dock E Pier"
+        "label": "Paranid 3-Dock E Pier",
+        "macros": [
+            "pier_par_harbor_03_macro"
+        ]
     },
     "pier_spl_harbor_01": {
         "category": "pier",
-        "macro": "pier_spl_harbor_01_macro",
-        "label": "Split 4-Dock T Pier"
+        "label": "Split 4-Dock T Pier",
+        "macros": [
+            "pier_spl_harbor_01_macro"
+        ]
     },
     "pier_spl_harbor_02": {
         "category": "pier",
-        "macro": "pier_spl_harbor_02_macro",
-        "label": "Split 1-Dock Pier"
+        "label": "Split 1-Dock Pier",
+        "macros": [
+            "pier_spl_harbor_02_macro"
+        ]
     },
     "pier_spl_harbor_03": {
         "category": "pier",
-        "macro": "pier_spl_harbor_03_macro",
-        "label": "Split 3-Dock E Pier"
+        "label": "Split 3-Dock E Pier",
+        "macros": [
+            "pier_spl_harbor_03_macro"
+        ]
     },
     "pier_tel_harbor_01": {
         "category": "pier",
-        "macro": "pier_tel_harbor_01_macro",
-        "label": "Teladi 3-Dock T Pier"
+        "label": "Teladi 3-Dock T Pier",
+        "macros": [
+            "pier_tel_harbor_01_macro"
+        ]
     },
     "pier_tel_harbor_02": {
         "category": "pier",
-        "macro": "pier_tel_harbor_02_macro",
-        "label": "Teladi 1-Dock Pier"
+        "label": "Teladi 1-Dock Pier",
+        "macros": [
+            "pier_tel_harbor_02_macro"
+        ]
     },
     "pier_tel_harbor_03": {
         "category": "pier",
-        "macro": "pier_tel_harbor_03_macro",
-        "label": "Teladi 3-Dock E Pier"
+        "label": "Teladi 3-Dock E Pier",
+        "macros": [
+            "pier_tel_harbor_03_macro"
+        ]
     },
     "pier_ter_harbor_01": {
         "category": "pier",
-        "macro": "pier_ter_harbor_01_macro",
-        "label": "Terran 3-Dock T Pier"
+        "label": "Terran 3-Dock T Pier",
+        "macros": [
+            "pier_ter_harbor_01_macro"
+        ]
     },
     "pier_ter_harbor_02": {
         "category": "pier",
-        "macro": "pier_ter_harbor_02_macro",
-        "label": "Terran 1-Dock Pier"
+        "label": "Terran 1-Dock Pier",
+        "macros": [
+            "pier_ter_harbor_02_macro"
+        ]
     },
     "pier_ter_harbor_03": {
         "category": "pier",
-        "macro": "pier_ter_harbor_03_macro",
-        "label": "Terran 3-Dock E Pier"
+        "label": "Terran 3-Dock E Pier",
+        "macros": [
+            "pier_ter_harbor_03_macro"
+        ]
     },
     "pier_ter_harbor_04": {
         "category": "pier",
-        "macro": "pier_ter_harbor_04_macro",
-        "label": "Terran 4-Dock T Pier"
+        "label": "Terran 4-Dock T Pier",
+        "macros": [
+            "pier_ter_harbor_04_macro"
+        ]
     },
     "pier_ter_harbor_05": {
         "category": "pier",
-        "macro": "pier_ter_harbor_05_macro",
-        "label": "Terran 1-Dock Pier"
+        "label": "Terran 1-Dock Pier",
+        "macros": [
+            "pier_ter_harbor_05_macro"
+        ]
     },
     "pier_ter_tradestation_01": {
         "category": "pier",
-        "macro": "pier_ter_tradestation_01_macro",
-        "label": "Terran Trading Station Hexa-Dock Pier"
+        "label": "Terran Trading Station Hexa-Dock Pier",
+        "macros": [
+            "pier_ter_tradestation_01_macro"
+        ]
     },
     "hab_arg_l_01": {
         "category": "hab",
-        "macro": "hab_arg_l_01_macro",
-        "label": "Argon L Habitat"
+        "label": "Argon L Habitat",
+        "macros": [
+            "hab_arg_l_01_macro"
+        ]
     },
     "hab_arg_m_01": {
         "category": "hab",
-        "macro": "hab_arg_m_01_macro",
-        "label": "Argon M Habitat"
+        "label": "Argon M Habitat",
+        "macros": [
+            "hab_arg_m_01_macro"
+        ]
     },
     "hab_arg_s_01": {
         "category": "hab",
-        "macro": "hab_arg_s_01_macro",
-        "label": "Argon S Habitat"
+        "label": "Argon S Habitat",
+        "macros": [
+            "hab_arg_s_01_macro"
+        ]
     },
     "hab_bor_l_01": {
         "category": "hab",
-        "macro": "hab_bor_l_01_macro",
-        "label": "Boron L Oasis"
+        "label": "Boron L Oasis",
+        "macros": [
+            "hab_bor_l_01_macro"
+        ]
     },
     "hab_bor_m_01": {
         "category": "hab",
-        "macro": "hab_bor_m_01_macro",
-        "label": "Boron M Oasis"
+        "label": "Boron M Oasis",
+        "macros": [
+            "hab_bor_m_01_macro"
+        ]
     },
     "hab_bor_s_01": {
         "category": "hab",
-        "macro": "hab_bor_s_01_macro",
-        "label": "Boron S Oasis"
+        "label": "Boron S Oasis",
+        "macros": [
+            "hab_bor_s_01_macro"
+        ]
     },
     "hab_par_l_01": {
         "category": "hab",
-        "macro": "hab_par_l_01_macro",
-        "label": "Paranid L Dome"
+        "label": "Paranid L Dome",
+        "macros": [
+            "hab_par_l_01_macro"
+        ]
     },
     "hab_par_m_01": {
         "category": "hab",
-        "macro": "hab_par_m_01_macro",
-        "label": "Paranid M Dome"
+        "label": "Paranid M Dome",
+        "macros": [
+            "hab_par_m_01_macro"
+        ]
+    },
+    "hab_par_m_02": {
+        "category": "hab",
+        "label": "",
+        "macros": []
     },
     "hab_par_s_01": {
         "category": "hab",
-        "macro": "hab_par_s_01_macro",
-        "label": "Paranid S Dome"
+        "label": "Paranid S Dome",
+        "macros": [
+            "hab_par_s_01_macro"
+        ]
+    },
+    "hab_par_s_02": {
+        "category": "hab",
+        "label": "",
+        "macros": []
+    },
+    "hab_par_s_03": {
+        "category": "hab",
+        "label": "",
+        "macros": []
     },
     "hab_pir_l_01": {
         "category": "hab",
-        "macro": "hab_pir_l_01_macro",
-        "label": "Argon L Dormitory"
+        "label": "Argon L Dormitory",
+        "macros": [
+            "hab_pir_l_01_macro"
+        ]
     },
     "hab_pir_m_01": {
         "category": "hab",
-        "macro": "hab_pir_m_01_macro",
-        "label": "Argon M Dormitory"
+        "label": "Argon M Dormitory",
+        "macros": [
+            "hab_pir_m_01_macro"
+        ]
     },
     "hab_pir_s_01": {
         "category": "hab",
-        "macro": "hab_pir_s_01_macro",
-        "label": "Argon S Dormitory"
+        "label": "Argon S Dormitory",
+        "macros": [
+            "hab_pir_s_01_macro"
+        ]
     },
     "hab_spl_l_01": {
         "category": "hab",
-        "macro": "hab_spl_l_01_macro",
-        "label": "Split L Parlour"
+        "label": "Split L Parlour",
+        "macros": [
+            "hab_spl_l_01_macro"
+        ]
     },
     "hab_spl_m_01": {
         "category": "hab",
-        "macro": "hab_spl_m_01_macro",
-        "label": "Split M Parlour"
+        "label": "Split M Parlour",
+        "macros": [
+            "hab_spl_m_01_macro"
+        ]
     },
     "hab_spl_s_01": {
         "category": "hab",
-        "macro": "hab_spl_s_01_macro",
-        "label": "Split S Parlour"
+        "label": "Split S Parlour",
+        "macros": [
+            "hab_spl_s_01_macro"
+        ]
     },
     "hab_tel_l_01": {
         "category": "hab",
-        "macro": "hab_tel_l_01_macro",
-        "label": "Teladi L Biome"
+        "label": "Teladi L Biome",
+        "macros": [
+            "hab_tel_l_01_macro"
+        ]
     },
     "hab_tel_m_01": {
         "category": "hab",
-        "macro": "hab_tel_m_01_macro",
-        "label": "Teladi M Biome"
+        "label": "Teladi M Biome",
+        "macros": [
+            "hab_tel_m_01_macro"
+        ]
     },
     "hab_tel_s_01": {
         "category": "hab",
-        "macro": "hab_tel_s_01_macro",
-        "label": "Teladi S Biome"
+        "label": "Teladi S Biome",
+        "macros": [
+            "hab_tel_s_01_macro"
+        ]
     },
     "hab_ter_l_01": {
         "category": "hab",
-        "macro": "hab_ter_l_01_macro",
-        "label": "Terran L Living Quarters"
+        "label": "Terran L Living Quarters",
+        "macros": [
+            "hab_ter_l_01_macro"
+        ]
     },
     "hab_ter_m_01": {
         "category": "hab",
-        "macro": "hab_ter_m_01_macro",
-        "label": "Terran M Living Quarters"
+        "label": "Terran M Living Quarters",
+        "macros": [
+            "hab_ter_m_01_macro"
+        ]
     },
     "hab_ter_s_01": {
         "category": "hab",
-        "macro": "hab_ter_s_01_macro",
-        "label": "Terran S Living Quarters"
+        "label": "Terran S Living Quarters",
+        "macros": [
+            "hab_ter_s_01_macro"
+        ]
     },
     "proc_gen_scrapworks": {
         "category": "proc",
-        "macro": "proc_gen_scrapworks_macro",
-        "label": "Scrap Processor"
+        "label": "Scrap Processor",
+        "macros": [
+            "proc_gen_scrapworks_macro"
+        ]
     },
     "prod_arg_foodrations": {
         "category": "prod",
-        "macro": "prod_arg_foodrations_macro",
-        "label": "Food Ration Production"
+        "label": "Food Ration Production",
+        "macros": [
+            "prod_arg_foodrations_macro"
+        ]
     },
     "prod_arg_meat": {
         "category": "prod",
-        "macro": "prod_arg_meat_macro",
-        "label": "Meat Production"
+        "label": "Meat Production",
+        "macros": [
+            "prod_arg_meat_macro"
+        ]
     },
     "prod_arg_spacefuel": {
         "category": "prod",
-        "macro": "prod_arg_spacefuel_macro",
-        "label": "Spacefuel Production"
+        "label": "Spacefuel Production",
+        "macros": [
+            "prod_arg_spacefuel_macro"
+        ]
     },
     "prod_arg_wheat": {
         "category": "prod",
-        "macro": "prod_arg_wheat_macro",
-        "label": "Wheat Production"
+        "label": "Wheat Production",
+        "macros": [
+            "prod_arg_wheat_macro"
+        ]
     },
     "prod_bor_bofu": {
         "category": "prod",
-        "macro": "prod_bor_bofu_macro",
-        "label": "BoFu Production"
+        "label": "BoFu Production",
+        "macros": [
+            "prod_bor_bofu_macro"
+        ]
     },
     "prod_bor_bogas": {
         "category": "prod",
-        "macro": "prod_bor_bogas_macro",
-        "label": "BoGas Production"
+        "label": "BoGas Production",
+        "macros": [
+            "prod_bor_bogas_macro"
+        ]
     },
     "prod_bor_medicalsupplies": {
         "category": "prod",
-        "macro": "prod_bor_medicalsupplies_macro",
-        "label": "Boron Medical Supply Production"
+        "label": "Boron Medical Supply Production",
+        "macros": [
+            "prod_bor_medicalsupplies_macro"
+        ]
     },
     "prod_bor_plankton": {
         "category": "prod",
-        "macro": "prod_bor_plankton_macro",
-        "label": "Plankton Production"
+        "label": "Plankton Production",
+        "macros": [
+            "prod_bor_plankton_macro"
+        ]
     },
     "prod_gen_advancedcomposites": {
         "category": "prod",
-        "macro": "prod_tel_advancedcomposites_macro",
-        "label": "Teladi Advanced Composite Production"
+        "label": "Teladi Advanced Composite Production",
+        "macros": [
+            "prod_gen_advancedcomposites_macro",
+            "prod_tel_advancedcomposites_macro"
+        ]
     },
     "prod_gen_advancedelectronics": {
         "category": "prod",
-        "macro": "prod_gen_advancedelectronics_macro",
-        "label": "Advanced Electronics Production"
+        "label": "Advanced Electronics Production",
+        "macros": [
+            "prod_gen_advancedelectronics_macro"
+        ]
     },
     "prod_gen_antimattercells": {
         "category": "prod",
-        "macro": "prod_gen_antimattercells_macro",
-        "label": "Antimatter Cell Production"
+        "label": "Antimatter Cell Production",
+        "macros": [
+            "prod_gen_antimattercells_macro"
+        ]
     },
     "prod_gen_antimatterconverters": {
         "category": "prod",
-        "macro": "prod_gen_antimatterconverters_macro",
-        "label": "Antimatter Converter Production"
+        "label": "Antimatter Converter Production",
+        "macros": [
+            "prod_gen_antimatterconverters_macro"
+        ]
     },
     "prod_gen_claytronics": {
         "category": "prod",
-        "macro": "prod_gen_claytronics_macro",
-        "label": "Claytronics Production"
+        "label": "Claytronics Production",
+        "macros": [
+            "prod_gen_claytronics_macro"
+        ]
+    },
+    "prod_gen_countermeasures": {
+        "category": "prod",
+        "label": "",
+        "macros": []
     },
     "prod_gen_dronecomponents": {
         "category": "prod",
-        "macro": "prod_gen_dronecomponents_macro",
-        "label": "Drone Component Production"
+        "label": "Drone Component Production",
+        "macros": [
+            "prod_gen_dronecomponents_macro"
+        ]
     },
     "prod_gen_energycells": {
         "category": "prod",
-        "macro": "prod_gen_energycells_macro",
-        "label": "Energy Cell Production"
+        "label": "Energy Cell Production",
+        "macros": [
+            "prod_gen_energycells_macro"
+        ]
     },
     "prod_gen_engineparts": {
         "category": "prod",
-        "macro": "prod_tel_engineparts_macro",
-        "label": "Teladi Engine Part Production"
+        "label": "Teladi Engine Part Production",
+        "macros": [
+            "prod_gen_engineparts_macro",
+            "prod_tel_engineparts_macro"
+        ]
     },
     "prod_gen_fieldcoils": {
         "category": "prod",
-        "macro": "prod_gen_fieldcoils_macro",
-        "label": "Field Coil Production"
+        "label": "Field Coil Production",
+        "macros": [
+            "prod_gen_fieldcoils_macro"
+        ]
     },
     "prod_gen_graphene": {
         "category": "prod",
-        "macro": "prod_gen_graphene_macro",
-        "label": "Graphene Production"
+        "label": "Graphene Production",
+        "macros": [
+            "prod_gen_graphene_macro"
+        ]
     },
     "prod_gen_hullparts": {
         "category": "prod",
-        "macro": "prod_tel_hullparts_macro",
-        "label": "Teladi Hull Part Production"
+        "label": "Teladi Hull Part Production",
+        "macros": [
+            "prod_gen_hullparts_macro",
+            "prod_tel_hullparts_macro"
+        ]
     },
     "prod_gen_medicalsupplies": {
         "category": "prod",
-        "macro": "prod_tel_medicalsupplies_macro",
-        "label": "Teladi Medical Supply Production"
+        "label": "Teladi Medical Supply Production",
+        "macros": [
+            "prod_arg_medicalsupplies_macro",
+            "prod_par_medicalsupplies_macro",
+            "prod_spl_medicalsupplies_macro",
+            "prod_tel_medicalsupplies_macro"
+        ]
     },
     "prod_gen_microchips": {
         "category": "prod",
-        "macro": "prod_gen_microchips_macro",
-        "label": "Microchip Production"
+        "label": "Microchip Production",
+        "macros": [
+            "prod_gen_microchips_macro"
+        ]
     },
     "prod_gen_missilecomponents": {
         "category": "prod",
-        "macro": "prod_gen_missilecomponents_macro",
-        "label": "Missile Component Production"
+        "label": "Missile Component Production",
+        "macros": [
+            "prod_gen_missilecomponents_macro"
+        ]
     },
     "prod_gen_plasmaconductors": {
         "category": "prod",
-        "macro": "prod_gen_plasmaconductors_macro",
-        "label": "Plasma Conductor Production"
+        "label": "Plasma Conductor Production",
+        "macros": [
+            "prod_gen_plasmaconductors_macro"
+        ]
     },
     "prod_gen_quantumtubes": {
         "category": "prod",
-        "macro": "prod_gen_quantumtubes_macro",
-        "label": "Quantum Tube Production"
+        "label": "Quantum Tube Production",
+        "macros": [
+            "prod_gen_quantumtubes_macro"
+        ]
     },
     "prod_gen_refinedmetals": {
         "category": "prod",
-        "macro": "prod_gen_refinedmetals_macro",
-        "label": "Refined Metal Production"
+        "label": "Refined Metal Production",
+        "macros": [
+            "prod_gen_refinedmetals_macro"
+        ]
     },
     "prod_gen_scanningarrays": {
         "category": "prod",
-        "macro": "prod_tel_scanningarrays_macro",
-        "label": "Teladi Scanning Array Production"
+        "label": "Teladi Scanning Array Production",
+        "macros": [
+            "prod_gen_scanningarrays_macro",
+            "prod_tel_scanningarrays_macro"
+        ]
     },
     "prod_gen_scrap_recycler": {
         "category": "prod",
-        "macro": "prod_gen_scrap_recycler_macro",
-        "label": "Scrap Recycler"
+        "label": "Scrap Recycler",
+        "macros": [
+            "prod_gen_scrap_recycler_macro"
+        ]
     },
     "prod_gen_shieldcomponents": {
         "category": "prod",
-        "macro": "prod_gen_shieldcomponents_macro",
-        "label": "Shield Component Production"
+        "label": "Shield Component Production",
+        "macros": [
+            "prod_gen_shieldcomponents_macro"
+        ]
     },
     "prod_gen_siliconwafers": {
         "category": "prod",
-        "macro": "prod_gen_siliconwafers_macro",
-        "label": "Silicon Wafer Production"
+        "label": "Silicon Wafer Production",
+        "macros": [
+            "prod_gen_siliconwafers_macro"
+        ]
     },
     "prod_gen_smartchips": {
         "category": "prod",
-        "macro": "prod_gen_smartchips_macro",
-        "label": "Smart Chip Production"
+        "label": "Smart Chip Production",
+        "macros": [
+            "prod_gen_smartchips_macro"
+        ]
     },
     "prod_gen_spices": {
         "category": "prod",
-        "macro": "prod_gen_spices_macro",
-        "label": "Spice Production"
+        "label": "Spice Production",
+        "macros": [
+            "prod_gen_spices_macro"
+        ]
     },
     "prod_gen_superfluidcoolant": {
         "category": "prod",
-        "macro": "prod_gen_superfluidcoolant_macro",
-        "label": "Superfluid Coolant Production"
+        "label": "Superfluid Coolant Production",
+        "macros": [
+            "prod_gen_superfluidcoolant_macro"
+        ]
     },
     "prod_gen_turretcomponents": {
         "category": "prod",
-        "macro": "prod_gen_turretcomponents_macro",
-        "label": "Turret Component Production"
+        "label": "Turret Component Production",
+        "macros": [
+            "prod_gen_turretcomponents_macro"
+        ]
     },
     "prod_gen_water": {
         "category": "prod",
-        "macro": "prod_gen_water_macro",
-        "label": "Water Production"
+        "label": "Water Production",
+        "macros": [
+            "prod_gen_water_macro"
+        ]
     },
     "prod_gen_weaponcomponents": {
         "category": "prod",
-        "macro": "prod_gen_weaponcomponents_macro",
-        "label": "Weapon Component Production"
+        "label": "Weapon Component Production",
+        "macros": [
+            "prod_gen_weaponcomponents_macro"
+        ]
     },
     "prod_par_majadust": {
         "category": "prod",
-        "macro": "prod_par_majadust_macro",
-        "label": "Maja Dust Production"
+        "label": "Maja Dust Production",
+        "macros": [
+            "prod_par_majadust_macro"
+        ]
     },
     "prod_par_majasnails": {
         "category": "prod",
-        "macro": "prod_par_majasnails_macro",
-        "label": "Maja Snail Production"
+        "label": "Maja Snail Production",
+        "macros": [
+            "prod_par_majasnails_macro"
+        ]
     },
     "prod_par_sojabeans": {
         "category": "prod",
-        "macro": "prod_par_sojabeans_macro",
-        "label": "Soja Bean Production"
+        "label": "Soja Bean Production",
+        "macros": [
+            "prod_par_sojabeans_macro"
+        ]
     },
     "prod_par_sojahusk": {
         "category": "prod",
-        "macro": "prod_par_sojahusk_macro",
-        "label": "Soja Husk Production"
+        "label": "Soja Husk Production",
+        "macros": [
+            "prod_par_sojahusk_macro"
+        ]
     },
     "prod_spl_cheltmeat": {
         "category": "prod",
-        "macro": "prod_spl_cheltmeat_macro",
-        "label": "Chelt Production"
+        "label": "Chelt Production",
+        "macros": [
+            "prod_spl_cheltmeat_macro"
+        ]
     },
     "prod_spl_scruffinfruit": {
         "category": "prod",
-        "macro": "prod_spl_scruffinfruit_macro",
-        "label": "Scruffin Production"
+        "label": "Scruffin Production",
+        "macros": [
+            "prod_spl_scruffinfruit_macro"
+        ]
     },
     "prod_tel_nostropoil": {
         "category": "prod",
-        "macro": "prod_tel_nostropoil_macro",
-        "label": "Nostrop Oil Production"
+        "label": "Nostrop Oil Production",
+        "macros": [
+            "prod_tel_nostropoil_macro"
+        ]
     },
     "prod_tel_spaceweed": {
         "category": "prod",
-        "macro": "prod_tel_spaceweed_macro",
-        "label": "Spaceweed Production"
+        "label": "Spaceweed Production",
+        "macros": [
+            "prod_tel_spaceweed_macro"
+        ]
     },
     "prod_tel_sunriseflowers": {
         "category": "prod",
-        "macro": "prod_tel_sunriseflowers_macro",
-        "label": "Sunrise Flower Production"
+        "label": "Sunrise Flower Production",
+        "macros": [
+            "prod_tel_sunriseflowers_macro"
+        ]
     },
     "prod_tel_swampplants": {
         "category": "prod",
-        "macro": "prod_tel_swampplant_macro",
-        "label": "Swamp Plant Production"
+        "label": "Swamp Plant Production",
+        "macros": [
+            "prod_tel_swampplant_macro"
+        ]
     },
     "prod_tel_teladianium": {
         "category": "prod",
-        "macro": "prod_tel_teladianium_macro",
-        "label": "Teladianium Production"
+        "label": "Teladianium Production",
+        "macros": [
+            "prod_tel_teladianium_macro"
+        ]
     },
     "prod_ter_computronicsubstrate": {
         "category": "prod",
-        "macro": "prod_ter_computronicsubstrate_macro",
-        "label": "Computronic Substrate Production"
+        "label": "Computronic Substrate Production",
+        "macros": [
+            "prod_ter_computronicsubstrate_macro"
+        ]
     },
     "prod_ter_energycells": {
         "category": "prod",
-        "macro": "prod_ter_energycells_macro",
-        "label": "Terran Energy Cell Production"
+        "label": "Terran Energy Cell Production",
+        "macros": [
+            "prod_ter_energycells_macro"
+        ]
     },
     "prod_ter_medicalsupplies": {
         "category": "prod",
-        "macro": "prod_ter_medicalsupplies_macro",
-        "label": "Terran Medical Supply Production"
+        "label": "Terran Medical Supply Production",
+        "macros": [
+            "prod_ter_medicalsupplies_macro"
+        ]
     },
     "prod_ter_metallicmicrolattice": {
         "category": "prod",
-        "macro": "prod_ter_metallicmicrolattice_macro",
-        "label": "Metallic Microlattice Production"
+        "label": "Metallic Microlattice Production",
+        "macros": [
+            "prod_ter_metallicmicrolattice_macro"
+        ]
     },
     "prod_ter_mre": {
         "category": "prod",
-        "macro": "prod_ter_mre_macro",
-        "label": "Terran MRE Production"
+        "label": "Terran MRE Production",
+        "macros": [
+            "prod_ter_mre_macro"
+        ]
     },
     "prod_ter_proteinpaste": {
         "category": "prod",
-        "macro": "prod_ter_proteinpaste_macro",
-        "label": "Protein Paste Production"
+        "label": "Protein Paste Production",
+        "macros": [
+            "prod_ter_proteinpaste_macro"
+        ]
     },
     "prod_ter_scrap_recycler": {
         "category": "prod",
-        "macro": "prod_ter_scrap_recycler_macro",
-        "label": "Terran Scrap Recycler"
+        "label": "Terran Scrap Recycler",
+        "macros": [
+            "prod_ter_scrap_recycler_macro"
+        ]
     },
     "prod_ter_siliconcarbide": {
         "category": "prod",
-        "macro": "prod_ter_siliconcarbide_macro",
-        "label": "Silicon Carbide Production"
+        "label": "Silicon Carbide Production",
+        "macros": [
+            "prod_ter_siliconcarbide_macro"
+        ]
     },
     "prod_ter_stimulants": {
         "category": "prod",
-        "macro": "prod_ter_stimulants_macro",
-        "label": "Stimulant Production"
+        "label": "Stimulant Production",
+        "macros": [
+            "prod_ter_stimulants_macro"
+        ]
     },
     "storage_arg_l_container_01": {
         "category": "storage",
-        "macro": "storage_arg_l_container_01_macro",
-        "label": "Argon L Container Storage"
+        "label": "Argon L Container Storage",
+        "macros": [
+            "storage_arg_l_container_01_macro"
+        ]
     },
     "storage_arg_l_liquid_01": {
         "category": "storage",
-        "macro": "storage_arg_l_liquid_01_macro",
-        "label": "Argon L Liquid Storage"
+        "label": "Argon L Liquid Storage",
+        "macros": [
+            "storage_arg_l_liquid_01_macro"
+        ]
     },
     "storage_arg_l_solid_01": {
         "category": "storage",
-        "macro": "storage_arg_l_solid_01_macro",
-        "label": "Argon L Solid Storage"
+        "label": "Argon L Solid Storage",
+        "macros": [
+            "storage_arg_l_solid_01_macro"
+        ]
     },
     "storage_arg_l_tradestation_01": {
         "category": "storage",
-        "macro": "storage_arg_l_tradestation_01_macro",
-        "label": "Argon L Universal Storage"
+        "label": "Argon L Universal Storage",
+        "macros": [
+            "storage_arg_l_tradestation_01_macro"
+        ]
     },
     "storage_arg_m_container_01": {
         "category": "storage",
-        "macro": "storage_arg_m_container_01_macro",
-        "label": "Argon M Container Storage"
+        "label": "Argon M Container Storage",
+        "macros": [
+            "storage_arg_m_container_01_macro"
+        ]
     },
     "storage_arg_m_liquid_01": {
         "category": "storage",
-        "macro": "storage_arg_m_liquid_01_macro",
-        "label": "Argon M Liquid Storage"
+        "label": "Argon M Liquid Storage",
+        "macros": [
+            "storage_arg_m_liquid_01_macro"
+        ]
     },
     "storage_arg_m_solid_01": {
         "category": "storage",
-        "macro": "storage_arg_m_solid_01_macro",
-        "label": "Argon M Solid Storage"
+        "label": "Argon M Solid Storage",
+        "macros": [
+            "storage_arg_m_solid_01_macro"
+        ]
     },
     "storage_arg_s_container_01": {
         "category": "storage",
-        "macro": "storage_arg_s_container_01_macro",
-        "label": "Argon S Container Storage"
+        "label": "Argon S Container Storage",
+        "macros": [
+            "storage_arg_s_container_01_macro"
+        ]
     },
     "storage_arg_s_liquid_01": {
         "category": "storage",
-        "macro": "storage_arg_s_liquid_01_macro",
-        "label": "Argon S Liquid Storage"
+        "label": "Argon S Liquid Storage",
+        "macros": [
+            "storage_arg_s_liquid_01_macro"
+        ]
     },
     "storage_arg_s_solid_01": {
         "category": "storage",
-        "macro": "storage_arg_s_solid_01_macro",
-        "label": "Argon S Solid Storage"
+        "label": "Argon S Solid Storage",
+        "macros": [
+            "storage_arg_s_solid_01_macro"
+        ]
     },
     "storage_bor_l_container_01": {
         "category": "storage",
-        "macro": "storage_bor_l_container_01_macro",
-        "label": "Boron L Container Storage"
+        "label": "Boron L Container Storage",
+        "macros": [
+            "storage_bor_l_container_01_macro"
+        ]
     },
     "storage_bor_l_liquid_01": {
         "category": "storage",
-        "macro": "storage_bor_l_liquid_01_macro",
-        "label": "Boron L Liquid Storage"
+        "label": "Boron L Liquid Storage",
+        "macros": [
+            "storage_bor_l_liquid_01_macro"
+        ]
     },
     "storage_bor_l_solid_01": {
         "category": "storage",
-        "macro": "storage_bor_l_solid_01_macro",
-        "label": "Boron L Solid Storage"
+        "label": "Boron L Solid Storage",
+        "macros": [
+            "storage_bor_l_solid_01_macro"
+        ]
     },
     "storage_bor_m_container_01": {
         "category": "storage",
-        "macro": "storage_bor_m_container_01_macro",
-        "label": "Boron M Container Storage"
+        "label": "Boron M Container Storage",
+        "macros": [
+            "storage_bor_m_container_01_macro"
+        ]
     },
     "storage_bor_m_liquid_01": {
         "category": "storage",
-        "macro": "storage_bor_m_liquid_01_macro",
-        "label": "Boron M Liquid Storage"
+        "label": "Boron M Liquid Storage",
+        "macros": [
+            "storage_bor_m_liquid_01_macro"
+        ]
     },
     "storage_bor_m_solid_01": {
         "category": "storage",
-        "macro": "storage_bor_m_solid_01_macro",
-        "label": "Boron M Solid Storage"
+        "label": "Boron M Solid Storage",
+        "macros": [
+            "storage_bor_m_solid_01_macro"
+        ]
     },
     "storage_bor_s_container_01": {
         "category": "storage",
-        "macro": "storage_bor_s_container_01_macro",
-        "label": "Boron S Container Storage"
+        "label": "Boron S Container Storage",
+        "macros": [
+            "storage_bor_s_container_01_macro"
+        ]
     },
     "storage_bor_s_liquid_01": {
         "category": "storage",
-        "macro": "storage_bor_s_liquid_01_macro",
-        "label": "Boron S Liquid Storage"
+        "label": "Boron S Liquid Storage",
+        "macros": [
+            "storage_bor_s_liquid_01_macro"
+        ]
     },
     "storage_bor_s_solid_01": {
         "category": "storage",
-        "macro": "storage_bor_s_solid_01_macro",
-        "label": "Boron S Solid Storage"
+        "label": "Boron S Solid Storage",
+        "macros": [
+            "storage_bor_s_solid_01_macro"
+        ]
     },
     "storage_par_l_container_01": {
         "category": "storage",
-        "macro": "storage_par_l_container_01_macro",
-        "label": "Paranid L Container Storage"
+        "label": "Paranid L Container Storage",
+        "macros": [
+            "storage_par_l_container_01_macro"
+        ]
     },
     "storage_par_l_liquid_01": {
         "category": "storage",
-        "macro": "storage_par_l_liquid_01_macro",
-        "label": "Paranid L Liquid Storage"
+        "label": "Paranid L Liquid Storage",
+        "macros": [
+            "storage_par_l_liquid_01_macro"
+        ]
     },
     "storage_par_l_solid_01": {
         "category": "storage",
-        "macro": "storage_par_l_solid_01_macro",
-        "label": "Paranid L Solid Storage"
+        "label": "Paranid L Solid Storage",
+        "macros": [
+            "storage_par_l_solid_01_macro"
+        ]
     },
     "storage_par_m_container_01": {
         "category": "storage",
-        "macro": "storage_par_m_container_01_macro",
-        "label": "Paranid M Container Storage"
+        "label": "Paranid M Container Storage",
+        "macros": [
+            "storage_par_m_container_01_macro"
+        ]
     },
     "storage_par_m_liquid_01": {
         "category": "storage",
-        "macro": "storage_par_m_liquid_01_macro",
-        "label": "Paranid M Liquid Storage"
+        "label": "Paranid M Liquid Storage",
+        "macros": [
+            "storage_par_m_liquid_01_macro"
+        ]
     },
     "storage_par_m_solid_01": {
         "category": "storage",
-        "macro": "storage_par_m_solid_01_macro",
-        "label": "Paranid M Solid Storage"
+        "label": "Paranid M Solid Storage",
+        "macros": [
+            "storage_par_m_solid_01_macro"
+        ]
     },
     "storage_par_s_container_01": {
         "category": "storage",
-        "macro": "storage_par_s_container_01_macro",
-        "label": "Paranid S Container Storage"
+        "label": "Paranid S Container Storage",
+        "macros": [
+            "storage_par_s_container_01_macro"
+        ]
     },
     "storage_par_s_liquid_01": {
         "category": "storage",
-        "macro": "storage_par_s_liquid_01_macro",
-        "label": "Paranid S Liquid Storage"
+        "label": "Paranid S Liquid Storage",
+        "macros": [
+            "storage_par_s_liquid_01_macro"
+        ]
     },
     "storage_par_s_solid_01": {
         "category": "storage",
-        "macro": "storage_par_s_solid_01_macro",
-        "label": "Paranid S Solid Storage"
+        "label": "Paranid S Solid Storage",
+        "macros": [
+            "storage_par_s_solid_01_macro"
+        ]
     },
     "storage_pir_l_condensate_01": {
         "category": "storage",
-        "macro": "storage_pir_l_condensate_01_macro",
-        "label": "Protectyon Shield Generator"
+        "label": "Protectyon Shield Generator",
+        "macros": [
+            "storage_pir_l_condensate_01_macro"
+        ]
     },
     "storage_pir_s_condensate_01": {
         "category": "storage",
-        "macro": "storage_pir_s_condensate_01_macro",
-        "label": "Condensate Containment Facility"
+        "label": "Condensate Containment Facility",
+        "macros": [
+            "storage_pir_s_condensate_01_macro"
+        ]
     },
     "storage_spl_l_container_01": {
         "category": "storage",
-        "macro": "storage_spl_l_container_01_macro",
-        "label": "Split L Container Storage"
+        "label": "Split L Container Storage",
+        "macros": [
+            "storage_spl_l_container_01_macro"
+        ]
     },
     "storage_spl_l_liquid_01": {
         "category": "storage",
-        "macro": "storage_spl_l_liquid_01_macro",
-        "label": "Split L Liquid Storage"
+        "label": "Split L Liquid Storage",
+        "macros": [
+            "storage_spl_l_liquid_01_macro"
+        ]
     },
     "storage_spl_l_solid_01": {
         "category": "storage",
-        "macro": "storage_spl_l_solid_01_macro",
-        "label": "Split L Solid Storage"
+        "label": "Split L Solid Storage",
+        "macros": [
+            "storage_spl_l_solid_01_macro"
+        ]
     },
     "storage_spl_m_container_01": {
         "category": "storage",
-        "macro": "storage_spl_m_container_01_macro",
-        "label": "Split M Container Storage"
+        "label": "Split M Container Storage",
+        "macros": [
+            "storage_spl_m_container_01_macro"
+        ]
     },
     "storage_spl_m_liquid_01": {
         "category": "storage",
-        "macro": "storage_spl_m_liquid_01_macro",
-        "label": "Split M Liquid Storage"
+        "label": "Split M Liquid Storage",
+        "macros": [
+            "storage_spl_m_liquid_01_macro"
+        ]
     },
     "storage_spl_m_solid_01": {
         "category": "storage",
-        "macro": "storage_spl_m_solid_01_macro",
-        "label": "Split M Solid Storage"
+        "label": "Split M Solid Storage",
+        "macros": [
+            "storage_spl_m_solid_01_macro"
+        ]
     },
     "storage_spl_s_container_01": {
         "category": "storage",
-        "macro": "storage_spl_s_container_01_macro",
-        "label": "Split S Container Storage"
+        "label": "Split S Container Storage",
+        "macros": [
+            "storage_spl_s_container_01_macro"
+        ]
     },
     "storage_spl_s_liquid_01": {
         "category": "storage",
-        "macro": "storage_spl_s_liquid_01_macro",
-        "label": "Split S Liquid Storage"
+        "label": "Split S Liquid Storage",
+        "macros": [
+            "storage_spl_s_liquid_01_macro"
+        ]
     },
     "storage_spl_s_solid_01": {
         "category": "storage",
-        "macro": "storage_spl_s_solid_01_macro",
-        "label": "Split S Solid Storage"
+        "label": "Split S Solid Storage",
+        "macros": [
+            "storage_spl_s_solid_01_macro"
+        ]
     },
     "storage_tel_l_container_01": {
         "category": "storage",
-        "macro": "storage_tel_l_container_01_macro",
-        "label": "Teladi L Container Storage"
+        "label": "Teladi L Container Storage",
+        "macros": [
+            "storage_tel_l_container_01_macro"
+        ]
     },
     "storage_tel_l_liquid_01": {
         "category": "storage",
-        "macro": "storage_tel_l_liquid_01_macro",
-        "label": "Teladi L Liquid Storage"
+        "label": "Teladi L Liquid Storage",
+        "macros": [
+            "storage_tel_l_liquid_01_macro"
+        ]
     },
     "storage_tel_l_solid_01": {
         "category": "storage",
-        "macro": "storage_tel_l_solid_01_macro",
-        "label": "Teladi L Solid Storage"
+        "label": "Teladi L Solid Storage",
+        "macros": [
+            "storage_tel_l_solid_01_macro"
+        ]
     },
     "storage_tel_m_container_01": {
         "category": "storage",
-        "macro": "storage_tel_m_container_01_macro",
-        "label": "Teladi M Container Storage"
+        "label": "Teladi M Container Storage",
+        "macros": [
+            "storage_tel_m_container_01_macro"
+        ]
     },
     "storage_tel_m_liquid_01": {
         "category": "storage",
-        "macro": "storage_tel_m_liquid_01_macro",
-        "label": "Teladi M Liquid Storage"
+        "label": "Teladi M Liquid Storage",
+        "macros": [
+            "storage_tel_m_liquid_01_macro"
+        ]
     },
     "storage_tel_m_solid_01": {
         "category": "storage",
-        "macro": "storage_tel_m_solid_01_macro",
-        "label": "Teladi M Solid Storage"
+        "label": "Teladi M Solid Storage",
+        "macros": [
+            "storage_tel_m_solid_01_macro"
+        ]
     },
     "storage_tel_s_container_01": {
         "category": "storage",
-        "macro": "storage_tel_s_container_01_macro",
-        "label": "Teladi S Container Storage"
+        "label": "Teladi S Container Storage",
+        "macros": [
+            "storage_tel_s_container_01_macro"
+        ]
     },
     "storage_tel_s_liquid_01": {
         "category": "storage",
-        "macro": "storage_tel_s_liquid_01_macro",
-        "label": "Teladi S Liquid Storage"
+        "label": "Teladi S Liquid Storage",
+        "macros": [
+            "storage_tel_s_liquid_01_macro"
+        ]
     },
     "storage_tel_s_solid_01": {
         "category": "storage",
-        "macro": "storage_tel_s_solid_01_macro",
-        "label": "Teladi S Solid Storage"
+        "label": "Teladi S Solid Storage",
+        "macros": [
+            "storage_tel_s_solid_01_macro"
+        ]
     },
     "storage_ter_l_container_01": {
         "category": "storage",
-        "macro": "storage_ter_l_container_01_macro",
-        "label": "Terran L Container Storage"
+        "label": "Terran L Container Storage",
+        "macros": [
+            "storage_ter_l_container_01_macro"
+        ]
     },
     "storage_ter_l_liquid_01": {
         "category": "storage",
-        "macro": "storage_ter_l_liquid_01_macro",
-        "label": "Terran L Liquid Storage"
+        "label": "Terran L Liquid Storage",
+        "macros": [
+            "storage_ter_l_liquid_01_macro"
+        ]
     },
     "storage_ter_l_solid_01": {
         "category": "storage",
-        "macro": "storage_ter_l_solid_01_macro",
-        "label": "Terran L Solid Storage"
+        "label": "Terran L Solid Storage",
+        "macros": [
+            "storage_ter_l_solid_01_macro"
+        ]
     },
     "storage_ter_m_container_01": {
         "category": "storage",
-        "macro": "storage_ter_m_container_01_macro",
-        "label": "Terran M Container Storage"
+        "label": "Terran M Container Storage",
+        "macros": [
+            "storage_ter_m_container_01_macro"
+        ]
     },
     "storage_ter_m_container_tradestation_01": {
         "category": "storage",
-        "macro": "storage_ter_m_container_tradestation_01_macro",
-        "label": "Terran M Trading Station Container Storage"
+        "label": "Terran M Trading Station Container Storage",
+        "macros": [
+            "storage_ter_m_container_tradestation_01_macro"
+        ]
     },
     "storage_ter_m_liquid_01": {
         "category": "storage",
-        "macro": "storage_ter_m_liquid_01_macro",
-        "label": "Terran M Liquid Storage"
+        "label": "Terran M Liquid Storage",
+        "macros": [
+            "storage_ter_m_liquid_01_macro"
+        ]
     },
     "storage_ter_m_solid_01": {
         "category": "storage",
-        "macro": "storage_ter_m_solid_01_macro",
-        "label": "Terran M Solid Storage"
+        "label": "Terran M Solid Storage",
+        "macros": [
+            "storage_ter_m_solid_01_macro"
+        ]
     },
     "storage_ter_s_container_01": {
         "category": "storage",
-        "macro": "storage_ter_s_container_01_macro",
-        "label": "Terran S Container Storage"
+        "label": "Terran S Container Storage",
+        "macros": [
+            "storage_ter_s_container_01_macro"
+        ]
     },
     "storage_ter_s_liquid_01": {
         "category": "storage",
-        "macro": "storage_ter_s_liquid_01_macro",
-        "label": "Terran S Liquid Storage"
+        "label": "Terran S Liquid Storage",
+        "macros": [
+            "storage_ter_s_liquid_01_macro"
+        ]
     },
     "storage_ter_s_liquid_tradestation_01": {
         "category": "storage",
-        "macro": "storage_ter_s_liquid_tradestation_01_macro",
-        "label": "Terran S Trading Station Liquid Storage"
+        "label": "Terran S Trading Station Liquid Storage",
+        "macros": [
+            "storage_ter_s_liquid_tradestation_01_macro"
+        ]
     },
     "storage_ter_s_solid_01": {
         "category": "storage",
-        "macro": "storage_ter_s_solid_01_macro",
-        "label": "Terran S Solid Storage"
+        "label": "Terran S Solid Storage",
+        "macros": [
+            "storage_ter_s_solid_01_macro"
+        ]
     },
     "dockarea_gen_m_venturer_01": {
         "category": "dockarea",
-        "macro": "dockarea_gen_m_venturer_01_macro",
-        "label": "S\/M Venture Sendoff Dock"
+        "label": "S\/M Venture Sendoff Dock",
+        "macros": [
+            "dockarea_gen_m_venturer_01_macro"
+        ]
     },
     "dockarea_gen_xl_venturer_01": {
         "category": "dockarea",
-        "macro": "dockarea_gen_xl_venturer_01_macro",
-        "label": "L\/XL Venture Sendoff Dock"
+        "label": "L\/XL Venture Sendoff Dock",
+        "macros": [
+            "dockarea_gen_xl_venturer_01_macro"
+        ]
     },
     "dockingbay_gen_lxl_venturer_01": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_lxl_venturer_01_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_lxl_venturer_01_macro"
+        ]
     },
     "dockingbay_gen_sm_venturer_01": {
         "category": "dockingbay",
-        "macro": "dockingbay_gen_sm_venturer_01_macro",
-        "label": "Docking Bay"
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_sm_venturer_01_macro"
+        ]
     },
     "struct_gen_venturerbase_01": {
         "category": "struct",
-        "macro": "struct_gen_venturerbase_01_macro",
-        "label": "Venture Base Connection Structure 01"
+        "label": "Venture Base Connection Structure 01",
+        "macros": [
+            "struct_gen_venturerbase_01_macro"
+        ]
     },
     "struct_gen_venturerbase_02": {
         "category": "struct",
-        "macro": "struct_gen_venturerbase_02_macro",
-        "label": "Venture Base Connection Structure 02"
+        "label": "Venture Base Connection Structure 02",
+        "macros": [
+            "struct_gen_venturerbase_02_macro"
+        ]
     },
     "struct_gen_venturerbase_03": {
         "category": "struct",
-        "macro": "struct_gen_venturerbase_03_macro",
-        "label": "Venture Base Connection Structure 03"
+        "label": "Venture Base Connection Structure 03",
+        "macros": [
+            "struct_gen_venturerbase_03_macro"
+        ]
     },
     "struct_gen_venturercross_01": {
         "category": "struct",
-        "macro": "struct_gen_venturercross_01_macro",
-        "label": "Venture Cross Connection Structure 01"
+        "label": "Venture Cross Connection Structure 01",
+        "macros": [
+            "struct_gen_venturercross_01_macro"
+        ]
     },
     "struct_gen_venturervertical_01": {
         "category": "struct",
-        "macro": "struct_gen_venturervertical_01_macro",
-        "label": "Venture Vertical Connection Structure 01"
+        "label": "Venture Vertical Connection Structure 01",
+        "macros": [
+            "struct_gen_venturervertical_01_macro"
+        ]
     },
     "struct_gen_venturervertical_02": {
         "category": "struct",
-        "macro": "struct_gen_venturervertical_02_macro",
-        "label": "Venture Vertical Connection Structure 02"
+        "label": "Venture Vertical Connection Structure 02",
+        "macros": [
+            "struct_gen_venturervertical_02_macro"
+        ]
     },
     "welfare_bor_artacademy_01": {
         "category": "welfare",
-        "macro": "welfare_bor_artacademy_01_macro",
-        "label": "Pheromone Art Gallery"
+        "label": "Pheromone Art Gallery",
+        "macros": [
+            "welfare_bor_artacademy_01_macro"
+        ]
     },
     "welfare_gen_casino_01": {
         "category": "welfare",
-        "macro": "welfare_gen_casino_01_macro",
-        "label": "Casino"
+        "label": "Casino",
+        "macros": [
+            "welfare_gen_casino_01_macro"
+        ]
     },
     "welfare_gen_gamblinghall_01": {
         "category": "welfare",
-        "macro": "welfare_gen_gamblinghall_01_macro",
-        "label": "Gambling Den"
+        "label": "Gambling Den",
+        "macros": [
+            "welfare_gen_gamblinghall_01_macro"
+        ]
     }
 }

@@ -42,9 +42,18 @@ class ModuleDef
         return $this->getID();
     }
 
-    public function getMacro() : string
+    /**
+     * A module can have multiple macros which reference it.
+     *
+     * An example is the Medical production module, which
+     * is used by several races. Each race has its own macro,
+     * which refers to the same module.
+     *
+     * @return string[]
+     */
+    public function getMacros() : array
     {
-        return $this->data->getString(ModuleExtractor::KEY_MACRO);
+        return $this->data->getArray(ModuleExtractor::KEY_MACROS);
     }
 
     public function getCategory() : ModuleCategory

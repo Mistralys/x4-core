@@ -18,7 +18,7 @@ class ModuleExtractor
     public const ERROR_STRUCTURES_FOLDER_NOT_FOUND = 138302;
     public const ERROR_DUPLICATE_MODULE_NAME = 138303;
     public const ERROR_INVALID_MODULES = 138304;
-    public const KEY_MACRO = 'macro';
+    public const KEY_MACROS = 'macros';
     public const KEY_LABEL = 'label';
     public const KEY_CATEGORY = 'category';
 
@@ -30,7 +30,7 @@ class ModuleExtractor
     private array $searchIn;
 
     /**
-     * @var array<string,array{category:string,label:string,macro:string}>
+     * @var array<string,array{category:string,label:string,macros:string[]}>
      */
     private array $modules = array();
     private TranslationDefs $translation;
@@ -142,7 +142,7 @@ class ModuleExtractor
 
         foreach($this->modules as $moduleName => $data)
         {
-            if(!isset($data[self::KEY_MACRO])) {
+            if(!isset($data[self::KEY_MACROS])) {
                 echo '- Module `'.$moduleName.'` is not used anywhere, removing.'.PHP_EOL;
                 unset($this->modules[$moduleName]);
             }
@@ -202,8 +202,13 @@ class ModuleExtractor
             return;
         }
 
-        $this->modules[$moduleName][self::KEY_MACRO] = $macroName;
-        $this->modules[$moduleName][self::KEY_LABEL] = $label;
+        if(!in_array($macroName, $this->modules[$moduleName][self::KEY_MACROS], true)) {
+            $this->modules[$moduleName][self::KEY_MACROS][] = $macroName;
+        }
+
+        if(!empty($label)) {
+            $this->modules[$moduleName][self::KEY_LABEL] = $label;
+        }
     }
 
     private function extractModulesInFolder(FolderInfo $folder) : void
@@ -258,7 +263,9 @@ class ModuleExtractor
         }
 
         $this->modules[$moduleName] = array(
-            self::KEY_CATEGORY => $categoryID
+            self::KEY_CATEGORY => $categoryID,
+            self::KEY_LABEL => '',
+            self::KEY_MACROS => array()
         );
    }
 

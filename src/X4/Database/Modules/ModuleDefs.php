@@ -96,7 +96,7 @@ class ModuleDefs
         $modules = $this->getAll();
 
         foreach($modules as $module) {
-            if($module->getMacro() === $macro) {
+            if(in_array($macro, $module->getMacros())) {
                 return $module;
             }
         }
