@@ -103,4 +103,20 @@ class ModuleDefs
 
         return null;
     }
+
+    /**
+     * Finds a module by either its ID or macro.
+     *
+     * @param string $idOrMacro
+     * @return ModuleDef|null
+     * @throws ModuleException
+     */
+    public function find(string $idOrMacro) : ?ModuleDef
+    {
+        if($this->idExists($idOrMacro)) {
+            return $this->getByID($idOrMacro);
+        }
+
+        return $this->findByMacro($idOrMacro);
+    }
 }
