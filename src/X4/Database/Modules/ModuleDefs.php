@@ -26,14 +26,17 @@ class ModuleDefs
 
         foreach($list as $moduleName => $moduleData)
         {
-            $categoryID = $moduleData['category'];
+            $categoryID = $moduleData[ModuleExtractor::KEY_CATEGORY];
 
             if(!$categories->idExists($categoryID)) {
                 continue;
             }
 
-            $category = $categories->getByID($categoryID);
-            $this->defs[$moduleName] = new ModuleDef($moduleName, $moduleData['label'], $category);
+            $this->defs[$moduleName] = new ModuleDef(
+                $moduleName,
+                $categories->getByID($categoryID),
+                $moduleData
+            );
         }
 
         uasort($this->defs, static function(ModuleDef $a, ModuleDef $b) {
@@ -90,16 +93,12 @@ class ModuleDefs
 
     public function findByMacro(string $macro) : ?ModuleDef
     {
-        $parts = explode('_', $macro);
-        $last = array_pop($parts);
+        $modules = $this->getAll();
 
-        if($last !== 'macro') {
-            return null;
-        }
-
-        $id = implode('_', $parts);
-        if($this->idExists($id)) {
-            return $this->getByID($id);
+        foreach($modules as $module) {
+            if($module->getMacro() === $macro) {
+                return $module;
+            }
         }
 
         return null;
