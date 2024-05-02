@@ -1,5 +1,9 @@
 ## v0.0.8 - Beta 7 update
 - Modules: Added some Beta 7 modules.
+- Modules: Improved macro cross-referencing, removed manual conversion table.
+- Modules: More consistent extraction handling.
+- Ships: Fixed the Astrid not having a class.
+- Races: Added missing entry for the Khaa'k.
 - Translations: Handling replacing references recursively.
 - Translations: Ignoring invalid references.
 
