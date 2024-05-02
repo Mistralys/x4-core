@@ -16,6 +16,7 @@ use Mistralys\X4\Database\Translations\TranslationExtractor;
 class ModuleExtractor
 {
     public const ERROR_MACRO_FILE_NOT_FOUND = 138301;
+    public const ERROR_STRUCTURES_FOLDER_NOT_FOUND = 138302;
 
     private FolderInfo $folder;
 
@@ -32,6 +33,17 @@ class ModuleExtractor
 
     public function __construct(FolderInfo $structuresFolder)
     {
+        if(!$structuresFolder->exists()) {
+            throw new ModuleException(
+                'The structures folder does not exist.',
+                sprintf(
+                    'Looking in: [%s].',
+                    $structuresFolder->getPath()
+                ),
+                self::ERROR_STRUCTURES_FOLDER_NOT_FOUND
+            );
+        }
+
         $this->folder = $structuresFolder;
         $this->searchIn = $this->getSearchFolders();
         $this->translation = new TranslationDefs(TranslationExtractor::LANGUAGE_ENGLISH);
@@ -64,7 +76,6 @@ class ModuleExtractor
         {
             echo '- '.$folderName.'...';
             $this->extractModules($folderName);
-            echo 'OK'.PHP_EOL;
         }
 
         echo '- Saving to disk...';
@@ -79,7 +90,14 @@ class ModuleExtractor
 
     private function extractModules(string $folderName) : void
     {
-        $xmlFiles = FileHelper::createFileFinder($this->folder.'/'.$folderName)
+        $folder = FolderInfo::factory($this->folder.'/'.$folderName);
+
+        if(!$folder->exists()) {
+            echo '- NOT FOUND.'.PHP_EOL;
+            return;
+        }
+
+        $xmlFiles = FileHelper::createFileFinder($folder)
             ->includeExtension('xml')
             ->setPathmodeAbsolute()
             ->getAll();
@@ -88,6 +106,8 @@ class ModuleExtractor
         {
             $this->parseFile(FileInfo::factory($file));
         }
+
+        echo 'OK'.PHP_EOL;
     }
 
     private function parseFile(FileInfo $file) : void
