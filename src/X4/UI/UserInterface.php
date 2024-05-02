@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI;
 
-use AppUtils\Interfaces\RenderableInterface;
+use AppUtils\BaseException;use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
 use Mistralys\X4\UI\Page\BasePage;
@@ -95,6 +95,19 @@ class UserInterface implements RenderableInterface
         if($this->activePage instanceof BasePageWithNav) {
             $this->activeSubPage = $this->activePage->getSubPage();
         }
+    }
+
+    public static function displayException(BaseException $e) : void
+    {
+        echo
+            '-----------------------------------------------'.PHP_EOL.
+            'An exception occurred.'.PHP_EOL.
+            '-----------------------------------------------'.PHP_EOL.
+            PHP_EOL.
+            'Type: '.get_class($e).PHP_EOL.
+            'Code: '.$e->getCode().PHP_EOL.
+            'Message: '.$e->getMessage().PHP_EOL.
+            'Details: '.$e->getDetails();
     }
 
     public function addJSHead(string $statement) : self
