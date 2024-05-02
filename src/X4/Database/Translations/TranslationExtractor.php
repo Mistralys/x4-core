@@ -66,7 +66,7 @@ class TranslationExtractor
 
     private function extractLanguage(int $languageID) : void
     {
-        echo '- #'.$languageID.' '.self::LANGUAGES[$languageID].'...';
+        echo '- Processing language #'.$languageID.' ('.self::LANGUAGES[$languageID].')...'.PHP_EOL;
 
         $file = FileInfo::factory(sprintf(
             '%s/0001-l%03d.xml',
@@ -120,6 +120,11 @@ class TranslationExtractor
 
     private function parseText(int $pageID, int $textID, string $text) : void
     {
+        $this->texts[$pageID][$textID] = $this->replaceNestedTranslations($text);
+    }
+
+    private function replaceNestedTranslations(string $text) : string
+    {
         // Text contains comments for translators
         if(strpos($text, '(') !== false)
         {
@@ -129,25 +134,32 @@ class TranslationExtractor
         // Detect nested translation strings that must be replaced with translations
         preg_match_all('/{([0-9]+),([0-9]+)}/x', $text, $matches);
 
-        if(isset($matches[0]))
+        if(empty($matches[0]))
         {
-            foreach ($matches[0] as $idx => $matchedText)
-            {
-                $subPage = (int)$matches[1][$idx];
-                $subText = (int)$matches[2][$idx];
+            return $text;
+        }
 
-                if(isset($this->texts[$subPage][$subText]))
-                {
-                    $text = str_replace(
-                        $matchedText,
-                        $this->texts[$subPage][$subText],
-                        $text
-                    );
-                }
+        foreach ($matches[0] as $idx => $matchedText)
+        {
+            $subPage = (int)$matches[1][$idx];
+            $subText = (int)$matches[2][$idx];
+
+            if(isset($this->texts[$subPage][$subText]))
+            {
+                $text = str_replace(
+                    $matchedText,
+                    $this->texts[$subPage][$subText],
+                    $text
+                );
+            }
+            else
+            {
+                echo '- Reference not found: '.$matchedText.PHP_EOL;
+                $text = str_replace($matchedText, '', $text);
             }
         }
 
-        $this->texts[$pageID][$textID] = $text;
+        return $this->replaceNestedTranslations($text);
     }
 
     private function removeComments(string $text) : string
