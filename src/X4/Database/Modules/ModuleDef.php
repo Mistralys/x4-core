@@ -71,11 +71,8 @@ class ModuleDef
         }
 
         throw new ModuleException(
-            'Cannot detect race of module.',
-            sprintf(
-                'The race could not be detected from module ID [%s].',
-                $this->id
-            ),
+            sprintf('Cannot detect race of module [%s].', $this->id),
+            '',
             self::ERROR_COULD_NOT_DETECT_RACE
         );
     }
