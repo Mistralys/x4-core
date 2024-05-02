@@ -15,8 +15,12 @@ use Mistralys\X4\Database\Translations\TranslationExtractor;
 
 class ModuleExtractor
 {
-    public const ERROR_MACRO_FILE_NOT_FOUND = 138301;
     public const ERROR_STRUCTURES_FOLDER_NOT_FOUND = 138302;
+    public const ERROR_DUPLICATE_MODULE_NAME = 138303;
+    public const ERROR_INVALID_MODULES = 138304;
+    public const KEY_MACRO = 'macro';
+    public const KEY_LABEL = 'label';
+    public const KEY_CATEGORY = 'category';
 
     private FolderInfo $folder;
 
@@ -26,7 +30,7 @@ class ModuleExtractor
     private array $searchIn;
 
     /**
-     * @var array<int,array{name:string,category:string}>
+     * @var array<string,array{category:string,label:string,macro:string}>
      */
     private array $modules = array();
     private TranslationDefs $translation;
@@ -70,13 +74,15 @@ class ModuleExtractor
 
     public function extract() : void
     {
-        echo 'Extracting modules...'.PHP_EOL;
+        $this->extractModules();
 
-        foreach($this->searchIn as $folderName)
-        {
-            echo '- '.$folderName.'...';
-            $this->extractModules($folderName);
-        }
+        echo PHP_EOL;
+
+        $this->crossReferenceMacros();
+
+        echo PHP_EOL;
+
+        $this->verifyModules();
 
         echo '- Saving to disk...';
 
@@ -85,18 +91,123 @@ class ModuleExtractor
 
         echo 'OK'.PHP_EOL;
         echo PHP_EOL;
+        echo 'All Done.'.PHP_EOL;
+    }
+
+    private function extractModules() : void
+    {
+        echo 'Extracting modules...'.PHP_EOL;
+
+        foreach($this->searchIn as $folderName)
+        {
+            echo '- '.$folderName.'...';
+
+            $folder = FolderInfo::factory($this->folder.'/'.$folderName);
+
+            if(!$folder->exists()) {
+                echo '- NOT FOUND.'.PHP_EOL;
+                return;
+            }
+
+            $this->extractModulesInFolder($folder);
+        }
+
         echo 'Done.'.PHP_EOL;
     }
 
-    private function extractModules(string $folderName) : void
+    private function crossReferenceMacros() : void
     {
-        $folder = FolderInfo::factory($this->folder.'/'.$folderName);
+        echo 'Cross-referencing macros...'.PHP_EOL;
 
-        if(!$folder->exists()) {
-            echo '- NOT FOUND.'.PHP_EOL;
+        foreach($this->searchIn as $folderName)
+        {
+            echo '- '.$folderName.'...'.PHP_EOL;
+
+            $folder = FolderInfo::factory($this->folder.'/'.$folderName.'/macros');
+
+            if(!$folder->exists()) {
+                echo '- NOT FOUND.'.PHP_EOL;
+                return;
+            }
+
+            $this->detectMacros($folder);
+        }
+
+        echo 'Done'.PHP_EOL;
+    }
+
+    private function verifyModules() : void
+    {
+        echo 'Finding orphaned modules...'.PHP_EOL;
+
+        foreach($this->modules as $moduleName => $data)
+        {
+            if(!isset($data[self::KEY_MACRO])) {
+                echo '- Module `'.$moduleName.'` is not used anywhere, removing.'.PHP_EOL;
+                unset($this->modules[$moduleName]);
+            }
+        }
+
+        echo 'Done.'.PHP_EOL;
+    }
+
+    private function detectMacros(FolderInfo $folderName) : void
+    {
+        $xmlFiles = FileHelper::createFileFinder($folderName)
+            ->includeExtension('xml')
+            ->setPathmodeAbsolute()
+            ->getAll();
+
+        foreach($xmlFiles as $file)
+        {
+            $this->parseMacroFile(FileInfo::factory($file));
+        }
+    }
+
+    private function parseMacroFile(FileInfo $file) : void
+    {
+        $dom = new DOMDocument();
+        $dom->loadXML($file->getContents());
+
+        $nodes = $dom->getElementsByTagName('macro');
+
+        foreach($nodes as $node) {
+            if($node instanceof DOMElement) {
+                $this->parseMacroNode($node);
+                break;
+            }
+        }
+    }
+
+    private function parseMacroNode(DOMElement $macroNode) : void
+    {
+        $nodes = $macroNode->getElementsByTagName('component');
+
+        foreach($nodes as $node) {
+            if($node instanceof DOMElement) {
+                $this->registerMacro(
+                    $macroNode->getAttribute('name'),
+                    $node->getAttribute('ref'),
+                    $this->findLabel($macroNode)
+                );
+                break;
+            }
+        }
+    }
+
+    private function registerMacro(string $macroName, string $moduleName, string $label) : void
+    {
+        if(!isset($this->modules[$moduleName])) {
+            echo '-- Macro `'.$moduleName.'` has no matching module, ignoring.'.PHP_EOL;
             return;
         }
 
+        $this->modules[$moduleName][self::KEY_MACRO] = $macroName;
+        $this->modules[$moduleName][self::KEY_LABEL] = $label;
+    }
+
+    private function extractModulesInFolder(FolderInfo $folder) : void
+    {
         $xmlFiles = FileHelper::createFileFinder($folder)
             ->includeExtension('xml')
             ->setPathmodeAbsolute()
@@ -125,39 +236,8 @@ class ModuleExtractor
         }
     }
 
-    public const MODULE_TO_MACRO = array(
-        'prod_tel_swampplants' => 'prod_tel_swampplant',
-
-        // The gen medical supplies is used by several races. For the
-        // label, we simply use the Argon one, which is available in
-        // all installs.
-        'prod_gen_medicalsupplies' => 'prod_arg_medicalsupplies',
-
-        // No idea why these exist and have no macros at all.
-        'hab_par_m_02' => 'hab_par_m_01',
-        'hab_par_s_02' => 'hab_par_s_01',
-        'hab_par_s_03' => 'hab_par_s_01',
-
-        'dockarea_arg_xl_builder_01_a' => 'dockarea_arg_xl_builder_01',
-        'buildmodule_arg_ships_xl' => 'buildmodule_gen_ships_xl',
-        'buildmodule_arg_ships_s' => 'buildmodule_gen_ships_s',
-        'buildmodule_arg_ships_m' => 'buildmodule_gen_ships_m',
-        'buildmodule_arg_ships_l' => 'buildmodule_gen_ships_l',
-        'buildmodule_arg_equip_xl' => 'buildmodule_gen_equip_xl',
-        'buildmodule_arg_equip_l' => 'buildmodule_gen_equip_l'
-    );
-
-    public const IGNORE_MODULES = array(
-        'prod_gen_countermeasures',
-        'dockarea_arg_s_01'
-    );
-
-    private function add(string $moduleName, FileInfo $file) : void
+    private function add(string $moduleName) : void
     {
-        if(in_array($moduleName, self::IGNORE_MODULES, true)) {
-            return;
-        }
-
         $parts = explode('_', $moduleName);
         $categoryID = (string)array_shift($parts);
 
@@ -166,36 +246,25 @@ class ModuleExtractor
             return;
         }
 
-        if(!isset($this->modules[$categoryID])) {
-            $this->modules[$categoryID] = array();
+        if(isset($this->modules[$moduleName])) {
+            throw new ModuleException(
+                'Duplicate module name found.',
+                sprintf(
+                    'Module [%s] already exists.',
+                    $moduleName
+                ),
+                self::ERROR_DUPLICATE_MODULE_NAME
+            );
         }
 
-        $this->modules[$categoryID][$moduleName] = $this->findLabel($moduleName, $file);
+        $this->modules[$moduleName] = array(
+            self::KEY_CATEGORY => $categoryID
+        );
    }
 
-   private function findLabel(string $moduleName, FileInfo $file) : string
+   private function findLabel(DOMElement $macroNode) : string
    {
-       $baseName = $file->getBaseName();
-       if(isset(self::MODULE_TO_MACRO[$baseName])) {
-           $baseName = self::MODULE_TO_MACRO[$baseName];
-       }
-
-       $macroFile = FileInfo::factory($file->getFolderPath().'/macros/'.$baseName.'_macro.xml');
-       if(!$macroFile->exists()) {
-           throw new ModuleException(
-               sprintf('Module [%s] has no macro file.', $moduleName),
-               sprintf(
-                   'Looking in: [%s].',
-                   $macroFile->getPath()
-               ),
-               self::ERROR_MACRO_FILE_NOT_FOUND
-           );
-       }
-
-       $dom = new DOMDocument();
-       $dom->loadXML($macroFile->getContents());
-
-       $nodes = $dom->getElementsByTagName('identification');
+       $nodes = $macroNode->getElementsByTagName('identification');
 
        foreach($nodes as $node) {
            if($node instanceof DOMElement) {
