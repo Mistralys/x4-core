@@ -4,24 +4,24 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Modules;
 
+use AppUtils\ArrayDataCollection;
 use Mistralys\X4\Database\Races\RaceDef;
 use Mistralys\X4\Database\Races\RaceDefs;
 use Mistralys\X4\Database\Races\RaceException;
-use testsuites\FileHelperTests\ResolvePathTypeTest;
 
 class ModuleDef
 {
     public const ERROR_COULD_NOT_DETECT_RACE = 106201;
 
     private string $id;
-    private string $label;
     private ?RaceDef $race;
     private ModuleCategory $category;
+    private ArrayDataCollection $data;
 
-    public function __construct(string $moduleID, string $label, ModuleCategory $category)
+    public function __construct(string $moduleID, ModuleCategory $category, array $data)
     {
         $this->id = $moduleID;
-        $this->label = $label;
+        $this->data = ArrayDataCollection::create($data);
         $this->category = $category;
     }
 
@@ -32,12 +32,19 @@ class ModuleDef
 
     public function getLabel() : string
     {
-        if($this->label !== '')
+        $label = $this->data->getString(ModuleExtractor::KEY_LABEL);
+
+        if(!empty($label))
         {
-            return $this->label;
+            return $label;
         }
 
         return $this->getID();
+    }
+
+    public function getMacro() : string
+    {
+        return $this->data->getString(ModuleExtractor::KEY_MACRO);
     }
 
     public function getCategory() : ModuleCategory
