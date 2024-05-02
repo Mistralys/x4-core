@@ -14,7 +14,7 @@ class ModuleTests extends X4TestCase
 {
     public function test_getRace() : void
     {
-        $id = 'pier_arg_harbor_03_macro';
+        $id = 'pier_arg_harbor_03';
 
         $this->assertSame(
             'arg',
@@ -23,46 +23,35 @@ class ModuleTests extends X4TestCase
     }
 
     /**
-     * No error is thrown for an unknown module, but
-     * it will have the ID as its label.
+     * An exception must be thrown for unknown module IDs.
      */
     public function test_createFromUnknownID() : void
     {
         $id = 'unknown_module';
 
-        $this->assertSame(
-            $id,
-            ModuleDefs::getInstance()
-                ->getByID($id)
-                ->getLabel()
-        );
+        $this->expectExceptionCode(ModuleDefs::ERROR_UNKNOWN_MODULE_ID);
+
+        ModuleDefs::getInstance()->getByID($id);
     }
 
-    public function test_getRaceException() : void
+    public function test_allModulesHaveARace() : void
     {
-        $id = 'unknown_module';
+        $modules = ModuleDefs::getInstance()->getAll();
 
-        $this->expectExceptionCode(ModuleDef::ERROR_COULD_NOT_DETECT_RACE);
+        foreach($modules as $module) {
+            $module->getRace();
+        }
 
-        ModuleDefs::getInstance()->getByID($id)->getRace();
+        $this->addToAssertionCount(1);
     }
 
     public function test_getCategory() : void
     {
-        $id = 'pier_arg_harbor_03_macro';
+        $id = 'struct_arg_vertical_01';
 
         $this->assertSame(
-            'pier',
+            ModuleCategories::CATEGORY_STRUCTURAL_ELEMENTS,
             ModuleDefs::getInstance()->getByID($id)->getCategory()->getID()
         );
-    }
-
-    public function test_getCategoryException() : void
-    {
-        $id = 'unknown_category_module';
-
-        $this->expectExceptionCode(ModuleCategories::ERROR_UNKNOWN_CATEGORY_ID);
-
-        ModuleDefs::getInstance()->getByID($id)->getCategory();
     }
 }
