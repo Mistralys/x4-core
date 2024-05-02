@@ -24,17 +24,16 @@ class ModuleDefs
 
         $categories = ModuleCategories::getInstance();
 
-        foreach($list as $categoryID => $moduleIDs)
+        foreach($list as $moduleName => $moduleData)
         {
+            $categoryID = $moduleData['category'];
+
             if(!$categories->idExists($categoryID)) {
                 continue;
             }
 
             $category = $categories->getByID($categoryID);
-
-            foreach($moduleIDs as $moduleID => $label) {
-                $this->defs[$moduleID] = new ModuleDef($moduleID, $label, $category);
-            }
+            $this->defs[$moduleName] = new ModuleDef($moduleName, $moduleData['label'], $category);
         }
 
         uasort($this->defs, static function(ModuleDef $a, ModuleDef $b) {
