@@ -54,4 +54,11 @@ class ModuleTests extends X4TestCase
             ModuleDefs::getInstance()->getByID($id)->getCategory()->getID()
         );
     }
+
+    public function test_findByMacro() : void
+    {
+        $this->assertNotNull(
+            ModuleDefs::getInstance()->findByMacro('struct_arg_vertical_01_macro')
+        );
+    }
 }
