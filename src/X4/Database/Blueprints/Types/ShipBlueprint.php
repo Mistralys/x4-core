@@ -30,6 +30,7 @@ class ShipBlueprint extends BlueprintDef
     public const CLASS_SCAVENGER = 'scavenger';
     public const CLASS_SCRAPPER = 'scrapper';
     public const CLASS_TUG = 'tug';
+    public const CLASS_YACHT = 'yacht';
 
     public const ROLE_MILITARY = 'military';
     public const ROLE_INDUSTRY = 'industry';
@@ -58,7 +59,8 @@ class ShipBlueprint extends BlueprintDef
         self::CLASS_BOMBER => 'bomber',
         self::CLASS_SCRAPPER => 'scrapper',
         self::CLASS_SCAVENGER => 'scavenger',
-        self::CLASS_TUG => 'tugboat'
+        self::CLASS_TUG => 'tugboat',
+        self::CLASS_YACHT => 'yacht'
     );
 
     /**
@@ -72,7 +74,8 @@ class ShipBlueprint extends BlueprintDef
         self::CLASS_MINER_LIQUID,
         self::CLASS_MINER_SOLID,
         self::CLASS_BUILDER,
-        self::CLASS_TUG
+        self::CLASS_TUG,
+        self::CLASS_YACHT
     );
 
     private string $class;
