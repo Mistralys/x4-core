@@ -592,7 +592,7 @@
     },
     "dockarea_arg_m_02_tradestation_01": {
         "category": "dockarea",
-        "label": "8M Standard Dock Area",
+        "label": "8M Luxury Dock Area",
         "macros": [
             "dockarea_arg_m_02_tradestation_01_macro"
         ]
