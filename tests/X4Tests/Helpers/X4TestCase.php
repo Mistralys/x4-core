@@ -12,6 +12,7 @@ namespace X4Tests\Helpers;
 use Mistralys\X4\Database\Blueprints\BlueprintDefs;
 use Mistralys\X4\UI\UserInterface;
 use PHPUnit\Framework\TestCase;
+use const Mistralys\X4\X4_CORE_INSTALL_URL;
 
 /**
  * @package X4Tests
@@ -45,10 +46,10 @@ class X4TestCase extends TestCase
         $app = new TestApplication();
 
         $app->createUI(
-            X4TESTS_INSTALL_URL.'/tests/X4Tests/ExampleUI',
-            X4TESTS_INSTALL_URL.'/vendor'
+            X4_CORE_INSTALL_URL.'/tests/X4Tests/ExampleUI',
+            X4_CORE_INSTALL_URL.'/vendor'
         )
-            ->setUnitTestingURL(X4TESTS_INSTALL_URL);
+            ->setUnitTestingURL(X4_CORE_INSTALL_URL);
 
         self::$appInstance = $app;
 
