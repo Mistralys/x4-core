@@ -1,3 +1,8 @@
+## v0.0.8 - Game class
+- Game: Added the `X4Game` class to access game data, like the version.
+- Config: Added the `X4_GAME_FOLDER` constant.
+- Config: Added the `X4_CORE_INSTALL_URL` constant to simplify the test runner.
+
 ## v0.0.7 - Game v7.6 update
 - Modules: Updated for game version 7.6.
 - Modules: Improved macro cross-referencing, removed manual conversion table.
