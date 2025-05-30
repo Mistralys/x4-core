@@ -625,6 +625,13 @@
             "dockarea_arg_m_ship_03_macro"
         ]
     },
+    "dockarea_arg_m_ship_04": {
+        "category": "dockarea",
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_m_ship_04_macro"
+        ]
+    },
     "dockarea_arg_m_station_01": {
         "category": "dockarea",
         "label": "1M6S Standard Dock Area",
@@ -748,6 +755,20 @@
         "label": "Dock Area",
         "macros": [
             "dockarea_arg_s_ship_10_macro"
+        ]
+    },
+    "dockarea_arg_s_ship_11": {
+        "category": "dockarea",
+        "label": "",
+        "macros": [
+            "dockarea_arg_s_ship_11_macro"
+        ]
+    },
+    "dockarea_arg_s_ship_12": {
+        "category": "dockarea",
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_arg_s_ship_12_macro"
         ]
     },
     "dockarea_arg_xl_builder_01": {
@@ -1035,6 +1056,13 @@
         "label": "Argon 3-Dock E Pier",
         "macros": [
             "pier_arg_harbor_03_macro"
+        ]
+    },
+    "pier_arg_harbor_04": {
+        "category": "pier",
+        "label": "Argon 1-Dock Short Pier",
+        "macros": [
+            "pier_arg_harbor_04_macro"
         ]
     },
     "pier_arg_single_01_tradestation_01": {
