@@ -1,4 +1,4 @@
-## v0.0.7 - 7.6 update
+## v0.0.7 - Game v7.6 update
 - Modules: Updated for game version 7.6.
 - Modules: Improved macro cross-referencing, removed manual conversion table.
 - Modules: More consistent extraction handling.
