@@ -52,9 +52,19 @@
       <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
       <path value="$PROJECT_DIR$/vendor/thomaspark/bootswatch" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/vendor/mck89/peast" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/application-utils-collections" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/application-utils-core" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/php-sprintf-parser" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/changelog-parser" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/application-utils-result-handling" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/version-parser" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/html_quickform2" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/application-utils-image" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStan">
