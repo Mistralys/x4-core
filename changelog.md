@@ -1,13 +1,12 @@
-## v0.0.8 - Beta 7 update
-- Modules: Added some Beta 7 modules.
+## v0.0.7 - 7.6 update
+- Modules: Updated for game version 7.6.
 - Modules: Improved macro cross-referencing, removed manual conversion table.
 - Modules: More consistent extraction handling.
 - Ships: Fixed the Astrid not having a class.
 - Races: Added missing entry for the Khaa'k.
+- Dependencies: Loosened version constraints to be usable with PHP8+.
 - Translations: Handling replacing references recursively.
 - Translations: Ignoring invalid references.
-
-## v0.0.7 - DateGrid update
 - DataGrids: Added collapsible rows.
 - UI: Added `addJSHead()` and `addJSOnload()`.
 - UI: Added `addInternalJS()` and `addExternalJS()`.
