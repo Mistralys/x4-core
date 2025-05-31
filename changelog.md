@@ -1,3 +1,6 @@
+## v0.0.9 - Translation fix
+- Translations: Fixed escaped comments not being parsed correctly.
+
 ## v0.0.8 - Game class
 - Game: Added the `X4Game` class to access game data, like the version.
 - Config: Added the `X4_GAME_FOLDER` constant.
