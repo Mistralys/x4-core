@@ -169,10 +169,12 @@ class TranslationExtractor
 
     private function removeComments(string $text) : string
     {
-        $orig = $text;
+        $escapedQuotes = array(
+            '\(' => '__OP_QUOT__',
+            '\)' => '__CL_QUOT__'
+        );
 
-        $text = str_replace('\(', '__OPQUOT__', $text);
-        $text = str_replace('\)', '__CLQUOT__', $text);
+        $text = str_replace(array_keys($escapedQuotes), array_values($escapedQuotes), $text);
 
         preg_match_all('/\([^)]+\)/x', $text, $matches);
 
@@ -180,12 +182,7 @@ class TranslationExtractor
             $text = str_replace($matchedText, '', $text);
         }
 
-        $text = str_replace('__OPQUOT__', '(', $text);
-        $text = str_replace('__CLQUOT__', ')', $text);
-
-        print_r(array($orig, $text));
-
-        return $text;
+        return str_replace(array_values($escapedQuotes), array_keys($escapedQuotes), $text);
     }
 
     public static function getLanguageFile(int $languageID) : JSONFile
