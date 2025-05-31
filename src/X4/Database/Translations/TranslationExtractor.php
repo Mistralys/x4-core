@@ -55,6 +55,11 @@ class TranslationExtractor
         return $this;
     }
 
+    public function langExists(int $lang) : bool
+    {
+        return self::getLanguageFile($lang)->exists();
+    }
+
     public function extract() : void
     {
         echo 'Extracting languages.'.PHP_EOL;
@@ -126,7 +131,7 @@ class TranslationExtractor
     private function replaceNestedTranslations(string $text) : string
     {
         // Text contains comments for translators
-        if(strpos($text, '(') !== false)
+        if(str_contains($text, '('))
         {
             $text = $this->removeComments($text);
         }
@@ -164,11 +169,21 @@ class TranslationExtractor
 
     private function removeComments(string $text) : string
     {
+        $orig = $text;
+
+        $text = str_replace('\(', '__OPQUOT__', $text);
+        $text = str_replace('\)', '__CLQUOT__', $text);
+
         preg_match_all('/\([^)]+\)/x', $text, $matches);
 
         foreach($matches[0] as $matchedText) {
             $text = str_replace($matchedText, '', $text);
         }
+
+        $text = str_replace('__OPQUOT__', '(', $text);
+        $text = str_replace('__CLQUOT__', ')', $text);
+
+        print_r(array($orig, $text));
 
         return $text;
     }
