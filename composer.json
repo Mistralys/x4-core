@@ -27,6 +27,7 @@
   "require": {
     "mistralys/application-utils": ">=2.3.2",
     "mistralys/application-localization": ">=1.4.1",
+    "mistralys/x4-data-extractor": ">=1.0.0",
     "thomaspark/bootswatch": "^v5.1.3",
     "twbs/bootstrap": "^v5.1.3",
     "components/jquery": ">=3.5.1",
@@ -35,8 +36,7 @@
     "ext-simplexml": "*",
     "ext-json": "*",
     "ext-mbstring": "*",
-    "ext-dom": "*",
-    "mistralys/x4-data-extractor": "dev-main"
+    "ext-dom": "*"
   },
   "require-dev": {
     "phpunit/phpunit": ">=9.5.20",
