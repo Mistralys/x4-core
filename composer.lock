@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de002146cd7cba448f205052443d42d3",
+    "content-hash": "e51abcbf5a596ec2e84a63762b7a80d1",
     "packages": [
         {
             "name": "components/jquery",
@@ -819,6 +819,55 @@
                 "source": "https://github.com/Mistralys/version-parser/tree/2.1.1"
             },
             "time": "2023-12-19T07:17:05+00:00"
+        },
+        {
+            "name": "mistralys/x4-data-extractor",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mistralys/x4-data-extractor.git",
+                "reference": "6a2258dc6dcbb469856c35f35c8b4e0a54d5845e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mistralys/x4-data-extractor/zipball/6a2258dc6dcbb469856c35f35c8b4e0a54d5845e",
+                "reference": "6a2258dc6dcbb469856c35f35c8b4e0a54d5845e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "mistralys/application-utils-collections": ">=1.1.6",
+                "mistralys/application-utils-core": ">=2.3.11",
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": ">=1.6.1",
+                "phpunit/phpunit": ">=9.5.20",
+                "roave/security-advisories": "dev-latest"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Mordziol",
+                    "email": "s.mordziol@mistralys.eu"
+                }
+            ],
+            "description": "Generate batch files to extract X4 data with XRCatTool.",
+            "support": {
+                "issues": "https://github.com/Mistralys/x4-data-extractor/issues",
+                "source": "https://github.com/Mistralys/x4-data-extractor/tree/main"
+            },
+            "time": "2025-06-06T09:34:36+00:00"
         },
         {
             "name": "neitanod/forceutf8",
@@ -3816,6 +3865,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "mistralys/x4-data-extractor": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
