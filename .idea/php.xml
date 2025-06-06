@@ -62,6 +62,7 @@
       <path value="$PROJECT_DIR$/vendor/mistralys/version-parser" />
       <path value="$PROJECT_DIR$/vendor/mistralys/html_quickform2" />
       <path value="$PROJECT_DIR$/vendor/mistralys/application-utils-image" />
+      <path value="$PROJECT_DIR$/vendor/mistralys/x4-data-extractor" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
