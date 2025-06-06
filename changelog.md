@@ -1,3 +1,6 @@
+## v0.0.10 - Translation update
+- Translations: Updated to use the extracted data folders.
+
 ## v0.0.9 - Translation fix
 - Translations: Fixed escaped comments not being parsed correctly.
 
