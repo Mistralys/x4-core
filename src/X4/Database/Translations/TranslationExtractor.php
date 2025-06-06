@@ -10,6 +10,8 @@ use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
 use DOMDocument;
 use DOMElement;
+use Mistralys\X4\ExtractedData\DataFolders;
+use Mistralys\X4\UI\Console;
 
 class TranslationExtractor
 {
@@ -41,9 +43,9 @@ class TranslationExtractor
     private array $languageIDs = array();
     private array $texts = array();
 
-    public function __construct(FolderInfo $translationsFolder)
+    public function __construct(DataFolders $dataFolders)
     {
-        $this->folder = $translationsFolder;
+        $this->folder = FolderInfo::factory($dataFolders->getDefault()->getFolder().'/t');
     }
 
     public function selectLanguage(int $langID) : self
@@ -62,7 +64,7 @@ class TranslationExtractor
 
     public function extract() : void
     {
-        echo 'Extracting languages.'.PHP_EOL;
+        Console::header('Extracting languages.');
 
         foreach($this->languageIDs as $languageID) {
             $this->extractLanguage($languageID);
@@ -71,7 +73,7 @@ class TranslationExtractor
 
     private function extractLanguage(int $languageID) : void
     {
-        echo '- Processing language #'.$languageID.' ('.self::LANGUAGES[$languageID].')...'.PHP_EOL;
+        Console::line1('Processing language #%s (%s)...', $languageID, self::LANGUAGES[$languageID]);
 
         $file = FileInfo::factory(sprintf(
             '%s/0001-l%03d.xml',
