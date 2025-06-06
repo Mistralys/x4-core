@@ -1,5 +1,7 @@
 ## v0.0.10 - Translation update
 - Translations: Updated to use the extracted data folders.
+- Data: If available, extracted game files can be accessed with the `DataFolders` class.
+- Dependencies: Added `x4-data-extractor` as a dependency.
 
 ## v0.0.9 - Translation fix
 - Translations: Fixed escaped comments not being parsed correctly.
