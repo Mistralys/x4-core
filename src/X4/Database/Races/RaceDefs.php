@@ -116,4 +116,9 @@ class RaceDefs
         sort($ids);
         return $ids;
     }
+
+    public function getFromList() : KnownRaces
+    {
+        return KnownRaces::getInstance();
+    }
 }
