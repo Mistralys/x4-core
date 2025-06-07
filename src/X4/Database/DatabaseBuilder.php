@@ -6,6 +6,7 @@ namespace Mistralys\X4\Database;
 
 use AppUtils\FileHelper\FolderInfo;
 use Mistralys\X4\Database\Modules\ModuleExtractor;
+use Mistralys\X4\Database\Translations\Languages;
 use Mistralys\X4\Database\Translations\TranslationExtractor;
 use Mistralys\X4\ExtractedData\DataFolders;
 use const Mistralys\X4\X4_EXTRACTED_CAT_FILES_FOLDER;
@@ -22,18 +23,12 @@ class DatabaseBuilder
 
         self::$initialized = true;
 
-        $configFile = __DIR__.'/../../../dev-config.php';
         $autoloader = __DIR__.'/../../../vendor/autoload.php';
-
-        if(!file_exists($configFile)) {
-            die('Error: Configuration file does not exist. See the README.md for instructions.');
-        }
 
         if(!file_exists($autoloader)) {
             die('Error: Autoloader not found. Run `composer install` first.');
         }
 
-        require_once $configFile;
         require_once $autoloader;
     }
 
@@ -42,7 +37,11 @@ class DatabaseBuilder
         self::init();
 
         $extractor = new TranslationExtractor(DataFolders::create(FolderInfo::factory(X4_EXTRACTED_CAT_FILES_FOLDER)));
-        $extractor->selectLanguage(TranslationExtractor::LANGUAGE_ENGLISH);
+
+        foreach(Languages::getInstance()->getIDs() as $langID) {
+            $extractor->selectLanguage($langID);
+        }
+
         $extractor->extract();
     }
 
