@@ -1,3 +1,10 @@
+## v0.0.11 - Data folder update
+- Modules: Now using the `DataFolders` class to access the extracted game files.
+- Modules: Sorting by key in the JSON for version consistency.
+- Translations: Translation files are now bundled with the package.
+- Translations: Added the `Languages` class to access the available languages.
+- Tests: Fixed translation tests.
+
 ## v0.0.10 - Translation update
 - Translations: Updated to use the extracted data folders.
 - Data: If available, extracted game files can be accessed with the `DataFolders` class.
