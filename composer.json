@@ -19,6 +19,9 @@
     "classmap": [
       "src",
       "tests/X4Tests/Helpers"
+    ],
+    "files": [
+      "dev-config.php"
     ]
   },
   "require": {
