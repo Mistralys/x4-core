@@ -25,3 +25,17 @@ This will update the JSON files in the `data` folder.
 
 > NOTE: The language JSON files are not included in the repository, as they are too large.
 > They are only used when extracting data.
+
+## X4 Tools and libraries
+
+- [X4 Game Notes][] - _Docs_ - Howto, tips and general information about X4.
+- [X4 Core][] - _Library_ - Access X4 game data in an OOP way.
+- [X4 Data Extractor][] - _Tool & Library_ - Extract X4 game files.
+- [X4 Savegame Parser][] - _Tool_ - Parse X4 savegames to extract information.
+- [X4 Cargo Size Mod][] - _Mod_ - Mod to increase ship cargo sizes.
+
+[X4 Data Extractor]: https://github.com/Mistralys/x4-data-extractor
+[X4 Game Notes]: https://github.com/Mistralys/x4-game-notes
+[X4 Core]: https://github.com/Mistralys/x4-core
+[X4 Savegame Parser]: https://github.com/Mistralys/x4-savegame-parser
+[X4 Cargo Size Mod]: https://github.com/Mistralys/x4-mod-cargo-sizes
