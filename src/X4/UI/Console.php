@@ -27,6 +27,11 @@ class Console
         self::line('  - '.$message, ...$args);
     }
 
+    public static function line3(string $message, ...$args) : void
+    {
+        self::line('    - '.$message, ...$args);
+    }
+
     public static function line(string $message, ...$args) : void
     {
         if(!empty($args)) {
