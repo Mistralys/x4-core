@@ -45,6 +45,13 @@ class TranslationDefs
         return '';
     }
 
+    /**
+     * Translates a text ID, e.g. <code>t(1005,42)</code>.
+     *
+     * @param int $pageID
+     * @param int $textID
+     * @return string
+     */
     public function t(int $pageID, int $textID) : string
     {
         $this->load();
