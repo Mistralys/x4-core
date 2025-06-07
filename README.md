@@ -1,11 +1,7 @@
 # X4 Tools Core
 
-X4 database and utility classes written in PHP.
-
-This package is used by my X4 tools:
-
-- [Savegame parser](https://github.com/Mistralys/x4-savegame-parser)
-- [Blueprints optimizer](https://github.com/Mistralys/x4-blueprint-optimizer)
+Utility classes used to access X4: Foundations game data in an OOP way.
+Designed to be used as a library in other projects (see [X4 Tools](#x4-tools-and-libraries)).
 
 ## Requirements
 
