@@ -9,6 +9,7 @@ use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
 use DOMDocument;
 use DOMElement;
+use Mistralys\X4\Database\Translations\Languages;
 use Mistralys\X4\Database\Translations\TranslationDefs;
 use Mistralys\X4\Database\Translations\TranslationExtractor;
 use Mistralys\X4\ExtractedData\DataFolders;
@@ -44,7 +45,7 @@ class ModuleExtractor
         $this->loadStructureFolders($dataFolders);
 
         $this->searchIn = $this->getSearchFolders();
-        $this->translation = new TranslationDefs(TranslationExtractor::LANGUAGE_ENGLISH);
+        $this->translation = new TranslationDefs(Languages::LANGUAGE_ENGLISH);
     }
 
     private function loadStructureFolders(DataFolders $dataFolders) : void
