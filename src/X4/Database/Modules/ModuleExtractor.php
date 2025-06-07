@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Modules;
 
-use AppUtils\FileHelper;
 use AppUtils\FileHelper\FileInfo;
 use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
@@ -12,6 +11,8 @@ use DOMDocument;
 use DOMElement;
 use Mistralys\X4\Database\Translations\TranslationDefs;
 use Mistralys\X4\Database\Translations\TranslationExtractor;
+use Mistralys\X4\ExtractedData\DataFolders;
+use Mistralys\X4\UI\Console;
 
 class ModuleExtractor
 {
@@ -22,7 +23,10 @@ class ModuleExtractor
     public const KEY_LABEL = 'label';
     public const KEY_CATEGORY = 'category';
 
-    private FolderInfo $folder;
+    /**
+     * @var StructuresFolder[]
+     */
+    private array $folders;
 
     /**
      * @var array<string,string>
@@ -35,22 +39,45 @@ class ModuleExtractor
     private array $modules = array();
     private TranslationDefs $translation;
 
-    public function __construct(FolderInfo $structuresFolder)
+    public function __construct(DataFolders $dataFolders)
     {
-        if(!$structuresFolder->exists()) {
+        $this->loadStructureFolders($dataFolders);
+
+        $this->searchIn = $this->getSearchFolders();
+        $this->translation = new TranslationDefs(TranslationExtractor::LANGUAGE_ENGLISH);
+    }
+
+    private function loadStructureFolders(DataFolders $dataFolders) : void
+    {
+        Console::header('Loading structure folders');
+
+        $locations = array();
+        foreach($dataFolders->getAll() as $dataFolder)
+        {
+            $structuresFolder = FolderInfo::factory($dataFolder->getFolder().'/assets/structures');
+            $locations[] = (string)$structuresFolder;
+
+            if($structuresFolder->exists()) {
+                Console::line1('[%s] | OK | Structures found.', $dataFolder->getLabel(), $dataFolder->getLabel());
+                $this->folders[] = new StructuresFolder($dataFolder, $structuresFolder);
+            } else {
+                Console::line1('[%s] | SKIP | No structures found.', $dataFolder->getLabel());
+            }
+        }
+
+        Console::nl();
+
+        if(empty($this->folders)) {
             throw new ModuleException(
-                'The structures folder does not exist.',
+                'No structure folders found in any of the available extracted data folders.',
                 sprintf(
-                    'Looking in: [%s].',
-                    $structuresFolder->getPath()
+                    'Looking in: '.PHP_EOL.
+                    '- %s',
+                    implode(PHP_EOL.'- ', $locations)
                 ),
                 self::ERROR_STRUCTURES_FOLDER_NOT_FOUND
             );
         }
-
-        $this->folder = $structuresFolder;
-        $this->searchIn = $this->getSearchFolders();
-        $this->translation = new TranslationDefs(TranslationExtractor::LANGUAGE_ENGLISH);
     }
 
     /**
@@ -76,91 +103,98 @@ class ModuleExtractor
     {
         $this->extractModules();
 
-        echo PHP_EOL;
+        Console::nl();
 
         $this->crossReferenceMacros();
 
-        echo PHP_EOL;
+        Console::nl();
 
         $this->verifyModules();
 
-        echo '- Saving to disk...';
+        Console::line1('Saving to disk...');
+
+        ksort($this->modules);
 
         JSONFile::factory(__DIR__.'/../../../../data/modules-list.json')
            ->putData($this->modules, true);
 
-        echo 'OK'.PHP_EOL;
-        echo PHP_EOL;
-        echo 'All Done.'.PHP_EOL;
+        Console::line1('All Done.');
     }
 
     private function extractModules() : void
     {
-        echo 'Extracting modules...'.PHP_EOL;
+        Console::header('Extracting modules');
 
-        foreach($this->searchIn as $folderName)
+        foreach($this->folders as $structuresFolder)
         {
-            echo '- '.$folderName.'...';
+            Console::line1('Processing data folder [%s].', $structuresFolder->getDataFolder()->getLabel());
 
-            $folder = FolderInfo::factory($this->folder.'/'.$folderName);
+            foreach ($this->searchIn as $folderName)
+            {
+                $folder = FolderInfo::factory($structuresFolder->getFolder() . '/' . $folderName);
 
-            if(!$folder->exists()) {
-                echo '- NOT FOUND.'.PHP_EOL;
-                return;
+                if (!$folder->exists()) {
+                    Console::line2('[%s] | SKIP | Folder not found.', $folderName);
+                    continue;
+                }
+
+                $this->extractModulesInFolder($folder, $folderName);
             }
 
-            $this->extractModulesInFolder($folder);
+            Console::nl();
         }
-
-        echo 'Done.'.PHP_EOL;
     }
 
     private function crossReferenceMacros() : void
     {
-        echo 'Cross-referencing macros...'.PHP_EOL;
+        Console::header('Cross-referencing macros');
 
-        foreach($this->searchIn as $folderName)
+        foreach($this->folders as $structuresFolder)
         {
-            echo '- '.$folderName.'...'.PHP_EOL;
+            Console::line1('Processing data folder [%s].', $structuresFolder->getDataFolder()->getLabel());
 
-            $folder = FolderInfo::factory($this->folder.'/'.$folderName.'/macros');
+            foreach ($this->searchIn as $folderName)
+            {
+                $folder = FolderInfo::factory($structuresFolder->getFolder() . '/' . $folderName . '/macros');
 
-            if(!$folder->exists()) {
-                echo '- NOT FOUND.'.PHP_EOL;
-                return;
+                if (!$folder->exists()) {
+                    Console::line2('[%s] | SKIP | Folder not found.', $folderName);
+                    continue;
+                }
+
+                $this->detectMacros($folder, $folderName);
             }
 
-            $this->detectMacros($folder);
+            Console::nl();
         }
-
-        echo 'Done'.PHP_EOL;
     }
 
     private function verifyModules() : void
     {
-        echo 'Finding orphaned modules...'.PHP_EOL;
+        Console::header('Finding orphaned modules');
 
         foreach($this->modules as $moduleName => $data)
         {
             if(!isset($data[self::KEY_MACROS])) {
-                echo '- Module `'.$moduleName.'` is not used anywhere, removing.'.PHP_EOL;
+                Console::line1('Module [%s] is not used anywhere, removing.', $moduleName);
                 unset($this->modules[$moduleName]);
             }
         }
 
-        echo 'Done.'.PHP_EOL;
+        Console::line1('Done.');
     }
 
-    private function detectMacros(FolderInfo $folderName) : void
+    private function detectMacros(FolderInfo $folder, string $folderName) : void
     {
-        $xmlFiles = FileHelper::createFileFinder($folderName)
+        $xmlFiles = $folder->createFileFinder()
             ->includeExtension('xml')
-            ->setPathmodeAbsolute()
-            ->getAll();
+            ->getFiles()
+            ->typeANY();
 
-        foreach($xmlFiles as $file)
-        {
-            $this->parseMacroFile(FileInfo::factory($file));
+        Console::line3('[%s] | Found [%d] XML files.', $folderName, count($xmlFiles));
+
+        foreach($xmlFiles as $file) {
+            $this->parseMacroFile($file);
         }
     }
 
@@ -198,7 +232,7 @@ class ModuleExtractor
     private function registerMacro(string $macroName, string $moduleName, string $label) : void
     {
         if(!isset($this->modules[$moduleName])) {
-            echo '-- Macro `'.$moduleName.'` has no matching module, ignoring.'.PHP_EOL;
+            Console::line3('Macro [%s] | SKIP | No matching module exists.', $moduleName);
             return;
         }
 
@@ -211,19 +245,18 @@ class ModuleExtractor
         }
     }
 
-    private function extractModulesInFolder(FolderInfo $folder) : void
+    private function extractModulesInFolder(FolderInfo $folder, string $folderName) : void
     {
-        $xmlFiles = FileHelper::createFileFinder($folder)
+        $xmlFiles = $folder->createFileFinder()
             ->includeExtension('xml')
-            ->setPathmodeAbsolute()
-            ->getAll();
+            ->getFiles()
+            ->typeANY();
 
-        foreach($xmlFiles as $file)
-        {
-            $this->parseFile(FileInfo::factory($file));
+        Console::line2('[%s] | Found [%s] XML files.', $folderName, count($xmlFiles));
+
+        foreach($xmlFiles as $file) {
+            $this->parseFile($file);
         }
-
-        echo 'OK'.PHP_EOL;
     }
 
     private function parseFile(FileInfo $file) : void
