@@ -63,16 +63,12 @@ Please refer to the tool's instructions to unpack the game data files.
 
 ### Database update
 
-To update the bundled database, use the Composer command:
+To update the bundled database, use the `build` Composer command
+to update the JSON files in the `data` folder.
 
 ```bash
 composer build
 ```
-
-This will update the JSON files in the `data` folder.
-
-> NOTE: The language JSON files are not included in the repository, as they are too large.
-> They are only used when extracting data.
 
 ## X4 Tools and libraries
 
