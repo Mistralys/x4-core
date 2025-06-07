@@ -15,24 +15,6 @@ use Mistralys\X4\UI\Console;
 
 class TranslationExtractor
 {
-    public const LANGUAGE_RUSSIAN = 7;
-    public const LANGUAGE_FRENCH = 33;
-    public const LANGUAGE_SPANISH = 34;
-    public const LANGUAGE_COREAN = 82;
-    public const LANGUAGE_GERMAN = 49;
-    public const LANGUAGE_ENGLISH = 44;
-    public const LANGUAGE_ITALIAN = 39;
-
-    public const LANGUAGES = array(
-        self::LANGUAGE_RUSSIAN => 'ru_RU',
-        self::LANGUAGE_FRENCH => 'fr_FR',
-        self::LANGUAGE_SPANISH => 'es_ES',
-        self::LANGUAGE_COREAN => 'ko_KR',
-        self::LANGUAGE_GERMAN => 'de_DE',
-        self::LANGUAGE_ENGLISH => 'en_EN',
-        self::LANGUAGE_ITALIAN => 'it_IT'
-    );
-
     public const ERROR_TRANSLATION_FILE_NOT_FOUND = 138501;
 
     private FolderInfo $folder;
@@ -41,6 +23,10 @@ class TranslationExtractor
      * @var int[]
      */
     private array $languageIDs = array();
+
+    /**
+     * @var array<int,array<int,string>>
+     */
     private array $texts = array();
 
     public function __construct(DataFolders $dataFolders)
@@ -73,7 +59,7 @@ class TranslationExtractor
 
     private function extractLanguage(int $languageID) : void
     {
-        Console::line1('Processing language #%s (%s)...', $languageID, self::LANGUAGES[$languageID]);
+        Console::line1('Processing language #%s (%s)...', $languageID, Languages::LANGUAGES[$languageID]);
 
         $file = FileInfo::factory(sprintf(
             '%s/0001-l%03d.xml',
@@ -108,6 +94,7 @@ class TranslationExtractor
         }
 
         $this->parseTexts();
+        $this->sortTexts();
 
         self::getLanguageFile($languageID)->putData($this->texts, true);
 
@@ -123,6 +110,16 @@ class TranslationExtractor
                 $this->parseText($pageID, $textID, $text);
             }
         }
+    }
+
+    private function sortTexts() : void
+    {
+        foreach(array_keys($this->texts) as $pageID)
+        {
+            ksort($this->texts[$pageID]);
+        }
+
+        ksort($this->texts);
     }
 
     private function parseText(int $pageID, int $textID, string $text) : void
@@ -197,7 +194,7 @@ class TranslationExtractor
         return JSONFile::factory(sprintf(
             __DIR__.'/../../../../data/lang-%03d-%s.json',
             $languageID,
-            self::LANGUAGES[$languageID]
+            Languages::LANGUAGES[$languageID]
         ));
     }
 
