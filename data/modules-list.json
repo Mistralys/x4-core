@@ -148,314 +148,6 @@
             "buildmodule_xen_ships_xl_macro"
         ]
     },
-    "struct_arg_base_01": {
-        "category": "struct",
-        "label": "Argon Base Connection Structure 01",
-        "macros": [
-            "struct_arg_base_01_macro"
-        ]
-    },
-    "struct_arg_base_02": {
-        "category": "struct",
-        "label": "Argon Base Connection Structure 02",
-        "macros": [
-            "struct_arg_base_02_macro"
-        ]
-    },
-    "struct_arg_base_03": {
-        "category": "struct",
-        "label": "Argon Base Connection Structure 03",
-        "macros": [
-            "struct_arg_base_03_macro"
-        ]
-    },
-    "struct_arg_cross_01": {
-        "category": "struct",
-        "label": "Argon Cross Connection Structure 01",
-        "macros": [
-            "struct_arg_cross_01_macro"
-        ]
-    },
-    "struct_arg_vertical_01": {
-        "category": "struct",
-        "label": "Argon Vertical Connection Structure 01",
-        "macros": [
-            "struct_arg_vertical_01_macro"
-        ]
-    },
-    "struct_arg_vertical_02": {
-        "category": "struct",
-        "label": "Argon Vertical Connection Structure 02",
-        "macros": [
-            "struct_arg_vertical_02_macro"
-        ]
-    },
-    "struct_bor_base_01": {
-        "category": "struct",
-        "label": "Boron Base Connection Structure 01",
-        "macros": [
-            "struct_bor_base_01_macro"
-        ]
-    },
-    "struct_bor_base_02": {
-        "category": "struct",
-        "label": "Boron Base Connection Structure 02",
-        "macros": [
-            "struct_bor_base_02_macro"
-        ]
-    },
-    "struct_bor_base_03": {
-        "category": "struct",
-        "label": "Boron Base Connection Structure 03",
-        "macros": [
-            "struct_bor_base_03_macro"
-        ]
-    },
-    "struct_bor_base_04": {
-        "category": "struct",
-        "label": "Boron Base Connection Structure 04",
-        "macros": [
-            "struct_bor_base_04_macro"
-        ]
-    },
-    "struct_bor_base_05": {
-        "category": "struct",
-        "label": "Boron Base Connection Structure 05",
-        "macros": [
-            "struct_bor_base_05_macro"
-        ]
-    },
-    "struct_bor_cross_01": {
-        "category": "struct",
-        "label": "Boron Cross Connection Structure 01",
-        "macros": [
-            "struct_bor_cross_01_macro"
-        ]
-    },
-    "struct_bor_cross_02": {
-        "category": "struct",
-        "label": "Boron Cross Connection Structure 02",
-        "macros": [
-            "struct_bor_cross_02_macro"
-        ]
-    },
-    "struct_bor_vertical_01": {
-        "category": "struct",
-        "label": "Boron Vertical Connection Structure 01",
-        "macros": [
-            "struct_bor_vertical_01_macro"
-        ]
-    },
-    "struct_bor_vertical_02": {
-        "category": "struct",
-        "label": "Boron Vertical Connection Structure 02",
-        "macros": [
-            "struct_bor_vertical_02_macro"
-        ]
-    },
-    "struct_gen_observationdeck_01": {
-        "category": "struct",
-        "label": "Conservatory Observation Deck",
-        "macros": [
-            "struct_gen_observationdeck_01_macro"
-        ]
-    },
-    "struct_gen_observationdeck_02": {
-        "category": "struct",
-        "label": "Pavilion Observation Deck",
-        "macros": [
-            "struct_gen_observationdeck_02_macro"
-        ]
-    },
-    "struct_gen_observationdeck_03": {
-        "category": "struct",
-        "label": "Penthouse Observation Deck",
-        "macros": [
-            "struct_gen_observationdeck_03_macro"
-        ]
-    },
-    "struct_par_base_01": {
-        "category": "struct",
-        "label": "Paranid Base Connection Structure 01",
-        "macros": [
-            "struct_par_base_01_macro"
-        ]
-    },
-    "struct_par_base_02": {
-        "category": "struct",
-        "label": "Paranid Base Connection Structure 02",
-        "macros": [
-            "struct_par_base_02_macro"
-        ]
-    },
-    "struct_par_base_03": {
-        "category": "struct",
-        "label": "Paranid Base Connection Structure 03",
-        "macros": [
-            "struct_par_base_03_macro"
-        ]
-    },
-    "struct_par_cross_01": {
-        "category": "struct",
-        "label": "Paranid Cross Connection Structure 01",
-        "macros": [
-            "struct_par_cross_01_macro"
-        ]
-    },
-    "struct_par_cross_02": {
-        "category": "struct",
-        "label": "Paranid Cross Connection Structure 02",
-        "macros": [
-            "struct_par_cross_02_macro"
-        ]
-    },
-    "struct_par_cross_03": {
-        "category": "struct",
-        "label": "Paranid Cross Connection Structure 03",
-        "macros": [
-            "struct_par_cross_03_macro"
-        ]
-    },
-    "struct_par_vertical_01": {
-        "category": "struct",
-        "label": "Paranid Vertical Connection Structure 01",
-        "macros": [
-            "struct_par_vertical_01_macro"
-        ]
-    },
-    "struct_par_vertical_02": {
-        "category": "struct",
-        "label": "Paranid Vertical Connection Structure 02",
-        "macros": [
-            "struct_par_vertical_02_macro"
-        ]
-    },
-    "struct_spl_base_01": {
-        "category": "struct",
-        "label": "Split Base Connection Structure 01",
-        "macros": [
-            "struct_spl_base_01_macro"
-        ]
-    },
-    "struct_spl_base_02": {
-        "category": "struct",
-        "label": "Split Base Connection Structure 02",
-        "macros": [
-            "struct_spl_base_02_macro"
-        ]
-    },
-    "struct_spl_base_03": {
-        "category": "struct",
-        "label": "Split Base Connection Structure 03",
-        "macros": [
-            "struct_spl_base_03_macro"
-        ]
-    },
-    "struct_spl_cross_01": {
-        "category": "struct",
-        "label": "Split Cross Connection Structure 01",
-        "macros": [
-            "struct_spl_cross_01_macro"
-        ]
-    },
-    "struct_spl_vertical_01": {
-        "category": "struct",
-        "label": "Split Vertical Connection Structure 01",
-        "macros": [
-            "struct_spl_vertical_01_macro"
-        ]
-    },
-    "struct_spl_vertical_02": {
-        "category": "struct",
-        "label": "Split Vertical Connection Structure 02",
-        "macros": [
-            "struct_spl_vertical_02_macro"
-        ]
-    },
-    "struct_tel_base_01": {
-        "category": "struct",
-        "label": "Teladi Base Connection Structure 01",
-        "macros": [
-            "struct_tel_base_01_macro"
-        ]
-    },
-    "struct_tel_base_02": {
-        "category": "struct",
-        "label": "Teladi Base Connection Structure 02",
-        "macros": [
-            "struct_tel_base_02_macro"
-        ]
-    },
-    "struct_tel_base_03": {
-        "category": "struct",
-        "label": "Teladi Base Connection Structure 03",
-        "macros": [
-            "struct_tel_base_03_macro"
-        ]
-    },
-    "struct_tel_cross_01": {
-        "category": "struct",
-        "label": "Teladi Cross Connection Structure 01",
-        "macros": [
-            "struct_tel_cross_01_macro"
-        ]
-    },
-    "struct_tel_vertical_01": {
-        "category": "struct",
-        "label": "Teladi Vertical Connection Structure 01",
-        "macros": [
-            "struct_tel_vertical_01_macro"
-        ]
-    },
-    "struct_tel_vertical_02": {
-        "category": "struct",
-        "label": "Teladi Vertical Connection Structure 02",
-        "macros": [
-            "struct_tel_vertical_02_macro"
-        ]
-    },
-    "struct_ter_base_01": {
-        "category": "struct",
-        "label": "Terran Base Connection Structure 01",
-        "macros": [
-            "struct_ter_base_01_macro"
-        ]
-    },
-    "struct_ter_base_02": {
-        "category": "struct",
-        "label": "Terran Base Connection Structure 02",
-        "macros": [
-            "struct_ter_base_02_macro"
-        ]
-    },
-    "struct_ter_base_03": {
-        "category": "struct",
-        "label": "Terran Base Connection Structure 03",
-        "macros": [
-            "struct_ter_base_03_macro"
-        ]
-    },
-    "struct_ter_cross_01": {
-        "category": "struct",
-        "label": "Terran Cross Connection Structure 01",
-        "macros": [
-            "struct_ter_cross_01_macro"
-        ]
-    },
-    "struct_ter_vertical_01": {
-        "category": "struct",
-        "label": "Terran Vertical Connection Structure 01",
-        "macros": [
-            "struct_ter_vertical_01_macro"
-        ]
-    },
-    "struct_ter_vertical_02": {
-        "category": "struct",
-        "label": "Terran Vertical Connection Structure 02",
-        "macros": [
-            "struct_ter_vertical_02_macro"
-        ]
-    },
     "defence_arg_claim_01": {
         "category": "defence",
         "label": "Argon Administrative Centre",
@@ -818,6 +510,13 @@
             "dockarea_gen_m_inv_01_macro"
         ]
     },
+    "dockarea_gen_m_venturer_01": {
+        "category": "dockarea",
+        "label": "S\/M Venture Sendoff Dock",
+        "macros": [
+            "dockarea_gen_m_venturer_01_macro"
+        ]
+    },
     "dockarea_gen_s_inv_01": {
         "category": "dockarea",
         "label": "",
@@ -825,11 +524,25 @@
             "dockarea_gen_s_inv_01_macro"
         ]
     },
+    "dockarea_gen_xl_venturer_01": {
+        "category": "dockarea",
+        "label": "L\/XL Venture Sendoff Dock",
+        "macros": [
+            "dockarea_gen_xl_venturer_01_macro"
+        ]
+    },
     "dockarea_par_l_destroyer_01": {
         "category": "dockarea",
         "label": "Dock Area",
         "macros": [
             "dockarea_par_l_destroyer_01_macro"
+        ]
+    },
+    "dockarea_par_l_expeditionary_01": {
+        "category": "dockarea",
+        "label": "Dock Area",
+        "macros": [
+            "dockarea_par_l_expeditionary_01_macro"
         ]
     },
     "dockarea_par_l_miner_solid_01": {
@@ -980,11 +693,25 @@
             "dockingbay_gen_l_inv_02_macro"
         ]
     },
+    "dockingbay_gen_lxl_venturer_01": {
+        "category": "dockingbay",
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_lxl_venturer_01_macro"
+        ]
+    },
     "dockingbay_gen_m_inv": {
         "category": "dockingbay",
         "label": "Docking Bay",
         "macros": [
             "dockingbay_gen_m_inv_macro"
+        ]
+    },
+    "dockingbay_gen_s_inv": {
+        "category": "dockingbay",
+        "label": "Docking Bay",
+        "macros": [
+            "dockingbay_gen_s_inv_macro"
         ]
     },
     "dockingbay_gen_sm_buildstorage_01": {
@@ -994,11 +721,11 @@
             "dockingbay_gen_sm_buildstorage_01_macro"
         ]
     },
-    "dockingbay_gen_s_inv": {
+    "dockingbay_gen_sm_venturer_01": {
         "category": "dockingbay",
         "label": "Docking Bay",
         "macros": [
-            "dockingbay_gen_s_inv_macro"
+            "dockingbay_gen_sm_venturer_01_macro"
         ]
     },
     "dockingbay_gen_xl_inv": {
@@ -1035,6 +762,168 @@
         "label": "Docking Bay",
         "macros": [
             "dockingbay_ter_xl_pier_04_b_macro"
+        ]
+    },
+    "hab_arg_l_01": {
+        "category": "hab",
+        "label": "Argon L Habitat",
+        "macros": [
+            "hab_arg_l_01_macro"
+        ]
+    },
+    "hab_arg_m_01": {
+        "category": "hab",
+        "label": "Argon M Habitat",
+        "macros": [
+            "hab_arg_m_01_macro"
+        ]
+    },
+    "hab_arg_s_01": {
+        "category": "hab",
+        "label": "Argon S Habitat",
+        "macros": [
+            "hab_arg_s_01_macro"
+        ]
+    },
+    "hab_bor_l_01": {
+        "category": "hab",
+        "label": "Boron L Oasis",
+        "macros": [
+            "hab_bor_l_01_macro"
+        ]
+    },
+    "hab_bor_m_01": {
+        "category": "hab",
+        "label": "Boron M Oasis",
+        "macros": [
+            "hab_bor_m_01_macro"
+        ]
+    },
+    "hab_bor_s_01": {
+        "category": "hab",
+        "label": "Boron S Oasis",
+        "macros": [
+            "hab_bor_s_01_macro"
+        ]
+    },
+    "hab_par_l_01": {
+        "category": "hab",
+        "label": "Paranid L Dome",
+        "macros": [
+            "hab_par_l_01_macro"
+        ]
+    },
+    "hab_par_m_01": {
+        "category": "hab",
+        "label": "Paranid M Dome",
+        "macros": [
+            "hab_par_m_01_macro"
+        ]
+    },
+    "hab_par_m_02": {
+        "category": "hab",
+        "label": "",
+        "macros": []
+    },
+    "hab_par_s_01": {
+        "category": "hab",
+        "label": "Paranid S Dome",
+        "macros": [
+            "hab_par_s_01_macro"
+        ]
+    },
+    "hab_par_s_02": {
+        "category": "hab",
+        "label": "",
+        "macros": []
+    },
+    "hab_par_s_03": {
+        "category": "hab",
+        "label": "",
+        "macros": []
+    },
+    "hab_pir_l_01": {
+        "category": "hab",
+        "label": "Argon L Dormitory",
+        "macros": [
+            "hab_pir_l_01_macro"
+        ]
+    },
+    "hab_pir_m_01": {
+        "category": "hab",
+        "label": "Argon M Dormitory",
+        "macros": [
+            "hab_pir_m_01_macro"
+        ]
+    },
+    "hab_pir_s_01": {
+        "category": "hab",
+        "label": "Argon S Dormitory",
+        "macros": [
+            "hab_pir_s_01_macro"
+        ]
+    },
+    "hab_spl_l_01": {
+        "category": "hab",
+        "label": "Split L Parlour",
+        "macros": [
+            "hab_spl_l_01_macro"
+        ]
+    },
+    "hab_spl_m_01": {
+        "category": "hab",
+        "label": "Split M Parlour",
+        "macros": [
+            "hab_spl_m_01_macro"
+        ]
+    },
+    "hab_spl_s_01": {
+        "category": "hab",
+        "label": "Split S Parlour",
+        "macros": [
+            "hab_spl_s_01_macro"
+        ]
+    },
+    "hab_tel_l_01": {
+        "category": "hab",
+        "label": "Teladi L Biome",
+        "macros": [
+            "hab_tel_l_01_macro"
+        ]
+    },
+    "hab_tel_m_01": {
+        "category": "hab",
+        "label": "Teladi M Biome",
+        "macros": [
+            "hab_tel_m_01_macro"
+        ]
+    },
+    "hab_tel_s_01": {
+        "category": "hab",
+        "label": "Teladi S Biome",
+        "macros": [
+            "hab_tel_s_01_macro"
+        ]
+    },
+    "hab_ter_l_01": {
+        "category": "hab",
+        "label": "Terran L Living Quarters",
+        "macros": [
+            "hab_ter_l_01_macro"
+        ]
+    },
+    "hab_ter_m_01": {
+        "category": "hab",
+        "label": "Terran M Living Quarters",
+        "macros": [
+            "hab_ter_m_01_macro"
+        ]
+    },
+    "hab_ter_s_01": {
+        "category": "hab",
+        "label": "Terran S Living Quarters",
+        "macros": [
+            "hab_ter_s_01_macro"
         ]
     },
     "pier_arg_harbor_01": {
@@ -1212,168 +1101,6 @@
             "pier_ter_tradestation_01_macro"
         ]
     },
-    "hab_arg_l_01": {
-        "category": "hab",
-        "label": "Argon L Habitat",
-        "macros": [
-            "hab_arg_l_01_macro"
-        ]
-    },
-    "hab_arg_m_01": {
-        "category": "hab",
-        "label": "Argon M Habitat",
-        "macros": [
-            "hab_arg_m_01_macro"
-        ]
-    },
-    "hab_arg_s_01": {
-        "category": "hab",
-        "label": "Argon S Habitat",
-        "macros": [
-            "hab_arg_s_01_macro"
-        ]
-    },
-    "hab_bor_l_01": {
-        "category": "hab",
-        "label": "Boron L Oasis",
-        "macros": [
-            "hab_bor_l_01_macro"
-        ]
-    },
-    "hab_bor_m_01": {
-        "category": "hab",
-        "label": "Boron M Oasis",
-        "macros": [
-            "hab_bor_m_01_macro"
-        ]
-    },
-    "hab_bor_s_01": {
-        "category": "hab",
-        "label": "Boron S Oasis",
-        "macros": [
-            "hab_bor_s_01_macro"
-        ]
-    },
-    "hab_par_l_01": {
-        "category": "hab",
-        "label": "Paranid L Dome",
-        "macros": [
-            "hab_par_l_01_macro"
-        ]
-    },
-    "hab_par_m_01": {
-        "category": "hab",
-        "label": "Paranid M Dome",
-        "macros": [
-            "hab_par_m_01_macro"
-        ]
-    },
-    "hab_par_m_02": {
-        "category": "hab",
-        "label": "",
-        "macros": []
-    },
-    "hab_par_s_01": {
-        "category": "hab",
-        "label": "Paranid S Dome",
-        "macros": [
-            "hab_par_s_01_macro"
-        ]
-    },
-    "hab_par_s_02": {
-        "category": "hab",
-        "label": "",
-        "macros": []
-    },
-    "hab_par_s_03": {
-        "category": "hab",
-        "label": "",
-        "macros": []
-    },
-    "hab_pir_l_01": {
-        "category": "hab",
-        "label": "Argon L Dormitory",
-        "macros": [
-            "hab_pir_l_01_macro"
-        ]
-    },
-    "hab_pir_m_01": {
-        "category": "hab",
-        "label": "Argon M Dormitory",
-        "macros": [
-            "hab_pir_m_01_macro"
-        ]
-    },
-    "hab_pir_s_01": {
-        "category": "hab",
-        "label": "Argon S Dormitory",
-        "macros": [
-            "hab_pir_s_01_macro"
-        ]
-    },
-    "hab_spl_l_01": {
-        "category": "hab",
-        "label": "Split L Parlour",
-        "macros": [
-            "hab_spl_l_01_macro"
-        ]
-    },
-    "hab_spl_m_01": {
-        "category": "hab",
-        "label": "Split M Parlour",
-        "macros": [
-            "hab_spl_m_01_macro"
-        ]
-    },
-    "hab_spl_s_01": {
-        "category": "hab",
-        "label": "Split S Parlour",
-        "macros": [
-            "hab_spl_s_01_macro"
-        ]
-    },
-    "hab_tel_l_01": {
-        "category": "hab",
-        "label": "Teladi L Biome",
-        "macros": [
-            "hab_tel_l_01_macro"
-        ]
-    },
-    "hab_tel_m_01": {
-        "category": "hab",
-        "label": "Teladi M Biome",
-        "macros": [
-            "hab_tel_m_01_macro"
-        ]
-    },
-    "hab_tel_s_01": {
-        "category": "hab",
-        "label": "Teladi S Biome",
-        "macros": [
-            "hab_tel_s_01_macro"
-        ]
-    },
-    "hab_ter_l_01": {
-        "category": "hab",
-        "label": "Terran L Living Quarters",
-        "macros": [
-            "hab_ter_l_01_macro"
-        ]
-    },
-    "hab_ter_m_01": {
-        "category": "hab",
-        "label": "Terran M Living Quarters",
-        "macros": [
-            "hab_ter_m_01_macro"
-        ]
-    },
-    "hab_ter_s_01": {
-        "category": "hab",
-        "label": "Terran S Living Quarters",
-        "macros": [
-            "hab_ter_s_01_macro"
-        ]
-    },
     "proc_gen_scrapworks": {
         "category": "proc",
         "label": "Scrap Processor",
@@ -1526,9 +1253,9 @@
         "category": "prod",
         "label": "Teladi Medical Supply Production",
         "macros": [
+            "prod_spl_medicalsupplies_macro",
             "prod_arg_medicalsupplies_macro",
             "prod_par_medicalsupplies_macro",
-            "prod_spl_medicalsupplies_macro",
             "prod_tel_medicalsupplies_macro"
         ]
     },
@@ -2191,32 +1918,130 @@
             "storage_ter_s_solid_01_macro"
         ]
     },
-    "dockarea_gen_m_venturer_01": {
-        "category": "dockarea",
-        "label": "S\/M Venture Sendoff Dock",
+    "struct_arg_base_01": {
+        "category": "struct",
+        "label": "Argon Base Connection Structure 01",
         "macros": [
-            "dockarea_gen_m_venturer_01_macro"
+            "struct_arg_base_01_macro"
         ]
     },
-    "dockarea_gen_xl_venturer_01": {
-        "category": "dockarea",
-        "label": "L\/XL Venture Sendoff Dock",
+    "struct_arg_base_02": {
+        "category": "struct",
+        "label": "Argon Base Connection Structure 02",
         "macros": [
-            "dockarea_gen_xl_venturer_01_macro"
+            "struct_arg_base_02_macro"
         ]
     },
-    "dockingbay_gen_lxl_venturer_01": {
-        "category": "dockingbay",
-        "label": "Docking Bay",
+    "struct_arg_base_03": {
+        "category": "struct",
+        "label": "Argon Base Connection Structure 03",
         "macros": [
-            "dockingbay_gen_lxl_venturer_01_macro"
+            "struct_arg_base_03_macro"
         ]
     },
-    "dockingbay_gen_sm_venturer_01": {
-        "category": "dockingbay",
-        "label": "Docking Bay",
+    "struct_arg_cross_01": {
+        "category": "struct",
+        "label": "Argon Cross Connection Structure 01",
         "macros": [
-            "dockingbay_gen_sm_venturer_01_macro"
+            "struct_arg_cross_01_macro"
+        ]
+    },
+    "struct_arg_vertical_01": {
+        "category": "struct",
+        "label": "Argon Vertical Connection Structure 01",
+        "macros": [
+            "struct_arg_vertical_01_macro"
+        ]
+    },
+    "struct_arg_vertical_02": {
+        "category": "struct",
+        "label": "Argon Vertical Connection Structure 02",
+        "macros": [
+            "struct_arg_vertical_02_macro"
+        ]
+    },
+    "struct_bor_base_01": {
+        "category": "struct",
+        "label": "Boron Base Connection Structure 01",
+        "macros": [
+            "struct_bor_base_01_macro"
+        ]
+    },
+    "struct_bor_base_02": {
+        "category": "struct",
+        "label": "Boron Base Connection Structure 02",
+        "macros": [
+            "struct_bor_base_02_macro"
+        ]
+    },
+    "struct_bor_base_03": {
+        "category": "struct",
+        "label": "Boron Base Connection Structure 03",
+        "macros": [
+            "struct_bor_base_03_macro"
+        ]
+    },
+    "struct_bor_base_04": {
+        "category": "struct",
+        "label": "Boron Base Connection Structure 04",
+        "macros": [
+            "struct_bor_base_04_macro"
+        ]
+    },
+    "struct_bor_base_05": {
+        "category": "struct",
+        "label": "Boron Base Connection Structure 05",
+        "macros": [
+            "struct_bor_base_05_macro"
+        ]
+    },
+    "struct_bor_cross_01": {
+        "category": "struct",
+        "label": "Boron Cross Connection Structure 01",
+        "macros": [
+            "struct_bor_cross_01_macro"
+        ]
+    },
+    "struct_bor_cross_02": {
+        "category": "struct",
+        "label": "Boron Cross Connection Structure 02",
+        "macros": [
+            "struct_bor_cross_02_macro"
+        ]
+    },
+    "struct_bor_vertical_01": {
+        "category": "struct",
+        "label": "Boron Vertical Connection Structure 01",
+        "macros": [
+            "struct_bor_vertical_01_macro"
+        ]
+    },
+    "struct_bor_vertical_02": {
+        "category": "struct",
+        "label": "Boron Vertical Connection Structure 02",
+        "macros": [
+            "struct_bor_vertical_02_macro"
+        ]
+    },
+    "struct_gen_observationdeck_01": {
+        "category": "struct",
+        "label": "Conservatory Observation Deck",
+        "macros": [
+            "struct_gen_observationdeck_01_macro"
+        ]
+    },
+    "struct_gen_observationdeck_02": {
+        "category": "struct",
+        "label": "Pavilion Observation Deck",
+        "macros": [
+            "struct_gen_observationdeck_02_macro"
+        ]
+    },
+    "struct_gen_observationdeck_03": {
+        "category": "struct",
+        "label": "Penthouse Observation Deck",
+        "macros": [
+            "struct_gen_observationdeck_03_macro"
         ]
     },
     "struct_gen_venturerbase_01": {
@@ -2259,6 +2084,188 @@
         "label": "Venture Vertical Connection Structure 02",
         "macros": [
             "struct_gen_venturervertical_02_macro"
+        ]
+    },
+    "struct_par_base_01": {
+        "category": "struct",
+        "label": "Paranid Base Connection Structure 01",
+        "macros": [
+            "struct_par_base_01_macro"
+        ]
+    },
+    "struct_par_base_02": {
+        "category": "struct",
+        "label": "Paranid Base Connection Structure 02",
+        "macros": [
+            "struct_par_base_02_macro"
+        ]
+    },
+    "struct_par_base_03": {
+        "category": "struct",
+        "label": "Paranid Base Connection Structure 03",
+        "macros": [
+            "struct_par_base_03_macro"
+        ]
+    },
+    "struct_par_cross_01": {
+        "category": "struct",
+        "label": "Paranid Cross Connection Structure 01",
+        "macros": [
+            "struct_par_cross_01_macro"
+        ]
+    },
+    "struct_par_cross_02": {
+        "category": "struct",
+        "label": "Paranid Cross Connection Structure 02",
+        "macros": [
+            "struct_par_cross_02_macro"
+        ]
+    },
+    "struct_par_cross_03": {
+        "category": "struct",
+        "label": "Paranid Cross Connection Structure 03",
+        "macros": [
+            "struct_par_cross_03_macro"
+        ]
+    },
+    "struct_par_vertical_01": {
+        "category": "struct",
+        "label": "Paranid Vertical Connection Structure 01",
+        "macros": [
+            "struct_par_vertical_01_macro"
+        ]
+    },
+    "struct_par_vertical_02": {
+        "category": "struct",
+        "label": "Paranid Vertical Connection Structure 02",
+        "macros": [
+            "struct_par_vertical_02_macro"
+        ]
+    },
+    "struct_spl_base_01": {
+        "category": "struct",
+        "label": "Split Base Connection Structure 01",
+        "macros": [
+            "struct_spl_base_01_macro"
+        ]
+    },
+    "struct_spl_base_02": {
+        "category": "struct",
+        "label": "Split Base Connection Structure 02",
+        "macros": [
+            "struct_spl_base_02_macro"
+        ]
+    },
+    "struct_spl_base_03": {
+        "category": "struct",
+        "label": "Split Base Connection Structure 03",
+        "macros": [
+            "struct_spl_base_03_macro"
+        ]
+    },
+    "struct_spl_cross_01": {
+        "category": "struct",
+        "label": "Split Cross Connection Structure 01",
+        "macros": [
+            "struct_spl_cross_01_macro"
+        ]
+    },
+    "struct_spl_vertical_01": {
+        "category": "struct",
+        "label": "Split Vertical Connection Structure 01",
+        "macros": [
+            "struct_spl_vertical_01_macro"
+        ]
+    },
+    "struct_spl_vertical_02": {
+        "category": "struct",
+        "label": "Split Vertical Connection Structure 02",
+        "macros": [
+            "struct_spl_vertical_02_macro"
+        ]
+    },
+    "struct_tel_base_01": {
+        "category": "struct",
+        "label": "Teladi Base Connection Structure 01",
+        "macros": [
+            "struct_tel_base_01_macro"
+        ]
+    },
+    "struct_tel_base_02": {
+        "category": "struct",
+        "label": "Teladi Base Connection Structure 02",
+        "macros": [
+            "struct_tel_base_02_macro"
+        ]
+    },
+    "struct_tel_base_03": {
+        "category": "struct",
+        "label": "Teladi Base Connection Structure 03",
+        "macros": [
+            "struct_tel_base_03_macro"
+        ]
+    },
+    "struct_tel_cross_01": {
+        "category": "struct",
+        "label": "Teladi Cross Connection Structure 01",
+        "macros": [
+            "struct_tel_cross_01_macro"
+        ]
+    },
+    "struct_tel_vertical_01": {
+        "category": "struct",
+        "label": "Teladi Vertical Connection Structure 01",
+        "macros": [
+            "struct_tel_vertical_01_macro"
+        ]
+    },
+    "struct_tel_vertical_02": {
+        "category": "struct",
+        "label": "Teladi Vertical Connection Structure 02",
+        "macros": [
+            "struct_tel_vertical_02_macro"
+        ]
+    },
+    "struct_ter_base_01": {
+        "category": "struct",
+        "label": "Terran Base Connection Structure 01",
+        "macros": [
+            "struct_ter_base_01_macro"
+        ]
+    },
+    "struct_ter_base_02": {
+        "category": "struct",
+        "label": "Terran Base Connection Structure 02",
+        "macros": [
+            "struct_ter_base_02_macro"
+        ]
+    },
+    "struct_ter_base_03": {
+        "category": "struct",
+        "label": "Terran Base Connection Structure 03",
+        "macros": [
+            "struct_ter_base_03_macro"
+        ]
+    },
+    "struct_ter_cross_01": {
+        "category": "struct",
+        "label": "Terran Cross Connection Structure 01",
+        "macros": [
+            "struct_ter_cross_01_macro"
+        ]
+    },
+    "struct_ter_vertical_01": {
+        "category": "struct",
+        "label": "Terran Vertical Connection Structure 01",
+        "macros": [
+            "struct_ter_vertical_01_macro"
+        ]
+    },
+    "struct_ter_vertical_02": {
+        "category": "struct",
+        "label": "Terran Vertical Connection Structure 02",
+        "macros": [
+            "struct_ter_vertical_02_macro"
         ]
     },
     "welfare_bor_artacademy_01": {
