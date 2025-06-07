@@ -46,14 +46,11 @@ class ModuleDefs
 
     public static function getInstance() : ModuleDefs
     {
-        if(isset(self::$instance))
-        {
-            return self::$instance;
+        if(!isset(self::$instance)) {
+            self::$instance = new ModuleDefs();
         }
 
-        $defs = new ModuleDefs();
-        self::$instance = $defs;
-        return $defs;
+        return self::$instance;
     }
 
     /**
