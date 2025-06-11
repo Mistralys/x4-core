@@ -1,0 +1,2816 @@
+[
+    {
+        "id": "ship_arg_l_destroyer_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers",
+            "hatikvah",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_l_destroyer_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_destroyer_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "argon",
+            "buccaneers",
+            "hatikvah",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_l_miner_liquid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_l_miner_liquid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_l_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_l_miner_solid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_02_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_03_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_03_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_04_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_04_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_05_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_l_trans_container_05_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_bomber_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "gunboat",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_bomber_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "gunboat",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_bomber_02_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "scavenger",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_m_frigate_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_frigate_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_miner_liquid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_m_miner_liquid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_m_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_m_miner_solid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_m_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "alliance",
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "alliance",
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_m_trans_container_02_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_fighter_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_fighter_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "alliance",
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_fighter_02_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_fighter_03_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_fighter_04_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_heavyfighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon"
+        ]
+    },
+    {
+        "id": "ship_arg_s_heavyfighter_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone"
+        ]
+    },
+    {
+        "id": "ship_arg_s_heavyfighter_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_s_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "miner",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "argon",
+            "buccaneers",
+            "hatikvah"
+        ]
+    },
+    {
+        "id": "ship_arg_s_racer_01_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_arg_s_scout_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "alliance",
+            "argon",
+            "buccaneers",
+            "hatikvah",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_s_scout_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers",
+            "hatikvah",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_s_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "alliance",
+            "argon",
+            "buccaneers",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_s_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_s_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "alliance",
+            "argon",
+            "buccaneers",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_s_trans_container_02_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_arg_xl_builder_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_xl_builder_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_xl_carrier_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_xl_carrier_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_xl_carrier_02_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_xl_resupplier_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "argon",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_arg_xl_resupplier_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "antigone",
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_atf_l_destroyer_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_atf_xl_battleship_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "xl",
+        "classID": "battleship",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_bor_l_carrier_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "l",
+        "classID": "carrier",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_l_destroyer_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_l_miner_liquid_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_l_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_l_trans_container_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_m_corvette_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_m_corvette_02_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_m_gunboat_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "m",
+        "classID": "gunboat",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_m_miner_liquid_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_m_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_m_trans_container_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_s_fighter_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_s_heavyfighter_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_s_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "s",
+        "classID": "miner",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_s_miner_solid_01_story",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "s",
+        "classID": "miner",
+        "builderFactionID": "boron",
+        "usedBy": []
+    },
+    {
+        "id": "ship_bor_s_scout_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_s_scout_02_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_s_trans_container_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_xl_builder_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_xl_carrier_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_bor_xl_resupplier_01_a",
+        "dataSourceID": "ego_dlc_boron",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "boron",
+        "usedBy": [
+            "boron"
+        ]
+    },
+    {
+        "id": "ship_gen_m_tugboat_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "tug",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "alliance",
+            "scaleplate",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_gen_m_yacht_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark"
+        ]
+    },
+    {
+        "id": "ship_gen_s_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "",
+        "usedBy": [
+            "alliance"
+        ]
+    },
+    {
+        "id": "ship_gen_s_fighter_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "alliance"
+        ]
+    },
+    {
+        "id": "ship_gen_s_racer_01_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_kha_l_destroyer_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "khaak",
+        "usedBy": [
+            "khaak"
+        ]
+    },
+    {
+        "id": "ship_kha_m_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "heavyfighter",
+        "builderFactionID": "khaak",
+        "usedBy": [
+            "khaak"
+        ]
+    },
+    {
+        "id": "ship_kha_m_fighter_02_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "heavyfighter",
+        "builderFactionID": "khaak",
+        "usedBy": [
+            "khaak"
+        ]
+    },
+    {
+        "id": "ship_kha_s_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "khaak",
+        "usedBy": [
+            "khaak"
+        ]
+    },
+    {
+        "id": "ship_kha_s_fighter_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "khaak",
+        "usedBy": [
+            "khaak"
+        ]
+    },
+    {
+        "id": "ship_kha_xl_battleship_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "battleship",
+        "builderFactionID": "khaak",
+        "usedBy": [
+            "khaak"
+        ]
+    },
+    {
+        "id": "ship_par_l_destroyer_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_destroyer_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_destroyer_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "alliance",
+            "buccaneers",
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_expeditionary_01_a",
+        "dataSourceID": "ego_dlc_mini_01",
+        "size": "l",
+        "classID": "expeditionary",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_miner_liquid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_miner_liquid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_miner_liquid_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_miner_solid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_miner_solid_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_trans_container_02_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_l_trans_container_03_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_corvette_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_corvette_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_frigate_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_frigate_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_miner_liquid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_miner_liquid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_miner_solid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "alliance",
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "alliance",
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_trans_container_02_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_m_trans_container_03_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers"
+        ]
+    },
+    {
+        "id": "ship_par_s_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_fighter_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_fighter_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_fighter_02_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_heavyfighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "miner",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_racer_01_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_par_s_scout_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "alliance",
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_scout_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "alliance",
+            "buccaneers",
+            "paranid",
+            "scaleplate",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_s_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "scaleplate",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_builder_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "alliance",
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_builder_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_carrier_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_carrier_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_carrier_02_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_resupplier_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_resupplier_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_par_xl_resupplier_02_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "holyorder",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "id": "ship_pir_l_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark"
+        ]
+    },
+    {
+        "id": "ship_pir_l_scavenger_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "l",
+        "classID": "scavenger",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark"
+        ]
+    },
+    {
+        "id": "ship_pir_l_scavenger_01_a_storyhighcapacity",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "l",
+        "classID": "scavenger",
+        "builderFactionID": "argon",
+        "usedBy": []
+    },
+    {
+        "id": "ship_pir_l_scrapper_01",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "l",
+        "classID": "compactor",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "scavenger"
+        ]
+    },
+    {
+        "id": "ship_pir_s_fighter_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark"
+        ]
+    },
+    {
+        "id": "ship_pir_s_fighter_02_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark"
+        ]
+    },
+    {
+        "id": "ship_pir_s_heavyfighter_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark"
+        ]
+    },
+    {
+        "id": "ship_pir_s_trans_condensate_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark",
+            "scavenger"
+        ]
+    },
+    {
+        "id": "ship_pir_s_trans_container_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark",
+            "scavenger"
+        ]
+    },
+    {
+        "id": "ship_pir_xl_battleship_01_a",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "xl",
+        "classID": "battleship",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_pir_xl_builder_01",
+        "dataSourceID": "ego_dlc_pirate",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "argon",
+        "usedBy": [
+            "loanshark",
+            "scavenger"
+        ]
+    },
+    {
+        "id": "ship_spl_l_destroyer_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_l_miner_liquid_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_l_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_l_trans_container_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_m_corvette_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_m_corvette_01_b",
+        "dataSourceID": "ego_dlc_split",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit"
+        ]
+    },
+    {
+        "id": "ship_spl_m_frigate_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_m_miner_liquid_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_m_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_m_trans_container_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_s_fighter_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_s_fighter_02_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_s_fighter_02_b",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit"
+        ]
+    },
+    {
+        "id": "ship_spl_s_heavyfighter_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_s_heavyfighter_02_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit"
+        ]
+    },
+    {
+        "id": "ship_spl_s_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "miner",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_s_scout_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_s_trans_container_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_xl_builder_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_xl_carrier_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_spl_xl_resupplier_01_a",
+        "dataSourceID": "ego_dlc_split",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "split",
+        "usedBy": [
+            "court",
+            "freesplit",
+            "split"
+        ]
+    },
+    {
+        "id": "ship_tel_l_destroyer_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_destroyer_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_l_destroyer_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_miner_liquid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_miner_liquid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_l_miner_liquid_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_miner_solid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_l_miner_solid_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_l_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_l_trans_container_02_b",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_l_trans_container_03_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_m_bomber_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "gunboat",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_m_bomber_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "gunboat",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_m_frigate_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_m_frigate_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_m_miner_liquid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_m_miner_liquid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_m_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_m_miner_solid_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_m_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "alliance",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_m_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_m_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "alliance",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_m_trans_container_02_b",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_m_trans_container_03_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_s_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "scaleplate",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_s_fighter_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_tel_s_fighter_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_s_fighter_02_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_s_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "miner",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_s_racer_01_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_tel_s_scout_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "alliance",
+            "hatikvah",
+            "scaleplate",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_s_scout_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "hatikvah",
+            "ministry",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_tel_s_scout_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "alliance",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_s_scout_02_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_s_trans_container_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "alliance",
+            "scaleplate",
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_s_trans_container_01_b",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry",
+            "scaleplate"
+        ]
+    },
+    {
+        "id": "ship_tel_s_trans_container_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_xl_builder_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_xl_builder_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_xl_carrier_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_xl_carrier_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_tel_xl_resupplier_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "ship_tel_xl_resupplier_01_b",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "ministry"
+        ]
+    },
+    {
+        "id": "ship_ter_l_destroyer_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_l_flagship_01_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_ter_l_miner_liquid_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_l_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_l_research_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "terran",
+        "usedBy": []
+    },
+    {
+        "id": "ship_ter_l_trans_container_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "l",
+        "classID": "freighter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_m_corvette_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_m_corvette_02_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_ter_m_frigate_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "m",
+        "classID": "frigate",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_m_gunboat_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "m",
+        "classID": "gunboat",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_m_miner_liquid_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_m_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_m_trans_container_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "m",
+        "classID": "transporter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_s_fighter_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_s_fighter_02_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers"
+        ]
+    },
+    {
+        "id": "ship_ter_s_fighter_03_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers"
+        ]
+    },
+    {
+        "id": "ship_ter_s_fighter_04_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_ter_s_heavyfighter_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_s_miner_solid_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "miner",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_s_scout_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_s_scout_02_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_s_trans_container_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "courier",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_s_xperimental_01_a",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "ownerless"
+        ]
+    },
+    {
+        "id": "ship_ter_xl_builder_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "xl",
+        "classID": "builder",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_xl_carrier_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "xl",
+        "classID": "carrier",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_ter_xl_resupplier_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "xl",
+        "classID": "resupplier",
+        "builderFactionID": "terran",
+        "usedBy": [
+            "pioneers",
+            "terran"
+        ]
+    },
+    {
+        "id": "ship_xen_l_terraformer_01_a",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "destroyer",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_m_corvette_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_m_corvette_02_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_m_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_m_miner_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_m_miner_solid_01_a",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "classID": "miner",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_s_fighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_s_fighter_02_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_s_heavyfighter_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "heavyfighter",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_s_scout_01_a",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "classID": "scout",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_xl_carrier_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "battleship",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_xl_destroyer_01_a",
+        "dataSourceID": "vanilla",
+        "size": "xl",
+        "classID": "destroyer",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_xen_xl_mothership_01",
+        "dataSourceID": "ego_dlc_timelines",
+        "size": "xl",
+        "classID": "battleship",
+        "builderFactionID": "xenon",
+        "usedBy": [
+            "xenon"
+        ]
+    },
+    {
+        "id": "ship_yak_m_corvette_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "m",
+        "classID": "corvette",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "yaki"
+        ]
+    },
+    {
+        "id": "ship_yak_s_fighter_01_a",
+        "dataSourceID": "ego_dlc_terran",
+        "size": "s",
+        "classID": "fighter",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "yaki"
+        ]
+    }
+]
