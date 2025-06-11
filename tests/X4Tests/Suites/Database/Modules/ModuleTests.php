@@ -18,7 +18,7 @@ class ModuleTests extends X4TestCase
 
         $this->assertSame(
             'arg',
-            ModuleDefs::getInstance()->getByID($id)->getRace()->getID()
+            ModuleDefs::getInstance()->getByID($id)->getBuilderFaction()->getID()
         );
     }
 
@@ -39,7 +39,7 @@ class ModuleTests extends X4TestCase
         $modules = ModuleDefs::getInstance()->getAll();
 
         foreach($modules as $module) {
-            $module->getRace();
+            $module->getBuilderFaction();
         }
 
         $this->addToAssertionCount(1);
@@ -50,7 +50,7 @@ class ModuleTests extends X4TestCase
         $id = 'struct_arg_vertical_01';
 
         $this->assertSame(
-            ModuleCategories::CATEGORY_STRUCTURAL_ELEMENTS,
+            ModuleCategories::CATEGORY_CONNECTION_MODULE,
             ModuleDefs::getInstance()->getByID($id)->getCategory()->getID()
         );
     }
