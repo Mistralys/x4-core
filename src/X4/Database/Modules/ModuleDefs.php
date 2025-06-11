@@ -4,44 +4,27 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Modules;
 
+use AppUtils\Collections\BaseStringPrimaryCollection;
 use AppUtils\FileHelper\JSONFile;
+use Mistralys\X4\X4Application;
 
-class ModuleDefs
+/**
+ * @method ModuleDef getByID(string $id)
+ * @method ModuleDef[] getAll()
+ * @method ModuleDef getDefault()
+ */
+class ModuleDefs extends BaseStringPrimaryCollection
 {
     public const ERROR_UNKNOWN_MODULE_ID = 137601;
 
     private static ?ModuleDefs $instance = null;
-
-    /**
-     * @var array<string,ModuleDef>
-     */
-    private array $defs = array();
+    private JSONFile $dataFile;
 
     private function __construct()
     {
-        $list = JSONFile::factory(__DIR__.'/../../../../data/modules-list.json')
-            ->parse();
-
-        $categories = ModuleCategories::getInstance();
-
-        foreach($list as $moduleName => $moduleData)
-        {
-            $categoryID = $moduleData[ModuleExtractor::KEY_CATEGORY];
-
-            if(!$categories->idExists($categoryID)) {
-                continue;
-            }
-
-            $this->defs[$moduleName] = new ModuleDef(
-                $moduleName,
-                $categories->getByID($categoryID),
-                $moduleData
-            );
-        }
-
-        uasort($this->defs, static function(ModuleDef $a, ModuleDef $b) {
-            return strnatcasecmp($a->getLabel(), $b->getLabel());
-        });
+        $this->dataFile = JSONFile::factory(X4Application::getDataFolder() .'/modules.json')
+            ->setPrettyPrint(true)
+            ->setTrailingNewline(true);
     }
 
     public static function getInstance() : ModuleDefs
@@ -53,47 +36,15 @@ class ModuleDefs
         return self::$instance;
     }
 
-    /**
-     * @return ModuleDef[]
-     */
-    public function getAll() : array
+    public function getDataFile(): JSONFile
     {
-        return array_values($this->defs);
-    }
-
-    public function idExists(string $moduleID) : bool
-    {
-        return isset($this->defs[$moduleID]);
-    }
-
-    /**
-     * @param string $moduleID
-     * @return ModuleDef
-     * @throws ModuleException {@see self::ERROR_UNKNOWN_MODULE_ID}
-     */
-    public function getByID(string $moduleID) : ModuleDef
-    {
-        if(isset($this->defs[$moduleID]))
-        {
-            return $this->defs[$moduleID];
-        }
-
-        throw new ModuleException(
-            'Unknown module.',
-            sprintf(
-                'Tried to fetch module by ID [%s].',
-                $moduleID
-            ),
-            self::ERROR_UNKNOWN_MODULE_ID
-        );
+        return $this->dataFile;
     }
 
     public function findByMacro(string $macro) : ?ModuleDef
     {
-        $modules = $this->getAll();
-
-        foreach($modules as $module) {
-            if(in_array($macro, $module->getMacros())) {
+        foreach($this->getAll() as $module) {
+            if($module->getMacroID() === $macro) {
                 return $module;
             }
         }
@@ -102,11 +53,10 @@ class ModuleDefs
     }
 
     /**
-     * Finds a module by either its ID or macro.
+     * Finds a module by either its ware ID or macro ID.
      *
      * @param string $idOrMacro
      * @return ModuleDef|null
-     * @throws ModuleException
      */
     public function find(string $idOrMacro) : ?ModuleDef
     {
@@ -115,5 +65,17 @@ class ModuleDefs
         }
 
         return $this->findByMacro($idOrMacro);
+    }
+
+    public function getDefaultID(): string
+    {
+        return $this->getAutoDefault();
+    }
+
+    protected function registerItems(): void
+    {
+        foreach($this->getDataFile()->getData() as $moduleDef) {
+            $this->registerItem(ModuleDef::fromArray($moduleDef));
+        }
     }
 }

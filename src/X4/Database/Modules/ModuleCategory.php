@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Modules;
 
-class ModuleCategory
+use AppUtils\Interfaces\StringPrimaryRecordInterface;
+
+class ModuleCategory implements StringPrimaryRecordInterface
 {
     private string $id;
     private string $label;
@@ -15,14 +17,14 @@ class ModuleCategory
         $this->label = $label;
     }
 
-    public function getLabel() : string
-    {
-        return $this->label;
-    }
-
     public function getID() : string
     {
         return $this->id;
+    }
+
+    public function getLabel() : string
+    {
+        return $this->label;
     }
 
     public function isProduction() : bool
@@ -34,8 +36,6 @@ class ModuleCategory
     {
         return
             $this->getID() === ModuleCategories::CATEGORY_DOCKING_AREA
-            ||
-            $this->getID() === ModuleCategories::CATEGORY_DOCKING_BAY
             ||
             $this->getID() === ModuleCategories::CATEGORY_DOCKING_PIER;
     }
