@@ -23,9 +23,9 @@ composer require mistralys/x4-core
 All races available in the game can be accessed through dedicated classes.
 
 ```php
-use Mistralys\X4\Database\Races\KnownRaces;
+use Mistralys\X4\Database\Factions\KnownFactions;
 
-$argon = KnownRaces::getInstance()->getArgon();
+$argon = KnownFactions::getInstance()->getArgon();
 
 echo $argon->getLabel(); // Outputs "Argon"
 ```
