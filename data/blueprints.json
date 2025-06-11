@@ -1,0 +1,4066 @@
+[
+    {
+        "id": "countermeasure_flares_01",
+        "categoryID": "countermeasures"
+    },
+    {
+        "id": "engine_arg_l_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_l_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_m_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_racer_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_s_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_xl_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_arg_xl_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_l_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_m_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_m_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_m_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_s_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_s_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_s_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_bor_xl_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_gen_s_racer_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_gen_s_racer_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_l_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_l_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_m_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_racer_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_s_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_xl_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_par_xl_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_pir_xl_battleship_01_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_l_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_l_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_combat_01_mk4",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_m_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_combat_01_mk4",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_s_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_xl_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_spl_xl_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_l_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_l_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_m_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_racer_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_s_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_xl_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_tel_xl_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_l_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_l_allround_02_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_l_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_m_virtual_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_allround_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_allround_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_combat_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_combat_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_combat_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_travel_01_mk2",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_travel_01_mk3",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_s_virtual_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_xl_allround_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_ter_xl_travel_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_xen_l_allround_02_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_xen_m_virtual_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "engine_xen_s_virtual_01_mk1",
+        "categoryID": "engines"
+    },
+    {
+        "id": "missile_cluster_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_cluster_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_disruptor_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_dumbfire_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_dumbfire_heavy_mk2",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_dumbfire_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_dumbfire_light_mk2",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_emp_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_flagship_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_flagship_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_guided_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_guided_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_heatseeker_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_heatseeker_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_interceptor_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_scatter_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_smart_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_smart_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_starburst_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_swarm_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_swarm_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_torpedo_heavy_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "missile_torpedo_light_mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "id": "module_arg_conn_base_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_conn_base_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_conn_base_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_conn_cross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_conn_vertical_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_conn_vertical_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_def_claim_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_def_disc_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_def_tube_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_dock_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_dock_m_01_hightech",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_dock_m_01_lowtech",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_dock_m_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_dock_m_02_hightech",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_dock_m_02_lowtech",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_dock_tradestation_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_hab_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_hab_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_hab_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_pier_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_pier_l_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_pier_l_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_pier_l_04",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_prod_foodrations_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_prod_meat_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_prod_medicalsupplies_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_prod_spacefuel_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_prod_wheat_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_radar_dish_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_container_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_container_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_container_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_liquid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_liquid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_liquid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_solid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_solid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_arg_stor_solid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_build_dockarea_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_build_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_build_xl_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_base_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_base_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_base_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_base_04",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_base_05",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_cross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_cross_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_vertical_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_conn_vertical_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_def_claim_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_def_disc_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_def_tube_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_dock_m_01_standard",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_equip_dockarea_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_equip_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_equip_xl_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_hab_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_hab_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_hab_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_pier_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_pier_l_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_pier_l_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_pier_l_04",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_pier_tradestation_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_prod_bofu_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_prod_bogas_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_prod_medicalsupplies_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_prod_plankton_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_container_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_container_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_container_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_liquid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_liquid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_liquid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_solid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_solid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_bor_stor_solid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_conn_arg_antigonearc_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_conn_arg_antigonescaffolding_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_conn_arg_antigonestraight_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_build_dockarea_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_build_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_build_xl_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_observationdeck_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_observationdeck_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_observationdeck_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_venturerbase_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_venturerbase_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_venturerbase_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_venturercross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_venturervertical_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_conn_venturervertical_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_dock_m_venturer_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_equip_dockarea_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_equip_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_equip_xl_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_proc_scrapworks",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_advancedcomposites_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_advancedelectronics_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_antimattercells_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_antimatterconverters_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_claytronics_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_dronecomponents_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_energycells_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_engineparts_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_fieldcoils_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_graphene_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_hullparts_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_microchips_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_missilecomponents_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_plasmaconductors_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_quantumtubes_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_refinedmetals_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_scanningarrays_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_scrap_recycler",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_shieldcomponents_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_siliconwafers_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_smartchips_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_spices_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_superfluidcoolant_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_turretcomponents_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_water_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_prod_weaponcomponents_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_ventureplatform_cross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_welfare_casino_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_gen_welfare_gamblinghall_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_hab_arg_antigonepillar_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_hab_arg_antigonespire_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_base_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_base_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_base_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_cross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_cross_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_cross_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_vertical_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_conn_vertical_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_def_claim_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_def_claim_story_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_def_disc_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_def_tube_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_hab_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_hab_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_hab_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_pier_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_pier_l_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_pier_l_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_prod_majadust_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_prod_majasnails_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_prod_medicalsupplies_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_prod_sojabeans_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_prod_sojahusk_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_container_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_container_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_container_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_liquid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_liquid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_liquid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_solid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_solid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_par_stor_solid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_pir_hab_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_pir_hab_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_pir_hab_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_pir_stor_condensate_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_pir_stor_condensate_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_conn_base_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_conn_base_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_conn_base_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_conn_cross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_conn_vertical_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_conn_vertical_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_def_claim_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_def_disc_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_def_tube_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_hab_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_hab_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_hab_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_pier_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_pier_l_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_pier_l_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_prod_cheltmeat_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_prod_medicalsupplies_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_prod_scruffinfruits_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_container_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_container_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_container_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_liquid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_liquid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_liquid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_solid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_solid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_spl_stor_solid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_conn_base_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_conn_base_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_conn_base_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_conn_cross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_conn_vertical_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_conn_vertical_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_def_claim_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_def_disc_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_def_tube_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_hab_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_hab_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_hab_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_pier_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_pier_l_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_pier_l_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_advancedcomposites_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_engineparts_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_hullparts_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_medicalsupplies_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_nostropoil_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_scanningarrays_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_spaceweed_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_sunriseflowers_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_swampplant_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_prod_teladianium_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_container_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_container_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_container_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_liquid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_liquid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_liquid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_solid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_solid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_tel_stor_solid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_build_dockarea_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_build_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_build_xl_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_conn_base_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_conn_base_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_conn_base_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_conn_cross_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_conn_vertical_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_conn_vertical_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_def_claim_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_def_disc_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_def_tube_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_dock_m_01_hightech",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_equip_dockarea_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_equip_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_equip_xl_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_hab_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_hab_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_hab_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_pier_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_pier_02",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_pier_03",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_pier_04",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_pier_tradestation_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_computronicsubstrate_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_energycells_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_medicalsupplies_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_metallicmicrolattice_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_proteinpaste_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_scrap_recycler",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_siliconcarbide_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_stimulants_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_prod_terranmre_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_container_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_container_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_container_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_liquid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_liquid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_liquid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_solid_l_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_solid_m_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "module_ter_stor_solid_s_01",
+        "categoryID": "modules"
+    },
+    {
+        "id": "resourceprobe_01",
+        "categoryID": "deployables"
+    },
+    {
+        "id": "satellite_mk1",
+        "categoryID": "deployables"
+    },
+    {
+        "id": "satellite_mk2",
+        "categoryID": "deployables"
+    },
+    {
+        "id": "shield_arg_l_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_l_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_m_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_m_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_m_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_m_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_s_racer_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_s_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_s_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_s_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_arg_xl_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_l_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_l_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_l_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_m_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_m_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_m_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_m_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_m_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_m_standard_02_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_s_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_s_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_s_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_xl_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_bor_xl_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_gen_s_racer_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_l_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_l_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_m_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_m_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_m_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_m_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_s_racer_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_s_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_s_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_s_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_par_xl_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_pir_xl_battleship_01_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_l_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_l_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_m_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_m_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_m_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_m_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_s_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_s_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_s_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_spl_xl_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_l_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_l_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_m_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_m_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_m_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_m_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_s_racer_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_s_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_s_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_s_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_tel_xl_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_l_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_l_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_l_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_l_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_l_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_l_standard_02_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_02_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_04_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_04_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_standard_04_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_virtual_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_virtual_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_m_virtual_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_s_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_s_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_s_standard_01_mk3",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_s_virtual_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_s_xperimental_01_mk5",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_xl_standard_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_ter_xl_standard_01_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_xen_l_standard_02_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_xen_l_standard_02_mk2",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_xen_m_standard_04_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_xen_m_virtual_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "shield_xen_s_virtual_01_mk1",
+        "categoryID": "shields"
+    },
+    {
+        "id": "ship_arg_l_destroyer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_destroyer_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_destroyer_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_miner_liquid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_miner_solid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_03_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_03_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_04_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_04_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_05_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_l_trans_container_05_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_bomber_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_bomber_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_bomber_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_frigate_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_frigate_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_miner_liquid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_miner_solid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_trans_container_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_m_trans_container_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_fighter_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_fighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_fighter_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_fighter_03_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_fighter_04_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_heavyfighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_heavyfighter_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_heavyfighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_racer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_scout_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_scout_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_trans_container_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_s_trans_container_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_xl_builder_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_xl_builder_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_xl_carrier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_xl_carrier_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_xl_carrier_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_xl_resupplier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_arg_xl_resupplier_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_atf_l_destroyer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_atf_xl_battleship_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_l_carrier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_l_destroyer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_l_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_l_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_l_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_m_corvette_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_m_gunboat_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_m_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_m_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_m_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_s_heavyfighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_s_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_s_scout_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_s_scout_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_s_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_xl_builder_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_xl_carrier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_bor_xl_resupplier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_gen_m_tugboat_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_gen_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_gen_s_fighter_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_gen_s_fightingdrone_01_a",
+        "categoryID": "drones"
+    },
+    {
+        "id": "ship_gen_s_lasertower_01_a",
+        "categoryID": "deployables"
+    },
+    {
+        "id": "ship_gen_s_miningdrone_liquid_01_a",
+        "categoryID": "drones"
+    },
+    {
+        "id": "ship_gen_s_miningdrone_solid_01_a",
+        "categoryID": "drones"
+    },
+    {
+        "id": "ship_gen_s_racer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_gen_xs_buildingdrone_01_a",
+        "categoryID": "drones"
+    },
+    {
+        "id": "ship_gen_xs_cargodrone_empty_01_a",
+        "categoryID": "drones"
+    },
+    {
+        "id": "ship_gen_xs_lasertower_01_a",
+        "categoryID": "deployables"
+    },
+    {
+        "id": "ship_gen_xs_repairdrone_01_a",
+        "categoryID": "drones"
+    },
+    {
+        "id": "ship_par_l_destroyer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_destroyer_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_destroyer_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_expeditionary_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_miner_liquid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_miner_liquid_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_miner_solid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_miner_solid_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_trans_container_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_trans_container_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_l_trans_container_03_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_corvette_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_corvette_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_frigate_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_frigate_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_miner_liquid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_miner_solid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_trans_container_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_trans_container_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_m_trans_container_03_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_fighter_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_fighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_fighter_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_heavyfighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_racer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_scout_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_scout_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_s_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_builder_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_builder_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_carrier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_carrier_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_carrier_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_resupplier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_resupplier_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_par_xl_resupplier_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_l_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_l_scavenger_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_l_scrapper_01",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_s_fighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_s_heavyfighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_s_trans_condensate_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_s_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_xl_battleship_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_pir_xl_builder_01",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_l_destroyer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_l_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_l_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_l_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_m_corvette_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_m_corvette_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_m_frigate_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_m_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_m_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_m_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_fighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_fighter_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_heavyfighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_heavyfighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_scout_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_s_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_xl_builder_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_xl_carrier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_spl_xl_resupplier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_destroyer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_destroyer_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_destroyer_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_miner_liquid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_miner_liquid_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_miner_solid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_miner_solid_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_trans_container_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_trans_container_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_l_trans_container_03_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_bomber_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_bomber_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_frigate_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_frigate_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_miner_liquid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_miner_solid_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_trans_container_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_trans_container_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_m_trans_container_03_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_fighter_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_fighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_fighter_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_racer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_scout_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_scout_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_scout_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_scout_02_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_s_trans_container_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_xl_builder_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_xl_builder_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_xl_carrier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_xl_carrier_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_xl_resupplier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_tel_xl_resupplier_01_b",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_l_destroyer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_l_flagship_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_l_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_l_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_l_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_m_corvette_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_m_corvette_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_m_frigate_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_m_gunboat_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_m_miner_liquid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_m_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_m_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_fighter_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_fighter_03_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_fighter_04_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_heavyfighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_scout_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_scout_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_trans_container_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_s_xperimental_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_xl_builder_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_xl_carrier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_ter_xl_resupplier_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_xen_l_terraformer_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_xen_m_corvette_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_xen_m_corvette_02_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_xen_m_miner_solid_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_xen_s_heavyfighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_yak_m_corvette_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "ship_yak_s_fighter_01_a",
+        "categoryID": "ships"
+    },
+    {
+        "id": "thruster_gen_l_allround_01_mk1",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_l_allround_01_mk2",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_l_allround_01_mk3",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_m_allround_01_mk1",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_m_allround_01_mk2",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_m_allround_01_mk3",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_m_combat_01_mk1",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_m_combat_01_mk2",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_m_combat_01_mk3",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_s_allround_01_mk1",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_s_allround_01_mk2",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_s_allround_01_mk3",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_s_combat_01_mk1",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_s_combat_01_mk2",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_s_combat_01_mk3",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_xl_allround_01_mk1",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_xl_allround_01_mk2",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "thruster_gen_xl_allround_01_mk3",
+        "categoryID": "thruster"
+    },
+    {
+        "id": "turret_arg_l_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_l_dumbfire_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_l_guided_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_l_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_l_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_l_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_beam_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_dumbfire_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_flak_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_flak_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_gatling_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_gatling_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_guided_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_laser_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_mining_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_plasma_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_shotgun_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_arg_m_shotgun_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_l_disruptor_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_l_flak_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_l_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_l_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_arc_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_arc_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_dumbfire_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_guided_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_laser_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_mining_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_railgun_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_bor_m_railgun_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_gen_m_scrapbeam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_l_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_l_dumbfire_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_l_guided_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_l_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_l_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_l_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_beam_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_dumbfire_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_gatling_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_gatling_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_guided_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_laser_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_mining_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_plasma_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_shotgun_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_par_m_shotgun_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_pir_l_battleship_01_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_pir_m_battleship_01_gatling_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_l_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_l_dumbfire_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_l_guided_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_l_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_l_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_l_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_beam_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_dumbfire_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_flak_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_flak_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_gatling_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_gatling_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_guided_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_laser_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_mining_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_plasma_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_shotgun_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_spl_m_shotgun_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_l_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_l_dumbfire_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_l_guided_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_l_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_l_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_l_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_beam_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_dumbfire_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_gatling_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_gatling_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_guided_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_laser_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_mining_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_plasma_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_shotgun_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_tel_m_shotgun_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_l_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_l_dumbfire_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_l_gatling_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_l_guided_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_l_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_l_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_beam_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_beam_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_dumbfire_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_gatling_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_gatling_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_guided_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_laser_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_laser_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_laser_03_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_laser_04_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_mining_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_ter_m_mining_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_xen_l_plasma_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_xen_m_gatling_01_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "turret_xen_m_gatling_02_mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "id": "waypointmarker_01",
+        "categoryID": "deployables"
+    },
+    {
+        "id": "weapon_arg_l_destroyer_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_arg_m_ion_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_arg_m_ion_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_arg_s_ion_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_arg_s_ion_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_atf_xl_battleship_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_l_beam_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_m_dumbfire_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_m_flak_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_m_guided_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_m_laser_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_m_mining_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_m_railgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_m_torpedo_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_s_arc_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_s_dumbfire_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_s_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_s_guided_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_s_laser_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_s_mining_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_bor_s_torpedo_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_clustermine_01",
+        "categoryID": "mines"
+    },
+    {
+        "id": "weapon_gen_mine_01",
+        "categoryID": "mines"
+    },
+    {
+        "id": "weapon_gen_mine_02",
+        "categoryID": "mines"
+    },
+    {
+        "id": "weapon_gen_mine_03",
+        "categoryID": "mines"
+    },
+    {
+        "id": "weapon_gen_m_beam_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_beam_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_dumbfire_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_dumbfire_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_gatling_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_guided_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_guided_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_laser_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_laser_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_mining_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_mining_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_plasma_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_plasma_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_shotgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_shotgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_torpedo_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_m_torpedo_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_beam_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_beam_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_burst_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_burst_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_cannon_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_cannon_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_dumbfire_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_dumbfire_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_gatling_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_guided_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_guided_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_laser_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_laser_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_mining_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_mining_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_plasma_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_plasma_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_shotgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_shotgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_torpedo_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_gen_s_torpedo_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_par_l_destroyer_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_par_l_expeditionary_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_par_m_railgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_par_m_railgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_par_s_railgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_par_s_railgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_pir_xl_battleship_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_l_destroyer_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_gatling_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_railgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_railgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_shotgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_shotgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_sticky_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_m_sticky_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_gatling_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_railgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_railgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_shotgun_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_shotgun_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_sticky_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_spl_s_sticky_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_tel_l_destroyer_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_tel_m_charge_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_tel_m_charge_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_tel_s_charge_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_tel_s_charge_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_l_destroyer_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_l_flagship_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_m_beam_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_m_beam_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_m_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_m_gatling_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_m_laser_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_m_laser_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_m_laser_02_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_beam_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_beam_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_gatling_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_laser_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_laser_01_mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_laser_02_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_ter_s_plasma_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_xen_m_beam_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_xen_m_laser_02_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_xen_m_mining_02_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "weapon_xen_s_gatling_01_mk1",
+        "categoryID": "weapons"
+    },
+    {
+        "id": "welfare_bor_artacademy_01",
+        "categoryID": "modules"
+    }
+]

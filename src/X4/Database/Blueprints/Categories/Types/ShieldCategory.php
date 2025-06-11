@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\Database\Blueprints\Categories;
+namespace Mistralys\X4\Database\Blueprints\Categories\Types;
 
-use Mistralys\X4\Database\Blueprints\BlueprintCategory;
-use Mistralys\X4\Database\Blueprints\BlueprintDefs;
+use Mistralys\X4\Database\Blueprints\Categories\BaseBlueprintCategory;
 use Mistralys\X4\Database\Blueprints\Types\ShieldBlueprint;
 use function AppLocalize\t;
 
@@ -13,11 +12,13 @@ use function AppLocalize\t;
  * @method ShieldBlueprint[] getBlueprints()
  * @method ShieldBlueprint getBlueprintByID(string $blueprintID)
  */
-class ShieldCategory extends BlueprintCategory
+class ShieldCategory extends BaseBlueprintCategory
 {
+    public const CATEGORY_ID = 'shields';
+
     public function getID() : string
     {
-        return BlueprintDefs::CATEGORY_SHIELDS;
+        return self::CATEGORY_ID;
     }
 
     public function getLabel() : string

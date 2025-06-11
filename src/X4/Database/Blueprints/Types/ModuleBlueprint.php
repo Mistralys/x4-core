@@ -4,20 +4,20 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Blueprints\Types;
 
-use Mistralys\X4\Database\Blueprints\BlueprintCategory;
+use AppUtils\ConvertHelper;
 use Mistralys\X4\Database\Blueprints\BlueprintDef;
-use Mistralys\X4\Database\Races\RaceDef;
+use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategoryInterface;
 use function AppLocalize\t;
 
 class ModuleBlueprint extends BlueprintDef
 {
     private int $version;
 
-    public function __construct(BlueprintCategory $category, string $id, RaceDef $race)
+    public function __construct(string $id, BlueprintCategoryInterface $category)
     {
-        parent::__construct($category, $id, $race);
+        parent::__construct($id, $category);
 
-        $this->version = $this->detectVersion(explode('_', $id));
+        $this->version = $this->detectVersion(ConvertHelper::explodeTrim('_', $id));
     }
 
     public function getTypeLabel() : string

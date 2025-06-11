@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\Database\Blueprints\Categories;
+namespace Mistralys\X4\Database\Blueprints\Categories\Types;
 
-use Mistralys\X4\Database\Blueprints\BlueprintCategory;
-use Mistralys\X4\Database\Blueprints\BlueprintDefs;
+use Mistralys\X4\Database\Blueprints\Categories\BaseBlueprintCategory;
 use Mistralys\X4\Database\Blueprints\Types\DeployableBlueprint;
 use function AppLocalize\t;
 
@@ -13,11 +12,13 @@ use function AppLocalize\t;
  * @method DeployableBlueprint[] getBlueprints()
  * @method DeployableBlueprint getBlueprintByID(string $blueprintID)
  */
-class DeployableCategory extends BlueprintCategory
+class DeployableCategory extends BaseBlueprintCategory
 {
+    public const CATEGORY_ID = 'deployables';
+
     public function getID() : string
     {
-        return BlueprintDefs::CATEGORY_DEPLOYABLES;
+        return self::CATEGORY_ID;
     }
 
     public function getLabel() : string

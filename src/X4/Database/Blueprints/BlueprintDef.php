@@ -4,21 +4,39 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Blueprints;
 
-use Mistralys\X4\Database\Races\RaceDef;
+use AppUtils\ArrayDataCollection;
+use AppUtils\Interfaces\StringPrimaryRecordInterface;
+use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategories;
+use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategoryInterface;
+use Mistralys\X4\Database\Races\FactionDef;
 
-abstract class BlueprintDef
+abstract class BlueprintDef implements StringPrimaryRecordInterface
 {
+    const KEY_ID = 'id';
+    const KEY_CATEGORY_ID = 'categoryID';
+
     private string $id;
-    private BlueprintCategory $category;
-    private ?RaceDef $race;
+    private BlueprintCategoryInterface $category;
+    private ?FactionDef $race = null;
     private string $label;
 
-    public function __construct(BlueprintCategory $category, string $id, RaceDef $race)
+    public function __construct(string $id, BlueprintCategoryInterface $category)
     {
         $this->category = $category;
         $this->id = $id;
         $this->label = $id;
-        $this->race = $race;
+    }
+
+    public static function fromArray(array $def) : self
+    {
+        $data = ArrayDataCollection::create($def);
+        $category = BlueprintCategories::getInstance()->getByID($data->getString(self::KEY_CATEGORY_ID));
+        $class = $category->getBlueprintClass();
+
+        return new $class(
+            $data->getString(self::KEY_ID),
+            $category
+        );
     }
 
     public function getID() : string
@@ -33,10 +51,7 @@ abstract class BlueprintDef
 
     abstract public function getTypeLabel() : string;
 
-    /**
-     * @return BlueprintCategory
-     */
-    public function getCategory(): BlueprintCategory
+    public function getCategory(): BlueprintCategoryInterface
     {
         return $this->category;
     }
@@ -55,7 +70,7 @@ abstract class BlueprintDef
         return $this->id;
     }
 
-    public function getRace() : ?RaceDef
+    public function getRace() : ?FactionDef
     {
         return $this->race;
     }

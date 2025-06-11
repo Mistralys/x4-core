@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Blueprints;
 
+use Mistralys\X4\Database\Blueprints\Categories\BaseBlueprintCategory;
 use Mistralys\X4\Database\Blueprints\Selection\TypeSelection;
 
 class BlueprintSelection
@@ -80,7 +81,7 @@ class BlueprintSelection
      * Fetches a list of all blueprint categories available in
      * the current blueprint selection.
      *
-     * @return BlueprintCategory[]
+     * @return BaseBlueprintCategory[]
      */
     public function getCategories() : array
     {
@@ -143,7 +144,7 @@ class BlueprintSelection
             return strnatcasecmp($a->getLabel(), $b->getLabel());
         });
 
-        uasort($this->filteredCategories, static function(BlueprintCategory $a, BlueprintCategory $b) : int {
+        uasort($this->filteredCategories, static function(BaseBlueprintCategory $a, BaseBlueprintCategory $b) : int {
             return strnatcasecmp($a->getLabel(), $b->getLabel());
         });
     }

@@ -2,18 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Mistralys\X4\Database\Blueprints\Categories;
+namespace Mistralys\X4\Database\Blueprints\Categories\Types;
 
-use Mistralys\X4\Database\Blueprints\BlueprintCategory;
-use Mistralys\X4\Database\Blueprints\BlueprintDefs;
+use Mistralys\X4\Database\Blueprints\Categories\BaseBlueprintCategory;
 use Mistralys\X4\Database\Blueprints\Types\UnknownBlueprint;
 use function AppLocalize\t;
 
-class UnknownCategory extends BlueprintCategory
+class UnknownCategory extends BaseBlueprintCategory
 {
+    public const CATEGORY_ID = 'unknown';
+
     public function getID() : string
     {
-        return BlueprintDefs::CATEGORY_UNKNOWN;
+        return self::CATEGORY_ID;
     }
 
     public function getLabel() : string
