@@ -18,9 +18,28 @@ Require the package in your Composer project:
 composer require mistralys/x4-core
 ```
 
-### Accessing Race information
+### Accessing Faction information
 
-All races available in the game can be accessed through dedicated classes.
+All factions available in the game can be accessed through the faction collection.
+
+#### The faction collection
+
+All factions are available through the `FactionDefs` collection class.
+
+```php
+use Mistralys\X4\Database\Factions\FactionDefs;
+
+echo "Available factions:" . PHP_EOL;
+
+foreach(FactionDefs::getInstance()->getAll() as $faction) {
+    echo $faction->getLabel() . PHP_EOL;
+}
+```
+
+#### Faction getter methods
+
+When working with the faction classes, dedicated getter methods exist to access
+factions instead of using the faction ID constants.
 
 ```php
 use Mistralys\X4\Database\Factions\KnownFactions;
@@ -28,6 +47,52 @@ use Mistralys\X4\Database\Factions\KnownFactions;
 $argon = KnownFactions::getInstance()->getArgon();
 
 echo $argon->getLabel(); // Outputs "Argon"
+```
+
+### Accessing ware information
+
+All items available in the game, from trade goods to ships, are available in the
+main ware collection.
+
+#### The ware collection
+
+All wares are available through the `Wares` collection class.
+
+```php
+use Mistralys\X4\Database\Wares\WareDefs;
+
+echo "Available wares:" . PHP_EOL;
+
+foreach(WareDefs::getInstance()->getAll() as $ware) {
+    echo $ware->getLabel() . PHP_EOL;
+}
+```
+
+This fetches wares by ID:
+
+```php
+use Mistralys\X4\Database\Wares\WareDefs;
+
+$advancedElectronics = WareDefs::getInstance()
+    ->getByID('module_gen_prod_advancedelectronics_01');
+```
+
+#### The ware finder
+
+The ware finder utility class allows selecting search criteria to filter the
+wares and retrieve specific wares. The following example uses the ware finder to 
+retrieve all ship engines provided by the Boron DLC.
+
+```php
+use Mistralys\X4\Database\Wares\WareDefs;
+use Mistralys\X4\Database\Wares\WareGroups;
+
+$boronEngines = WareDefs::getInstance()
+    ->findWares()
+    ->selectDLC()
+    ->boron()
+    ->selectGroup(WareGroups::GROUP_ENGINES)
+    ->getAll();
 ```
 
 ### Accessing translations
