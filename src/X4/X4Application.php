@@ -10,6 +10,8 @@ declare(strict_types=1);
 namespace Mistralys\X4;
 
 use AppLocalize\Localization;
+use AppUtils\ClassHelper;
+use AppUtils\FileHelper\FolderInfo;
 use Mistralys\X4\UI\UserInterface;
 use Mistralys\X4\UserInterface\UIException;
 
@@ -26,6 +28,11 @@ abstract class X4Application
     public const ERROR_UI_INSTANCE_NOT_CREATED = 106501;
 
     private ?UserInterface $ui = null;
+
+    public static function getDataFolder(): FolderInfo
+    {
+        return FolderInfo::factory(__DIR__ . '/../../data');
+    }
 
     abstract public function getTitle() : string;
 
@@ -85,5 +92,13 @@ abstract class X4Application
             'The user interface instance must be created with [createUI] first.',
             self::ERROR_UI_INSTANCE_NOT_CREATED
         );
+    }
+
+    public static function initCache() : void
+    {
+        $folder = ClassHelper::getCacheFolder();
+        if($folder === null) {
+            ClassHelper::setCacheFolder(FolderInfo::factory(__DIR__.'/../../cache'));
+        }
     }
 }

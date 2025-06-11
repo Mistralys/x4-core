@@ -10,8 +10,10 @@ use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
 use DOMDocument;
 use DOMElement;
+use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\ExtractedData\DataFolders;
 use Mistralys\X4\UI\Console;
+use Mistralys\X4\X4Application;
 
 class TranslationExtractor
 {
@@ -192,7 +194,7 @@ class TranslationExtractor
     public static function getLanguageFile(int $languageID) : JSONFile
     {
         return JSONFile::factory(sprintf(
-            __DIR__.'/../../../../data/lang-%03d-%s.json',
+            X4Application::getDataFolder() .'/lang-%03d-%s.json',
             $languageID,
             Languages::LANGUAGES[$languageID]
         ));
