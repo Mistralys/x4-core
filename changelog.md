@@ -1,3 +1,13 @@
+## v1.0.0 - Data update and revamp
+- Blueprints: Revamped the data extraction and collection handling.
+- Modules: Revamped the data extraction and collection handling.
+- Factions: Revamped the data extraction and collection handling.
+- Ships: Added the ship collection.
+- Wares: Added the wares collection.
+- DataSources: Added the data sources collection to access DLC information.
+- Macro File Index: Added the macro file index.
+- Dependencies: Updated AppUtils Core to [v2.3.12](https://github.com/Mistralys/application-utils-core/releases/tag/2.3.12).
+
 ## v0.0.11 - Data folder update
 - Modules: Now using the `DataFolders` class to access the extracted game files.
 - Modules: Sorting by key in the JSON for version consistency.
