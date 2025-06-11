@@ -25,13 +25,15 @@
     ]
   },
   "require": {
-    "mistralys/application-utils": ">=2.3.2",
-    "mistralys/application-localization": ">=1.4.1",
-    "mistralys/x4-data-extractor": ">=1.0.0",
-    "thomaspark/bootswatch": "^v5.1.3",
-    "twbs/bootstrap": "^v5.1.3",
     "components/jquery": ">=3.5.1",
     "fortawesome/font-awesome": "^5.15.3",
+    "mistralys/application-utils": ">=2.3.2",
+    "mistralys/application-utils-core": ">=2.3.12",
+    "mistralys/application-localization": ">=1.4.1",
+    "mistralys/x4-data-extractor": ">=1.0.0",
+    "symfony/css-selector": ">=v7.2.0",
+    "thomaspark/bootswatch": "^v5.1.3",
+    "twbs/bootstrap": "^v5.1.3",
     "php": ">=7.4",
     "ext-simplexml": "*",
     "ext-json": "*",
@@ -44,6 +46,13 @@
     "roave/security-advisories": "dev-latest"
   },
   "scripts": {
-    "build": "Mistralys\\X4\\Database\\DatabaseBuilder::build"
+    "build": "Mistralys\\X4\\Database\\DatabaseBuilder::build",
+    "extract-blueprints": "Mistralys\\X4\\Database\\DatabaseBuilder::extractBlueprints",
+    "extract-wares": "Mistralys\\X4\\Database\\DatabaseBuilder::extractWares",
+    "extract-factions": "Mistralys\\X4\\Database\\DatabaseBuilder::extractFactions",
+    "extract-ships": "Mistralys\\X4\\Database\\DatabaseBuilder::extractShips",
+    "extract-modules": "Mistralys\\X4\\Database\\DatabaseBuilder::extractModules",
+    "extract-macro-index": "Mistralys\\X4\\Database\\DatabaseBuilder::extractMacroIndex",
+    "write-datasources": "Mistralys\\X4\\Database\\DatabaseBuilder::writeDataSources"
   }
 }
