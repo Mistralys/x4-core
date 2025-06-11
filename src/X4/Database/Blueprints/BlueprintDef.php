@@ -8,7 +8,7 @@ use AppUtils\ArrayDataCollection;
 use AppUtils\Interfaces\StringPrimaryRecordInterface;
 use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategories;
 use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategoryInterface;
-use Mistralys\X4\Database\Races\FactionDef;
+use Mistralys\X4\Database\Factions\FactionDef;
 
 abstract class BlueprintDef implements StringPrimaryRecordInterface
 {

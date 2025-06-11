@@ -6,8 +6,8 @@ namespace Mistralys\X4\Database\Modules;
 
 use AppUtils\ArrayDataCollection;
 use AppUtils\Interfaces\StringPrimaryRecordInterface;
-use Mistralys\X4\Database\Races\FactionDef;
-use Mistralys\X4\Database\Races\FactionDefs;
+use Mistralys\X4\Database\Factions\FactionDef;
+use Mistralys\X4\Database\Factions\FactionDefs;
 
 class ModuleDef implements StringPrimaryRecordInterface
 {

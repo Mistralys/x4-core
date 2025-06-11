@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Mistralys\X4\Database\Modules;
 
 use AppUtils\ConvertHelper;
-use Mistralys\X4\Database\Races\FactionDefs;
+use Mistralys\X4\Database\Factions\FactionDefs;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\XML\DOMExtended;
 use Mistralys\X4\XML\ElementExtended;
