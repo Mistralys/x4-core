@@ -1,0 +1,37 @@
+[
+    {
+        "id": "ego_dlc_boron",
+        "name": "Kingdom End",
+        "isExtension": true
+    },
+    {
+        "id": "ego_dlc_mini_01",
+        "name": "Hyperion Pack",
+        "isExtension": true
+    },
+    {
+        "id": "ego_dlc_pirate",
+        "name": "Tides of Avarice",
+        "isExtension": true
+    },
+    {
+        "id": "ego_dlc_split",
+        "name": "Split Vendetta",
+        "isExtension": true
+    },
+    {
+        "id": "ego_dlc_terran",
+        "name": "Cradle of Humanity",
+        "isExtension": true
+    },
+    {
+        "id": "ego_dlc_timelines",
+        "name": "Timelines",
+        "isExtension": true
+    },
+    {
+        "id": "vanilla",
+        "name": "Base game",
+        "isExtension": false
+    }
+]
