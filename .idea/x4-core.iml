@@ -48,6 +48,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/mistralys/php-sprintf-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mistralys/version-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mistralys/x4-data-extractor" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/css-selector" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
