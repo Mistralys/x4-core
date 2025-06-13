@@ -6,7 +6,6 @@ namespace Mistralys\X4\Database\Blueprints\Categories\Types;
 
 use Mistralys\X4\Database\Blueprints\Categories\BaseBlueprintCategory;
 use Mistralys\X4\Database\Blueprints\Types\ModuleBlueprint;
-use Mistralys\X4\Database\Modules\ModuleCategory as ModuleCategoryAlias;
 use function AppLocalize\t;
 
 /**
@@ -15,9 +14,11 @@ use function AppLocalize\t;
  */
 class ModuleCategory extends BaseBlueprintCategory
 {
+    public const CATEGORY_ID = 'modules';
+
     public function getID() : string
     {
-        return ModuleCategoryAlias::CATEGORY_ID;
+        return self::CATEGORY_ID;
     }
 
     public function getLabel() : string
