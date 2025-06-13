@@ -7,10 +7,12 @@ namespace Mistralys\X4\Database\Ships;
 use AppUtils\ArrayDataCollection;
 use Mistralys\X4\Database\Core\CollectionItemInterface;
 use Mistralys\X4\Database\Core\CollectionItemTrait;
+use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\DataSources\DataSourceDefs;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
+use Mistralys\X4\Database\Factions\KnownFactions;
 
 class ShipDef implements CollectionItemInterface
 {
@@ -37,7 +39,7 @@ class ShipDef implements CollectionItemInterface
     private array $usedBy;
     private string $dataSourceID;
     private string $label;
-    private string $variantID;
+    private VariantID $variantID;
 
     /**
      * @var string[]
@@ -47,7 +49,7 @@ class ShipDef implements CollectionItemInterface
     /**
      * @param string $id
      * @param string $label
-     * @param string $variantID
+     * @param VariantID $variantID
      * @param string $size
      * @param string $builderFactionID
      * @param string $classID
@@ -55,7 +57,7 @@ class ShipDef implements CollectionItemInterface
      * @param string $dataSourceID
      * @param string[] $variants IDs of this ship's variants, if any.
      */
-    public function __construct(string $id, string $label, string $variantID, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID, array $variants)
+    public function __construct(string $id, string $label, VariantID $variantID, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID, array $variants)
     {
         $this->id = $id;
         $this->label = $label;
@@ -75,7 +77,7 @@ class ShipDef implements CollectionItemInterface
         return new self(
             $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_LABEL),
-            $data->getString(self::KEY_VARIANT_ID),
+            VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
             $data->getString(self::KEY_SIZE),
             $data->getString(self::KEY_BUILDER_FACTION_ID),
             $data->getString(self::KEY_CLASS_ID),
@@ -110,9 +112,9 @@ class ShipDef implements CollectionItemInterface
      *
      * In this case, the variant IDs are "01-a" and "02-a" respectively.
      *
-     * @return string
+     * @return VariantID
      */
-    public function getVariantID(): string
+    public function getVariantID(): VariantID
     {
         return $this->variantID;
     }
@@ -129,6 +131,10 @@ class ShipDef implements CollectionItemInterface
 
     public function getBuilderFactionID(): string
     {
+        if(empty($this->builderFactionID)) {
+            return KnownFactions::FACTION_GENERIC;
+        }
+
         return $this->builderFactionID;
     }
 
