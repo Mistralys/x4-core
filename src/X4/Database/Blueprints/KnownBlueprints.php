@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Blueprints;
 
-class BlueprintEnum
+class KnownBlueprints
 {
     public const KNOWN_BLUEPRINTS = array(
         '0',

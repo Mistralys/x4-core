@@ -132,28 +132,8 @@ class BlueprintExtractor
 
     private array $blueprints = array();
 
-    private const ENUM_TEMPLATE = <<<'PHP'
-<?php
-
-declare(strict_types=1);
-
-namespace Mistralys\X4\Database\Blueprints;
-
-class BlueprintEnum
-{
-    public const KNOWN_BLUEPRINTS = array(
-%1$s
-    );
-}
-PHP;
-
     private function writeEnumFile() : void
     {
-        $enum = sprintf(
-            self::ENUM_TEMPLATE,
-            implode(",".PHP_EOL, array_map(fn($id) => "        '" . $id . "'", array_keys($this->blueprints)))
-        );
-
-        PHPFile::factory(__DIR__.'/BlueprintEnum.php')->putContents($enum);
+        
     }
 }
