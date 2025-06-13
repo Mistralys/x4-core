@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Mistralys\X4\Database\Modules;
 
 use AppUtils\ArrayDataCollection;
-use AppUtils\Interfaces\StringPrimaryRecordInterface;
+use Mistralys\X4\Database\Core\CollectionItemInterface;
+use Mistralys\X4\Database\Core\CollectionItemTrait;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
 
-class ModuleDef implements StringPrimaryRecordInterface
+class ModuleDef implements CollectionItemInterface
 {
+    use CollectionItemTrait;
+
     public const KEY_CATEGORY = 'category';
     public const KEY_BUILDER_FACTION_ID = 'builderFactionID';
     public const KEY_REQUIRED_WORKFORCE = 'requiredWorkforce';
