@@ -10,6 +10,8 @@ namespace Mistral\X4\Database\Wares;
 
 use AppUtils\ConvertHelper;
 use AppUtils\FileHelper\FileInfo;
+use Mistralys\X4\Database\Core\VariantID;
+use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\Database\Factions\FactionDefs;
 use Mistralys\X4\Database\Translations\Language;
 use Mistralys\X4\Database\Translations\Languages;
@@ -102,16 +104,16 @@ class WaresExtractor
                 }
             }
 
-            if($group === WareGroups::GROUP_OTHER && str_starts_with($ware[WareDef::KEY_ID], 'ship_')) {
+            if($group === WareGroups::GROUP_OTHER && str_starts_with($ware[WareDef::KEY_WARE_ID], 'ship_')) {
                 $group = WareGroups::GROUP_SHIPS;
             }
 
-            if($group === WareGroups::GROUP_OTHER && str_starts_with($ware[WareDef::KEY_ID], 'module_')) {
+            if($group === WareGroups::GROUP_OTHER && str_starts_with($ware[WareDef::KEY_WARE_ID], 'module_')) {
                 $group = WareGroups::GROUP_MODULES;
             }
 
             if($group === WareGroups::GROUP_OTHER) {
-                Console::line1('Ware [%s] | NOTICE | No group detected.', $ware[WareDef::KEY_ID], $group);
+                Console::line1('Ware [%s] | NOTICE | No group detected.', $ware[WareDef::KEY_WARE_ID], $group);
             }
 
             // Some ships are grouped as "ships" but do not have the "ship" tag.
@@ -160,7 +162,7 @@ class WaresExtractor
         }
 
         usort($this->wares, static function(array $a, array $b) : int {
-            return strnatcasecmp($a[WareDef::KEY_ID], $b[WareDef::KEY_ID]);
+            return strnatcasecmp($a[WareDef::KEY_WARE_ID], $b[WareDef::KEY_WARE_ID]);
         });
 
         Console::line1('Found [%d] wares in total.', count($this->wares));
@@ -244,10 +246,11 @@ class WaresExtractor
         }
 
         $ware = array(
-            WareDef::KEY_ID => $id,
+            WareDef::KEY_WARE_ID => $id,
             WareDef::KEY_LABEL => $this->language->ts($wareElement->getAttribute('name')),
             WareDef::KEY_GROUP => $wareElement->getAttribute('group'),
             WareDef::KEY_MACRO_ID => $componentID,
+            WareDef::KEY_VARIANT_ID => (string)VariantID::resolveWareVariantID($id),
             WareDef::KEY_TAGS => $tags,
             WareDef::KEY_DATA_SOURCE_ID => $dataFolder->getID(),
             WareDef::KEY_FACTIONS => $factionIDs,
