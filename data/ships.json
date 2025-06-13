@@ -1,6 +1,7 @@
 [
     {
-        "id": "ship_arg_l_destroyer_01_a",
+        "wareID": "ship_arg_l_destroyer_01_a",
+        "label": "Behemoth Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -13,7 +14,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_destroyer_01_b",
+        "wareID": "ship_arg_l_destroyer_01_b",
+        "label": "Behemoth Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -24,7 +26,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_destroyer_02_a",
+        "wareID": "ship_arg_l_destroyer_02_a",
+        "label": "Behemoth E",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -38,7 +41,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_miner_liquid_01_a",
+        "wareID": "ship_arg_l_miner_liquid_01_a",
+        "label": "Magnetar (Gas) Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -50,7 +54,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_miner_liquid_01_b",
+        "wareID": "ship_arg_l_miner_liquid_01_b",
+        "label": "Magnetar (Gas) Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -62,7 +67,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_miner_solid_01_a",
+        "wareID": "ship_arg_l_miner_solid_01_a",
+        "label": "Magnetar (Mineral) Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -74,7 +80,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_miner_solid_01_b",
+        "wareID": "ship_arg_l_miner_solid_01_b",
+        "label": "Magnetar (Mineral) Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -86,7 +93,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_01_a",
+        "wareID": "ship_arg_l_trans_container_01_a",
+        "label": "Veles Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -97,7 +105,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_01_b",
+        "wareID": "ship_arg_l_trans_container_01_b",
+        "label": "Veles Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -108,7 +117,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_02_a",
+        "wareID": "ship_arg_l_trans_container_02_a",
+        "label": "Mokosi Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -119,7 +129,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_02_b",
+        "wareID": "ship_arg_l_trans_container_02_b",
+        "label": "Mokosi Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -130,7 +141,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_03_a",
+        "wareID": "ship_arg_l_trans_container_03_a",
+        "label": "Incarcatura Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -141,7 +153,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_03_b",
+        "wareID": "ship_arg_l_trans_container_03_b",
+        "label": "Incarcatura Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -152,7 +165,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_04_a",
+        "wareID": "ship_arg_l_trans_container_04_a",
+        "label": "Shuyaku Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -163,7 +177,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_04_b",
+        "wareID": "ship_arg_l_trans_container_04_b",
+        "label": "Shuyaku Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -174,7 +189,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_05_a",
+        "wareID": "ship_arg_l_trans_container_05_a",
+        "label": "Sonra Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -185,7 +201,8 @@
         ]
     },
     {
-        "id": "ship_arg_l_trans_container_05_b",
+        "wareID": "ship_arg_l_trans_container_05_b",
+        "label": "Sonra Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -196,7 +213,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_bomber_01_a",
+        "wareID": "ship_arg_m_bomber_01_a",
+        "label": "Minotaur Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
@@ -207,7 +225,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_bomber_01_b",
+        "wareID": "ship_arg_m_bomber_01_b",
+        "label": "Minotaur Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
@@ -218,7 +237,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_bomber_02_a",
+        "wareID": "ship_arg_m_bomber_02_a",
+        "label": "Minotaur Raider",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "scavenger",
@@ -230,7 +250,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_frigate_01_a",
+        "wareID": "ship_arg_m_frigate_01_a",
+        "label": "Cerberus Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
@@ -241,7 +262,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_frigate_01_b",
+        "wareID": "ship_arg_m_frigate_01_b",
+        "label": "Cerberus Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
@@ -252,7 +274,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_miner_liquid_01_a",
+        "wareID": "ship_arg_m_miner_liquid_01_a",
+        "label": "Sunder (Gas) Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -264,7 +287,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_miner_liquid_01_b",
+        "wareID": "ship_arg_m_miner_liquid_01_b",
+        "label": "Sunder (Gas) Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -276,7 +300,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_miner_solid_01_a",
+        "wareID": "ship_arg_m_miner_solid_01_a",
+        "label": "Drill (Mineral) Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -288,7 +313,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_miner_solid_01_b",
+        "wareID": "ship_arg_m_miner_solid_01_b",
+        "label": "Drill (Mineral) Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -300,7 +326,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_trans_container_01_a",
+        "wareID": "ship_arg_m_trans_container_01_a",
+        "label": "Mercury Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -312,7 +339,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_trans_container_01_b",
+        "wareID": "ship_arg_m_trans_container_01_b",
+        "label": "Mercury Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -323,7 +351,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_trans_container_02_a",
+        "wareID": "ship_arg_m_trans_container_02_a",
+        "label": "Ides Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -335,7 +364,8 @@
         ]
     },
     {
-        "id": "ship_arg_m_trans_container_02_b",
+        "wareID": "ship_arg_m_trans_container_02_b",
+        "label": "Ides Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -346,7 +376,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_fighter_01_a",
+        "wareID": "ship_arg_s_fighter_01_a",
+        "label": "Nova Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -357,7 +388,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_fighter_01_b",
+        "wareID": "ship_arg_s_fighter_01_b",
+        "label": "Nova Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -368,7 +400,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_fighter_02_a",
+        "wareID": "ship_arg_s_fighter_02_a",
+        "label": "Elite Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -380,7 +413,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_fighter_02_b",
+        "wareID": "ship_arg_s_fighter_02_b",
+        "label": "Elite Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -391,7 +425,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_fighter_03_a",
+        "wareID": "ship_arg_s_fighter_03_a",
+        "label": "Pulsar Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -402,7 +437,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_fighter_04_a",
+        "wareID": "ship_arg_s_fighter_04_a",
+        "label": "Quasar Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -413,7 +449,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_heavyfighter_01_a",
+        "wareID": "ship_arg_s_heavyfighter_01_a",
+        "label": "Eclipse Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -423,7 +460,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_heavyfighter_01_b",
+        "wareID": "ship_arg_s_heavyfighter_01_b",
+        "label": "Eclipse Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -433,7 +471,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_heavyfighter_02_a",
+        "wareID": "ship_arg_s_heavyfighter_02_a",
+        "label": "Eclipse Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -444,7 +483,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_miner_solid_01_a",
+        "wareID": "ship_arg_s_miner_solid_01_a",
+        "label": "Courier (Mineral)",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "miner",
@@ -457,7 +497,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_racer_01_a",
+        "wareID": "ship_arg_s_racer_01_a",
+        "label": "Elite Sport",
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
@@ -467,7 +508,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_scout_01_a",
+        "wareID": "ship_arg_s_scout_01_a",
+        "label": "Discoverer Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -481,7 +523,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_scout_01_b",
+        "wareID": "ship_arg_s_scout_01_b",
+        "label": "Discoverer Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -494,7 +537,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_trans_container_01_a",
+        "wareID": "ship_arg_s_trans_container_01_a",
+        "label": "Courier Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -507,7 +551,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_trans_container_01_b",
+        "wareID": "ship_arg_s_trans_container_01_b",
+        "label": "Courier Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -519,7 +564,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_trans_container_02_a",
+        "wareID": "ship_arg_s_trans_container_02_a",
+        "label": "Callisto Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -532,7 +578,8 @@
         ]
     },
     {
-        "id": "ship_arg_s_trans_container_02_b",
+        "wareID": "ship_arg_s_trans_container_02_b",
+        "label": "Callisto Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -544,7 +591,8 @@
         ]
     },
     {
-        "id": "ship_arg_xl_builder_01_a",
+        "wareID": "ship_arg_xl_builder_01_a",
+        "label": "Mammoth Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
@@ -555,7 +603,8 @@
         ]
     },
     {
-        "id": "ship_arg_xl_builder_01_b",
+        "wareID": "ship_arg_xl_builder_01_b",
+        "label": "Mammoth Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
@@ -566,7 +615,8 @@
         ]
     },
     {
-        "id": "ship_arg_xl_carrier_01_a",
+        "wareID": "ship_arg_xl_carrier_01_a",
+        "label": "Colossus Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -577,7 +627,8 @@
         ]
     },
     {
-        "id": "ship_arg_xl_carrier_01_b",
+        "wareID": "ship_arg_xl_carrier_01_b",
+        "label": "Colossus Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -588,7 +639,8 @@
         ]
     },
     {
-        "id": "ship_arg_xl_carrier_02_a",
+        "wareID": "ship_arg_xl_carrier_02_a",
+        "label": "Colossus E",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -600,7 +652,8 @@
         ]
     },
     {
-        "id": "ship_arg_xl_resupplier_01_a",
+        "wareID": "ship_arg_xl_resupplier_01_a",
+        "label": "Nomad Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
@@ -611,7 +664,8 @@
         ]
     },
     {
-        "id": "ship_arg_xl_resupplier_01_b",
+        "wareID": "ship_arg_xl_resupplier_01_b",
+        "label": "Nomad Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
@@ -622,7 +676,8 @@
         ]
     },
     {
-        "id": "ship_atf_l_destroyer_01_a",
+        "wareID": "ship_atf_l_destroyer_01_a",
+        "label": "Syn",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "destroyer",
@@ -632,7 +687,8 @@
         ]
     },
     {
-        "id": "ship_atf_xl_battleship_01_a",
+        "wareID": "ship_atf_xl_battleship_01_a",
+        "label": "Asgard",
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "battleship",
@@ -642,7 +698,8 @@
         ]
     },
     {
-        "id": "ship_bor_l_carrier_01_a",
+        "wareID": "ship_bor_l_carrier_01_a",
+        "label": "Guppy",
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "carrier",
@@ -652,7 +709,8 @@
         ]
     },
     {
-        "id": "ship_bor_l_destroyer_01_a",
+        "wareID": "ship_bor_l_destroyer_01_a",
+        "label": "Ray",
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "destroyer",
@@ -662,7 +720,8 @@
         ]
     },
     {
-        "id": "ship_bor_l_miner_liquid_01_a",
+        "wareID": "ship_bor_l_miner_liquid_01_a",
+        "label": "Rorqual (Gas)",
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "largeminer",
@@ -672,7 +731,8 @@
         ]
     },
     {
-        "id": "ship_bor_l_miner_solid_01_a",
+        "wareID": "ship_bor_l_miner_solid_01_a",
+        "label": "Rorqual (Mineral)",
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "largeminer",
@@ -682,7 +742,8 @@
         ]
     },
     {
-        "id": "ship_bor_l_trans_container_01_a",
+        "wareID": "ship_bor_l_trans_container_01_a",
+        "label": "Sturgeon",
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "freighter",
@@ -692,7 +753,8 @@
         ]
     },
     {
-        "id": "ship_bor_m_corvette_01_a",
+        "wareID": "ship_bor_m_corvette_01_a",
+        "label": "Hydra",
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "corvette",
@@ -702,7 +764,8 @@
         ]
     },
     {
-        "id": "ship_bor_m_corvette_02_a",
+        "wareID": "ship_bor_m_corvette_02_a",
+        "label": "Hydra Regal",
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "corvette",
@@ -712,7 +775,8 @@
         ]
     },
     {
-        "id": "ship_bor_m_gunboat_01_a",
+        "wareID": "ship_bor_m_gunboat_01_a",
+        "label": "Thresher",
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "gunboat",
@@ -722,7 +786,8 @@
         ]
     },
     {
-        "id": "ship_bor_m_miner_liquid_01_a",
+        "wareID": "ship_bor_m_miner_liquid_01_a",
+        "label": "Porpoise (Gas)",
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "miner",
@@ -732,7 +797,8 @@
         ]
     },
     {
-        "id": "ship_bor_m_miner_solid_01_a",
+        "wareID": "ship_bor_m_miner_solid_01_a",
+        "label": "Porpoise (Mineral)",
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "miner",
@@ -742,7 +808,8 @@
         ]
     },
     {
-        "id": "ship_bor_m_trans_container_01_a",
+        "wareID": "ship_bor_m_trans_container_01_a",
+        "label": "Dolphin",
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "transporter",
@@ -752,7 +819,8 @@
         ]
     },
     {
-        "id": "ship_bor_s_fighter_01_a",
+        "wareID": "ship_bor_s_fighter_01_a",
+        "label": "Mako",
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "fighter",
@@ -762,7 +830,8 @@
         ]
     },
     {
-        "id": "ship_bor_s_heavyfighter_01_a",
+        "wareID": "ship_bor_s_heavyfighter_01_a",
+        "label": "Barracuda",
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "heavyfighter",
@@ -772,7 +841,8 @@
         ]
     },
     {
-        "id": "ship_bor_s_miner_solid_01_a",
+        "wareID": "ship_bor_s_miner_solid_01_a",
+        "label": "Grouper (Mineral)",
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "miner",
@@ -782,7 +852,8 @@
         ]
     },
     {
-        "id": "ship_bor_s_miner_solid_01_story",
+        "wareID": "ship_bor_s_miner_solid_01_story",
+        "label": "Grouper (Mineral)",
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "miner",
@@ -790,7 +861,8 @@
         "usedBy": []
     },
     {
-        "id": "ship_bor_s_scout_01_a",
+        "wareID": "ship_bor_s_scout_01_a",
+        "label": "Piranha",
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "scout",
@@ -800,7 +872,8 @@
         ]
     },
     {
-        "id": "ship_bor_s_scout_02_a",
+        "wareID": "ship_bor_s_scout_02_a",
+        "label": "Irukandji",
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "scout",
@@ -810,7 +883,8 @@
         ]
     },
     {
-        "id": "ship_bor_s_trans_container_01_a",
+        "wareID": "ship_bor_s_trans_container_01_a",
+        "label": "Terrapin",
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "courier",
@@ -820,7 +894,8 @@
         ]
     },
     {
-        "id": "ship_bor_xl_builder_01_a",
+        "wareID": "ship_bor_xl_builder_01_a",
+        "label": "Walrus",
         "dataSourceID": "ego_dlc_boron",
         "size": "xl",
         "classID": "builder",
@@ -830,7 +905,8 @@
         ]
     },
     {
-        "id": "ship_bor_xl_carrier_01_a",
+        "wareID": "ship_bor_xl_carrier_01_a",
+        "label": "Shark",
         "dataSourceID": "ego_dlc_boron",
         "size": "xl",
         "classID": "carrier",
@@ -840,7 +916,8 @@
         ]
     },
     {
-        "id": "ship_bor_xl_resupplier_01_a",
+        "wareID": "ship_bor_xl_resupplier_01_a",
+        "label": "Orca",
         "dataSourceID": "ego_dlc_boron",
         "size": "xl",
         "classID": "resupplier",
@@ -850,7 +927,8 @@
         ]
     },
     {
-        "id": "ship_gen_m_tugboat_01_a",
+        "wareID": "ship_gen_m_tugboat_01_a",
+        "label": "Manticore",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "tug",
@@ -862,7 +940,8 @@
         ]
     },
     {
-        "id": "ship_gen_m_yacht_01_a",
+        "wareID": "ship_gen_m_yacht_01_a",
+        "label": "Astrid",
         "dataSourceID": "ego_dlc_pirate",
         "size": "m",
         "classID": "transporter",
@@ -872,7 +951,8 @@
         ]
     },
     {
-        "id": "ship_gen_s_fighter_01_a",
+        "wareID": "ship_gen_s_fighter_01_a",
+        "label": "Nodan Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -882,7 +962,8 @@
         ]
     },
     {
-        "id": "ship_gen_s_fighter_01_b",
+        "wareID": "ship_gen_s_fighter_01_b",
+        "label": "Nodan Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -892,7 +973,8 @@
         ]
     },
     {
-        "id": "ship_gen_s_racer_01_a",
+        "wareID": "ship_gen_s_racer_01_a",
+        "label": "Dart",
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
@@ -902,7 +984,8 @@
         ]
     },
     {
-        "id": "ship_kha_l_destroyer_01_a",
+        "wareID": "ship_kha_l_destroyer_01_a",
+        "label": "Ravager",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -912,7 +995,8 @@
         ]
     },
     {
-        "id": "ship_kha_m_fighter_01_a",
+        "wareID": "ship_kha_m_fighter_01_a",
+        "label": "Queen's Guard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "heavyfighter",
@@ -922,7 +1006,8 @@
         ]
     },
     {
-        "id": "ship_kha_m_fighter_02_a",
+        "wareID": "ship_kha_m_fighter_02_a",
+        "label": "Hive Guard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "heavyfighter",
@@ -932,7 +1017,8 @@
         ]
     },
     {
-        "id": "ship_kha_s_fighter_01_a",
+        "wareID": "ship_kha_s_fighter_01_a",
+        "label": "Protector",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -942,7 +1028,8 @@
         ]
     },
     {
-        "id": "ship_kha_s_fighter_02_a",
+        "wareID": "ship_kha_s_fighter_02_a",
+        "label": "Forager",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -952,7 +1039,8 @@
         ]
     },
     {
-        "id": "ship_kha_xl_battleship_01_a",
+        "wareID": "ship_kha_xl_battleship_01_a",
+        "label": "Obliterator",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "battleship",
@@ -962,7 +1050,8 @@
         ]
     },
     {
-        "id": "ship_par_l_destroyer_01_a",
+        "wareID": "ship_par_l_destroyer_01_a",
+        "label": "Odysseus Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -974,7 +1063,8 @@
         ]
     },
     {
-        "id": "ship_par_l_destroyer_01_b",
+        "wareID": "ship_par_l_destroyer_01_b",
+        "label": "Odysseus Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -986,7 +1076,8 @@
         ]
     },
     {
-        "id": "ship_par_l_destroyer_02_a",
+        "wareID": "ship_par_l_destroyer_02_a",
+        "label": "Odysseus E",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -1000,7 +1091,8 @@
         ]
     },
     {
-        "id": "ship_par_l_expeditionary_01_a",
+        "wareID": "ship_par_l_expeditionary_01_a",
+        "label": "Hyperion",
         "dataSourceID": "ego_dlc_mini_01",
         "size": "l",
         "classID": "expeditionary",
@@ -1012,7 +1104,8 @@
         ]
     },
     {
-        "id": "ship_par_l_miner_liquid_01_a",
+        "wareID": "ship_par_l_miner_liquid_01_a",
+        "label": "Chthonios (Gas) Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1025,7 +1118,8 @@
         ]
     },
     {
-        "id": "ship_par_l_miner_liquid_01_b",
+        "wareID": "ship_par_l_miner_liquid_01_b",
+        "label": "Chthonios (Gas) Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1038,7 +1132,8 @@
         ]
     },
     {
-        "id": "ship_par_l_miner_liquid_02_a",
+        "wareID": "ship_par_l_miner_liquid_02_a",
+        "label": "Chthonios E (Gas)",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1051,20 +1146,8 @@
         ]
     },
     {
-        "id": "ship_par_l_miner_solid_01_a",
-        "dataSourceID": "vanilla",
-        "size": "l",
-        "classID": "largeminer",
-        "builderFactionID": "paranid",
-        "usedBy": [
-            "buccaneers",
-            "hatikvah",
-            "paranid",
-            "trinity"
-        ]
-    },
-    {
-        "id": "ship_par_l_miner_solid_01_b",
+        "wareID": "ship_par_l_miner_solid_01_a",
+        "label": "Chthonios (Mineral) Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1072,12 +1155,27 @@
         "usedBy": [
             "buccaneers",
             "hatikvah",
+            "paranid",
+            "trinity"
+        ]
+    },
+    {
+        "wareID": "ship_par_l_miner_solid_01_b",
+        "label": "Chthonios (Mineral) Sentinel",
+        "dataSourceID": "vanilla",
+        "size": "l",
+        "classID": "largeminer",
+        "builderFactionID": "paranid",
+        "usedBy": [
+            "buccaneers",
+            "hatikvah",
             "holyorder",
             "trinity"
         ]
     },
     {
-        "id": "ship_par_l_miner_solid_02_a",
+        "wareID": "ship_par_l_miner_solid_02_a",
+        "label": "Chthonios E (Mineral)",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1090,7 +1188,8 @@
         ]
     },
     {
-        "id": "ship_par_l_trans_container_01_a",
+        "wareID": "ship_par_l_trans_container_01_a",
+        "label": "Helios Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -1102,7 +1201,8 @@
         ]
     },
     {
-        "id": "ship_par_l_trans_container_01_b",
+        "wareID": "ship_par_l_trans_container_01_b",
+        "label": "Helios Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -1114,7 +1214,8 @@
         ]
     },
     {
-        "id": "ship_par_l_trans_container_02_a",
+        "wareID": "ship_par_l_trans_container_02_a",
+        "label": "Selene Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -1126,7 +1227,8 @@
         ]
     },
     {
-        "id": "ship_par_l_trans_container_02_b",
+        "wareID": "ship_par_l_trans_container_02_b",
+        "label": "Selene Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -1138,7 +1240,8 @@
         ]
     },
     {
-        "id": "ship_par_l_trans_container_03_a",
+        "wareID": "ship_par_l_trans_container_03_a",
+        "label": "Helios E",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -1151,7 +1254,8 @@
         ]
     },
     {
-        "id": "ship_par_m_corvette_01_a",
+        "wareID": "ship_par_m_corvette_01_a",
+        "label": "Nemesis Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
@@ -1163,7 +1267,8 @@
         ]
     },
     {
-        "id": "ship_par_m_corvette_01_b",
+        "wareID": "ship_par_m_corvette_01_b",
+        "label": "Nemesis Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
@@ -1175,7 +1280,8 @@
         ]
     },
     {
-        "id": "ship_par_m_frigate_01_a",
+        "wareID": "ship_par_m_frigate_01_a",
+        "label": "Gorgon Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
@@ -1187,7 +1293,8 @@
         ]
     },
     {
-        "id": "ship_par_m_frigate_01_b",
+        "wareID": "ship_par_m_frigate_01_b",
+        "label": "Gorgon Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
@@ -1199,7 +1306,8 @@
         ]
     },
     {
-        "id": "ship_par_m_miner_liquid_01_a",
+        "wareID": "ship_par_m_miner_liquid_01_a",
+        "label": "Plutus (Gas) Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -1212,7 +1320,8 @@
         ]
     },
     {
-        "id": "ship_par_m_miner_liquid_01_b",
+        "wareID": "ship_par_m_miner_liquid_01_b",
+        "label": "Plutus (Gas) Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -1225,7 +1334,8 @@
         ]
     },
     {
-        "id": "ship_par_m_miner_solid_01_a",
+        "wareID": "ship_par_m_miner_solid_01_a",
+        "label": "Plutus (Mineral) Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -1238,7 +1348,8 @@
         ]
     },
     {
-        "id": "ship_par_m_miner_solid_01_b",
+        "wareID": "ship_par_m_miner_solid_01_b",
+        "label": "Plutus (Mineral) Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -1251,7 +1362,8 @@
         ]
     },
     {
-        "id": "ship_par_m_trans_container_01_a",
+        "wareID": "ship_par_m_trans_container_01_a",
+        "label": "Demeter Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -1264,7 +1376,8 @@
         ]
     },
     {
-        "id": "ship_par_m_trans_container_01_b",
+        "wareID": "ship_par_m_trans_container_01_b",
+        "label": "Demeter Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -1276,7 +1389,8 @@
         ]
     },
     {
-        "id": "ship_par_m_trans_container_02_a",
+        "wareID": "ship_par_m_trans_container_02_a",
+        "label": "Hermes Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -1289,7 +1403,8 @@
         ]
     },
     {
-        "id": "ship_par_m_trans_container_02_b",
+        "wareID": "ship_par_m_trans_container_02_b",
+        "label": "Hermes Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -1301,7 +1416,8 @@
         ]
     },
     {
-        "id": "ship_par_m_trans_container_03_a",
+        "wareID": "ship_par_m_trans_container_03_a",
+        "label": "Prometheus",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -1311,7 +1427,8 @@
         ]
     },
     {
-        "id": "ship_par_s_fighter_01_a",
+        "wareID": "ship_par_s_fighter_01_a",
+        "label": "Perseus Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -1323,7 +1440,8 @@
         ]
     },
     {
-        "id": "ship_par_s_fighter_01_b",
+        "wareID": "ship_par_s_fighter_01_b",
+        "label": "Perseus Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -1335,7 +1453,8 @@
         ]
     },
     {
-        "id": "ship_par_s_fighter_02_a",
+        "wareID": "ship_par_s_fighter_02_a",
+        "label": "Theseus Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -1347,7 +1466,8 @@
         ]
     },
     {
-        "id": "ship_par_s_fighter_02_b",
+        "wareID": "ship_par_s_fighter_02_b",
+        "label": "Theseus Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -1359,7 +1479,8 @@
         ]
     },
     {
-        "id": "ship_par_s_heavyfighter_01_a",
+        "wareID": "ship_par_s_heavyfighter_01_a",
+        "label": "Ares",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -1371,7 +1492,8 @@
         ]
     },
     {
-        "id": "ship_par_s_miner_solid_01_a",
+        "wareID": "ship_par_s_miner_solid_01_a",
+        "label": "Tethys (Mineral)",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "miner",
@@ -1385,7 +1507,8 @@
         ]
     },
     {
-        "id": "ship_par_s_racer_01_a",
+        "wareID": "ship_par_s_racer_01_a",
+        "label": "Theseus Sport",
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
@@ -1395,7 +1518,8 @@
         ]
     },
     {
-        "id": "ship_par_s_scout_01_a",
+        "wareID": "ship_par_s_scout_01_a",
+        "label": "Pegasus Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -1408,7 +1532,8 @@
         ]
     },
     {
-        "id": "ship_par_s_scout_01_b",
+        "wareID": "ship_par_s_scout_01_b",
+        "label": "Pegasus Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -1420,7 +1545,8 @@
         ]
     },
     {
-        "id": "ship_par_s_trans_container_01_a",
+        "wareID": "ship_par_s_trans_container_01_a",
+        "label": "Tethys Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -1434,7 +1560,8 @@
         ]
     },
     {
-        "id": "ship_par_s_trans_container_01_b",
+        "wareID": "ship_par_s_trans_container_01_b",
+        "label": "Tethys Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -1447,7 +1574,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_builder_01_a",
+        "wareID": "ship_par_xl_builder_01_a",
+        "label": "Heracles Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
@@ -1460,7 +1588,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_builder_01_b",
+        "wareID": "ship_par_xl_builder_01_b",
+        "label": "Heracles Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
@@ -1472,7 +1601,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_carrier_01_a",
+        "wareID": "ship_par_xl_carrier_01_a",
+        "label": "Zeus Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -1484,7 +1614,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_carrier_01_b",
+        "wareID": "ship_par_xl_carrier_01_b",
+        "label": "Zeus Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -1496,7 +1627,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_carrier_02_a",
+        "wareID": "ship_par_xl_carrier_02_a",
+        "label": "Zeus E",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -1509,7 +1641,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_resupplier_01_a",
+        "wareID": "ship_par_xl_resupplier_01_a",
+        "label": "Atlas Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
@@ -1521,7 +1654,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_resupplier_01_b",
+        "wareID": "ship_par_xl_resupplier_01_b",
+        "label": "Atlas Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
@@ -1533,7 +1667,8 @@
         ]
     },
     {
-        "id": "ship_par_xl_resupplier_02_a",
+        "wareID": "ship_par_xl_resupplier_02_a",
+        "label": "Atlas E",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
@@ -1546,7 +1681,8 @@
         ]
     },
     {
-        "id": "ship_pir_l_miner_solid_01_a",
+        "wareID": "ship_pir_l_miner_solid_01_a",
+        "label": "Donia",
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "largeminer",
@@ -1556,7 +1692,8 @@
         ]
     },
     {
-        "id": "ship_pir_l_scavenger_01_a",
+        "wareID": "ship_pir_l_scavenger_01_a",
+        "label": "Barbarossa",
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "scavenger",
@@ -1566,7 +1703,8 @@
         ]
     },
     {
-        "id": "ship_pir_l_scavenger_01_a_storyhighcapacity",
+        "wareID": "ship_pir_l_scavenger_01_a_storyhighcapacity",
+        "label": "Barbarossa",
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "scavenger",
@@ -1574,7 +1712,8 @@
         "usedBy": []
     },
     {
-        "id": "ship_pir_l_scrapper_01",
+        "wareID": "ship_pir_l_scrapper_01",
+        "label": "Teuta",
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "compactor",
@@ -1584,7 +1723,8 @@
         ]
     },
     {
-        "id": "ship_pir_s_fighter_01_a",
+        "wareID": "ship_pir_s_fighter_01_a",
+        "label": "Kyd",
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "fighter",
@@ -1594,7 +1734,8 @@
         ]
     },
     {
-        "id": "ship_pir_s_fighter_02_a",
+        "wareID": "ship_pir_s_fighter_02_a",
+        "label": "Lux",
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "fighter",
@@ -1604,7 +1745,8 @@
         ]
     },
     {
-        "id": "ship_pir_s_heavyfighter_01_a",
+        "wareID": "ship_pir_s_heavyfighter_01_a",
+        "label": "Shih",
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "heavyfighter",
@@ -1614,7 +1756,8 @@
         ]
     },
     {
-        "id": "ship_pir_s_trans_condensate_01_a",
+        "wareID": "ship_pir_s_trans_condensate_01_a",
+        "label": "Raleigh (Condensate)",
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "courier",
@@ -1625,7 +1768,8 @@
         ]
     },
     {
-        "id": "ship_pir_s_trans_container_01_a",
+        "wareID": "ship_pir_s_trans_container_01_a",
+        "label": "Raleigh (Container)",
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "courier",
@@ -1636,7 +1780,8 @@
         ]
     },
     {
-        "id": "ship_pir_xl_battleship_01_a",
+        "wareID": "ship_pir_xl_battleship_01_a",
+        "label": "Erlking",
         "dataSourceID": "ego_dlc_pirate",
         "size": "xl",
         "classID": "battleship",
@@ -1646,7 +1791,8 @@
         ]
     },
     {
-        "id": "ship_pir_xl_builder_01",
+        "wareID": "ship_pir_xl_builder_01",
+        "label": "Gannascus",
         "dataSourceID": "ego_dlc_pirate",
         "size": "xl",
         "classID": "builder",
@@ -1657,7 +1803,8 @@
         ]
     },
     {
-        "id": "ship_spl_l_destroyer_01_a",
+        "wareID": "ship_spl_l_destroyer_01_a",
+        "label": "Rattlesnake",
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "destroyer",
@@ -1669,7 +1816,8 @@
         ]
     },
     {
-        "id": "ship_spl_l_miner_liquid_01_a",
+        "wareID": "ship_spl_l_miner_liquid_01_a",
+        "label": "Wyvern (Gas)",
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "largeminer",
@@ -1681,7 +1829,8 @@
         ]
     },
     {
-        "id": "ship_spl_l_miner_solid_01_a",
+        "wareID": "ship_spl_l_miner_solid_01_a",
+        "label": "Wyvern (Mineral)",
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "largeminer",
@@ -1693,7 +1842,8 @@
         ]
     },
     {
-        "id": "ship_spl_l_trans_container_01_a",
+        "wareID": "ship_spl_l_trans_container_01_a",
+        "label": "Buffalo",
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "freighter",
@@ -1705,7 +1855,8 @@
         ]
     },
     {
-        "id": "ship_spl_m_corvette_01_a",
+        "wareID": "ship_spl_m_corvette_01_a",
+        "label": "Dragon",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "corvette",
@@ -1716,7 +1867,8 @@
         ]
     },
     {
-        "id": "ship_spl_m_corvette_01_b",
+        "wareID": "ship_spl_m_corvette_01_b",
+        "label": "Dragon Raider",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "corvette",
@@ -1727,7 +1879,8 @@
         ]
     },
     {
-        "id": "ship_spl_m_frigate_01_a",
+        "wareID": "ship_spl_m_frigate_01_a",
+        "label": "Cobra",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "frigate",
@@ -1738,7 +1891,8 @@
         ]
     },
     {
-        "id": "ship_spl_m_miner_liquid_01_a",
+        "wareID": "ship_spl_m_miner_liquid_01_a",
+        "label": "Alligator (Gas)",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "miner",
@@ -1750,7 +1904,8 @@
         ]
     },
     {
-        "id": "ship_spl_m_miner_solid_01_a",
+        "wareID": "ship_spl_m_miner_solid_01_a",
+        "label": "Alligator (Mineral)",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "miner",
@@ -1762,7 +1917,8 @@
         ]
     },
     {
-        "id": "ship_spl_m_trans_container_01_a",
+        "wareID": "ship_spl_m_trans_container_01_a",
+        "label": "Boa",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "transporter",
@@ -1774,7 +1930,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_fighter_01_a",
+        "wareID": "ship_spl_s_fighter_01_a",
+        "label": "Mamba",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "fighter",
@@ -1785,7 +1942,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_fighter_02_a",
+        "wareID": "ship_spl_s_fighter_02_a",
+        "label": "Asp",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "fighter",
@@ -1796,7 +1954,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_fighter_02_b",
+        "wareID": "ship_spl_s_fighter_02_b",
+        "label": "Asp Raider",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "fighter",
@@ -1807,7 +1966,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_heavyfighter_01_a",
+        "wareID": "ship_spl_s_heavyfighter_01_a",
+        "label": "Chimera",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "heavyfighter",
@@ -1818,7 +1978,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_heavyfighter_02_a",
+        "wareID": "ship_spl_s_heavyfighter_02_a",
+        "label": "Balaur",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "heavyfighter",
@@ -1829,7 +1990,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_miner_solid_01_a",
+        "wareID": "ship_spl_s_miner_solid_01_a",
+        "label": "Tuatara (Mineral)",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "miner",
@@ -1841,7 +2003,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_scout_01_a",
+        "wareID": "ship_spl_s_scout_01_a",
+        "label": "Jaguar",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "scout",
@@ -1853,7 +2016,8 @@
         ]
     },
     {
-        "id": "ship_spl_s_trans_container_01_a",
+        "wareID": "ship_spl_s_trans_container_01_a",
+        "label": "Tuatara",
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "courier",
@@ -1865,7 +2029,8 @@
         ]
     },
     {
-        "id": "ship_spl_xl_builder_01_a",
+        "wareID": "ship_spl_xl_builder_01_a",
+        "label": "Elephant",
         "dataSourceID": "ego_dlc_split",
         "size": "xl",
         "classID": "builder",
@@ -1877,7 +2042,8 @@
         ]
     },
     {
-        "id": "ship_spl_xl_carrier_01_a",
+        "wareID": "ship_spl_xl_carrier_01_a",
+        "label": "Raptor",
         "dataSourceID": "ego_dlc_split",
         "size": "xl",
         "classID": "carrier",
@@ -1889,7 +2055,8 @@
         ]
     },
     {
-        "id": "ship_spl_xl_resupplier_01_a",
+        "wareID": "ship_spl_xl_resupplier_01_a",
+        "label": "Monitor",
         "dataSourceID": "ego_dlc_split",
         "size": "xl",
         "classID": "resupplier",
@@ -1901,7 +2068,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_destroyer_01_a",
+        "wareID": "ship_tel_l_destroyer_01_a",
+        "label": "Phoenix Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -1911,7 +2079,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_destroyer_01_b",
+        "wareID": "ship_tel_l_destroyer_01_b",
+        "label": "Phoenix Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -1921,7 +2090,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_destroyer_02_a",
+        "wareID": "ship_tel_l_destroyer_02_a",
+        "label": "Phoenix E",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -1932,7 +2102,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_miner_liquid_01_a",
+        "wareID": "ship_tel_l_miner_liquid_01_a",
+        "label": "Crane (Gas) Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1943,7 +2114,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_miner_liquid_01_b",
+        "wareID": "ship_tel_l_miner_liquid_01_b",
+        "label": "Crane (Gas) Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1954,7 +2126,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_miner_liquid_02_a",
+        "wareID": "ship_tel_l_miner_liquid_02_a",
+        "label": "Crane E (Gas)",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1966,7 +2139,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_miner_solid_01_a",
+        "wareID": "ship_tel_l_miner_solid_01_a",
+        "label": "Crane (Mineral) Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1977,7 +2151,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_miner_solid_01_b",
+        "wareID": "ship_tel_l_miner_solid_01_b",
+        "label": "Crane (Mineral) Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -1988,7 +2163,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_miner_solid_02_a",
+        "wareID": "ship_tel_l_miner_solid_02_a",
+        "label": "Crane E (Mineral)",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
@@ -2000,7 +2176,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_trans_container_01_a",
+        "wareID": "ship_tel_l_trans_container_01_a",
+        "label": "Pelican Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -2010,7 +2187,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_trans_container_01_b",
+        "wareID": "ship_tel_l_trans_container_01_b",
+        "label": "Pelican Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -2020,7 +2198,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_trans_container_02_a",
+        "wareID": "ship_tel_l_trans_container_02_a",
+        "label": "Heron Vanguard",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -2030,7 +2209,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_trans_container_02_b",
+        "wareID": "ship_tel_l_trans_container_02_b",
+        "label": "Heron Sentinel",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -2040,7 +2220,8 @@
         ]
     },
     {
-        "id": "ship_tel_l_trans_container_03_a",
+        "wareID": "ship_tel_l_trans_container_03_a",
+        "label": "Heron E",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
@@ -2051,7 +2232,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_bomber_01_a",
+        "wareID": "ship_tel_m_bomber_01_a",
+        "label": "Peregrine Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
@@ -2061,7 +2243,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_bomber_01_b",
+        "wareID": "ship_tel_m_bomber_01_b",
+        "label": "Peregrine Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
@@ -2071,7 +2254,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_frigate_01_a",
+        "wareID": "ship_tel_m_frigate_01_a",
+        "label": "Osprey Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
@@ -2081,7 +2265,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_frigate_01_b",
+        "wareID": "ship_tel_m_frigate_01_b",
+        "label": "Osprey Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
@@ -2091,7 +2276,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_miner_liquid_01_a",
+        "wareID": "ship_tel_m_miner_liquid_01_a",
+        "label": "Manorina (Gas) Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -2102,7 +2288,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_miner_liquid_01_b",
+        "wareID": "ship_tel_m_miner_liquid_01_b",
+        "label": "Manorina (Gas) Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -2113,7 +2300,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_miner_solid_01_a",
+        "wareID": "ship_tel_m_miner_solid_01_a",
+        "label": "Manorina (Mineral) Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -2124,7 +2312,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_miner_solid_01_b",
+        "wareID": "ship_tel_m_miner_solid_01_b",
+        "label": "Manorina (Mineral) Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -2135,7 +2324,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_trans_container_01_a",
+        "wareID": "ship_tel_m_trans_container_01_a",
+        "label": "Vulture Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -2146,7 +2336,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_trans_container_01_b",
+        "wareID": "ship_tel_m_trans_container_01_b",
+        "label": "Vulture Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -2156,7 +2347,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_trans_container_02_a",
+        "wareID": "ship_tel_m_trans_container_02_a",
+        "label": "Tern Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -2167,7 +2359,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_trans_container_02_b",
+        "wareID": "ship_tel_m_trans_container_02_b",
+        "label": "Tern Sentinel",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -2177,7 +2370,8 @@
         ]
     },
     {
-        "id": "ship_tel_m_trans_container_03_a",
+        "wareID": "ship_tel_m_trans_container_03_a",
+        "label": "Cormorant Vanguard",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
@@ -2187,7 +2381,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_fighter_01_a",
+        "wareID": "ship_tel_s_fighter_01_a",
+        "label": "Falcon Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -2199,7 +2394,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_fighter_01_b",
+        "wareID": "ship_tel_s_fighter_01_b",
+        "label": "Falcon Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -2211,7 +2407,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_fighter_02_a",
+        "wareID": "ship_tel_s_fighter_02_a",
+        "label": "Buzzard Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -2221,7 +2418,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_fighter_02_b",
+        "wareID": "ship_tel_s_fighter_02_b",
+        "label": "Buzzard Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -2231,7 +2429,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_miner_solid_01_a",
+        "wareID": "ship_tel_s_miner_solid_01_a",
+        "label": "Magpie (Mineral)",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "miner",
@@ -2243,7 +2442,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_racer_01_a",
+        "wareID": "ship_tel_s_racer_01_a",
+        "label": "Kestrel Sport",
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "scout",
@@ -2253,7 +2453,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_scout_01_a",
+        "wareID": "ship_tel_s_scout_01_a",
+        "label": "Kestrel Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -2266,7 +2467,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_scout_01_b",
+        "wareID": "ship_tel_s_scout_01_b",
+        "label": "Kestrel Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -2278,7 +2480,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_scout_02_a",
+        "wareID": "ship_tel_s_scout_02_a",
+        "label": "Guillemot Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -2289,7 +2492,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_scout_02_b",
+        "wareID": "ship_tel_s_scout_02_b",
+        "label": "Guillemot Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -2299,7 +2503,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_trans_container_01_a",
+        "wareID": "ship_tel_s_trans_container_01_a",
+        "label": "Magpie Vanguard",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -2311,7 +2516,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_trans_container_01_b",
+        "wareID": "ship_tel_s_trans_container_01_b",
+        "label": "Magpie Sentinel",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -2322,7 +2528,8 @@
         ]
     },
     {
-        "id": "ship_tel_s_trans_container_02_a",
+        "wareID": "ship_tel_s_trans_container_02_a",
+        "label": "Raven",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
@@ -2332,7 +2539,8 @@
         ]
     },
     {
-        "id": "ship_tel_xl_builder_01_a",
+        "wareID": "ship_tel_xl_builder_01_a",
+        "label": "Albatross Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
@@ -2342,7 +2550,8 @@
         ]
     },
     {
-        "id": "ship_tel_xl_builder_01_b",
+        "wareID": "ship_tel_xl_builder_01_b",
+        "label": "Albatross Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
@@ -2352,7 +2561,8 @@
         ]
     },
     {
-        "id": "ship_tel_xl_carrier_01_a",
+        "wareID": "ship_tel_xl_carrier_01_a",
+        "label": "Condor Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -2362,7 +2572,8 @@
         ]
     },
     {
-        "id": "ship_tel_xl_carrier_01_b",
+        "wareID": "ship_tel_xl_carrier_01_b",
+        "label": "Condor Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
@@ -2372,7 +2583,8 @@
         ]
     },
     {
-        "id": "ship_tel_xl_resupplier_01_a",
+        "wareID": "ship_tel_xl_resupplier_01_a",
+        "label": "Stork Vanguard",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
@@ -2382,7 +2594,8 @@
         ]
     },
     {
-        "id": "ship_tel_xl_resupplier_01_b",
+        "wareID": "ship_tel_xl_resupplier_01_b",
+        "label": "Stork Sentinel",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
@@ -2392,7 +2605,8 @@
         ]
     },
     {
-        "id": "ship_ter_l_destroyer_01_a",
+        "wareID": "ship_ter_l_destroyer_01_a",
+        "label": "Osaka",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "destroyer",
@@ -2403,7 +2617,8 @@
         ]
     },
     {
-        "id": "ship_ter_l_flagship_01_a",
+        "wareID": "ship_ter_l_flagship_01_a",
+        "label": "Sapporo",
         "dataSourceID": "ego_dlc_timelines",
         "size": "l",
         "classID": "destroyer",
@@ -2413,7 +2628,8 @@
         ]
     },
     {
-        "id": "ship_ter_l_miner_liquid_01_a",
+        "wareID": "ship_ter_l_miner_liquid_01_a",
+        "label": "Hokkaido (Gas)",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "largeminer",
@@ -2424,7 +2640,8 @@
         ]
     },
     {
-        "id": "ship_ter_l_miner_solid_01_a",
+        "wareID": "ship_ter_l_miner_solid_01_a",
+        "label": "Hokkaido (Mineral)",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "largeminer",
@@ -2435,7 +2652,8 @@
         ]
     },
     {
-        "id": "ship_ter_l_research_01_a",
+        "wareID": "ship_ter_l_research_01_a",
+        "label": "Okinawa Research",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "freighter",
@@ -2443,7 +2661,8 @@
         "usedBy": []
     },
     {
-        "id": "ship_ter_l_trans_container_01_a",
+        "wareID": "ship_ter_l_trans_container_01_a",
+        "label": "Okinawa",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "freighter",
@@ -2454,7 +2673,8 @@
         ]
     },
     {
-        "id": "ship_ter_m_corvette_01_a",
+        "wareID": "ship_ter_m_corvette_01_a",
+        "label": "Katana",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "corvette",
@@ -2465,7 +2685,8 @@
         ]
     },
     {
-        "id": "ship_ter_m_corvette_02_a",
+        "wareID": "ship_ter_m_corvette_02_a",
+        "label": "Odachi",
         "dataSourceID": "ego_dlc_timelines",
         "size": "m",
         "classID": "corvette",
@@ -2475,7 +2696,8 @@
         ]
     },
     {
-        "id": "ship_ter_m_frigate_01_a",
+        "wareID": "ship_ter_m_frigate_01_a",
+        "label": "Falx",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "frigate",
@@ -2485,7 +2707,8 @@
         ]
     },
     {
-        "id": "ship_ter_m_gunboat_01_a",
+        "wareID": "ship_ter_m_gunboat_01_a",
+        "label": "Jian",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "gunboat",
@@ -2495,7 +2718,8 @@
         ]
     },
     {
-        "id": "ship_ter_m_miner_liquid_01_a",
+        "wareID": "ship_ter_m_miner_liquid_01_a",
+        "label": "Bolo (Gas)",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "miner",
@@ -2506,7 +2730,8 @@
         ]
     },
     {
-        "id": "ship_ter_m_miner_solid_01_a",
+        "wareID": "ship_ter_m_miner_solid_01_a",
+        "label": "Bolo (Mineral)",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "miner",
@@ -2517,7 +2742,8 @@
         ]
     },
     {
-        "id": "ship_ter_m_trans_container_01_a",
+        "wareID": "ship_ter_m_trans_container_01_a",
+        "label": "Baldric",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "transporter",
@@ -2528,7 +2754,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_fighter_01_a",
+        "wareID": "ship_ter_s_fighter_01_a",
+        "label": "Kukri",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "fighter",
@@ -2539,7 +2766,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_fighter_02_a",
+        "wareID": "ship_ter_s_fighter_02_a",
+        "label": "Kalis",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "heavyfighter",
@@ -2549,7 +2777,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_fighter_03_a",
+        "wareID": "ship_ter_s_fighter_03_a",
+        "label": "Takoba",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "fighter",
@@ -2559,7 +2788,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_fighter_04_a",
+        "wareID": "ship_ter_s_fighter_04_a",
+        "label": "Cutlass",
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
@@ -2569,7 +2799,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_heavyfighter_01_a",
+        "wareID": "ship_ter_s_heavyfighter_01_a",
+        "label": "Gladius",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "heavyfighter",
@@ -2579,7 +2810,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_miner_solid_01_a",
+        "wareID": "ship_ter_s_miner_solid_01_a",
+        "label": "Kopis (Mineral)",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "miner",
@@ -2590,7 +2822,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_scout_01_a",
+        "wareID": "ship_ter_s_scout_01_a",
+        "label": "Rapier",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "scout",
@@ -2601,7 +2834,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_scout_02_a",
+        "wareID": "ship_ter_s_scout_02_a",
+        "label": "Nimcha",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "scout",
@@ -2611,7 +2845,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_trans_container_01_a",
+        "wareID": "ship_ter_s_trans_container_01_a",
+        "label": "Frog",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "courier",
@@ -2622,7 +2857,8 @@
         ]
     },
     {
-        "id": "ship_ter_s_xperimental_01_a",
+        "wareID": "ship_ter_s_xperimental_01_a",
+        "label": "Xperimental Shuttle",
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "heavyfighter",
@@ -2632,7 +2868,8 @@
         ]
     },
     {
-        "id": "ship_ter_xl_builder_01_a",
+        "wareID": "ship_ter_xl_builder_01_a",
+        "label": "Kyushu",
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "builder",
@@ -2643,7 +2880,8 @@
         ]
     },
     {
-        "id": "ship_ter_xl_carrier_01_a",
+        "wareID": "ship_ter_xl_carrier_01_a",
+        "label": "Tokyo",
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "carrier",
@@ -2653,7 +2891,8 @@
         ]
     },
     {
-        "id": "ship_ter_xl_resupplier_01_a",
+        "wareID": "ship_ter_xl_resupplier_01_a",
+        "label": "Honshu",
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "resupplier",
@@ -2664,7 +2903,8 @@
         ]
     },
     {
-        "id": "ship_xen_l_terraformer_01_a",
+        "wareID": "ship_xen_l_terraformer_01_a",
+        "label": "H",
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
@@ -2674,7 +2914,8 @@
         ]
     },
     {
-        "id": "ship_xen_m_corvette_01_a",
+        "wareID": "ship_xen_m_corvette_01_a",
+        "label": "B",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
@@ -2684,7 +2925,8 @@
         ]
     },
     {
-        "id": "ship_xen_m_corvette_02_a",
+        "wareID": "ship_xen_m_corvette_02_a",
+        "label": "PE",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
@@ -2694,7 +2936,8 @@
         ]
     },
     {
-        "id": "ship_xen_m_fighter_01_a",
+        "wareID": "ship_xen_m_fighter_01_a",
+        "label": "P",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
@@ -2704,7 +2947,8 @@
         ]
     },
     {
-        "id": "ship_xen_m_miner_01_a",
+        "wareID": "ship_xen_m_miner_01_a",
+        "label": "S",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -2714,7 +2958,8 @@
         ]
     },
     {
-        "id": "ship_xen_m_miner_solid_01_a",
+        "wareID": "ship_xen_m_miner_solid_01_a",
+        "label": "SE",
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
@@ -2724,7 +2969,8 @@
         ]
     },
     {
-        "id": "ship_xen_s_fighter_01_a",
+        "wareID": "ship_xen_s_fighter_01_a",
+        "label": "N",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
@@ -2734,7 +2980,8 @@
         ]
     },
     {
-        "id": "ship_xen_s_fighter_02_a",
+        "wareID": "ship_xen_s_fighter_02_a",
+        "label": "M",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -2744,7 +2991,8 @@
         ]
     },
     {
-        "id": "ship_xen_s_heavyfighter_01_a",
+        "wareID": "ship_xen_s_heavyfighter_01_a",
+        "label": "F",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
@@ -2754,7 +3002,8 @@
         ]
     },
     {
-        "id": "ship_xen_s_scout_01_a",
+        "wareID": "ship_xen_s_scout_01_a",
+        "label": "T",
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
@@ -2764,7 +3013,8 @@
         ]
     },
     {
-        "id": "ship_xen_xl_carrier_01_a",
+        "wareID": "ship_xen_xl_carrier_01_a",
+        "label": "I",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "battleship",
@@ -2774,7 +3024,8 @@
         ]
     },
     {
-        "id": "ship_xen_xl_destroyer_01_a",
+        "wareID": "ship_xen_xl_destroyer_01_a",
+        "label": "K",
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "destroyer",
@@ -2784,7 +3035,8 @@
         ]
     },
     {
-        "id": "ship_xen_xl_mothership_01",
+        "wareID": "ship_xen_xl_mothership_01",
+        "label": "M0",
         "dataSourceID": "ego_dlc_timelines",
         "size": "xl",
         "classID": "battleship",
@@ -2794,7 +3046,8 @@
         ]
     },
     {
-        "id": "ship_yak_m_corvette_01_a",
+        "wareID": "ship_yak_m_corvette_01_a",
+        "label": "Kuraokami",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "corvette",
@@ -2804,7 +3057,8 @@
         ]
     },
     {
-        "id": "ship_yak_s_fighter_01_a",
+        "wareID": "ship_yak_s_fighter_01_a",
+        "label": "Moreya",
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "fighter",
