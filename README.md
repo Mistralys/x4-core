@@ -1,16 +1,27 @@
-# X4 Tools Core
+# X4 Database Core
 
-Utility classes used to access X4: Foundations game data in an OOP way.
-Designed to be used as a library in other projects (see [X4 Tools](#x4-tools-and-libraries)).
+Database and utility classes used to access X4: Foundations game data in 
+an OOP way. It is designed to be used as a dependency in other projects
+(see [X4 Tools](#x4-tools-and-libraries), for example).
+
+## Database features
+
+- Faction database
+- Ware database
+- Ship database
+- Station module database
+- Blueprint database
+- Translation tool
+- DLC metadata
+- Macro file index
+- Automated database file generation from the game data
 
 ## Requirements
 
 - PHP 8.2 or higher.
 - [Composer](https://getcomposer.org/).
 
-## Usage
-
-### Installation
+## Installation
 
 Require the package in your Composer project:
 
@@ -18,7 +29,21 @@ Require the package in your Composer project:
 composer require mistralys/x4-core
 ```
 
-### Accessing Faction information
+## Usage
+
+### Raw JSON data files
+
+All extracted game data is stored in JSON files in the `data` folder.
+
+- [factions.json](./data/factions.json) - Faction definitions
+- [wares.json](./data/wares.json) - Ware definitions
+- [ships.json](./data/ships.json) - Ship definitions
+- [modules.json](./data/modules.json) - Station module definitions
+- [blueprints.json](./data/blueprints.json) - Blueprints
+- [macro-index.json](./data/macro-index.json) - Macro file index
+- [data-sources.json](./data/data-sources.json) - Data sources (DLC metadata)
+
+### The faction classes
 
 All factions available in the game can be accessed through the faction collection.
 
@@ -49,7 +74,7 @@ $argon = KnownFactions::getInstance()->getArgon();
 echo $argon->getLabel(); // Outputs "Argon"
 ```
 
-### Accessing ware information
+### The ware classes
 
 All items available in the game, from trade goods to ships, are available in the
 main ware collection.
@@ -94,6 +119,22 @@ $boronEngines = WareDefs::getInstance()
     ->selectGroup(WareGroups::GROUP_ENGINES)
     ->getAll();
 ```
+
+### The ship classes
+
+All ships available in the game can be accessed through the ship collection.
+
+```php
+use Mistralys\X4\Database\Ships\ShipDefs;
+
+echo "Available ships:" . PHP_EOL;
+
+foreach(ShipDefs::getInstance()->getAll() as $ship) {
+    echo $ship->getLabel() . PHP_EOL;
+}
+```
+
+
 
 ### Accessing translations
 
