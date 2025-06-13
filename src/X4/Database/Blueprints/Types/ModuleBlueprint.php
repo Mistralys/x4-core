@@ -6,18 +6,15 @@ namespace Mistralys\X4\Database\Blueprints\Types;
 
 use AppUtils\ConvertHelper;
 use Mistralys\X4\Database\Blueprints\BlueprintDef;
-use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategoryInterface;
 use function AppLocalize\t;
 
 class ModuleBlueprint extends BlueprintDef
 {
     private int $version;
 
-    public function __construct(string $id, BlueprintCategoryInterface $category)
+    protected function init() : void
     {
-        parent::__construct($id, $category);
-
-        $this->version = $this->detectVersion(ConvertHelper::explodeTrim('_', $id));
+        $this->version = $this->detectVersion(ConvertHelper::explodeTrim('_', $this->getID()));
     }
 
     public function getTypeLabel() : string
