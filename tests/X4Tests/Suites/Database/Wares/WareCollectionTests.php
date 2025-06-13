@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace X4Tests\Suites\Database\Wares;
 
 use Mistralys\X4\Database\DataSources\DLCs;
+use Mistralys\X4\Database\DataSources\KnownDataSources;
 use Mistralys\X4\Database\Wares\WareDefs;
 use Mistralys\X4\Database\Wares\WareGroups;
 use X4Tests\Helpers\X4TestCase;
@@ -35,8 +36,7 @@ final class WareCollectionTests extends X4TestCase
     {
         $results = WareDefs::getInstance()
             ->findWares()
-            ->selectDLC()
-            ->boron()
+            ->selectDataSource(KnownDataSources::DATA_SOURCE_KINGDOM_END)
             ->getAll();
 
         $this->assertNotEmpty($results);

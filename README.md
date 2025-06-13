@@ -111,11 +111,11 @@ retrieve all ship engines provided by the Boron DLC.
 ```php
 use Mistralys\X4\Database\Wares\WareDefs;
 use Mistralys\X4\Database\Wares\WareGroups;
+use Mistralys\X4\Database\DataSources\KnownDataSources;
 
 $boronEngines = WareDefs::getInstance()
     ->findWares()
-    ->selectDLC()
-    ->boron()
+    ->selectDataSource(KnownDataSources::DATA_SOURCE_KINGDOM_END)
     ->selectGroup(WareGroups::GROUP_ENGINES)
     ->getAll();
 ```
