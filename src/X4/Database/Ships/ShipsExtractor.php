@@ -6,6 +6,8 @@ namespace Mistralys\X4\Database\Ships;
 
 use AppUtils\FileHelper\FolderInfo;
 use Mistralys\X4\Database\Builder\KnownItemsClassGenerator;
+use Mistralys\X4\Database\Core\VariantID;
+use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\Database\Wares\WareDefs;
@@ -114,27 +116,13 @@ class ShipsExtractor
         $this->ships[$shipID] = array(
             ShipDef::KEY_WARE_ID => $shipID,
             ShipDef::KEY_LABEL => $def->getLabel(),
-            ShipDef::KEY_VARIANT_ID => $this->resolveVariantID($shipID),
+            ShipDef::KEY_VARIANT_ID => (string)VariantID::resolveWareVariantID($shipID),
             ShipDef::KEY_DATA_SOURCE_ID => $def->getDataSourceID(),
             ShipDef::KEY_SIZE => $this->resolveShipSize($dom),
             ShipDef::KEY_CLASS_ID => $this->resolveShipClass($domAlias ?? $dom, $shipID),
             ShipDef::KEY_BUILDER_FACTION_ID => $this->resolveFaction($domAlias ?? $dom, $shipID),
             ShipDef::KEY_USED_BY => $def->getFactionIDs()
         );
-    }
-
-    private function resolveVariantID($shipID) : string
-    {
-        $parts = explode('_', $shipID);
-
-        foreach($parts as $idx => $part) {
-             if($part === '01' || $part === '02' || $part === '03') {
-                 $idParts = array_slice($parts, $idx);
-                 return implode('-', $idParts);
-             }
-        }
-
-        return '';
     }
 
     private function resolveShipClass(DOMExtended $dom, string $shipID) : string
@@ -187,15 +175,11 @@ class ShipsExtractor
 
         foreach($this->ships as $item)
         {
-            $label = $item[ShipDef::KEY_LABEL];
-
-            // Add the variant ID to the label if the ship has variants,
-            // so that the constant and method names make sense.
-            if(!empty($item[ShipDef::KEY_VARIANTS])) {
-                $label .= ' (' . $item[ShipDef::KEY_VARIANT_ID] . ')';
-            }
-
-            $generator->addItem($item[ShipDef::KEY_WARE_ID], $label);
+            $generator->addItem(
+                $item[ShipDef::KEY_WARE_ID],
+                $item[ShipDef::KEY_LABEL],
+                VariantID::fromID($item[ShipDef::KEY_VARIANT_ID])
+            );
         }
 
         $generator->generate();
