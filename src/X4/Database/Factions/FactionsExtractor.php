@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Factions;
 
+use AppUtils\ClassHelper;
 use AppUtils\ConvertHelper;
 use AppUtils\FileHelper\FileInfo;
+use AppUtils\FileHelper\FolderInfo;
+use Mistralys\X4\Database\Builder\KnownItemsClassGenerator;
+use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\Database\Translations\Language;
 use Mistralys\X4\Database\Translations\Languages;
 use Mistralys\X4\DataExtractor\CatFileFinder;
@@ -14,6 +18,8 @@ use Mistralys\X4\ExtractedData\DataFolders;
 use Mistralys\X4\UI\Console;
 use Mistralys\X4\XML\DOMExtended;
 use Mistralys\X4\XML\ElementExtended;
+use function AppLocalize\t;
+use function AppUtils\sb;
 
 class FactionsExtractor
 {
@@ -125,99 +131,25 @@ class FactionsExtractor
         Console::nl();
     }
 
-    private const KNOWN_FACTIONS_TEMPLATE = <<<'PHP'
-<?php
-
-declare(strict_types=1);
-
-namespace Mistralys\X4\Database\Races;
-
-class KnownFactions
-{
-%1$s
-    
-    public const FACTIONS = array(
-%2$s
-    );
-
-    private FactionDefs $defs;
-
-    private function __construct()
-    {
-        $this->defs = FactionDefs::getInstance();
-    }
-
-    private static ?KnownFactions $instance = null;
-
-    public static function getInstance() : KnownFactions
-    {
-        if (!isset(self::$instance)) {
-            self::$instance = new KnownFactions();
-        }
-
-        return self::$instance;
-    }
-
-%3$s
-}
-
-PHP;
-
-    private const KNOWN_FACTIONS_METHODS_TEMPLATE = <<<'PHP'
-    public function %1$s() : FactionDef
-    {
-        return $this->defs->getByID(self::%2$s);
-    }
-PHP;
-
-
     private function generateKnownFactions() : void
     {
-        Console::header('Generating known factions');
-
-        $constants = array();
-        $enums = array();
-        $methods = array();
-
-        foreach($this->compileKnownFactions() as $entry)
-        {
-            $constants[] = sprintf(
-                '    public const %s = \'%s\';',
-                $entry['constant'],
-                $entry['id']
-            );
-
-            $enums[] = sprintf(
-                '        self::%s',
-                $entry['constant']
-            );
-
-            $methods[] = sprintf(
-                self::KNOWN_FACTIONS_METHODS_TEMPLATE,
-                $entry['method'],
-                $entry['constant']
-            );
-        }
-
-        sort($constants);
-        sort($enums);
-        sort($methods);
-
-        $php = sprintf(
-            self::KNOWN_FACTIONS_TEMPLATE,
-            implode("\n", $constants),
-            implode(",\n", $enums),
-            implode("\n\n", $methods)
+        $generator = new KnownItemsClassGenerator(
+            FactionDefs::class,
+            FactionDef::class,
+            FolderInfo::factory(__DIR__)
         );
 
-        FileInfo::factory(__DIR__.'/KnownFactions.php')
-            ->putContents($php);
+        $generator->setDescription(t('This class contains constants and methods for all known factions in X4.'));
 
-        Console::line1('Done.');
+        foreach($this->compileKnownFactions() as $factionID => $label) {
+            $generator->addItem($factionID, $label);
+        }
+
+        $generator->generate();
     }
 
     /**
-     * @return array<int,array{constant:string, method:string}>
+     * @return array<string,string>
      */
     private function compileKnownFactions() : array
     {
@@ -239,30 +171,9 @@ PHP;
                 $label = 'Smuggler';
             }
 
-            $known[] = array(
-                'id' => $id,
-                'constant' => $this->resolveConstantName($label),
-                'method' => $this->resolveMethodName($label),
-            );
+            $known[$id] = $label;
         }
 
         return $known;
-    }
-
-    private function resolveConstantName(string $label) : string
-    {
-        $label = ConvertHelper::transliterate($label);
-        $parts = ConvertHelper::explodeTrim('-', $label);
-        $parts = ConvertHelper::arrayRemoveValues($parts, array('of', 'the'));
-
-        return 'FACTION_'.strtoupper(implode('_', $parts));
-    }
-
-    private function resolveMethodName(string $label) : string
-    {
-        $label = ConvertHelper::transliterate($label);
-        $parts = ConvertHelper::explodeTrim('-', $label);
-
-        return 'get'.implode('', array_map('ucfirst', $parts));
     }
 }
