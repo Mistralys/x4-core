@@ -4,15 +4,18 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Ships;
 
+use AppUtils\ArrayDataCollection;
 use AppUtils\FileHelper\FolderInfo;
+use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\Database\Builder\KnownItemsClassGenerator;
 use Mistralys\X4\Database\Core\VariantID;
-use Mistralys\X4\Database\DatabaseBuilder;
+use Mistralys\X4\Database\Factions\KnownFactions;
 use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\Database\Wares\WareDefs;
 use Mistralys\X4\Database\Wares\WareGroups;
 use Mistralys\X4\UI\Console;
+use Mistralys\X4\X4Application;
 use Mistralys\X4\XML\DOMExtended;
 use function AppUtils\array_remove_values;
 
@@ -152,10 +155,52 @@ class ShipsExtractor
 
     private function resolveFaction(DOMExtended $dom, string $shipID) : string
     {
-        return $dom
+        $factionID = $dom
             ->byTagName('identification')
             ->requireFirst(sprintf('ERROR | No identification element found for ship macro [%s].', $shipID))
             ->getAttribute('makerrace');
+
+        if(!empty($factionID)) {
+            return $factionID;
+        }
+
+        $factionID = KnownFactions::FACTION_GENERIC;
+
+        $exceptions = $this->getFactionExceptions();
+        if(isset($exceptions[$shipID])) {
+            $factionID = $exceptions[$shipID];
+            Console::line1('INFO | The ship [%s] has a custom faction ID [%s] defined in the settings.', $shipID, $factionID);
+        } else {
+            Console::line1('WARNING | The ship [%s] has no builder faction. Defaulting to [%s].', $shipID, $factionID);
+        }
+
+        return $factionID;
+    }
+
+    /**
+     * @return array<string|int,string>
+     */
+    private function getFactionExceptions() : array
+    {
+        return $this->getShipSettings()
+            ->getArrayFlavored('faction-exceptions')
+            ->toAssocString();
+    }
+
+    private ?ArrayDataCollection $shipSettings = null;
+
+    private function getShipSettings() : ArrayDataCollection
+    {
+        if(isset($this->shipSettings)) {
+           return $this->shipSettings;
+        }
+
+        $this->shipSettings = ArrayDataCollection::create(
+            JSONFile::factory(X4Application::getDataFolder().'/ship-settings.json')
+                ->getData()
+        );
+
+        return $this->shipSettings;
     }
 
     private function resolveShipSize(DOMExtended $dom) : string
