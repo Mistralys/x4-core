@@ -6,9 +6,9 @@ namespace Mistralys\X4\Database\Ships;
 
 use AppUtils\Collections\BaseStringPrimaryCollection;
 use AppUtils\FileHelper\JSONFile;
+use Mistralys\X4\Database\Core\ItemCollectionInterface;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\Factions\FactionDef;
-use Mistralys\X4\Database\Ships\Finder\ShipFinder;
 use Mistralys\X4\X4Application;
 
 /**
@@ -16,7 +16,7 @@ use Mistralys\X4\X4Application;
  * @method ShipDef[] getAll()
  * @method ShipDef getDefault()
  */
-class ShipDefs extends BaseStringPrimaryCollection
+class ShipDefs extends BaseStringPrimaryCollection implements ItemCollectionInterface
 {
     private static ?ShipDefs $instance = null;
     private JSONFile $dataFile;

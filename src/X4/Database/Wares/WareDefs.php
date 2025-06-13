@@ -7,7 +7,7 @@ namespace Mistralys\X4\Database\Wares;
 use AppUtils\Collections\BaseStringPrimaryCollection;
 use AppUtils\FileHelper\JSONFile;
 use Mistral\X4\Database\Wares\WaresExtractor;
-use Mistralys\X4\Database\Wares\Finder\WareFinder;
+use Mistralys\X4\Database\Core\ItemCollectionInterface;
 use Mistralys\X4\X4Application;
 
 /**
@@ -40,7 +40,7 @@ use Mistralys\X4\X4Application;
  * @method WareDef getByID(string $id)
  * @method WareDef getDefault()
  */
-class WareDefs extends BaseStringPrimaryCollection
+class WareDefs extends BaseStringPrimaryCollection implements ItemCollectionInterface
 {
     private JSONFile $dataFile;
 

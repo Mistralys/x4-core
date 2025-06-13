@@ -6,6 +6,7 @@ namespace Mistralys\X4\Database\Factions;
 
 use AppUtils\Collections\BaseStringPrimaryCollection;
 use AppUtils\FileHelper\JSONFile;
+use Mistralys\X4\Database\Core\ItemCollectionInterface;
 use Mistralys\X4\X4Application;
 
 /**
@@ -13,7 +14,7 @@ use Mistralys\X4\X4Application;
  * @method FactionDef[] getAll()
  * @method FactionDef getDefault()
  */
-class FactionDefs extends BaseStringPrimaryCollection
+class FactionDefs extends BaseStringPrimaryCollection implements ItemCollectionInterface
 {
     public const SHORT_ID_ATF = 'atf';
     public const SHORT_ID_PIR = 'pir';

@@ -6,6 +6,7 @@ namespace Mistralys\X4\Database\Modules;
 
 use AppUtils\Collections\BaseStringPrimaryCollection;
 use AppUtils\FileHelper\JSONFile;
+use Mistralys\X4\Database\Core\ItemCollectionInterface;
 use Mistralys\X4\X4Application;
 
 /**
@@ -13,7 +14,7 @@ use Mistralys\X4\X4Application;
  * @method ModuleDef[] getAll()
  * @method ModuleDef getDefault()
  */
-class ModuleDefs extends BaseStringPrimaryCollection
+class ModuleDefs extends BaseStringPrimaryCollection implements ItemCollectionInterface
 {
     public const ERROR_UNKNOWN_MODULE_ID = 137601;
 

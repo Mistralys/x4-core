@@ -7,6 +7,7 @@ namespace Mistralys\X4\Database\Blueprints;
 use AppUtils\Collections\BaseStringPrimaryCollection;
 use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategoryInterface;
+use Mistralys\X4\Database\Core\ItemCollectionInterface;
 use Mistralys\X4\X4Application;
 use function AppUtils\t;
 
@@ -15,7 +16,7 @@ use function AppUtils\t;
  * @method BlueprintDef[] getAll()
  * @method BlueprintDef getDefault()
  */
-class BlueprintDefs extends BaseStringPrimaryCollection implements BlueprintCategoryInterface
+class BlueprintDefs extends BaseStringPrimaryCollection implements ItemCollectionInterface, BlueprintCategoryInterface
 {
     private static ?BlueprintDefs $instance = null;
     private JSONFile $dataFile;
