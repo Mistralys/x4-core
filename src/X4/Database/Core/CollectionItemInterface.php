@@ -33,4 +33,6 @@ interface CollectionItemInterface extends StringPrimaryRecordInterface
      * @return WareDef
      */
     public function getWare() : WareDef;
+
+    public function getVariantID() : VariantID;
 }
