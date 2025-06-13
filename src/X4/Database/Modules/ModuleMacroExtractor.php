@@ -42,7 +42,8 @@ class ModuleMacroExtractor
             ModuleDef::KEY_CARGO_CAPACITY => $this->resolveCargoCapacity(),
             ModuleDef::KEY_CARGO_TYPE => $this->resolveCargoType(),
             ModuleDef::KEY_DRONE_CAPACITY => $this->resolveDroneCapacity(),
-            ModuleDef::KEY_WARES_PRODUCED => $this->resolveProduction()
+            ModuleDef::KEY_WARES_PRODUCED => $this->resolveProduction(),
+            ModuleDef::KEY_VARIANT_ID => (string)$this->ware->getVariantID(),
         );
     }
 

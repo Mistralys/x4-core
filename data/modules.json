@@ -13,7 +13,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_conn_base_02",
@@ -29,7 +30,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_arg_conn_base_03",
@@ -45,7 +47,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_arg_conn_cross_01",
@@ -61,7 +64,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_conn_vertical_01",
@@ -77,7 +81,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_conn_vertical_02",
@@ -93,7 +98,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_arg_def_claim_01",
@@ -109,7 +115,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_def_disc_01",
@@ -125,7 +132,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_def_tube_01",
@@ -141,7 +149,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_dock_m_01",
@@ -157,7 +166,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_dock_m_01_hightech",
@@ -173,7 +183,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:hightech:"
     },
     {
         "wareID": "module_arg_dock_m_01_lowtech",
@@ -189,7 +200,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:lowtech:"
     },
     {
         "wareID": "module_arg_dock_m_02",
@@ -205,7 +217,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_arg_dock_m_02_hightech",
@@ -221,7 +234,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02:hightech:"
     },
     {
         "wareID": "module_arg_dock_m_02_lowtech",
@@ -237,7 +251,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02:lowtech:"
     },
     {
         "wareID": "module_arg_dock_tradestation_02",
@@ -253,7 +268,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_arg_hab_l_01",
@@ -269,7 +285,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_hab_m_01",
@@ -285,7 +302,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_hab_s_01",
@@ -301,7 +319,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_pier_l_01",
@@ -317,7 +336,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_pier_l_02",
@@ -333,7 +353,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 7,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_arg_pier_l_03",
@@ -349,7 +370,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_arg_pier_l_04",
@@ -365,7 +387,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "04::"
     },
     {
         "wareID": "module_arg_pier_tradestation_01",
@@ -381,7 +404,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 10,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_prod_foodrations_01",
@@ -399,7 +423,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "foodrations"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_prod_meat_01",
@@ -417,7 +442,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "meat"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_prod_medicalsupplies_01",
@@ -435,7 +461,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "medicalsupplies"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_prod_spacefuel_01",
@@ -453,7 +480,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "spacefuel"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_prod_wheat_01",
@@ -471,7 +499,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "wheat"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_radar_dish_01",
@@ -487,7 +516,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_container_l_01",
@@ -503,7 +533,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_container_m_01",
@@ -519,7 +550,8 @@
         "cargoCapacity": 250000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_container_s_01",
@@ -535,7 +567,8 @@
         "cargoCapacity": 50000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_liquid_l_01",
@@ -551,7 +584,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_liquid_m_01",
@@ -567,7 +601,8 @@
         "cargoCapacity": 500000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_liquid_s_01",
@@ -583,7 +618,8 @@
         "cargoCapacity": 100000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_solid_l_01",
@@ -599,7 +635,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_solid_m_01",
@@ -615,7 +652,8 @@
         "cargoCapacity": 500000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_solid_s_01",
@@ -631,7 +669,8 @@
         "cargoCapacity": 100000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_arg_stor_tradestation_l_01",
@@ -647,7 +686,8 @@
         "cargoCapacity": 300000,
         "cargoType": "container liquid solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_build_dockarea_m_01",
@@ -663,7 +703,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 80,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_build_l_01",
@@ -679,7 +720,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_build_xl_01",
@@ -695,7 +737,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 50,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_conn_base_01",
@@ -711,7 +754,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_conn_base_02",
@@ -727,7 +771,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_bor_conn_base_03",
@@ -743,7 +788,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_bor_conn_base_04",
@@ -759,7 +805,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "04::"
     },
     {
         "wareID": "module_bor_conn_base_05",
@@ -775,7 +822,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "05::"
     },
     {
         "wareID": "module_bor_conn_cross_01",
@@ -791,7 +839,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_conn_cross_02",
@@ -807,7 +856,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_bor_conn_vertical_01",
@@ -823,7 +873,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_conn_vertical_02",
@@ -839,7 +890,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_bor_def_claim_01",
@@ -855,7 +907,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_def_disc_01",
@@ -871,7 +924,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_def_tube_01",
@@ -887,7 +941,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_dock_m_01_standard",
@@ -903,7 +958,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:standard:"
     },
     {
         "wareID": "module_bor_equip_dockarea_m_01",
@@ -919,7 +975,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 80,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_equip_l_01",
@@ -935,7 +992,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_equip_xl_01",
@@ -951,7 +1009,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 50,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_hab_l_01",
@@ -967,7 +1026,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_hab_m_01",
@@ -983,7 +1043,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_hab_s_01",
@@ -999,7 +1060,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_pier_l_01",
@@ -1015,7 +1077,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_pier_l_02",
@@ -1031,7 +1094,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 7,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_bor_pier_l_03",
@@ -1047,7 +1111,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_bor_pier_l_04",
@@ -1063,7 +1128,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "04::"
     },
     {
         "wareID": "module_bor_pier_tradestation_01",
@@ -1079,7 +1145,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 10,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_prod_bofu_01",
@@ -1097,7 +1164,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "bofu"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_prod_bogas_01",
@@ -1115,7 +1183,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "bogas"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_prod_medicalsupplies_01",
@@ -1133,7 +1202,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "medicalsupplies"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_prod_plankton_01",
@@ -1151,7 +1221,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "plankton"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_container_l_01",
@@ -1167,7 +1238,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_container_m_01",
@@ -1183,7 +1255,8 @@
         "cargoCapacity": 250000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_container_s_01",
@@ -1199,7 +1272,8 @@
         "cargoCapacity": 50000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_liquid_l_01",
@@ -1215,7 +1289,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_liquid_m_01",
@@ -1231,7 +1306,8 @@
         "cargoCapacity": 500000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_liquid_s_01",
@@ -1247,7 +1323,8 @@
         "cargoCapacity": 100000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_solid_l_01",
@@ -1263,7 +1340,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_solid_m_01",
@@ -1279,7 +1357,8 @@
         "cargoCapacity": 500000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_bor_stor_solid_s_01",
@@ -1295,7 +1374,8 @@
         "cargoCapacity": 100000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_conn_arg_antigonearc_01",
@@ -1311,7 +1391,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_conn_arg_antigonescaffolding_01",
@@ -1327,7 +1408,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_conn_arg_antigonestraight_01",
@@ -1343,7 +1425,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_conn_lndm_piratestation_01_core_01",
@@ -1359,7 +1442,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:core-01:"
     },
     {
         "wareID": "module_conn_lndm_piratestation_01_exit_01",
@@ -1375,7 +1459,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:exit-01:"
     },
     {
         "wareID": "module_def_lndm_piratestation_02_ring_01",
@@ -1391,7 +1476,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02:ring-01:"
     },
     {
         "wareID": "module_gen_build_dockarea_m_01",
@@ -1407,7 +1493,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 80,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_build_l_01",
@@ -1423,7 +1510,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_build_m_01",
@@ -1439,7 +1527,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 30,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_build_s_01",
@@ -1455,7 +1544,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 30,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_build_xl_01",
@@ -1471,7 +1561,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 50,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_conn_observationdeck_01",
@@ -1487,7 +1578,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_conn_observationdeck_02",
@@ -1503,7 +1595,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_gen_conn_observationdeck_03",
@@ -1519,7 +1612,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_gen_conn_venturerbase_01",
@@ -1535,7 +1629,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_conn_venturerbase_02",
@@ -1551,7 +1646,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_gen_conn_venturerbase_03",
@@ -1567,7 +1663,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_gen_conn_venturercross_01",
@@ -1583,7 +1680,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_conn_venturervertical_01",
@@ -1599,7 +1697,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_conn_venturervertical_02",
@@ -1615,7 +1714,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_gen_dock_m_venturer_01",
@@ -1631,7 +1731,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_dock_xl_venturer_01",
@@ -1647,7 +1748,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_equip_dockarea_m_01",
@@ -1663,7 +1765,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 80,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_equip_l_01",
@@ -1679,7 +1782,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_equip_xl_01",
@@ -1695,7 +1799,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 50,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_proc_scrapworks",
@@ -1711,7 +1816,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "::"
     },
     {
         "wareID": "module_gen_prod_advancedcomposites_01",
@@ -1729,7 +1835,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "advancedcomposites"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_advancedelectronics_01",
@@ -1747,7 +1854,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "advancedelectronics"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_antimattercells_01",
@@ -1765,7 +1873,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "antimattercells"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_antimatterconverters_01",
@@ -1783,7 +1892,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "antimatterconverters"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_claytronics_01",
@@ -1801,7 +1911,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "claytronics"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_dronecomponents_01",
@@ -1819,7 +1930,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "dronecomponents"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_energycells_01",
@@ -1837,7 +1949,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "energycells"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_engineparts_01",
@@ -1855,7 +1968,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "engineparts"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_fieldcoils_01",
@@ -1873,7 +1987,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "fieldcoils"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_graphene_01",
@@ -1891,7 +2006,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "graphene"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_hullparts_01",
@@ -1909,7 +2025,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "hullparts"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_microchips_01",
@@ -1927,7 +2044,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "microchips"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_missilecomponents_01",
@@ -1945,7 +2063,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "missilecomponents"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_plasmaconductors_01",
@@ -1963,7 +2082,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "plasmaconductors"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_quantumtubes_01",
@@ -1981,7 +2101,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "quantumtubes"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_refinedmetals_01",
@@ -1999,7 +2120,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "refinedmetals"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_scanningarrays_01",
@@ -2017,7 +2139,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "scanningarrays"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_scrap_recycler",
@@ -2036,7 +2159,8 @@
         "waresProduced": [
             "claytronics",
             "hullparts"
-        ]
+        ],
+        "variantID": "::"
     },
     {
         "wareID": "module_gen_prod_shieldcomponents_01",
@@ -2054,7 +2178,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "shieldcomponents"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_siliconwafers_01",
@@ -2072,7 +2197,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "siliconwafers"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_smartchips_01",
@@ -2090,7 +2216,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "smartchips"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_spices_01",
@@ -2108,7 +2235,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "spices"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_superfluidcoolant_01",
@@ -2126,7 +2254,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "superfluidcoolant"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_turretcomponents_01",
@@ -2144,7 +2273,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "turretcomponents"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_water_01",
@@ -2162,7 +2292,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "water"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_weaponcomponents_01",
@@ -2180,7 +2311,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "weaponcomponents"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_ventureplatform_cross_01",
@@ -2196,7 +2328,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_welfare_casino_01",
@@ -2212,7 +2345,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_welfare_gamblinghall_01",
@@ -2228,7 +2362,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_hab_arg_antigonepillar_01",
@@ -2244,7 +2379,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_hab_arg_antigonespire_01",
@@ -2260,7 +2396,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_hab_lndm_piratestation_01_port_01",
@@ -2276,7 +2413,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:port-01:"
     },
     {
         "wareID": "module_hab_lndm_piratestation_02_port_01",
@@ -2292,7 +2430,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02:port-01:"
     },
     {
         "wareID": "module_hab_lndm_piratestation_02_ring_02",
@@ -2308,7 +2447,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02:ring-02:"
     },
     {
         "wareID": "module_par_conn_base_01",
@@ -2324,7 +2464,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_conn_base_02",
@@ -2340,7 +2481,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_par_conn_base_03",
@@ -2356,7 +2498,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_par_conn_cross_01",
@@ -2372,7 +2515,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_conn_cross_02",
@@ -2388,7 +2532,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_par_conn_cross_03",
@@ -2404,7 +2549,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_par_conn_vertical_01",
@@ -2420,7 +2566,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_conn_vertical_02",
@@ -2436,7 +2583,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_par_def_claim_01",
@@ -2452,7 +2600,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_def_claim_story_01",
@@ -2468,7 +2617,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_def_disc_01",
@@ -2484,7 +2634,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_def_tube_01",
@@ -2500,7 +2651,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_hab_l_01",
@@ -2516,7 +2668,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_hab_m_01",
@@ -2532,7 +2685,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_hab_s_01",
@@ -2548,7 +2702,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_pier_l_01",
@@ -2564,7 +2719,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 21,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_pier_l_02",
@@ -2580,7 +2736,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 9,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_par_pier_l_03",
@@ -2596,7 +2753,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 21,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_par_prod_majadust_01",
@@ -2614,7 +2772,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "majadust"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_prod_majasnails_01",
@@ -2632,7 +2791,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "majasnails"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_prod_medicalsupplies_01",
@@ -2650,7 +2810,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "medicalsupplies"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_prod_sojabeans_01",
@@ -2668,7 +2829,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "sojabeans"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_prod_sojahusk_01",
@@ -2686,7 +2848,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "sojahusk"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_container_l_01",
@@ -2702,7 +2865,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_container_m_01",
@@ -2718,7 +2882,8 @@
         "cargoCapacity": 250000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_container_s_01",
@@ -2734,7 +2899,8 @@
         "cargoCapacity": 50000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_landmark_l_01",
@@ -2750,7 +2916,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_liquid_l_01",
@@ -2766,7 +2933,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_liquid_m_01",
@@ -2782,7 +2950,8 @@
         "cargoCapacity": 500000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_liquid_s_01",
@@ -2798,7 +2967,8 @@
         "cargoCapacity": 100000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_solid_l_01",
@@ -2814,7 +2984,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_solid_m_01",
@@ -2830,7 +3001,8 @@
         "cargoCapacity": 500000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_par_stor_solid_s_01",
@@ -2846,7 +3018,8 @@
         "cargoCapacity": 100000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_pir_hab_l_01",
@@ -2862,7 +3035,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_pir_hab_m_01",
@@ -2878,7 +3052,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_pir_hab_s_01",
@@ -2894,7 +3069,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_pir_stor_condensate_l_01",
@@ -2910,7 +3086,8 @@
         "cargoCapacity": 50,
         "cargoType": "condensate",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_pir_stor_condensate_s_01",
@@ -2926,7 +3103,8 @@
         "cargoCapacity": 10000,
         "cargoType": "condensate",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_player_prod_hq_01_macro",
@@ -2942,7 +3120,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": []
+        "waresProduced": [],
+        "variantID": "01:macro:"
     },
     {
         "wareID": "module_spl_conn_base_01",
@@ -2958,7 +3137,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_conn_base_02",
@@ -2974,7 +3154,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_spl_conn_base_03",
@@ -2990,7 +3171,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_spl_conn_cross_01",
@@ -3006,7 +3188,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_conn_vertical_01",
@@ -3022,7 +3205,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_conn_vertical_02",
@@ -3038,7 +3222,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_spl_def_claim_01",
@@ -3054,7 +3239,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_def_disc_01",
@@ -3070,7 +3256,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_def_tube_01",
@@ -3086,7 +3273,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_hab_l_01",
@@ -3102,7 +3290,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_hab_m_01",
@@ -3118,7 +3307,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_hab_s_01",
@@ -3134,7 +3324,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_pier_l_01",
@@ -3150,7 +3341,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 28,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_pier_l_02",
@@ -3166,7 +3358,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 7,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_spl_pier_l_03",
@@ -3182,7 +3375,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_spl_prod_cheltmeat_01",
@@ -3200,7 +3394,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "cheltmeat"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_prod_medicalsupplies_01",
@@ -3218,7 +3413,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "medicalsupplies"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_prod_scruffinfruits_01",
@@ -3236,7 +3432,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "scruffinfruits"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_container_l_01",
@@ -3252,7 +3449,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_container_m_01",
@@ -3268,7 +3466,8 @@
         "cargoCapacity": 250000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_container_s_01",
@@ -3284,7 +3483,8 @@
         "cargoCapacity": 50000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_liquid_l_01",
@@ -3300,7 +3500,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_liquid_m_01",
@@ -3316,7 +3517,8 @@
         "cargoCapacity": 500000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_liquid_s_01",
@@ -3332,7 +3534,8 @@
         "cargoCapacity": 100000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_solid_l_01",
@@ -3348,7 +3551,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_solid_m_01",
@@ -3364,7 +3568,8 @@
         "cargoCapacity": 500000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_spl_stor_solid_s_01",
@@ -3380,7 +3585,8 @@
         "cargoCapacity": 100000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_stor_lndm_piratestation_01_ring_01",
@@ -3396,7 +3602,8 @@
         "cargoCapacity": 50000,
         "cargoType": "condensate",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:ring-01:"
     },
     {
         "wareID": "module_stor_lndm_piratestation_02_storage_01",
@@ -3412,7 +3619,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02:storage-01:"
     },
     {
         "wareID": "module_stor_lndm_piratestation_02_storage_02",
@@ -3428,7 +3636,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02:storage-02:"
     },
     {
         "wareID": "module_tel_conn_base_01",
@@ -3444,7 +3653,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_conn_base_02",
@@ -3460,7 +3670,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_tel_conn_base_03",
@@ -3476,7 +3687,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_tel_conn_cross_01",
@@ -3492,7 +3704,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_conn_vertical_01",
@@ -3508,7 +3721,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_conn_vertical_02",
@@ -3524,7 +3738,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_tel_def_claim_01",
@@ -3540,7 +3755,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_def_disc_01",
@@ -3556,7 +3772,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_def_tube_01",
@@ -3572,7 +3789,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_hab_l_01",
@@ -3588,7 +3806,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_hab_m_01",
@@ -3604,7 +3823,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_hab_s_01",
@@ -3620,7 +3840,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_pier_l_01",
@@ -3636,7 +3857,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_pier_l_02",
@@ -3652,7 +3874,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 7,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_tel_pier_l_03",
@@ -3668,7 +3891,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_tel_prod_advancedcomposites_01",
@@ -3686,7 +3910,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "advancedcomposites"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_engineparts_01",
@@ -3704,7 +3929,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "engineparts"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_hullparts_01",
@@ -3722,7 +3948,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "hullparts"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_medicalsupplies_01",
@@ -3740,7 +3967,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "medicalsupplies"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_nostropoil_01",
@@ -3758,7 +3986,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "nostropoil"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_scanningarrays_01",
@@ -3776,7 +4005,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "scanningarrays"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_spaceweed_01",
@@ -3794,7 +4024,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "spaceweed"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_sunriseflowers_01",
@@ -3812,7 +4043,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "sunriseflowers"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_swampplant_01",
@@ -3830,7 +4062,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "swampplant"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_prod_teladianium_01",
@@ -3848,7 +4081,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "teladianium"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_container_l_01",
@@ -3864,7 +4098,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_container_m_01",
@@ -3880,7 +4115,8 @@
         "cargoCapacity": 250000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_container_s_01",
@@ -3896,7 +4132,8 @@
         "cargoCapacity": 50000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_liquid_l_01",
@@ -3912,7 +4149,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_liquid_m_01",
@@ -3928,7 +4166,8 @@
         "cargoCapacity": 500000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_liquid_s_01",
@@ -3944,7 +4183,8 @@
         "cargoCapacity": 100000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_solid_l_01",
@@ -3960,7 +4200,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_solid_m_01",
@@ -3976,7 +4217,8 @@
         "cargoCapacity": 500000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_stor_solid_s_01",
@@ -3992,7 +4234,8 @@
         "cargoCapacity": 100000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_conn_bridge_01",
@@ -4008,7 +4251,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_conn_centercylinder_01",
@@ -4024,7 +4268,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_conn_centerfill_01",
@@ -4040,7 +4285,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_conn_column_01",
@@ -4056,7 +4302,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_conn_column_02",
@@ -4072,7 +4319,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_tel_tradestation_conn_inside_ring_03",
@@ -4088,7 +4336,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_tel_tradestation_conn_radar_01",
@@ -4104,7 +4353,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_conn_ring_01",
@@ -4120,7 +4370,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_def_centerend_01",
@@ -4136,7 +4387,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_def_center_01",
@@ -4152,7 +4404,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_def_extension_01",
@@ -4168,7 +4421,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_def_ringcenter_01",
@@ -4184,7 +4438,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_def_ringclamp_01",
@@ -4200,7 +4455,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_def_ringclamp_02",
@@ -4216,7 +4472,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_tel_tradestation_dock_m_dockarea_01",
@@ -4232,7 +4489,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_hab_inside_ring_01",
@@ -4248,7 +4506,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_hab_inside_ring_02",
@@ -4264,7 +4523,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_tel_tradestation_pier_tradelocation_01",
@@ -4280,7 +4540,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 5,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_stor_storage_01",
@@ -4296,7 +4557,8 @@
         "cargoCapacity": 100000,
         "cargoType": "container liquid solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_tel_tradestation_stor_storage_ring_01",
@@ -4312,7 +4574,8 @@
         "cargoCapacity": 400000,
         "cargoType": "container liquid solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_build_dockarea_m_01",
@@ -4328,7 +4591,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 80,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_build_l_01",
@@ -4344,7 +4608,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_build_xl_01",
@@ -4360,7 +4625,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 50,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_conn_base_01",
@@ -4376,7 +4642,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_conn_base_02",
@@ -4392,7 +4659,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_ter_conn_base_03",
@@ -4408,7 +4676,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_ter_conn_cross_01",
@@ -4424,7 +4693,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_conn_vertical_01",
@@ -4440,7 +4710,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_conn_vertical_02",
@@ -4456,7 +4727,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_ter_def_claim_01",
@@ -4472,7 +4744,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_def_disc_01",
@@ -4488,7 +4761,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_def_tube_01",
@@ -4504,7 +4778,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 15,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_dock_m_01_hightech",
@@ -4520,7 +4795,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01:hightech:"
     },
     {
         "wareID": "module_ter_equip_dockarea_m_01",
@@ -4536,7 +4812,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 80,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_equip_l_01",
@@ -4552,7 +4829,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_equip_xl_01",
@@ -4568,7 +4846,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 50,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_hab_l_01",
@@ -4584,7 +4863,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_hab_m_01",
@@ -4600,7 +4880,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_hab_s_01",
@@ -4616,7 +4897,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_pier_01",
@@ -4632,7 +4914,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_pier_02",
@@ -4648,7 +4931,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 7,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_ter_pier_03",
@@ -4664,7 +4948,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 20,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "03::"
     },
     {
         "wareID": "module_ter_pier_04",
@@ -4680,7 +4965,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 2,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "04::"
     },
     {
         "wareID": "module_ter_pier_tradestation_01",
@@ -4696,7 +4982,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 10,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_computronicsubstrate_01",
@@ -4714,7 +5001,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "computronicsubstrate"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_energycells_01",
@@ -4732,7 +5020,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "energycells"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_medicalsupplies_01",
@@ -4750,7 +5039,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "medicalsupplies"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_metallicmicrolattice_01",
@@ -4768,7 +5058,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "metallicmicrolattice"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_proteinpaste_01",
@@ -4786,7 +5077,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "proteinpaste"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_scrap_recycler",
@@ -4805,7 +5097,8 @@
         "waresProduced": [
             "computronicsubstrate",
             "siliconcarbide"
-        ]
+        ],
+        "variantID": "::"
     },
     {
         "wareID": "module_ter_prod_siliconcarbide_01",
@@ -4823,7 +5116,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "siliconcarbide"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_stimulants_01",
@@ -4841,7 +5135,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "stimulants"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_prod_terranmre_01",
@@ -4859,7 +5154,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "terranmre"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_container_l_01",
@@ -4875,7 +5171,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_container_m_01",
@@ -4891,7 +5188,8 @@
         "cargoCapacity": 500000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_container_m_tradestation",
@@ -4907,7 +5205,8 @@
         "cargoCapacity": 300000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "::"
     },
     {
         "wareID": "module_ter_stor_container_s_01",
@@ -4923,7 +5222,8 @@
         "cargoCapacity": 100000,
         "cargoType": "container",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_liquid_l_01",
@@ -4939,7 +5239,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_liquid_m_01",
@@ -4955,7 +5256,8 @@
         "cargoCapacity": 500000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_liquid_s_01",
@@ -4971,7 +5273,8 @@
         "cargoCapacity": 100000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_liquid_s_tradestation",
@@ -4987,7 +5290,8 @@
         "cargoCapacity": 100000,
         "cargoType": "liquid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "::"
     },
     {
         "wareID": "module_ter_stor_solid_l_01",
@@ -5003,7 +5307,8 @@
         "cargoCapacity": 1000000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_solid_m_01",
@@ -5019,7 +5324,8 @@
         "cargoCapacity": 500000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_ter_stor_solid_s_01",
@@ -5035,7 +5341,8 @@
         "cargoCapacity": 100000,
         "cargoType": "solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_xen_build_m_01",
@@ -5051,7 +5358,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 21,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_xen_build_s_01",
@@ -5067,7 +5375,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 30,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_xen_build_xl_01",
@@ -5083,7 +5392,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 30,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_xen_def_base_01",
@@ -5099,7 +5409,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 25,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_xen_dock_m_01",
@@ -5115,7 +5426,8 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 40,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_xen_prod_energycells_01",
@@ -5133,7 +5445,8 @@
         "droneCapacity": 0,
         "waresProduced": [
             "energycells"
-        ]
+        ],
+        "variantID": "01::"
     },
     {
         "wareID": "module_xen_stor_01",
@@ -5149,7 +5462,8 @@
         "cargoCapacity": 250000,
         "cargoType": "container liquid solid",
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "welfare_bor_artacademy_01",
@@ -5165,6 +5479,7 @@
         "cargoCapacity": 0,
         "cargoType": null,
         "droneCapacity": 0,
-        "waresProduced": null
+        "waresProduced": null,
+        "variantID": "01::"
     }
 ]

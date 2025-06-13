@@ -7,6 +7,7 @@ namespace Mistralys\X4\Database\Modules;
 use AppUtils\ArrayDataCollection;
 use Mistralys\X4\Database\Core\CollectionItemInterface;
 use Mistralys\X4\Database\Core\CollectionItemTrait;
+use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
 
@@ -28,6 +29,7 @@ class ModuleDef implements CollectionItemInterface
     public const KEY_LABEL = 'label';
     public const KEY_WARE_ID = 'wareID';
     public const KEY_MACRO_ID = 'macroID';
+    public const KEY_VARIANT_ID = 'variantID';
 
     private string $wareID;
     private string $label;
@@ -41,6 +43,7 @@ class ModuleDef implements CollectionItemInterface
     private string $cargoType;
     private int $housingCapacity;
     private string $housingFactionID;
+    private VariantID $variantID;
 
     public function __construct(
         string $wareID,
@@ -54,7 +57,8 @@ class ModuleDef implements CollectionItemInterface
         int $cargoCapacity,
         string $cargoType,
         int $housingCapacity,
-        string $housingFactionID
+        string $housingFactionID,
+        VariantID $variantID
     )
     {
         $this->wareID = $wareID;
@@ -69,6 +73,7 @@ class ModuleDef implements CollectionItemInterface
         $this->cargoType = $cargoType;
         $this->housingCapacity = $housingCapacity;
         $this->housingFactionID = $housingFactionID;
+        $this->variantID = $variantID;
     }
 
     public static function fromArray(mixed $moduleDef) : ModuleDef
@@ -87,7 +92,8 @@ class ModuleDef implements CollectionItemInterface
             $data->getInt(self::KEY_CARGO_CAPACITY),
             $data->getString(self::KEY_CARGO_TYPE),
             $data->getInt(self::KEY_HOUSING_CAPACITY),
-            $data->getString(self::KEY_HOUSING_FACTION_ID)
+            $data->getString(self::KEY_HOUSING_FACTION_ID),
+            VariantID::fromID($data->getString(self::KEY_VARIANT_ID))
         );
     }
 
@@ -99,6 +105,11 @@ class ModuleDef implements CollectionItemInterface
     public function getLabel() : string
     {
         return $this->label;
+    }
+
+    public function getVariantID(): VariantID
+    {
+        return $this->variantID;
     }
 
     public function getMacroID() : string

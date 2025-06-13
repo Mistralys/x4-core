@@ -10,6 +10,9 @@ namespace Mistralys\X4\Database\Wares;
 
 use AppUtils\ArrayDataCollection;
 use AppUtils\Interfaces\StringPrimaryRecordInterface;
+use Mistralys\X4\Database\Core\CollectionItemInterface;
+use Mistralys\X4\Database\Core\CollectionItemTrait;
+use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\DataSources\DataSourceDefs;
 use Mistralys\X4\Database\MacroIndex\MacroFileDef;
@@ -23,15 +26,18 @@ use Mistralys\X4\Database\Factions\FactionDefs;
  * @package X4 Database
  * @subpackage Wares
  */
-class WareDef implements StringPrimaryRecordInterface
+class WareDef implements CollectionItemInterface
 {
-    public const KEY_ID = 'id';
+    use CollectionItemTrait;
+
+    public const KEY_WARE_ID = 'wareID';
     public const KEY_LABEL = 'label';
     public const KEY_GROUP = 'group';
     public const KEY_TAGS = 'tags';
     public const KEY_DATA_SOURCE_ID = 'dataSourceID';
     public const KEY_FACTIONS = 'factions';
     public const KEY_MACRO_ID = 'macroID';
+    public const KEY_VARIANT_ID = 'variantID';
 
     private string $id;
     private string $label;
@@ -50,22 +56,25 @@ class WareDef implements StringPrimaryRecordInterface
      */
     private array $factionIDs;
     private string $macroID;
+    private VariantID $variantID;
 
     /**
      * @param string $id
      * @param string $macroID
      * @param string $label
      * @param string $groupID
+     * @param VariantID $variantID
      * @param string[] $tags
      * @param string $dataSourceID
      * @param string[] $factionIDs
      */
-    public function __construct(string $id, string $macroID, string $label, string $groupID, array $tags, string $dataSourceID, array $factionIDs)
+    public function __construct(string $id, string $macroID, string $label, string $groupID, VariantID $variantID, array $tags, string $dataSourceID, array $factionIDs)
     {
         $this->id = $id;
         $this->label = $label;
         $this->groupID = $groupID;
         $this->macroID = $macroID;
+        $this->variantID = $variantID;
         $this->tags = $tags;
         $this->dataSourceID = $dataSourceID;
         $this->factionIDs = $factionIDs;
@@ -79,6 +88,16 @@ class WareDef implements StringPrimaryRecordInterface
     public function getLabel() : string
     {
         return $this->label;
+    }
+
+    public function getVariantID(): VariantID
+    {
+        return $this->variantID;
+    }
+
+    public function getWare(): WareDef
+    {
+        return $this;
     }
 
     public function getGroupID() : string
@@ -157,10 +176,11 @@ class WareDef implements StringPrimaryRecordInterface
         $data = ArrayDataCollection::create($wareDef);
 
         return new WareDef(
-            $data->getString(self::KEY_ID),
+            $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_MACRO_ID),
             $data->getString(self::KEY_LABEL),
             $data->getString(self::KEY_GROUP),
+            VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
             $data->getArray(self::KEY_TAGS),
             $data->getString(self::KEY_DATA_SOURCE_ID),
             $data->getArray(self::KEY_FACTIONS)
@@ -175,9 +195,10 @@ class WareDef implements StringPrimaryRecordInterface
     public function toArray() : array
     {
         return array(
-            self::KEY_ID => $this->getID(),
+            self::KEY_WARE_ID => $this->getID(),
             self::KEY_LABEL => $this->getLabel(),
             self::KEY_GROUP => $this->getGroupID(),
+            self::KEY_VARIANT_ID => $this->getVariantID()->getID(),
             self::KEY_TAGS => $this->getTags(),
             self::KEY_DATA_SOURCE_ID => $this->getDataSourceID(),
             self::KEY_FACTIONS => $this->getFactionIDs(),
