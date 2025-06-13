@@ -13,12 +13,12 @@ use Mistralys\X4\Database\Blueprints\Categories\Types\DroneCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\EngineCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\MineCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\MissileCategory;
+use Mistralys\X4\Database\Blueprints\Categories\Types\ModuleCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\ShieldCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\ShipCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\ThrusterCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\TurretCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\WeaponCategory;
-use Mistralys\X4\Database\Modules\ModuleCategory;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\Database\Wares\WareDefs;
 use Mistralys\X4\Database\Wares\WareGroups;
@@ -81,7 +81,6 @@ class BlueprintExtractor
         $categoryID = $this->detectCategoryClass($def);
 
         if($categoryID === null) {
-            print_r($def->toArray());
             $text = $def->getGroupID().' = '.$categoryID.' ('.implode(', ', $def->getTags()).')'.PHP_EOL;
 
             if(!in_array($text, $this->summary)) {
@@ -93,7 +92,8 @@ class BlueprintExtractor
         }
 
         $this->blueprints[] = array(
-            BlueprintDef::KEY_ID => $def->getID(),
+            BlueprintDef::KEY_WARE_ID => $def->getID(),
+            BlueprintDef::KEY_LABEL => $def->getLabel(),
             BlueprintDef::KEY_CATEGORY_ID => $categoryID
         );
     }

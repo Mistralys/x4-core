@@ -1,4066 +1,5082 @@
 [
     {
-        "id": "countermeasure_flares_01",
+        "wareID": "countermeasure_flares_01",
+        "label": "Flares",
         "categoryID": "countermeasures"
     },
     {
-        "id": "engine_arg_l_allround_01_mk1",
+        "wareID": "engine_arg_l_allround_01_mk1",
+        "label": "ARG L All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_l_travel_01_mk1",
+        "wareID": "engine_arg_l_travel_01_mk1",
+        "label": "ARG L Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_allround_01_mk1",
+        "wareID": "engine_arg_m_allround_01_mk1",
+        "label": "ARG M All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_allround_01_mk2",
+        "wareID": "engine_arg_m_allround_01_mk2",
+        "label": "ARG M All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_allround_01_mk3",
+        "wareID": "engine_arg_m_allround_01_mk3",
+        "label": "ARG M All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_combat_01_mk1",
+        "wareID": "engine_arg_m_combat_01_mk1",
+        "label": "ARG M Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_combat_01_mk2",
+        "wareID": "engine_arg_m_combat_01_mk2",
+        "label": "ARG M Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_combat_01_mk3",
+        "wareID": "engine_arg_m_combat_01_mk3",
+        "label": "ARG M Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_travel_01_mk1",
+        "wareID": "engine_arg_m_travel_01_mk1",
+        "label": "ARG M Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_travel_01_mk2",
+        "wareID": "engine_arg_m_travel_01_mk2",
+        "label": "ARG M Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_m_travel_01_mk3",
+        "wareID": "engine_arg_m_travel_01_mk3",
+        "label": "ARG M Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_allround_01_mk1",
+        "wareID": "engine_arg_s_allround_01_mk1",
+        "label": "ARG S All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_allround_01_mk2",
+        "wareID": "engine_arg_s_allround_01_mk2",
+        "label": "ARG S All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_allround_01_mk3",
+        "wareID": "engine_arg_s_allround_01_mk3",
+        "label": "ARG S All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_combat_01_mk1",
+        "wareID": "engine_arg_s_combat_01_mk1",
+        "label": "ARG S Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_combat_01_mk2",
+        "wareID": "engine_arg_s_combat_01_mk2",
+        "label": "ARG S Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_combat_01_mk3",
+        "wareID": "engine_arg_s_combat_01_mk3",
+        "label": "ARG S Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_racer_01_mk1",
+        "wareID": "engine_arg_s_racer_01_mk1",
+        "label": "ARG S Racing Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_travel_01_mk1",
+        "wareID": "engine_arg_s_travel_01_mk1",
+        "label": "ARG S Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_travel_01_mk2",
+        "wareID": "engine_arg_s_travel_01_mk2",
+        "label": "ARG S Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_s_travel_01_mk3",
+        "wareID": "engine_arg_s_travel_01_mk3",
+        "label": "ARG S Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_xl_allround_01_mk1",
+        "wareID": "engine_arg_xl_allround_01_mk1",
+        "label": "ARG XL All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_arg_xl_travel_01_mk1",
+        "wareID": "engine_arg_xl_travel_01_mk1",
+        "label": "ARG XL Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_l_travel_01_mk1",
+        "wareID": "engine_bor_l_travel_01_mk1",
+        "label": "BOR L All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_m_allround_01_mk1",
+        "wareID": "engine_bor_m_allround_01_mk1",
+        "label": "BOR M All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_m_allround_01_mk2",
+        "wareID": "engine_bor_m_allround_01_mk2",
+        "label": "BOR M All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_m_allround_01_mk3",
+        "wareID": "engine_bor_m_allround_01_mk3",
+        "label": "BOR M All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_s_allround_01_mk1",
+        "wareID": "engine_bor_s_allround_01_mk1",
+        "label": "BOR S All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_s_allround_01_mk2",
+        "wareID": "engine_bor_s_allround_01_mk2",
+        "label": "BOR S All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_s_allround_01_mk3",
+        "wareID": "engine_bor_s_allround_01_mk3",
+        "label": "BOR S All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_bor_xl_travel_01_mk1",
+        "wareID": "engine_bor_xl_travel_01_mk1",
+        "label": "BOR XL All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_gen_s_racer_01_mk1",
+        "wareID": "engine_gen_s_racer_01_mk1",
+        "label": "S Racing Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_gen_s_racer_01_mk2",
+        "wareID": "engine_gen_s_racer_01_mk2",
+        "label": "S Racing Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_l_allround_01_mk1",
+        "wareID": "engine_par_l_allround_01_mk1",
+        "label": "PAR L All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_l_travel_01_mk1",
+        "wareID": "engine_par_l_travel_01_mk1",
+        "label": "PAR L Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_allround_01_mk1",
+        "wareID": "engine_par_m_allround_01_mk1",
+        "label": "PAR M All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_allround_01_mk2",
+        "wareID": "engine_par_m_allround_01_mk2",
+        "label": "PAR M All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_allround_01_mk3",
+        "wareID": "engine_par_m_allround_01_mk3",
+        "label": "PAR M All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_combat_01_mk1",
+        "wareID": "engine_par_m_combat_01_mk1",
+        "label": "PAR M Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_combat_01_mk2",
+        "wareID": "engine_par_m_combat_01_mk2",
+        "label": "PAR M Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_combat_01_mk3",
+        "wareID": "engine_par_m_combat_01_mk3",
+        "label": "PAR M Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_travel_01_mk1",
+        "wareID": "engine_par_m_travel_01_mk1",
+        "label": "PAR M Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_travel_01_mk2",
+        "wareID": "engine_par_m_travel_01_mk2",
+        "label": "PAR M Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_m_travel_01_mk3",
+        "wareID": "engine_par_m_travel_01_mk3",
+        "label": "PAR M Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_allround_01_mk1",
+        "wareID": "engine_par_s_allround_01_mk1",
+        "label": "PAR S All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_allround_01_mk2",
+        "wareID": "engine_par_s_allround_01_mk2",
+        "label": "PAR S All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_allround_01_mk3",
+        "wareID": "engine_par_s_allround_01_mk3",
+        "label": "PAR S All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_combat_01_mk1",
+        "wareID": "engine_par_s_combat_01_mk1",
+        "label": "PAR S Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_combat_01_mk2",
+        "wareID": "engine_par_s_combat_01_mk2",
+        "label": "PAR S Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_combat_01_mk3",
+        "wareID": "engine_par_s_combat_01_mk3",
+        "label": "PAR S Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_racer_01_mk1",
+        "wareID": "engine_par_s_racer_01_mk1",
+        "label": "PAR S Racing Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_travel_01_mk1",
+        "wareID": "engine_par_s_travel_01_mk1",
+        "label": "PAR S Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_travel_01_mk2",
+        "wareID": "engine_par_s_travel_01_mk2",
+        "label": "PAR S Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_s_travel_01_mk3",
+        "wareID": "engine_par_s_travel_01_mk3",
+        "label": "PAR S Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_xl_allround_01_mk1",
+        "wareID": "engine_par_xl_allround_01_mk1",
+        "label": "PAR XL All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_par_xl_travel_01_mk1",
+        "wareID": "engine_par_xl_travel_01_mk1",
+        "label": "PAR XL Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_pir_xl_battleship_01_allround_01_mk1",
+        "wareID": "engine_pir_xl_battleship_01_allround_01_mk1",
+        "label": "Erlking XL Engine",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_l_allround_01_mk1",
+        "wareID": "engine_spl_l_allround_01_mk1",
+        "label": "SPL L All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_l_travel_01_mk1",
+        "wareID": "engine_spl_l_travel_01_mk1",
+        "label": "SPL L Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_allround_01_mk1",
+        "wareID": "engine_spl_m_allround_01_mk1",
+        "label": "SPL M All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_allround_01_mk2",
+        "wareID": "engine_spl_m_allround_01_mk2",
+        "label": "SPL M All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_allround_01_mk3",
+        "wareID": "engine_spl_m_allround_01_mk3",
+        "label": "SPL M All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_combat_01_mk1",
+        "wareID": "engine_spl_m_combat_01_mk1",
+        "label": "SPL M Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_combat_01_mk2",
+        "wareID": "engine_spl_m_combat_01_mk2",
+        "label": "SPL M Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_combat_01_mk3",
+        "wareID": "engine_spl_m_combat_01_mk3",
+        "label": "SPL M Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_combat_01_mk4",
+        "wareID": "engine_spl_m_combat_01_mk4",
+        "label": "SPL M Combat Engine Mk4",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_travel_01_mk1",
+        "wareID": "engine_spl_m_travel_01_mk1",
+        "label": "SPL M Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_travel_01_mk2",
+        "wareID": "engine_spl_m_travel_01_mk2",
+        "label": "SPL M Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_m_travel_01_mk3",
+        "wareID": "engine_spl_m_travel_01_mk3",
+        "label": "SPL M Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_allround_01_mk1",
+        "wareID": "engine_spl_s_allround_01_mk1",
+        "label": "SPL S All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_allround_01_mk2",
+        "wareID": "engine_spl_s_allround_01_mk2",
+        "label": "SPL S All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_allround_01_mk3",
+        "wareID": "engine_spl_s_allround_01_mk3",
+        "label": "SPL S All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_combat_01_mk1",
+        "wareID": "engine_spl_s_combat_01_mk1",
+        "label": "SPL S Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_combat_01_mk2",
+        "wareID": "engine_spl_s_combat_01_mk2",
+        "label": "SPL S Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_combat_01_mk3",
+        "wareID": "engine_spl_s_combat_01_mk3",
+        "label": "SPL S Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_combat_01_mk4",
+        "wareID": "engine_spl_s_combat_01_mk4",
+        "label": "SPL S Combat Engine Mk4",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_travel_01_mk1",
+        "wareID": "engine_spl_s_travel_01_mk1",
+        "label": "SPL S Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_travel_01_mk2",
+        "wareID": "engine_spl_s_travel_01_mk2",
+        "label": "SPL S Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_s_travel_01_mk3",
+        "wareID": "engine_spl_s_travel_01_mk3",
+        "label": "SPL S Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_xl_allround_01_mk1",
+        "wareID": "engine_spl_xl_allround_01_mk1",
+        "label": "SPL XL All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_spl_xl_travel_01_mk1",
+        "wareID": "engine_spl_xl_travel_01_mk1",
+        "label": "SPL XL Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_l_allround_01_mk1",
+        "wareID": "engine_tel_l_allround_01_mk1",
+        "label": "TEL L All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_l_travel_01_mk1",
+        "wareID": "engine_tel_l_travel_01_mk1",
+        "label": "TEL L Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_allround_01_mk1",
+        "wareID": "engine_tel_m_allround_01_mk1",
+        "label": "TEL M All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_allround_01_mk2",
+        "wareID": "engine_tel_m_allround_01_mk2",
+        "label": "TEL M All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_allround_01_mk3",
+        "wareID": "engine_tel_m_allround_01_mk3",
+        "label": "TEL M All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_combat_01_mk1",
+        "wareID": "engine_tel_m_combat_01_mk1",
+        "label": "TEL M Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_combat_01_mk2",
+        "wareID": "engine_tel_m_combat_01_mk2",
+        "label": "TEL M Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_combat_01_mk3",
+        "wareID": "engine_tel_m_combat_01_mk3",
+        "label": "TEL M Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_travel_01_mk1",
+        "wareID": "engine_tel_m_travel_01_mk1",
+        "label": "TEL M Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_travel_01_mk2",
+        "wareID": "engine_tel_m_travel_01_mk2",
+        "label": "TEL M Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_m_travel_01_mk3",
+        "wareID": "engine_tel_m_travel_01_mk3",
+        "label": "TEL M Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_allround_01_mk1",
+        "wareID": "engine_tel_s_allround_01_mk1",
+        "label": "TEL S All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_allround_01_mk2",
+        "wareID": "engine_tel_s_allround_01_mk2",
+        "label": "TEL S All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_allround_01_mk3",
+        "wareID": "engine_tel_s_allround_01_mk3",
+        "label": "TEL S All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_combat_01_mk1",
+        "wareID": "engine_tel_s_combat_01_mk1",
+        "label": "TEL S Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_combat_01_mk2",
+        "wareID": "engine_tel_s_combat_01_mk2",
+        "label": "TEL S Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_combat_01_mk3",
+        "wareID": "engine_tel_s_combat_01_mk3",
+        "label": "TEL S Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_racer_01_mk1",
+        "wareID": "engine_tel_s_racer_01_mk1",
+        "label": "TEL S Racing Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_travel_01_mk1",
+        "wareID": "engine_tel_s_travel_01_mk1",
+        "label": "TEL S Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_travel_01_mk2",
+        "wareID": "engine_tel_s_travel_01_mk2",
+        "label": "TEL S Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_s_travel_01_mk3",
+        "wareID": "engine_tel_s_travel_01_mk3",
+        "label": "TEL S Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_xl_allround_01_mk1",
+        "wareID": "engine_tel_xl_allround_01_mk1",
+        "label": "TEL XL All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_tel_xl_travel_01_mk1",
+        "wareID": "engine_tel_xl_travel_01_mk1",
+        "label": "TEL XL Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_l_allround_01_mk1",
+        "wareID": "engine_ter_l_allround_01_mk1",
+        "label": "TER L All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_l_allround_02_mk1",
+        "wareID": "engine_ter_l_allround_02_mk1",
+        "label": "TER L Frontier Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_l_travel_01_mk1",
+        "wareID": "engine_ter_l_travel_01_mk1",
+        "label": "TER L Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_allround_01_mk1",
+        "wareID": "engine_ter_m_allround_01_mk1",
+        "label": "TER M All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_allround_01_mk2",
+        "wareID": "engine_ter_m_allround_01_mk2",
+        "label": "TER M All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_allround_01_mk3",
+        "wareID": "engine_ter_m_allround_01_mk3",
+        "label": "TER M All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_combat_01_mk1",
+        "wareID": "engine_ter_m_combat_01_mk1",
+        "label": "TER M Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_combat_01_mk2",
+        "wareID": "engine_ter_m_combat_01_mk2",
+        "label": "TER M Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_combat_01_mk3",
+        "wareID": "engine_ter_m_combat_01_mk3",
+        "label": "TER M Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_travel_01_mk1",
+        "wareID": "engine_ter_m_travel_01_mk1",
+        "label": "TER M Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_travel_01_mk2",
+        "wareID": "engine_ter_m_travel_01_mk2",
+        "label": "TER M Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_travel_01_mk3",
+        "wareID": "engine_ter_m_travel_01_mk3",
+        "label": "TER M Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_m_virtual_01_mk1",
+        "wareID": "engine_ter_m_virtual_01_mk1",
+        "label": "TER M Frontier Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_allround_01_mk1",
+        "wareID": "engine_ter_s_allround_01_mk1",
+        "label": "TER S All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_allround_01_mk2",
+        "wareID": "engine_ter_s_allround_01_mk2",
+        "label": "TER S All-round Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_allround_01_mk3",
+        "wareID": "engine_ter_s_allround_01_mk3",
+        "label": "TER S All-round Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_combat_01_mk1",
+        "wareID": "engine_ter_s_combat_01_mk1",
+        "label": "TER S Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_combat_01_mk2",
+        "wareID": "engine_ter_s_combat_01_mk2",
+        "label": "TER S Combat Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_combat_01_mk3",
+        "wareID": "engine_ter_s_combat_01_mk3",
+        "label": "TER S Combat Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_travel_01_mk1",
+        "wareID": "engine_ter_s_travel_01_mk1",
+        "label": "TER S Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_travel_01_mk2",
+        "wareID": "engine_ter_s_travel_01_mk2",
+        "label": "TER S Travel Engine Mk2",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_travel_01_mk3",
+        "wareID": "engine_ter_s_travel_01_mk3",
+        "label": "TER S Travel Engine Mk3",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_s_virtual_01_mk1",
+        "wareID": "engine_ter_s_virtual_01_mk1",
+        "label": "TER S Frontier Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_xl_allround_01_mk1",
+        "wareID": "engine_ter_xl_allround_01_mk1",
+        "label": "TER XL All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_ter_xl_travel_01_mk1",
+        "wareID": "engine_ter_xl_travel_01_mk1",
+        "label": "TER XL Travel Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_xen_l_allround_02_mk1",
+        "wareID": "engine_xen_l_allround_02_mk1",
+        "label": "XEN L All-round Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_xen_m_virtual_01_mk1",
+        "wareID": "engine_xen_m_virtual_01_mk1",
+        "label": "XEN M Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "engine_xen_s_virtual_01_mk1",
+        "wareID": "engine_xen_s_virtual_01_mk1",
+        "label": "XEN S Combat Engine Mk1",
         "categoryID": "engines"
     },
     {
-        "id": "missile_cluster_heavy_mk1",
+        "wareID": "missile_cluster_heavy_mk1",
+        "label": "Heavy Cluster Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_cluster_light_mk1",
+        "wareID": "missile_cluster_light_mk1",
+        "label": "Light Cluster Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_disruptor_light_mk1",
+        "wareID": "missile_disruptor_light_mk1",
+        "label": "Light Disruptor Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_dumbfire_heavy_mk1",
+        "wareID": "missile_dumbfire_heavy_mk1",
+        "label": "Heavy Dumbfire Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_dumbfire_heavy_mk2",
+        "wareID": "missile_dumbfire_heavy_mk2",
+        "label": "Heavy Dumbfire Missile Mk2",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_dumbfire_light_mk1",
+        "wareID": "missile_dumbfire_light_mk1",
+        "label": "Light Dumbfire Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_dumbfire_light_mk2",
+        "wareID": "missile_dumbfire_light_mk2",
+        "label": "Light Dumbfire Missile Mk2",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_emp_mk1",
+        "wareID": "missile_emp_mk1",
+        "label": "EMP Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_flagship_heavy_mk1",
+        "wareID": "missile_flagship_heavy_mk1",
+        "label": "Heavy Barrage Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_flagship_light_mk1",
+        "wareID": "missile_flagship_light_mk1",
+        "label": "Light Barrage Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_guided_heavy_mk1",
+        "wareID": "missile_guided_heavy_mk1",
+        "label": "Heavy Guided Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_guided_light_mk1",
+        "wareID": "missile_guided_light_mk1",
+        "label": "Light Guided Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_heatseeker_heavy_mk1",
+        "wareID": "missile_heatseeker_heavy_mk1",
+        "label": "Heavy Heatseeker Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_heatseeker_light_mk1",
+        "wareID": "missile_heatseeker_light_mk1",
+        "label": "Light Heatseeker Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_interceptor_light_mk1",
+        "wareID": "missile_interceptor_light_mk1",
+        "label": "Light Interceptor Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_scatter_heavy_mk1",
+        "wareID": "missile_scatter_heavy_mk1",
+        "label": "Heavy Scatter Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_smart_heavy_mk1",
+        "wareID": "missile_smart_heavy_mk1",
+        "label": "Heavy Smart Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_smart_light_mk1",
+        "wareID": "missile_smart_light_mk1",
+        "label": "Light Smart Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_starburst_heavy_mk1",
+        "wareID": "missile_starburst_heavy_mk1",
+        "label": "Heavy Starburst Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_swarm_heavy_mk1",
+        "wareID": "missile_swarm_heavy_mk1",
+        "label": "Heavy Swarm Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_swarm_light_mk1",
+        "wareID": "missile_swarm_light_mk1",
+        "label": "Light Swarm Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_torpedo_heavy_mk1",
+        "wareID": "missile_torpedo_heavy_mk1",
+        "label": "Heavy Torpedo Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "missile_torpedo_light_mk1",
+        "wareID": "missile_torpedo_light_mk1",
+        "label": "Light Torpedo Missile Mk1",
         "categoryID": "missiles"
     },
     {
-        "id": "module_arg_conn_base_01",
+        "wareID": "module_arg_conn_base_01",
+        "label": "Argon Base Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_conn_base_02",
+        "wareID": "module_arg_conn_base_02",
+        "label": "Argon Base Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_conn_base_03",
+        "wareID": "module_arg_conn_base_03",
+        "label": "Argon Base Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_conn_cross_01",
+        "wareID": "module_arg_conn_cross_01",
+        "label": "Argon Cross Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_conn_vertical_01",
+        "wareID": "module_arg_conn_vertical_01",
+        "label": "Argon Vertical Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_conn_vertical_02",
+        "wareID": "module_arg_conn_vertical_02",
+        "label": "Argon Vertical Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_def_claim_01",
+        "wareID": "module_arg_def_claim_01",
+        "label": "Argon Administrative Centre",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_def_disc_01",
+        "wareID": "module_arg_def_disc_01",
+        "label": "Argon Disc Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_def_tube_01",
+        "wareID": "module_arg_def_tube_01",
+        "label": "Argon Bridge Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_dock_m_01",
+        "wareID": "module_arg_dock_m_01",
+        "label": "1M6S Standard Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_dock_m_01_hightech",
+        "wareID": "module_arg_dock_m_01_hightech",
+        "label": "1M6S Luxury Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_dock_m_01_lowtech",
+        "wareID": "module_arg_dock_m_01_lowtech",
+        "label": "1M6S Basic Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_dock_m_02",
+        "wareID": "module_arg_dock_m_02",
+        "label": "3M6S Standard Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_dock_m_02_hightech",
+        "wareID": "module_arg_dock_m_02_hightech",
+        "label": "3M6S Luxury Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_dock_m_02_lowtech",
+        "wareID": "module_arg_dock_m_02_lowtech",
+        "label": "3M6S Basic Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_dock_tradestation_02",
+        "wareID": "module_arg_dock_tradestation_02",
+        "label": "8M Luxury Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_hab_l_01",
+        "wareID": "module_arg_hab_l_01",
+        "label": "Argon L Habitat",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_hab_m_01",
+        "wareID": "module_arg_hab_m_01",
+        "label": "Argon M Habitat",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_hab_s_01",
+        "wareID": "module_arg_hab_s_01",
+        "label": "Argon S Habitat",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_pier_l_01",
+        "wareID": "module_arg_pier_l_01",
+        "label": "Argon 3-Dock T Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_pier_l_02",
+        "wareID": "module_arg_pier_l_02",
+        "label": "Argon 1-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_pier_l_03",
+        "wareID": "module_arg_pier_l_03",
+        "label": "Argon 3-Dock E Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_pier_l_04",
+        "wareID": "module_arg_pier_l_04",
+        "label": "Argon 1-Dock Short Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_prod_foodrations_01",
+        "wareID": "module_arg_prod_foodrations_01",
+        "label": "Food Ration Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_prod_meat_01",
+        "wareID": "module_arg_prod_meat_01",
+        "label": "Meat Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_prod_medicalsupplies_01",
+        "wareID": "module_arg_prod_medicalsupplies_01",
+        "label": "Argon Medical Supply Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_prod_spacefuel_01",
+        "wareID": "module_arg_prod_spacefuel_01",
+        "label": "Spacefuel Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_prod_wheat_01",
+        "wareID": "module_arg_prod_wheat_01",
+        "label": "Wheat Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_radar_dish_01",
+        "wareID": "module_arg_radar_dish_01",
+        "label": "Wide Area Sensor Array",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_container_l_01",
+        "wareID": "module_arg_stor_container_l_01",
+        "label": "Argon L Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_container_m_01",
+        "wareID": "module_arg_stor_container_m_01",
+        "label": "Argon M Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_container_s_01",
+        "wareID": "module_arg_stor_container_s_01",
+        "label": "Argon S Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_liquid_l_01",
+        "wareID": "module_arg_stor_liquid_l_01",
+        "label": "Argon L Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_liquid_m_01",
+        "wareID": "module_arg_stor_liquid_m_01",
+        "label": "Argon M Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_liquid_s_01",
+        "wareID": "module_arg_stor_liquid_s_01",
+        "label": "Argon S Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_solid_l_01",
+        "wareID": "module_arg_stor_solid_l_01",
+        "label": "Argon L Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_solid_m_01",
+        "wareID": "module_arg_stor_solid_m_01",
+        "label": "Argon M Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_arg_stor_solid_s_01",
+        "wareID": "module_arg_stor_solid_s_01",
+        "label": "Argon S Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_build_dockarea_m_01",
+        "wareID": "module_bor_build_dockarea_m_01",
+        "label": "Boron S\/M Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_build_l_01",
+        "wareID": "module_bor_build_l_01",
+        "label": "Boron L Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_build_xl_01",
+        "wareID": "module_bor_build_xl_01",
+        "label": "Boron XL Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_base_01",
+        "wareID": "module_bor_conn_base_01",
+        "label": "Boron Base Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_base_02",
+        "wareID": "module_bor_conn_base_02",
+        "label": "Boron Base Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_base_03",
+        "wareID": "module_bor_conn_base_03",
+        "label": "Boron Base Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_base_04",
+        "wareID": "module_bor_conn_base_04",
+        "label": "Boron Base Connection Structure 04",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_base_05",
+        "wareID": "module_bor_conn_base_05",
+        "label": "Boron Base Connection Structure 05",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_cross_01",
+        "wareID": "module_bor_conn_cross_01",
+        "label": "Boron Cross Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_cross_02",
+        "wareID": "module_bor_conn_cross_02",
+        "label": "Boron Cross Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_vertical_01",
+        "wareID": "module_bor_conn_vertical_01",
+        "label": "Boron Vertical Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_conn_vertical_02",
+        "wareID": "module_bor_conn_vertical_02",
+        "label": "Boron Vertical Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_def_claim_01",
+        "wareID": "module_bor_def_claim_01",
+        "label": "Boron Administrative Centre",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_def_disc_01",
+        "wareID": "module_bor_def_disc_01",
+        "label": "Boron Disc Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_def_tube_01",
+        "wareID": "module_bor_def_tube_01",
+        "label": "Boron Bridge Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_dock_m_01_standard",
+        "wareID": "module_bor_dock_m_01_standard",
+        "label": "Boron 4M14S Luxury Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_equip_dockarea_m_01",
+        "wareID": "module_bor_equip_dockarea_m_01",
+        "label": "Boron S\/M Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_equip_l_01",
+        "wareID": "module_bor_equip_l_01",
+        "label": "Boron L Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_equip_xl_01",
+        "wareID": "module_bor_equip_xl_01",
+        "label": "Boron XL Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_hab_l_01",
+        "wareID": "module_bor_hab_l_01",
+        "label": "Boron L Oasis",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_hab_m_01",
+        "wareID": "module_bor_hab_m_01",
+        "label": "Boron M Oasis",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_hab_s_01",
+        "wareID": "module_bor_hab_s_01",
+        "label": "Boron S Oasis",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_pier_l_01",
+        "wareID": "module_bor_pier_l_01",
+        "label": "Boron 4-Dock T Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_pier_l_02",
+        "wareID": "module_bor_pier_l_02",
+        "label": "Boron 1-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_pier_l_03",
+        "wareID": "module_bor_pier_l_03",
+        "label": "Boron 3-Dock E Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_pier_l_04",
+        "wareID": "module_bor_pier_l_04",
+        "label": "Boron Trading Station 4-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_pier_tradestation_01",
+        "wareID": "module_bor_pier_tradestation_01",
+        "label": "Boron Trading Station Hexa-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_prod_bofu_01",
+        "wareID": "module_bor_prod_bofu_01",
+        "label": "BoFu Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_prod_bogas_01",
+        "wareID": "module_bor_prod_bogas_01",
+        "label": "BoGas Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_prod_medicalsupplies_01",
+        "wareID": "module_bor_prod_medicalsupplies_01",
+        "label": "Boron Medical Supply Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_prod_plankton_01",
+        "wareID": "module_bor_prod_plankton_01",
+        "label": "Plankton Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_container_l_01",
+        "wareID": "module_bor_stor_container_l_01",
+        "label": "Boron L Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_container_m_01",
+        "wareID": "module_bor_stor_container_m_01",
+        "label": "Boron M Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_container_s_01",
+        "wareID": "module_bor_stor_container_s_01",
+        "label": "Boron S Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_liquid_l_01",
+        "wareID": "module_bor_stor_liquid_l_01",
+        "label": "Boron L Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_liquid_m_01",
+        "wareID": "module_bor_stor_liquid_m_01",
+        "label": "Boron M Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_liquid_s_01",
+        "wareID": "module_bor_stor_liquid_s_01",
+        "label": "Boron S Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_solid_l_01",
+        "wareID": "module_bor_stor_solid_l_01",
+        "label": "Boron L Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_solid_m_01",
+        "wareID": "module_bor_stor_solid_m_01",
+        "label": "Boron M Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_bor_stor_solid_s_01",
+        "wareID": "module_bor_stor_solid_s_01",
+        "label": "Boron S Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_conn_arg_antigonearc_01",
+        "wareID": "module_conn_arg_antigonearc_01",
+        "label": "Argon Arc Connection Structure",
         "categoryID": "modules"
     },
     {
-        "id": "module_conn_arg_antigonescaffolding_01",
+        "wareID": "module_conn_arg_antigonescaffolding_01",
+        "label": "Argon Span Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_conn_arg_antigonestraight_01",
+        "wareID": "module_conn_arg_antigonestraight_01",
+        "label": "Argon Span Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_build_dockarea_m_01",
+        "wareID": "module_gen_build_dockarea_m_01",
+        "label": "S\/M Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_build_l_01",
+        "wareID": "module_gen_build_l_01",
+        "label": "L Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_build_xl_01",
+        "wareID": "module_gen_build_xl_01",
+        "label": "XL Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_observationdeck_01",
+        "wareID": "module_gen_conn_observationdeck_01",
+        "label": "Conservatory Observation Deck",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_observationdeck_02",
+        "wareID": "module_gen_conn_observationdeck_02",
+        "label": "Pavilion Observation Deck",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_observationdeck_03",
+        "wareID": "module_gen_conn_observationdeck_03",
+        "label": "Penthouse Observation Deck",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_venturerbase_01",
+        "wareID": "module_gen_conn_venturerbase_01",
+        "label": "Venture Base Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_venturerbase_02",
+        "wareID": "module_gen_conn_venturerbase_02",
+        "label": "Venture Base Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_venturerbase_03",
+        "wareID": "module_gen_conn_venturerbase_03",
+        "label": "Venture Base Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_venturercross_01",
+        "wareID": "module_gen_conn_venturercross_01",
+        "label": "Venture Cross Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_venturervertical_01",
+        "wareID": "module_gen_conn_venturervertical_01",
+        "label": "Venture Vertical Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_conn_venturervertical_02",
+        "wareID": "module_gen_conn_venturervertical_02",
+        "label": "Venture Vertical Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_dock_m_venturer_01",
+        "wareID": "module_gen_dock_m_venturer_01",
+        "label": "S\/M Venture Sendoff Dock",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_equip_dockarea_m_01",
+        "wareID": "module_gen_equip_dockarea_m_01",
+        "label": "S\/M Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_equip_l_01",
+        "wareID": "module_gen_equip_l_01",
+        "label": "L Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_equip_xl_01",
+        "wareID": "module_gen_equip_xl_01",
+        "label": "XL Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_proc_scrapworks",
+        "wareID": "module_gen_proc_scrapworks",
+        "label": "Scrap Processor",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_advancedcomposites_01",
+        "wareID": "module_gen_prod_advancedcomposites_01",
+        "label": "Advanced Composite Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_advancedelectronics_01",
+        "wareID": "module_gen_prod_advancedelectronics_01",
+        "label": "Advanced Electronics Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_antimattercells_01",
+        "wareID": "module_gen_prod_antimattercells_01",
+        "label": "Antimatter Cell Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_antimatterconverters_01",
+        "wareID": "module_gen_prod_antimatterconverters_01",
+        "label": "Antimatter Converter Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_claytronics_01",
+        "wareID": "module_gen_prod_claytronics_01",
+        "label": "Claytronics Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_dronecomponents_01",
+        "wareID": "module_gen_prod_dronecomponents_01",
+        "label": "Drone Component Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_energycells_01",
+        "wareID": "module_gen_prod_energycells_01",
+        "label": "Energy Cell Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_engineparts_01",
+        "wareID": "module_gen_prod_engineparts_01",
+        "label": "Engine Part Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_fieldcoils_01",
+        "wareID": "module_gen_prod_fieldcoils_01",
+        "label": "Field Coil Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_graphene_01",
+        "wareID": "module_gen_prod_graphene_01",
+        "label": "Graphene Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_hullparts_01",
+        "wareID": "module_gen_prod_hullparts_01",
+        "label": "Hull Part Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_microchips_01",
+        "wareID": "module_gen_prod_microchips_01",
+        "label": "Microchip Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_missilecomponents_01",
+        "wareID": "module_gen_prod_missilecomponents_01",
+        "label": "Missile Component Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_plasmaconductors_01",
+        "wareID": "module_gen_prod_plasmaconductors_01",
+        "label": "Plasma Conductor Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_quantumtubes_01",
+        "wareID": "module_gen_prod_quantumtubes_01",
+        "label": "Quantum Tube Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_refinedmetals_01",
+        "wareID": "module_gen_prod_refinedmetals_01",
+        "label": "Refined Metal Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_scanningarrays_01",
+        "wareID": "module_gen_prod_scanningarrays_01",
+        "label": "Scanning Array Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_scrap_recycler",
+        "wareID": "module_gen_prod_scrap_recycler",
+        "label": "Scrap Recycler",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_shieldcomponents_01",
+        "wareID": "module_gen_prod_shieldcomponents_01",
+        "label": "Shield Component Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_siliconwafers_01",
+        "wareID": "module_gen_prod_siliconwafers_01",
+        "label": "Silicon Wafer Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_smartchips_01",
+        "wareID": "module_gen_prod_smartchips_01",
+        "label": "Smart Chip Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_spices_01",
+        "wareID": "module_gen_prod_spices_01",
+        "label": "Spice Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_superfluidcoolant_01",
+        "wareID": "module_gen_prod_superfluidcoolant_01",
+        "label": "Superfluid Coolant Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_turretcomponents_01",
+        "wareID": "module_gen_prod_turretcomponents_01",
+        "label": "Turret Component Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_water_01",
+        "wareID": "module_gen_prod_water_01",
+        "label": "Water Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_prod_weaponcomponents_01",
+        "wareID": "module_gen_prod_weaponcomponents_01",
+        "label": "Weapon Component Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_ventureplatform_cross_01",
+        "wareID": "module_gen_ventureplatform_cross_01",
+        "label": "Venture Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_welfare_casino_01",
+        "wareID": "module_gen_welfare_casino_01",
+        "label": "Casino",
         "categoryID": "modules"
     },
     {
-        "id": "module_gen_welfare_gamblinghall_01",
+        "wareID": "module_gen_welfare_gamblinghall_01",
+        "label": "Gambling Den",
         "categoryID": "modules"
     },
     {
-        "id": "module_hab_arg_antigonepillar_01",
+        "wareID": "module_hab_arg_antigonepillar_01",
+        "label": "Argon L Housing Spire",
         "categoryID": "modules"
     },
     {
-        "id": "module_hab_arg_antigonespire_01",
+        "wareID": "module_hab_arg_antigonespire_01",
+        "label": "Argon XL Housing Spire",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_base_01",
+        "wareID": "module_par_conn_base_01",
+        "label": "Paranid Base Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_base_02",
+        "wareID": "module_par_conn_base_02",
+        "label": "Paranid Base Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_base_03",
+        "wareID": "module_par_conn_base_03",
+        "label": "Paranid Base Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_cross_01",
+        "wareID": "module_par_conn_cross_01",
+        "label": "Paranid Cross Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_cross_02",
+        "wareID": "module_par_conn_cross_02",
+        "label": "Paranid Cross Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_cross_03",
+        "wareID": "module_par_conn_cross_03",
+        "label": "Paranid Cross Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_vertical_01",
+        "wareID": "module_par_conn_vertical_01",
+        "label": "Paranid Vertical Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_conn_vertical_02",
+        "wareID": "module_par_conn_vertical_02",
+        "label": "Paranid Vertical Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_def_claim_01",
+        "wareID": "module_par_def_claim_01",
+        "label": "Paranid Administrative Centre",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_def_claim_story_01",
+        "wareID": "module_par_def_claim_story_01",
+        "label": "Paranid Faction Capital",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_def_disc_01",
+        "wareID": "module_par_def_disc_01",
+        "label": "Paranid Disc Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_def_tube_01",
+        "wareID": "module_par_def_tube_01",
+        "label": "Paranid Bridge Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_hab_l_01",
+        "wareID": "module_par_hab_l_01",
+        "label": "Paranid L Dome",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_hab_m_01",
+        "wareID": "module_par_hab_m_01",
+        "label": "Paranid M Dome",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_hab_s_01",
+        "wareID": "module_par_hab_s_01",
+        "label": "Paranid S Dome",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_pier_l_01",
+        "wareID": "module_par_pier_l_01",
+        "label": "Paranid 3-Dock T Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_pier_l_02",
+        "wareID": "module_par_pier_l_02",
+        "label": "Paranid 1-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_pier_l_03",
+        "wareID": "module_par_pier_l_03",
+        "label": "Paranid 3-Dock E Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_prod_majadust_01",
+        "wareID": "module_par_prod_majadust_01",
+        "label": "Maja Dust Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_prod_majasnails_01",
+        "wareID": "module_par_prod_majasnails_01",
+        "label": "Maja Snail Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_prod_medicalsupplies_01",
+        "wareID": "module_par_prod_medicalsupplies_01",
+        "label": "Paranid Medical Supply Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_prod_sojabeans_01",
+        "wareID": "module_par_prod_sojabeans_01",
+        "label": "Soja Bean Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_prod_sojahusk_01",
+        "wareID": "module_par_prod_sojahusk_01",
+        "label": "Soja Husk Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_container_l_01",
+        "wareID": "module_par_stor_container_l_01",
+        "label": "Paranid L Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_container_m_01",
+        "wareID": "module_par_stor_container_m_01",
+        "label": "Paranid M Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_container_s_01",
+        "wareID": "module_par_stor_container_s_01",
+        "label": "Paranid S Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_liquid_l_01",
+        "wareID": "module_par_stor_liquid_l_01",
+        "label": "Paranid L Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_liquid_m_01",
+        "wareID": "module_par_stor_liquid_m_01",
+        "label": "Paranid M Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_liquid_s_01",
+        "wareID": "module_par_stor_liquid_s_01",
+        "label": "Paranid S Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_solid_l_01",
+        "wareID": "module_par_stor_solid_l_01",
+        "label": "Paranid L Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_solid_m_01",
+        "wareID": "module_par_stor_solid_m_01",
+        "label": "Paranid M Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_par_stor_solid_s_01",
+        "wareID": "module_par_stor_solid_s_01",
+        "label": "Paranid S Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_pir_hab_l_01",
+        "wareID": "module_pir_hab_l_01",
+        "label": "Argon L Dormitory",
         "categoryID": "modules"
     },
     {
-        "id": "module_pir_hab_m_01",
+        "wareID": "module_pir_hab_m_01",
+        "label": "Argon M Dormitory",
         "categoryID": "modules"
     },
     {
-        "id": "module_pir_hab_s_01",
+        "wareID": "module_pir_hab_s_01",
+        "label": "Argon S Dormitory",
         "categoryID": "modules"
     },
     {
-        "id": "module_pir_stor_condensate_l_01",
+        "wareID": "module_pir_stor_condensate_l_01",
+        "label": "Protectyon Shield Generator",
         "categoryID": "modules"
     },
     {
-        "id": "module_pir_stor_condensate_s_01",
+        "wareID": "module_pir_stor_condensate_s_01",
+        "label": "Condensate Containment Facility",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_conn_base_01",
+        "wareID": "module_spl_conn_base_01",
+        "label": "Split Base Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_conn_base_02",
+        "wareID": "module_spl_conn_base_02",
+        "label": "Split Base Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_conn_base_03",
+        "wareID": "module_spl_conn_base_03",
+        "label": "Split Base Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_conn_cross_01",
+        "wareID": "module_spl_conn_cross_01",
+        "label": "Split Cross Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_conn_vertical_01",
+        "wareID": "module_spl_conn_vertical_01",
+        "label": "Split Vertical Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_conn_vertical_02",
+        "wareID": "module_spl_conn_vertical_02",
+        "label": "Split Vertical Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_def_claim_01",
+        "wareID": "module_spl_def_claim_01",
+        "label": "Split Administrative Centre",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_def_disc_01",
+        "wareID": "module_spl_def_disc_01",
+        "label": "Split Disc Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_def_tube_01",
+        "wareID": "module_spl_def_tube_01",
+        "label": "Split Bridge Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_hab_l_01",
+        "wareID": "module_spl_hab_l_01",
+        "label": "Split L Parlour",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_hab_m_01",
+        "wareID": "module_spl_hab_m_01",
+        "label": "Split M Parlour",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_hab_s_01",
+        "wareID": "module_spl_hab_s_01",
+        "label": "Split S Parlour",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_pier_l_01",
+        "wareID": "module_spl_pier_l_01",
+        "label": "Split 4-Dock T Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_pier_l_02",
+        "wareID": "module_spl_pier_l_02",
+        "label": "Split 1-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_pier_l_03",
+        "wareID": "module_spl_pier_l_03",
+        "label": "Split 3-Dock E Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_prod_cheltmeat_01",
+        "wareID": "module_spl_prod_cheltmeat_01",
+        "label": "Chelt Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_prod_medicalsupplies_01",
+        "wareID": "module_spl_prod_medicalsupplies_01",
+        "label": "Split Medical Supply Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_prod_scruffinfruits_01",
+        "wareID": "module_spl_prod_scruffinfruits_01",
+        "label": "Scruffin Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_container_l_01",
+        "wareID": "module_spl_stor_container_l_01",
+        "label": "Split L Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_container_m_01",
+        "wareID": "module_spl_stor_container_m_01",
+        "label": "Split M Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_container_s_01",
+        "wareID": "module_spl_stor_container_s_01",
+        "label": "Split S Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_liquid_l_01",
+        "wareID": "module_spl_stor_liquid_l_01",
+        "label": "Split L Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_liquid_m_01",
+        "wareID": "module_spl_stor_liquid_m_01",
+        "label": "Split M Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_liquid_s_01",
+        "wareID": "module_spl_stor_liquid_s_01",
+        "label": "Split S Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_solid_l_01",
+        "wareID": "module_spl_stor_solid_l_01",
+        "label": "Split L Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_solid_m_01",
+        "wareID": "module_spl_stor_solid_m_01",
+        "label": "Split M Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_spl_stor_solid_s_01",
+        "wareID": "module_spl_stor_solid_s_01",
+        "label": "Split S Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_conn_base_01",
+        "wareID": "module_tel_conn_base_01",
+        "label": "Teladi Base Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_conn_base_02",
+        "wareID": "module_tel_conn_base_02",
+        "label": "Teladi Base Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_conn_base_03",
+        "wareID": "module_tel_conn_base_03",
+        "label": "Teladi Base Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_conn_cross_01",
+        "wareID": "module_tel_conn_cross_01",
+        "label": "Teladi Cross Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_conn_vertical_01",
+        "wareID": "module_tel_conn_vertical_01",
+        "label": "Teladi Vertical Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_conn_vertical_02",
+        "wareID": "module_tel_conn_vertical_02",
+        "label": "Teladi Vertical Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_def_claim_01",
+        "wareID": "module_tel_def_claim_01",
+        "label": "Teladi Administrative Centre",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_def_disc_01",
+        "wareID": "module_tel_def_disc_01",
+        "label": "Teladi Disc Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_def_tube_01",
+        "wareID": "module_tel_def_tube_01",
+        "label": "Teladi Bridge Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_hab_l_01",
+        "wareID": "module_tel_hab_l_01",
+        "label": "Teladi L Biome",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_hab_m_01",
+        "wareID": "module_tel_hab_m_01",
+        "label": "Teladi M Biome",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_hab_s_01",
+        "wareID": "module_tel_hab_s_01",
+        "label": "Teladi S Biome",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_pier_l_01",
+        "wareID": "module_tel_pier_l_01",
+        "label": "Teladi 3-Dock T Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_pier_l_02",
+        "wareID": "module_tel_pier_l_02",
+        "label": "Teladi 1-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_pier_l_03",
+        "wareID": "module_tel_pier_l_03",
+        "label": "Teladi 3-Dock E Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_advancedcomposites_01",
+        "wareID": "module_tel_prod_advancedcomposites_01",
+        "label": "Teladi Advanced Composite Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_engineparts_01",
+        "wareID": "module_tel_prod_engineparts_01",
+        "label": "Teladi Engine Part Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_hullparts_01",
+        "wareID": "module_tel_prod_hullparts_01",
+        "label": "Teladi Hull Part Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_medicalsupplies_01",
+        "wareID": "module_tel_prod_medicalsupplies_01",
+        "label": "Teladi Medical Supply Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_nostropoil_01",
+        "wareID": "module_tel_prod_nostropoil_01",
+        "label": "Nostrop Oil Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_scanningarrays_01",
+        "wareID": "module_tel_prod_scanningarrays_01",
+        "label": "Teladi Scanning Array Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_spaceweed_01",
+        "wareID": "module_tel_prod_spaceweed_01",
+        "label": "Spaceweed Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_sunriseflowers_01",
+        "wareID": "module_tel_prod_sunriseflowers_01",
+        "label": "Sunrise Flower Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_swampplant_01",
+        "wareID": "module_tel_prod_swampplant_01",
+        "label": "Swamp Plant Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_prod_teladianium_01",
+        "wareID": "module_tel_prod_teladianium_01",
+        "label": "Teladianium Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_container_l_01",
+        "wareID": "module_tel_stor_container_l_01",
+        "label": "Teladi L Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_container_m_01",
+        "wareID": "module_tel_stor_container_m_01",
+        "label": "Teladi M Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_container_s_01",
+        "wareID": "module_tel_stor_container_s_01",
+        "label": "Teladi S Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_liquid_l_01",
+        "wareID": "module_tel_stor_liquid_l_01",
+        "label": "Teladi L Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_liquid_m_01",
+        "wareID": "module_tel_stor_liquid_m_01",
+        "label": "Teladi M Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_liquid_s_01",
+        "wareID": "module_tel_stor_liquid_s_01",
+        "label": "Teladi S Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_solid_l_01",
+        "wareID": "module_tel_stor_solid_l_01",
+        "label": "Teladi L Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_solid_m_01",
+        "wareID": "module_tel_stor_solid_m_01",
+        "label": "Teladi M Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_tel_stor_solid_s_01",
+        "wareID": "module_tel_stor_solid_s_01",
+        "label": "Teladi S Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_build_dockarea_m_01",
+        "wareID": "module_ter_build_dockarea_m_01",
+        "label": "Terran S\/M Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_build_l_01",
+        "wareID": "module_ter_build_l_01",
+        "label": "Terran L Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_build_xl_01",
+        "wareID": "module_ter_build_xl_01",
+        "label": "Terran XL Ship Fabrication Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_conn_base_01",
+        "wareID": "module_ter_conn_base_01",
+        "label": "Terran Base Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_conn_base_02",
+        "wareID": "module_ter_conn_base_02",
+        "label": "Terran Base Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_conn_base_03",
+        "wareID": "module_ter_conn_base_03",
+        "label": "Terran Base Connection Structure 03",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_conn_cross_01",
+        "wareID": "module_ter_conn_cross_01",
+        "label": "Terran Cross Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_conn_vertical_01",
+        "wareID": "module_ter_conn_vertical_01",
+        "label": "Terran Vertical Connection Structure 01",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_conn_vertical_02",
+        "wareID": "module_ter_conn_vertical_02",
+        "label": "Terran Vertical Connection Structure 02",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_def_claim_01",
+        "wareID": "module_ter_def_claim_01",
+        "label": "Terran Administrative Centre",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_def_disc_01",
+        "wareID": "module_ter_def_disc_01",
+        "label": "Terran Disc Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_def_tube_01",
+        "wareID": "module_ter_def_tube_01",
+        "label": "Terran Bridge Defence Platform",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_dock_m_01_hightech",
+        "wareID": "module_ter_dock_m_01_hightech",
+        "label": "Terran 4M10S Luxury Dock Area",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_equip_dockarea_m_01",
+        "wareID": "module_ter_equip_dockarea_m_01",
+        "label": "Terran S\/M Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_equip_l_01",
+        "wareID": "module_ter_equip_l_01",
+        "label": "Terran L Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_equip_xl_01",
+        "wareID": "module_ter_equip_xl_01",
+        "label": "Terran XL Ship Maintenance Bay",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_hab_l_01",
+        "wareID": "module_ter_hab_l_01",
+        "label": "Terran L Living Quarters",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_hab_m_01",
+        "wareID": "module_ter_hab_m_01",
+        "label": "Terran M Living Quarters",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_hab_s_01",
+        "wareID": "module_ter_hab_s_01",
+        "label": "Terran S Living Quarters",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_pier_01",
+        "wareID": "module_ter_pier_01",
+        "label": "Terran 3-Dock T Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_pier_02",
+        "wareID": "module_ter_pier_02",
+        "label": "Terran 1-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_pier_03",
+        "wareID": "module_ter_pier_03",
+        "label": "Terran 3-Dock E Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_pier_04",
+        "wareID": "module_ter_pier_04",
+        "label": "Terran 4-Dock T Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_pier_tradestation_01",
+        "wareID": "module_ter_pier_tradestation_01",
+        "label": "Terran Trading Station Hexa-Dock Pier",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_computronicsubstrate_01",
+        "wareID": "module_ter_prod_computronicsubstrate_01",
+        "label": "Computronic Substrate Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_energycells_01",
+        "wareID": "module_ter_prod_energycells_01",
+        "label": "Terran Energy Cell Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_medicalsupplies_01",
+        "wareID": "module_ter_prod_medicalsupplies_01",
+        "label": "Terran Medical Supply Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_metallicmicrolattice_01",
+        "wareID": "module_ter_prod_metallicmicrolattice_01",
+        "label": "Metallic Microlattice Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_proteinpaste_01",
+        "wareID": "module_ter_prod_proteinpaste_01",
+        "label": "Protein Paste Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_scrap_recycler",
+        "wareID": "module_ter_prod_scrap_recycler",
+        "label": "Terran Scrap Recycler",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_siliconcarbide_01",
+        "wareID": "module_ter_prod_siliconcarbide_01",
+        "label": "Silicon Carbide Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_stimulants_01",
+        "wareID": "module_ter_prod_stimulants_01",
+        "label": "Stimulant Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_prod_terranmre_01",
+        "wareID": "module_ter_prod_terranmre_01",
+        "label": "Terran MRE Production",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_container_l_01",
+        "wareID": "module_ter_stor_container_l_01",
+        "label": "Terran L Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_container_m_01",
+        "wareID": "module_ter_stor_container_m_01",
+        "label": "Terran M Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_container_s_01",
+        "wareID": "module_ter_stor_container_s_01",
+        "label": "Terran S Container Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_liquid_l_01",
+        "wareID": "module_ter_stor_liquid_l_01",
+        "label": "Terran L Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_liquid_m_01",
+        "wareID": "module_ter_stor_liquid_m_01",
+        "label": "Terran M Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_liquid_s_01",
+        "wareID": "module_ter_stor_liquid_s_01",
+        "label": "Terran S Liquid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_solid_l_01",
+        "wareID": "module_ter_stor_solid_l_01",
+        "label": "Terran L Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_solid_m_01",
+        "wareID": "module_ter_stor_solid_m_01",
+        "label": "Terran M Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "module_ter_stor_solid_s_01",
+        "wareID": "module_ter_stor_solid_s_01",
+        "label": "Terran S Solid Storage",
         "categoryID": "modules"
     },
     {
-        "id": "resourceprobe_01",
+        "wareID": "resourceprobe_01",
+        "label": "Resource Probe",
         "categoryID": "deployables"
     },
     {
-        "id": "satellite_mk1",
+        "wareID": "satellite_mk1",
+        "label": "Satellite",
         "categoryID": "deployables"
     },
     {
-        "id": "satellite_mk2",
+        "wareID": "satellite_mk2",
+        "label": "Advanced Satellite",
         "categoryID": "deployables"
     },
     {
-        "id": "shield_arg_l_standard_01_mk1",
+        "wareID": "shield_arg_l_standard_01_mk1",
+        "label": "ARG L Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_l_standard_01_mk2",
+        "wareID": "shield_arg_l_standard_01_mk2",
+        "label": "ARG L Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_m_standard_01_mk1",
+        "wareID": "shield_arg_m_standard_01_mk1",
+        "label": "ARG M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_m_standard_01_mk2",
+        "wareID": "shield_arg_m_standard_01_mk2",
+        "label": "ARG M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_m_standard_02_mk1",
+        "wareID": "shield_arg_m_standard_02_mk1",
+        "label": "ARG M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_m_standard_02_mk2",
+        "wareID": "shield_arg_m_standard_02_mk2",
+        "label": "ARG M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_s_racer_01_mk1",
+        "wareID": "shield_arg_s_racer_01_mk1",
+        "label": "ARG S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_s_standard_01_mk1",
+        "wareID": "shield_arg_s_standard_01_mk1",
+        "label": "ARG S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_s_standard_01_mk2",
+        "wareID": "shield_arg_s_standard_01_mk2",
+        "label": "ARG S Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_s_standard_01_mk3",
+        "wareID": "shield_arg_s_standard_01_mk3",
+        "label": "ARG S Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_arg_xl_standard_01_mk1",
+        "wareID": "shield_arg_xl_standard_01_mk1",
+        "label": "ARG XL Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_l_standard_01_mk1",
+        "wareID": "shield_bor_l_standard_01_mk1",
+        "label": "BOR L Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_l_standard_01_mk2",
+        "wareID": "shield_bor_l_standard_01_mk2",
+        "label": "BOR L Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_l_standard_01_mk3",
+        "wareID": "shield_bor_l_standard_01_mk3",
+        "label": "BOR L Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_m_standard_01_mk1",
+        "wareID": "shield_bor_m_standard_01_mk1",
+        "label": "BOR M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_m_standard_01_mk2",
+        "wareID": "shield_bor_m_standard_01_mk2",
+        "label": "BOR M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_m_standard_01_mk3",
+        "wareID": "shield_bor_m_standard_01_mk3",
+        "label": "BOR M Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_m_standard_02_mk1",
+        "wareID": "shield_bor_m_standard_02_mk1",
+        "label": "BOR M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_m_standard_02_mk2",
+        "wareID": "shield_bor_m_standard_02_mk2",
+        "label": "BOR M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_m_standard_02_mk3",
+        "wareID": "shield_bor_m_standard_02_mk3",
+        "label": "BOR M Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_s_standard_01_mk1",
+        "wareID": "shield_bor_s_standard_01_mk1",
+        "label": "BOR S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_s_standard_01_mk2",
+        "wareID": "shield_bor_s_standard_01_mk2",
+        "label": "BOR S Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_s_standard_01_mk3",
+        "wareID": "shield_bor_s_standard_01_mk3",
+        "label": "BOR S Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_xl_standard_01_mk1",
+        "wareID": "shield_bor_xl_standard_01_mk1",
+        "label": "BOR XL Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_bor_xl_standard_01_mk2",
+        "wareID": "shield_bor_xl_standard_01_mk2",
+        "label": "BOR XL Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_gen_s_racer_01_mk1",
+        "wareID": "shield_gen_s_racer_01_mk1",
+        "label": "S Racing Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_l_standard_01_mk1",
+        "wareID": "shield_par_l_standard_01_mk1",
+        "label": "PAR L Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_l_standard_01_mk2",
+        "wareID": "shield_par_l_standard_01_mk2",
+        "label": "PAR L Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_m_standard_01_mk1",
+        "wareID": "shield_par_m_standard_01_mk1",
+        "label": "PAR M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_m_standard_01_mk2",
+        "wareID": "shield_par_m_standard_01_mk2",
+        "label": "PAR M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_m_standard_02_mk1",
+        "wareID": "shield_par_m_standard_02_mk1",
+        "label": "PAR M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_m_standard_02_mk2",
+        "wareID": "shield_par_m_standard_02_mk2",
+        "label": "PAR M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_s_racer_01_mk1",
+        "wareID": "shield_par_s_racer_01_mk1",
+        "label": "PAR S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_s_standard_01_mk1",
+        "wareID": "shield_par_s_standard_01_mk1",
+        "label": "PAR S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_s_standard_01_mk2",
+        "wareID": "shield_par_s_standard_01_mk2",
+        "label": "PAR S Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_s_standard_01_mk3",
+        "wareID": "shield_par_s_standard_01_mk3",
+        "label": "PAR S Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_par_xl_standard_01_mk1",
+        "wareID": "shield_par_xl_standard_01_mk1",
+        "label": "PAR XL Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_pir_xl_battleship_01_standard_01_mk1",
+        "wareID": "shield_pir_xl_battleship_01_standard_01_mk1",
+        "label": "Erlking XL Shield Generator",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_l_standard_01_mk1",
+        "wareID": "shield_spl_l_standard_01_mk1",
+        "label": "SPL L Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_l_standard_01_mk2",
+        "wareID": "shield_spl_l_standard_01_mk2",
+        "label": "SPL L Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_m_standard_01_mk1",
+        "wareID": "shield_spl_m_standard_01_mk1",
+        "label": "SPL M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_m_standard_01_mk2",
+        "wareID": "shield_spl_m_standard_01_mk2",
+        "label": "SPL M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_m_standard_02_mk1",
+        "wareID": "shield_spl_m_standard_02_mk1",
+        "label": "SPL M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_m_standard_02_mk2",
+        "wareID": "shield_spl_m_standard_02_mk2",
+        "label": "SPL M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_s_standard_01_mk1",
+        "wareID": "shield_spl_s_standard_01_mk1",
+        "label": "SPL S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_s_standard_01_mk2",
+        "wareID": "shield_spl_s_standard_01_mk2",
+        "label": "SPL S Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_s_standard_01_mk3",
+        "wareID": "shield_spl_s_standard_01_mk3",
+        "label": "SPL S Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_spl_xl_standard_01_mk1",
+        "wareID": "shield_spl_xl_standard_01_mk1",
+        "label": "SPL XL Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_l_standard_01_mk1",
+        "wareID": "shield_tel_l_standard_01_mk1",
+        "label": "TEL L Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_l_standard_01_mk2",
+        "wareID": "shield_tel_l_standard_01_mk2",
+        "label": "TEL L Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_m_standard_01_mk1",
+        "wareID": "shield_tel_m_standard_01_mk1",
+        "label": "TEL M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_m_standard_01_mk2",
+        "wareID": "shield_tel_m_standard_01_mk2",
+        "label": "TEL M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_m_standard_02_mk1",
+        "wareID": "shield_tel_m_standard_02_mk1",
+        "label": "TEL M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_m_standard_02_mk2",
+        "wareID": "shield_tel_m_standard_02_mk2",
+        "label": "TEL M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_s_racer_01_mk1",
+        "wareID": "shield_tel_s_racer_01_mk1",
+        "label": "TEL S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_s_standard_01_mk1",
+        "wareID": "shield_tel_s_standard_01_mk1",
+        "label": "TEL S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_s_standard_01_mk2",
+        "wareID": "shield_tel_s_standard_01_mk2",
+        "label": "TEL S Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_s_standard_01_mk3",
+        "wareID": "shield_tel_s_standard_01_mk3",
+        "label": "TEL S Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_tel_xl_standard_01_mk1",
+        "wareID": "shield_tel_xl_standard_01_mk1",
+        "label": "TEL XL Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_l_standard_01_mk1",
+        "wareID": "shield_ter_l_standard_01_mk1",
+        "label": "TER L Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_l_standard_01_mk2",
+        "wareID": "shield_ter_l_standard_01_mk2",
+        "label": "TER L Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_l_standard_01_mk3",
+        "wareID": "shield_ter_l_standard_01_mk3",
+        "label": "TER L Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_l_standard_02_mk1",
+        "wareID": "shield_ter_l_standard_02_mk1",
+        "label": "TER L Frontier Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_l_standard_02_mk2",
+        "wareID": "shield_ter_l_standard_02_mk2",
+        "label": "TER L Frontier Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_l_standard_02_mk3",
+        "wareID": "shield_ter_l_standard_02_mk3",
+        "label": "TER L Frontier Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_01_mk1",
+        "wareID": "shield_ter_m_standard_01_mk1",
+        "label": "TER M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_01_mk2",
+        "wareID": "shield_ter_m_standard_01_mk2",
+        "label": "TER M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_01_mk3",
+        "wareID": "shield_ter_m_standard_01_mk3",
+        "label": "TER M Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_02_mk1",
+        "wareID": "shield_ter_m_standard_02_mk1",
+        "label": "TER M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_02_mk2",
+        "wareID": "shield_ter_m_standard_02_mk2",
+        "label": "TER M Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_02_mk3",
+        "wareID": "shield_ter_m_standard_02_mk3",
+        "label": "TER M Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_04_mk1",
+        "wareID": "shield_ter_m_standard_04_mk1",
+        "label": "TER M Frontier Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_04_mk2",
+        "wareID": "shield_ter_m_standard_04_mk2",
+        "label": "TER M Frontier Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_standard_04_mk3",
+        "wareID": "shield_ter_m_standard_04_mk3",
+        "label": "TER M Frontier Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_virtual_01_mk1",
+        "wareID": "shield_ter_m_virtual_01_mk1",
+        "label": "TER M Frontier Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_virtual_01_mk2",
+        "wareID": "shield_ter_m_virtual_01_mk2",
+        "label": "TER M Frontier Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_m_virtual_01_mk3",
+        "wareID": "shield_ter_m_virtual_01_mk3",
+        "label": "TER M Frontier Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_s_standard_01_mk1",
+        "wareID": "shield_ter_s_standard_01_mk1",
+        "label": "TER S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_s_standard_01_mk2",
+        "wareID": "shield_ter_s_standard_01_mk2",
+        "label": "TER S Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_s_standard_01_mk3",
+        "wareID": "shield_ter_s_standard_01_mk3",
+        "label": "TER S Shield Generator Mk3",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_s_virtual_01_mk1",
+        "wareID": "shield_ter_s_virtual_01_mk1",
+        "label": "TER S Frontier Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_s_xperimental_01_mk5",
+        "wareID": "shield_ter_s_xperimental_01_mk5",
+        "label": "TER S Frontier Shield Generator Mk5",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_xl_standard_01_mk1",
+        "wareID": "shield_ter_xl_standard_01_mk1",
+        "label": "TER XL Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_ter_xl_standard_01_mk2",
+        "wareID": "shield_ter_xl_standard_01_mk2",
+        "label": "TER XL Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_xen_l_standard_02_mk1",
+        "wareID": "shield_xen_l_standard_02_mk1",
+        "label": "XEN L Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_xen_l_standard_02_mk2",
+        "wareID": "shield_xen_l_standard_02_mk2",
+        "label": "XEN L Shield Generator Mk2",
         "categoryID": "shields"
     },
     {
-        "id": "shield_xen_m_standard_04_mk1",
+        "wareID": "shield_xen_m_standard_04_mk1",
+        "label": "XEN M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_xen_m_virtual_01_mk1",
+        "wareID": "shield_xen_m_virtual_01_mk1",
+        "label": "XEN M Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "shield_xen_s_virtual_01_mk1",
+        "wareID": "shield_xen_s_virtual_01_mk1",
+        "label": "XEN S Shield Generator Mk1",
         "categoryID": "shields"
     },
     {
-        "id": "ship_arg_l_destroyer_01_a",
+        "wareID": "ship_arg_l_destroyer_01_a",
+        "label": "Behemoth Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_destroyer_01_b",
+        "wareID": "ship_arg_l_destroyer_01_b",
+        "label": "Behemoth Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_destroyer_02_a",
+        "wareID": "ship_arg_l_destroyer_02_a",
+        "label": "Behemoth E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_miner_liquid_01_a",
+        "wareID": "ship_arg_l_miner_liquid_01_a",
+        "label": "Magnetar (Gas) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_miner_liquid_01_b",
+        "wareID": "ship_arg_l_miner_liquid_01_b",
+        "label": "Magnetar (Gas) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_miner_solid_01_a",
+        "wareID": "ship_arg_l_miner_solid_01_a",
+        "label": "Magnetar (Mineral) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_miner_solid_01_b",
+        "wareID": "ship_arg_l_miner_solid_01_b",
+        "label": "Magnetar (Mineral) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_01_a",
+        "wareID": "ship_arg_l_trans_container_01_a",
+        "label": "Veles Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_01_b",
+        "wareID": "ship_arg_l_trans_container_01_b",
+        "label": "Veles Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_02_a",
+        "wareID": "ship_arg_l_trans_container_02_a",
+        "label": "Mokosi Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_02_b",
+        "wareID": "ship_arg_l_trans_container_02_b",
+        "label": "Mokosi Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_03_a",
+        "wareID": "ship_arg_l_trans_container_03_a",
+        "label": "Incarcatura Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_03_b",
+        "wareID": "ship_arg_l_trans_container_03_b",
+        "label": "Incarcatura Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_04_a",
+        "wareID": "ship_arg_l_trans_container_04_a",
+        "label": "Shuyaku Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_04_b",
+        "wareID": "ship_arg_l_trans_container_04_b",
+        "label": "Shuyaku Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_05_a",
+        "wareID": "ship_arg_l_trans_container_05_a",
+        "label": "Sonra Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_l_trans_container_05_b",
+        "wareID": "ship_arg_l_trans_container_05_b",
+        "label": "Sonra Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_bomber_01_a",
+        "wareID": "ship_arg_m_bomber_01_a",
+        "label": "Minotaur Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_bomber_01_b",
+        "wareID": "ship_arg_m_bomber_01_b",
+        "label": "Minotaur Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_bomber_02_a",
+        "wareID": "ship_arg_m_bomber_02_a",
+        "label": "Minotaur Raider",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_frigate_01_a",
+        "wareID": "ship_arg_m_frigate_01_a",
+        "label": "Cerberus Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_frigate_01_b",
+        "wareID": "ship_arg_m_frigate_01_b",
+        "label": "Cerberus Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_miner_liquid_01_a",
+        "wareID": "ship_arg_m_miner_liquid_01_a",
+        "label": "Sunder (Gas) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_miner_liquid_01_b",
+        "wareID": "ship_arg_m_miner_liquid_01_b",
+        "label": "Sunder (Gas) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_miner_solid_01_a",
+        "wareID": "ship_arg_m_miner_solid_01_a",
+        "label": "Drill (Mineral) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_miner_solid_01_b",
+        "wareID": "ship_arg_m_miner_solid_01_b",
+        "label": "Drill (Mineral) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_trans_container_01_a",
+        "wareID": "ship_arg_m_trans_container_01_a",
+        "label": "Mercury Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_trans_container_01_b",
+        "wareID": "ship_arg_m_trans_container_01_b",
+        "label": "Mercury Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_trans_container_02_a",
+        "wareID": "ship_arg_m_trans_container_02_a",
+        "label": "Ides Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_m_trans_container_02_b",
+        "wareID": "ship_arg_m_trans_container_02_b",
+        "label": "Ides Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_fighter_01_a",
+        "wareID": "ship_arg_s_fighter_01_a",
+        "label": "Nova Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_fighter_01_b",
+        "wareID": "ship_arg_s_fighter_01_b",
+        "label": "Nova Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_fighter_02_a",
+        "wareID": "ship_arg_s_fighter_02_a",
+        "label": "Elite Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_fighter_02_b",
+        "wareID": "ship_arg_s_fighter_02_b",
+        "label": "Elite Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_fighter_03_a",
+        "wareID": "ship_arg_s_fighter_03_a",
+        "label": "Pulsar Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_fighter_04_a",
+        "wareID": "ship_arg_s_fighter_04_a",
+        "label": "Quasar Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_heavyfighter_01_a",
+        "wareID": "ship_arg_s_heavyfighter_01_a",
+        "label": "Eclipse Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_heavyfighter_01_b",
+        "wareID": "ship_arg_s_heavyfighter_01_b",
+        "label": "Eclipse Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_heavyfighter_02_a",
+        "wareID": "ship_arg_s_heavyfighter_02_a",
+        "label": "Eclipse Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_miner_solid_01_a",
+        "wareID": "ship_arg_s_miner_solid_01_a",
+        "label": "Courier (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_racer_01_a",
+        "wareID": "ship_arg_s_racer_01_a",
+        "label": "Elite Sport",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_scout_01_a",
+        "wareID": "ship_arg_s_scout_01_a",
+        "label": "Discoverer Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_scout_01_b",
+        "wareID": "ship_arg_s_scout_01_b",
+        "label": "Discoverer Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_trans_container_01_a",
+        "wareID": "ship_arg_s_trans_container_01_a",
+        "label": "Courier Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_trans_container_01_b",
+        "wareID": "ship_arg_s_trans_container_01_b",
+        "label": "Courier Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_trans_container_02_a",
+        "wareID": "ship_arg_s_trans_container_02_a",
+        "label": "Callisto Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_s_trans_container_02_b",
+        "wareID": "ship_arg_s_trans_container_02_b",
+        "label": "Callisto Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_xl_builder_01_a",
+        "wareID": "ship_arg_xl_builder_01_a",
+        "label": "Mammoth Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_xl_builder_01_b",
+        "wareID": "ship_arg_xl_builder_01_b",
+        "label": "Mammoth Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_xl_carrier_01_a",
+        "wareID": "ship_arg_xl_carrier_01_a",
+        "label": "Colossus Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_xl_carrier_01_b",
+        "wareID": "ship_arg_xl_carrier_01_b",
+        "label": "Colossus Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_xl_carrier_02_a",
+        "wareID": "ship_arg_xl_carrier_02_a",
+        "label": "Colossus E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_xl_resupplier_01_a",
+        "wareID": "ship_arg_xl_resupplier_01_a",
+        "label": "Nomad Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_arg_xl_resupplier_01_b",
+        "wareID": "ship_arg_xl_resupplier_01_b",
+        "label": "Nomad Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_atf_l_destroyer_01_a",
+        "wareID": "ship_atf_l_destroyer_01_a",
+        "label": "Syn",
         "categoryID": "ships"
     },
     {
-        "id": "ship_atf_xl_battleship_01_a",
+        "wareID": "ship_atf_xl_battleship_01_a",
+        "label": "Asgard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_l_carrier_01_a",
+        "wareID": "ship_bor_l_carrier_01_a",
+        "label": "Guppy",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_l_destroyer_01_a",
+        "wareID": "ship_bor_l_destroyer_01_a",
+        "label": "Ray",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_l_miner_liquid_01_a",
+        "wareID": "ship_bor_l_miner_liquid_01_a",
+        "label": "Rorqual (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_l_miner_solid_01_a",
+        "wareID": "ship_bor_l_miner_solid_01_a",
+        "label": "Rorqual (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_l_trans_container_01_a",
+        "wareID": "ship_bor_l_trans_container_01_a",
+        "label": "Sturgeon",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_m_corvette_01_a",
+        "wareID": "ship_bor_m_corvette_01_a",
+        "label": "Hydra",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_m_gunboat_01_a",
+        "wareID": "ship_bor_m_gunboat_01_a",
+        "label": "Thresher",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_m_miner_liquid_01_a",
+        "wareID": "ship_bor_m_miner_liquid_01_a",
+        "label": "Porpoise (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_m_miner_solid_01_a",
+        "wareID": "ship_bor_m_miner_solid_01_a",
+        "label": "Porpoise (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_m_trans_container_01_a",
+        "wareID": "ship_bor_m_trans_container_01_a",
+        "label": "Dolphin",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_s_fighter_01_a",
+        "wareID": "ship_bor_s_fighter_01_a",
+        "label": "Mako",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_s_heavyfighter_01_a",
+        "wareID": "ship_bor_s_heavyfighter_01_a",
+        "label": "Barracuda",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_s_miner_solid_01_a",
+        "wareID": "ship_bor_s_miner_solid_01_a",
+        "label": "Grouper (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_s_scout_01_a",
+        "wareID": "ship_bor_s_scout_01_a",
+        "label": "Piranha",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_s_scout_02_a",
+        "wareID": "ship_bor_s_scout_02_a",
+        "label": "Irukandji",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_s_trans_container_01_a",
+        "wareID": "ship_bor_s_trans_container_01_a",
+        "label": "Terrapin",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_xl_builder_01_a",
+        "wareID": "ship_bor_xl_builder_01_a",
+        "label": "Walrus",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_xl_carrier_01_a",
+        "wareID": "ship_bor_xl_carrier_01_a",
+        "label": "Shark",
         "categoryID": "ships"
     },
     {
-        "id": "ship_bor_xl_resupplier_01_a",
+        "wareID": "ship_bor_xl_resupplier_01_a",
+        "label": "Orca",
         "categoryID": "ships"
     },
     {
-        "id": "ship_gen_m_tugboat_01_a",
+        "wareID": "ship_gen_m_tugboat_01_a",
+        "label": "Manticore",
         "categoryID": "ships"
     },
     {
-        "id": "ship_gen_s_fighter_01_a",
+        "wareID": "ship_gen_s_fighter_01_a",
+        "label": "Nodan Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_gen_s_fighter_01_b",
+        "wareID": "ship_gen_s_fighter_01_b",
+        "label": "Nodan Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_gen_s_fightingdrone_01_a",
+        "wareID": "ship_gen_s_fightingdrone_01_a",
+        "label": "Defence Drone",
         "categoryID": "drones"
     },
     {
-        "id": "ship_gen_s_lasertower_01_a",
+        "wareID": "ship_gen_s_lasertower_01_a",
+        "label": "Laser Tower Mk2",
         "categoryID": "deployables"
     },
     {
-        "id": "ship_gen_s_miningdrone_liquid_01_a",
+        "wareID": "ship_gen_s_miningdrone_liquid_01_a",
+        "label": "Gas Collector Drone",
         "categoryID": "drones"
     },
     {
-        "id": "ship_gen_s_miningdrone_solid_01_a",
+        "wareID": "ship_gen_s_miningdrone_solid_01_a",
+        "label": "Mining Drone",
         "categoryID": "drones"
     },
     {
-        "id": "ship_gen_s_racer_01_a",
+        "wareID": "ship_gen_s_racer_01_a",
+        "label": "Dart",
         "categoryID": "ships"
     },
     {
-        "id": "ship_gen_xs_buildingdrone_01_a",
+        "wareID": "ship_gen_xs_buildingdrone_01_a",
+        "label": "Building Drone",
         "categoryID": "drones"
     },
     {
-        "id": "ship_gen_xs_cargodrone_empty_01_a",
+        "wareID": "ship_gen_xs_cargodrone_empty_01_a",
+        "label": "Cargo Drone",
         "categoryID": "drones"
     },
     {
-        "id": "ship_gen_xs_lasertower_01_a",
+        "wareID": "ship_gen_xs_lasertower_01_a",
+        "label": "Laser Tower Mk1",
         "categoryID": "deployables"
     },
     {
-        "id": "ship_gen_xs_repairdrone_01_a",
+        "wareID": "ship_gen_xs_repairdrone_01_a",
+        "label": "Repair Drone",
         "categoryID": "drones"
     },
     {
-        "id": "ship_par_l_destroyer_01_a",
+        "wareID": "ship_par_l_destroyer_01_a",
+        "label": "Odysseus Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_destroyer_01_b",
+        "wareID": "ship_par_l_destroyer_01_b",
+        "label": "Odysseus Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_destroyer_02_a",
+        "wareID": "ship_par_l_destroyer_02_a",
+        "label": "Odysseus E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_expeditionary_01_a",
+        "wareID": "ship_par_l_expeditionary_01_a",
+        "label": "Hyperion",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_miner_liquid_01_a",
+        "wareID": "ship_par_l_miner_liquid_01_a",
+        "label": "Chthonios (Gas) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_miner_liquid_01_b",
+        "wareID": "ship_par_l_miner_liquid_01_b",
+        "label": "Chthonios (Gas) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_miner_liquid_02_a",
+        "wareID": "ship_par_l_miner_liquid_02_a",
+        "label": "Chthonios E (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_miner_solid_01_a",
+        "wareID": "ship_par_l_miner_solid_01_a",
+        "label": "Chthonios (Mineral) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_miner_solid_01_b",
+        "wareID": "ship_par_l_miner_solid_01_b",
+        "label": "Chthonios (Mineral) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_miner_solid_02_a",
+        "wareID": "ship_par_l_miner_solid_02_a",
+        "label": "Chthonios E (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_trans_container_01_a",
+        "wareID": "ship_par_l_trans_container_01_a",
+        "label": "Helios Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_trans_container_01_b",
+        "wareID": "ship_par_l_trans_container_01_b",
+        "label": "Helios Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_trans_container_02_a",
+        "wareID": "ship_par_l_trans_container_02_a",
+        "label": "Selene Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_trans_container_02_b",
+        "wareID": "ship_par_l_trans_container_02_b",
+        "label": "Selene Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_l_trans_container_03_a",
+        "wareID": "ship_par_l_trans_container_03_a",
+        "label": "Helios E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_corvette_01_a",
+        "wareID": "ship_par_m_corvette_01_a",
+        "label": "Nemesis Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_corvette_01_b",
+        "wareID": "ship_par_m_corvette_01_b",
+        "label": "Nemesis Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_frigate_01_a",
+        "wareID": "ship_par_m_frigate_01_a",
+        "label": "Gorgon Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_frigate_01_b",
+        "wareID": "ship_par_m_frigate_01_b",
+        "label": "Gorgon Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_miner_liquid_01_a",
+        "wareID": "ship_par_m_miner_liquid_01_a",
+        "label": "Plutus (Gas) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_miner_liquid_01_b",
+        "wareID": "ship_par_m_miner_liquid_01_b",
+        "label": "Plutus (Gas) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_miner_solid_01_a",
+        "wareID": "ship_par_m_miner_solid_01_a",
+        "label": "Plutus (Mineral) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_miner_solid_01_b",
+        "wareID": "ship_par_m_miner_solid_01_b",
+        "label": "Plutus (Mineral) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_trans_container_01_a",
+        "wareID": "ship_par_m_trans_container_01_a",
+        "label": "Demeter Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_trans_container_01_b",
+        "wareID": "ship_par_m_trans_container_01_b",
+        "label": "Demeter Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_trans_container_02_a",
+        "wareID": "ship_par_m_trans_container_02_a",
+        "label": "Hermes Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_trans_container_02_b",
+        "wareID": "ship_par_m_trans_container_02_b",
+        "label": "Hermes Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_m_trans_container_03_a",
+        "wareID": "ship_par_m_trans_container_03_a",
+        "label": "Prometheus",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_fighter_01_a",
+        "wareID": "ship_par_s_fighter_01_a",
+        "label": "Perseus Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_fighter_01_b",
+        "wareID": "ship_par_s_fighter_01_b",
+        "label": "Perseus Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_fighter_02_a",
+        "wareID": "ship_par_s_fighter_02_a",
+        "label": "Theseus Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_fighter_02_b",
+        "wareID": "ship_par_s_fighter_02_b",
+        "label": "Theseus Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_heavyfighter_01_a",
+        "wareID": "ship_par_s_heavyfighter_01_a",
+        "label": "Ares",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_miner_solid_01_a",
+        "wareID": "ship_par_s_miner_solid_01_a",
+        "label": "Tethys (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_racer_01_a",
+        "wareID": "ship_par_s_racer_01_a",
+        "label": "Theseus Sport",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_scout_01_a",
+        "wareID": "ship_par_s_scout_01_a",
+        "label": "Pegasus Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_scout_01_b",
+        "wareID": "ship_par_s_scout_01_b",
+        "label": "Pegasus Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_trans_container_01_a",
+        "wareID": "ship_par_s_trans_container_01_a",
+        "label": "Tethys Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_s_trans_container_01_b",
+        "wareID": "ship_par_s_trans_container_01_b",
+        "label": "Tethys Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_builder_01_a",
+        "wareID": "ship_par_xl_builder_01_a",
+        "label": "Heracles Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_builder_01_b",
+        "wareID": "ship_par_xl_builder_01_b",
+        "label": "Heracles Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_carrier_01_a",
+        "wareID": "ship_par_xl_carrier_01_a",
+        "label": "Zeus Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_carrier_01_b",
+        "wareID": "ship_par_xl_carrier_01_b",
+        "label": "Zeus Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_carrier_02_a",
+        "wareID": "ship_par_xl_carrier_02_a",
+        "label": "Zeus E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_resupplier_01_a",
+        "wareID": "ship_par_xl_resupplier_01_a",
+        "label": "Atlas Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_resupplier_01_b",
+        "wareID": "ship_par_xl_resupplier_01_b",
+        "label": "Atlas Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_par_xl_resupplier_02_a",
+        "wareID": "ship_par_xl_resupplier_02_a",
+        "label": "Atlas E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_l_miner_solid_01_a",
+        "wareID": "ship_pir_l_miner_solid_01_a",
+        "label": "Donia",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_l_scavenger_01_a",
+        "wareID": "ship_pir_l_scavenger_01_a",
+        "label": "Barbarossa",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_l_scrapper_01",
+        "wareID": "ship_pir_l_scrapper_01",
+        "label": "Teuta",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_s_fighter_01_a",
+        "wareID": "ship_pir_s_fighter_01_a",
+        "label": "Kyd",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_s_fighter_02_a",
+        "wareID": "ship_pir_s_fighter_02_a",
+        "label": "Lux",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_s_heavyfighter_01_a",
+        "wareID": "ship_pir_s_heavyfighter_01_a",
+        "label": "Shih",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_s_trans_condensate_01_a",
+        "wareID": "ship_pir_s_trans_condensate_01_a",
+        "label": "Raleigh (Condensate)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_s_trans_container_01_a",
+        "wareID": "ship_pir_s_trans_container_01_a",
+        "label": "Raleigh (Container)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_xl_battleship_01_a",
+        "wareID": "ship_pir_xl_battleship_01_a",
+        "label": "Erlking",
         "categoryID": "ships"
     },
     {
-        "id": "ship_pir_xl_builder_01",
+        "wareID": "ship_pir_xl_builder_01",
+        "label": "Gannascus",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_l_destroyer_01_a",
+        "wareID": "ship_spl_l_destroyer_01_a",
+        "label": "Rattlesnake",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_l_miner_liquid_01_a",
+        "wareID": "ship_spl_l_miner_liquid_01_a",
+        "label": "Wyvern (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_l_miner_solid_01_a",
+        "wareID": "ship_spl_l_miner_solid_01_a",
+        "label": "Wyvern (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_l_trans_container_01_a",
+        "wareID": "ship_spl_l_trans_container_01_a",
+        "label": "Buffalo",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_m_corvette_01_a",
+        "wareID": "ship_spl_m_corvette_01_a",
+        "label": "Dragon",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_m_corvette_01_b",
+        "wareID": "ship_spl_m_corvette_01_b",
+        "label": "Dragon Raider",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_m_frigate_01_a",
+        "wareID": "ship_spl_m_frigate_01_a",
+        "label": "Cobra",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_m_miner_liquid_01_a",
+        "wareID": "ship_spl_m_miner_liquid_01_a",
+        "label": "Alligator (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_m_miner_solid_01_a",
+        "wareID": "ship_spl_m_miner_solid_01_a",
+        "label": "Alligator (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_m_trans_container_01_a",
+        "wareID": "ship_spl_m_trans_container_01_a",
+        "label": "Boa",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_fighter_01_a",
+        "wareID": "ship_spl_s_fighter_01_a",
+        "label": "Mamba",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_fighter_02_a",
+        "wareID": "ship_spl_s_fighter_02_a",
+        "label": "Asp",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_fighter_02_b",
+        "wareID": "ship_spl_s_fighter_02_b",
+        "label": "Asp Raider",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_heavyfighter_01_a",
+        "wareID": "ship_spl_s_heavyfighter_01_a",
+        "label": "Chimera",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_heavyfighter_02_a",
+        "wareID": "ship_spl_s_heavyfighter_02_a",
+        "label": "Balaur",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_miner_solid_01_a",
+        "wareID": "ship_spl_s_miner_solid_01_a",
+        "label": "Tuatara (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_scout_01_a",
+        "wareID": "ship_spl_s_scout_01_a",
+        "label": "Jaguar",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_s_trans_container_01_a",
+        "wareID": "ship_spl_s_trans_container_01_a",
+        "label": "Tuatara",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_xl_builder_01_a",
+        "wareID": "ship_spl_xl_builder_01_a",
+        "label": "Elephant",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_xl_carrier_01_a",
+        "wareID": "ship_spl_xl_carrier_01_a",
+        "label": "Raptor",
         "categoryID": "ships"
     },
     {
-        "id": "ship_spl_xl_resupplier_01_a",
+        "wareID": "ship_spl_xl_resupplier_01_a",
+        "label": "Monitor",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_destroyer_01_a",
+        "wareID": "ship_tel_l_destroyer_01_a",
+        "label": "Phoenix Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_destroyer_01_b",
+        "wareID": "ship_tel_l_destroyer_01_b",
+        "label": "Phoenix Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_destroyer_02_a",
+        "wareID": "ship_tel_l_destroyer_02_a",
+        "label": "Phoenix E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_miner_liquid_01_a",
+        "wareID": "ship_tel_l_miner_liquid_01_a",
+        "label": "Crane (Gas) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_miner_liquid_01_b",
+        "wareID": "ship_tel_l_miner_liquid_01_b",
+        "label": "Crane (Gas) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_miner_liquid_02_a",
+        "wareID": "ship_tel_l_miner_liquid_02_a",
+        "label": "Crane E (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_miner_solid_01_a",
+        "wareID": "ship_tel_l_miner_solid_01_a",
+        "label": "Crane (Mineral) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_miner_solid_01_b",
+        "wareID": "ship_tel_l_miner_solid_01_b",
+        "label": "Crane (Mineral) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_miner_solid_02_a",
+        "wareID": "ship_tel_l_miner_solid_02_a",
+        "label": "Crane E (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_trans_container_01_a",
+        "wareID": "ship_tel_l_trans_container_01_a",
+        "label": "Pelican Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_trans_container_01_b",
+        "wareID": "ship_tel_l_trans_container_01_b",
+        "label": "Pelican Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_trans_container_02_a",
+        "wareID": "ship_tel_l_trans_container_02_a",
+        "label": "Heron Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_trans_container_02_b",
+        "wareID": "ship_tel_l_trans_container_02_b",
+        "label": "Heron Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_l_trans_container_03_a",
+        "wareID": "ship_tel_l_trans_container_03_a",
+        "label": "Heron E",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_bomber_01_a",
+        "wareID": "ship_tel_m_bomber_01_a",
+        "label": "Peregrine Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_bomber_01_b",
+        "wareID": "ship_tel_m_bomber_01_b",
+        "label": "Peregrine Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_frigate_01_a",
+        "wareID": "ship_tel_m_frigate_01_a",
+        "label": "Osprey Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_frigate_01_b",
+        "wareID": "ship_tel_m_frigate_01_b",
+        "label": "Osprey Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_miner_liquid_01_a",
+        "wareID": "ship_tel_m_miner_liquid_01_a",
+        "label": "Manorina (Gas) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_miner_liquid_01_b",
+        "wareID": "ship_tel_m_miner_liquid_01_b",
+        "label": "Manorina (Gas) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_miner_solid_01_a",
+        "wareID": "ship_tel_m_miner_solid_01_a",
+        "label": "Manorina (Mineral) Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_miner_solid_01_b",
+        "wareID": "ship_tel_m_miner_solid_01_b",
+        "label": "Manorina (Mineral) Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_trans_container_01_a",
+        "wareID": "ship_tel_m_trans_container_01_a",
+        "label": "Vulture Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_trans_container_01_b",
+        "wareID": "ship_tel_m_trans_container_01_b",
+        "label": "Vulture Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_trans_container_02_a",
+        "wareID": "ship_tel_m_trans_container_02_a",
+        "label": "Tern Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_trans_container_02_b",
+        "wareID": "ship_tel_m_trans_container_02_b",
+        "label": "Tern Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_m_trans_container_03_a",
+        "wareID": "ship_tel_m_trans_container_03_a",
+        "label": "Cormorant Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_fighter_01_a",
+        "wareID": "ship_tel_s_fighter_01_a",
+        "label": "Falcon Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_fighter_01_b",
+        "wareID": "ship_tel_s_fighter_01_b",
+        "label": "Falcon Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_fighter_02_a",
+        "wareID": "ship_tel_s_fighter_02_a",
+        "label": "Buzzard Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_fighter_02_b",
+        "wareID": "ship_tel_s_fighter_02_b",
+        "label": "Buzzard Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_miner_solid_01_a",
+        "wareID": "ship_tel_s_miner_solid_01_a",
+        "label": "Magpie (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_racer_01_a",
+        "wareID": "ship_tel_s_racer_01_a",
+        "label": "Kestrel Sport",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_scout_01_a",
+        "wareID": "ship_tel_s_scout_01_a",
+        "label": "Kestrel Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_scout_01_b",
+        "wareID": "ship_tel_s_scout_01_b",
+        "label": "Kestrel Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_scout_02_a",
+        "wareID": "ship_tel_s_scout_02_a",
+        "label": "Guillemot Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_scout_02_b",
+        "wareID": "ship_tel_s_scout_02_b",
+        "label": "Guillemot Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_trans_container_01_a",
+        "wareID": "ship_tel_s_trans_container_01_a",
+        "label": "Magpie Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_s_trans_container_01_b",
+        "wareID": "ship_tel_s_trans_container_01_b",
+        "label": "Magpie Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_xl_builder_01_a",
+        "wareID": "ship_tel_xl_builder_01_a",
+        "label": "Albatross Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_xl_builder_01_b",
+        "wareID": "ship_tel_xl_builder_01_b",
+        "label": "Albatross Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_xl_carrier_01_a",
+        "wareID": "ship_tel_xl_carrier_01_a",
+        "label": "Condor Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_xl_carrier_01_b",
+        "wareID": "ship_tel_xl_carrier_01_b",
+        "label": "Condor Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_xl_resupplier_01_a",
+        "wareID": "ship_tel_xl_resupplier_01_a",
+        "label": "Stork Vanguard",
         "categoryID": "ships"
     },
     {
-        "id": "ship_tel_xl_resupplier_01_b",
+        "wareID": "ship_tel_xl_resupplier_01_b",
+        "label": "Stork Sentinel",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_l_destroyer_01_a",
+        "wareID": "ship_ter_l_destroyer_01_a",
+        "label": "Osaka",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_l_flagship_01_a",
+        "wareID": "ship_ter_l_flagship_01_a",
+        "label": "Sapporo",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_l_miner_liquid_01_a",
+        "wareID": "ship_ter_l_miner_liquid_01_a",
+        "label": "Hokkaido (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_l_miner_solid_01_a",
+        "wareID": "ship_ter_l_miner_solid_01_a",
+        "label": "Hokkaido (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_l_trans_container_01_a",
+        "wareID": "ship_ter_l_trans_container_01_a",
+        "label": "Okinawa",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_m_corvette_01_a",
+        "wareID": "ship_ter_m_corvette_01_a",
+        "label": "Katana",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_m_corvette_02_a",
+        "wareID": "ship_ter_m_corvette_02_a",
+        "label": "Odachi",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_m_frigate_01_a",
+        "wareID": "ship_ter_m_frigate_01_a",
+        "label": "Falx",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_m_gunboat_01_a",
+        "wareID": "ship_ter_m_gunboat_01_a",
+        "label": "Jian",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_m_miner_liquid_01_a",
+        "wareID": "ship_ter_m_miner_liquid_01_a",
+        "label": "Bolo (Gas)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_m_miner_solid_01_a",
+        "wareID": "ship_ter_m_miner_solid_01_a",
+        "label": "Bolo (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_m_trans_container_01_a",
+        "wareID": "ship_ter_m_trans_container_01_a",
+        "label": "Baldric",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_fighter_01_a",
+        "wareID": "ship_ter_s_fighter_01_a",
+        "label": "Kukri",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_fighter_02_a",
+        "wareID": "ship_ter_s_fighter_02_a",
+        "label": "Kalis",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_fighter_03_a",
+        "wareID": "ship_ter_s_fighter_03_a",
+        "label": "Takoba",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_fighter_04_a",
+        "wareID": "ship_ter_s_fighter_04_a",
+        "label": "Cutlass",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_heavyfighter_01_a",
+        "wareID": "ship_ter_s_heavyfighter_01_a",
+        "label": "Gladius",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_miner_solid_01_a",
+        "wareID": "ship_ter_s_miner_solid_01_a",
+        "label": "Kopis (Mineral)",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_scout_01_a",
+        "wareID": "ship_ter_s_scout_01_a",
+        "label": "Rapier",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_scout_02_a",
+        "wareID": "ship_ter_s_scout_02_a",
+        "label": "Nimcha",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_trans_container_01_a",
+        "wareID": "ship_ter_s_trans_container_01_a",
+        "label": "Frog",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_s_xperimental_01_a",
+        "wareID": "ship_ter_s_xperimental_01_a",
+        "label": "Xperimental Shuttle",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_xl_builder_01_a",
+        "wareID": "ship_ter_xl_builder_01_a",
+        "label": "Kyushu",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_xl_carrier_01_a",
+        "wareID": "ship_ter_xl_carrier_01_a",
+        "label": "Tokyo",
         "categoryID": "ships"
     },
     {
-        "id": "ship_ter_xl_resupplier_01_a",
+        "wareID": "ship_ter_xl_resupplier_01_a",
+        "label": "Honshu",
         "categoryID": "ships"
     },
     {
-        "id": "ship_xen_l_terraformer_01_a",
+        "wareID": "ship_xen_l_terraformer_01_a",
+        "label": "H",
         "categoryID": "ships"
     },
     {
-        "id": "ship_xen_m_corvette_01_a",
+        "wareID": "ship_xen_m_corvette_01_a",
+        "label": "B",
         "categoryID": "ships"
     },
     {
-        "id": "ship_xen_m_corvette_02_a",
+        "wareID": "ship_xen_m_corvette_02_a",
+        "label": "PE",
         "categoryID": "ships"
     },
     {
-        "id": "ship_xen_m_miner_solid_01_a",
+        "wareID": "ship_xen_m_miner_solid_01_a",
+        "label": "SE",
         "categoryID": "ships"
     },
     {
-        "id": "ship_xen_s_heavyfighter_01_a",
+        "wareID": "ship_xen_s_heavyfighter_01_a",
+        "label": "F",
         "categoryID": "ships"
     },
     {
-        "id": "ship_yak_m_corvette_01_a",
+        "wareID": "ship_yak_m_corvette_01_a",
+        "label": "Kuraokami",
         "categoryID": "ships"
     },
     {
-        "id": "ship_yak_s_fighter_01_a",
+        "wareID": "ship_yak_s_fighter_01_a",
+        "label": "Moreya",
         "categoryID": "ships"
     },
     {
-        "id": "thruster_gen_l_allround_01_mk1",
+        "wareID": "thruster_gen_l_allround_01_mk1",
+        "label": "L All-round Thrusters Mk1",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_l_allround_01_mk2",
+        "wareID": "thruster_gen_l_allround_01_mk2",
+        "label": "L All-round Thrusters Mk2",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_l_allround_01_mk3",
+        "wareID": "thruster_gen_l_allround_01_mk3",
+        "label": "L All-round Thrusters Mk3",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_m_allround_01_mk1",
+        "wareID": "thruster_gen_m_allround_01_mk1",
+        "label": "M All-round Thrusters Mk1",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_m_allround_01_mk2",
+        "wareID": "thruster_gen_m_allround_01_mk2",
+        "label": "M All-round Thrusters Mk2",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_m_allround_01_mk3",
+        "wareID": "thruster_gen_m_allround_01_mk3",
+        "label": "M All-round Thrusters Mk3",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_m_combat_01_mk1",
+        "wareID": "thruster_gen_m_combat_01_mk1",
+        "label": "M Combat Thrusters Mk1",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_m_combat_01_mk2",
+        "wareID": "thruster_gen_m_combat_01_mk2",
+        "label": "M Combat Thrusters Mk2",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_m_combat_01_mk3",
+        "wareID": "thruster_gen_m_combat_01_mk3",
+        "label": "M Combat Thrusters Mk3",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_s_allround_01_mk1",
+        "wareID": "thruster_gen_s_allround_01_mk1",
+        "label": "S All-round Thrusters Mk1",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_s_allround_01_mk2",
+        "wareID": "thruster_gen_s_allround_01_mk2",
+        "label": "S All-round Thrusters Mk2",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_s_allround_01_mk3",
+        "wareID": "thruster_gen_s_allround_01_mk3",
+        "label": "S All-round Thrusters Mk3",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_s_combat_01_mk1",
+        "wareID": "thruster_gen_s_combat_01_mk1",
+        "label": "S Combat Thrusters Mk1",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_s_combat_01_mk2",
+        "wareID": "thruster_gen_s_combat_01_mk2",
+        "label": "S Combat Thrusters Mk2",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_s_combat_01_mk3",
+        "wareID": "thruster_gen_s_combat_01_mk3",
+        "label": "S Combat Thrusters Mk3",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_xl_allround_01_mk1",
+        "wareID": "thruster_gen_xl_allround_01_mk1",
+        "label": "XL All-round Thrusters Mk1",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_xl_allround_01_mk2",
+        "wareID": "thruster_gen_xl_allround_01_mk2",
+        "label": "XL All-round Thrusters Mk2",
         "categoryID": "thruster"
     },
     {
-        "id": "thruster_gen_xl_allround_01_mk3",
+        "wareID": "thruster_gen_xl_allround_01_mk3",
+        "label": "XL All-round Thrusters Mk3",
         "categoryID": "thruster"
     },
     {
-        "id": "turret_arg_l_beam_01_mk1",
+        "wareID": "turret_arg_l_beam_01_mk1",
+        "label": "ARG L Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_l_dumbfire_01_mk1",
+        "wareID": "turret_arg_l_dumbfire_01_mk1",
+        "label": "ARG L Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_l_guided_01_mk1",
+        "wareID": "turret_arg_l_guided_01_mk1",
+        "label": "ARG L Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_l_laser_01_mk1",
+        "wareID": "turret_arg_l_laser_01_mk1",
+        "label": "ARG L Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_l_mining_01_mk1",
+        "wareID": "turret_arg_l_mining_01_mk1",
+        "label": "ARG L Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_l_plasma_01_mk1",
+        "wareID": "turret_arg_l_plasma_01_mk1",
+        "label": "ARG L Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_beam_01_mk1",
+        "wareID": "turret_arg_m_beam_01_mk1",
+        "label": "ARG M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_beam_02_mk1",
+        "wareID": "turret_arg_m_beam_02_mk1",
+        "label": "ARG M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_dumbfire_02_mk1",
+        "wareID": "turret_arg_m_dumbfire_02_mk1",
+        "label": "ARG M Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_flak_01_mk1",
+        "wareID": "turret_arg_m_flak_01_mk1",
+        "label": "ARG M Flak Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_flak_02_mk1",
+        "wareID": "turret_arg_m_flak_02_mk1",
+        "label": "ARG M Flak Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_gatling_01_mk1",
+        "wareID": "turret_arg_m_gatling_01_mk1",
+        "label": "ARG M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_gatling_02_mk1",
+        "wareID": "turret_arg_m_gatling_02_mk1",
+        "label": "ARG M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_guided_02_mk1",
+        "wareID": "turret_arg_m_guided_02_mk1",
+        "label": "ARG M Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_laser_01_mk1",
+        "wareID": "turret_arg_m_laser_01_mk1",
+        "label": "ARG M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_laser_02_mk1",
+        "wareID": "turret_arg_m_laser_02_mk1",
+        "label": "ARG M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_mining_01_mk1",
+        "wareID": "turret_arg_m_mining_01_mk1",
+        "label": "ARG M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_mining_02_mk1",
+        "wareID": "turret_arg_m_mining_02_mk1",
+        "label": "ARG M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_plasma_01_mk1",
+        "wareID": "turret_arg_m_plasma_01_mk1",
+        "label": "ARG M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_plasma_02_mk1",
+        "wareID": "turret_arg_m_plasma_02_mk1",
+        "label": "ARG M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_shotgun_01_mk1",
+        "wareID": "turret_arg_m_shotgun_01_mk1",
+        "label": "ARG M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_arg_m_shotgun_02_mk1",
+        "wareID": "turret_arg_m_shotgun_02_mk1",
+        "label": "ARG M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_l_disruptor_01_mk1",
+        "wareID": "turret_bor_l_disruptor_01_mk1",
+        "label": "BOR L Ion Net Launcher Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_l_flak_01_mk1",
+        "wareID": "turret_bor_l_flak_01_mk1",
+        "label": "BOR L Ion Flak Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_l_laser_01_mk1",
+        "wareID": "turret_bor_l_laser_01_mk1",
+        "label": "BOR L Phase Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_l_mining_01_mk1",
+        "wareID": "turret_bor_l_mining_01_mk1",
+        "label": "BOR L Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_arc_01_mk1",
+        "wareID": "turret_bor_m_arc_01_mk1",
+        "label": "BOR M Arc Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_arc_02_mk1",
+        "wareID": "turret_bor_m_arc_02_mk1",
+        "label": "BOR M Arc Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_dumbfire_01_mk1",
+        "wareID": "turret_bor_m_dumbfire_01_mk1",
+        "label": "BOR M Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_guided_01_mk1",
+        "wareID": "turret_bor_m_guided_01_mk1",
+        "label": "BOR M Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_laser_01_mk1",
+        "wareID": "turret_bor_m_laser_01_mk1",
+        "label": "BOR M Phase Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_laser_02_mk1",
+        "wareID": "turret_bor_m_laser_02_mk1",
+        "label": "BOR M Phase Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_mining_01_mk1",
+        "wareID": "turret_bor_m_mining_01_mk1",
+        "label": "BOR M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_mining_02_mk1",
+        "wareID": "turret_bor_m_mining_02_mk1",
+        "label": "BOR M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_railgun_01_mk1",
+        "wareID": "turret_bor_m_railgun_01_mk1",
+        "label": "BOR M Ion Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_bor_m_railgun_02_mk1",
+        "wareID": "turret_bor_m_railgun_02_mk1",
+        "label": "BOR M Ion Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_gen_m_scrapbeam_01_mk1",
+        "wareID": "turret_gen_m_scrapbeam_01_mk1",
+        "label": "Scrap Tractor",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_l_beam_01_mk1",
+        "wareID": "turret_par_l_beam_01_mk1",
+        "label": "PAR L Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_l_dumbfire_01_mk1",
+        "wareID": "turret_par_l_dumbfire_01_mk1",
+        "label": "PAR L Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_l_guided_01_mk1",
+        "wareID": "turret_par_l_guided_01_mk1",
+        "label": "PAR L Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_l_laser_01_mk1",
+        "wareID": "turret_par_l_laser_01_mk1",
+        "label": "PAR L Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_l_mining_01_mk1",
+        "wareID": "turret_par_l_mining_01_mk1",
+        "label": "PAR L Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_l_plasma_01_mk1",
+        "wareID": "turret_par_l_plasma_01_mk1",
+        "label": "PAR L Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_beam_01_mk1",
+        "wareID": "turret_par_m_beam_01_mk1",
+        "label": "PAR M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_beam_02_mk1",
+        "wareID": "turret_par_m_beam_02_mk1",
+        "label": "PAR M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_dumbfire_02_mk1",
+        "wareID": "turret_par_m_dumbfire_02_mk1",
+        "label": "PAR M Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_gatling_01_mk1",
+        "wareID": "turret_par_m_gatling_01_mk1",
+        "label": "PAR M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_gatling_02_mk1",
+        "wareID": "turret_par_m_gatling_02_mk1",
+        "label": "PAR M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_guided_02_mk1",
+        "wareID": "turret_par_m_guided_02_mk1",
+        "label": "PAR M Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_laser_01_mk1",
+        "wareID": "turret_par_m_laser_01_mk1",
+        "label": "PAR M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_laser_02_mk1",
+        "wareID": "turret_par_m_laser_02_mk1",
+        "label": "PAR M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_mining_01_mk1",
+        "wareID": "turret_par_m_mining_01_mk1",
+        "label": "PAR M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_mining_02_mk1",
+        "wareID": "turret_par_m_mining_02_mk1",
+        "label": "PAR M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_plasma_01_mk1",
+        "wareID": "turret_par_m_plasma_01_mk1",
+        "label": "PAR M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_plasma_02_mk1",
+        "wareID": "turret_par_m_plasma_02_mk1",
+        "label": "PAR M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_shotgun_01_mk1",
+        "wareID": "turret_par_m_shotgun_01_mk1",
+        "label": "PAR M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_par_m_shotgun_02_mk1",
+        "wareID": "turret_par_m_shotgun_02_mk1",
+        "label": "PAR M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_pir_l_battleship_01_laser_01_mk1",
+        "wareID": "turret_pir_l_battleship_01_laser_01_mk1",
+        "label": "Erlking L Turret",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_pir_m_battleship_01_gatling_02_mk1",
+        "wareID": "turret_pir_m_battleship_01_gatling_02_mk1",
+        "label": "Erlking M Turret",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_l_beam_01_mk1",
+        "wareID": "turret_spl_l_beam_01_mk1",
+        "label": "SPL L Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_l_dumbfire_01_mk1",
+        "wareID": "turret_spl_l_dumbfire_01_mk1",
+        "label": "SPL L Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_l_guided_01_mk1",
+        "wareID": "turret_spl_l_guided_01_mk1",
+        "label": "SPL L Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_l_laser_01_mk1",
+        "wareID": "turret_spl_l_laser_01_mk1",
+        "label": "SPL L Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_l_mining_01_mk1",
+        "wareID": "turret_spl_l_mining_01_mk1",
+        "label": "SPL L Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_l_plasma_01_mk1",
+        "wareID": "turret_spl_l_plasma_01_mk1",
+        "label": "SPL L Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_beam_01_mk1",
+        "wareID": "turret_spl_m_beam_01_mk1",
+        "label": "SPL M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_beam_02_mk1",
+        "wareID": "turret_spl_m_beam_02_mk1",
+        "label": "SPL M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_dumbfire_02_mk1",
+        "wareID": "turret_spl_m_dumbfire_02_mk1",
+        "label": "SPL M Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_flak_01_mk1",
+        "wareID": "turret_spl_m_flak_01_mk1",
+        "label": "SPL M Flak Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_flak_02_mk1",
+        "wareID": "turret_spl_m_flak_02_mk1",
+        "label": "SPL M Flak Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_gatling_01_mk1",
+        "wareID": "turret_spl_m_gatling_01_mk1",
+        "label": "SPL M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_gatling_02_mk1",
+        "wareID": "turret_spl_m_gatling_02_mk1",
+        "label": "SPL M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_guided_02_mk1",
+        "wareID": "turret_spl_m_guided_02_mk1",
+        "label": "SPL M Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_laser_01_mk1",
+        "wareID": "turret_spl_m_laser_01_mk1",
+        "label": "SPL M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_laser_02_mk1",
+        "wareID": "turret_spl_m_laser_02_mk1",
+        "label": "SPL M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_mining_01_mk1",
+        "wareID": "turret_spl_m_mining_01_mk1",
+        "label": "SPL M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_mining_02_mk1",
+        "wareID": "turret_spl_m_mining_02_mk1",
+        "label": "SPL M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_plasma_01_mk1",
+        "wareID": "turret_spl_m_plasma_01_mk1",
+        "label": "SPL M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_plasma_02_mk1",
+        "wareID": "turret_spl_m_plasma_02_mk1",
+        "label": "SPL M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_shotgun_01_mk1",
+        "wareID": "turret_spl_m_shotgun_01_mk1",
+        "label": "SPL M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_spl_m_shotgun_02_mk1",
+        "wareID": "turret_spl_m_shotgun_02_mk1",
+        "label": "SPL M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_l_beam_01_mk1",
+        "wareID": "turret_tel_l_beam_01_mk1",
+        "label": "TEL L Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_l_dumbfire_01_mk1",
+        "wareID": "turret_tel_l_dumbfire_01_mk1",
+        "label": "TEL L Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_l_guided_01_mk1",
+        "wareID": "turret_tel_l_guided_01_mk1",
+        "label": "TEL L Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_l_laser_01_mk1",
+        "wareID": "turret_tel_l_laser_01_mk1",
+        "label": "TEL L Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_l_mining_01_mk1",
+        "wareID": "turret_tel_l_mining_01_mk1",
+        "label": "TEL L Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_l_plasma_01_mk1",
+        "wareID": "turret_tel_l_plasma_01_mk1",
+        "label": "TEL L Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_beam_01_mk1",
+        "wareID": "turret_tel_m_beam_01_mk1",
+        "label": "TEL M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_beam_02_mk1",
+        "wareID": "turret_tel_m_beam_02_mk1",
+        "label": "TEL M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_dumbfire_02_mk1",
+        "wareID": "turret_tel_m_dumbfire_02_mk1",
+        "label": "TEL M Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_gatling_01_mk1",
+        "wareID": "turret_tel_m_gatling_01_mk1",
+        "label": "TEL M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_gatling_02_mk1",
+        "wareID": "turret_tel_m_gatling_02_mk1",
+        "label": "TEL M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_guided_02_mk1",
+        "wareID": "turret_tel_m_guided_02_mk1",
+        "label": "TEL M Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_laser_01_mk1",
+        "wareID": "turret_tel_m_laser_01_mk1",
+        "label": "TEL M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_laser_02_mk1",
+        "wareID": "turret_tel_m_laser_02_mk1",
+        "label": "TEL M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_mining_01_mk1",
+        "wareID": "turret_tel_m_mining_01_mk1",
+        "label": "TEL M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_mining_02_mk1",
+        "wareID": "turret_tel_m_mining_02_mk1",
+        "label": "TEL M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_plasma_01_mk1",
+        "wareID": "turret_tel_m_plasma_01_mk1",
+        "label": "TEL M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_plasma_02_mk1",
+        "wareID": "turret_tel_m_plasma_02_mk1",
+        "label": "TEL M Plasma Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_shotgun_01_mk1",
+        "wareID": "turret_tel_m_shotgun_01_mk1",
+        "label": "TEL M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_tel_m_shotgun_02_mk1",
+        "wareID": "turret_tel_m_shotgun_02_mk1",
+        "label": "TEL M Shard Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_l_beam_01_mk1",
+        "wareID": "turret_ter_l_beam_01_mk1",
+        "label": "TER L Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_l_dumbfire_01_mk1",
+        "wareID": "turret_ter_l_dumbfire_01_mk1",
+        "label": "TER L Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_l_gatling_01_mk1",
+        "wareID": "turret_ter_l_gatling_01_mk1",
+        "label": "TER L Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_l_guided_01_mk1",
+        "wareID": "turret_ter_l_guided_01_mk1",
+        "label": "TER L Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_l_laser_01_mk1",
+        "wareID": "turret_ter_l_laser_01_mk1",
+        "label": "TER L Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_l_mining_01_mk1",
+        "wareID": "turret_ter_l_mining_01_mk1",
+        "label": "TER L Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_beam_01_mk1",
+        "wareID": "turret_ter_m_beam_01_mk1",
+        "label": "TER M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_beam_02_mk1",
+        "wareID": "turret_ter_m_beam_02_mk1",
+        "label": "TER M Beam Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_dumbfire_02_mk1",
+        "wareID": "turret_ter_m_dumbfire_02_mk1",
+        "label": "TER M Dumbfire Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_gatling_01_mk1",
+        "wareID": "turret_ter_m_gatling_01_mk1",
+        "label": "TER M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_gatling_02_mk1",
+        "wareID": "turret_ter_m_gatling_02_mk1",
+        "label": "TER M Bolt Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_guided_02_mk1",
+        "wareID": "turret_ter_m_guided_02_mk1",
+        "label": "TER M Tracking Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_laser_01_mk1",
+        "wareID": "turret_ter_m_laser_01_mk1",
+        "label": "TER M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_laser_02_mk1",
+        "wareID": "turret_ter_m_laser_02_mk1",
+        "label": "TER M Pulse Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_laser_03_mk1",
+        "wareID": "turret_ter_m_laser_03_mk1",
+        "label": "TER M Electromagnetic Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_laser_04_mk1",
+        "wareID": "turret_ter_m_laser_04_mk1",
+        "label": "TER M Electromagnetic Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_mining_01_mk1",
+        "wareID": "turret_ter_m_mining_01_mk1",
+        "label": "TER M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_ter_m_mining_02_mk1",
+        "wareID": "turret_ter_m_mining_02_mk1",
+        "label": "TER M Mining Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_xen_l_plasma_01_mk1",
+        "wareID": "turret_xen_l_plasma_01_mk1",
+        "label": "XEN L Seismic Charge Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_xen_m_gatling_01_mk1",
+        "wareID": "turret_xen_m_gatling_01_mk1",
+        "label": "XEN M Needler Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "turret_xen_m_gatling_02_mk1",
+        "wareID": "turret_xen_m_gatling_02_mk1",
+        "label": "XEN M Needler Turret Mk1",
         "categoryID": "turrets"
     },
     {
-        "id": "waypointmarker_01",
+        "wareID": "waypointmarker_01",
+        "label": "Nav Beacon",
         "categoryID": "deployables"
     },
     {
-        "id": "weapon_arg_l_destroyer_01_mk1",
+        "wareID": "weapon_arg_l_destroyer_01_mk1",
+        "label": "ARG Behemoth Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_arg_m_ion_01_mk1",
+        "wareID": "weapon_arg_m_ion_01_mk1",
+        "label": "ARG M Ion Blaster Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_arg_m_ion_01_mk2",
+        "wareID": "weapon_arg_m_ion_01_mk2",
+        "label": "ARG M Ion Blaster Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_arg_s_ion_01_mk1",
+        "wareID": "weapon_arg_s_ion_01_mk1",
+        "label": "ARG S Ion Blaster Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_arg_s_ion_01_mk2",
+        "wareID": "weapon_arg_s_ion_01_mk2",
+        "label": "ARG S Ion Blaster Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_atf_xl_battleship_01_mk1",
+        "wareID": "weapon_atf_xl_battleship_01_mk1",
+        "label": "ATF XL Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_l_beam_01_mk1",
+        "wareID": "weapon_bor_l_beam_01_mk1",
+        "label": "BOR Ray Ion Projector",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_m_dumbfire_01_mk1",
+        "wareID": "weapon_bor_m_dumbfire_01_mk1",
+        "label": "BOR M Dumbfire Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_m_flak_01_mk1",
+        "wareID": "weapon_bor_m_flak_01_mk1",
+        "label": "BOR M Ion Atomiser Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_m_guided_01_mk1",
+        "wareID": "weapon_bor_m_guided_01_mk1",
+        "label": "BOR M Tracking Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_m_laser_01_mk1",
+        "wareID": "weapon_bor_m_laser_01_mk1",
+        "label": "BOR M Phase Cannon Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_m_mining_01_mk1",
+        "wareID": "weapon_bor_m_mining_01_mk1",
+        "label": "BOR M Mining Drill Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_m_railgun_01_mk1",
+        "wareID": "weapon_bor_m_railgun_01_mk1",
+        "label": "BOR M Ion Pulse Railgun Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_m_torpedo_01_mk1",
+        "wareID": "weapon_bor_m_torpedo_01_mk1",
+        "label": "BOR M Torpedo Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_s_arc_01_mk1",
+        "wareID": "weapon_bor_s_arc_01_mk1",
+        "label": "BOR S Arc Gun Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_s_dumbfire_01_mk1",
+        "wareID": "weapon_bor_s_dumbfire_01_mk1",
+        "label": "BOR S Dumbfire Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_s_gatling_01_mk1",
+        "wareID": "weapon_bor_s_gatling_01_mk1",
+        "label": "BOR S Ion Gatling Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_s_guided_01_mk1",
+        "wareID": "weapon_bor_s_guided_01_mk1",
+        "label": "BOR S Tracking Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_s_laser_01_mk1",
+        "wareID": "weapon_bor_s_laser_01_mk1",
+        "label": "BOR S Phase Gun Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_s_mining_01_mk1",
+        "wareID": "weapon_bor_s_mining_01_mk1",
+        "label": "BOR S Mining Drill Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_bor_s_torpedo_01_mk1",
+        "wareID": "weapon_bor_s_torpedo_01_mk1",
+        "label": "BOR S Torpedo Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_clustermine_01",
+        "wareID": "weapon_clustermine_01",
+        "label": "Cluster Mine",
         "categoryID": "mines"
     },
     {
-        "id": "weapon_gen_mine_01",
+        "wareID": "weapon_gen_mine_01",
+        "label": "Mine",
         "categoryID": "mines"
     },
     {
-        "id": "weapon_gen_mine_02",
+        "wareID": "weapon_gen_mine_02",
+        "label": "Tracker Mine",
         "categoryID": "mines"
     },
     {
-        "id": "weapon_gen_mine_03",
+        "wareID": "weapon_gen_mine_03",
+        "label": "Friend\/Foe Mine",
         "categoryID": "mines"
     },
     {
-        "id": "weapon_gen_m_beam_01_mk1",
+        "wareID": "weapon_gen_m_beam_01_mk1",
+        "label": "M Beam Emitter Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_beam_01_mk2",
+        "wareID": "weapon_gen_m_beam_01_mk2",
+        "label": "M Beam Emitter Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_dumbfire_01_mk1",
+        "wareID": "weapon_gen_m_dumbfire_01_mk1",
+        "label": "M Dumbfire Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_dumbfire_01_mk2",
+        "wareID": "weapon_gen_m_dumbfire_01_mk2",
+        "label": "M Dumbfire Launcher Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_gatling_01_mk1",
+        "wareID": "weapon_gen_m_gatling_01_mk1",
+        "label": "M Bolt Repeater Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_gatling_01_mk2",
+        "wareID": "weapon_gen_m_gatling_01_mk2",
+        "label": "M Bolt Repeater Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_guided_01_mk1",
+        "wareID": "weapon_gen_m_guided_01_mk1",
+        "label": "M Tracking Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_guided_01_mk2",
+        "wareID": "weapon_gen_m_guided_01_mk2",
+        "label": "M Tracking Launcher Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_laser_01_mk1",
+        "wareID": "weapon_gen_m_laser_01_mk1",
+        "label": "M Pulse Laser Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_laser_01_mk2",
+        "wareID": "weapon_gen_m_laser_01_mk2",
+        "label": "M Pulse Laser Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_mining_01_mk1",
+        "wareID": "weapon_gen_m_mining_01_mk1",
+        "label": "M Mining Drill Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_mining_01_mk2",
+        "wareID": "weapon_gen_m_mining_01_mk2",
+        "label": "M Mining Drill Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_plasma_01_mk1",
+        "wareID": "weapon_gen_m_plasma_01_mk1",
+        "label": "M Plasma Cannon Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_plasma_01_mk2",
+        "wareID": "weapon_gen_m_plasma_01_mk2",
+        "label": "M Plasma Cannon Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_shotgun_01_mk1",
+        "wareID": "weapon_gen_m_shotgun_01_mk1",
+        "label": "M Shard Battery Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_shotgun_01_mk2",
+        "wareID": "weapon_gen_m_shotgun_01_mk2",
+        "label": "M Shard Battery Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_torpedo_01_mk1",
+        "wareID": "weapon_gen_m_torpedo_01_mk1",
+        "label": "M Torpedo Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_m_torpedo_01_mk2",
+        "wareID": "weapon_gen_m_torpedo_01_mk2",
+        "label": "M Torpedo Launcher Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_beam_01_mk1",
+        "wareID": "weapon_gen_s_beam_01_mk1",
+        "label": "S Beam Emitter Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_beam_01_mk2",
+        "wareID": "weapon_gen_s_beam_01_mk2",
+        "label": "S Beam Emitter Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_burst_01_mk1",
+        "wareID": "weapon_gen_s_burst_01_mk1",
+        "label": "S Burst Ray Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_burst_01_mk2",
+        "wareID": "weapon_gen_s_burst_01_mk2",
+        "label": "S Burst Ray Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_cannon_01_mk1",
+        "wareID": "weapon_gen_s_cannon_01_mk1",
+        "label": "S Blast Mortar Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_cannon_01_mk2",
+        "wareID": "weapon_gen_s_cannon_01_mk2",
+        "label": "S Blast Mortar Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_dumbfire_01_mk1",
+        "wareID": "weapon_gen_s_dumbfire_01_mk1",
+        "label": "S Dumbfire Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_dumbfire_01_mk2",
+        "wareID": "weapon_gen_s_dumbfire_01_mk2",
+        "label": "S Dumbfire Launcher Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_gatling_01_mk1",
+        "wareID": "weapon_gen_s_gatling_01_mk1",
+        "label": "S Bolt Repeater Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_gatling_01_mk2",
+        "wareID": "weapon_gen_s_gatling_01_mk2",
+        "label": "S Bolt Repeater Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_guided_01_mk1",
+        "wareID": "weapon_gen_s_guided_01_mk1",
+        "label": "S Tracking Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_guided_01_mk2",
+        "wareID": "weapon_gen_s_guided_01_mk2",
+        "label": "S Tracking Launcher Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_laser_01_mk1",
+        "wareID": "weapon_gen_s_laser_01_mk1",
+        "label": "S Pulse Laser Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_laser_01_mk2",
+        "wareID": "weapon_gen_s_laser_01_mk2",
+        "label": "S Pulse Laser Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_mining_01_mk1",
+        "wareID": "weapon_gen_s_mining_01_mk1",
+        "label": "S Mining Drill Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_mining_01_mk2",
+        "wareID": "weapon_gen_s_mining_01_mk2",
+        "label": "S Mining Drill Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_plasma_01_mk1",
+        "wareID": "weapon_gen_s_plasma_01_mk1",
+        "label": "S Plasma Cannon Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_plasma_01_mk2",
+        "wareID": "weapon_gen_s_plasma_01_mk2",
+        "label": "S Plasma Cannon Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_shotgun_01_mk1",
+        "wareID": "weapon_gen_s_shotgun_01_mk1",
+        "label": "S Shard Battery Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_shotgun_01_mk2",
+        "wareID": "weapon_gen_s_shotgun_01_mk2",
+        "label": "S Shard Battery Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_torpedo_01_mk1",
+        "wareID": "weapon_gen_s_torpedo_01_mk1",
+        "label": "S Torpedo Launcher Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_gen_s_torpedo_01_mk2",
+        "wareID": "weapon_gen_s_torpedo_01_mk2",
+        "label": "S Torpedo Launcher Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_par_l_destroyer_01_mk1",
+        "wareID": "weapon_par_l_destroyer_01_mk1",
+        "label": "PAR Odysseus Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_par_l_expeditionary_01_mk1",
+        "wareID": "weapon_par_l_expeditionary_01_mk1",
+        "label": "PAR Hyperion Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_par_m_railgun_01_mk1",
+        "wareID": "weapon_par_m_railgun_01_mk1",
+        "label": "PAR M Mass Driver Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_par_m_railgun_01_mk2",
+        "wareID": "weapon_par_m_railgun_01_mk2",
+        "label": "PAR M Mass Driver Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_par_s_railgun_01_mk1",
+        "wareID": "weapon_par_s_railgun_01_mk1",
+        "label": "PAR S Mass Driver Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_par_s_railgun_01_mk2",
+        "wareID": "weapon_par_s_railgun_01_mk2",
+        "label": "PAR S Mass Driver Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_pir_xl_battleship_01_mk1",
+        "wareID": "weapon_pir_xl_battleship_01_mk1",
+        "label": "Erlking Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_l_destroyer_01_mk1",
+        "wareID": "weapon_spl_l_destroyer_01_mk1",
+        "label": "SPL Rattlesnake Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_gatling_01_mk1",
+        "wareID": "weapon_spl_m_gatling_01_mk1",
+        "label": "SPL M Neutron Gatling Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_gatling_01_mk2",
+        "wareID": "weapon_spl_m_gatling_01_mk2",
+        "label": "SPL M Neutron Gatling Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_railgun_01_mk1",
+        "wareID": "weapon_spl_m_railgun_01_mk1",
+        "label": "SPL M Boson Lance Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_railgun_01_mk2",
+        "wareID": "weapon_spl_m_railgun_01_mk2",
+        "label": "SPL M Boson Lance Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_shotgun_01_mk1",
+        "wareID": "weapon_spl_m_shotgun_01_mk1",
+        "label": "SPL M Tau Accelerator Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_shotgun_01_mk2",
+        "wareID": "weapon_spl_m_shotgun_01_mk2",
+        "label": "SPL M Tau Accelerator Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_sticky_01_mk1",
+        "wareID": "weapon_spl_m_sticky_01_mk1",
+        "label": "SPL M Thermal Disintegrator Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_m_sticky_01_mk2",
+        "wareID": "weapon_spl_m_sticky_01_mk2",
+        "label": "SPL M Thermal Disintegrator Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_gatling_01_mk1",
+        "wareID": "weapon_spl_s_gatling_01_mk1",
+        "label": "SPL S Neutron Gatling Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_gatling_01_mk2",
+        "wareID": "weapon_spl_s_gatling_01_mk2",
+        "label": "SPL S Neutron Gatling Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_railgun_01_mk1",
+        "wareID": "weapon_spl_s_railgun_01_mk1",
+        "label": "SPL S Boson Lance Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_railgun_01_mk2",
+        "wareID": "weapon_spl_s_railgun_01_mk2",
+        "label": "SPL S Boson Lance Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_shotgun_01_mk1",
+        "wareID": "weapon_spl_s_shotgun_01_mk1",
+        "label": "SPL S Tau Accelerator Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_shotgun_01_mk2",
+        "wareID": "weapon_spl_s_shotgun_01_mk2",
+        "label": "SPL S Tau Accelerator Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_sticky_01_mk1",
+        "wareID": "weapon_spl_s_sticky_01_mk1",
+        "label": "SPL S Thermal Disintegrator Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_spl_s_sticky_01_mk2",
+        "wareID": "weapon_spl_s_sticky_01_mk2",
+        "label": "SPL S Thermal Disintegrator Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_tel_l_destroyer_01_mk1",
+        "wareID": "weapon_tel_l_destroyer_01_mk1",
+        "label": "TEL Phoenix Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_tel_m_charge_01_mk1",
+        "wareID": "weapon_tel_m_charge_01_mk1",
+        "label": "TEL M Muon Charger Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_tel_m_charge_01_mk2",
+        "wareID": "weapon_tel_m_charge_01_mk2",
+        "label": "TEL M Muon Charger Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_tel_s_charge_01_mk1",
+        "wareID": "weapon_tel_s_charge_01_mk1",
+        "label": "TEL S Muon Charger Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_tel_s_charge_01_mk2",
+        "wareID": "weapon_tel_s_charge_01_mk2",
+        "label": "TEL S Muon Charger Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_l_destroyer_01_mk1",
+        "wareID": "weapon_ter_l_destroyer_01_mk1",
+        "label": "Terran Main Battery",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_l_flagship_01_mk1",
+        "wareID": "weapon_ter_l_flagship_01_mk1",
+        "label": "TER Sapporo Launcher Array",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_m_beam_01_mk1",
+        "wareID": "weapon_ter_m_beam_01_mk1",
+        "label": "TER M Meson Stream Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_m_beam_01_mk2",
+        "wareID": "weapon_ter_m_beam_01_mk2",
+        "label": "TER M Meson Stream Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_m_gatling_01_mk1",
+        "wareID": "weapon_ter_m_gatling_01_mk1",
+        "label": "TER M Proton Barrage Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_m_gatling_01_mk2",
+        "wareID": "weapon_ter_m_gatling_01_mk2",
+        "label": "TER M Proton Barrage Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_m_laser_01_mk1",
+        "wareID": "weapon_ter_m_laser_01_mk1",
+        "label": "TER M Pulse Laser Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_m_laser_01_mk2",
+        "wareID": "weapon_ter_m_laser_01_mk2",
+        "label": "TER M Pulse Laser Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_m_laser_02_mk1",
+        "wareID": "weapon_ter_m_laser_02_mk1",
+        "label": "TER M Electromagnetic Cannon Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_beam_01_mk1",
+        "wareID": "weapon_ter_s_beam_01_mk1",
+        "label": "TER S Meson Stream Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_beam_01_mk2",
+        "wareID": "weapon_ter_s_beam_01_mk2",
+        "label": "TER S Meson Stream Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_gatling_01_mk1",
+        "wareID": "weapon_ter_s_gatling_01_mk1",
+        "label": "TER S Proton Barrage Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_gatling_01_mk2",
+        "wareID": "weapon_ter_s_gatling_01_mk2",
+        "label": "TER S Proton Barrage Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_laser_01_mk1",
+        "wareID": "weapon_ter_s_laser_01_mk1",
+        "label": "TER S Pulse Laser Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_laser_01_mk2",
+        "wareID": "weapon_ter_s_laser_01_mk2",
+        "label": "TER S Pulse Laser Mk2",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_laser_02_mk1",
+        "wareID": "weapon_ter_s_laser_02_mk1",
+        "label": "TER S Electromagnetic Gun Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_ter_s_plasma_01_mk1",
+        "wareID": "weapon_ter_s_plasma_01_mk1",
+        "label": "ARG S Gamma HEPT Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_xen_m_beam_01_mk1",
+        "wareID": "weapon_xen_m_beam_01_mk1",
+        "label": "XEN M Plasma Cutter Beam Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_xen_m_laser_02_mk1",
+        "wareID": "weapon_xen_m_laser_02_mk1",
+        "label": "XEN M Impulse Projector Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_xen_m_mining_02_mk1",
+        "wareID": "weapon_xen_m_mining_02_mk1",
+        "label": "XEN M Mining Drill Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "weapon_xen_s_gatling_01_mk1",
+        "wareID": "weapon_xen_s_gatling_01_mk1",
+        "label": "XEN S Needler Gun Mk1",
         "categoryID": "weapons"
     },
     {
-        "id": "welfare_bor_artacademy_01",
+        "wareID": "welfare_bor_artacademy_01",
+        "label": "Pheromone Art Gallery",
         "categoryID": "modules"
     }
 ]
