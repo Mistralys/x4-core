@@ -5,15 +5,19 @@ declare(strict_types=1);
 namespace Mistralys\X4\Database\Ships;
 
 use AppUtils\ArrayDataCollection;
-use AppUtils\Interfaces\StringPrimaryRecordInterface;
+use Mistralys\X4\Database\Core\CollectionItemInterface;
+use Mistralys\X4\Database\Core\CollectionItemTrait;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\DataSources\DataSourceDefs;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
 
-class ShipDef implements StringPrimaryRecordInterface
+class ShipDef implements CollectionItemInterface
 {
-    public const KEY_ID = 'id';
+    use CollectionItemTrait;
+
+    public const KEY_WARE_ID = 'wareID';
+    public const KEY_LABEL = 'label';
     public const KEY_SIZE = 'size';
     public const KEY_BUILDER_FACTION_ID = 'builderFactionID';
     public const KEY_CLASS_ID = 'classID';
@@ -30,10 +34,12 @@ class ShipDef implements StringPrimaryRecordInterface
      */
     private array $usedBy;
     private string $dataSourceID;
+    private string $label;
 
-    public function __construct(string $id, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID)
+    public function __construct(string $id, string $label, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID)
     {
         $this->id = $id;
+        $this->label = $label;
         $this->size = $size;
         $this->builderFactionID = $builderFactionID;
         $this->classID = $classID;
@@ -46,7 +52,8 @@ class ShipDef implements StringPrimaryRecordInterface
         $data = ArrayDataCollection::create($def);
 
         return new self(
-            $data->getString(self::KEY_ID),
+            $data->getString(self::KEY_WARE_ID),
+            $data->getString(self::KEY_LABEL),
             $data->getString(self::KEY_SIZE),
             $data->getString(self::KEY_BUILDER_FACTION_ID),
             $data->getString(self::KEY_CLASS_ID),
@@ -60,9 +67,19 @@ class ShipDef implements StringPrimaryRecordInterface
         return $this->id;
     }
 
-    public function getSize(): string
+    public function getLabel(): string
+    {
+        return $this->label;
+    }
+
+    public function getSizeID(): string
     {
         return $this->size;
+    }
+
+    public function getSize() : ShipSize
+    {
+        return ShipSizes::getInstance()->getByID($this->getSizeID());
     }
 
     public function getBuilderFactionID(): string
@@ -112,7 +129,8 @@ class ShipDef implements StringPrimaryRecordInterface
     public function toArray(): array
     {
         return array(
-            self::KEY_ID => $this->id,
+            self::KEY_WARE_ID => $this->id,
+            self::KEY_LABEL => $this->label,
             self::KEY_SIZE => $this->size,
             self::KEY_BUILDER_FACTION_ID => $this->builderFactionID,
             self::KEY_CLASS_ID => $this->classID,

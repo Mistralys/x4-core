@@ -77,7 +77,8 @@ class ShipsExtractor
         }
 
         $this->ships[] = array(
-            ShipDef::KEY_ID => $shipID,
+            ShipDef::KEY_WARE_ID => $shipID,
+            ShipDef::KEY_LABEL => $def->getLabel(),
             ShipDef::KEY_DATA_SOURCE_ID => $def->getDataSourceID(),
             ShipDef::KEY_SIZE => $this->resolveShipSize($dom),
             ShipDef::KEY_CLASS_ID => $this->resolveShipClass($domAlias ?? $dom, $shipID),
