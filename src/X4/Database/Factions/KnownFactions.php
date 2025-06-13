@@ -1,9 +1,35 @@
 <?php
+/**
+ * @package X4 Database
+ * @subpackage Factions 
+ */
 
 declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Factions;
 
+/**
+ * This class contains constants and methods for all known
+ * factions in X4.
+ * 
+ * This utility is meant to be used in tandem with the main
+ * collection class {@see FactionDefs}. When you want to access
+ * items manually in your code, the getter methods are a great
+ * help to find what you need.
+ * 
+ * ## Usage
+ * 
+ * Use the method {@see self::getInstance()} to get the
+ * instance of this class, then call the getter methods to
+ * retrieve the items you need.
+ * 
+ * ----
+ * 
+ * > NOTE: This is an auto-generated class.
+ * 
+ * @package X4 Database
+ * @subpackage Factions 
+ */
 class KnownFactions
 {
     public const FACTION_ALLIANCE_WORD = 'alliance';
