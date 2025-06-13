@@ -8,8 +8,10 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database;
 
+use AppUtils\ConvertHelper;
 use AppUtils\FileHelper\FolderInfo;
 use Mistral\X4\Database\Blueprints\BlueprintExtractor;
+use Mistralys\X4\Database\DataSources\DataSourcesExtractor;
 use Mistralys\X4\Database\Factions\FactionsExtractor;
 use Mistral\X4\Database\Wares\WaresExtractor;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
@@ -96,7 +98,7 @@ class DatabaseBuilder
         // Prerequisites
         self::extractMacroIndex();
         self::extractTranslations();
-        self::writeDataSources();
+        self::extractDataSources();
         self::extractFactions();
         self::extractWares();
 
@@ -120,20 +122,11 @@ class DatabaseBuilder
         (new MacroIndexExtractor(self::getDataFolders()))->extract();
     }
 
-    public static function writeDataSources() : void
+    public static function extractDataSources() : void
     {
         self::init();
 
-        $data = array();
-        foreach(self::getDataFolders()->getAll() as $dataFolder) {
-            $data[] = DataSourceDef::toArray($dataFolder);
-        }
-
-        ksort($data);
-
-        DataSourceDefs::getInstance()
-            ->getDataFile()
-            ->putData($data);
+        (new DataSourcesExtractor())->extract();
     }
 
     private static ?DataFolders $dataFolders = null;
@@ -146,5 +139,31 @@ class DatabaseBuilder
         }
 
         return self::$dataFolders;
+    }
+
+    public static function resolveMethodName(string $label): string
+    {
+        $label = ConvertHelper::transliterate($label);
+        $parts = ConvertHelper::explodeTrim('-', $label);
+
+        return 'get' . implode('', array_map('ucfirst', $parts));
+    }
+
+    /**
+     * @param string $label
+     * @param string|NULL $prefix Optional prefix to add to the constant name.
+     * @return string
+     */
+    public static function resolveConstantName(string $label, ?string $prefix=null): string
+    {
+        $label = ConvertHelper::transliterate($label);
+        $parts = ConvertHelper::explodeTrim('-', $label);
+        $parts = ConvertHelper::arrayRemoveValues($parts, array('of', 'the'));
+
+        if(!empty($prefix)) {
+            $prefix = rtrim(strtoupper($prefix), '_').'_';
+        }
+
+        return $prefix.strtoupper(implode('_', $parts));
     }
 }
