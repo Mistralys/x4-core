@@ -1048,7 +1048,7 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "",
+        "builderFactionID": "paranid",
         "usedBy": [
             "alliance"
         ]
@@ -1072,7 +1072,7 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "",
+        "builderFactionID": "generic",
         "usedBy": [
             "ownerless"
         ]
