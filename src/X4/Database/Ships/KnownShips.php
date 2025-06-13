@@ -636,12 +636,12 @@ class KnownShips
         return $this->defs->getByID(self::SHIP_BALDRIC);
     }
 
-    public function getBarbarossa01A() : ShipDef
+    public function getBarbarossa_01A() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_BARBAROSSA_01_A);
     }
 
-    public function getBarbarossa01AStoryhighcapacity() : ShipDef
+    public function getBarbarossa_01A_storyhighcapacity() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_BARBAROSSA_01_A_STORYHIGHCAPACITY);
     }
@@ -896,12 +896,12 @@ class KnownShips
         return $this->defs->getByID(self::SHIP_ECLIPSE_SENTINEL);
     }
 
-    public function getEclipseVanguard01A() : ShipDef
+    public function getEclipseVanguard_01A() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_ECLIPSE_VANGUARD_01_A);
     }
 
-    public function getEclipseVanguard02A() : ShipDef
+    public function getEclipseVanguard_02A() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_ECLIPSE_VANGUARD_02_A);
     }
@@ -981,12 +981,12 @@ class KnownShips
         return $this->defs->getByID(self::SHIP_GORGON_VANGUARD);
     }
 
-    public function getGrouperMineral01A() : ShipDef
+    public function getGrouperMineral_01A() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_GROUPER_MINERAL_01_A);
     }
 
-    public function getGrouperMineral01Story() : ShipDef
+    public function getGrouperMineral_01Story() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_GROUPER_MINERAL_01_STORY);
     }
