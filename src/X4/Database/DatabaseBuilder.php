@@ -11,6 +11,7 @@ namespace Mistralys\X4\Database;
 use AppUtils\ConvertHelper;
 use AppUtils\FileHelper\FolderInfo;
 use Mistral\X4\Database\Blueprints\BlueprintExtractor;
+use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DataSources\DataSourcesExtractor;
 use Mistralys\X4\Database\Factions\FactionsExtractor;
 use Mistral\X4\Database\Wares\WaresExtractor;
@@ -22,6 +23,7 @@ use Mistralys\X4\Database\Ships\ShipsExtractor;
 use Mistralys\X4\Database\Translations\Languages;
 use Mistralys\X4\Database\Translations\TranslationExtractor;
 use Mistralys\X4\ExtractedData\DataFolders;
+use function AppUtils\array_remove_values;
 use const Mistralys\X4\X4_EXTRACTED_CAT_FILES_FOLDER;
 
 /**
@@ -141,12 +143,35 @@ class DatabaseBuilder
         return self::$dataFolders;
     }
 
-    public static function resolveMethodName(string $label): string
+    public static function resolveMethodName(string $label, ?VariantID $variantID=null): string
+    {
+        $parts = self::stripVariantElements($label, $variantID);
+
+        return 'get' . implode('', array_map('ucfirst', $parts));
+    }
+
+    private static function stripVariantElements(string $label, ?VariantID $variantID=null) : array
     {
         $label = ConvertHelper::transliterate($label);
         $parts = ConvertHelper::explodeTrim('-', $label);
 
-        return 'get' . implode('', array_map('ucfirst', $parts));
+        if($variantID)
+        {
+            $parts = ConvertHelper::arrayRemoveValues($parts, VariantID::MARKS);
+
+            $number = $variantID->getNumberString();
+            if(!empty($number)) {
+                $parts = ConvertHelper::arrayRemoveValues($parts, array($number));
+            }
+
+            $qualifier = $variantID->getQualifier();
+            if(!empty($qualifier)) {
+                $qualifier = strtoupper(str_replace('-', '_', $qualifier));
+                $parts = ConvertHelper::arrayRemoveValues($parts, array($qualifier));
+            }
+        }
+
+        return $parts;
     }
 
     /**
@@ -154,10 +179,9 @@ class DatabaseBuilder
      * @param string|NULL $prefix Optional prefix to add to the constant name.
      * @return string
      */
-    public static function resolveConstantName(string $label, ?string $prefix=null): string
+    public static function resolveConstantName(string $label, ?string $prefix=null, ?VariantID $variantID=null): string
     {
-        $label = ConvertHelper::transliterate($label);
-        $parts = ConvertHelper::explodeTrim('-', $label);
+        $parts = self::stripVariantElements($label, $variantID);
         $parts = ConvertHelper::arrayRemoveValues($parts, array('of', 'the'));
 
         if(!empty($prefix)) {
