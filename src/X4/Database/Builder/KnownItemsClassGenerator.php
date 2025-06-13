@@ -316,18 +316,44 @@ PHP;
      */
     private array $items = array();
 
+    private array $constants = array();
+    private array $methods = array();
+
     public function addItem(string $id, string $label) : self
     {
         $prefix = $this->getListConstantName();
         if(str_ends_with($prefix, 'S')) {
-            // Remove the trailing 'S' to avoid double pluralization
+            // Remove the trailing 'S' to avoid pluralization
             $prefix = substr($prefix, 0, -1);
+        }
+
+        $constant = DatabaseBuilder::resolveConstantName($label, $prefix);
+        $method = DatabaseBuilder::resolveMethodName($label);
+
+        if(!isset($this->constants[$constant])) {
+            $this->constants[$constant] = 1;
+        } else {
+            Console::line1(
+                'WARNING | The constant name [%s] for ID [%s] is already used.',
+                $constant,
+                $id
+            );
+
+            $this->constants[$constant]++;
+            $constant .= '_'.$this->constants[$constant];
+        }
+
+        if(!isset($this->methods[$method])) {
+            $this->methods[$method] = 1;
+        } else {
+            $this->methods[$method]++;
+            $method .= $this->methods[$method];
         }
 
         $this->items[] = array(
             'id' => $id,
-            'constant' => DatabaseBuilder::resolveConstantName($label, $prefix),
-            'method' => DatabaseBuilder::resolveMethodName($label),
+            'constant' => $constant,
+            'method' => $method,
         );
 
         return $this;
