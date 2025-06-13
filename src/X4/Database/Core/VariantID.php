@@ -153,7 +153,7 @@ class VariantID implements StringableInterface
             return $constant;
         }
 
-        return $constant.'_'.strtoupper(implode('_', $variantParts));
+        return $constant.'_'.str_replace('-', '_', strtoupper(implode('_', $variantParts)));
     }
 
     public function appendMethodSuffix(string $method, ?string $exceptionSuffix=null) : string
@@ -168,7 +168,7 @@ class VariantID implements StringableInterface
             return $method;
         }
 
-        return $method.'_'.ucfirst(implode('', array_map('ucfirst', $variantParts)));
+        return $method.'_'.str_replace('-', '_', ucfirst(implode('', array_map('ucfirst', $variantParts))));
     }
 
     public function __toString(): string
