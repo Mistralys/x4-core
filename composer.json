@@ -1,6 +1,6 @@
 {
   "name": "mistralys/x4-core",
-  "description": "Core files for all X4 tools.",
+  "description": "Database and utility classes used to access X4: Foundations game data in an OOP way.",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "license": "MIT",
@@ -53,6 +53,6 @@
     "extract-ships": "Mistralys\\X4\\Database\\DatabaseBuilder::extractShips",
     "extract-modules": "Mistralys\\X4\\Database\\DatabaseBuilder::extractModules",
     "extract-macro-index": "Mistralys\\X4\\Database\\DatabaseBuilder::extractMacroIndex",
-    "write-datasources": "Mistralys\\X4\\Database\\DatabaseBuilder::writeDataSources"
+    "extract-datasources": "Mistralys\\X4\\Database\\DatabaseBuilder::extractDataSources"
   }
 }
