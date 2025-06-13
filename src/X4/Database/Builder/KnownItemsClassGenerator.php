@@ -15,6 +15,7 @@ use AppUtils\FileHelper\FolderInfo;
 use AppUtils\Interfaces\StringPrimaryCollectionInterface;
 use AppUtils\Interfaces\StringPrimaryRecordInterface;
 use AppUtils\StringBuilder;
+use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\UI\Console;
 use function AppUtils\sb;
@@ -49,7 +50,7 @@ class KnownItemsClassGenerator
      * @param class-string<StringPrimaryCollectionInterface> $collectionClass
      * @param class-string<StringPrimaryRecordInterface> $itemClass
      */
-    public function __construct(string $collectionClass, string $itemClass, FolderInfo $outputFolder, string $subpackage='')
+    public function __construct(string $collectionClass, string $itemClass, FolderInfo $outputFolder, string $subpackage = '')
     {
         $this->namespace = ClassHelper::getClassNamespace($collectionClass);
         $this->collectionClass = $collectionClass;
@@ -68,7 +69,7 @@ class KnownItemsClassGenerator
      * @param string|StringBuilder $description
      * @return $this
      */
-    public function setDescription(string|StringBuilder $description) : self
+    public function setDescription(string|StringBuilder $description): self
     {
         $this->description = (string)$description;
         return $this;
@@ -134,8 +135,11 @@ PHP;
 PHP;
 
 
-    public function generate() : void
+    public function generate(): void
     {
+        $this->adjustNaming();
+        $this->validateNaming();
+
         Console::header('Generating known items class for %s', $this->typeName);
 
         $itemClass = ClassHelper::getClassTypeName($this->itemClass);
@@ -144,8 +148,7 @@ PHP;
         $enums = array();
         $methods = array();
 
-        foreach($this->items as $item)
-        {
+        foreach ($this->items as $item) {
             $constants[] = sprintf(
                 '    public const %s = \'%s\';',
                 $item['constant'],
@@ -192,11 +195,11 @@ PHP;
         Console::line1('Done.');
     }
 
-    private function resolveDescription() : string
+    private function resolveDescription(): string
     {
         $descr = sb();
 
-        if(!empty($this->description)) {
+        if (!empty($this->description)) {
             $descr->add($this->description);
         }
 
@@ -234,7 +237,7 @@ PHP;
      * @param string $text The text to be used as a placeholder.
      * @return string The placeholder that will be used in the PHPDoc.
      */
-    private function addDescriptionPlaceholder(string $text) : string
+    private function addDescriptionPlaceholder(string $text): string
     {
         $this->placeholderCounter++;
 
@@ -243,7 +246,7 @@ PHP;
         $placeholder = sprintf(
             '%02d%s',
             $this->placeholderCounter,
-            str_repeat('9', strlen($text)-2)
+            str_repeat('9', strlen($text) - 2)
         );
 
         $this->placeholders[$placeholder] = $text;
@@ -251,7 +254,7 @@ PHP;
         return $placeholder;
     }
 
-    private function replacePlaceholders(string $text) : string
+    private function replacePlaceholders(string $text): string
     {
         return str_replace(
             array_keys($this->placeholders),
@@ -260,7 +263,7 @@ PHP;
         );
     }
 
-    private function renderDescription() : string
+    private function renderDescription(): string
     {
         // Normalize newlines
         $descr = str_replace("\r\n", "\n", $this->resolveDescription());
@@ -275,12 +278,11 @@ PHP;
         $paras = explode(self::PARA_PLACEHOLDER, $descr);
         $total = count($paras);
         $current = 1;
-        foreach($paras as $para)
-        {
+        foreach ($paras as $para) {
             // Append the lines from this paragraph
             array_push($lines, ...explode("__BREAK__", ConvertHelper::wordwrap(trim($para), 60, "__BREAK__")));
 
-            if($current < $total) {
+            if ($current < $total) {
                 // Add a blank line between paragraphs
                 $lines[] = '';
             }
@@ -292,9 +294,9 @@ PHP;
         return $this->replacePlaceholders(implode("\n * ", $lines));
     }
 
-    private function getSubpackage() : string
+    private function getSubpackage(): string
     {
-        if(!empty($this->subpackage)) {
+        if (!empty($this->subpackage)) {
             return $this->subpackage;
         }
 
@@ -306,56 +308,125 @@ PHP;
      *
      * @return string
      */
-    private function getListConstantName() : string
+    private function getListConstantName(): string
     {
         return strtoupper(ConvertHelper::camel2snake($this->typeName));
     }
 
     /**
-     * @var array<int,array{id:string, constant:string, method:string}>
+     * @var array<string,array{id:string, constant:string, method:string, variantID:VariantID|null}>
      */
     private array $items = array();
 
     private array $constants = array();
     private array $methods = array();
 
-    public function addItem(string $id, string $label) : self
+    /**
+     * @param string $id
+     * @param string $label
+     * @param VariantID|null $variantID Optional variant ID: Will be used to adjust the constant and method names in case of non-unique labels.
+     * @return $this
+     */
+    public function addItem(string $id, string $label, ?VariantID $variantID = null): self
     {
         $prefix = $this->getListConstantName();
-        if(str_ends_with($prefix, 'S')) {
+        if (str_ends_with($prefix, 'S')) {
             // Remove the trailing 'S' to avoid pluralization
             $prefix = substr($prefix, 0, -1);
         }
 
-        $constant = DatabaseBuilder::resolveConstantName($label, $prefix);
-        $method = DatabaseBuilder::resolveMethodName($label);
+        $constant = DatabaseBuilder::resolveConstantName($label, $prefix, $variantID);
+        $method = DatabaseBuilder::resolveMethodName($label, $variantID);
 
-        if(!isset($this->constants[$constant])) {
-            $this->constants[$constant] = 1;
-        } else {
-            Console::line1(
-                'WARNING | The constant name [%s] for ID [%s] is already used.',
-                $constant,
-                $id
-            );
-
-            $this->constants[$constant]++;
-            $constant .= '_'.$this->constants[$constant];
-        }
-
-        if(!isset($this->methods[$method])) {
-            $this->methods[$method] = 1;
-        } else {
-            $this->methods[$method]++;
-            $method .= $this->methods[$method];
-        }
-
-        $this->items[] = array(
+        $this->items[$id] = array(
             'id' => $id,
-            'constant' => $constant,
-            'method' => $method,
+            'variantID' => $variantID,
+            'constant' => '',
+            'method' => '',
         );
+
+        $this->registerNames($constant, $method, $id);
 
         return $this;
     }
+
+    private function registerNames(string $constant, string $method, string $id): void
+    {
+        $this->items[$id]['constant'] = $constant;
+        $this->items[$id]['method'] = $method;
+
+        if (!isset($this->constants[$constant])) {
+            $this->constants[$constant] = array();
+        }
+
+        $this->constants[$constant][] = $id;
+
+        if (!isset($this->methods[$method])) {
+            $this->methods[$method] = array();
+        }
+
+        $this->methods[$method][] = $id;
+    }
+
+    private function adjustNaming(): void
+    {
+        $constants = $this->constants;
+
+        $this->constants = array();
+        $this->methods = array();
+
+        foreach ($constants as $constant => $ids) {
+            if (count($ids) === 1) {
+                continue;
+            }
+
+            foreach ($ids as $id) {
+                $def = $this->items[$id];
+
+                if ($def['variantID'] instanceof VariantID) {
+                    $constant = $def['variantID']->appendConstantSuffix($def['constant'], $this->exceptionSuffixes[$id] ?? null);
+                    $method = $def['variantID']->appendMethodSuffix($def['method'], $this->exceptionSuffixes[$id] ?? null);
+
+                    $this->registerNames($constant, $method, $id);
+                } else {
+                    Console::line1(
+                        'ERROR | Skipping constant [%s], item [%s] has no variant ID specified.',
+                        $constant,
+                        $id
+                    );
+
+                    continue 2;
+                }
+            }
+        }
+    }
+
+    private function validateNaming(): void
+    {
+        foreach ($this->constants as $constant => $ids) {
+            if (count($ids) === 1) {
+                continue;
+            }
+
+            foreach($ids as $id) {
+                unset($this->items[$id]);
+            }
+
+            Console::line1(
+                'SKIP | The constant [%s] is not unique, it is used by the following items: [%s]',
+                $constant,
+                implode(', ', $ids)
+            );
+
+            Console::line1('INFO | Add an exception in the $exceptionSuffixes array to fix this.');
+        }
+    }
+
+    private array $exceptionSuffixes = array(
+        'shield_arg_s_racer_01_mk1' => 'racing',
+        'shield_par_s_racer_01_mk1' => 'racing',
+        'shield_tel_s_racer_01_mk1' => 'racing',
+        'ship_gen_s_lasertower_01_a' => 's',
+        'ship_gen_xs_lasertower_01_a' => 'xs'
+    );
 }
