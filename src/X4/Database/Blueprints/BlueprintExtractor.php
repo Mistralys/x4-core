@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Mistral\X4\Database\Blueprints;
 
+use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
-use AppUtils\FileHelper\PHPFile;
 use Mistralys\X4\Database\Blueprints\BlueprintDef;
+use Mistralys\X4\Database\Blueprints\BlueprintDefs;
 use Mistralys\X4\Database\Blueprints\Categories\Types\CountermeasureCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\DeployableCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\DroneCategory;
@@ -19,11 +20,14 @@ use Mistralys\X4\Database\Blueprints\Categories\Types\ShipCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\ThrusterCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\TurretCategory;
 use Mistralys\X4\Database\Blueprints\Categories\Types\WeaponCategory;
+use Mistralys\X4\Database\Builder\KnownItemsClassGenerator;
+use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\Database\Wares\WareDefs;
 use Mistralys\X4\Database\Wares\WareGroups;
 use Mistralys\X4\UI\Console;
 use Mistralys\X4\X4Application;
+use function AppLocalize\t;
 
 class BlueprintExtractor
 {
@@ -38,9 +42,9 @@ class BlueprintExtractor
         JSONFile::factory(X4Application::getDataFolder() .'/blueprints.json')
             ->setPrettyPrint(true)
             ->setTrailingNewline(true)
-            ->putData($this->blueprints);
+            ->putData(array_values($this->blueprints));
 
-        $this->writeEnumFile();
+        $this->writeKnownBlueprintsClass();
 
         print_r($this->summary);
     }
@@ -79,6 +83,7 @@ class BlueprintExtractor
         $parts = explode('_', $def->getID());
         $type = array_shift($parts);
         $categoryID = $this->detectCategoryClass($def);
+        $wareID = $def->getID();
 
         if($categoryID === null) {
             $text = $def->getGroupID().' = '.$categoryID.' ('.implode(', ', $def->getTags()).')'.PHP_EOL;
@@ -87,13 +92,14 @@ class BlueprintExtractor
                 $this->summary[] = $text;
             }
 
-            Console::line2('Ware [%s] | SKIP | Unknown type [%s]', $def->getID(), $type);
+            Console::line2('Ware [%s] | SKIP | Unknown type [%s]', $wareID, $type);
             return;
         }
 
-        $this->blueprints[] = array(
-            BlueprintDef::KEY_WARE_ID => $def->getID(),
+        $this->blueprints[$wareID] = array(
+            BlueprintDef::KEY_WARE_ID => $wareID,
             BlueprintDef::KEY_LABEL => $def->getLabel(),
+            BlueprintDef::KEY_VARIANT_ID => (string)VariantID::resolveWareVariantID($wareID),
             BlueprintDef::KEY_CATEGORY_ID => $categoryID
         );
     }
@@ -130,10 +136,29 @@ class BlueprintExtractor
         return null;
     }
 
+    /**
+     * @var array<string, array<string, string>>
+     */
     private array $blueprints = array();
 
-    private function writeEnumFile() : void
+    private function writeKnownBlueprintsClass() : void
     {
-        
+        $generator = new KnownItemsClassGenerator(
+            BlueprintDefs::class,
+            BlueprintDef::class,
+            FolderInfo::factory(__DIR__)
+        );
+
+        foreach($this->blueprints as $blueprint) {
+            $generator->addItem(
+                $blueprint[BlueprintDef::KEY_WARE_ID],
+                $blueprint[BlueprintDef::KEY_LABEL],
+                VariantID::fromID($blueprint[BlueprintDef::KEY_VARIANT_ID])
+            );
+        }
+
+        $generator->setDescription(t('This class contains constants and getter methods for all known blueprints.'));
+
+        $generator->generate();
     }
 }

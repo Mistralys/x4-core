@@ -18,17 +18,20 @@ abstract class BlueprintDef implements CollectionItemInterface
     public const KEY_WARE_ID = 'wareID';
     public const KEY_LABEL = 'label';
     public const KEY_CATEGORY_ID = 'categoryID';
+    public const KEY_VARIANT_ID = 'variantID';
 
     private string $id;
     private BlueprintCategoryInterface $category;
     private ?FactionDef $race = null;
     private string $label;
+    private string $variantID;
 
-    public function __construct(string $id, string $label, BlueprintCategoryInterface $category)
+    public function __construct(string $id, string $label, string $variantID, BlueprintCategoryInterface $category)
     {
         $this->category = $category;
         $this->id = $id;
         $this->label = $label;
+        $this->variantID = $variantID;
     }
 
     public static function fromArray(array $def) : self
@@ -40,6 +43,7 @@ abstract class BlueprintDef implements CollectionItemInterface
         return new $class(
             $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_LABEL),
+            $data->getString(self::KEY_VARIANT_ID),
             $category
         );
     }
@@ -52,6 +56,11 @@ abstract class BlueprintDef implements CollectionItemInterface
     public function getLabel() : string
     {
         return $this->label;
+    }
+
+    public function getVariantID(): string
+    {
+        return $this->variantID;
     }
 
     abstract public function getTypeLabel() : string;
