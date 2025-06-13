@@ -9,6 +9,7 @@ use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategories;
 use Mistralys\X4\Database\Blueprints\Categories\BlueprintCategoryInterface;
 use Mistralys\X4\Database\Core\CollectionItemInterface;
 use Mistralys\X4\Database\Core\CollectionItemTrait;
+use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Factions\FactionDef;
 
 abstract class BlueprintDef implements CollectionItemInterface
@@ -24,14 +25,21 @@ abstract class BlueprintDef implements CollectionItemInterface
     private BlueprintCategoryInterface $category;
     private ?FactionDef $race = null;
     private string $label;
-    private string $variantID;
+    private VariantID $variantID;
 
-    public function __construct(string $id, string $label, string $variantID, BlueprintCategoryInterface $category)
+    public function __construct(string $id, string $label, VariantID $variantID, BlueprintCategoryInterface $category)
     {
         $this->category = $category;
         $this->id = $id;
         $this->label = $label;
         $this->variantID = $variantID;
+
+        $this->init();
+    }
+
+    protected function init() : void
+    {
+
     }
 
     public static function fromArray(array $def) : self
@@ -43,7 +51,7 @@ abstract class BlueprintDef implements CollectionItemInterface
         return new $class(
             $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_LABEL),
-            $data->getString(self::KEY_VARIANT_ID),
+            VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
             $category
         );
     }
@@ -58,7 +66,7 @@ abstract class BlueprintDef implements CollectionItemInterface
         return $this->label;
     }
 
-    public function getVariantID(): string
+    public function getVariantID(): VariantID
     {
         return $this->variantID;
     }
