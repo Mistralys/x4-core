@@ -26,17 +26,17 @@ use Mistralys\X4\ExtractedData\DataFolder;
 class DataSourceDef implements StringPrimaryRecordInterface
 {
     public const KEY_ID = 'id';
-    public const KEY_NAME = 'name';
+    public const KEY_LABEL = 'label';
     public const KEY_IS_EXTENSION = 'isExtension';
 
     private string $id;
-    private string $name;
+    private string $label;
     private bool $isExtension;
 
-    public function __construct(string $id, string $name, bool $isExtension)
+    public function __construct(string $id, string $label, bool $isExtension)
     {
         $this->id = $id;
-        $this->name = $name;
+        $this->label = $label;
         $this->isExtension = $isExtension;
     }
 
@@ -44,7 +44,7 @@ class DataSourceDef implements StringPrimaryRecordInterface
     {
         return array(
             self::KEY_ID => $dataFolder->getID(),
-            self::KEY_NAME => $dataFolder->getLabel(),
+            self::KEY_LABEL => $dataFolder->getLabel(),
             self::KEY_IS_EXTENSION => $dataFolder->isExtension(),
         );
     }
@@ -54,9 +54,9 @@ class DataSourceDef implements StringPrimaryRecordInterface
         return $this->id;
     }
 
-    public function getName() : string
+    public function getLabel() : string
     {
-        return $this->name;
+        return $this->label;
     }
 
     public function isExtension() : bool
@@ -70,7 +70,7 @@ class DataSourceDef implements StringPrimaryRecordInterface
 
         return new self(
             $data->getString(self::KEY_ID),
-            $data->getString(self::KEY_NAME),
+            $data->getString(self::KEY_LABEL),
             $data->getBool(self::KEY_IS_EXTENSION)
         );
     }
