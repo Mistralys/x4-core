@@ -25,7 +25,7 @@ class TagSelectorFinder extends BaseTagFinder
         $elements = array();
         foreach($this->executeXpath() as $node) {
             if($node instanceof DOMElement) {
-                $elements[] = $node;
+                $elements[] = new ElementExtended($this->domEX, $node);
             }
         }
 
