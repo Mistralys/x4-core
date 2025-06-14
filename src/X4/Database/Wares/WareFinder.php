@@ -94,6 +94,10 @@ class WareFinder extends BaseFinder implements DataSourceSelectionInterface
             }
         }
 
+        if(!$this->isLabelMatch($item->getLabel())) {
+            return false;
+        }
+
         return true;
     }
 }
