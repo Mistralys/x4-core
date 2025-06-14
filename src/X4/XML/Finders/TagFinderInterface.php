@@ -11,6 +11,11 @@ interface TagFinderInterface
 {
     public function getFirst() : ?ElementExtended;
     public function requireFirst() : ElementExtended;
+
+    /**
+     * Returns all elements found by this finder.
+     * @return ElementExtended[]
+     */
     public function getAll() : array;
     public function getDOMSubject() : DOMNode|DOMDocument;
 }
