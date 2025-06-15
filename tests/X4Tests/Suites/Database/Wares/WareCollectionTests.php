@@ -55,6 +55,21 @@ final class WareCollectionTests extends X4TestCase
         $this->assertContainsWare('ship_arg_m_bomber_01_a', $results);
     }
 
+    public function test_getByWareOrMacro() : void
+    {
+        $result = WareDefs::getInstance()->findByMacro('ship_arg_l_trans_container_04_a');
+        $this->assertNotNull($result);
+        $this->assertSame('Shuyaku Vanguard', $result->getLabel());
+
+        $result = WareDefs::getInstance()->findByMacro('ship_arg_l_trans_container_04_a_macro');
+        $this->assertNotNull($result);
+        $this->assertSame('Shuyaku Vanguard', $result->getLabel());
+
+        $result = WareDefs::getInstance()->findByMacro('ship_arg_l_trans_container_04_a_macro.xml');
+        $this->assertNotNull($result);
+        $this->assertSame('Shuyaku Vanguard', $result->getLabel());
+    }
+
     // endregion
 
     // region: Support methods
