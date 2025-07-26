@@ -164,7 +164,7 @@ class UserInterface implements RenderableInterface
     public function getAjaxMethods() : AjaxMethods
     {
         if(!isset($this->ajaxMethods)) {
-            $this->ajaxMethods = new AjaxMethods();
+            $this->ajaxMethods = new AjaxMethods($this);
         }
 
         return $this->ajaxMethods;
