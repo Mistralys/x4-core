@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\UI\Ajax;
 
+use AppUtils\Request;
 use Mistralys\X4\UI\UserInterface;
 use Mistralys\X4\X4Application;
 
@@ -12,12 +13,14 @@ abstract class BaseAjaxMethod implements AjaxMethodInterface
     protected AjaxMethods $methods;
     protected UserInterface $ui;
     protected X4Application $application;
+    protected Request $request;
 
     public function __construct(AjaxMethods $methods)
     {
         $this->methods = $methods;
         $this->ui = $methods->getUI();
         $this->application = $this->ui->getApplication();
+        $this->request = $this->ui->getRequest();
 
         $this->init();
     }
