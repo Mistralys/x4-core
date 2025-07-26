@@ -98,9 +98,13 @@ abstract class BasePage implements RenderableInterface
     {
         $params[self::REQUEST_PARAM_PAGE] = $this->getID();
 
-        $params = array_merge($params, $this->getURLParams());
+        foreach($this->getURLParams() as $param => $value) {
+            if(!isset($params[$param])) {
+                $params[$param] = $value;
+            }
+        }
 
-        return '?'.http_build_query($params);
+        return $this->ui->getWebrootURL().'?'.http_build_query($params);
     }
 
     abstract protected function getURLParams() : array;
