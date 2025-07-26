@@ -68,7 +68,7 @@ abstract class BasePage implements RenderableInterface
 
     protected function generateOutput() : void
     {
-        $ajax = $this->request->registerParam(AjaxMethods::REQUEST_PARAM_AJAX)->setRegex('^[a-zA-Z0-9.]+$')->getString();
+        $ajax = $this->request->registerParam(AjaxMethods::REQUEST_PARAM_AJAX)->setRegex('/^[a-zA-Z0-9.]+$/')->getString();
 
         if(!empty($ajax)) {
             $this->handleAjaxRequest($ajax);
