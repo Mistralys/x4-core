@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace X4Tests\Helpers;
 
+use Mistralys\X4\UI\Ajax\AjaxMethods;
 use Mistralys\X4\UI\UserInterface;
 use Mistralys\X4\X4Application;
 use X4Tests\Helpers\TestApplication\Pages\TestPageMain;
@@ -19,6 +20,11 @@ class TestApplication extends X4Application
     public function registerPages(UserInterface $ui) : void
     {
         $ui->registerPage(TestPageMain::URL_NAME, TestPageMain::class);
+    }
+
+    public function registerAjaxMethods(AjaxMethods $methods) : void
+    {
+
     }
 
     public function getDefaultPageID() : ?string

@@ -12,7 +12,7 @@ namespace Mistralys\X4\UI;
 use AppUtils\BaseException;use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
-use Mistralys\X4\UI\Page\BasePage;
+use Mistralys\X4\UI\Ajax\AjaxMethodInterface;use Mistralys\X4\UI\Ajax\AjaxMethods;use Mistralys\X4\UI\Page\BasePage;
 use Mistralys\X4\UI\Page\BasePageWithNav;use Mistralys\X4\UserInterface\DataGrid\DataGrid;
 use Mistralys\X4\UserInterface\UIException;
 use Mistralys\X4\X4Application;
@@ -89,6 +89,7 @@ class UserInterface implements RenderableInterface
         $this->request = new Request();
 
         $this->application->registerPages($this);
+        $this->application->registerAjaxMethods($this->getAjaxMethods());
 
         $this->activePage = $this->createPage($this->getActivePageID());
 
@@ -151,6 +152,22 @@ class UserInterface implements RenderableInterface
     public function registerPage(string $urlName, string $className) : void
     {
         $this->pages[$urlName] = $className;
+    }
+
+    private ?AjaxMethods $ajaxMethods = null;
+
+    public function registerAjaxMethod(AjaxMethodInterface $ajaxMethod) : void
+    {
+        $this->getAjaxMethods()->addItem($ajaxMethod);
+    }
+
+    public function getAjaxMethods() : AjaxMethods
+    {
+        if(!isset($this->ajaxMethods)) {
+            $this->ajaxMethods = new AjaxMethods();
+        }
+
+        return $this->ajaxMethods;
     }
 
     /**

@@ -7,9 +7,12 @@ namespace Mistralys\X4\UI\Page;
 use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
+use Mistralys\X4\UI\Ajax\AjaxMethodInterface;
+use Mistralys\X4\UI\Ajax\AjaxMethods;
 use Mistralys\X4\UI\Page\NavItem;
 use Mistralys\X4\UI\UserInterface;
 use Mistralys\X4\X4Application;
+use function AppLocalize\t;
 
 abstract class BasePage implements RenderableInterface
 {
@@ -65,9 +68,29 @@ abstract class BasePage implements RenderableInterface
 
     protected function generateOutput() : void
     {
+        $ajax = $this->request->registerParam(AjaxMethods::REQUEST_PARAM_AJAX)->setRegex('^[a-zA-Z0-9.]+$')->getString();
+
+        if(!empty($ajax)) {
+            $this->handleAjaxRequest($ajax);
+        }
+
         $this->preRender();
 
         $this->_render();
+    }
+
+    protected function handleAjaxRequest(string $action) : never
+    {
+        $methods = $this->ui->getAjaxMethods();
+
+        if(!$methods->idExists($action)) {
+            $methods->sendError(
+                'Unknown AJAX method',
+                AjaxMethodInterface::ERROR_UNKNOWN_METHOD
+            );
+        }
+
+        $methods->getByID($action)->process();
     }
 
     abstract protected function preRender() : void;

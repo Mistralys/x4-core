@@ -12,6 +12,7 @@ namespace Mistralys\X4;
 use AppLocalize\Localization;
 use AppUtils\ClassHelper;
 use AppUtils\FileHelper\FolderInfo;
+use Mistralys\X4\UI\Ajax\AjaxMethods;
 use Mistralys\X4\UI\UserInterface;
 use Mistralys\X4\UserInterface\UIException;
 
@@ -37,6 +38,7 @@ abstract class X4Application
     abstract public function getTitle() : string;
 
     abstract public function registerPages(UserInterface $ui) : void;
+    abstract public function registerAjaxMethods(AjaxMethods $methods) : void;
 
     abstract public function getDefaultPageID() : ?string;
 
