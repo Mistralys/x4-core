@@ -38,8 +38,7 @@
     "ext-simplexml": "*",
     "ext-json": "*",
     "ext-mbstring": "*",
-    "ext-dom": "*",
-    "ext-http": "*"
+    "ext-dom": "*"
   },
   "require-dev": {
     "phpunit/phpunit": ">=9.5.20",

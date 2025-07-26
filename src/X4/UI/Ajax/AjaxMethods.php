@@ -38,7 +38,7 @@ class AjaxMethods extends GenericStringPrimaryBasket
 
     public function sendError(string $message, int $code, array $payload=array()) : never
     {
-        http_send_status(400);
+        http_response_code(400);
 
         $this->sendJSON(false, $message, $code, $payload);
     }
