@@ -359,8 +359,8 @@ class UserInterface implements RenderableInterface
 
     private function initIncludes() : void
     {
-        $this->addVendorStylesheet('thomaspark/bootswatch', 'dist/'.$this->theme.'/bootstrap.min.css');        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/fontawesome.css');
-        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/solid.css');
+        $this->addVendorStylesheet('thomaspark/bootswatch', 'dist/'.$this->theme.'/bootstrap.min.css');
+        $this->addVendorStylesheet('fortawesome/font-awesome', 'css/all.min.css');
         $this->addVendorStylesheet(X4Application::PACKAGE_NAME, 'css/ui.css');
 
         $this->addVendorJS('components/jquery', 'jquery.slim.js');
