@@ -36,7 +36,7 @@ FOOTER{
 FOOTER.fixed-bottom{
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
-    background: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+    background: #20374c;
 }
 
 TD.align-right,
