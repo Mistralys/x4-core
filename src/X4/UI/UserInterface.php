@@ -470,7 +470,7 @@ class UserInterface implements RenderableInterface
                         <?php echo $content; ?>
                     </div>
                 </div>
-                <footer id="main-footer" class="<?php if($this->footerFixed) {echo 'footer-fixed';} ?>">
+                <footer id="main-footer" class="<?php if($this->footerFixed) {echo 'fixed-bottom';} ?>">
                     <div class="container footer-content">
                         <?php if(!empty($this->footerContent)) {
                             echo $this->footerContent;
