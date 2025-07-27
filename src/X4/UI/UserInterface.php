@@ -469,16 +469,16 @@ class UserInterface implements RenderableInterface
                          ?>
                         <?php echo $content; ?>
                     </div>
-                    <footer id="main-footer" class="<?php if($this->footerFixed) {echo 'footer-fixed';} ?>">
-                        <div class="container footer-content">
-                            <?php if(!empty($this->footerContent)) {
-                                echo $this->footerContent;
-                            } else { ?>
-                                <?php echo $this->getTitle() ?> v<?php echo $this->application->getVersion() ?>
-                            <?php } ?>
-                        </div>
-                    </footer>
                 </div>
+                <footer id="main-footer" class="<?php if($this->footerFixed) {echo 'footer-fixed';} ?>">
+                    <div class="container footer-content">
+                        <?php if(!empty($this->footerContent)) {
+                            echo $this->footerContent;
+                        } else { ?>
+                            <?php echo $this->getTitle() ?> v<?php echo $this->application->getVersion() ?>
+                        <?php } ?>
+                    </div>
+                </footer>
                 <?php
                 foreach($this->javaScripts as $url)
                 {
