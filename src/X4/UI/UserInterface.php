@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace Mistralys\X4\UI;
 
 use AppUtils\BaseException;use AppUtils\Interfaces\RenderableInterface;
-use AppUtils\Request;
+use AppUtils\Interfaces\StringableInterface;use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
 use Mistralys\X4\UI\Ajax\AjaxMethodInterface;use Mistralys\X4\UI\Ajax\AjaxMethods;use Mistralys\X4\UI\Page\BasePage;
 use Mistralys\X4\UI\Page\BasePageWithNav;use Mistralys\X4\UserInterface\DataGrid\DataGrid;
@@ -469,8 +469,14 @@ class UserInterface implements RenderableInterface
                          ?>
                         <?php echo $content; ?>
                     </div>
-                    <footer>
-                        <?php echo $this->getTitle() ?> v<?php echo $this->application->getVersion() ?><br>
+                    <footer id="main-footer" class="<?php if($this->footerFixed) {echo 'footer-fixed';} ?>">
+                        <div class="container footer-content">
+                            <?php if(!empty($this->footerContent)) {
+                                echo $this->footerContent;
+                            } else { ?>
+                                <?php echo $this->getTitle() ?> v<?php echo $this->application->getVersion() ?>
+                            <?php } ?>
+                        </div>
                     </footer>
                 </div>
                 <?php
@@ -494,6 +500,20 @@ class UserInterface implements RenderableInterface
                 </script>
             </body>
         </html><?php
+    }
+
+    private bool $footerFixed = false;
+
+    public function makeFooterFixed(bool $fixed = true) : self
+    {
+        $this->footerFixed = true;
+        return $this;
+    }
+
+    public function setFooterContent(StringableInterface|string|NULL $content) : self
+    {
+        $this->footerContent = (string)$content;
+        return $this;
     }
 
     private function displayMetaNav() : void
