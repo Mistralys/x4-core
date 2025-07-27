@@ -510,6 +510,8 @@ class UserInterface implements RenderableInterface
         return $this;
     }
 
+    private string $footerContent = '';
+
     public function setFooterContent(StringableInterface|string|NULL $content) : self
     {
         $this->footerContent = (string)$content;
