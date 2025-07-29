@@ -364,7 +364,7 @@ class UserInterface implements RenderableInterface
         $this->addVendorStylesheet(X4Application::PACKAGE_NAME, 'css/ui.css');
 
         $this->addVendorJS('components/jquery', 'jquery.slim.js');
-        $this->addVendorJS('twbs/bootstrap', 'dist/js/bootstrap.js');
+        $this->addVendorJS('twbs/bootstrap', 'dist/js/bootstrap.bundle.min.js');
     }
 
     protected function generateOutput() : void
