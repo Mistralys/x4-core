@@ -367,6 +367,11 @@ class UserInterface implements RenderableInterface
         $this->addVendorJS('twbs/bootstrap', 'dist/js/bootstrap.bundle.min.js');
     }
 
+    protected function resolveDocumentTitle() : string
+    {
+        return $this->activePage->getTitle().' - '.$this->getTitle();
+    }
+
     protected function generateOutput() : void
     {
         $this->initIncludes();
@@ -378,7 +383,7 @@ class UserInterface implements RenderableInterface
             <head>
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-                <title><?php echo $this->getTitle() ?></title>
+                <title><?php echo $this->resolveDocumentTitle() ?></title>
                 <?php
                 foreach($this->styleSheets as $url)
                 {
