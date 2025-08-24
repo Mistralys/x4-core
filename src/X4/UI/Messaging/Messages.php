@@ -50,12 +50,12 @@ class Messages
         $this->messages = array();
     }
 
-    public function addSuccess(string|StringableInterface|null $message, int $code) : self
+    public function addSuccess(string|StringableInterface|null $message, ?int $code=null) : self
     {
         return $this->addMessage($message, self::TYPE_SUCCESS, $code);
     }
 
-    public function addInfo(string|StringableInterface|null $message, int $code) : self
+    public function addInfo(string|StringableInterface|null $message, ?int $code=null) : self
     {
         return $this->addMessage($message, self::TYPE_INFO, $code);
     }
@@ -70,7 +70,7 @@ class Messages
         return $this->addMessage($message, self::TYPE_ERROR, $code);
     }
 
-    public function addMessage(string|StringableInterface|null $message, string $type, int $code) : self
+    public function addMessage(string|StringableInterface|null $message, string $type, ?int $code=null) : self
     {
         $this->messages[] = new Message($type, $message, $code);
 
