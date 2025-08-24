@@ -10,6 +10,7 @@ use Mistralys\X4\Database\Core\CollectionItemTrait;
 use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
+use Mistralys\X4\Database\Factions\KnownFactions;
 
 class ModuleDef implements CollectionItemInterface
 {
@@ -74,6 +75,10 @@ class ModuleDef implements CollectionItemInterface
         $this->housingCapacity = $housingCapacity;
         $this->housingFactionID = $housingFactionID;
         $this->variantID = $variantID;
+
+        if(empty($this->builderFactionID)) {
+            $this->builderFactionID = KnownFactions::FACTION_GENERIC;
+        }
     }
 
     public static function fromArray(mixed $moduleDef) : ModuleDef
