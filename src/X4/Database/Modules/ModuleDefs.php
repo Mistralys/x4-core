@@ -16,8 +16,6 @@ use Mistralys\X4\X4Application;
  */
 class ModuleDefs extends BaseStringPrimaryCollection implements ItemCollectionInterface
 {
-    public const ERROR_UNKNOWN_MODULE_ID = 137601;
-
     private static ?ModuleDefs $instance = null;
     private JSONFile $dataFile;
 
@@ -44,13 +42,8 @@ class ModuleDefs extends BaseStringPrimaryCollection implements ItemCollectionIn
 
     public function findByMacro(string $macro) : ?ModuleDef
     {
-        foreach($this->getAll() as $module) {
-            if($module->getMacroID() === $macro) {
-                return $module;
-            }
-        }
+        return array_find($this->getAll(), fn($module) => $module->getMacroID() === $macro);
 
-        return null;
     }
 
     /**
