@@ -103,7 +103,7 @@ abstract class BasePage implements RenderableInterface
      */
     abstract public function getNavItems() : array;
 
-    public function redirectWithSuccessMessage(string $url, string|StringableInterface|null $message, int $code) : never
+    public function redirectWithSuccessMessage(string $url, string|StringableInterface|null $message, ?int $code=null) : never
     {
         $this->ui->getMessages()->addSuccess($message, $code);
 
@@ -117,7 +117,7 @@ abstract class BasePage implements RenderableInterface
         $this->redirect($url);
     }
 
-    public function redirectWithInfoMessage(string $url, string|StringableInterface|null $message, int $code) : never
+    public function redirectWithInfoMessage(string $url, string|StringableInterface|null $message, ?int $code=null) : never
     {
         $this->ui->getMessages()->addInfo($message, $code);
 
