@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Mistralys\X4;
 
 use AppLocalize\Localization;
+use AppLocalize\Localization\Locale\de_DE;
 use AppUtils\ClassHelper;
 use AppUtils\FileHelper\FolderInfo;
 use Mistralys\X4\UI\Ajax\AjaxMethods;
@@ -58,6 +59,8 @@ abstract class X4Application
 
     public function __construct()
     {
+        session_start();
+
         $this->initLocalization();
 
         register_shutdown_function($this->shutDown(...));
@@ -65,7 +68,7 @@ abstract class X4Application
 
     private function initLocalization() : void
     {
-        Localization::addAppLocale('de_DE');
+        Localization::addAppLocale(de_DE::LOCALE_NAME);
 
         Localization::addSourceFolder(
             'x4-core',
