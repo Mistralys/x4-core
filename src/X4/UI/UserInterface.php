@@ -12,7 +12,7 @@ namespace Mistralys\X4\UI;
 use AppUtils\BaseException;use AppUtils\Interfaces\RenderableInterface;
 use AppUtils\Interfaces\StringableInterface;use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
-use Mistralys\X4\UI\Ajax\AjaxMethodInterface;use Mistralys\X4\UI\Ajax\AjaxMethods;use Mistralys\X4\UI\Page\BasePage;
+use Mistralys\X4\UI\Ajax\AjaxMethodInterface;use Mistralys\X4\UI\Ajax\AjaxMethods;use Mistralys\X4\UI\Messaging\Messages;use Mistralys\X4\UI\Page\BasePage;
 use Mistralys\X4\UI\Page\BasePageWithNav;use Mistralys\X4\UserInterface\DataGrid\DataGrid;
 use Mistralys\X4\UserInterface\UIException;
 use Mistralys\X4\X4Application;
@@ -96,6 +96,17 @@ class UserInterface implements RenderableInterface
         if($this->activePage instanceof BasePageWithNav) {
             $this->activeSubPage = $this->activePage->getSubPage();
         }
+    }
+
+    private ?Messages $messages = null;
+
+    public function getMessages() : Messages
+    {
+        if(!isset($this->messages)) {
+            $this->messages = new Messages();
+        }
+
+        return $this->messages;
     }
 
     public static function displayException(BaseException $e) : void
@@ -432,6 +443,19 @@ class UserInterface implements RenderableInterface
                     </div>
                     <div class="content-container">
                         <?php
+                            $messages = $this->getMessages();
+                            if($messages->hasMessages())
+                            {
+                                // Clear messages after having retrieved them, so they
+                                // don't show up again on the next page load.
+                                $messages->clear();
+
+                                foreach($messages->getMessages() as $message)
+                                {
+                                    echo $message->render();
+                                }
+                            }
+
                             if(isset($this->activeSubPage))
                             {
                                 $title = $this->activeSubPage->getTitle();
