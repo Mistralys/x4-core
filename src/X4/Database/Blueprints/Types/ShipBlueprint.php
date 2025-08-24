@@ -7,12 +7,14 @@ namespace Mistralys\X4\Database\Blueprints\Types;
 use AppUtils\ConvertHelper;
 use Mistralys\X4\Database\Blueprints\BlueprintDef;
 use Mistralys\X4\Database\Ships\ShipClasses;
+use Mistralys\X4\Database\Ships\ShipDef;
+use Mistralys\X4\Database\Ships\ShipDefs;
 use function AppLocalize\t;
 
 class ShipBlueprint extends BlueprintDef
 {
-    public const ROLE_MILITARY = 'military';
-    public const ROLE_INDUSTRY = 'industry';
+    public const string ROLE_MILITARY = 'military';
+    public const string ROLE_INDUSTRY = 'industry';
 
     private ?string $size = null;
 
@@ -26,6 +28,11 @@ class ShipBlueprint extends BlueprintDef
         ShipClasses::CLASS_BUILDER,
         ShipClasses::CLASS_TUG,
     );
+
+    public function getShip() : ShipDef
+    {
+        return ShipDefs::getInstance()->getByID($this->getID());
+    }
 
     public function getTypeLabel() : string
     {
@@ -46,12 +53,12 @@ class ShipBlueprint extends BlueprintDef
 
     public function getClassID() : string
     {
-        return $this->class;
+        return $this->getShip()->getClassID();
     }
 
     public function getRoleID() : string
     {
-        if(in_array($this->class, self::$industryRoles, true)) {
+        if(in_array($this->getClassID(), self::$industryRoles, true)) {
             return self::ROLE_INDUSTRY;
         }
 
