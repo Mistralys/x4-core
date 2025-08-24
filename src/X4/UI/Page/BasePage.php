@@ -18,8 +18,8 @@ abstract class BasePage implements RenderableInterface
 {
     use RenderableBufferedTrait;
 
-    public const REQUEST_PARAM_PAGE = 'page';
-    public const REQUEST_PARAM_VIEW = 'view';
+    public const string REQUEST_PARAM_PAGE = 'page';
+    public const string REQUEST_PARAM_VIEW = 'view';
 
     protected Request $request;
     protected UserInterface $ui;
@@ -102,10 +102,39 @@ abstract class BasePage implements RenderableInterface
      */
     abstract public function getNavItems() : array;
 
-    public function redirect(string $url) : void
+    public function redirectWithSuccessMessage(string $url, string $message, int $code) : never
+    {
+        $this->ui->getMessages()->addSuccess($message, $code);
+
+        $this->redirect($url);
+    }
+
+    public function redirectWithErrorMessage(string $url, string $message, int $code) : never
+    {
+        $this->ui->getMessages()->addError($message, $code);
+
+        $this->redirect($url);
+    }
+
+    public function redirectWithInfoMessage(string $url, string $message, int $code) : never
+    {
+        $this->ui->getMessages()->addInfo($message, $code);
+
+        $this->redirect($url);
+    }
+
+    public function redirectWithWarningMessage(string $url, string $message, int $code) : never
+    {
+        $this->ui->getMessages()->addWarning($message, $code);
+
+        $this->redirect($url);
+    }
+
+    public function redirect(string $url) : never
     {
         header('Location:'.$url);
-        exit;
+
+        $this->application->exit();
     }
 
     protected function renderBool(bool $boolean) : string
