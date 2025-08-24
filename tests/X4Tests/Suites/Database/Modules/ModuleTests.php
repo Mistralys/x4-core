@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace X4Tests\Suites\Database\Modules;
 
+use AppUtils\Collections\RecordNotExistsException;
+use AppUtils\Interfaces\StringPrimaryRecordInterface;
+use Mistralys\X4\Database\Factions\FactionDefs;
+use Mistralys\X4\Database\Factions\KnownFactions;
 use Mistralys\X4\Database\Modules\ModuleCategories;
 use Mistralys\X4\Database\Modules\ModuleCategory;
 use Mistralys\X4\Database\Modules\ModuleDef;
@@ -14,10 +18,10 @@ class ModuleTests extends X4TestCase
 {
     public function test_getRace() : void
     {
-        $id = 'pier_arg_harbor_03';
+        $id = 'module_arg_pier_l_01';
 
         $this->assertSame(
-            'arg',
+            KnownFactions::FACTION_ARGON_FEDERATION,
             ModuleDefs::getInstance()->getByID($id)->getBuilderFaction()->getID()
         );
     }
@@ -29,7 +33,7 @@ class ModuleTests extends X4TestCase
     {
         $id = 'unknown_module';
 
-        $this->expectExceptionCode(ModuleDefs::ERROR_UNKNOWN_MODULE_ID);
+        $this->expectException(RecordNotExistsException::class);
 
         ModuleDefs::getInstance()->getByID($id);
     }
@@ -47,7 +51,7 @@ class ModuleTests extends X4TestCase
 
     public function test_getCategory() : void
     {
-        $id = 'struct_arg_vertical_01';
+        $id = 'module_arg_conn_vertical_01';
 
         $this->assertSame(
             ModuleCategories::CATEGORY_CONNECTION_MODULE,
