@@ -29,7 +29,7 @@
     "fortawesome/font-awesome": "^5.15",
     "mistralys/application-utils": ">=2.3.2",
     "mistralys/application-utils-core": ">=2.3.12",
-    "mistralys/application-localization": ">=1.4.1",
+    "mistralys/application-localization": ">=2.1.1",
     "mistralys/x4-data-extractor": ">=1.0.0",
     "symfony/css-selector": ">=v7.2.0",
     "thomaspark/bootswatch": "^v5.1.3",
