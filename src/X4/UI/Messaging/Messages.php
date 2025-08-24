@@ -18,7 +18,7 @@ class Messages
     /**
      * @var array<int,Message>
      */
-    private array $messages;
+    private array $messages = array();
 
     public function __construct()
     {
