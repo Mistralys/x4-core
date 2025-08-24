@@ -25,14 +25,26 @@ use Mistralys\X4\UserInterface\UIException;
  */
 abstract class X4Application
 {
-    public const PACKAGE_NAME = 'mistralys/x4-core';
-    public const ERROR_UI_INSTANCE_NOT_CREATED = 106501;
+    public const string PACKAGE_NAME = 'mistralys/x4-core';
+    public const int ERROR_UI_INSTANCE_NOT_CREATED = 106501;
 
     private ?UserInterface $ui = null;
 
     public static function getDataFolder(): FolderInfo
     {
         return FolderInfo::factory(__DIR__ . '/../../data');
+    }
+
+    public function exit() : never
+    {
+        exit;
+    }
+
+    private function shutDown() : void
+    {
+        if(isset($this->ui)) {
+            $this->ui->getMessages()->writeToSession();
+        }
     }
 
     abstract public function getTitle() : string;
@@ -47,6 +59,8 @@ abstract class X4Application
     public function __construct()
     {
         $this->initLocalization();
+
+        register_shutdown_function($this->shutDown(...));
     }
 
     private function initLocalization() : void
