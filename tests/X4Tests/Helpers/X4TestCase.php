@@ -27,7 +27,7 @@ class X4TestCase extends TestCase
     protected function setUp() : void
     {
         // Reset the collection to ensure it uses the vanilla list of blueprints every time.
-        BlueprintDefs::reset();
+        BlueprintDefs::resetInstance();
 
         if(!isset($this->application))
         {

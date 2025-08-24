@@ -33,7 +33,7 @@ class BlueprintDefs extends BaseStringPrimaryCollection implements ItemCollectio
         return $this->dataFile;
     }
 
-    public static function reset() : void
+    public static function resetInstance() : void
     {
         self::$instance = null;
     }
