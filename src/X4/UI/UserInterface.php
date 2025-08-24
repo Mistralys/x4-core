@@ -446,14 +446,13 @@ class UserInterface implements RenderableInterface
                             $messages = $this->getMessages();
                             if($messages->hasMessages())
                             {
+                                foreach($messages->getMessages() as $message) {
+                                    echo $message->render();
+                                }
+
                                 // Clear messages after having retrieved them, so they
                                 // don't show up again on the next page load.
                                 $messages->clear();
-
-                                foreach($messages->getMessages() as $message)
-                                {
-                                    echo $message->render();
-                                }
                             }
 
                             if(isset($this->activeSubPage))
