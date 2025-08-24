@@ -5,19 +5,26 @@ declare(strict_types=1);
 namespace Mistralys\X4\Database\Blueprints\Categories;
 
 use Mistralys\X4\Database\Blueprints\BlueprintDef;
+use Mistralys\X4\Database\Blueprints\BlueprintDefs;
 use Mistralys\X4\Database\Blueprints\BlueprintException;
 use Mistralys\X4\Database\Blueprints\BlueprintSelection;
 
 abstract class BaseBlueprintCategory implements BlueprintCategoryInterface
 {
     /**
-     * @var array<string,BlueprintDef>|null
+     * @var array<string,BlueprintDef>
      */
-    private ?array $blueprints = null;
+    private array $blueprints = array();
+    private bool $blueprintsLoaded = false;
 
     public function createSelection() : BlueprintSelection
     {
         return BlueprintSelection::create($this->getBlueprints());
+    }
+
+    private function registerBlueprint(BlueprintDef $def) : void
+    {
+        $this->blueprints[$def->getID()] = $def;
     }
 
     /**
@@ -25,11 +32,32 @@ abstract class BaseBlueprintCategory implements BlueprintCategoryInterface
      */
     public function getBlueprints() : array
     {
+        $this->loadBlueprints();
+
         return array_values($this->blueprints);
+    }
+
+    private function loadBlueprints() : void
+    {
+        if($this->blueprintsLoaded) {
+            return;
+        }
+
+        $this->blueprintsLoaded = true;
+
+        $categoryID = $this->getID();
+
+        foreach(BlueprintDefs::getInstance()->getBlueprints() as $blueprint) {
+            if($blueprint->getCategoryID() === $categoryID) {
+                $this->registerBlueprint($blueprint);
+            }
+        }
     }
 
     public function countBlueprints() : int
     {
+        $this->loadBlueprints();
+
         return count($this->blueprints);
     }
 
@@ -40,6 +68,8 @@ abstract class BaseBlueprintCategory implements BlueprintCategoryInterface
      */
     public function getBlueprintByID(string $blueprintID) : BlueprintDef
     {
+        $this->loadBlueprints();
+
         if(isset($this->blueprints[$blueprintID])) {
             return $this->blueprints[$blueprintID];
         }
@@ -57,6 +87,8 @@ abstract class BaseBlueprintCategory implements BlueprintCategoryInterface
 
     public function blueprintIDExists(string $blueprintID) : bool
     {
+        $this->loadBlueprints();
+
         return isset($this->blueprints[$blueprintID]);
     }
 }
