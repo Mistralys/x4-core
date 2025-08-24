@@ -14,7 +14,7 @@ use Mistralys\X4\UI\UserInterface;
  */
 class AjaxMethods extends GenericStringPrimaryBasket
 {
-    public const REQUEST_PARAM_AJAX = 'ajax';
+    public const string REQUEST_PARAM_AJAX = 'ajax';
     private UserInterface $ui;
 
     public function __construct(UserInterface $ui)
@@ -59,6 +59,6 @@ class AjaxMethods extends GenericStringPrimaryBasket
             'payload' => $payload
         ));
 
-        exit;
+        $this->ui->getApplication()->exit();
     }
 }
