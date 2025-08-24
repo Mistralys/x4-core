@@ -72,7 +72,7 @@ class Messages
 
     public function addMessage(string|StringableInterface|null $message, string $type, int $code) : self
     {
-        $this->messages[] = new Message($message, $type, $code);
+        $this->messages[] = new Message($type, $message, $code);
 
         return $this;
     }
