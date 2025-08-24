@@ -1,7 +1,18 @@
-## v1.0.1 - UI Messaging
+## v1.1.0 - UI Messaging, PHP8 (Breaking-S)
 - User Interface: Added the session messaging queue and display.
 - User Interface: Added `redirectWithXXXMessage()` methods in pages.
 - User Interface: Added `getMessages()`.
+- User Interface: Fixed missing webroot URL in generated URLs.
+- User Interface: Added AJAX method handling in pages.
+- User Interface: Added fixed footer and footer content manipulation.
+- User Interface: Fixed some missing Font Awesome icon styles.
+- User Interface: Fixed missing JS for popups in Bootstrap.
+- User Interface: Added possibility to set the page title.
+- Blueprints: Fixed missing module definitions.
+- Blueprints: Fixed missing class for ship blueprints.
+- Tests: The example UI now uses the main `dev-config.php` instead of its own variant.,
+- Requirements: Now requiring PHP v8.4.
+- Core: Session handling is now automatically enabled.
 
 ## v1.0.0 - Data update and revamp (Breaking-XL)
 - Blueprints: Revamped the data extraction and collection handling.
