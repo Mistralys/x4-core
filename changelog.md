@@ -1,3 +1,8 @@
+## v1.0.1 - UI Messaging
+- User Interface: Added the session messaging queue and display.
+- User Interface: Added `redirectWithXXXMessage()` methods in pages.
+- User Interface: Added `getMessages()`.
+
 ## v1.0.0 - Data update and revamp (Breaking-XL)
 - Blueprints: Revamped the data extraction and collection handling.
 - Modules: Revamped the data extraction and collection handling.
