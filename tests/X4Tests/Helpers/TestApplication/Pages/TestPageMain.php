@@ -11,7 +11,7 @@ use function AppUtils\t;
 
 class TestPageMain extends BasePage
 {
-    public const URL_NAME = 'TestPageMain';
+    public const string URL_NAME = 'TestPageMain';
 
     public function getTitle() : string
     {
@@ -35,6 +35,9 @@ class TestPageMain extends BasePage
 
     protected function preRender() : void
     {
+        if($this->request->getBool('testRedirectSuccess')) {
+            $this->redirectWithSuccessMessage($this->getURL(), t('You have been redirected successfully.'));
+        }
     }
 
     protected function _render() : void
@@ -42,6 +45,11 @@ class TestPageMain extends BasePage
         ?>
         <p>
             <?php pt('This is an X4 application test page.') ?>
+        </p>
+        <p>
+            <a href="<?php echo $this->getURL(array('testRedirectSuccess' => 'yes')) ?>" class="btn btn-secondary">
+                <?php pt('Redirect with success message'); ?>
+            </a>
         </p>
         <?php
     }
