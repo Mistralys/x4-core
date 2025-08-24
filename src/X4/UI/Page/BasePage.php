@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Mistralys\X4\UI\Page;
 
 use AppUtils\Interfaces\RenderableInterface;
+use AppUtils\Interfaces\StringableInterface;
 use AppUtils\Request;
 use AppUtils\Traits\RenderableBufferedTrait;
 use Mistralys\X4\UI\Ajax\AjaxMethodInterface;
@@ -102,28 +103,28 @@ abstract class BasePage implements RenderableInterface
      */
     abstract public function getNavItems() : array;
 
-    public function redirectWithSuccessMessage(string $url, string $message, int $code) : never
+    public function redirectWithSuccessMessage(string $url, string|StringableInterface|null $message, int $code) : never
     {
         $this->ui->getMessages()->addSuccess($message, $code);
 
         $this->redirect($url);
     }
 
-    public function redirectWithErrorMessage(string $url, string $message, int $code) : never
+    public function redirectWithErrorMessage(string $url, string|StringableInterface|null $message, int $code) : never
     {
         $this->ui->getMessages()->addError($message, $code);
 
         $this->redirect($url);
     }
 
-    public function redirectWithInfoMessage(string $url, string $message, int $code) : never
+    public function redirectWithInfoMessage(string $url, string|StringableInterface|null $message, int $code) : never
     {
         $this->ui->getMessages()->addInfo($message, $code);
 
         $this->redirect($url);
     }
 
-    public function redirectWithWarningMessage(string $url, string $message, int $code) : never
+    public function redirectWithWarningMessage(string $url, string|StringableInterface|null $message, int $code) : never
     {
         $this->ui->getMessages()->addWarning($message, $code);
 
