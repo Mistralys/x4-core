@@ -59,7 +59,12 @@ abstract class X4Application
 
     public function __construct()
     {
-        session_start();
+        if(PHP_SAPI !== 'cli') {
+            session_start();
+        } else {
+            $GLOBALS['_SESSION'] = array();
+            $_SESSION = array();
+        }
 
         $this->initLocalization();
 
