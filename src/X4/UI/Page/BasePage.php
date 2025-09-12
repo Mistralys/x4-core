@@ -133,7 +133,7 @@ abstract class BasePage implements RenderableInterface
 
     public function redirect(string $url) : never
     {
-        header('Location:'.$url);
+        header('Location:'.str_replace('&amp;', '&', $url));
 
         $this->application->exit();
     }
