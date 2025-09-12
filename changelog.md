@@ -1,3 +1,7 @@
+## v1.1.1 - Small fixes and improvements
+- User Interface: Now filtering redirect URLs that get specified with HTML-encoded ampersands.
+- Ajax: Added the utility method `sendJSONViaPost()` to send POST requests to external services.
+
 ## v1.1.0 - UI Messaging, PHP8 (Breaking-S)
 - User Interface: Added the session messaging queue and display.
 - User Interface: Added `redirectWithXXXMessage()` methods in pages.
