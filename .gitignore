@@ -9,3 +9,5 @@ tests/X4Tests/ExampleUI/config.php
 tests/tests-config.php
 dev-config.php
 /cache/*.php
+.idea/copilot.data.migration.agent.xml
+.idea/copilot.data.migration.edit.xml
