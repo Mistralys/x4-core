@@ -34,6 +34,7 @@ class ShipClasses extends BaseStringPrimaryCollection
     public const CLASS_RESUPPLIER = 'resupplier';
     public const CLASS_EXPEDITIONARY = 'expeditionary';
     public const CLASS_COMPACTOR = 'compactor';
+    public const CLASS_ENVOY = 'envoy';
 
     public const CLASSES = array(
         self::CLASS_MINER => 'Miner',
@@ -56,6 +57,7 @@ class ShipClasses extends BaseStringPrimaryCollection
         self::CLASS_TUG => 'Tugboat',
         self::CLASS_EXPEDITIONARY => 'Expeditionary',
         self::CLASS_COMPACTOR => 'Compactor',
+        self::CLASS_ENVOY => 'Envoy'
     );
 
     private static ?ShipClasses $instance = null;

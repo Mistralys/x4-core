@@ -48,6 +48,7 @@ class KnownFactions
     public const FACTION_HOLY_ORDER_PONTIFEX = 'holyorder';
     public const FACTION_KHAAK = 'khaak';
     public const FACTION_MINISTRY_FINANCE = 'ministry';
+    public const FACTION_OUTLAW = 'outlaw';
     public const FACTION_OWNERLESS = 'ownerless';
     public const FACTION_PLAYER = 'player';
     public const FACTION_QUEENDOM_BORON = 'boron';
@@ -82,6 +83,7 @@ class KnownFactions
         self::FACTION_HOLY_ORDER_PONTIFEX,
         self::FACTION_KHAAK,
         self::FACTION_MINISTRY_FINANCE,
+        self::FACTION_OUTLAW,
         self::FACTION_OWNERLESS,
         self::FACTION_PLAYER,
         self::FACTION_QUEENDOM_BORON,
@@ -196,6 +198,11 @@ class KnownFactions
     public function getMinistryOfFinance() : FactionDef
     {
         return $this->defs->getByID(self::FACTION_MINISTRY_FINANCE);
+    }
+
+    public function getOutlaw() : FactionDef
+    {
+        return $this->defs->getByID(self::FACTION_OUTLAW);
     }
 
     public function getOwnerless() : FactionDef

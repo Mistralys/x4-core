@@ -30,7 +30,12 @@ class FactionDefs extends BaseStringPrimaryCollection implements ItemCollectionI
 
     private function __construct()
     {
-        $this->dataFile = JSONFile::factory(X4Application::getDataFolder() .'/factions.json')
+        $this->dataFile = self::getStorageFile();
+    }
+
+    public static function getStorageFile() : JSONFile
+    {
+        return JSONFile::factory(X4Application::getDataFolder() .'/factions.json')
             ->setPrettyPrint(true)
             ->setTrailingNewline(true)
             ->setEscapeSlashes(false);

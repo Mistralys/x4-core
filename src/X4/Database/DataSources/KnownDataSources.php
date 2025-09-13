@@ -34,6 +34,7 @@ class KnownDataSources
 {
     public const DATA_SOURCE_BASE_GAME = 'vanilla';
     public const DATA_SOURCE_CRADLE_HUMANITY = 'ego_dlc_terran';
+    public const DATA_SOURCE_ENVOY_PACK = 'ego_dlc_mini_02';
     public const DATA_SOURCE_HYPERION_PACK = 'ego_dlc_mini_01';
     public const DATA_SOURCE_KINGDOM_END = 'ego_dlc_boron';
     public const DATA_SOURCE_SPLIT_VENDETTA = 'ego_dlc_split';
@@ -43,6 +44,7 @@ class KnownDataSources
     public const DATA_SOURCES = array(
         self::DATA_SOURCE_BASE_GAME,
         self::DATA_SOURCE_CRADLE_HUMANITY,
+        self::DATA_SOURCE_ENVOY_PACK,
         self::DATA_SOURCE_HYPERION_PACK,
         self::DATA_SOURCE_KINGDOM_END,
         self::DATA_SOURCE_SPLIT_VENDETTA,
@@ -76,6 +78,11 @@ class KnownDataSources
     public function getCradleOfHumanity() : DataSourceDef
     {
         return $this->defs->getByID(self::DATA_SOURCE_CRADLE_HUMANITY);
+    }
+
+    public function getEnvoyPack() : DataSourceDef
+    {
+        return $this->defs->getByID(self::DATA_SOURCE_ENVOY_PACK);
     }
 
     public function getHyperionPack() : DataSourceDef

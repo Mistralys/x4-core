@@ -86,6 +86,7 @@ class KnownShips
     public const SHIP_CRANE_MINERAL_SENTINEL = 'ship_tel_l_miner_solid_01_b';
     public const SHIP_CRANE_MINERAL_VANGUARD = 'ship_tel_l_miner_solid_01_a';
     public const SHIP_CUTLASS = 'ship_ter_s_fighter_04_a';
+    public const SHIP_CYPHER = 'ship_gen_m_corvette_02';
     public const SHIP_DART = 'ship_gen_s_racer_01_a';
     public const SHIP_DEMETER_SENTINEL = 'ship_par_m_trans_container_01_b';
     public const SHIP_DEMETER_VANGUARD = 'ship_par_m_trans_container_01_a';
@@ -104,6 +105,7 @@ class KnownShips
     public const SHIP_ELITE_SENTINEL = 'ship_arg_s_fighter_02_b';
     public const SHIP_ELITE_SPORT = 'ship_arg_s_racer_01_a';
     public const SHIP_ELITE_VANGUARD = 'ship_arg_s_fighter_02_a';
+    public const SHIP_ENVOY = 'ship_gen_m_corvette_01';
     public const SHIP_ERLKING = 'ship_pir_xl_battleship_01_a';
     public const SHIP_F = 'ship_xen_s_heavyfighter_01_a';
     public const SHIP_FALCON_SENTINEL = 'ship_tel_s_fighter_01_b';
@@ -342,6 +344,7 @@ class KnownShips
         self::SHIP_CRANE_MINERAL_SENTINEL,
         self::SHIP_CRANE_MINERAL_VANGUARD,
         self::SHIP_CUTLASS,
+        self::SHIP_CYPHER,
         self::SHIP_DART,
         self::SHIP_DEMETER_SENTINEL,
         self::SHIP_DEMETER_VANGUARD,
@@ -360,6 +363,7 @@ class KnownShips
         self::SHIP_ELITE_SENTINEL,
         self::SHIP_ELITE_SPORT,
         self::SHIP_ELITE_VANGUARD,
+        self::SHIP_ENVOY,
         self::SHIP_ERLKING,
         self::SHIP_F,
         self::SHIP_FALCON_SENTINEL,
@@ -836,6 +840,11 @@ class KnownShips
         return $this->defs->getByID(self::SHIP_CUTLASS);
     }
 
+    public function getCypher() : ShipDef
+    {
+        return $this->defs->getByID(self::SHIP_CYPHER);
+    }
+
     public function getDart() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_DART);
@@ -924,6 +933,11 @@ class KnownShips
     public function getEliteVanguard() : ShipDef
     {
         return $this->defs->getByID(self::SHIP_ELITE_VANGUARD);
+    }
+
+    public function getEnvoy() : ShipDef
+    {
+        return $this->defs->getByID(self::SHIP_ENVOY);
     }
 
     public function getErlking() : ShipDef

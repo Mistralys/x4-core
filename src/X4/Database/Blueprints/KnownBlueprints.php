@@ -54,13 +54,17 @@ class KnownBlueprints
     public const BLUEPRINT_ARGON_3_DOCK_E_PIER = 'module_arg_pier_l_03';
     public const BLUEPRINT_ARGON_3_DOCK_T_PIER = 'module_arg_pier_l_01';
     public const BLUEPRINT_ARGON_ADMINISTRATIVE_CENTRE = 'module_arg_def_claim_01';
-    public const BLUEPRINT_ARGON_ARC_CONNECTION_STRUCTURE = 'module_conn_arg_antigonearc_01';
+    public const BLUEPRINT_ARGON_ARC_CONNECTION_STRUCTURE = 'module_arg_conn_arc_01';
+    public const BLUEPRINT_ARGON_ARC_CONNECTION_STRUCTURE_02 = 'module_conn_arg_antigonearc_01';
     public const BLUEPRINT_ARGON_BASE_CONNECTION_STRUCTURE_01 = 'module_arg_conn_base_01';
     public const BLUEPRINT_ARGON_BASE_CONNECTION_STRUCTURE_02 = 'module_arg_conn_base_02';
     public const BLUEPRINT_ARGON_BASE_CONNECTION_STRUCTURE_03 = 'module_arg_conn_base_03';
     public const BLUEPRINT_ARGON_BRIDGE_DEFENCE_PLATFORM = 'module_arg_def_tube_01';
-    public const BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE = 'module_arg_conn_cross_01';
+    public const BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_01 = 'module_arg_conn_cross_01';
+    public const BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_02 = 'module_arg_conn_cross_02';
+    public const BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_03 = 'module_arg_conn_cross_03';
     public const BLUEPRINT_ARGON_DISC_DEFENCE_PLATFORM = 'module_arg_def_disc_01';
+    public const BLUEPRINT_ARGON_L_CONNECTION_STRUCTURE_01 = 'module_arg_conn_cross_05';
     public const BLUEPRINT_ARGON_L_CONTAINER_STORAGE = 'module_arg_stor_container_l_01';
     public const BLUEPRINT_ARGON_L_DORMITORY = 'module_pir_hab_l_01';
     public const BLUEPRINT_ARGON_L_HABITAT = 'module_arg_hab_l_01';
@@ -80,10 +84,13 @@ class KnownBlueprints
     public const BLUEPRINT_ARGON_S_HABITAT = 'module_arg_hab_s_01';
     public const BLUEPRINT_ARGON_S_LIQUID_STORAGE = 'module_arg_stor_liquid_s_01';
     public const BLUEPRINT_ARGON_S_SOLID_STORAGE = 'module_arg_stor_solid_s_01';
+    public const BLUEPRINT_ARGON_T_CONNECTION_STRUCTURE_01 = 'module_arg_conn_cross_04';
     public const BLUEPRINT_ARGON_VERTICAL_CONNECTION_STRUCTURE_01 = 'module_arg_conn_vertical_01';
     public const BLUEPRINT_ARGON_VERTICAL_CONNECTION_STRUCTURE_02 = 'module_arg_conn_vertical_02';
     public const BLUEPRINT_ARGON_XL_HOUSING_SPIRE = 'module_hab_arg_antigonespire_01';
     public const BLUEPRINT_ARG_BEHEMOTH_MAIN_BATTERY = 'weapon_arg_l_destroyer_01_mk1';
+    public const BLUEPRINT_ARG_ENVOY_M_ENGINE_01_MK1 = 'engine_arg_m_corvette_01_mk1';
+    public const BLUEPRINT_ARG_ENVOY_M_ENGINE_01_MK2 = 'engine_arg_m_corvette_01_mk2';
     public const BLUEPRINT_ARG_L_ALL_ROUND_ENGINE = 'engine_arg_l_allround_01_mk1';
     public const BLUEPRINT_ARG_L_BEAM_TURRET = 'turret_arg_l_beam_01_mk1';
     public const BLUEPRINT_ARG_L_DUMBFIRE_TURRET = 'turret_arg_l_dumbfire_01_mk1';
@@ -115,6 +122,7 @@ class KnownBlueprints
     public const BLUEPRINT_ARG_M_PLASMA_TURRET_02_MK1 = 'turret_arg_m_plasma_02_mk1';
     public const BLUEPRINT_ARG_M_PULSE_TURRET_01_MK1 = 'turret_arg_m_laser_01_mk1';
     public const BLUEPRINT_ARG_M_PULSE_TURRET_02_MK1 = 'turret_arg_m_laser_02_mk1';
+    public const BLUEPRINT_ARG_M_SCALAR_APERTURE_TURRET = 'turret_gen_m_shieldpierce_01_mk1';
     public const BLUEPRINT_ARG_M_SHARD_TURRET_01_MK1 = 'turret_arg_m_shotgun_01_mk1';
     public const BLUEPRINT_ARG_M_SHARD_TURRET_02_MK1 = 'turret_arg_m_shotgun_02_mk1';
     public const BLUEPRINT_ARG_M_SHIELD_GENERATOR_01_MK1 = 'shield_arg_m_standard_01_mk1';
@@ -176,9 +184,8 @@ class KnownBlueprints
     public const BLUEPRINT_BORON_BASE_CONNECTION_STRUCTURE_04 = 'module_bor_conn_base_04';
     public const BLUEPRINT_BORON_BASE_CONNECTION_STRUCTURE_05 = 'module_bor_conn_base_05';
     public const BLUEPRINT_BORON_BRIDGE_DEFENCE_PLATFORM = 'module_bor_def_tube_01';
-    public const BLUEPRINT_BORON_CROSS_CONNECTION_STRUCTURE_01 = 'module_bor_conn_cross_01';
-    public const BLUEPRINT_BORON_CROSS_CONNECTION_STRUCTURE_02 = 'module_bor_conn_cross_02';
     public const BLUEPRINT_BORON_DISC_DEFENCE_PLATFORM = 'module_bor_def_disc_01';
+    public const BLUEPRINT_BORON_HEX_CONNECTION_STRUCTURE_01 = 'module_bor_conn_cross_02';
     public const BLUEPRINT_BORON_L_CONTAINER_STORAGE = 'module_bor_stor_container_l_01';
     public const BLUEPRINT_BORON_L_LIQUID_STORAGE = 'module_bor_stor_liquid_l_01';
     public const BLUEPRINT_BORON_L_OASIS = 'module_bor_hab_l_01';
@@ -202,6 +209,7 @@ class KnownBlueprints
     public const BLUEPRINT_BORON_VERTICAL_CONNECTION_STRUCTURE_02 = 'module_bor_conn_vertical_02';
     public const BLUEPRINT_BORON_XL_SHIP_FABRICATION_BAY = 'module_bor_build_xl_01';
     public const BLUEPRINT_BORON_XL_SHIP_MAINTENANCE_BAY = 'module_bor_equip_xl_01';
+    public const BLUEPRINT_BORON_Y_CONNECTION_STRUCTURE = 'module_bor_conn_cross_01';
     public const BLUEPRINT_BOR_L_ALL_ROUND_ENGINE = 'engine_bor_l_travel_01_mk1';
     public const BLUEPRINT_BOR_L_ION_FLAK_TURRET = 'turret_bor_l_flak_01_mk1';
     public const BLUEPRINT_BOR_L_ION_NET_LAUNCHER = 'turret_bor_l_disruptor_01_mk1';
@@ -293,6 +301,7 @@ class KnownBlueprints
     public const BLUEPRINT_CRANE_MINERAL_SENTINEL = 'ship_tel_l_miner_solid_01_b';
     public const BLUEPRINT_CRANE_MINERAL_VANGUARD = 'ship_tel_l_miner_solid_01_a';
     public const BLUEPRINT_CUTLASS = 'ship_ter_s_fighter_04_a';
+    public const BLUEPRINT_CYPHER = 'ship_gen_m_corvette_02';
     public const BLUEPRINT_DART = 'ship_gen_s_racer_01_a';
     public const BLUEPRINT_DEFENCE_DRONE = 'ship_gen_s_fightingdrone_01_a';
     public const BLUEPRINT_DEMETER_SENTINEL = 'ship_par_m_trans_container_01_b';
@@ -316,6 +325,8 @@ class KnownBlueprints
     public const BLUEPRINT_EMP_MISSILE = 'missile_emp_mk1';
     public const BLUEPRINT_ENERGY_CELL_PRODUCTION = 'module_gen_prod_energycells_01';
     public const BLUEPRINT_ENGINE_PART_PRODUCTION = 'module_gen_prod_engineparts_01';
+    public const BLUEPRINT_ENVOY = 'ship_gen_m_corvette_01';
+    public const BLUEPRINT_ENVOY_M_SHIELD_GENERATOR = 'shield_gen_m_corvette_01_mk1';
     public const BLUEPRINT_ERLKING = 'ship_pir_xl_battleship_01_a';
     public const BLUEPRINT_ERLKING_L_TURRET = 'turret_pir_l_battleship_01_laser_01_mk1';
     public const BLUEPRINT_ERLKING_MAIN_BATTERY = 'weapon_pir_xl_battleship_01_mk1';
@@ -442,6 +453,7 @@ class KnownBlueprints
     public const BLUEPRINT_M_ALL_ROUND_THRUSTERS_01_MK1 = 'thruster_gen_m_allround_01_mk1';
     public const BLUEPRINT_M_ALL_ROUND_THRUSTERS_01_MK2 = 'thruster_gen_m_allround_01_mk2';
     public const BLUEPRINT_M_ALL_ROUND_THRUSTERS_01_MK3 = 'thruster_gen_m_allround_01_mk3';
+    public const BLUEPRINT_M_AUTOCANNON_TURRET = 'turret_gen_m_gatling_01_mk1';
     public const BLUEPRINT_M_BEAM_EMITTER_01_MK1 = 'weapon_gen_m_beam_01_mk1';
     public const BLUEPRINT_M_BEAM_EMITTER_01_MK2 = 'weapon_gen_m_beam_01_mk2';
     public const BLUEPRINT_M_BOLT_REPEATER_01_MK1 = 'weapon_gen_m_gatling_01_mk1';
@@ -451,6 +463,8 @@ class KnownBlueprints
     public const BLUEPRINT_M_COMBAT_THRUSTERS_01_MK3 = 'thruster_gen_m_combat_01_mk3';
     public const BLUEPRINT_M_DUMBFIRE_LAUNCHER_01_MK1 = 'weapon_gen_m_dumbfire_01_mk1';
     public const BLUEPRINT_M_DUMBFIRE_LAUNCHER_01_MK2 = 'weapon_gen_m_dumbfire_01_mk2';
+    public const BLUEPRINT_M_HEAVY_DISTORTION_PULSOR = 'weapon_gen_m_disabler_01_mk1';
+    public const BLUEPRINT_M_HEAVY_SCALAR_APERTURE_EMITTER = 'weapon_gen_m_shieldpierce_01_mk1';
     public const BLUEPRINT_M_MINING_DRILL_01_MK1 = 'weapon_gen_m_mining_01_mk1';
     public const BLUEPRINT_M_MINING_DRILL_01_MK2 = 'weapon_gen_m_mining_01_mk2';
     public const BLUEPRINT_M_PLASMA_CANNON_01_MK1 = 'weapon_gen_m_plasma_01_mk1';
@@ -493,7 +507,6 @@ class KnownBlueprints
     public const BLUEPRINT_PARANID_BRIDGE_DEFENCE_PLATFORM = 'module_par_def_tube_01';
     public const BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_01 = 'module_par_conn_cross_01';
     public const BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_02 = 'module_par_conn_cross_02';
-    public const BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_03 = 'module_par_conn_cross_03';
     public const BLUEPRINT_PARANID_DISC_DEFENCE_PLATFORM = 'module_par_def_disc_01';
     public const BLUEPRINT_PARANID_FACTION_CAPITAL = 'module_par_def_claim_story_01';
     public const BLUEPRINT_PARANID_L_CONTAINER_STORAGE = 'module_par_stor_container_l_01';
@@ -511,6 +524,7 @@ class KnownBlueprints
     public const BLUEPRINT_PARANID_S_SOLID_STORAGE = 'module_par_stor_solid_s_01';
     public const BLUEPRINT_PARANID_VERTICAL_CONNECTION_STRUCTURE_01 = 'module_par_conn_vertical_01';
     public const BLUEPRINT_PARANID_VERTICAL_CONNECTION_STRUCTURE_02 = 'module_par_conn_vertical_02';
+    public const BLUEPRINT_PARANID_Y_CONNECTION_STRUCTURE_01 = 'module_par_conn_cross_03';
     public const BLUEPRINT_PAR_HYPERION_MAIN_BATTERY = 'weapon_par_l_expeditionary_01_mk1';
     public const BLUEPRINT_PAR_L_ALL_ROUND_ENGINE = 'engine_par_l_allround_01_mk1';
     public const BLUEPRINT_PAR_L_BEAM_TURRET = 'turret_par_l_beam_01_mk1';
@@ -645,7 +659,6 @@ class KnownBlueprints
     public const BLUEPRINT_SPLIT_BASE_CONNECTION_STRUCTURE_02 = 'module_spl_conn_base_02';
     public const BLUEPRINT_SPLIT_BASE_CONNECTION_STRUCTURE_03 = 'module_spl_conn_base_03';
     public const BLUEPRINT_SPLIT_BRIDGE_DEFENCE_PLATFORM = 'module_spl_def_tube_01';
-    public const BLUEPRINT_SPLIT_CROSS_CONNECTION_STRUCTURE = 'module_spl_conn_cross_01';
     public const BLUEPRINT_SPLIT_DISC_DEFENCE_PLATFORM = 'module_spl_def_disc_01';
     public const BLUEPRINT_SPLIT_L_CONTAINER_STORAGE = 'module_spl_stor_container_l_01';
     public const BLUEPRINT_SPLIT_L_LIQUID_STORAGE = 'module_spl_stor_liquid_l_01';
@@ -662,6 +675,7 @@ class KnownBlueprints
     public const BLUEPRINT_SPLIT_S_SOLID_STORAGE = 'module_spl_stor_solid_s_01';
     public const BLUEPRINT_SPLIT_VERTICAL_CONNECTION_STRUCTURE_01 = 'module_spl_conn_vertical_01';
     public const BLUEPRINT_SPLIT_VERTICAL_CONNECTION_STRUCTURE_02 = 'module_spl_conn_vertical_02';
+    public const BLUEPRINT_SPLIT_Y_CONNECTION_STRUCTURE = 'module_spl_conn_cross_01';
     public const BLUEPRINT_SPL_L_ALL_ROUND_ENGINE = 'engine_spl_l_allround_01_mk1';
     public const BLUEPRINT_SPL_L_BEAM_TURRET = 'turret_spl_l_beam_01_mk1';
     public const BLUEPRINT_SPL_L_DUMBFIRE_TURRET = 'turret_spl_l_dumbfire_01_mk1';
@@ -810,6 +824,8 @@ class KnownBlueprints
     public const BLUEPRINT_TELADI_S_SOLID_STORAGE = 'module_tel_stor_solid_s_01';
     public const BLUEPRINT_TELADI_VERTICAL_CONNECTION_STRUCTURE_01 = 'module_tel_conn_vertical_01';
     public const BLUEPRINT_TELADI_VERTICAL_CONNECTION_STRUCTURE_02 = 'module_tel_conn_vertical_02';
+    public const BLUEPRINT_TEL_ENVOY_M_ENGINE_01_MK1 = 'engine_tel_m_corvette_01_mk1';
+    public const BLUEPRINT_TEL_ENVOY_M_ENGINE_01_MK2 = 'engine_tel_m_corvette_01_mk2';
     public const BLUEPRINT_TEL_L_ALL_ROUND_ENGINE = 'engine_tel_l_allround_01_mk1';
     public const BLUEPRINT_TEL_L_BEAM_TURRET = 'turret_tel_l_beam_01_mk1';
     public const BLUEPRINT_TEL_L_DUMBFIRE_TURRET = 'turret_tel_l_dumbfire_01_mk1';
@@ -830,6 +846,7 @@ class KnownBlueprints
     public const BLUEPRINT_TEL_M_COMBAT_ENGINE_01_MK1 = 'engine_tel_m_combat_01_mk1';
     public const BLUEPRINT_TEL_M_COMBAT_ENGINE_01_MK2 = 'engine_tel_m_combat_01_mk2';
     public const BLUEPRINT_TEL_M_COMBAT_ENGINE_01_MK3 = 'engine_tel_m_combat_01_mk3';
+    public const BLUEPRINT_TEL_M_DISTORTION_TURRET = 'turret_gen_m_disabler_01_mk1';
     public const BLUEPRINT_TEL_M_DUMBFIRE_TURRET = 'turret_tel_m_dumbfire_02_mk1';
     public const BLUEPRINT_TEL_M_MINING_TURRET_01_MK1 = 'turret_tel_m_mining_01_mk1';
     public const BLUEPRINT_TEL_M_MINING_TURRET_02_MK1 = 'turret_tel_m_mining_02_mk1';
@@ -1073,12 +1090,16 @@ class KnownBlueprints
         self::BLUEPRINT_ARGON_3_DOCK_T_PIER,
         self::BLUEPRINT_ARGON_ADMINISTRATIVE_CENTRE,
         self::BLUEPRINT_ARGON_ARC_CONNECTION_STRUCTURE,
+        self::BLUEPRINT_ARGON_ARC_CONNECTION_STRUCTURE_02,
         self::BLUEPRINT_ARGON_BASE_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_ARGON_BASE_CONNECTION_STRUCTURE_02,
         self::BLUEPRINT_ARGON_BASE_CONNECTION_STRUCTURE_03,
         self::BLUEPRINT_ARGON_BRIDGE_DEFENCE_PLATFORM,
-        self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE,
+        self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_01,
+        self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_02,
+        self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_03,
         self::BLUEPRINT_ARGON_DISC_DEFENCE_PLATFORM,
+        self::BLUEPRINT_ARGON_L_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_ARGON_L_CONTAINER_STORAGE,
         self::BLUEPRINT_ARGON_L_DORMITORY,
         self::BLUEPRINT_ARGON_L_HABITAT,
@@ -1098,10 +1119,13 @@ class KnownBlueprints
         self::BLUEPRINT_ARGON_S_HABITAT,
         self::BLUEPRINT_ARGON_S_LIQUID_STORAGE,
         self::BLUEPRINT_ARGON_S_SOLID_STORAGE,
+        self::BLUEPRINT_ARGON_T_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_ARGON_VERTICAL_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_ARGON_VERTICAL_CONNECTION_STRUCTURE_02,
         self::BLUEPRINT_ARGON_XL_HOUSING_SPIRE,
         self::BLUEPRINT_ARG_BEHEMOTH_MAIN_BATTERY,
+        self::BLUEPRINT_ARG_ENVOY_M_ENGINE_01_MK1,
+        self::BLUEPRINT_ARG_ENVOY_M_ENGINE_01_MK2,
         self::BLUEPRINT_ARG_L_ALL_ROUND_ENGINE,
         self::BLUEPRINT_ARG_L_BEAM_TURRET,
         self::BLUEPRINT_ARG_L_DUMBFIRE_TURRET,
@@ -1133,6 +1157,7 @@ class KnownBlueprints
         self::BLUEPRINT_ARG_M_PLASMA_TURRET_02_MK1,
         self::BLUEPRINT_ARG_M_PULSE_TURRET_01_MK1,
         self::BLUEPRINT_ARG_M_PULSE_TURRET_02_MK1,
+        self::BLUEPRINT_ARG_M_SCALAR_APERTURE_TURRET,
         self::BLUEPRINT_ARG_M_SHARD_TURRET_01_MK1,
         self::BLUEPRINT_ARG_M_SHARD_TURRET_02_MK1,
         self::BLUEPRINT_ARG_M_SHIELD_GENERATOR_01_MK1,
@@ -1194,9 +1219,8 @@ class KnownBlueprints
         self::BLUEPRINT_BORON_BASE_CONNECTION_STRUCTURE_04,
         self::BLUEPRINT_BORON_BASE_CONNECTION_STRUCTURE_05,
         self::BLUEPRINT_BORON_BRIDGE_DEFENCE_PLATFORM,
-        self::BLUEPRINT_BORON_CROSS_CONNECTION_STRUCTURE_01,
-        self::BLUEPRINT_BORON_CROSS_CONNECTION_STRUCTURE_02,
         self::BLUEPRINT_BORON_DISC_DEFENCE_PLATFORM,
+        self::BLUEPRINT_BORON_HEX_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_BORON_L_CONTAINER_STORAGE,
         self::BLUEPRINT_BORON_L_LIQUID_STORAGE,
         self::BLUEPRINT_BORON_L_OASIS,
@@ -1220,6 +1244,7 @@ class KnownBlueprints
         self::BLUEPRINT_BORON_VERTICAL_CONNECTION_STRUCTURE_02,
         self::BLUEPRINT_BORON_XL_SHIP_FABRICATION_BAY,
         self::BLUEPRINT_BORON_XL_SHIP_MAINTENANCE_BAY,
+        self::BLUEPRINT_BORON_Y_CONNECTION_STRUCTURE,
         self::BLUEPRINT_BOR_L_ALL_ROUND_ENGINE,
         self::BLUEPRINT_BOR_L_ION_FLAK_TURRET,
         self::BLUEPRINT_BOR_L_ION_NET_LAUNCHER,
@@ -1311,6 +1336,7 @@ class KnownBlueprints
         self::BLUEPRINT_CRANE_MINERAL_SENTINEL,
         self::BLUEPRINT_CRANE_MINERAL_VANGUARD,
         self::BLUEPRINT_CUTLASS,
+        self::BLUEPRINT_CYPHER,
         self::BLUEPRINT_DART,
         self::BLUEPRINT_DEFENCE_DRONE,
         self::BLUEPRINT_DEMETER_SENTINEL,
@@ -1334,6 +1360,8 @@ class KnownBlueprints
         self::BLUEPRINT_EMP_MISSILE,
         self::BLUEPRINT_ENERGY_CELL_PRODUCTION,
         self::BLUEPRINT_ENGINE_PART_PRODUCTION,
+        self::BLUEPRINT_ENVOY,
+        self::BLUEPRINT_ENVOY_M_SHIELD_GENERATOR,
         self::BLUEPRINT_ERLKING,
         self::BLUEPRINT_ERLKING_L_TURRET,
         self::BLUEPRINT_ERLKING_MAIN_BATTERY,
@@ -1460,6 +1488,7 @@ class KnownBlueprints
         self::BLUEPRINT_M_ALL_ROUND_THRUSTERS_01_MK1,
         self::BLUEPRINT_M_ALL_ROUND_THRUSTERS_01_MK2,
         self::BLUEPRINT_M_ALL_ROUND_THRUSTERS_01_MK3,
+        self::BLUEPRINT_M_AUTOCANNON_TURRET,
         self::BLUEPRINT_M_BEAM_EMITTER_01_MK1,
         self::BLUEPRINT_M_BEAM_EMITTER_01_MK2,
         self::BLUEPRINT_M_BOLT_REPEATER_01_MK1,
@@ -1469,6 +1498,8 @@ class KnownBlueprints
         self::BLUEPRINT_M_COMBAT_THRUSTERS_01_MK3,
         self::BLUEPRINT_M_DUMBFIRE_LAUNCHER_01_MK1,
         self::BLUEPRINT_M_DUMBFIRE_LAUNCHER_01_MK2,
+        self::BLUEPRINT_M_HEAVY_DISTORTION_PULSOR,
+        self::BLUEPRINT_M_HEAVY_SCALAR_APERTURE_EMITTER,
         self::BLUEPRINT_M_MINING_DRILL_01_MK1,
         self::BLUEPRINT_M_MINING_DRILL_01_MK2,
         self::BLUEPRINT_M_PLASMA_CANNON_01_MK1,
@@ -1511,7 +1542,6 @@ class KnownBlueprints
         self::BLUEPRINT_PARANID_BRIDGE_DEFENCE_PLATFORM,
         self::BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_02,
-        self::BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_03,
         self::BLUEPRINT_PARANID_DISC_DEFENCE_PLATFORM,
         self::BLUEPRINT_PARANID_FACTION_CAPITAL,
         self::BLUEPRINT_PARANID_L_CONTAINER_STORAGE,
@@ -1529,6 +1559,7 @@ class KnownBlueprints
         self::BLUEPRINT_PARANID_S_SOLID_STORAGE,
         self::BLUEPRINT_PARANID_VERTICAL_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_PARANID_VERTICAL_CONNECTION_STRUCTURE_02,
+        self::BLUEPRINT_PARANID_Y_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_PAR_HYPERION_MAIN_BATTERY,
         self::BLUEPRINT_PAR_L_ALL_ROUND_ENGINE,
         self::BLUEPRINT_PAR_L_BEAM_TURRET,
@@ -1663,7 +1694,6 @@ class KnownBlueprints
         self::BLUEPRINT_SPLIT_BASE_CONNECTION_STRUCTURE_02,
         self::BLUEPRINT_SPLIT_BASE_CONNECTION_STRUCTURE_03,
         self::BLUEPRINT_SPLIT_BRIDGE_DEFENCE_PLATFORM,
-        self::BLUEPRINT_SPLIT_CROSS_CONNECTION_STRUCTURE,
         self::BLUEPRINT_SPLIT_DISC_DEFENCE_PLATFORM,
         self::BLUEPRINT_SPLIT_L_CONTAINER_STORAGE,
         self::BLUEPRINT_SPLIT_L_LIQUID_STORAGE,
@@ -1680,6 +1710,7 @@ class KnownBlueprints
         self::BLUEPRINT_SPLIT_S_SOLID_STORAGE,
         self::BLUEPRINT_SPLIT_VERTICAL_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_SPLIT_VERTICAL_CONNECTION_STRUCTURE_02,
+        self::BLUEPRINT_SPLIT_Y_CONNECTION_STRUCTURE,
         self::BLUEPRINT_SPL_L_ALL_ROUND_ENGINE,
         self::BLUEPRINT_SPL_L_BEAM_TURRET,
         self::BLUEPRINT_SPL_L_DUMBFIRE_TURRET,
@@ -1828,6 +1859,8 @@ class KnownBlueprints
         self::BLUEPRINT_TELADI_S_SOLID_STORAGE,
         self::BLUEPRINT_TELADI_VERTICAL_CONNECTION_STRUCTURE_01,
         self::BLUEPRINT_TELADI_VERTICAL_CONNECTION_STRUCTURE_02,
+        self::BLUEPRINT_TEL_ENVOY_M_ENGINE_01_MK1,
+        self::BLUEPRINT_TEL_ENVOY_M_ENGINE_01_MK2,
         self::BLUEPRINT_TEL_L_ALL_ROUND_ENGINE,
         self::BLUEPRINT_TEL_L_BEAM_TURRET,
         self::BLUEPRINT_TEL_L_DUMBFIRE_TURRET,
@@ -1848,6 +1881,7 @@ class KnownBlueprints
         self::BLUEPRINT_TEL_M_COMBAT_ENGINE_01_MK1,
         self::BLUEPRINT_TEL_M_COMBAT_ENGINE_01_MK2,
         self::BLUEPRINT_TEL_M_COMBAT_ENGINE_01_MK3,
+        self::BLUEPRINT_TEL_M_DISTORTION_TURRET,
         self::BLUEPRINT_TEL_M_DUMBFIRE_TURRET,
         self::BLUEPRINT_TEL_M_MINING_TURRET_01_MK1,
         self::BLUEPRINT_TEL_M_MINING_TURRET_02_MK1,
@@ -2176,6 +2210,16 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_ARG_BEHEMOTH_MAIN_BATTERY);
     }
 
+    public function getArgEnvoyMEngine_01Mk1() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARG_ENVOY_M_ENGINE_01_MK1);
+    }
+
+    public function getArgEnvoyMEngine_01Mk2() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARG_ENVOY_M_ENGINE_01_MK2);
+    }
+
     public function getArgLAllRoundEngine() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_ARG_L_ALL_ROUND_ENGINE);
@@ -2329,6 +2373,11 @@ class KnownBlueprints
     public function getArgMPulseTurret_02Mk1() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_ARG_M_PULSE_TURRET_02_MK1);
+    }
+
+    public function getArgMScalarApertureTurret() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARG_M_SCALAR_APERTURE_TURRET);
     }
 
     public function getArgMShardTurret_01Mk1() : BlueprintDef
@@ -2511,6 +2560,11 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_ARGON_ARC_CONNECTION_STRUCTURE);
     }
 
+    public function getArgonArcConnectionStructure02() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARGON_ARC_CONNECTION_STRUCTURE_02);
+    }
+
     public function getArgonBaseConnectionStructure_01() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_ARGON_BASE_CONNECTION_STRUCTURE_01);
@@ -2531,14 +2585,29 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_ARGON_BRIDGE_DEFENCE_PLATFORM);
     }
 
-    public function getArgonCrossConnectionStructure() : BlueprintDef
+    public function getArgonCrossConnectionStructure_01() : BlueprintDef
     {
-        return $this->defs->getByID(self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE);
+        return $this->defs->getByID(self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_01);
+    }
+
+    public function getArgonCrossConnectionStructure_02() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_02);
+    }
+
+    public function getArgonCrossConnectionStructure_03() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARGON_CROSS_CONNECTION_STRUCTURE_03);
     }
 
     public function getArgonDiscDefencePlatform() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_ARGON_DISC_DEFENCE_PLATFORM);
+    }
+
+    public function getArgonLConnectionStructure01() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARGON_L_CONNECTION_STRUCTURE_01);
     }
 
     public function getArgonLContainerStorage() : BlueprintDef
@@ -2634,6 +2703,11 @@ class KnownBlueprints
     public function getArgonSpanConnectionStructure02() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_ARGON_SPAN_CONNECTION_STRUCTURE_02);
+    }
+
+    public function getArgonTConnectionStructure01() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ARGON_T_CONNECTION_STRUCTURE_01);
     }
 
     public function getArgonVerticalConnectionStructure_01() : BlueprintDef
@@ -3061,19 +3135,14 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_BORON_BRIDGE_DEFENCE_PLATFORM);
     }
 
-    public function getBoronCrossConnectionStructure_01() : BlueprintDef
-    {
-        return $this->defs->getByID(self::BLUEPRINT_BORON_CROSS_CONNECTION_STRUCTURE_01);
-    }
-
-    public function getBoronCrossConnectionStructure_02() : BlueprintDef
-    {
-        return $this->defs->getByID(self::BLUEPRINT_BORON_CROSS_CONNECTION_STRUCTURE_02);
-    }
-
     public function getBoronDiscDefencePlatform() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_BORON_DISC_DEFENCE_PLATFORM);
+    }
+
+    public function getBoronHexConnectionStructure01() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_BORON_HEX_CONNECTION_STRUCTURE_01);
     }
 
     public function getBoronLContainerStorage() : BlueprintDef
@@ -3189,6 +3258,11 @@ class KnownBlueprints
     public function getBoronXlShipMaintenanceBay() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_BORON_XL_SHIP_MAINTENANCE_BAY);
+    }
+
+    public function getBoronYConnectionStructure() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_BORON_Y_CONNECTION_STRUCTURE);
     }
 
     public function getBuffalo() : BlueprintDef
@@ -3391,6 +3465,11 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_CUTLASS);
     }
 
+    public function getCypher() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_CYPHER);
+    }
+
     public function getDart() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_DART);
@@ -3504,6 +3583,16 @@ class KnownBlueprints
     public function getEnginePartProduction() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_ENGINE_PART_PRODUCTION);
+    }
+
+    public function getEnvoy() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ENVOY);
+    }
+
+    public function getEnvoyMShieldGenerator() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_ENVOY_M_SHIELD_GENERATOR);
     }
 
     public function getErlking() : BlueprintDef
@@ -3971,6 +4060,11 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_M_ALL_ROUND_THRUSTERS_01_MK3);
     }
 
+    public function getMAutocannonTurret() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_M_AUTOCANNON_TURRET);
+    }
+
     public function getMBeamEmitter_01Mk1() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_M_BEAM_EMITTER_01_MK1);
@@ -4014,6 +4108,16 @@ class KnownBlueprints
     public function getMDumbfireLauncher_01Mk2() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_M_DUMBFIRE_LAUNCHER_01_MK2);
+    }
+
+    public function getMHeavyDistortionPulsor() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_M_HEAVY_DISTORTION_PULSOR);
+    }
+
+    public function getMHeavyScalarApertureEmitter() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_M_HEAVY_SCALAR_APERTURE_EMITTER);
     }
 
     public function getMMiningDrill_01Mk1() : BlueprintDef
@@ -4691,11 +4795,6 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_02);
     }
 
-    public function getParanidCrossConnectionStructure_03() : BlueprintDef
-    {
-        return $this->defs->getByID(self::BLUEPRINT_PARANID_CROSS_CONNECTION_STRUCTURE_03);
-    }
-
     public function getParanidDiscDefencePlatform() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_PARANID_DISC_DEFENCE_PLATFORM);
@@ -4779,6 +4878,11 @@ class KnownBlueprints
     public function getParanidVerticalConnectionStructure_02() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_PARANID_VERTICAL_CONNECTION_STRUCTURE_02);
+    }
+
+    public function getParanidYConnectionStructure01() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_PARANID_Y_CONNECTION_STRUCTURE_01);
     }
 
     public function getPavilionObservationDeck() : BlueprintDef
@@ -5686,11 +5790,6 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_SPLIT_BRIDGE_DEFENCE_PLATFORM);
     }
 
-    public function getSplitCrossConnectionStructure() : BlueprintDef
-    {
-        return $this->defs->getByID(self::BLUEPRINT_SPLIT_CROSS_CONNECTION_STRUCTURE);
-    }
-
     public function getSplitDiscDefencePlatform() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_SPLIT_DISC_DEFENCE_PLATFORM);
@@ -5771,6 +5870,11 @@ class KnownBlueprints
         return $this->defs->getByID(self::BLUEPRINT_SPLIT_VERTICAL_CONNECTION_STRUCTURE_02);
     }
 
+    public function getSplitYConnectionStructure() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_SPLIT_Y_CONNECTION_STRUCTURE);
+    }
+
     public function getStimulantProduction() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_STIMULANT_PRODUCTION);
@@ -5824,6 +5928,16 @@ class KnownBlueprints
     public function getTakoba() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_TAKOBA);
+    }
+
+    public function getTelEnvoyMEngine_01Mk1() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_TEL_ENVOY_M_ENGINE_01_MK1);
+    }
+
+    public function getTelEnvoyMEngine_01Mk2() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_TEL_ENVOY_M_ENGINE_01_MK2);
     }
 
     public function getTelLAllRoundEngine() : BlueprintDef
@@ -5924,6 +6038,11 @@ class KnownBlueprints
     public function getTelMCombatEngine_01Mk3() : BlueprintDef
     {
         return $this->defs->getByID(self::BLUEPRINT_TEL_M_COMBAT_ENGINE_01_MK3);
+    }
+
+    public function getTelMDistortionTurret() : BlueprintDef
+    {
+        return $this->defs->getByID(self::BLUEPRINT_TEL_M_DISTORTION_TURRET);
     }
 
     public function getTelMDumbfireTurret() : BlueprintDef
