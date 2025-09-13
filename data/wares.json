@@ -82,7 +82,7 @@
     {
         "wareID": "bomb_player_limpet_emp_01_mk1",
         "label": "Spacesuit EMP",
-        "group": "crafting",
+        "group": "hardware",
         "macroID": "bomb_player_limpet_emp_01_mk1_macro",
         "variantID": "01::mk1",
         "tags": [
@@ -97,7 +97,7 @@
     {
         "wareID": "bomb_player_limpet_mine_01_mk1",
         "label": "Spacesuit Bomb",
-        "group": "crafting",
+        "group": "hardware",
         "macroID": "bomb_player_limpet_mine_01_mk1_macro",
         "variantID": "01::mk1",
         "tags": [
@@ -192,7 +192,7 @@
     {
         "wareID": "condensate",
         "label": "Protectyon",
-        "group": "other",
+        "group": "condensate",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -420,6 +420,38 @@
             "antigone",
             "argon",
             "buccaneers"
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_corvette_01_mk1",
+        "label": "ARG Envoy M Engine Mk1",
+        "group": "engines",
+        "macroID": "engine_arg_m_corvette_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "engine",
+            "equipment",
+            "hiddenwithoutlicence"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "argon"
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_corvette_01_mk2",
+        "label": "ARG Envoy M Engine Mk2",
+        "group": "engines",
+        "macroID": "engine_arg_m_corvette_01_mk2_macro",
+        "variantID": "01::mk2",
+        "tags": [
+            "engine",
+            "equipment",
+            "hiddenwithoutlicence"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "argon"
         ]
     },
     {
@@ -1997,6 +2029,39 @@
         ]
     },
     {
+        "wareID": "engine_tel_m_corvette_01_mk1",
+        "label": "TEL Envoy M Engine Mk1",
+        "group": "engines",
+        "macroID": "engine_tel_m_corvette_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "engine",
+            "equipment",
+            "hiddenwithoutlicence"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "ministry",
+            "scaleplate"
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_corvette_01_mk2",
+        "label": "TEL Envoy M Engine Mk2",
+        "group": "engines",
+        "macroID": "engine_tel_m_corvette_01_mk2_macro",
+        "variantID": "01::mk2",
+        "tags": [
+            "engine",
+            "equipment",
+            "hiddenwithoutlicence"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "ministry"
+        ]
+    },
+    {
         "wareID": "engine_tel_m_travel_01_mk1",
         "label": "TEL M Travel Engine Mk1",
         "group": "engines",
@@ -2279,7 +2344,8 @@
         "tags": [
             "engine",
             "equipment",
-            "nocustomgamestart"
+            "nocustomgamestart",
+            "nodiplomacyblueprint"
         ],
         "dataSourceID": "ego_dlc_timelines",
         "factions": [
@@ -2455,7 +2521,8 @@
         "tags": [
             "engine",
             "equipment",
-            "nocustomgamestart"
+            "nocustomgamestart",
+            "nodiplomacyblueprint"
         ],
         "dataSourceID": "ego_dlc_timelines",
         "factions": [
@@ -2615,7 +2682,8 @@
         "tags": [
             "engine",
             "equipment",
-            "nocustomgamestart"
+            "nocustomgamestart",
+            "nodiplomacyblueprint"
         ],
         "dataSourceID": "ego_dlc_timelines",
         "factions": [
@@ -2897,7 +2965,7 @@
     {
         "wareID": "inv_advancedtargetingmodule",
         "label": "Advanced Targeting Module",
-        "group": "inventoryitems",
+        "group": "hardware",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -2910,7 +2978,7 @@
     {
         "wareID": "inv_agidevice_01",
         "label": "AGI Processor",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "01::",
         "tags": [
@@ -2923,7 +2991,7 @@
     {
         "wareID": "inv_agidevice_02",
         "label": "AGI Heuristic Core",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "02::",
         "tags": [
@@ -2936,7 +3004,7 @@
     {
         "wareID": "inv_agidevice_03",
         "label": "AGI Neural Network",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "03::",
         "tags": [
@@ -2949,7 +3017,7 @@
     {
         "wareID": "inv_algaescrubber",
         "label": "Algae Scrubber",
-        "group": "inventoryitems",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -2986,9 +3054,23 @@
         "factions": []
     },
     {
+        "wareID": "inv_aquaponicvegetable",
+        "label": "Aquaponic Vegetables",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_argnusteak",
         "label": "Argnu Steak",
-        "group": "crafting",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3041,7 +3123,7 @@
     {
         "wareID": "inv_bandages",
         "label": "Bandages",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3171,9 +3253,35 @@
         "factions": []
     },
     {
+        "wareID": "inv_cahoonas",
+        "label": "Cahoonas",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_capacitor",
+        "label": "Capacitor",
+        "group": "hardware",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_carbonfilter",
         "label": "Carbon Filter",
-        "group": "inventoryitems",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3276,14 +3384,27 @@
         "factions": []
     },
     {
-        "wareID": "inv_crystalbit",
-        "label": "Crystal Bit",
-        "group": "inventoryitems",
+        "wareID": "inv_crystalbinder",
+        "label": "Crystal Binder",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
-            "inventory",
-            "tradeonly"
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_crystalbit",
+        "label": "Crystal Bit",
+        "group": "curiosity",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -3291,12 +3412,12 @@
     {
         "wareID": "inv_crystal_01",
         "label": "Bandannite Crystal",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "collectable_crystal_s_01_macro",
         "variantID": "01::",
         "tags": [
-            "inventory",
-            "tradeonly"
+            "crafting",
+            "inventory"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -3304,7 +3425,7 @@
     {
         "wareID": "inv_crystal_02",
         "label": "Menelaene Crystal",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "collectable_crystal_s_02_macro",
         "variantID": "02::",
         "tags": [
@@ -3317,7 +3438,7 @@
     {
         "wareID": "inv_crystal_03",
         "label": "Aguilite Crystal",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "collectable_crystal_s_03_macro",
         "variantID": "03::",
         "tags": [
@@ -3330,7 +3451,7 @@
     {
         "wareID": "inv_crystal_04",
         "label": "Mitonene Crystal",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "collectable_crystal_s_04_macro",
         "variantID": "04::",
         "tags": [
@@ -3343,7 +3464,7 @@
     {
         "wareID": "inv_crystal_05",
         "label": "Burnite Crystal",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "collectable_crystal_s_05_macro",
         "variantID": "05::",
         "tags": [
@@ -3356,12 +3477,12 @@
     {
         "wareID": "inv_damagedsingularityengine",
         "label": "Damaged Singularity Engine",
-        "group": "crafting",
+        "group": "hardware",
         "macroID": "",
         "variantID": "::",
         "tags": [
-            "crafting",
-            "inventory"
+            "inventory",
+            "tradeonly"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -3380,9 +3501,22 @@
         "factions": []
     },
     {
+        "wareID": "inv_datafragment",
+        "label": "Data Fragment",
+        "group": "hardware",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_decryptionmodule",
         "label": "Decryption Module",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3408,7 +3542,7 @@
     {
         "wareID": "inv_electronics",
         "label": "Electronics",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3586,10 +3720,11 @@
     {
         "wareID": "inv_finemeal",
         "label": "Fine Meal",
-        "group": "crafting",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
+            "bribe",
             "crafting",
             "inventory"
         ],
@@ -3599,7 +3734,7 @@
     {
         "wareID": "inv_firstaidkit",
         "label": "First Aid Kit",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3612,12 +3747,12 @@
     {
         "wareID": "inv_fluxcapacitor",
         "label": "Flux Capacitor",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
-            "crafting",
-            "inventory"
+            "inventory",
+            "tradeonly"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -3636,9 +3771,22 @@
         "factions": []
     },
     {
+        "wareID": "inv_glowmalt",
+        "label": "Glow Malt",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_hallucinogenics",
         "label": "Hallucinogenics",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3651,10 +3799,24 @@
     {
         "wareID": "inv_harddrug_01",
         "label": "Delirium",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "01::",
         "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_harmonicresonator",
+        "label": "Harmonic Resonator",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
             "crafting",
             "inventory"
         ],
@@ -3690,7 +3852,7 @@
     {
         "wareID": "inv_herbicide",
         "label": "Herbicide",
-        "group": "inventoryitems",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3730,7 +3892,7 @@
     {
         "wareID": "inv_hydraulicpump",
         "label": "Hydraulic Pump",
-        "group": "inventoryitems",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3741,9 +3903,23 @@
         "factions": []
     },
     {
+        "wareID": "inv_infusedbeverage",
+        "label": "Infused Beverage",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_interfaceunit",
         "label": "Interface Unit",
-        "group": "crafting",
+        "group": "hardware",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3756,11 +3932,10 @@
     {
         "wareID": "inv_kyondevice_01",
         "label": "Kyon Crystallite",
-        "group": "crafting",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "01::",
         "tags": [
-            "crafting",
             "inventory"
         ],
         "dataSourceID": "vanilla",
@@ -3769,11 +3944,10 @@
     {
         "wareID": "inv_kyondevice_02",
         "label": "Kyon Crystal Shard",
-        "group": "crafting",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "02::",
         "tags": [
-            "crafting",
             "inventory"
         ],
         "dataSourceID": "vanilla",
@@ -3782,11 +3956,10 @@
     {
         "wareID": "inv_kyondevice_03",
         "label": "Kyon Crystal",
-        "group": "crafting",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "03::",
         "tags": [
-            "crafting",
             "inventory"
         ],
         "dataSourceID": "vanilla",
@@ -3819,9 +3992,22 @@
         "factions": []
     },
     {
+        "wareID": "inv_lostfragment",
+        "label": "Lost Fragment",
+        "group": "curiosity",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_magneticmaterial",
         "label": "Lodestone",
-        "group": "crafting",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3834,12 +4020,40 @@
     {
         "wareID": "inv_majaglit",
         "label": "Majaglit",
-        "group": "inventoryitems",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
-            "inventory",
-            "tradeonly"
+            "bribe",
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_massompowder",
+        "label": "Massom Powder",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_microbrewdrink",
+        "label": "Microbrew Drink",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
+            "crafting",
+            "inventory"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -3847,7 +4061,7 @@
     {
         "wareID": "inv_microgimble",
         "label": "Micro-Gimbal",
-        "group": "inventoryitems",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3860,7 +4074,7 @@
     {
         "wareID": "inv_micromotor",
         "label": "Micro-Motor",
-        "group": "inventoryitems",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3873,7 +4087,7 @@
     {
         "wareID": "inv_mixedfruit",
         "label": "Mixed Fruit",
-        "group": "crafting",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3886,7 +4100,7 @@
     {
         "wareID": "inv_modulartrigger",
         "label": "Modular Trigger",
-        "group": "inventoryitems",
+        "group": "hardware",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -3938,10 +4152,24 @@
     {
         "wareID": "inv_needle",
         "label": "Needle",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_neuralstimulator",
+        "label": "Neural Stimulator",
+        "group": "contraband",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
             "crafting",
             "inventory"
         ],
@@ -3970,6 +4198,20 @@
         "tags": [
             "inventory",
             "missiononly"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_nividiumjewel",
+        "label": "Nividium Jewel",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
+            "crafting",
+            "inventory"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -4057,7 +4299,7 @@
     {
         "wareID": "inv_processing_panel_7A",
         "label": "Processing Panel Unit 7A",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4070,7 +4312,7 @@
     {
         "wareID": "inv_processing_panel_8X",
         "label": "Processing Panel Unit 8X",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4083,7 +4325,7 @@
     {
         "wareID": "inv_processing_panel_12G",
         "label": "Processing Panel Unit 12G",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4096,7 +4338,7 @@
     {
         "wareID": "inv_processing_panel_19L",
         "label": "Processing Panel Unit 19L",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4109,7 +4351,7 @@
     {
         "wareID": "inv_processing_panel_46B",
         "label": "Processing Panel Unit 46B",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4120,9 +4362,9 @@
         "factions": []
     },
     {
-        "wareID": "inv_programmablefieldarray",
-        "label": "Programmable Field Array",
-        "group": "crafting",
+        "wareID": "inv_produce",
+        "label": "Produce",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4133,9 +4375,22 @@
         "factions": []
     },
     {
+        "wareID": "inv_programmablefieldarray",
+        "label": "Programmable Field Array",
+        "group": "hardware",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "inventory",
+            "tradeonly"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_quantum_data_shard",
         "label": "AGI Quantum Data Shard",
-        "group": "inventoryitems",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4149,7 +4404,7 @@
     {
         "wareID": "inv_rapidsandfilter",
         "label": "Rapid Sand Filter",
-        "group": "inventoryitems",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4160,9 +4415,23 @@
         "factions": []
     },
     {
+        "wareID": "inv_rareartefact",
+        "label": "Rare Artifact",
+        "group": "curiosity",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_rarespices",
         "label": "Rare Spices",
-        "group": "crafting",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4189,7 +4458,7 @@
     {
         "wareID": "inv_remotedetonator",
         "label": "Remote Detonator",
-        "group": "crafting",
+        "group": "hardware",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4215,7 +4484,7 @@
     {
         "wareID": "inv_salvagedelectronics",
         "label": "Salvaged Electronics",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4254,7 +4523,7 @@
     {
         "wareID": "inv_securecontainer",
         "label": "Secure Container",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4267,7 +4536,7 @@
     {
         "wareID": "inv_securityapparatus",
         "label": "Security Apparatus",
-        "group": "missionitems",
+        "group": "contraband",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4281,7 +4550,7 @@
     {
         "wareID": "inv_securityapparatus_chip",
         "label": "Security Apparatus Chip",
-        "group": "missionitems",
+        "group": "contraband",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4295,7 +4564,7 @@
     {
         "wareID": "inv_securitybypasssystem",
         "label": "Security Bypass System",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4308,7 +4577,7 @@
     {
         "wareID": "inv_securitydecryptionsystem",
         "label": "Security Decryption System",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4321,7 +4590,7 @@
     {
         "wareID": "inv_securityslicer",
         "label": "Security Slicer",
-        "group": "crafting",
+        "group": "contraband",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4334,7 +4603,7 @@
     {
         "wareID": "inv_sedative",
         "label": "Sedative",
-        "group": "crafting",
+        "group": "generalitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4545,9 +4814,36 @@
         "factions": []
     },
     {
+        "wareID": "inv_snailshells",
+        "label": "Snail Shells",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_spacedyepizza",
+        "label": "Space-Dye Pizza",
+        "group": "luxuryitem",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_spaceflycaviar",
         "label": "Spacefly Caviar",
-        "group": "crafting",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4561,7 +4857,7 @@
     {
         "wareID": "inv_spaceflyeggs",
         "label": "Spacefly Eggs",
-        "group": "crafting",
+        "group": "luxuryitem",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4691,13 +4987,13 @@
     {
         "wareID": "inv_timewarp",
         "label": "SETA",
-        "group": "crafting",
+        "group": "inventoryitems",
         "macroID": "",
         "variantID": "::",
         "tags": [
-            "crafting",
             "disallowdrop",
-            "inventory"
+            "inventory",
+            "nocustomgamestart"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -4771,7 +5067,7 @@
     {
         "wareID": "inv_unstablecrystal",
         "label": "Unstable Crystal",
-        "group": "crafting",
+        "group": "curiosity",
         "macroID": "",
         "variantID": "::",
         "tags": [
@@ -4834,6 +5130,19 @@
         "factions": []
     },
     {
+        "wareID": "inv_xenoinscriptions",
+        "label": "Xeno-Inscription",
+        "group": "curiosity",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "crafting",
+            "inventory"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "inv_xenoterran_implant",
         "label": "Xenoterran Implant",
         "group": "missionitems",
@@ -4842,6 +5151,20 @@
         "tags": [
             "inventory",
             "missiononly"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "inv_xenotext",
+        "label": "Xenotexts",
+        "group": "curiosity",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "bribe",
+            "crafting",
+            "inventory"
         ],
         "dataSourceID": "vanilla",
         "factions": []
@@ -5523,6 +5846,21 @@
         "factions": []
     },
     {
+        "wareID": "module_arg_conn_arc_01",
+        "label": "Argon Arc Connection Structure 01",
+        "group": "modules",
+        "macroID": "struct_arg_arc_01_macro",
+        "variantID": "01::",
+        "tags": [
+            "module"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": [
+            "antigone",
+            "argon"
+        ]
+    },
+    {
         "wareID": "module_arg_conn_base_01",
         "label": "Argon Base Connection Structure 01",
         "group": "modules",
@@ -5573,6 +5911,66 @@
         "group": "modules",
         "macroID": "struct_arg_cross_01_macro",
         "variantID": "01::",
+        "tags": [
+            "module"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": [
+            "antigone",
+            "argon"
+        ]
+    },
+    {
+        "wareID": "module_arg_conn_cross_02",
+        "label": "Argon Cross Connection Structure 02",
+        "group": "modules",
+        "macroID": "struct_arg_cross_02_macro",
+        "variantID": "02::",
+        "tags": [
+            "module"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": [
+            "antigone",
+            "argon"
+        ]
+    },
+    {
+        "wareID": "module_arg_conn_cross_03",
+        "label": "Argon Cross Connection Structure 03",
+        "group": "modules",
+        "macroID": "struct_arg_cross_03_macro",
+        "variantID": "03::",
+        "tags": [
+            "module"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": [
+            "antigone",
+            "argon"
+        ]
+    },
+    {
+        "wareID": "module_arg_conn_cross_04",
+        "label": "Argon T Connection Structure 01",
+        "group": "modules",
+        "macroID": "struct_arg_cross_04_macro",
+        "variantID": "04::",
+        "tags": [
+            "module"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": [
+            "antigone",
+            "argon"
+        ]
+    },
+    {
+        "wareID": "module_arg_conn_cross_05",
+        "label": "Argon L Connection Structure 01",
+        "group": "modules",
+        "macroID": "struct_arg_cross_05_macro",
+        "variantID": "05::",
         "tags": [
             "module"
         ],
@@ -6266,7 +6664,7 @@
     },
     {
         "wareID": "module_bor_conn_cross_01",
-        "label": "Boron Cross Connection Structure 01",
+        "label": "Boron Y Connection Structure 01",
         "group": "modules",
         "macroID": "struct_bor_cross_01_macro",
         "variantID": "01::",
@@ -6280,7 +6678,7 @@
     },
     {
         "wareID": "module_bor_conn_cross_02",
-        "label": "Boron Cross Connection Structure 02",
+        "label": "Boron Hex Connection Structure 01",
         "group": "modules",
         "macroID": "struct_bor_cross_02_macro",
         "variantID": "02::",
@@ -6714,7 +7112,7 @@
     },
     {
         "wareID": "module_conn_arg_antigonearc_01",
-        "label": "Argon Arc Connection Structure",
+        "label": "Argon Arc Connection Structure 02",
         "group": "modules",
         "macroID": "landmarks_arg_antigonearc_01_macro",
         "variantID": "01::",
@@ -7818,7 +8216,7 @@
     },
     {
         "wareID": "module_par_conn_cross_03",
-        "label": "Paranid Cross Connection Structure 03",
+        "label": "Paranid Y Connection Structure 01",
         "group": "modules",
         "macroID": "struct_par_cross_03_macro",
         "variantID": "03::",
@@ -7887,8 +8285,10 @@
         "macroID": "defence_par_claim_story_01_macro",
         "variantID": "01::",
         "tags": [
-            "missiononly",
-            "module"
+            "hiddenwithoutlicence",
+            "module",
+            "nocustomgamestart",
+            "nodiplomacyblueprint"
         ],
         "dataSourceID": "vanilla",
         "factions": [
@@ -8331,7 +8731,8 @@
         "tags": [
             "missiononly",
             "module",
-            "nocustomgamestart"
+            "nocustomgamestart",
+            "nodiplomacyblueprint"
         ],
         "dataSourceID": "ego_dlc_pirate",
         "factions": [
@@ -8398,7 +8799,7 @@
     },
     {
         "wareID": "module_spl_conn_cross_01",
-        "label": "Split Cross Connection Structure 01",
+        "label": "Split Y Connection Structure 01",
         "group": "modules",
         "macroID": "struct_spl_cross_01_macro",
         "variantID": "01::",
@@ -15387,6 +15788,32 @@
         "factions": []
     },
     {
+        "wareID": "research_agentslot_01",
+        "label": "Embassy Management - Upgrade I",
+        "group": "research",
+        "macroID": "",
+        "variantID": "01::",
+        "tags": [
+            "nocustomgamestart",
+            "research"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "research_agentslot_02",
+        "label": "Embassy Management - Upgrade II",
+        "group": "research",
+        "macroID": "",
+        "variantID": "02::",
+        "tags": [
+            "nocustomgamestart",
+            "research"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "research_condensate_sample",
         "label": "Condensate Sample",
         "group": "research",
@@ -15410,6 +15837,19 @@
             "research"
         ],
         "dataSourceID": "ego_dlc_pirate",
+        "factions": []
+    },
+    {
+        "wareID": "research_diplomacy_network",
+        "label": "Diplomacy Network",
+        "group": "research",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "nocustomgamestart",
+            "research"
+        ],
+        "dataSourceID": "vanilla",
         "factions": []
     },
     {
@@ -15444,6 +15884,19 @@
         "macroID": "",
         "variantID": "::",
         "tags": [
+            "research"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "research_interference_network",
+        "label": "Undercover Interference Network",
+        "group": "research",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "nocustomgamestart",
             "research"
         ],
         "dataSourceID": "vanilla",
@@ -15809,6 +16262,31 @@
         "factions": []
     },
     {
+        "wareID": "research_seta",
+        "label": "Time Compression",
+        "group": "research",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "research"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
+        "wareID": "research_seta_pre",
+        "label": "Time Compression Prerequisite",
+        "group": "research",
+        "macroID": "",
+        "variantID": "::",
+        "tags": [
+            "missiononly",
+            "research"
+        ],
+        "dataSourceID": "vanilla",
+        "factions": []
+    },
+    {
         "wareID": "research_ship_arg_s_racing_01",
         "label": "Elite Sport",
         "group": "research",
@@ -15819,6 +16297,19 @@
             "research"
         ],
         "dataSourceID": "ego_dlc_timelines",
+        "factions": []
+    },
+    {
+        "wareID": "research_ship_gen_m_corvette_02",
+        "label": "Cypher",
+        "group": "research",
+        "macroID": "",
+        "variantID": "02::",
+        "tags": [
+            "nocustomgamestart",
+            "research"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
         "factions": []
     },
     {
@@ -16510,6 +17001,24 @@
         "dataSourceID": "ego_dlc_boron",
         "factions": [
             "boron"
+        ]
+    },
+    {
+        "wareID": "shield_gen_m_corvette_01_mk1",
+        "label": "Envoy M Shield Generator",
+        "group": "shields",
+        "macroID": "shield_gen_m_corvette_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "equipment",
+            "hiddenwithoutlicence",
+            "shield"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "argon",
+            "ministry",
+            "scaleplate"
         ]
     },
     {
@@ -17277,6 +17786,7 @@
         "tags": [
             "equipment",
             "nocustomgamestart",
+            "nodiplomacyblueprint",
             "shield"
         ],
         "dataSourceID": "ego_dlc_timelines",
@@ -18722,6 +19232,7 @@
         "tags": [
             "blueprintsaleonly",
             "nocustomgamestart",
+            "nodiplomacyblueprint",
             "ship"
         ],
         "dataSourceID": "ego_dlc_terran",
@@ -18738,6 +19249,7 @@
         "tags": [
             "blueprintsaleonly",
             "nocustomgamestart",
+            "nodiplomacyblueprint",
             "ship"
         ],
         "dataSourceID": "ego_dlc_terran",
@@ -18838,6 +19350,7 @@
         "tags": [
             "noblueprint",
             "nocustomgamestart",
+            "nodiplomacyblueprint",
             "noplayerbuild",
             "ship"
         ],
@@ -19043,6 +19556,39 @@
         ]
     },
     {
+        "wareID": "ship_gen_m_corvette_01",
+        "label": "Envoy",
+        "group": "ships",
+        "macroID": "ship_gen_m_corvette_01_macro",
+        "variantID": "01::",
+        "tags": [
+            "hiddenwithoutlicence",
+            "ship"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "argon",
+            "ministry"
+        ]
+    },
+    {
+        "wareID": "ship_gen_m_corvette_02",
+        "label": "Cypher",
+        "group": "ships",
+        "macroID": "ship_gen_m_corvette_02_macro",
+        "variantID": "02::",
+        "tags": [
+            "hiddenwithoutlicence",
+            "nocustomgamestart",
+            "nodiplomacyblueprint",
+            "ship"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "scaleplate"
+        ]
+    },
+    {
         "wareID": "ship_gen_m_transdrone_container_01_a",
         "label": "Medium Drop Drone",
         "group": "drones",
@@ -19096,6 +19642,7 @@
         "variantID": "01:a:",
         "tags": [
             "noblueprint",
+            "nodiplomacyblueprint",
             "noplayerbuild",
             "ship"
         ],
@@ -23387,6 +23934,37 @@
         ]
     },
     {
+        "wareID": "turret_gen_m_disabler_01_mk1",
+        "label": "TEL M Distortion Turret Mk1",
+        "group": "turrets",
+        "macroID": "turret_gen_m_disabler_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "equipment",
+            "hiddenwithoutlicence",
+            "turret"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "ministry"
+        ]
+    },
+    {
+        "wareID": "turret_gen_m_gatling_01_mk1",
+        "label": "M Autocannon Turret Mk1",
+        "group": "turrets",
+        "macroID": "turret_gen_m_gatling_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "equipment",
+            "turret"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "scaleplate"
+        ]
+    },
+    {
         "wareID": "turret_gen_m_scrapbeam_01_mk1",
         "label": "Scrap Tractor",
         "group": "turrets",
@@ -23401,6 +23979,22 @@
             "alliance",
             "scaleplate",
             "teladi"
+        ]
+    },
+    {
+        "wareID": "turret_gen_m_shieldpierce_01_mk1",
+        "label": "ARG M Scalar Aperture Turret Mk1",
+        "group": "turrets",
+        "macroID": "turret_gen_m_shieldpierce_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "equipment",
+            "hiddenwithoutlicence",
+            "turret"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "argon"
         ]
     },
     {
@@ -25248,6 +25842,7 @@
         "tags": [
             "equipment",
             "nocustomgamestart",
+            "nodiplomacyblueprint",
             "weapon"
         ],
         "dataSourceID": "ego_dlc_terran",
@@ -25581,6 +26176,23 @@
         ]
     },
     {
+        "wareID": "weapon_gen_m_disabler_01_mk1",
+        "label": "M Heavy Distortion Pulsor Mk1",
+        "group": "weapons",
+        "macroID": "weapon_gen_m_disabler_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "equipment",
+            "hiddenwithoutlicence",
+            "weapon"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "ministry",
+            "scaleplate"
+        ]
+    },
+    {
         "wareID": "weapon_gen_m_dumbfire_01_mk1",
         "label": "M Dumbfire Launcher Mk1",
         "group": "weapons",
@@ -25856,6 +26468,22 @@
             "paranid",
             "teladi",
             "trinity"
+        ]
+    },
+    {
+        "wareID": "weapon_gen_m_shieldpierce_01_mk1",
+        "label": "M Heavy Scalar Aperture Emitter Mk1",
+        "group": "weapons",
+        "macroID": "weapon_gen_m_shieldpierce_01_mk1_macro",
+        "variantID": "01::mk1",
+        "tags": [
+            "equipment",
+            "hiddenwithoutlicence",
+            "weapon"
+        ],
+        "dataSourceID": "ego_dlc_mini_02",
+        "factions": [
+            "argon"
         ]
     },
     {
