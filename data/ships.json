@@ -1016,6 +1016,31 @@
         ]
     },
     {
+        "wareID": "ship_gen_m_corvette_01",
+        "label": "Envoy",
+        "variantID": "01::",
+        "dataSourceID": "ego_dlc_mini_02",
+        "size": "m",
+        "classID": "envoy",
+        "builderFactionID": "argon teladi",
+        "usedBy": [
+            "argon",
+            "ministry"
+        ]
+    },
+    {
+        "wareID": "ship_gen_m_corvette_02",
+        "label": "Cypher",
+        "variantID": "02::",
+        "dataSourceID": "ego_dlc_mini_02",
+        "size": "m",
+        "classID": "envoy",
+        "builderFactionID": "teladi",
+        "usedBy": [
+            "scaleplate"
+        ]
+    },
+    {
         "wareID": "ship_gen_m_tugboat_01_a",
         "label": "Manticore",
         "variantID": "01:a:",
