@@ -46,6 +46,7 @@ class WaresExtractor
     public const TAG_INVENTORY = 'inventory';
     public const TAG_WORKUNIT = 'workunit';
     public const TAG_DEPRECATED = 'deprecated';
+    public const TAG_CONDENSATE = 'condensate';
 
     private DataFolders $dataFolders;
     private Language $language;
@@ -83,6 +84,7 @@ class WaresExtractor
         self::TAG_CRAFTING => WareGroups::GROUP_CRAFTING,
         self::TAG_EQUIPMENT => WareGroups::GROUP_EQUIPMENT,
         self::TAG_INVENTORY => WareGroups::GROUP_INVENTORY_ITEMS,
+        self::TAG_CONDENSATE => WareGroups::GROUP_CONDENSATE,
     );
 
     private function analyzeGroups() : void
