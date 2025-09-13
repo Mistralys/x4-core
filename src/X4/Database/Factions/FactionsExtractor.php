@@ -8,6 +8,7 @@ use AppUtils\ClassHelper;
 use AppUtils\ConvertHelper;
 use AppUtils\FileHelper\FileInfo;
 use AppUtils\FileHelper\FolderInfo;
+use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\Database\Builder\KnownItemsClassGenerator;
 use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\Database\Translations\Language;
@@ -16,6 +17,7 @@ use Mistralys\X4\DataExtractor\CatFileFinder;
 use Mistralys\X4\ExtractedData\DataFolder;
 use Mistralys\X4\ExtractedData\DataFolders;
 use Mistralys\X4\UI\Console;
+use Mistralys\X4\X4Application;
 use Mistralys\X4\XML\DOMExtended;
 use Mistralys\X4\XML\ElementExtended;
 use function AppLocalize\t;
@@ -83,6 +85,8 @@ class FactionsExtractor
             $found++;
         }
 
+        FactionDefs::getStorageFile()->putData($this->factions);
+
         Console::line1('Found [%d] factions.', $found);
         Console::nl();
     }
@@ -100,6 +104,16 @@ class FactionsExtractor
         $translated = $this->language->ts($factionElement->getAttribute('name'));
         if(empty($translated)) {
             $translated = ucfirst($id);
+        }
+
+        // Special case for the smuggler faction, to avoid
+        // a duplicate "Criminal" constant.
+        if($id === 'smuggler') {
+            $translated = 'Smuggler';
+        }
+
+        if($id === "outlaw") {
+            $translated = 'Outlaw';
         }
 
         $this->factions[$id] = array(
@@ -164,12 +178,6 @@ class FactionsExtractor
             }
 
             $id = $factionDef[FactionDef::KEY_ID];
-
-            // Special case for the smuggler faction, to avoid
-            // a duplicate "Criminal" constant.
-            if($id === 'smuggler') {
-                $label = 'Smuggler';
-            }
 
             $known[$id] = $label;
         }
