@@ -1,3 +1,13 @@
+## v1.2.0 - Diplomacy and Envoy DLC release update
+- Wares: Added new diplomacy ware groups, reorganized some ware group assignments.
+- Wares: Added the Condensate.
+- Modules: Added the new Argon connection modules.
+- Modules: Some module names were updated.
+- Ships: Added the Envoy and the Cypher.
+- DataSources: Added the new Envoy DLC.
+- Blueprints: Added new blueprints for the ships and their modules.
+- Factions: Fixed the faction defs not being updated correctly.
+
 ## v1.1.1 - Small fixes and improvements
 - User Interface: Now filtering redirect URLs that get specified with HTML-encoded ampersands.
 - Ajax: Added the utility method `sendJSONViaPost()` to send POST requests to external services.
