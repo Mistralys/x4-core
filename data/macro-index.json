@@ -595,6 +595,11 @@
         "fullPath": "assets/fx/weaponfx/macros/bullet_gen_m_beam_01_mk2_macro"
     },
     {
+        "name": "bullet_gen_m_disabler_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/bullet_gen_m_disabler_01_mk1_macro"
+    },
+    {
         "name": "bullet_gen_m_flak_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/bullet_gen_m_flak_01_mk1_macro"
@@ -643,6 +648,11 @@
         "name": "bullet_gen_m_scrapbeam_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/bullet_gen_m_scrapbeam_01_mk1_macro"
+    },
+    {
+        "name": "bullet_gen_m_shieldpierce_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/bullet_gen_m_shieldpierce_01_mk1_macro"
     },
     {
         "name": "bullet_gen_m_shotgun_01_mk1_macro",
@@ -780,9 +790,19 @@
         "fullPath": "assets/fx/weaponfx/macros/bullet_gen_turret_m_beam_01_mk1_macro"
     },
     {
+        "name": "bullet_gen_turret_m_disabler_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/bullet_gen_turret_m_disabler_01_mk1_macro"
+    },
+    {
         "name": "bullet_gen_turret_m_gatling_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/bullet_gen_turret_m_gatling_01_mk1_macro"
+    },
+    {
+        "name": "bullet_gen_turret_m_gatling_02_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/bullet_gen_turret_m_gatling_02_mk1_macro"
     },
     {
         "name": "bullet_gen_turret_m_laser_01_mk1_macro",
@@ -803,6 +823,11 @@
         "name": "bullet_gen_turret_m_plasma_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/bullet_gen_turret_m_plasma_01_mk1_macro"
+    },
+    {
+        "name": "bullet_gen_turret_m_shieldpierce_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/bullet_gen_turret_m_shieldpierce_01_mk1_macro"
     },
     {
         "name": "bullet_gen_turret_m_shotgun_01_mk1_macro",
@@ -2365,6 +2390,16 @@
         "fullPath": "maps/XU_ep2_universe/dlc_mini_01_sectors"
     },
     {
+        "name": "cluster_740_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "maps/XU_ep2_universe/dlc_mini_02_clusters"
+    },
+    {
+        "name": "cluster_740_sector001_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "maps/XU_ep2_universe/dlc_mini_02_sectors"
+    },
+    {
         "name": "cluster_black_wl_Sector01_macro",
         "dataFolder": "vanilla",
         "fullPath": "maps/blackgalaxy/blacksector"
@@ -2638,6 +2673,11 @@
         "name": "dataleak_s_plot_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/misc/macros/dataleak_s_plot_01_macro"
+    },
+    {
+        "name": "dataleak_s_scenario_01_macro",
+        "dataFolder": "ego_dlc_timelines",
+        "fullPath": "assets/fx/misc/macros/dataleak_s_scenario_01_macro"
     },
     {
         "name": "dataleak_s_standard_01_macro",
@@ -3320,14 +3360,94 @@
         "fullPath": "assets/fx/misc/macros/effect_gen_l_alarmyellow_01_macro"
     },
     {
+        "name": "effect_gen_l_travelbubble_01_cockpit_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_l_travelbubble_01_cockpit_macro"
+    },
+    {
+        "name": "effect_gen_l_travelbubble_01_exterior_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_l_travelbubble_01_exterior_macro"
+    },
+    {
         "name": "effect_gen_l_traveldrive_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/misc/macros/effect_gen_l_traveldrive_01_macro"
     },
     {
+        "name": "effect_gen_l_traveldriveexhaust_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_l_traveldriveexhaust_01_macro"
+    },
+    {
+        "name": "effect_gen_m_travelbubble_01_cockpit_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_m_travelbubble_01_cockpit_macro"
+    },
+    {
+        "name": "effect_gen_m_travelbubble_01_exterior_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_m_travelbubble_01_exterior_macro"
+    },
+    {
+        "name": "effect_gen_m_traveldriveexhaust_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_m_traveldriveexhaust_01_macro"
+    },
+    {
+        "name": "effect_gen_m_traveldriveexhaust_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_m_traveldriveexhaust_02_macro"
+    },
+    {
+        "name": "effect_gen_m_traveldriveexhaust_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_m_traveldriveexhaust_03_macro"
+    },
+    {
+        "name": "effect_gen_s_travelbubble_01_cockpit_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_s_travelbubble_01_cockpit_macro"
+    },
+    {
+        "name": "effect_gen_s_travelbubble_01_exterior_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_s_travelbubble_01_exterior_macro"
+    },
+    {
         "name": "effect_gen_s_traveldrive_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldrive_01_macro"
+    },
+    {
+        "name": "effect_gen_s_traveldriveexhaust_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldriveexhaust_01_macro"
+    },
+    {
+        "name": "effect_gen_s_traveldriveexhaust_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldriveexhaust_02_macro"
+    },
+    {
+        "name": "effect_gen_s_traveldriveexhaust_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldriveexhaust_03_macro"
+    },
+    {
+        "name": "effect_gen_xl_travelbubble_01_cockpit_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_xl_travelbubble_01_cockpit_macro"
+    },
+    {
+        "name": "effect_gen_xl_travelbubble_01_exterior_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_xl_travelbubble_01_exterior_macro"
+    },
+    {
+        "name": "effect_gen_xl_traveldriveexhaust_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_xl_traveldriveexhaust_01_macro"
     },
     {
         "name": "effectcluster_macro",
@@ -3403,6 +3523,26 @@
         "name": "engine_arg_m_combat_01_mk3_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/engines/macros/engine_arg_m_combat_01_mk3_macro"
+    },
+    {
+        "name": "engine_arg_m_corvette_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_arg_m_corvette_01_mk1_macro"
+    },
+    {
+        "name": "engine_arg_m_corvette_01_mk1_video_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_arg_m_corvette_01_mk1_video_macro"
+    },
+    {
+        "name": "engine_arg_m_corvette_01_mk2_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_arg_m_corvette_01_mk2_macro"
+    },
+    {
+        "name": "engine_arg_m_corvette_01_mk2_video_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_arg_m_corvette_01_mk2_video_macro"
     },
     {
         "name": "engine_arg_m_travel_01_mk1_macro",
@@ -3988,6 +4128,26 @@
         "name": "engine_tel_m_combat_01_mk3_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/engines/macros/engine_tel_m_combat_01_mk3_macro"
+    },
+    {
+        "name": "engine_tel_m_corvette_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_tel_m_corvette_01_mk1_macro"
+    },
+    {
+        "name": "engine_tel_m_corvette_01_mk1_video_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_tel_m_corvette_01_mk1_video_macro"
+    },
+    {
+        "name": "engine_tel_m_corvette_01_mk2_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_tel_m_corvette_01_mk2_macro"
+    },
+    {
+        "name": "engine_tel_m_corvette_01_mk2_video_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/engines/macros/engine_tel_m_corvette_01_mk2_video_macro"
     },
     {
         "name": "engine_tel_m_travel_01_mk1_macro",
@@ -4922,7 +5082,7 @@
     {
         "name": "env_ast_niv_xl_01_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/environments/asteroids/macros/env_ast_niv_xl_01_macro"
+        "fullPath": "assets/environments/asteroids/macros/env_ast_niv_xl_01_macro"
     },
     {
         "name": "env_ast_niv_xs_01_frac_macro",
@@ -5198,6 +5358,36 @@
         "name": "env_ast_sf_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/asteroids/special/macros/env_ast_sf_01_macro"
+    },
+    {
+        "name": "env_asteroid_hot_l_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_01_macro"
+    },
+    {
+        "name": "env_asteroid_hot_l_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_02_macro"
+    },
+    {
+        "name": "env_asteroid_hot_l_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_03_macro"
+    },
+    {
+        "name": "env_asteroid_hot_xl_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_01_macro"
+    },
+    {
+        "name": "env_asteroid_hot_xl_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_02_macro"
+    },
+    {
+        "name": "env_asteroid_hot_xl_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_03_macro"
     },
     {
         "name": "env_asteroid_special_01_macro",
@@ -6085,6 +6275,11 @@
         "fullPath": "assets/environments/fog/macros/fog_smallstones_v1_macro"
     },
     {
+        "name": "fogpattern_smoke_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/test/markus/macros/fogpattern_smoke_macro"
+    },
+    {
         "name": "fogpattern_v2_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/fog/macros/fogpattern_v2_macro"
@@ -6485,9 +6680,19 @@
         "fullPath": "assets/fx/weaponfx/macros/impact_gen_m_beam_01_mk1_macro"
     },
     {
+        "name": "impact_gen_m_disabler_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/impact_gen_m_disabler_01_mk1_macro"
+    },
+    {
         "name": "impact_gen_m_laser_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/impact_gen_m_laser_01_mk1_macro"
+    },
+    {
+        "name": "impact_gen_m_shieldpierce_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/impact_gen_m_shieldpierce_01_mk1_macro"
     },
     {
         "name": "impact_gen_m_yacht_beam_01_mk1_macro",
@@ -6538,6 +6743,11 @@
         "name": "impact_gen_s_sticky_01_mk1_macro",
         "dataFolder": "ego_dlc_split",
         "fullPath": "assets/fx/weaponfx/macros/impact_gen_s_sticky_01_mk1_macro"
+    },
+    {
+        "name": "impact_gen_turret_m_gatling_02_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/impact_gen_turret_m_gatling_02_mk1_macro"
     },
     {
         "name": "impact_kha_l_beam_01_mk1_macro",
@@ -7795,6 +8005,11 @@
         "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_m_beam_01_mk1_macro"
     },
     {
+        "name": "muzzle_gen_m_disabler_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_m_disabler_01_mk1_macro"
+    },
+    {
         "name": "muzzle_gen_m_flak_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_m_flak_01_mk1_macro"
@@ -7803,6 +8018,11 @@
         "name": "muzzle_gen_m_laser_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_m_laser_01_mk1_macro"
+    },
+    {
+        "name": "muzzle_gen_m_shieldpierce_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_m_shieldpierce_01_mk1_macro"
     },
     {
         "name": "muzzle_gen_m_yacht_beam_01_mk1_macro",
@@ -7893,6 +8113,21 @@
         "name": "muzzle_gen_s_tug_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_s_tug_01_mk1_macro"
+    },
+    {
+        "name": "muzzle_gen_turret_m_disabler_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_turret_m_disabler_01_mk1_macro"
+    },
+    {
+        "name": "muzzle_gen_turret_m_gatling_02_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_turret_m_gatling_02_mk1_macro"
+    },
+    {
+        "name": "muzzle_gen_turret_m_shieldpierce_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/fx/weaponfx/macros/muzzle_gen_turret_m_shieldpierce_01_mk1_macro"
     },
     {
         "name": "muzzle_kha_l_beam_01_mk1_macro",
@@ -8032,7 +8267,7 @@
     {
         "name": "pier_arg_harbor_02_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/structures/dock/macros/pier_arg_harbor_02_macro"
+        "fullPath": "assets//structures//dock//macros//pier_arg_harbor_02_macro"
     },
     {
         "name": "pier_arg_harbor_03_macro",
@@ -8082,7 +8317,7 @@
     {
         "name": "pier_par_harbor_02_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/structures/dock/macros/pier_par_harbor_02_macro"
+        "fullPath": "assets//structures//dock//macros//pier_par_harbor_02_macro"
     },
     {
         "name": "pier_par_harbor_03_macro",
@@ -8097,7 +8332,7 @@
     {
         "name": "pier_spl_harbor_02_macro",
         "dataFolder": "ego_dlc_split",
-        "fullPath": "assets/structures/dock/macros/pier_spl_harbor_02_macro"
+        "fullPath": "assets//structures//dock//macros//pier_spl_harbor_02_macro"
     },
     {
         "name": "pier_spl_harbor_03_macro",
@@ -8112,7 +8347,7 @@
     {
         "name": "pier_tel_harbor_02_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/structures/dock/macros/pier_tel_harbor_02_macro"
+        "fullPath": "assets//structures//dock//macros//pier_tel_harbor_02_macro"
     },
     {
         "name": "pier_tel_harbor_03_macro",
@@ -8127,7 +8362,7 @@
     {
         "name": "pier_ter_harbor_02_macro",
         "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/structures/dock/macros/pier_ter_harbor_02_macro"
+        "fullPath": "assets//structures//dock//macros//pier_ter_harbor_02_macro"
     },
     {
         "name": "pier_ter_harbor_03_macro",
@@ -9845,6 +10080,11 @@
         "fullPath": "assets/interiors/rooms/macros/room_gen_boronoffice_01_macro"
     },
     {
+        "name": "room_gen_captainsquarter_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/interiors/rooms/macros/room_gen_captainsquarter_01_macro"
+    },
+    {
         "name": "room_gen_casino_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/interiors/rooms/macros/room_gen_casino_01_macro"
@@ -9863,6 +10103,11 @@
         "name": "room_gen_common_02_macro",
         "dataFolder": "ego_dlc_timelines",
         "fullPath": "assets/interiors/rooms/macros/room_gen_common_02_macro"
+    },
+    {
+        "name": "room_gen_crewquarter_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/interiors/rooms/macros/room_gen_crewquarter_01_macro"
     },
     {
         "name": "room_gen_detentioncell_01_macro",
@@ -10240,6 +10485,11 @@
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_16_intersection_02_macro"
     },
     {
+        "name": "scs_gen_asteroid_16_straight_01_a_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_16_straight_01_a_macro"
+    },
+    {
         "name": "scs_gen_asteroid_16_straight_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_16_straight_01_macro"
@@ -10285,6 +10535,11 @@
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_32_end_02_macro"
     },
     {
+        "name": "scs_gen_asteroid_32_entrance_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_32_entrance_01_macro"
+    },
+    {
         "name": "scs_gen_asteroid_32_intersection_01_a_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_32_intersection_01_a_macro"
@@ -10308,6 +10563,11 @@
         "name": "scs_gen_asteroid_32_intersection_04_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_32_intersection_04_macro"
+    },
+    {
+        "name": "scs_gen_asteroid_32_straight_01_a_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_32_straight_01_a_macro"
     },
     {
         "name": "scs_gen_asteroid_32_straight_01_macro",
@@ -10353,6 +10613,16 @@
         "name": "scs_gen_asteroid_32_to_16_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_32_to_16_01_macro"
+    },
+    {
+        "name": "scs_gen_asteroid_destructible_hatch_16_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_destructible_hatch_16_01_macro"
+    },
+    {
+        "name": "scs_gen_asteroid_destructible_hatch_32_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_asteroid_destructible_hatch_32_01_macro"
     },
     {
         "name": "scs_gen_destructible_fence_16_01_macro",
@@ -10685,6 +10955,56 @@
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_intersection_02_macro"
     },
     {
+        "name": "scs_gen_spacesuit_32_room_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_01_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_02_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_03_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_04_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_04_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_05_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_05_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_roombase_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_roombase_01_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_roombase_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_roombase_02_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_roombase_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_roombase_03_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_roombase_04_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_roombase_04_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_roombase_05_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_roombase_05_macro"
+    },
+    {
         "name": "scs_gen_spacesuit_32_straight_01_a_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_straight_01_a_macro"
@@ -10898,6 +11218,16 @@
         "name": "shield_bor_xl_standard_01_mk2_macro",
         "dataFolder": "ego_dlc_boron",
         "fullPath": "assets/props/surfaceelements/macros/shield_bor_xl_standard_01_mk2_macro"
+    },
+    {
+        "name": "shield_gen_m_corvette_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/surfaceelements/macros/shield_gen_m_corvette_01_mk1_macro"
+    },
+    {
+        "name": "shield_gen_m_corvette_01_mk1_video_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/surfaceelements/macros/shield_gen_m_corvette_01_mk1_video_macro"
     },
     {
         "name": "shield_gen_m_yacht_01_mk1_macro",
@@ -11870,13 +12200,23 @@
         "fullPath": "assets/units/size_xs/macros/ship_bor_xs_spacesuit_01_a_macro"
     },
     {
+        "name": "ship_gen_m_corvette_01_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/units/size_m/macros/ship_gen_m_corvette_01_macro"
+    },
+    {
+        "name": "ship_gen_m_corvette_02_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/units/size_m/macros/ship_gen_m_corvette_02_macro"
+    },
+    {
         "name": "ship_gen_m_transdrone_container_01_a_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/units/size_m/macros/ship_gen_m_transdrone_container_01_a_macro"
     },
     {
         "name": "ship_gen_m_transdrone_container_02_a_macro",
-        "dataFolder": "vanilla",
+        "dataFolder": "ego_dlc_terran",
         "fullPath": "assets/units/size_m/macros/ship_gen_m_transdrone_container_02_a_macro"
     },
     {
@@ -11936,7 +12276,7 @@
     },
     {
         "name": "ship_gen_s_transdrone_container_02_a_macro",
-        "dataFolder": "vanilla",
+        "dataFolder": "ego_dlc_terran",
         "fullPath": "assets/units/size_s/macros/ship_gen_s_transdrone_container_02_a_macro"
     },
     {
@@ -13400,6 +13740,11 @@
         "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_two_macro"
     },
     {
+        "name": "shipstorage_gen_sm_hidden_sixtyfour_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_sm_hidden_sixtyfour_macro"
+    },
+    {
         "name": "shipstorage_gen_xs_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_xs_01_macro"
@@ -13472,7 +13817,7 @@
     {
         "name": "sm_gen_lockbox_big_02_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/props/StorageModules/macros/sm_gen_lockbox_big_02_macro"
+        "fullPath": "assets/props/storagemodules/macros/sm_gen_lockbox_big_02_macro"
     },
     {
         "name": "sm_gen_lockbox_common_01_macro",
@@ -13498,6 +13843,11 @@
         "name": "sm_gen_lockbox_special_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/StorageModules/macros/sm_gen_lockbox_special_01_macro"
+    },
+    {
+        "name": "sm_gen_lockbox_trap_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/StorageModules/macros/sm_gen_lockbox_trap_01_macro"
     },
     {
         "name": "sm_gen_lockbox_unusual_01_macro",
@@ -13565,6 +13915,11 @@
         "fullPath": "assets/props/storagemodules/macros/sm_gen_wares_common_02_macro"
     },
     {
+        "name": "sm_gen_wares_common_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/storagemodules/macros/sm_gen_wares_common_03_macro"
+    },
+    {
         "name": "sm_gen_wares_exploration_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/storagemodules/macros/sm_gen_wares_exploration_01_macro"
@@ -13593,6 +13948,11 @@
         "name": "sm_gen_wares_exploration_02_e_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/storagemodules/macros/sm_gen_wares_exploration_02_e_macro"
+    },
+    {
+        "name": "sm_gen_wares_luxury_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/storagemodules/macros/sm_gen_wares_luxury_01_macro"
     },
     {
         "name": "sm_gen_wares_rare_01_macro",
@@ -14348,6 +14708,16 @@
         "name": "storage_gen_buildstorage_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/buildstorage/macros/storage_gen_buildstorage_01_macro"
+    },
+    {
+        "name": "storage_gen_m_corvette_01_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/storagemodules/macros/storage_gen_m_corvette_01_macro"
+    },
+    {
+        "name": "storage_gen_m_corvette_02_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/storagemodules/macros/storage_gen_m_corvette_02_macro"
     },
     {
         "name": "storage_gen_m_tugboat_01_a_macro",
@@ -15450,6 +15820,11 @@
         "fullPath": "assets/props/storagemodules/macros/storage_yak_s_fighter_01_a_macro"
     },
     {
+        "name": "struct_arg_arc_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/connectionmodules/macros/struct_arg_arc_01_macro"
+    },
+    {
         "name": "struct_arg_base_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/connectionmodules/macros/struct_arg_base_01_macro"
@@ -15468,6 +15843,26 @@
         "name": "struct_arg_cross_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/connectionmodules/macros/struct_arg_cross_01_macro"
+    },
+    {
+        "name": "struct_arg_cross_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/connectionmodules/macros/struct_arg_cross_02_macro"
+    },
+    {
+        "name": "struct_arg_cross_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/connectionmodules/macros/struct_arg_cross_03_macro"
+    },
+    {
+        "name": "struct_arg_cross_04_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/connectionmodules/macros/struct_arg_cross_04_macro"
+    },
+    {
+        "name": "struct_arg_cross_05_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/connectionmodules/macros/struct_arg_cross_05_macro"
     },
     {
         "name": "struct_arg_vertical_01_macro",
@@ -16095,6 +16490,21 @@
         "fullPath": "assets/structures/landmarks/macros/ter_torus_exterior_macro"
     },
     {
+        "name": "test_dockarea_gen_showroom_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/test/lino/macros/test_dockarea_gen_showroom_01_macro"
+    },
+    {
+        "name": "test_dockingbay_gen_s_showroom_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/test/lino/macros/test_dockingbay_gen_s_showroom_01_macro"
+    },
+    {
+        "name": "test_room_gen_showroom_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/test/lino/macros/test_room_gen_showroom_01_macro"
+    },
+    {
         "name": "test_scenario_mining_cluster_01_macro",
         "dataFolder": "ego_dlc_timelines",
         "fullPath": "maps/test_scenario_mining_universe/clusters.xml"
@@ -16163,6 +16573,11 @@
         "name": "test_scenario_trading_zone001_cluster_01_sector001_macro",
         "dataFolder": "ego_dlc_timelines",
         "fullPath": "maps/test_scenario_trading_universe/zones.xml"
+    },
+    {
+        "name": "test_ship_gen_xs_lasertower_02_a_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/test/unai/macros/test_ship_gen_xs_lasertower_02_a_macro"
     },
     {
         "name": "testminingnode_macro",
@@ -16890,9 +17305,24 @@
         "fullPath": "assets/props/weaponsystems/boron/macros/turret_bor_m_railgun_02_mk1_macro"
     },
     {
+        "name": "turret_gen_m_disabler_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/weaponsystems/standard/macros/turret_gen_m_disabler_01_mk1_macro"
+    },
+    {
+        "name": "turret_gen_m_gatling_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/weaponsystems/standard/macros/turret_gen_m_gatling_01_mk1_macro"
+    },
+    {
         "name": "turret_gen_m_scrapbeam_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/weaponsystems/energy/macros/turret_gen_m_scrapbeam_01_mk1_macro"
+    },
+    {
+        "name": "turret_gen_m_shieldpierce_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/weaponsystems/standard/macros/turret_gen_m_shieldpierce_01_mk1_macro"
     },
     {
         "name": "turret_gen_m_yacht_01_mk1_macro",
@@ -18865,6 +19295,11 @@
         "fullPath": "assets/props/weaponsystems/energy/macros/weapon_gen_m_beam_01_mk2_macro"
     },
     {
+        "name": "weapon_gen_m_disabler_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/weaponsystems/heavy/macros/weapon_gen_m_disabler_01_mk1_macro"
+    },
+    {
         "name": "weapon_gen_m_dumbfire_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/weaponsystems/dumbfire/macros/weapon_gen_m_dumbfire_01_mk1_macro"
@@ -18923,6 +19358,11 @@
         "name": "weapon_gen_m_plasma_01_mk2_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/weaponsystems/heavy/macros/weapon_gen_m_plasma_01_mk2_macro"
+    },
+    {
+        "name": "weapon_gen_m_shieldpierce_01_mk1_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "assets/props/weaponsystems/heavy/macros/weapon_gen_m_shieldpierce_01_mk1_macro"
     },
     {
         "name": "weapon_gen_m_shotgun_01_mk1_macro",
@@ -19935,6 +20375,11 @@
         "fullPath": "maps/XU_ep2_universe/dlc_mini_01_zones"
     },
     {
+        "name": "zone001_cluster_740_sector001_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "maps/XU_ep2_universe/dlc_mini_02_zones"
+    },
+    {
         "name": "zone002_cluster_100_sector001_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "maps/XU_ep2_universe/dlc_terran_zones"
@@ -20308,6 +20753,11 @@
         "name": "zone002_cluster_730_sector001_macro",
         "dataFolder": "ego_dlc_mini_01",
         "fullPath": "maps/XU_ep2_universe/dlc_mini_01_zones"
+    },
+    {
+        "name": "zone002_cluster_740_sector001_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "maps/XU_ep2_universe/dlc_mini_02_zones"
     },
     {
         "name": "zone003_cluster_100_sector001_macro",
@@ -20685,6 +21135,11 @@
         "fullPath": "maps/XU_ep2_universe/dlc_mini_01_zones"
     },
     {
+        "name": "zone003_cluster_740_sector001_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "maps/XU_ep2_universe/dlc_mini_02_zones"
+    },
+    {
         "name": "zone004_cluster_100_sector001_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "maps/XU_ep2_universe/dlc_terran_zones"
@@ -21060,6 +21515,11 @@
         "fullPath": "maps/XU_ep2_universe/dlc_mini_01_zones"
     },
     {
+        "name": "zone004_cluster_740_sector001_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "maps/XU_ep2_universe/dlc_mini_02_zones"
+    },
+    {
         "name": "zone005_cluster_100_sector001_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "maps/XU_ep2_universe/dlc_terran_zones"
@@ -21433,6 +21893,11 @@
         "name": "zone005_cluster_730_sector001_macro",
         "dataFolder": "ego_dlc_mini_01",
         "fullPath": "maps/XU_ep2_universe/dlc_mini_01_zones"
+    },
+    {
+        "name": "zone005_cluster_740_sector001_macro",
+        "dataFolder": "ego_dlc_mini_02",
+        "fullPath": "maps/XU_ep2_universe/dlc_mini_02_zones"
     },
     {
         "name": "zone006_cluster_409_sector001_macro",
