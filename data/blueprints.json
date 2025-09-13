@@ -54,6 +54,18 @@
         "categoryID": "engines"
     },
     {
+        "wareID": "engine_arg_m_corvette_01_mk1",
+        "label": "ARG Envoy M Engine Mk1",
+        "variantID": "01::mk1",
+        "categoryID": "engines"
+    },
+    {
+        "wareID": "engine_arg_m_corvette_01_mk2",
+        "label": "ARG Envoy M Engine Mk2",
+        "variantID": "01::mk2",
+        "categoryID": "engines"
+    },
+    {
         "wareID": "engine_arg_m_travel_01_mk1",
         "label": "ARG M Travel Engine Mk1",
         "variantID": "01::mk1",
@@ -540,6 +552,18 @@
         "categoryID": "engines"
     },
     {
+        "wareID": "engine_tel_m_corvette_01_mk1",
+        "label": "TEL Envoy M Engine Mk1",
+        "variantID": "01::mk1",
+        "categoryID": "engines"
+    },
+    {
+        "wareID": "engine_tel_m_corvette_01_mk2",
+        "label": "TEL Envoy M Engine Mk2",
+        "variantID": "01::mk2",
+        "categoryID": "engines"
+    },
+    {
         "wareID": "engine_tel_m_travel_01_mk1",
         "label": "TEL M Travel Engine Mk1",
         "variantID": "01::mk1",
@@ -936,6 +960,12 @@
         "categoryID": "missiles"
     },
     {
+        "wareID": "module_arg_conn_arc_01",
+        "label": "Argon Arc Connection Structure 01",
+        "variantID": "01::",
+        "categoryID": "modules"
+    },
+    {
         "wareID": "module_arg_conn_base_01",
         "label": "Argon Base Connection Structure 01",
         "variantID": "01::",
@@ -957,6 +987,30 @@
         "wareID": "module_arg_conn_cross_01",
         "label": "Argon Cross Connection Structure 01",
         "variantID": "01::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_arg_conn_cross_02",
+        "label": "Argon Cross Connection Structure 02",
+        "variantID": "02::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_arg_conn_cross_03",
+        "label": "Argon Cross Connection Structure 03",
+        "variantID": "03::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_arg_conn_cross_04",
+        "label": "Argon T Connection Structure 01",
+        "variantID": "04::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_arg_conn_cross_05",
+        "label": "Argon L Connection Structure 01",
+        "variantID": "05::",
         "categoryID": "modules"
     },
     {
@@ -1213,13 +1267,13 @@
     },
     {
         "wareID": "module_bor_conn_cross_01",
-        "label": "Boron Cross Connection Structure 01",
+        "label": "Boron Y Connection Structure 01",
         "variantID": "01::",
         "categoryID": "modules"
     },
     {
         "wareID": "module_bor_conn_cross_02",
-        "label": "Boron Cross Connection Structure 02",
+        "label": "Boron Hex Connection Structure 01",
         "variantID": "02::",
         "categoryID": "modules"
     },
@@ -1405,7 +1459,7 @@
     },
     {
         "wareID": "module_conn_arg_antigonearc_01",
-        "label": "Argon Arc Connection Structure",
+        "label": "Argon Arc Connection Structure 02",
         "variantID": "01::",
         "categoryID": "modules"
     },
@@ -1741,7 +1795,7 @@
     },
     {
         "wareID": "module_par_conn_cross_03",
-        "label": "Paranid Cross Connection Structure 03",
+        "label": "Paranid Y Connection Structure 01",
         "variantID": "03::",
         "categoryID": "modules"
     },
@@ -1951,7 +2005,7 @@
     },
     {
         "wareID": "module_spl_conn_cross_01",
-        "label": "Split Cross Connection Structure 01",
+        "label": "Split Y Connection Structure 01",
         "variantID": "01::",
         "categoryID": "modules"
     },
@@ -2715,6 +2769,12 @@
         "wareID": "shield_bor_xl_standard_01_mk2",
         "label": "BOR XL Shield Generator Mk2",
         "variantID": "01::mk2",
+        "categoryID": "shields"
+    },
+    {
+        "wareID": "shield_gen_m_corvette_01_mk1",
+        "label": "Envoy M Shield Generator",
+        "variantID": "01::mk1",
         "categoryID": "shields"
     },
     {
@@ -3549,6 +3609,18 @@
         "wareID": "ship_bor_xl_resupplier_01_a",
         "label": "Orca",
         "variantID": "01:a:",
+        "categoryID": "ships"
+    },
+    {
+        "wareID": "ship_gen_m_corvette_01",
+        "label": "Envoy",
+        "variantID": "01::",
+        "categoryID": "ships"
+    },
+    {
+        "wareID": "ship_gen_m_corvette_02",
+        "label": "Cypher",
+        "variantID": "02::",
         "categoryID": "ships"
     },
     {
@@ -4878,8 +4950,26 @@
         "categoryID": "turrets"
     },
     {
+        "wareID": "turret_gen_m_disabler_01_mk1",
+        "label": "TEL M Distortion Turret Mk1",
+        "variantID": "01::mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "wareID": "turret_gen_m_gatling_01_mk1",
+        "label": "M Autocannon Turret Mk1",
+        "variantID": "01::mk1",
+        "categoryID": "turrets"
+    },
+    {
         "wareID": "turret_gen_m_scrapbeam_01_mk1",
         "label": "Scrap Tractor",
+        "variantID": "01::mk1",
+        "categoryID": "turrets"
+    },
+    {
+        "wareID": "turret_gen_m_shieldpierce_01_mk1",
+        "label": "ARG M Scalar Aperture Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
@@ -5544,6 +5634,12 @@
         "categoryID": "weapons"
     },
     {
+        "wareID": "weapon_gen_m_disabler_01_mk1",
+        "label": "M Heavy Distortion Pulsor Mk1",
+        "variantID": "01::mk1",
+        "categoryID": "weapons"
+    },
+    {
         "wareID": "weapon_gen_m_dumbfire_01_mk1",
         "label": "M Dumbfire Launcher Mk1",
         "variantID": "01::mk1",
@@ -5613,6 +5709,12 @@
         "wareID": "weapon_gen_m_plasma_01_mk2",
         "label": "M Plasma Cannon Mk2",
         "variantID": "01::mk2",
+        "categoryID": "weapons"
+    },
+    {
+        "wareID": "weapon_gen_m_shieldpierce_01_mk1",
+        "label": "M Heavy Scalar Aperture Emitter Mk1",
+        "variantID": "01::mk1",
         "categoryID": "weapons"
     },
     {
