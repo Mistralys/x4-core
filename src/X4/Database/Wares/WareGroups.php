@@ -56,6 +56,12 @@ class WareGroups extends BaseStringPrimaryCollection
     public const GROUP_TURRETS = 'turrets';
     public const GROUP_WATER = 'water';
     public const GROUP_WEAPONS = 'weapons';
+    public const GROUP_CONTRABAND = 'contraband';
+    public const GROUP_CURIOSITY = 'curiosity';
+    public const GROUP_LUXURY = 'luxuryitem';
+    public const GROUP_GENERAL_ITEM = 'generalitem';
+    public const GROUP_HARDWARE = 'hardware';
+    public const GROUP_CONDENSATE = 'condensate';
 
     private function getGroupsList() : array
     {
@@ -92,6 +98,12 @@ class WareGroups extends BaseStringPrimaryCollection
             self::GROUP_TURRETS => t('Turrets'),
             self::GROUP_WATER => t('Water'),
             self::GROUP_WEAPONS => t('Weapons'),
+            self::GROUP_CONTRABAND => t('Contraband'),
+            self::GROUP_CURIOSITY => t('Curiosity'),
+            self::GROUP_LUXURY => t('Luxury Item'),
+            self::GROUP_GENERAL_ITEM => t('General Item'),
+            self::GROUP_HARDWARE => t('Hardware'),
+            self::GROUP_CONDENSATE => t('Condensate')
         );
     }
     private static ?WareGroups $instance = null;
