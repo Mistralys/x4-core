@@ -90,6 +90,11 @@
         "dataSourceID": "vanilla"
     },
     {
+        "id": "outlaw",
+        "name": "Outlaw",
+        "dataSourceID": "vanilla"
+    },
+    {
         "id": "ownerless",
         "name": "Ownerless",
         "dataSourceID": "vanilla"
@@ -121,7 +126,7 @@
     },
     {
         "id": "smuggler",
-        "name": "Criminal",
+        "name": "Smuggler",
         "dataSourceID": "vanilla"
     },
     {
