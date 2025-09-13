@@ -10,6 +10,11 @@
         "isExtension": true
     },
     {
+        "id": "ego_dlc_mini_02",
+        "label": "Envoy Pack",
+        "isExtension": true
+    },
+    {
         "id": "ego_dlc_pirate",
         "label": "Tides of Avarice",
         "isExtension": true
