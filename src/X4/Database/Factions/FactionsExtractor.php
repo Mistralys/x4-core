@@ -69,7 +69,7 @@ class FactionsExtractor
     {
         Console::header('Processing data folder [%s]', $dataFolder->getLabel());
 
-        $waresFile = FileInfo::factory($dataFolder->getFolder().'/libraries/factions.xml');
+        $waresFile = FileInfo::factory($dataFolder->getPath().'/libraries/factions.xml');
 
         if(!$waresFile->exists()) {
             Console::line1('SKIP | No factions file found.');

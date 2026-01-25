@@ -175,7 +175,7 @@ class WaresExtractor
     {
         Console::header('Processing data folder [%s]', $dataFolder->getLabel());
 
-        $waresFile = FileInfo::factory($dataFolder->getFolder().'/libraries/wares.xml');
+        $waresFile = FileInfo::factory($dataFolder->getPath().'/libraries/wares.xml');
 
         if(!$waresFile->exists()) {
             Console::line1('SKIP | No wares file found.');

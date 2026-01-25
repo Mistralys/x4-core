@@ -23,6 +23,7 @@ use Mistralys\X4\Database\Ships\ShipsExtractor;
 use Mistralys\X4\Database\Translations\Languages;
 use Mistralys\X4\Database\Translations\TranslationExtractor;
 use Mistralys\X4\ExtractedData\DataFolders;
+use Mistralys\X4\ExtractedData\X4GameInfo;
 use function AppUtils\array_remove_values;
 use const Mistralys\X4\X4_EXTRACTED_CAT_FILES_FOLDER;
 
@@ -58,28 +59,28 @@ class DatabaseBuilder
     {
         self::init();
 
-        (new BlueprintExtractor(self::getDataFolders()))->extract();
+        new BlueprintExtractor()->extract();
     }
 
     public static function extractWares() : void
     {
         self::init();
 
-        (new WaresExtractor(self::getDataFolders()))->extract();
+        new WaresExtractor(self::getDataFolders())->extract();
     }
 
     public static function extractFactions() : void
     {
         self::init();
 
-        (new FactionsExtractor(self::getDataFolders()))->extract();
+        new FactionsExtractor(self::getDataFolders())->extract();
     }
 
     public static function extractTranslations() : void
     {
         self::init();
 
-        $extractor = new TranslationExtractor(DataFolders::create(FolderInfo::factory(X4_EXTRACTED_CAT_FILES_FOLDER)));
+        $extractor = new TranslationExtractor(self::getDataFolders());
 
         foreach(Languages::getInstance()->getIDs() as $langID) {
             $extractor->selectLanguage($langID);
@@ -92,7 +93,7 @@ class DatabaseBuilder
     {
         self::init();
 
-        (new ModuleExtractor(self::getDataFolders()))->extract();
+        new ModuleExtractor(self::getDataFolders())->extract();
     }
 
     public static function build() : void
@@ -114,33 +115,38 @@ class DatabaseBuilder
     {
         self::init();
 
-        (new ShipsExtractor())->extract();
+        new ShipsExtractor()->extract();
     }
 
     public static function extractMacroIndex() : void
     {
         self::init();
 
-        (new MacroIndexExtractor(self::getDataFolders()))->extract();
+        new MacroIndexExtractor(self::getDataFolders())->extract();
     }
 
     public static function extractDataSources() : void
     {
         self::init();
 
-        (new DataSourcesExtractor())->extract();
+        new DataSourcesExtractor()->extract();
     }
 
-    private static ?DataFolders $dataFolders = null;
+    public static ?X4GameInfo $gameInfo = null;
+
+    public static function getGameInfo() : X4GameInfo
+    {
+        if(!isset(self::$gameInfo)) {
+            self::init();
+            self::$gameInfo = X4GameInfo::create()->setExtractedDataFolder(FolderInfo::factory(X4_EXTRACTED_CAT_FILES_FOLDER));
+        }
+
+        return self::$gameInfo;
+    }
 
     public static function getDataFolders() : DataFolders
     {
-        if(!isset(self::$dataFolders)) {
-            self::init();
-            self::$dataFolders = DataFolders::create(FolderInfo::factory(X4_EXTRACTED_CAT_FILES_FOLDER));
-        }
-
-        return self::$dataFolders;
+        return self::getGameInfo()->getFolderCollection();
     }
 
     public static function resolveMethodName(string $label, ?VariantID $variantID=null): string

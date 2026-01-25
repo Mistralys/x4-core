@@ -33,7 +33,7 @@ class TranslationExtractor
 
     public function __construct(DataFolders $dataFolders)
     {
-        $this->folder = FolderInfo::factory($dataFolders->getDefault()->getFolder().'/t');
+        $this->folder = FolderInfo::factory($dataFolders->getDefault()->getPath().'/t');
     }
 
     public function selectLanguage(int $langID) : self

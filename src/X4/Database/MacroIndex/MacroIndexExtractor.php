@@ -52,7 +52,7 @@ class MacroIndexExtractor
     {
         Console::header('Processing Data Folder [%s]', $dataFolder->getLabel());
 
-        $macroFile = FileInfo::factory($dataFolder->getFolder().'/index/macros.xml');
+        $macroFile = FileInfo::factory($dataFolder->getPath().'/index/macros.xml');
         if(!$macroFile->exists()) {
             Console::line1('SKIP | No macro file found.');
             return;

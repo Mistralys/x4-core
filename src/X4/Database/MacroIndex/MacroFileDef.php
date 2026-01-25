@@ -45,7 +45,7 @@ class MacroFileDef implements StringPrimaryRecordInterface
 
     public function getFile() : FileInfo
     {
-        return FileInfo::factory($this->getDataFolder()->getFolder().'/'.$this->getFullPath().'.xml');
+        return FileInfo::factory($this->getDataFolder()->getPath().'/'.$this->getFullPath().'.xml');
     }
 
     public function getFullPath() : string
