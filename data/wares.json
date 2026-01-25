@@ -431,7 +431,8 @@
         "tags": [
             "engine",
             "equipment",
-            "hiddenwithoutlicence"
+            "hiddenwithoutlicence",
+            "onlyownerbuild"
         ],
         "dataSourceID": "ego_dlc_mini_02",
         "factions": [
@@ -447,7 +448,8 @@
         "tags": [
             "engine",
             "equipment",
-            "hiddenwithoutlicence"
+            "hiddenwithoutlicence",
+            "onlyownerbuild"
         ],
         "dataSourceID": "ego_dlc_mini_02",
         "factions": [
@@ -2037,7 +2039,8 @@
         "tags": [
             "engine",
             "equipment",
-            "hiddenwithoutlicence"
+            "hiddenwithoutlicence",
+            "onlyownerbuild"
         ],
         "dataSourceID": "ego_dlc_mini_02",
         "factions": [
@@ -2054,7 +2057,8 @@
         "tags": [
             "engine",
             "equipment",
-            "hiddenwithoutlicence"
+            "hiddenwithoutlicence",
+            "onlyownerbuild"
         ],
         "dataSourceID": "ego_dlc_mini_02",
         "factions": [
@@ -17012,6 +17016,7 @@
         "tags": [
             "equipment",
             "hiddenwithoutlicence",
+            "onlyownerbuild",
             "shield"
         ],
         "dataSourceID": "ego_dlc_mini_02",
@@ -19563,6 +19568,7 @@
         "variantID": "01::",
         "tags": [
             "hiddenwithoutlicence",
+            "onlyownerbuild",
             "ship"
         ],
         "dataSourceID": "ego_dlc_mini_02",
@@ -23942,6 +23948,7 @@
         "tags": [
             "equipment",
             "hiddenwithoutlicence",
+            "onlyownerbuild",
             "turret"
         ],
         "dataSourceID": "ego_dlc_mini_02",
@@ -23990,6 +23997,7 @@
         "tags": [
             "equipment",
             "hiddenwithoutlicence",
+            "onlyownerbuild",
             "turret"
         ],
         "dataSourceID": "ego_dlc_mini_02",
@@ -26184,6 +26192,7 @@
         "tags": [
             "equipment",
             "hiddenwithoutlicence",
+            "onlyownerbuild",
             "weapon"
         ],
         "dataSourceID": "ego_dlc_mini_02",
@@ -26479,6 +26488,7 @@
         "tags": [
             "equipment",
             "hiddenwithoutlicence",
+            "onlyownerbuild",
             "weapon"
         ],
         "dataSourceID": "ego_dlc_mini_02",
