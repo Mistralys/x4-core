@@ -121,8 +121,9 @@ abstract class X4Application
     public static function initCache() : void
     {
         $folder = ClassHelper::getCacheFolder();
+
         if($folder === null) {
-            ClassHelper::setCacheFolder(FolderInfo::factory(__DIR__.'/../../cache'));
+            ClassHelper::setCacheFolder(FolderInfo::factory(__DIR__.'/../../cache')->create());
         }
     }
 }

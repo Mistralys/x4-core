@@ -1,3 +1,7 @@
+## v1.2.1 - Cache folder fix
+- Core: Fixed cache folder not being created automatically due to FolderInfo behavior change.
+- Core: Added `.gitkeep` file to ensure cache directory is always tracked in git.
+
 ## v1.2.0 - Diplomacy and Envoy DLC release update
 - Wares: Added new diplomacy ware groups, reorganized some ware group assignments.
 - Wares: Added the Condensate.
