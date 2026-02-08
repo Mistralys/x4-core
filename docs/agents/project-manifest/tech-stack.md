@@ -1,0 +1,228 @@
+# Tech Stack & Architectural Patterns
+
+## Runtime Environment
+
+- **PHP Version**: 8.4+
+- **Required Extensions**:
+  - `ext-simplexml` - XML parsing
+  - `ext-json` - JSON data handling
+  - `ext-mbstring` - Multi-byte string support
+  - `ext-dom` - DOM document manipulation
+  - `ext-curl` - HTTP requests
+
+## Core Dependencies
+
+### Application Framework
+- **mistralys/application-utils** (>=2.3.2) - Core utility library
+- **mistralys/application-utils-core** (>=2.3.12) - Core utilities
+- **mistralys/application-localization** (>=2.1.1) - Localization support
+
+### Data Extraction
+- **mistralys/x4-data-extractor** (>=2.0.0) - Game data extraction library
+
+### Frontend Libraries
+- **twbs/bootstrap** (^v5.1.3) - UI framework
+- **thomaspark/bootswatch** (^v5.1.3) - Bootstrap themes
+- **components/jquery** (>=3.5.1) - JavaScript library
+- **fortawesome/font-awesome** (^5.15) - Icon library
+
+### XML/CSS Processing
+- **symfony/css-selector** (>=v7.2.0) - CSS selector to XPath conversion
+
+### Development Tools
+- **phpunit/phpunit** (>=9.5.20) - Unit testing
+- **phpstan/phpstan** (>=1.6.1) - Static analysis
+- **roave/security-advisories** (dev-latest) - Security checks
+
+## Architectural Patterns
+
+### 1. Collection-Item Pattern
+
+The codebase extensively uses a **Collection-Item** pattern for managing game data:
+
+- **Collection Classes** (e.g., `FactionDefs`, `WareDefs`, `ShipDefs`):
+  - Implement singleton pattern via `getInstance()`
+  - Provide `getAll()` to retrieve all items
+  - Provide `getByID()` for specific item lookup
+  - Manage data loading from JSON files
+  - Act as factories for their respective item types
+
+- **Item Classes** (e.g., `FactionDef`, `WareDef`, `ShipDef`):
+  - Implement `CollectionItemInterface`
+  - Provide domain-specific getter methods
+  - Support serialization via `toArray()` and `fromArray()`
+  - Use `VariantID` for variant identification
+
+### 2. Finder Pattern
+
+Specialized finder classes provide fluent filtering interfaces:
+
+```
+WareFinder, ShipFinder, ModuleFinder
+  - Chainable selection methods (selectDataSource, selectGroup, etc.)
+  - Final getAll() returns filtered results
+  - Implements FinderInterface
+```
+
+### 3. Extraction-Builder Pattern
+
+Database building follows a two-phase approach:
+
+1. **Extractors** (`WaresExtractor`, `FactionsExtractor`, etc.):
+   - Read from unpacked game data files
+   - Parse XML and other game formats
+   - Transform to internal representation
+
+2. **Builder** (`DatabaseBuilder`):
+   - Orchestrates extraction process
+   - Manages dependencies (e.g., macros before wares)
+   - Saves to JSON files in `/data` folder
+
+### 4. UI Component Pattern
+
+UI elements follow a builder/fluent interface pattern:
+
+```
+Button, Icon, Text, DataGrid
+  - Chainable configuration methods
+  - Consistent naming: makeX(), setX(), colorX()
+  - Final render() produces HTML
+```
+
+### 5. Page-SubPage Hierarchy
+
+UI pages use a hierarchical structure:
+
+- **BasePage**: Top-level pages
+- **BasePageWithNav**: Pages with sub-navigation
+- **BaseSubPage**: Sub-pages within a parent page
+- **Request routing**: Uses `page` and `view` parameters
+
+### 6. Exception Hierarchy
+
+Custom exceptions extend from domain-specific base classes:
+
+```
+X4Exception (base)
+  ├─ UIException
+  ├─ FactionException
+  ├─ BlueprintException
+  ├─ ModuleException
+  ├─ XMLException
+  └─ TranslationException
+```
+
+Each typically defines error code constants.
+
+### 7. Static Factory Methods
+
+Many classes use static factory methods:
+
+- `create()` - For builder-style initialization
+- `getInstance()` - For singletons
+- `fromArray()` - For deserialization
+- `factory()` - For creating instances from various input types
+
+### 8. Extended DOM Pattern
+
+XML processing uses extended wrappers:
+
+- `DOMExtended` wraps `DOMDocument`
+- `ElementExtended` wraps `DOMElement`
+- Provides fluent finder interfaces (`byTagName()`, `bySelector()`)
+- Uses Symfony CSS Selector for jQuery-like queries
+
+## Data Storage
+
+### JSON Data Files
+
+All extracted game data is stored in the `/data` folder:
+
+```
+blueprints.json
+data-sources.json
+factions.json
+macro-index.json
+modules.json
+ship-settings.json
+ships.json
+wares.json
+lang-{id}_{locale}.json (translations)
+```
+
+### File Format
+
+- **Pretty-printed JSON** for version control friendliness
+- **Structured arrays** matching class `fromArray()` expectations
+- **Keyed by ID** for efficient lookup
+
+## Dependency Injection
+
+The codebase uses minimal dependency injection:
+
+- **UserInterface** passed to pages via constructor
+- **UI components** receive UserInterface instance
+- **Application** accessed via `$ui->getApplication()`
+- **Collections** use singleton pattern (no DI)
+
+## Naming Conventions
+
+### Classes
+- **Defs**: Collection classes (e.g., `WareDefs`)
+- **Def**: Individual item classes (e.g., `WareDef`)
+- **Extractor**: Data extraction classes
+- **Builder**: Build orchestration classes
+- **Finder**: Fluent filter interfaces
+- **Exception**: Error classes
+
+### Methods
+- **get**: Simple property getters
+- **is/has**: Boolean checks
+- **create**: Static factory methods
+- **select**: Filter methods (Finders)
+- **make**: Configuration methods returning self
+- **register**: Registration methods (UI)
+
+## Localization
+
+- Uses **AppLocalize** library
+- **Client library key**: Based on application version
+- **Source folder**: `/localization`
+- **Cache file**: `/localization/cache.json`
+- **Default locale**: German (de_DE)
+
+## Session Management
+
+- **Auto-start**: Sessions started in `X4Application` constructor
+- **CLI mode**: Initializes empty `$_SESSION` array
+- **Messages**: Written to session on shutdown
+- **Not used in CLI**: Gracefully handles CLI execution
+
+## Caching
+
+- **Class cache**: `/cache` folder
+- **Repository cache**: `class-repository-v1.php`
+- **Set via**: `ClassHelper::setCacheFolder()`
+
+## Composer Scripts
+
+Custom build commands exposed via Composer:
+
+```bash
+composer build              # Full rebuild
+composer extract-blueprints # Extract blueprints only
+composer extract-wares      # Extract wares only
+composer extract-factions   # Extract factions only
+composer extract-ships      # Extract ships only
+composer extract-modules    # Extract modules only
+composer extract-macro-index    # Extract macro index
+composer extract-datasources    # Extract data sources
+```
+
+## Testing
+
+- **Framework**: PHPUnit 9.5+
+- **Test location**: `/tests/X4Tests`
+- **Configuration**: `phpunit.xml`
+- **Helper classes**: `/tests/X4Tests/Helpers`
+- **Dev config**: `dev-config.php` (not tracked)
