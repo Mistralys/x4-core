@@ -153,6 +153,13 @@ final class ShipDefTests extends X4TestCase
             'fighter',
             [],
             KnownDataSources::DATA_SOURCE_BASE_GAME,
+            [],
+            0,
+            0.0,
+            0.0,
+            0.0,
+            0,
+            0,
             []
         );
         
@@ -183,6 +190,13 @@ final class ShipDefTests extends X4TestCase
             'fighter',
             [], // Empty used by array
             KnownDataSources::DATA_SOURCE_BASE_GAME,
+            [],
+            0,
+            0.0,
+            0.0,
+            0.0,
+            0,
+            0,
             []
         );
         
@@ -379,6 +393,35 @@ final class ShipDefTests extends X4TestCase
             $class = $ship->getClass();
             $this->assertInstanceOf(ShipClass::class, $class);
         }
+    }
+
+    // =========================================================================
+    // Stats & Slots
+    // =========================================================================
+
+    public function test_statsProperties() : void
+    {
+        $ship = $this->getSampleShip();
+        
+        // Since data is not extracted yet, these should match defaults
+        $this->assertIsInt($ship->getHull());
+        $this->assertIsFloat($ship->getMass());
+        $this->assertIsFloat($ship->getDragForward());
+        $this->assertIsFloat($ship->getInertiaPitch());
+        $this->assertIsInt($ship->getPeopleCapacity());
+        $this->assertIsInt($ship->getMissileStorage());
+    }
+
+    public function test_slotProperties() : void
+    {
+        $ship = $this->getSampleShip();
+
+        $this->assertIsInt($ship->getWeaponSlots());
+        $this->assertIsInt($ship->getShieldSlots());
+        $this->assertIsInt($ship->getTurretSlots());
+        $this->assertIsInt($ship->getDockingBays());
+        $this->assertIsInt($ship->getCountermeasures());
+        $this->assertIsInt($ship->getEngines());
     }
 
     // =========================================================================

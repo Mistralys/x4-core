@@ -10,7 +10,9 @@ use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\Database\Builder\KnownItemsClassGenerator;
 use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Factions\KnownFactions;
+use Mistralys\X4\Database\MacroIndex\MacroFileDef;
 use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
+use Mistralys\X4\Database\SlotTypes\SlotTypes;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\Database\Wares\WareDefs;
 use Mistralys\X4\Database\Wares\WareGroups;
@@ -106,10 +108,11 @@ class ShipsExtractor
             return;
         }
 
-        $dom = MacroFileDefs::getInstance()->getByMacroName(
+        $macroDef = MacroFileDefs::getInstance()->getByMacroName(
             $def->getMacroID(),
             $def->getDataSourceID()
-        )->getDOM();
+        );
+        $dom = $macroDef->getDOM();
         $shipID = $def->getID();
 
         $alias = $this->resolveParentMacro($dom);
@@ -122,6 +125,8 @@ class ShipsExtractor
             )->getDOM();
         }
 
+        $stats = $this->extractStats($dom, $domAlias);
+
         $this->ships[$shipID] = array(
             ShipDef::KEY_WARE_ID => $shipID,
             ShipDef::KEY_LABEL => $def->getLabel(),
@@ -130,7 +135,14 @@ class ShipsExtractor
             ShipDef::KEY_SIZE => $this->resolveShipSize($dom),
             ShipDef::KEY_CLASS_ID => $this->resolveShipClass($domAlias ?? $dom, $shipID),
             ShipDef::KEY_BUILDER_FACTION_ID => $this->resolveFaction($domAlias ?? $dom, $shipID),
-            ShipDef::KEY_USED_BY => $def->getFactionIDs()
+            ShipDef::KEY_USED_BY => $def->getFactionIDs(),
+            ShipDef::KEY_HULL => $stats[ShipDef::KEY_HULL],
+            ShipDef::KEY_MASS => $stats[ShipDef::KEY_MASS],
+            ShipDef::KEY_DRAG_FORWARD => $stats[ShipDef::KEY_DRAG_FORWARD],
+            ShipDef::KEY_INERTIA_PITCH => $stats[ShipDef::KEY_INERTIA_PITCH],
+            ShipDef::KEY_PEOPLE => $stats[ShipDef::KEY_PEOPLE],
+            ShipDef::KEY_STORAGE_MISSILE => $stats[ShipDef::KEY_STORAGE_MISSILE],
+            ShipDef::KEY_SLOTS => $this->extractSlots($dom, $domAlias, $macroDef)
         );
     }
 
@@ -234,5 +246,108 @@ class ShipsExtractor
         }
 
         $generator->generate();
+    }
+
+    private function extractStats(DOMExtended $dom, ?DOMExtended $parentDom) : array
+    {
+        return [
+            ShipDef::KEY_HULL => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'hull', 'max', 0),
+            ShipDef::KEY_MASS => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'physics', 'mass', 0),
+            ShipDef::KEY_DRAG_FORWARD => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'forward', 0),
+            ShipDef::KEY_INERTIA_PITCH => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'inertia', 'pitch', 0),
+            ShipDef::KEY_PEOPLE => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'people', 'capacity', 0),
+            ShipDef::KEY_STORAGE_MISSILE => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'storage', 'missile', 0)
+        ];
+    }
+
+    private function extractSlots(DOMExtended $dom, ?DOMExtended $domAlias, MacroFileDef $macroDef) : array
+    {
+        $ref = $this->getAttributeFromDOM($dom, 'component', 'ref');
+        if(!$ref && $domAlias) {
+            $ref = $this->getAttributeFromDOM($domAlias, 'component', 'ref');
+        }
+
+        if(empty($ref)) {
+            return [];
+        }
+
+        $componentDom = $this->resolveComponentDOM($ref, $macroDef);
+        if(!$componentDom) {
+            return [];
+        }
+
+        return $this->countSlots($componentDom);
+    }
+
+    private function resolveComponentDOM(string $ref, MacroFileDef $macroDef) : ?DOMExtended
+    {
+        // Assume relative path ../$ref.xml matches assets/units/size_X/$ref.xml
+        // when macro is in assets/units/size_X/macros/$ref_macro.xml
+        $macroFolder = dirname($macroDef->getFullPath());
+        $parentFolder = dirname($macroFolder);
+
+        $path = $macroDef->getDataFolder()->getPath() . '/' . $parentFolder . '/' . $ref . '.xml';
+
+        if(file_exists($path)) {
+            return DOMExtended::createFromFile($path);
+        }
+
+        return null;
+    }
+
+    private function countSlots(DOMExtended $componentDom) : array
+    {
+        $counts = [];
+        $slotTypes = SlotTypes::getInstance()->getAll();
+
+        foreach($slotTypes as $type) {
+            $counts[$type->getID()] = 0;
+        }
+
+        $connections = $componentDom->byTagName('connection')->getAll();
+        foreach($connections as $conn) {
+            $tags = $conn->getAttribute('tags');
+            if(empty($tags)) {
+                continue;
+            }
+
+            foreach($slotTypes as $type) {
+                if(str_contains($tags, $type->getPrimaryTag())) {
+                    $counts[$type->getID()]++;
+                }
+            }
+        }
+
+        return $counts;
+    }
+
+    private function resolvePropertyAttribute(DOMExtended $dom, ?DOMExtended $parentDom, string $tagName, string $attributeName, mixed $defaultValue) : mixed
+    {
+        $val = $this->getAttributeFromDOM($dom, $tagName, $attributeName);
+        if($val !== null) {
+            return $val;
+        }
+
+        if($parentDom) {
+            $val = $this->getAttributeFromDOM($parentDom, $tagName, $attributeName);
+            if($val !== null) {
+                return $val;
+            }
+        }
+
+        return $defaultValue;
+    }
+
+    private function getAttributeFromDOM(DOMExtended $dom, string $tagName, string $attributeName) : ?string
+    {
+        $el = $dom->byTagName($tagName)->getFirst();
+        if($el) {
+            $val = $el->getAttribute($attributeName);
+            // 0 is a valid value, check strict empty string
+            if($val !== '') {
+                return $val;
+            }
+        }
+        return null;
     }
 }

@@ -158,6 +158,10 @@ src/X4/
 │   │   ├── ShipSize.php
 │   │   ├── ShipSizes.php
 │   │   └── ShipsExtractor.php
+│   ├── SlotTypes/            # Equipment slot types
+│   │   ├── KnownSlotTypes.php
+│   │   ├── SlotType.php
+│   │   └── SlotTypes.php
 │   ├── Translations/         # Translation system
 │   │   ├── Language.php
 │   │   ├── Languages.php

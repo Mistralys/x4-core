@@ -870,6 +870,50 @@ getAll(): array // Returns ShipDef[]
 
 ---
 
+### Slot Types
+
+#### Mistralys\X4\Database\SlotTypes\SlotType
+
+Represents a single equipment slot type (Weapon, Shield, etc.).
+
+**Extends:** `CollectionItem`
+
+| Visibility | Method | Return Type | Description |
+|------------|--------|-------------|-------------|
+| public | `getLabel()` | `string` | Returns the human-readable label. |
+| public | `getPrimaryTag()` | `string` | Returns the primary XML tag for this slot type. |
+
+---
+
+#### Mistralys\X4\Database\SlotTypes\SlotTypes
+
+Collection of all known slot types.
+
+**Extends:** `Collection<SlotType>`
+
+| Visibility | Method | Return Type | Description |
+|------------|--------|-------------|-------------|
+| public static | `getInstance()` | `SlotTypes` | Singleton accessor. |
+| public | `getByID(string $id)` | `SlotType` | Retrieves a slot type by its ID. |
+| public | `getAll()` | `SlotType[]` | Returns all slot types. |
+
+---
+
+#### Mistralys\X4\Database\SlotTypes\KnownSlotTypes
+
+Class constants for known slot type IDs.
+
+| Visibility | Constant | Type | Value |
+|------------|----------|------|-------|
+| public | `WEAPON` | `string` | `'weapon'` |
+| public | `SHIELD` | `string` | `'shield'` |
+| public | `TURRET` | `string` | `'turret'` |
+| public | `ENGINE` | `string` | `'engine'` |
+| public | `DOCKING_BAY` | `string` | `'dockingbay'` |
+| public | `COUNTERMEASURES` | `string` | `'countermeasures'` |
+
+---
+
 ### Blueprints
 
 #### Mistralys\X4\Database\Blueprints\BlueprintException
@@ -901,8 +945,6 @@ abstract getTypeLabel(): string
 getCategory(): BlueprintCategoryInterface
 getCategoryID(): string
 getName(): string // @deprecated Use getID()
-getRace(): ?FactionDef
-getRaceID(): string
 getWareID(): string
 getWare(): WareDef
 ```
@@ -998,12 +1040,13 @@ Module definition.
 KEY_CATEGORY: string = 'category'
 KEY_BUILDER_FACTION_ID: string = 'builderFactionID'
 KEY_REQUIRED_WORKFORCE: string = 'requiredWorkforce'
+KEY_WARES_PRODUCED: string = 'waresProduced'
 // ... (additional key constants)
 ```
 
 ##### Methods
 ```php
-__construct(string $wareID, string $label, string $categoryID, string $macroID, string $builderFactionID, string $size, int $hull, int $droneCapacity, int $cargoCapacity, string $cargoType, int $housingCapacity, string $housingFactionID, VariantID $variantID): void
+__construct(string $wareID, string $label, string $categoryID, string $macroID, string $builderFactionID, string $size, int $hull, int $droneCapacity, int $cargoCapacity, string $cargoType, int $housingCapacity, string $housingFactionID, VariantID $variantID, array $waresProduced): void
 static fromArray(mixed $moduleDef): ModuleDef
 getID(): string
 getLabel(): string
@@ -1022,6 +1065,7 @@ getCategory(): ModuleCategory
 getBuilderFaction(): FactionDef
 getBuilderFactionID(): string
 isProduction(): bool
+getProducedWares(): array // Returns string[]
 getWareID(): string
 getWare(): WareDef
 ```

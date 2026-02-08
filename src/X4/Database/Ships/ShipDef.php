@@ -13,6 +13,7 @@ use Mistralys\X4\Database\DataSources\DataSourceDefs;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
 use Mistralys\X4\Database\Factions\KnownFactions;
+use Mistralys\X4\Database\SlotTypes\KnownSlotTypes;
 
 class ShipDef implements CollectionItemInterface
 {
@@ -27,6 +28,13 @@ class ShipDef implements CollectionItemInterface
     public const KEY_DATA_SOURCE_ID = 'dataSourceID';
     public const KEY_VARIANT_ID = 'variantID';
     public const KEY_VARIANTS = 'variants';
+    public const KEY_HULL = 'hull';
+    public const KEY_MASS = 'mass';
+    public const KEY_DRAG_FORWARD = 'dragForward';
+    public const KEY_INERTIA_PITCH = 'inertiaPitch';
+    public const KEY_PEOPLE = 'people';
+    public const KEY_STORAGE_MISSILE = 'storageMissile';
+    public const KEY_SLOTS = 'slots';
 
     private string $id;
     private string $classID;
@@ -40,6 +48,16 @@ class ShipDef implements CollectionItemInterface
     private string $dataSourceID;
     private string $label;
     private VariantID $variantID;
+    private int $hull;
+    private float $mass;
+    private float $dragForward;
+    private float $inertiaPitch;
+    private int $people;
+    private int $storageMissile;
+    /**
+     * @var array<string,int>
+     */
+    private array $slots;
 
     /**
      * @var string[]
@@ -56,8 +74,32 @@ class ShipDef implements CollectionItemInterface
      * @param array $usedBy
      * @param string $dataSourceID
      * @param string[] $variants IDs of this ship's variants, if any.
+     * @param int $hull Hull strength.
+     * @param float $mass Physics mass.
+     * @param float $dragForward Forward drag coefficient involved in acceleration.
+     * @param float $inertiaPitch Pitch inertia coefficient.
+     * @param int $people Crew capacity.
+     * @param int $storageMissile Missile storage capacity.
+     * @param array<string,int> $slots Map of slot type ID to count.
      */
-    public function __construct(string $id, string $label, VariantID $variantID, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID, array $variants)
+    public function __construct(
+        string $id,
+        string $label,
+        VariantID $variantID,
+        string $size,
+        string $builderFactionID,
+        string $classID,
+        array $usedBy,
+        string $dataSourceID,
+        array $variants,
+        int $hull,
+        float $mass,
+        float $dragForward,
+        float $inertiaPitch,
+        int $people,
+        int $storageMissile,
+        array $slots
+    )
     {
         $this->id = $id;
         $this->label = $label;
@@ -68,6 +110,13 @@ class ShipDef implements CollectionItemInterface
         $this->usedBy = $usedBy;
         $this->dataSourceID = $dataSourceID;
         $this->variants = $variants;
+        $this->hull = $hull;
+        $this->mass = $mass;
+        $this->dragForward = $dragForward;
+        $this->inertiaPitch = $inertiaPitch;
+        $this->people = $people;
+        $this->storageMissile = $storageMissile;
+        $this->slots = $slots;
     }
 
     public static function fromArray(array $def) : ShipDef
@@ -83,7 +132,14 @@ class ShipDef implements CollectionItemInterface
             $data->getString(self::KEY_CLASS_ID),
             $data->getArray(self::KEY_USED_BY),
             $data->getString(self::KEY_DATA_SOURCE_ID),
-            $data->getArrayFlavored(self::KEY_VARIANTS)->filterIndexedStrings()
+            $data->getArrayFlavored(self::KEY_VARIANTS)->filterIndexedStrings(),
+            $data->getInt(self::KEY_HULL, 0),
+            $data->getFloat(self::KEY_MASS, 0.0),
+            $data->getFloat(self::KEY_DRAG_FORWARD, 0.0),
+            $data->getFloat(self::KEY_INERTIA_PITCH, 0.0),
+            $data->getInt(self::KEY_PEOPLE, 0),
+            $data->getInt(self::KEY_STORAGE_MISSILE, 0),
+            $data->getArray(self::KEY_SLOTS)
         );
     }
 
@@ -177,6 +233,71 @@ class ShipDef implements CollectionItemInterface
         return $result;
     }
 
+    public function getHull() : int
+    {
+        return $this->hull;
+    }
+
+    public function getMass() : float
+    {
+        return $this->mass;
+    }
+
+    public function getDragForward() : float
+    {
+        return $this->dragForward;
+    }
+
+    public function getInertiaPitch() : float
+    {
+        return $this->inertiaPitch;
+    }
+
+    public function getPeopleCapacity() : int
+    {
+        return $this->people;
+    }
+
+    public function getMissileStorage() : int
+    {
+        return $this->storageMissile;
+    }
+
+    public function getSlotCount(string $typeID) : int
+    {
+        return $this->slots[$typeID] ?? 0;
+    }
+
+    public function getWeaponSlots() : int
+    {
+        return $this->getSlotCount(KnownSlotTypes::WEAPON);
+    }
+
+    public function getShieldSlots() : int
+    {
+        return $this->getSlotCount(KnownSlotTypes::SHIELD);
+    }
+
+    public function getTurretSlots() : int
+    {
+        return $this->getSlotCount(KnownSlotTypes::TURRET);
+    }
+
+    public function getDockingBays() : int
+    {
+        return $this->getSlotCount(KnownSlotTypes::DOCKING_BAY);
+    }
+
+    public function getCountermeasures() : int
+    {
+        return $this->getSlotCount(KnownSlotTypes::COUNTERMEASURES);
+    }
+    
+    public function getEngines() : int
+    {
+        return $this->getSlotCount(KnownSlotTypes::ENGINE);
+    }
+
     public function toArray(): array
     {
         return array(
@@ -188,7 +309,14 @@ class ShipDef implements CollectionItemInterface
             self::KEY_CLASS_ID => $this->classID,
             self::KEY_USED_BY => $this->usedBy,
             self::KEY_DATA_SOURCE_ID => $this->dataSourceID,
-            self::KEY_VARIANTS => $this->variants
+            self::KEY_VARIANTS => $this->variants,
+            self::KEY_HULL => $this->hull,
+            self::KEY_MASS => $this->mass,
+            self::KEY_DRAG_FORWARD => $this->dragForward,
+            self::KEY_INERTIA_PITCH => $this->inertiaPitch,
+            self::KEY_PEOPLE => $this->people,
+            self::KEY_STORAGE_MISSILE => $this->storageMissile,
+            self::KEY_SLOTS => $this->slots
         );
     }
 }
