@@ -39,7 +39,9 @@ class MacroIndexExtractor
             $this->processDataFolder($dataFolder);
         }
 
-        ksort($this->macros);
+        usort($this->macros, function(array $a, array $b) {
+            return strnatcasecmp($a[MacroFileDef::KEY_NAME], $b[MacroFileDef::KEY_NAME]);
+        });
 
         Console::line1('Writing macro index file.');
 
@@ -83,7 +85,7 @@ class MacroIndexExtractor
             $path = ltrim(array_pop($parts), '/');
         }
 
-        $this->macros[$name] = array(
+        $this->macros[] = array(
             MacroFileDef::KEY_NAME => $name,
             MacroFileDef::KEY_DATA_FOLDER => $dataFolder->getID(),
             MacroFileDef::KEY_FULL_PATH => $path

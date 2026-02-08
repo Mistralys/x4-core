@@ -1,30 +1,5 @@
 [
     {
-        "name": "Cluster_black2_Sector01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/black2galaxy/black2sector"
-    },
-    {
-        "name": "Cluster_black2_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/black2galaxy/black2cluster"
-    },
-    {
-        "name": "Cluster_black_Sector01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/blackgalaxy/blacksector"
-    },
-    {
-        "name": "Cluster_black_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/blackgalaxy/blackcluster"
-    },
-    {
-        "name": "Cluster_black_wlight_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/blackgalaxy/blackcluster"
-    },
-    {
         "name": "adsign_gen_signholder_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/highwayelements/macros/adsign_gen_signholder_01_macro"
@@ -1330,11 +1305,6 @@
         "fullPath": "libraries/macro"
     },
     {
-        "name": "cargo_gen_buildstorage_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/buildstorage/macros/cargo_gen_buildstorage_01_macro"
-    },
-    {
         "name": "cargobay_ship_l_bulk_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/props/StorageModules/macros/cargobay_ship_l_bulk_01_macro"
@@ -1475,6 +1445,11 @@
         "fullPath": "assets/legacy/props/StorageModules/macros/cargobay_station_unique_02_macro"
     },
     {
+        "name": "cargo_gen_buildstorage_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/buildstorage/macros/cargo_gen_buildstorage_01_macro"
+    },
+    {
         "name": "character_*",
         "dataFolder": "vanilla",
         "fullPath": "libraries/character_macros"
@@ -1526,6 +1501,126 @@
     },
     {
         "name": "cluster_09_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_10_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_11_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_12_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_13_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_14_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_15_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_16_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_17_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_18_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_19_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_20_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_21_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_22_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_23_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_24_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_25_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_26_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_27_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_28_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_29_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_30_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_31_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_32_sector*",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/XU_ep2_universe/sectors"
+    },
+    {
+        "name": "cluster_33_sector*",
         "dataFolder": "vanilla",
         "fullPath": "maps/XU_ep2_universe/sectors"
     },
@@ -1645,11 +1740,6 @@
         "fullPath": "maps/XU_ep2_universe/dlc_terran_sectors"
     },
     {
-        "name": "cluster_10_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
         "name": "cluster_110_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "maps/XU_ep2_universe/dlc_terran_clusters"
@@ -1723,121 +1813,6 @@
         "name": "cluster_116_sector001_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "maps/XU_ep2_universe/dlc_terran_sectors"
-    },
-    {
-        "name": "cluster_11_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_12_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_13_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_14_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_15_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_16_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_17_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_18_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_19_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_20_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_21_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_22_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_23_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_24_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_25_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_26_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_27_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_28_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_29_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_30_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_31_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_32_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
-    },
-    {
-        "name": "cluster_33_sector*",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/XU_ep2_universe/sectors"
     },
     {
         "name": "cluster_400_macro",
@@ -2400,7 +2375,22 @@
         "fullPath": "maps/XU_ep2_universe/dlc_mini_02_sectors"
     },
     {
-        "name": "cluster_black_wl_Sector01_macro",
+        "name": "Cluster_black2_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/black2galaxy/black2cluster"
+    },
+    {
+        "name": "Cluster_black2_Sector01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/black2galaxy/black2sector"
+    },
+    {
+        "name": "Cluster_black_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/blackgalaxy/blackcluster"
+    },
+    {
+        "name": "Cluster_black_Sector01_macro",
         "dataFolder": "vanilla",
         "fullPath": "maps/blackgalaxy/blacksector"
     },
@@ -2410,14 +2400,49 @@
         "fullPath": "assets/environments/cluster/macros/cluster_black_wlight_bg_macro"
     },
     {
+        "name": "Cluster_black_wlight_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/blackgalaxy/blackcluster"
+    },
+    {
         "name": "cluster_black_wlight_tp_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/cluster/macros/cluster_black_wlight_tp_macro"
     },
     {
+        "name": "cluster_black_wl_Sector01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/blackgalaxy/blacksector"
+    },
+    {
         "name": "cluster_sm2_background_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/cluster/macros/cluster_sm2_background_macro"
+    },
+    {
+        "name": "cluster_sm3_background_macro",
+        "dataFolder": "ego_dlc_boron",
+        "fullPath": "assets/environments/clusters/macros/cluster_sm3_background_macro"
+    },
+    {
+        "name": "cluster_sm3_background_macro",
+        "dataFolder": "ego_dlc_pirate",
+        "fullPath": "assets/environments/cluster/macros/cluster_sm3_background_macro"
+    },
+    {
+        "name": "cluster_sm3_background_macro",
+        "dataFolder": "ego_dlc_split",
+        "fullPath": "assets/environments/cluster/macros/cluster_sm3_background_macro"
+    },
+    {
+        "name": "cluster_sm3_background_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/environments/cluster/macros/cluster_sm3_background_macro"
+    },
+    {
+        "name": "cluster_sm3_background_macro",
+        "dataFolder": "ego_dlc_timelines",
+        "fullPath": "assets/environments/cluster/macros/cluster_sm3_background_macro"
     },
     {
         "name": "cluster_sm3_background_macro",
@@ -2580,21 +2605,6 @@
         "fullPath": "assets/props/crates/macros/crate_gen_s_01_macro"
     },
     {
-        "name": "cutscene_light_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/cutscenecore/macros/cutscene_light_macro"
-    },
-    {
-        "name": "cutscenecore_talk_hack_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/cutscenecore/macros/cutscenecore_talk_hack_01_macro"
-    },
-    {
-        "name": "cutscenecore_talk_noise_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/cutscenecore/macros/cutscenecore_talk_noise_01_macro"
-    },
-    {
         "name": "cutscenecore_talkantigone_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/cutscenecore/macros/cutscenecore_talkantigone_01_macro"
@@ -2668,6 +2678,21 @@
         "name": "cutscenecore_talkyaki_01_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "assets/cutscenecore/macros/cutscenecore_talkyaki_01_macro"
+    },
+    {
+        "name": "cutscenecore_talk_hack_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/cutscenecore/macros/cutscenecore_talk_hack_01_macro"
+    },
+    {
+        "name": "cutscenecore_talk_noise_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/cutscenecore/macros/cutscenecore_talk_noise_01_macro"
+    },
+    {
+        "name": "cutscene_light_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/cutscenecore/macros/cutscene_light_macro"
     },
     {
         "name": "dataleak_s_plot_01_macro",
@@ -2960,16 +2985,6 @@
         "fullPath": "assets/legacy/fx/explosionfx/macros/dmgfx_damage_state_trash_02_macro"
     },
     {
-        "name": "dock_gen_xs_ship_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/SurfaceElements/macros/dock_gen_xs_ship_01_macro"
-    },
-    {
-        "name": "dock_gen_xs_ship_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/dock_gen_xs_ship_02_macro"
-    },
-    {
         "name": "dockarea_arg_m_02_tradestation_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/dock/macros/dockarea_arg_m_02_tradestation_01_macro"
@@ -3255,6 +3270,11 @@
         "fullPath": "assets/structures/dock/macros/dockingbay_arg_s_01_macro"
     },
     {
+        "name": "dockingbay_gen_lxl_venturer_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/venture/macros/dockingbay_gen_lxl_venturer_01_macro"
+    },
+    {
         "name": "dockingbay_gen_l_inv_02_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/dock/macros/dockingbay_gen_l_inv_02_macro"
@@ -3265,24 +3285,9 @@
         "fullPath": "assets/structures/dock/macros/dockingbay_gen_l_inv_macro"
     },
     {
-        "name": "dockingbay_gen_lxl_venturer_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/venture/macros/dockingbay_gen_lxl_venturer_01_macro"
-    },
-    {
         "name": "dockingbay_gen_m_inv_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/dock/macros/dockingbay_gen_m_inv_macro"
-    },
-    {
-        "name": "dockingbay_gen_s_inv_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/dock/macros/dockingbay_gen_s_inv_macro"
-    },
-    {
-        "name": "dockingbay_gen_s_playeronly_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/dock/macros/dockingbay_gen_s_playeronly_01_macro"
     },
     {
         "name": "dockingbay_gen_sm_buildstorage_01_macro",
@@ -3293,6 +3298,16 @@
         "name": "dockingbay_gen_sm_venturer_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/venture/macros/dockingbay_gen_sm_venturer_01_macro"
+    },
+    {
+        "name": "dockingbay_gen_s_inv_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/dock/macros/dockingbay_gen_s_inv_macro"
+    },
+    {
+        "name": "dockingbay_gen_s_playeronly_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/dock/macros/dockingbay_gen_s_playeronly_01_macro"
     },
     {
         "name": "dockingbay_gen_xl_inv_02_macro",
@@ -3325,9 +3340,14 @@
         "fullPath": "assets/structures/dock/macros/dockingbay_xen_lxl_inv_macro"
     },
     {
-        "name": "dummy_explolight_macro",
+        "name": "dock_gen_xs_ship_01_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/fx/emitters/macros/dummy_explolight_macro"
+        "fullPath": "assets/props/SurfaceElements/macros/dock_gen_xs_ship_01_macro"
+    },
+    {
+        "name": "dock_gen_xs_ship_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/dock_gen_xs_ship_02_macro"
     },
     {
         "name": "dummyemitter_macro",
@@ -3340,9 +3360,34 @@
         "fullPath": "assets/fx/emitters/macros/dummyemitter_up_macro"
     },
     {
+        "name": "dummy_explolight_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/emitters/macros/dummy_explolight_macro"
+    },
+    {
         "name": "editor_*",
         "dataFolder": "vanilla",
         "fullPath": "maps/editor/editor_galaxy"
+    },
+    {
+        "name": "effectcluster_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/effectuniverse/effectcluster"
+    },
+    {
+        "name": "effectgalaxy_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/effectuniverse/effectgalaxy"
+    },
+    {
+        "name": "effectsector_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/effectuniverse/effectsector"
+    },
+    {
+        "name": "effectzone_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/effectuniverse/effectzone"
     },
     {
         "name": "effect_dummy_macro",
@@ -3370,14 +3415,14 @@
         "fullPath": "assets/fx/misc/macros/effect_gen_l_travelbubble_01_exterior_macro"
     },
     {
-        "name": "effect_gen_l_traveldrive_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/misc/macros/effect_gen_l_traveldrive_01_macro"
-    },
-    {
         "name": "effect_gen_l_traveldriveexhaust_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/misc/macros/effect_gen_l_traveldriveexhaust_01_macro"
+    },
+    {
+        "name": "effect_gen_l_traveldrive_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_l_traveldrive_01_macro"
     },
     {
         "name": "effect_gen_m_travelbubble_01_cockpit_macro",
@@ -3415,11 +3460,6 @@
         "fullPath": "assets/fx/misc/macros/effect_gen_s_travelbubble_01_exterior_macro"
     },
     {
-        "name": "effect_gen_s_traveldrive_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldrive_01_macro"
-    },
-    {
         "name": "effect_gen_s_traveldriveexhaust_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldriveexhaust_01_macro"
@@ -3435,6 +3475,11 @@
         "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldriveexhaust_03_macro"
     },
     {
+        "name": "effect_gen_s_traveldrive_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/effect_gen_s_traveldrive_01_macro"
+    },
+    {
         "name": "effect_gen_xl_travelbubble_01_cockpit_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/misc/macros/effect_gen_xl_travelbubble_01_cockpit_macro"
@@ -3448,26 +3493,6 @@
         "name": "effect_gen_xl_traveldriveexhaust_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/misc/macros/effect_gen_xl_traveldriveexhaust_01_macro"
-    },
-    {
-        "name": "effectcluster_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/effectuniverse/effectcluster"
-    },
-    {
-        "name": "effectgalaxy_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/effectuniverse/effectgalaxy"
-    },
-    {
-        "name": "effectsector_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/effectuniverse/effectsector"
-    },
-    {
-        "name": "effectzone_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/effectuniverse/effectzone"
     },
     {
         "name": "encyclopedia_dummy_macro",
@@ -3595,6 +3620,11 @@
         "fullPath": "assets/props/engines/macros/engine_arg_s_racer_01_mk1_macro"
     },
     {
+        "name": "engine_arg_s_traveltutorial_01_mk1_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/engines/macros/engine_arg_s_traveltutorial_01_mk1_macro"
+    },
+    {
         "name": "engine_arg_s_travel_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/engines/macros/engine_arg_s_travel_01_mk1_macro"
@@ -3608,11 +3638,6 @@
         "name": "engine_arg_s_travel_01_mk3_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/engines/macros/engine_arg_s_travel_01_mk3_macro"
-    },
-    {
-        "name": "engine_arg_s_traveltutorial_01_mk1_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/engines/macros/engine_arg_s_traveltutorial_01_mk1_macro"
     },
     {
         "name": "engine_arg_xl_allround_01_mk1_macro",
@@ -3725,6 +3750,16 @@
         "fullPath": "assets/props/engines/macros/engine_gen_m_yacht_01_mk1_video_macro"
     },
     {
+        "name": "engine_gen_spacesuit_01_mk1_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/engines/macros/engine_gen_spacesuit_01_mk1_macro"
+    },
+    {
+        "name": "engine_gen_spacesuit_01_mk2_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/engines/macros/engine_gen_spacesuit_01_mk2_macro"
+    },
+    {
         "name": "engine_gen_s_racer_01_mk1_macro",
         "dataFolder": "ego_dlc_timelines",
         "fullPath": "assets/props/engines/macros/engine_gen_s_racer_01_mk1_macro"
@@ -3743,16 +3778,6 @@
         "name": "engine_gen_s_racer_01_mk2_video_macro",
         "dataFolder": "ego_dlc_timelines",
         "fullPath": "assets/props/engines/macros/engine_gen_s_racer_01_mk2_video_macro"
-    },
-    {
-        "name": "engine_gen_spacesuit_01_mk1_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/engines/macros/engine_gen_spacesuit_01_mk1_macro"
-    },
-    {
-        "name": "engine_gen_spacesuit_01_mk2_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/engines/macros/engine_gen_spacesuit_01_mk2_macro"
     },
     {
         "name": "engine_gen_xs_buildingdrone_01_macro",
@@ -4465,19 +4490,154 @@
         "fullPath": "assets/characters/unique/macros/entity_exit_macro"
     },
     {
-        "name": "entity_moveto_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/characters/unique/macros/entity_moveto_macro"
-    },
-    {
         "name": "entity_movetostairs_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/characters/unique/macros/entity_movetostairs_macro"
     },
     {
+        "name": "entity_moveto_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/characters/unique/macros/entity_moveto_macro"
+    },
+    {
         "name": "entity_undock_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/characters/unique/macros/entity_undock_macro"
+    },
+    {
+        "name": "env_asteroid_hot_l_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_01_macro"
+    },
+    {
+        "name": "env_asteroid_hot_l_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_02_macro"
+    },
+    {
+        "name": "env_asteroid_hot_l_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_03_macro"
+    },
+    {
+        "name": "env_asteroid_hot_xl_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_01_macro"
+    },
+    {
+        "name": "env_asteroid_hot_xl_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_02_macro"
+    },
+    {
+        "name": "env_asteroid_hot_xl_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_03_macro"
+    },
+    {
+        "name": "env_asteroid_special_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_special_01_macro"
+    },
+    {
+        "name": "env_asteroid_special_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_special_02_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_l_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_l_01_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_l_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_l_02_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_m_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_m_01_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_m_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_m_02_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_s_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_s_01_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xl_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_01_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xl_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_02_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xl_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_03_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xl_04_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_04_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xl_05_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_05_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xs_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xs_01_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_01_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_02_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_03_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_04_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_04_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_05_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_05_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_06_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_06_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_07_landmark_macro",
+        "dataFolder": "ego_dlc_boron",
+        "fullPath": "assets/environments/asteroid/macros/env_asteroid_xenon_xxl_07_landmark_macro"
+    },
+    {
+        "name": "env_asteroid_xenon_xxl_07_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_07_macro"
     },
     {
         "name": "env_ast_crystal_detail_m_01_macro",
@@ -5360,141 +5520,6 @@
         "fullPath": "assets/environments/asteroids/special/macros/env_ast_sf_01_macro"
     },
     {
-        "name": "env_asteroid_hot_l_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_01_macro"
-    },
-    {
-        "name": "env_asteroid_hot_l_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_02_macro"
-    },
-    {
-        "name": "env_asteroid_hot_l_03_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_l_03_macro"
-    },
-    {
-        "name": "env_asteroid_hot_xl_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_01_macro"
-    },
-    {
-        "name": "env_asteroid_hot_xl_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_02_macro"
-    },
-    {
-        "name": "env_asteroid_hot_xl_03_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_hot_xl_03_macro"
-    },
-    {
-        "name": "env_asteroid_special_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_special_01_macro"
-    },
-    {
-        "name": "env_asteroid_special_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_special_02_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_l_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_l_01_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_l_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_l_02_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_m_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_m_01_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_m_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_m_02_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_s_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_s_01_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xl_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_01_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xl_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_02_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xl_03_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_03_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xl_04_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_04_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xl_05_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xl_05_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xs_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xs_01_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_01_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_02_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_03_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_03_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_04_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_04_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_05_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_05_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_06_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_06_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_07_landmark_macro",
-        "dataFolder": "ego_dlc_boron",
-        "fullPath": "assets/environments/asteroid/macros/env_asteroid_xenon_xxl_07_landmark_macro"
-    },
-    {
-        "name": "env_asteroid_xenon_xxl_07_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/asteroids/macros/env_asteroid_xenon_xxl_07_macro"
-    },
-    {
         "name": "env_debris_debris_l_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/debris/macros/env_debris_debris_l_01_macro"
@@ -5795,11 +5820,6 @@
         "fullPath": "assets/environments/debris/macros/env_debris_xenon_xxl_02_macro"
     },
     {
-        "name": "env_deco_nav_beacon_t10_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/deco/macros/env_deco_nav_beacon_t10_macro"
-    },
-    {
         "name": "env_deco_nav_beacon_t1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/deco/macros/env_deco_nav_beacon_t1_macro"
@@ -5870,6 +5890,11 @@
         "fullPath": "assets/environments/deco/macros/env_deco_nav_beacon_t9_macro"
     },
     {
+        "name": "env_deco_nav_beacon_t10_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/deco/macros/env_deco_nav_beacon_t10_macro"
+    },
+    {
         "name": "eq_arg_resourceprobe_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/equipment/probe/macros/eq_arg_resourceprobe_01_macro"
@@ -5895,6 +5920,16 @@
         "fullPath": "assets/test/markus/macros/example_startmenu_macro"
     },
     {
+        "name": "explosion_adsigns_balloon_01_trash_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_adsigns_balloon_01_trash_01_macro"
+    },
+    {
+        "name": "explosion_adsigns_balloon_02_trash_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_adsigns_balloon_02_trash_01_macro"
+    },
+    {
         "name": "explosion_adsign_01_light_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_adsign_01_light_macro"
@@ -5915,16 +5950,6 @@
         "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_adsign_holder_trash_01_macro"
     },
     {
-        "name": "explosion_adsigns_balloon_01_trash_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_adsigns_balloon_01_trash_01_macro"
-    },
-    {
-        "name": "explosion_adsigns_balloon_02_trash_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_adsigns_balloon_02_trash_01_macro"
-    },
-    {
         "name": "explosion_chimney_l_trash01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_chimney_l_trash01_macro"
@@ -5943,31 +5968,6 @@
         "name": "explosion_engine_xl_trash_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_engine_xl_trash_01_macro"
-    },
-    {
-        "name": "explosion_gen_l_distortionsphere_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_l_distortionsphere_01_macro"
-    },
-    {
-        "name": "explosion_gen_m_distortionsphere_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_m_distortionsphere_01_macro"
-    },
-    {
-        "name": "explosion_gen_s_distortionsphere_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_s_distortionsphere_01_macro"
-    },
-    {
-        "name": "explosion_gen_xl_distortionsphere_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_xl_distortionsphere_01_macro"
-    },
-    {
-        "name": "explosion_gen_xl_ring_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_xl_ring_01_macro"
     },
     {
         "name": "explosion_generic_01_distorsion01_macro",
@@ -6015,14 +6015,29 @@
         "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_generic_02_nova_02_macro"
     },
     {
-        "name": "explosion_l_01_distortion01_macro",
+        "name": "explosion_gen_l_distortionsphere_01_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_l_01_distortion01_macro"
+        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_l_distortionsphere_01_macro"
     },
     {
-        "name": "explosion_l_01_ring01_macro",
+        "name": "explosion_gen_m_distortionsphere_01_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_l_01_ring01_macro"
+        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_m_distortionsphere_01_macro"
+    },
+    {
+        "name": "explosion_gen_s_distortionsphere_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_s_distortionsphere_01_macro"
+    },
+    {
+        "name": "explosion_gen_xl_distortionsphere_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_xl_distortionsphere_01_macro"
+    },
+    {
+        "name": "explosion_gen_xl_ring_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/explosionfx/macros/explosion_gen_xl_ring_01_macro"
     },
     {
         "name": "explosion_light_m_01_macro",
@@ -6035,14 +6050,24 @@
         "fullPath": "assets/fx/explosioneffects/macros/explosion_light_s_01_macro"
     },
     {
+        "name": "explosion_lockbox_explosive_light_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_lockbox_explosive_light_macro"
+    },
+    {
         "name": "explosion_lock_trash_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/explosionfx/macros/explosion_lock_trash_01_macro"
     },
     {
-        "name": "explosion_lockbox_explosive_light_macro",
+        "name": "explosion_l_01_distortion01_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_lockbox_explosive_light_macro"
+        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_l_01_distortion01_macro"
+    },
+    {
+        "name": "explosion_l_01_ring01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_l_01_ring01_macro"
     },
     {
         "name": "explosion_m_02_distortion01_macro",
@@ -6148,6 +6173,26 @@
         "name": "explosion_xl_01_ring_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/fx/explosionfx/macros/explosion_xl_01_ring_macro"
+    },
+    {
+        "name": "fogpattern_smoke_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/test/markus/macros/fogpattern_smoke_macro"
+    },
+    {
+        "name": "fogpattern_v2_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/fog/macros/fogpattern_v2_macro"
+    },
+    {
+        "name": "fogpattern_v3_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/fog/macros/fogpattern_v3_macro"
+    },
+    {
+        "name": "fogvolume*",
+        "dataFolder": "vanilla",
+        "fullPath": "libraries/macro"
     },
     {
         "name": "fog_lightning_01_macro",
@@ -6273,26 +6318,6 @@
         "name": "fog_smallstones_v1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/fog/macros/fog_smallstones_v1_macro"
-    },
-    {
-        "name": "fogpattern_smoke_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/test/markus/macros/fogpattern_smoke_macro"
-    },
-    {
-        "name": "fogpattern_v2_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/fog/macros/fogpattern_v2_macro"
-    },
-    {
-        "name": "fogpattern_v3_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/fog/macros/fogpattern_v3_macro"
-    },
-    {
-        "name": "fogvolume*",
-        "dataFolder": "vanilla",
-        "fullPath": "libraries/macro"
     },
     {
         "name": "forceemitterobject_macro",
@@ -6890,21 +6915,6 @@
         "fullPath": "assets/fx/macros/impedence_bubble_macro"
     },
     {
-        "name": "int_exploration_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/interactive/macros/int_exploration_02_macro"
-    },
-    {
-        "name": "int_soh_scenarioconsole_01_macro",
-        "dataFolder": "ego_dlc_timelines",
-        "fullPath": "assets/props/interactive/macros/int_soh_scenarioconsole_01_macro"
-    },
-    {
-        "name": "int_soh_scenarioconsole_02_macro",
-        "dataFolder": "ego_dlc_timelines",
-        "fullPath": "assets/props/interactive/macros/int_soh_scenarioconsole_02_macro"
-    },
-    {
         "name": "interactive_par_doorcontrol_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/interactive/macros/interactive_par_doorcontrol_01_macro"
@@ -6935,6 +6945,11 @@
         "fullPath": "assets/interiors/eventmonitor_scenes/macros/interiors_rooms_antigonenews_room_01_macro"
     },
     {
+        "name": "interiors_rooms_argoncomputer_room_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/interiors/eventmonitor_scenes/macros/interiors_rooms_argoncomputer_room_01_macro"
+    },
+    {
         "name": "interiors_rooms_ar_room_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/interiors/eventmonitor_scenes/macros/interiors_rooms_ar_room_01_macro"
@@ -6943,11 +6958,6 @@
         "name": "interiors_rooms_ar_room_02_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/interiors/eventmonitor_scenes/macros/interiors_rooms_ar_room_02_macro"
-    },
-    {
-        "name": "interiors_rooms_argoncomputer_room_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/interiors/eventmonitor_scenes/macros/interiors_rooms_argoncomputer_room_01_macro"
     },
     {
         "name": "interiors_rooms_betty_room_01_macro",
@@ -7010,9 +7020,19 @@
         "fullPath": "assets/interiors/eventmonitor_scenes/macros/interiors_rooms_yak_room_01_macro"
     },
     {
-        "name": "landmark_gen_hqasteroiddebree_01_macro",
-        "dataFolder": "ego_dlc_boron",
-        "fullPath": "assets/structures/landmarks/macros/landmark_gen_hqasteroiddebree_01_macro"
+        "name": "int_exploration_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/interactive/macros/int_exploration_02_macro"
+    },
+    {
+        "name": "int_soh_scenarioconsole_01_macro",
+        "dataFolder": "ego_dlc_timelines",
+        "fullPath": "assets/props/interactive/macros/int_soh_scenarioconsole_01_macro"
+    },
+    {
+        "name": "int_soh_scenarioconsole_02_macro",
+        "dataFolder": "ego_dlc_timelines",
+        "fullPath": "assets/props/interactive/macros/int_soh_scenarioconsole_02_macro"
     },
     {
         "name": "landmarks_arg_antigonearc_01_macro",
@@ -7275,6 +7295,21 @@
         "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_core_02_macro"
     },
     {
+        "name": "landmarks_par_monument_expldummy_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expldummy_01_macro"
+    },
+    {
+        "name": "landmarks_par_monument_expldummy_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expldummy_02_macro"
+    },
+    {
+        "name": "landmarks_par_monument_expldummy_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expldummy_03_macro"
+    },
+    {
         "name": "landmarks_par_monument_expl_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expl_01_macro"
@@ -7293,21 +7328,6 @@
         "name": "landmarks_par_monument_expl_04_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expl_04_macro"
-    },
-    {
-        "name": "landmarks_par_monument_expldummy_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expldummy_01_macro"
-    },
-    {
-        "name": "landmarks_par_monument_expldummy_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expldummy_02_macro"
-    },
-    {
-        "name": "landmarks_par_monument_expldummy_03_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_par_monument_expldummy_03_macro"
     },
     {
         "name": "landmarks_par_monument_top_01_macro",
@@ -7395,11 +7415,6 @@
         "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_bridge_01_macro"
     },
     {
-        "name": "landmarks_tel_tradestation_01_center_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_center_01_macro"
-    },
-    {
         "name": "landmarks_tel_tradestation_01_centercylinder_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_centercylinder_01_macro"
@@ -7413,6 +7428,11 @@
         "name": "landmarks_tel_tradestation_01_centerfill_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_centerfill_01_macro"
+    },
+    {
+        "name": "landmarks_tel_tradestation_01_center_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_center_01_macro"
     },
     {
         "name": "landmarks_tel_tradestation_01_column_01_macro",
@@ -7445,6 +7465,21 @@
         "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_radar_01_macro"
     },
     {
+        "name": "landmarks_tel_tradestation_01_ringcenter_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ringcenter_01_macro"
+    },
+    {
+        "name": "landmarks_tel_tradestation_01_ringclamp_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ringclamp_01_macro"
+    },
+    {
+        "name": "landmarks_tel_tradestation_01_ringclamp_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ringclamp_02_macro"
+    },
+    {
         "name": "landmarks_tel_tradestation_01_ring_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ring_01_macro"
@@ -7468,21 +7503,6 @@
         "name": "landmarks_tel_tradestation_01_ring_storage_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ring_storage_01_macro"
-    },
-    {
-        "name": "landmarks_tel_tradestation_01_ringcenter_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ringcenter_01_macro"
-    },
-    {
-        "name": "landmarks_tel_tradestation_01_ringclamp_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ringclamp_01_macro"
-    },
-    {
-        "name": "landmarks_tel_tradestation_01_ringclamp_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_tel_tradestation_01_ringclamp_02_macro"
     },
     {
         "name": "landmarks_tel_tradestation_01_storage_01_macro",
@@ -7518,6 +7538,11 @@
         "name": "landmarks_vault_04_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/landmarks_vault_04_macro"
+    },
+    {
+        "name": "landmarks_xenon_crash_site_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/landmarks_xenon_crash_site_01_macro"
     },
     {
         "name": "landmarks_xen_aqueduct_01_macro",
@@ -7560,9 +7585,9 @@
         "fullPath": "assets/structures/landmarks/macros/landmarks_xen_xl_mothership_01_macro"
     },
     {
-        "name": "landmarks_xenon_crash_site_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/landmarks_xenon_crash_site_01_macro"
+        "name": "landmark_gen_hqasteroiddebree_01_macro",
+        "dataFolder": "ego_dlc_boron",
+        "fullPath": "assets/structures/landmarks/macros/landmark_gen_hqasteroiddebree_01_macro"
     },
     {
         "name": "launchtube_arg_m_01_macro",
@@ -7570,14 +7595,14 @@
         "fullPath": "assets/structures/dock/macros/launchtube_arg_m_01_macro"
     },
     {
-        "name": "launchtube_arg_s_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/dock/macros/launchtube_arg_s_01_macro"
-    },
-    {
         "name": "launchtube_arg_sm_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/dock/macros/launchtube_arg_sm_01_macro"
+    },
+    {
+        "name": "launchtube_arg_s_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/dock/macros/launchtube_arg_s_01_macro"
     },
     {
         "name": "launchtube_xen_m_01_macro",
@@ -7593,11 +7618,6 @@
         "name": "lensflares",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/lensflares/macros/lensflares_macro"
-    },
-    {
-        "name": "light_bullet_blue_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/weaponfx/macros/light_bullet_blue_macro"
     },
     {
         "name": "lightpositiondummy001_macro",
@@ -7723,6 +7743,11 @@
         "name": "lightpositiondummy025_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/lightpositiondummy025_macro"
+    },
+    {
+        "name": "light_bullet_blue_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/weaponfx/macros/light_bullet_blue_macro"
     },
     {
         "name": "masstraffic_station_01_center_01_macro",
@@ -8267,6 +8292,11 @@
     {
         "name": "pier_arg_harbor_02_macro",
         "dataFolder": "vanilla",
+        "fullPath": "assets/structures/dock/macros/pier_arg_harbor_02_macro"
+    },
+    {
+        "name": "pier_arg_harbor_02_macro",
+        "dataFolder": "vanilla",
         "fullPath": "assets//structures//dock//macros//pier_arg_harbor_02_macro"
     },
     {
@@ -8317,6 +8347,11 @@
     {
         "name": "pier_par_harbor_02_macro",
         "dataFolder": "vanilla",
+        "fullPath": "assets/structures/dock/macros/pier_par_harbor_02_macro"
+    },
+    {
+        "name": "pier_par_harbor_02_macro",
+        "dataFolder": "vanilla",
         "fullPath": "assets//structures//dock//macros//pier_par_harbor_02_macro"
     },
     {
@@ -8328,6 +8363,11 @@
         "name": "pier_spl_harbor_01_macro",
         "dataFolder": "ego_dlc_split",
         "fullPath": "assets/structures/dock/macros/pier_spl_harbor_01_macro"
+    },
+    {
+        "name": "pier_spl_harbor_02_macro",
+        "dataFolder": "ego_dlc_split",
+        "fullPath": "assets/structures/dock/macros/pier_spl_harbor_02_macro"
     },
     {
         "name": "pier_spl_harbor_02_macro",
@@ -8347,6 +8387,11 @@
     {
         "name": "pier_tel_harbor_02_macro",
         "dataFolder": "vanilla",
+        "fullPath": "assets/structures/dock/macros/pier_tel_harbor_02_macro"
+    },
+    {
+        "name": "pier_tel_harbor_02_macro",
+        "dataFolder": "vanilla",
         "fullPath": "assets//structures//dock//macros//pier_tel_harbor_02_macro"
     },
     {
@@ -8358,6 +8403,11 @@
         "name": "pier_ter_harbor_01_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "assets/structures/dock/macros/pier_ter_harbor_01_macro"
+    },
+    {
+        "name": "pier_ter_harbor_02_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/structures/dock/macros/pier_ter_harbor_02_macro"
     },
     {
         "name": "pier_ter_harbor_02_macro",
@@ -8435,6 +8485,51 @@
         "fullPath": "assets/characters/unique/macros/entity_player_macro"
     },
     {
+        "name": "positiondummy1_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy1_macro"
+    },
+    {
+        "name": "positiondummy2_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy2_macro"
+    },
+    {
+        "name": "positiondummy3_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy3_macro"
+    },
+    {
+        "name": "positiondummy4_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy4_macro"
+    },
+    {
+        "name": "positiondummy5_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy5_macro"
+    },
+    {
+        "name": "positiondummy6_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy6_macro"
+    },
+    {
+        "name": "positiondummy7_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy7_macro"
+    },
+    {
+        "name": "positiondummy8_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy8_macro"
+    },
+    {
+        "name": "positiondummy9_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/landmarks/macros/positiondummy9_macro"
+    },
+    {
         "name": "positiondummy10_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/positiondummy10_macro"
@@ -8485,11 +8580,6 @@
         "fullPath": "assets/structures/landmarks/macros/positiondummy19_macro"
     },
     {
-        "name": "positiondummy1_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy1_macro"
-    },
-    {
         "name": "positiondummy20_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/positiondummy20_macro"
@@ -8523,46 +8613,6 @@
         "name": "positiondummy26_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/landmarks/macros/positiondummy26_macro"
-    },
-    {
-        "name": "positiondummy2_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy2_macro"
-    },
-    {
-        "name": "positiondummy3_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy3_macro"
-    },
-    {
-        "name": "positiondummy4_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy4_macro"
-    },
-    {
-        "name": "positiondummy5_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy5_macro"
-    },
-    {
-        "name": "positiondummy6_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy6_macro"
-    },
-    {
-        "name": "positiondummy7_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy7_macro"
-    },
-    {
-        "name": "positiondummy8_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy8_macro"
-    },
-    {
-        "name": "positiondummy9_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/landmarks/macros/positiondummy9_macro"
     },
     {
         "name": "prison_escape_v2_macro",
@@ -9060,246 +9110,6 @@
         "fullPath": "assets/interiors/room_props/macros/props_11_room_gen_livingquarter_01_macro"
     },
     {
-        "name": "props_adsign_arg_foodrations_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_foodrations_macro"
-    },
-    {
-        "name": "props_adsign_arg_meat_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_meat_macro"
-    },
-    {
-        "name": "props_adsign_arg_spacefuel_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_spacefuel_macro"
-    },
-    {
-        "name": "props_adsign_arg_wheat_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_wheat_macro"
-    },
-    {
-        "name": "props_adsign_gen_advancedcomposites_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_advancedcomposites_macro"
-    },
-    {
-        "name": "props_adsign_gen_advancedelectronics_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_advancedelectronics_macro"
-    },
-    {
-        "name": "props_adsign_gen_antimattercells_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_antimattercells_macro"
-    },
-    {
-        "name": "props_adsign_gen_antimatterconverters_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_antimatterconverters_macro"
-    },
-    {
-        "name": "props_adsign_gen_claytronics_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_claytronics_macro"
-    },
-    {
-        "name": "props_adsign_gen_countermeasures_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_countermeasures_macro"
-    },
-    {
-        "name": "props_adsign_gen_dronecomponents_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_dronecomponents_macro"
-    },
-    {
-        "name": "props_adsign_gen_energycells_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_energycells_macro"
-    },
-    {
-        "name": "props_adsign_gen_engineparts_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_engineparts_macro"
-    },
-    {
-        "name": "props_adsign_gen_fieldcoils_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_fieldcoils_macro"
-    },
-    {
-        "name": "props_adsign_gen_graphene_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_graphene_macro"
-    },
-    {
-        "name": "props_adsign_gen_hullparts_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_hullparts_macro"
-    },
-    {
-        "name": "props_adsign_gen_medicalsupplies_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_medicalsupplies_macro"
-    },
-    {
-        "name": "props_adsign_gen_microchips_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_microchips_macro"
-    },
-    {
-        "name": "props_adsign_gen_missilecomponents_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_missilecomponents_macro"
-    },
-    {
-        "name": "props_adsign_gen_plasmaconductors_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_plasmaconductors_macro"
-    },
-    {
-        "name": "props_adsign_gen_quantumtubes_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_quantumtubes_macro"
-    },
-    {
-        "name": "props_adsign_gen_refinedmetals_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_refinedmetals_macro"
-    },
-    {
-        "name": "props_adsign_gen_scanningarrays_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_scanningarrays_macro"
-    },
-    {
-        "name": "props_adsign_gen_shieldcomponents_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_shieldcomponents_macro"
-    },
-    {
-        "name": "props_adsign_gen_siliconwavers_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_siliconwavers_macro"
-    },
-    {
-        "name": "props_adsign_gen_smartchips_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_smartchips_macro"
-    },
-    {
-        "name": "props_adsign_gen_spices_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_spices_macro"
-    },
-    {
-        "name": "props_adsign_gen_superfluidcoolant_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_superfluidcoolant_macro"
-    },
-    {
-        "name": "props_adsign_gen_turretcomponents_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_turretcomponents_macro"
-    },
-    {
-        "name": "props_adsign_gen_water_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_water_macro"
-    },
-    {
-        "name": "props_adsign_gen_weaponcomponents_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_weaponcomponents_macro"
-    },
-    {
-        "name": "props_adsign_par_majadust_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_par_majadust_macro"
-    },
-    {
-        "name": "props_adsign_par_majasnails_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/Adsigns/macros/props_adsign_par_majasnails_macro"
-    },
-    {
-        "name": "props_adsign_par_sojabeans_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/Adsigns/macros/props_adsign_par_sojabeans_macro"
-    },
-    {
-        "name": "props_adsign_par_sojahusk_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/Adsigns/macros/props_adsign_par_sojahusk_macro"
-    },
-    {
-        "name": "props_adsign_spl_cheltmeat_macro",
-        "dataFolder": "ego_dlc_split",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_spl_cheltmeat_macro"
-    },
-    {
-        "name": "props_adsign_spl_scruffinfruit_macro",
-        "dataFolder": "ego_dlc_split",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_spl_scruffinfruit_macro"
-    },
-    {
-        "name": "props_adsign_tel_nostropoil_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_nostropoil_macro"
-    },
-    {
-        "name": "props_adsign_tel_spaceweed_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_spaceweed_macro"
-    },
-    {
-        "name": "props_adsign_tel_sunriseflowers_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_sunriseflowers_macro"
-    },
-    {
-        "name": "props_adsign_tel_swampplants_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_swampplants_macro"
-    },
-    {
-        "name": "props_adsign_tel_teladianium_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_teladianium_macro"
-    },
-    {
-        "name": "props_adsign_ter_computronicsubstrate_macro",
-        "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_computronicsubstrate_macro"
-    },
-    {
-        "name": "props_adsign_ter_metallicmicrolattice_macro",
-        "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_metallicmicrolattice_macro"
-    },
-    {
-        "name": "props_adsign_ter_proteinpaste_macro",
-        "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_proteinpaste_macro"
-    },
-    {
-        "name": "props_adsign_ter_siliconcarbide_macro",
-        "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_siliconcarbide_macro"
-    },
-    {
-        "name": "props_adsign_ter_stimulants_macro",
-        "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_stimulants_macro"
-    },
-    {
-        "name": "props_adsign_ter_terranmre_macro",
-        "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_terranmre_macro"
-    },
-    {
         "name": "props_adsigns_balloon_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/props/AdSigns/macros/props_adsigns_balloon_01_macro"
@@ -9610,6 +9420,246 @@
         "fullPath": "assets/legacy/props/AdSigns/macros/props_adsigns_warez_snails_01_macro"
     },
     {
+        "name": "props_adsign_arg_foodrations_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_foodrations_macro"
+    },
+    {
+        "name": "props_adsign_arg_meat_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_meat_macro"
+    },
+    {
+        "name": "props_adsign_arg_spacefuel_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_spacefuel_macro"
+    },
+    {
+        "name": "props_adsign_arg_wheat_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_arg_wheat_macro"
+    },
+    {
+        "name": "props_adsign_gen_advancedcomposites_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_advancedcomposites_macro"
+    },
+    {
+        "name": "props_adsign_gen_advancedelectronics_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_advancedelectronics_macro"
+    },
+    {
+        "name": "props_adsign_gen_antimattercells_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_antimattercells_macro"
+    },
+    {
+        "name": "props_adsign_gen_antimatterconverters_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_antimatterconverters_macro"
+    },
+    {
+        "name": "props_adsign_gen_claytronics_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_claytronics_macro"
+    },
+    {
+        "name": "props_adsign_gen_countermeasures_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_countermeasures_macro"
+    },
+    {
+        "name": "props_adsign_gen_dronecomponents_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_dronecomponents_macro"
+    },
+    {
+        "name": "props_adsign_gen_energycells_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_energycells_macro"
+    },
+    {
+        "name": "props_adsign_gen_engineparts_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_engineparts_macro"
+    },
+    {
+        "name": "props_adsign_gen_fieldcoils_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_fieldcoils_macro"
+    },
+    {
+        "name": "props_adsign_gen_graphene_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_graphene_macro"
+    },
+    {
+        "name": "props_adsign_gen_hullparts_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_hullparts_macro"
+    },
+    {
+        "name": "props_adsign_gen_medicalsupplies_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_medicalsupplies_macro"
+    },
+    {
+        "name": "props_adsign_gen_microchips_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_microchips_macro"
+    },
+    {
+        "name": "props_adsign_gen_missilecomponents_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_missilecomponents_macro"
+    },
+    {
+        "name": "props_adsign_gen_plasmaconductors_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_plasmaconductors_macro"
+    },
+    {
+        "name": "props_adsign_gen_quantumtubes_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_quantumtubes_macro"
+    },
+    {
+        "name": "props_adsign_gen_refinedmetals_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_refinedmetals_macro"
+    },
+    {
+        "name": "props_adsign_gen_scanningarrays_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_scanningarrays_macro"
+    },
+    {
+        "name": "props_adsign_gen_shieldcomponents_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_shieldcomponents_macro"
+    },
+    {
+        "name": "props_adsign_gen_siliconwavers_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_siliconwavers_macro"
+    },
+    {
+        "name": "props_adsign_gen_smartchips_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_smartchips_macro"
+    },
+    {
+        "name": "props_adsign_gen_spices_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_spices_macro"
+    },
+    {
+        "name": "props_adsign_gen_superfluidcoolant_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_superfluidcoolant_macro"
+    },
+    {
+        "name": "props_adsign_gen_turretcomponents_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_turretcomponents_macro"
+    },
+    {
+        "name": "props_adsign_gen_water_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_water_macro"
+    },
+    {
+        "name": "props_adsign_gen_weaponcomponents_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_gen_weaponcomponents_macro"
+    },
+    {
+        "name": "props_adsign_par_majadust_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_par_majadust_macro"
+    },
+    {
+        "name": "props_adsign_par_majasnails_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/Adsigns/macros/props_adsign_par_majasnails_macro"
+    },
+    {
+        "name": "props_adsign_par_sojabeans_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/Adsigns/macros/props_adsign_par_sojabeans_macro"
+    },
+    {
+        "name": "props_adsign_par_sojahusk_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/Adsigns/macros/props_adsign_par_sojahusk_macro"
+    },
+    {
+        "name": "props_adsign_spl_cheltmeat_macro",
+        "dataFolder": "ego_dlc_split",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_spl_cheltmeat_macro"
+    },
+    {
+        "name": "props_adsign_spl_scruffinfruit_macro",
+        "dataFolder": "ego_dlc_split",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_spl_scruffinfruit_macro"
+    },
+    {
+        "name": "props_adsign_tel_nostropoil_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_nostropoil_macro"
+    },
+    {
+        "name": "props_adsign_tel_spaceweed_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_spaceweed_macro"
+    },
+    {
+        "name": "props_adsign_tel_sunriseflowers_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_sunriseflowers_macro"
+    },
+    {
+        "name": "props_adsign_tel_swampplants_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_swampplants_macro"
+    },
+    {
+        "name": "props_adsign_tel_teladianium_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_tel_teladianium_macro"
+    },
+    {
+        "name": "props_adsign_ter_computronicsubstrate_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_computronicsubstrate_macro"
+    },
+    {
+        "name": "props_adsign_ter_metallicmicrolattice_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_metallicmicrolattice_macro"
+    },
+    {
+        "name": "props_adsign_ter_proteinpaste_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_proteinpaste_macro"
+    },
+    {
+        "name": "props_adsign_ter_siliconcarbide_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_siliconcarbide_macro"
+    },
+    {
+        "name": "props_adsign_ter_stimulants_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_stimulants_macro"
+    },
+    {
+        "name": "props_adsign_ter_terranmre_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/props/adsigns/macros/props_adsign_ter_terranmre_macro"
+    },
+    {
         "name": "props_anc_gate_01_blocked_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/gates/macros/props_anc_gate_01_blocked_macro"
@@ -9830,16 +9880,6 @@
         "fullPath": "assets/props/StorageModules/macros/props_sm_container_xs_wares_macro"
     },
     {
-        "name": "props_sm_lock_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/props/StorageModules/macros/props_sm_lock_01_macro"
-    },
-    {
-        "name": "props_sm_lock_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/props/StorageModules/macros/props_sm_lock_02_macro"
-    },
-    {
         "name": "props_sm_lockbox_common_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/props/StorageModules/macros/props_sm_lockbox_common_01_macro"
@@ -9878,6 +9918,16 @@
         "name": "props_sm_lockbox_unusual_fragile_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/props/StorageModules/macros/props_sm_lockbox_unusual_fragile_01_macro"
+    },
+    {
+        "name": "props_sm_lock_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/legacy/props/StorageModules/macros/props_sm_lock_01_macro"
+    },
+    {
+        "name": "props_sm_lock_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/legacy/props/StorageModules/macros/props_sm_lock_02_macro"
     },
     {
         "name": "props_special_doorclamp_01_macro",
@@ -10045,14 +10095,14 @@
         "fullPath": "assets/interiors/rooms/macros/room_bor_corridor_02_macro"
     },
     {
-        "name": "room_bor_m_station_01_macro",
-        "dataFolder": "ego_dlc_boron",
-        "fullPath": "assets/interiors/rooms/macros/room_bor_m_station_01_macro"
-    },
-    {
         "name": "room_bor_managersoffice_01_macro",
         "dataFolder": "ego_dlc_boron",
         "fullPath": "assets/interiors/rooms/macros/room_bor_managersoffice_01_macro"
+    },
+    {
+        "name": "room_bor_m_station_01_macro",
+        "dataFolder": "ego_dlc_boron",
+        "fullPath": "assets/interiors/rooms/macros/room_bor_m_station_01_macro"
     },
     {
         "name": "room_bor_ships_m_dockarea_01_macro",
@@ -10150,14 +10200,14 @@
         "fullPath": "assets/interiors/rooms/macros/room_gen_livingquarter_01_macro"
     },
     {
-        "name": "room_gen_livingroom_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/interiors/rooms/macros/room_gen_livingroom_01_macro"
-    },
-    {
         "name": "room_gen_livingroomshadyguy_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/interiors/rooms/macros/room_gen_livingroomshadyguy_01_macro"
+    },
+    {
+        "name": "room_gen_livingroom_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/interiors/rooms/macros/room_gen_livingroom_01_macro"
     },
     {
         "name": "room_gen_locker_01_macro",
@@ -10165,14 +10215,14 @@
         "fullPath": "assets/interiors/npc_interactable_props/macros/room_gen_locker_01_macro"
     },
     {
-        "name": "room_gen_m_buildmodule_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/interiors/rooms/macros/room_gen_m_buildmodule_01_macro"
-    },
-    {
         "name": "room_gen_managersoffice_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/interiors/rooms/macros/room_gen_managersoffice_01_macro"
+    },
+    {
+        "name": "room_gen_m_buildmodule_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/interiors/rooms/macros/room_gen_m_buildmodule_01_macro"
     },
     {
         "name": "room_gen_observationdeck_01_macro",
@@ -10955,31 +11005,6 @@
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_intersection_02_macro"
     },
     {
-        "name": "scs_gen_spacesuit_32_room_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_01_macro"
-    },
-    {
-        "name": "scs_gen_spacesuit_32_room_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_02_macro"
-    },
-    {
-        "name": "scs_gen_spacesuit_32_room_03_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_03_macro"
-    },
-    {
-        "name": "scs_gen_spacesuit_32_room_04_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_04_macro"
-    },
-    {
-        "name": "scs_gen_spacesuit_32_room_05_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_05_macro"
-    },
-    {
         "name": "scs_gen_spacesuit_32_roombase_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_roombase_01_macro"
@@ -11003,6 +11028,31 @@
         "name": "scs_gen_spacesuit_32_roombase_05_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_roombase_05_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_01_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_02_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_03_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_04_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_04_macro"
+    },
+    {
+        "name": "scs_gen_spacesuit_32_room_05_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/structures/spacesuit_construction_set/macros/scs_gen_spacesuit_32_room_05_macro"
     },
     {
         "name": "scs_gen_spacesuit_32_straight_01_a_macro",
@@ -11688,6 +11738,136 @@
         "name": "shield_xen_xl_standard_02_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/surfaceelements/macros/shield_xen_xl_standard_02_mk1_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_01_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_02_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_eight_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_eight_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_four_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_four_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_nine_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_nine_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_six_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_six_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_twelve_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_twelve_macro"
+    },
+    {
+        "name": "shipstorage_gen_m_two_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_two_macro"
+    },
+    {
+        "name": "shipstorage_gen_sm_hidden_sixtyfour_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_sm_hidden_sixtyfour_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_01_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_02_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_eight_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_eight_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_few_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_few_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_four_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_four_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_frigate_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_frigate_01_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_nine_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_nine_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_seventytwo_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_seventytwo_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_sixteen_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_sixteen_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_sixtyfour_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_sixtyfour_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_six_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_six_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_three_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_three_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_twelve_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_twelve_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_twentyeight_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_twentyeight_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_twentyfour_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_twentyfour_macro"
+    },
+    {
+        "name": "shipstorage_gen_s_two_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_two_macro"
+    },
+    {
+        "name": "shipstorage_gen_xs_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_xs_01_macro"
     },
     {
         "name": "ship_arg_l_destroyer_01_a_macro",
@@ -13620,134 +13800,9 @@
         "fullPath": "assets/units/size_s/macros/ship_yak_s_fighter_01_a_macro"
     },
     {
-        "name": "shipstorage_gen_m_01_macro",
+        "name": "signalleak_s_standard_01_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_01_macro"
-    },
-    {
-        "name": "shipstorage_gen_m_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_02_macro"
-    },
-    {
-        "name": "shipstorage_gen_m_eight_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_eight_macro"
-    },
-    {
-        "name": "shipstorage_gen_m_four_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_four_macro"
-    },
-    {
-        "name": "shipstorage_gen_m_nine_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_nine_macro"
-    },
-    {
-        "name": "shipstorage_gen_m_six_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_six_macro"
-    },
-    {
-        "name": "shipstorage_gen_m_twelve_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_twelve_macro"
-    },
-    {
-        "name": "shipstorage_gen_m_two_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_m_two_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_01_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_02_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_eight_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_eight_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_few_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_few_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_four_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_four_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_frigate_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_frigate_01_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_nine_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_nine_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_seventytwo_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_seventytwo_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_six_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_six_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_sixteen_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_sixteen_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_sixtyfour_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_sixtyfour_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_three_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_three_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_twelve_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_twelve_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_twentyeight_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_twentyeight_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_twentyfour_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_twentyfour_macro"
-    },
-    {
-        "name": "shipstorage_gen_s_two_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_s_two_macro"
-    },
-    {
-        "name": "shipstorage_gen_sm_hidden_sixtyfour_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_sm_hidden_sixtyfour_macro"
-    },
-    {
-        "name": "shipstorage_gen_xs_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/surfaceelements/macros/shipstorage_gen_xs_01_macro"
+        "fullPath": "assets/fx/misc/macros/signalleak_s_standard_01_macro"
     },
     {
         "name": "sign_gen_doorplate_01_macro",
@@ -13758,11 +13813,6 @@
         "name": "sign_gen_graffiti_01_macro",
         "dataFolder": "ego_dlc_timelines",
         "fullPath": "assets/interiors/signs/macros/sign_gen_graffiti_01_macro"
-    },
-    {
-        "name": "signalleak_s_standard_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/misc/macros/signalleak_s_standard_01_macro"
     },
     {
         "name": "sm_bs_region_macro",
@@ -13798,16 +13848,6 @@
         "name": "sm_gen_exploration_02_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/storagemodules/macros/sm_gen_exploration_02_macro"
-    },
-    {
-        "name": "sm_gen_lock_common_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/storagemodules/macros/sm_gen_lock_common_01_macro"
-    },
-    {
-        "name": "sm_gen_lock_rare_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/storagemodules/macros/sm_gen_lock_rare_01_macro"
     },
     {
         "name": "sm_gen_lockbox_big_01_macro",
@@ -13853,6 +13893,16 @@
         "name": "sm_gen_lockbox_unusual_01_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/StorageModules/macros/sm_gen_lockbox_unusual_01_macro"
+    },
+    {
+        "name": "sm_gen_lock_common_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/storagemodules/macros/sm_gen_lock_common_01_macro"
+    },
+    {
+        "name": "sm_gen_lock_rare_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/storagemodules/macros/sm_gen_lock_rare_01_macro"
     },
     {
         "name": "sm_gen_madpeople_wares_01_macro",
@@ -16146,6 +16196,11 @@
     },
     {
         "name": "superhighway01_cluster112_macro",
+        "dataFolder": "ego_dlc_pirate",
+        "fullPath": "maps/XU_ep2_universe/dlc_pirate_sechighways"
+    },
+    {
+        "name": "superhighway01_cluster112_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "maps/XU_ep2_universe/dlc_terran_sechighways"
     },
@@ -16238,6 +16293,11 @@
         "name": "superhighway04_cluster606_*",
         "dataFolder": "ego_dlc_boron",
         "fullPath": "maps/XU_ep2_universe/dlc_boron_sechighways"
+    },
+    {
+        "name": "targetpoint_dummy_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "libraries/macro"
     },
     {
         "name": "tCluster_01_macro",
@@ -16350,6 +16410,11 @@
         "fullPath": "assets/environments/cluster/macros/tCluster_22_macro"
     },
     {
+        "name": "tcluster_23b_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/environments/cluster/macros/tcluster_23b_macro"
+    },
+    {
         "name": "tCluster_23_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/cluster/macros/tCluster_23_macro"
@@ -16405,21 +16470,6 @@
         "fullPath": "assets/environments/cluster/macros/tCluster_33_macro"
     },
     {
-        "name": "targetpoint_dummy_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "libraries/macro"
-    },
-    {
-        "name": "tcluster_104_macro",
-        "dataFolder": "ego_dlc_terran",
-        "fullPath": "assets/environments/cluster/macros/tcluster_104_macro"
-    },
-    {
-        "name": "tcluster_23b_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/environments/cluster/macros/tcluster_23b_macro"
-    },
-    {
         "name": "tcluster_34_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/cluster/macros/tcluster_34_macro"
@@ -16433,6 +16483,11 @@
         "name": "tcluster_36_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/environments/cluster/macros/tcluster_36_macro"
+    },
+    {
+        "name": "tcluster_104_macro",
+        "dataFolder": "ego_dlc_terran",
+        "fullPath": "assets/environments/cluster/macros/tcluster_104_macro"
     },
     {
         "name": "tcluster_701_macro",
@@ -16488,6 +16543,21 @@
         "name": "ter_torus_exterior_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "assets/structures/landmarks/macros/ter_torus_exterior_macro"
+    },
+    {
+        "name": "testminingnode_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "libraries/macro"
+    },
+    {
+        "name": "testnpc",
+        "dataFolder": "vanilla",
+        "fullPath": "libraries/macro"
+    },
+    {
+        "name": "testuielement",
+        "dataFolder": "vanilla",
+        "fullPath": "libraries/macro"
     },
     {
         "name": "test_dockarea_gen_showroom_01_macro",
@@ -16578,21 +16648,6 @@
         "name": "test_ship_gen_xs_lasertower_02_a_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/test/unai/macros/test_ship_gen_xs_lasertower_02_a_macro"
-    },
-    {
-        "name": "testminingnode_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "libraries/macro"
-    },
-    {
-        "name": "testnpc",
-        "dataFolder": "vanilla",
-        "fullPath": "libraries/macro"
-    },
-    {
-        "name": "testuielement",
-        "dataFolder": "vanilla",
-        "fullPath": "libraries/macro"
     },
     {
         "name": "thruster_gen_l_allround_01_mk1_macro",
@@ -17860,31 +17915,6 @@
         "fullPath": "assets/characters/unique/macros/tutorial_character_split_commander_macro"
     },
     {
-        "name": "tzoneCluster_black2_Sector01_Zone02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/black2galaxy/black2zone"
-    },
-    {
-        "name": "tzoneCluster_black2_Sector01_Zone_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/black2galaxy/black2zone"
-    },
-    {
-        "name": "tzoneCluster_black_Sector01_Zone02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/blackgalaxy/blackzone"
-    },
-    {
-        "name": "tzoneCluster_black_Sector01_Zone_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/blackgalaxy/blackzone"
-    },
-    {
-        "name": "tzoneCluster_black_wl_Sector01_Zone_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "maps/blackgalaxy/blackzone"
-    },
-    {
         "name": "tzonecluster*",
         "dataFolder": "vanilla",
         "fullPath": "maps/XU_ep2_universe/zones"
@@ -18070,7 +18100,32 @@
         "fullPath": "maps/XU_ep2_universe/dlc_boron_zones"
     },
     {
+        "name": "tzoneCluster_black2_Sector01_Zone02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/black2galaxy/black2zone"
+    },
+    {
+        "name": "tzoneCluster_black2_Sector01_Zone_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/black2galaxy/black2zone"
+    },
+    {
+        "name": "tzoneCluster_black_Sector01_Zone02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/blackgalaxy/blackzone"
+    },
+    {
+        "name": "tzoneCluster_black_Sector01_Zone_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/blackgalaxy/blackzone"
+    },
+    {
         "name": "tzonecluster_black_wl_sector01_zone02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "maps/blackgalaxy/blackzone"
+    },
+    {
+        "name": "tzoneCluster_black_wl_Sector01_Zone_macro",
         "dataFolder": "vanilla",
         "fullPath": "maps/blackgalaxy/blackzone"
     },
@@ -18090,14 +18145,14 @@
         "fullPath": "assets/ui/macros/ui_screen_positions_macro"
     },
     {
-        "name": "unit_combat_ar_cockpit_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/legacy/props/cockpit_bridge/macros/unit_combat_ar_cockpit_macro"
-    },
-    {
         "name": "unittestdockstation_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/system/test/macros/unittestdockstation_macro"
+    },
+    {
+        "name": "unit_combat_ar_cockpit_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/legacy/props/cockpit_bridge/macros/unit_combat_ar_cockpit_macro"
     },
     {
         "name": "universe_timelines_1_c701_s01_zone_01_macro",
@@ -18430,14 +18485,14 @@
         "fullPath": "assets/wares/macros/ware_inventory_delirium_macro"
     },
     {
-        "name": "ware_inventory_disruptedengine_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/wares/macros/ware_inventory_disruptedengine_macro"
-    },
-    {
         "name": "ware_inventory_disruptedenginenotdistroyed_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/wares/macros/ware_inventory_disruptedenginenotdistroyed_macro"
+    },
+    {
+        "name": "ware_inventory_disruptedengine_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/wares/macros/ware_inventory_disruptedengine_macro"
     },
     {
         "name": "ware_inventory_dnasample_macro",
@@ -18565,11 +18620,6 @@
         "fullPath": "assets/wares/macros/ware_inventory_interfaceunit_macro"
     },
     {
-        "name": "ware_inventory_kyoncrystal_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/wares/macros/ware_inventory_kyoncrystal_macro"
-    },
-    {
         "name": "ware_inventory_kyoncrystallite_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/wares/macros/ware_inventory_kyoncrystallite_macro"
@@ -18578,6 +18628,11 @@
         "name": "ware_inventory_kyoncrystalshard_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/wares/macros/ware_inventory_kyoncrystalshard_macro"
+    },
+    {
+        "name": "ware_inventory_kyoncrystal_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/wares/macros/ware_inventory_kyoncrystal_macro"
     },
     {
         "name": "ware_inventory_lastwillandtestament_macro",
@@ -18725,14 +18780,14 @@
         "fullPath": "assets/wares/macros/ware_inventory_securecontainer_macro"
     },
     {
-        "name": "ware_inventory_securityapparatus_macro",
-        "dataFolder": "ego_dlc_pirate",
-        "fullPath": "assets/wares/macros/ware_inventory_securityapparatus_macro"
-    },
-    {
         "name": "ware_inventory_securityapparatuschip_macro",
         "dataFolder": "ego_dlc_pirate",
         "fullPath": "assets/wares/macros/ware_inventory_securityapparatuschip_macro"
+    },
+    {
+        "name": "ware_inventory_securityapparatus_macro",
+        "dataFolder": "ego_dlc_pirate",
+        "fullPath": "assets/wares/macros/ware_inventory_securityapparatus_macro"
     },
     {
         "name": "ware_inventory_sedative_macro",
@@ -18915,6 +18970,11 @@
         "fullPath": "assets/wares/macros/ware_microchips_macro"
     },
     {
+        "name": "ware_missilecomponents_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/wares/macros/ware_missilecomponents_macro"
+    },
+    {
         "name": "ware_missile_cluster_heavy_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/wares/macros/ware_missile_cluster_heavy_macro"
@@ -18990,19 +19050,14 @@
         "fullPath": "assets/wares/macros/ware_missile_torpedo_light_macro"
     },
     {
-        "name": "ware_missilecomponents_macro",
+        "name": "ware_nividiumgems_macro",
         "dataFolder": "vanilla",
-        "fullPath": "assets/wares/macros/ware_missilecomponents_macro"
+        "fullPath": "assets/wares/macros/ware_nividiumgems_macro"
     },
     {
         "name": "ware_nividium_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/wares/macros/ware_nividium_macro"
-    },
-    {
-        "name": "ware_nividiumgems_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/wares/macros/ware_nividiumgems_macro"
     },
     {
         "name": "ware_noicon_macro",
@@ -19065,11 +19120,6 @@
         "fullPath": "assets/wares/macros/ware_shieldcomponents_macro"
     },
     {
-        "name": "ware_silicon_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/wares/macros/ware_silicon_macro"
-    },
-    {
         "name": "ware_siliconcarbide_macro",
         "dataFolder": "ego_dlc_terran",
         "fullPath": "assets/wares/macros/ware_siliconcarbide_macro"
@@ -19078,6 +19128,11 @@
         "name": "ware_siliconwafers_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/wares/macros/ware_siliconwafers_macro"
+    },
+    {
+        "name": "ware_silicon_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/wares/macros/ware_silicon_macro"
     },
     {
         "name": "ware_smartchips_macro",
@@ -19285,6 +19340,36 @@
         "fullPath": "assets/props/weaponsystems/standard/macros/weapon_gen_lasertower_01_mk2_macro"
     },
     {
+        "name": "weapon_gen_mine_01_a_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_01_a_macro"
+    },
+    {
+        "name": "weapon_gen_mine_01_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_01_macro"
+    },
+    {
+        "name": "weapon_gen_mine_02_a_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_02_a_macro"
+    },
+    {
+        "name": "weapon_gen_mine_02_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_02_macro"
+    },
+    {
+        "name": "weapon_gen_mine_02_story_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_02_story_macro"
+    },
+    {
+        "name": "weapon_gen_mine_03_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_03_macro"
+    },
+    {
         "name": "weapon_gen_m_beam_01_mk1_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/props/weaponsystems/energy/macros/weapon_gen_m_beam_01_mk1_macro"
@@ -19393,36 +19478,6 @@
         "name": "weapon_gen_m_yacht_01_mk1_video_macro",
         "dataFolder": "ego_dlc_pirate",
         "fullPath": "assets/props/weaponsystems/standard/macros/weapon_gen_m_yacht_01_mk1_video_macro"
-    },
-    {
-        "name": "weapon_gen_mine_01_a_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_01_a_macro"
-    },
-    {
-        "name": "weapon_gen_mine_01_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_01_macro"
-    },
-    {
-        "name": "weapon_gen_mine_02_a_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_02_a_macro"
-    },
-    {
-        "name": "weapon_gen_mine_02_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_02_macro"
-    },
-    {
-        "name": "weapon_gen_mine_02_story_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_02_story_macro"
-    },
-    {
-        "name": "weapon_gen_mine_03_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_gen_mine_03_macro"
     },
     {
         "name": "weapon_gen_s_beam_01_mk1_macro",
@@ -19605,6 +19660,11 @@
         "fullPath": "assets/props/weaponsystems/capital/macros/weapon_spl_l_destroyer_01_mk1_macro"
     },
     {
+        "name": "weapon_spl_mine_01_macro",
+        "dataFolder": "ego_dlc_split",
+        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_spl_mine_01_macro"
+    },
+    {
         "name": "weapon_spl_m_gatling_01_mk1_macro",
         "dataFolder": "ego_dlc_split",
         "fullPath": "assets/props/weaponsystems/heavy/macros/weapon_spl_m_gatling_01_mk1_macro"
@@ -19643,11 +19703,6 @@
         "name": "weapon_spl_m_sticky_01_mk2_macro",
         "dataFolder": "ego_dlc_split",
         "fullPath": "assets/props/weaponsystems/heavy/macros/weapon_spl_m_sticky_01_mk2_macro"
-    },
-    {
-        "name": "weapon_spl_mine_01_macro",
-        "dataFolder": "ego_dlc_split",
-        "fullPath": "assets/props/weaponsystems/mines/macros/weapon_spl_mine_01_macro"
     },
     {
         "name": "weapon_spl_s_gatling_01_mk1_macro",
@@ -19845,11 +19900,6 @@
         "fullPath": "assets/props/weaponsystems/standard/macros/weapon_xen_s_laser_01_mk1_macro"
     },
     {
-        "name": "weld_laser_01_mk1_macro",
-        "dataFolder": "vanilla",
-        "fullPath": "assets/fx/misc/macros/weld_laser_01_mk1_macro"
-    },
-    {
         "name": "welding_light_blue_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/fx/weaponfx/macros/welding_light_blue_macro"
@@ -19858,6 +19908,11 @@
         "name": "welding_light_macro",
         "dataFolder": "vanilla",
         "fullPath": "assets/legacy/fx/misc/macros/welding_light_macro"
+    },
+    {
+        "name": "weld_laser_01_mk1_macro",
+        "dataFolder": "vanilla",
+        "fullPath": "assets/fx/misc/macros/weld_laser_01_mk1_macro"
     },
     {
         "name": "welfare_bor_artacademy_01_macro",

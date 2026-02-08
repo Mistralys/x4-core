@@ -19,15 +19,6 @@ use X4Tests\Helpers\X4TestCase;
  * Tests for the MacroFileDefs collection which manages
  * the macro index (macro name → file path mappings).
  *
- * **ARCHITECTURAL LIMITATION**: The MacroFileDefs class uses BaseStringPrimaryCollection
- * which requires unique IDs. However, the macro-index.json data contains duplicate macro
- * names across different data sources (vanilla + DLCs). This causes the collection to fail
- * during initialization.
- *
- * **STATUS**: All tests are currently skipped until the architectural issue is resolved.
- * The collection needs to be refactored to use a composite key (macro name + data source)
- * or a different collection pattern that supports duplicates.
- *
  * @package X4Tests
  * @subpackage Database\MacroIndex
  */
@@ -253,13 +244,33 @@ final class MacroCollectionTests extends X4TestCase
     }
 
     /**
-     * Test that the collection handles macro entries from multiple data sources
-     * Note: Due to the way the base collection works, duplicate macro IDs across
-     * different data sources may cause the later entries to overwrite earlier ones.
-     * This is a known limitation of using StringPrimaryCollection for this data type.
+     * Test that the collection handles macro entries from multiple data sources.
+     * With the extracted data now preserving duplicates, we should find multiple
+     * entries for common macros like 'cluster_sm3_background_macro' which exists
+     * in vanilla and most DLCs.
      */
     public function test_collectionHandlesDuplicateMacroNames(): void
     {
-        $this->markTestSkipped('Macro index has known issue with duplicate IDs across data sources');
+        $macroName = 'cluster_sm3_background_macro';
+        $macros = $this->getMacroIndex()->findAllByMacroName($macroName);
+
+        $this->assertGreaterThan(1, count($macros), 'Should find multiple definitions for '.$macroName);
+        
+        $folders = [];
+        foreach ($macros as $macro) {
+            $folders[] = $macro->getDataFolderID();
+        }
+        
+        $this->assertContains('vanilla', $folders);
+        // It is also in DLCs (e.g. ego_dlc_terran, ego_dlc_split etc)
+        // We just verify we have more than just vanilla
+        $hasDLC = false;
+        foreach($folders as $folder) {
+            if($folder !== 'vanilla') {
+                $hasDLC = true;
+                break;
+            }
+        }
+        $this->assertTrue($hasDLC, 'Should include DLC versions of the macro');
     }
 }

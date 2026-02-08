@@ -425,4 +425,40 @@ final class DatabaseBuilderTests extends X4TestCase
             );
         }
     }
+
+    public function test_buildProcess() : void
+    {
+        $start = microtime(true);
+        
+        DatabaseBuilder::build();
+        
+        $duration = microtime(true) - $start;
+        
+        $this->assertLessThan(120, $duration, 'Build process took too long (> 120s).');
+    }
+
+    public function test_rebuildIdempotent() : void
+    {
+        // Run build once (or assume previous test ran it, but good to ensure state)
+        DatabaseBuilder::build();
+        $hashes1 = $this->hashDataFiles();
+        
+        // Run again
+        DatabaseBuilder::build();
+        $hashes2 = $this->hashDataFiles();
+        
+        $this->assertEquals($hashes1, $hashes2, 'Rebuild produced different files.');
+    }
+
+    private function hashDataFiles() : array
+    {
+        $dataFolder = __DIR__.'/../../../../data';
+        $files = glob($dataFolder.'/*.json');
+        $hashes = [];
+        foreach($files as $file) {
+            $hashes[basename($file)] = md5_file($file);
+        }
+        return $hashes;
+    }
 }
+
