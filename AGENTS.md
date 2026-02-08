@@ -268,7 +268,7 @@ If user request conflicts with items 1-6, **explicitly state the conflict** and 
 - **Core Layer:** 5 classes (Application, Exceptions)
 
 ### Key Numbers
-- **Collections:** 8 major (Factions, Wares, Ships, Modules, Blueprints, DataSources, Translations, MacroIndex)
+- **Collections:** 9 major (Factions, Wares, Ships, Modules, Blueprints, DataSources, Translations, MacroIndex, SlotTypes)
 - **Finders:** 4 (Wares, Ships, Modules, Blueprints)
 - **UI Components:** 5 (Button, Icon, Text, DataGrid, Console)
 - **Page Types:** 3 (BasePage, BasePageWithNav, BaseSubPage)
