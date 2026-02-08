@@ -243,6 +243,22 @@ class ModuleTests extends X4TestCase
         }
     }
 
+    public function test_getProducedWares() : void
+    {
+        $module = $this->getSampleModule();
+        $wares = $module->getProducedWares();
+
+        $this->assertIsArray($wares);
+
+        // Find a known production module to verify it has wares
+        $prodModule = ModuleDefs::getInstance()->find('module_arg_prod_foodrations_01');
+        if($prodModule === null) {
+            $this->markTestSkipped('Could not find sample production module.');
+        }
+
+        $this->assertNotEmpty($prodModule->getProducedWares());
+    }
+
     // =========================================================================
     // Helper Methods
     // =========================================================================

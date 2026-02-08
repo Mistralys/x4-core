@@ -14,7 +14,7 @@ use Mistralys\X4\X4Application;
  * @method FactionDef[] getAll()
  * @method FactionDef getDefault()
  */
-class FactionDefs extends BaseStringPrimaryCollection implements ItemCollectionInterface
+class FactionDefs extends BaseStringPrimaryCollection
 {
     public const SHORT_ID_ATF = 'atf';
     public const SHORT_ID_PIR = 'pir';

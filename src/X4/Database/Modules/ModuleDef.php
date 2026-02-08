@@ -45,6 +45,10 @@ class ModuleDef implements CollectionItemInterface
     private int $housingCapacity;
     private string $housingFactionID;
     private VariantID $variantID;
+    /**
+     * @var string[]
+     */
+    private array $waresProduced;
 
     public function __construct(
         string $wareID,
@@ -59,7 +63,8 @@ class ModuleDef implements CollectionItemInterface
         string $cargoType,
         int $housingCapacity,
         string $housingFactionID,
-        VariantID $variantID
+        VariantID $variantID,
+        array $waresProduced
     )
     {
         $this->wareID = $wareID;
@@ -75,6 +80,7 @@ class ModuleDef implements CollectionItemInterface
         $this->housingCapacity = $housingCapacity;
         $this->housingFactionID = $housingFactionID;
         $this->variantID = $variantID;
+        $this->waresProduced = $waresProduced;
 
         if(empty($this->builderFactionID)) {
             $this->builderFactionID = KnownFactions::FACTION_GENERIC;
@@ -98,7 +104,8 @@ class ModuleDef implements CollectionItemInterface
             $data->getString(self::KEY_CARGO_TYPE),
             $data->getInt(self::KEY_HOUSING_CAPACITY),
             $data->getString(self::KEY_HOUSING_FACTION_ID),
-            VariantID::fromID($data->getString(self::KEY_VARIANT_ID))
+            VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
+            $data->getArray(self::KEY_WARES_PRODUCED)
         );
     }
 
@@ -197,5 +204,13 @@ class ModuleDef implements CollectionItemInterface
     public function isProduction() : bool
     {
         return $this->getCategory()->isProduction();
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getProducedWares() : array
+    {
+        return $this->waresProduced;
     }
 }

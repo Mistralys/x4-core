@@ -23,7 +23,6 @@ abstract class BlueprintDef implements CollectionItemInterface
 
     private string $id;
     private BlueprintCategoryInterface $category;
-    private ?FactionDef $race = null;
     private string $label;
     private VariantID $variantID;
 
@@ -90,15 +89,5 @@ abstract class BlueprintDef implements CollectionItemInterface
     public function getName(): string
     {
         return $this->id;
-    }
-
-    public function getRace() : ?FactionDef
-    {
-        return $this->race;
-    }
-
-    public function getRaceID() : string
-    {
-        return $this->race->getID();
     }
 }
