@@ -106,14 +106,20 @@ class ShipsExtractor
             return;
         }
 
-        $dom = MacroFileDefs::getInstance()->getByID($def->getMacroID())->getDOM();
+        $dom = MacroFileDefs::getInstance()->getByMacroName(
+            $def->getMacroID(),
+            $def->getDataSourceID()
+        )->getDOM();
         $shipID = $def->getID();
 
         $alias = $this->resolveParentMacro($dom);
 
         $domAlias = null;
         if(!empty($alias)) {
-            $domAlias = MacroFileDefs::getInstance()->getByID($alias)->getDOM();
+            $domAlias = MacroFileDefs::getInstance()->getByMacroName(
+                $alias,
+                $def->getDataSourceID()
+            )->getDOM();
         }
 
         $this->ships[$shipID] = array(

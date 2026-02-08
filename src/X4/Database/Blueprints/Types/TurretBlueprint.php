@@ -11,6 +11,6 @@ class TurretBlueprint extends BlueprintDef
 {
     public function getTypeLabel() : string
     {
-        return t('Ship');
+        return t('Turret');
     }
 }

@@ -12,6 +12,36 @@ use X4Tests\Helpers\X4TestCase;
 
 final class ShipBlueprintTests extends X4TestCase
 {
+    private function getShipBlueprint(string $id = 'ship_arg_m_miner_liquid_01_a'): ShipBlueprint
+    {
+        return BlueprintCategories::getInstance()->selectType()->ships()->getBlueprintByID($id);
+    }
+
+    public function test_getShip(): void 
+    {
+        $blueprint = $this->getShipBlueprint();
+        $this->assertEquals($blueprint->getID(), $blueprint->getShip()->getID());
+    }
+    
+    public function test_getWare(): void
+    {
+        $blueprint = $this->getShipBlueprint();
+        $this->assertEquals($blueprint->getID(), $blueprint->getWare()->getID());
+    }
+    
+    public function test_getCategory(): void
+    {
+        $blueprint = $this->getShipBlueprint();
+        $this->assertInstanceOf(\Mistralys\X4\Database\Blueprints\Categories\Types\ShipCategory::class, $blueprint->getCategory());
+        $this->assertSame(\Mistralys\X4\Database\Blueprints\Categories\Types\ShipCategory::CATEGORY_ID, $blueprint->getCategoryID());
+    }
+    
+    public function test_getTypeLabel(): void
+    {
+        $blueprint = $this->getShipBlueprint();
+        $this->assertNotEmpty($blueprint->getTypeLabel());
+    }
+
     public function test_allShipsHaveAClass() : void
     {
         $ships = BlueprintCategories::getInstance()->selectType()->ships()->getBlueprints();

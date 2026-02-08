@@ -64,6 +64,41 @@ class MacroFileDefs extends BaseStringPrimaryCollection
         return $this->getAutoDefault();
     }
 
+    /**
+     * Retrieves a macro by its name and data folder.
+     * This is the recommended way to lookup macros when you have
+     * a simple macro name and know which data source it belongs to.
+     *
+     * @param string $name The macro name (e.g., "ship_arg_s_fighter_01_a_macro")
+     * @param string $dataFolderID The data folder ID (defaults to "vanilla")
+     * @return MacroFileDef
+     * @throws \Mistralys\X4\X4Exception If the macro is not found
+     */
+    public function getByMacroName(string $name, string $dataFolderID = 'vanilla'): MacroFileDef
+    {
+        return $this->getByID($dataFolderID . '::' . $name);
+    }
+
+    /**
+     * Finds all variants of a macro across all data folders.
+     * Useful when you want to see all DLC overrides of a macro.
+     *
+     * @param string $name The macro name to search for
+     * @return MacroFileDef[]
+     */
+    public function findAllByMacroName(string $name): array
+    {
+        $result = array();
+        
+        foreach ($this->getAll() as $macro) {
+            if ($macro->getMacroName() === $name) {
+                $result[] = $macro;
+            }
+        }
+        
+        return $result;
+    }
+
     protected function registerItems(): void
     {
         foreach($this->dataFile->getData() as $macro) {

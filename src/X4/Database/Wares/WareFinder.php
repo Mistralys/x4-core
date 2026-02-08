@@ -88,10 +88,8 @@ class WareFinder extends BaseFinder implements DataSourceSelectionInterface
             return false;
         }
 
-        foreach ($this->groups as $group) {
-            if ($item->getGroupID() !== $group) {
-                return false;
-            }
+        if (!empty($this->groups) && !in_array($item->getGroupID(), $this->groups, true)) {
+            return false;
         }
 
         if(!$this->isLabelMatch($item->getLabel())) {

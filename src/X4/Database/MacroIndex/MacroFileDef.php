@@ -38,7 +38,25 @@ class MacroFileDef implements StringPrimaryRecordInterface
         $this->dataFolderID = $dataFolderID;
     }
 
+    /**
+     * Returns the composite ID in the format "dataFolder::macroName".
+     * This ensures uniqueness across DLC inheritance where the same
+     * macro name can appear in multiple data folders.
+     *
+     * @return string Example: "vanilla::ship_arg_s_fighter_01_a_macro"
+     */
     public function getID() : string
+    {
+        return $this->dataFolderID . '::' . $this->name;
+    }
+
+    /**
+     * Returns only the macro name without the data folder prefix.
+     * Use this when you need just the macro identifier.
+     *
+     * @return string Example: "ship_arg_s_fighter_01_a_macro"
+     */
+    public function getMacroName() : string
     {
         return $this->name;
     }

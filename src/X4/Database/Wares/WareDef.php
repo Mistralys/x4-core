@@ -140,7 +140,10 @@ class WareDef implements CollectionItemInterface
 
     public function getMacro() : MacroFileDef
     {
-        return MacroFileDefs::getInstance()->getByID($this->getMacroID());
+        return MacroFileDefs::getInstance()->getByMacroName(
+            $this->getMacroID(),
+            $this->getDataSourceID()
+        );
     }
 
     /**
