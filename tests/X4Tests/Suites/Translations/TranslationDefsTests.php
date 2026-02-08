@@ -51,15 +51,10 @@ final class TranslationDefsTests extends X4TestCase
      */
     public function test_exists_false(): void
     {
-        // Use a language ID that exists but hasn't been extracted
-        $translator = new TranslationDefs(Languages::LANGUAGE_GERMAN);
+        // Use a language ID that definitely does not exist
+        $translator = new TranslationDefs(99999);
         
-        // Only if German hasn't been extracted yet
-        if (!$translator->exists()) {
-            $this->assertFalse($translator->exists(), 'Non-extracted language should return false');
-        } else {
-            $this->markTestSkipped('German language already extracted');
-        }
+        $this->assertFalse($translator->exists(), 'Non-extracted language should return false');
     }
 
     /**

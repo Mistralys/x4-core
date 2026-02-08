@@ -58,7 +58,7 @@ class FactionsExtractorTests extends X4TestCase
         $this->assertArrayHasKey('khaak', $map);
         
         // DLC factions
-        $this->assertArrayHasKey('zyarth', $map); 
+        $this->assertArrayHasKey('split', $map); 
         $this->assertArrayHasKey('terran', $map);
         $this->assertArrayHasKey('pioneers', $map);
         $this->assertArrayHasKey('boron', $map);
