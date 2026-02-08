@@ -13,6 +13,7 @@ use AppUtils\FileHelper\FileInfo;
 use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\Database\Factions\FactionDefs;
+use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
 use Mistralys\X4\Database\Translations\Language;
 use Mistralys\X4\Database\Translations\Languages;
 use Mistralys\X4\Database\Wares\WareDef;
@@ -246,18 +247,91 @@ class WaresExtractor
         if($componentEl !== null) {
             $componentID = $componentEl->getAttribute('ref');
         }
+        
+        $xmlGroup = $wareElement->getAttribute('group');
+        $specs = ['size' => '', 'tags' => []];
+
+        if(!empty($componentID) && ($xmlGroup === 'ships' || $xmlGroup === 'modules' || in_array(self::TAG_EQUIPMENT, $tags, true) || in_array(self::TAG_SHIP, $tags, true))) {
+             $specs = $this->extractComponentDetails($componentID, $dataFolder);
+        }
 
         $ware = array(
             WareDef::KEY_WARE_ID => $id,
             WareDef::KEY_LABEL => $this->language->ts($wareElement->getAttribute('name')),
-            WareDef::KEY_GROUP => $wareElement->getAttribute('group'),
+            WareDef::KEY_GROUP => $xmlGroup,
             WareDef::KEY_MACRO_ID => $componentID,
             WareDef::KEY_VARIANT_ID => (string)VariantID::resolveWareVariantID($id),
             WareDef::KEY_TAGS => $tags,
             WareDef::KEY_DATA_SOURCE_ID => $dataFolder->getID(),
             WareDef::KEY_FACTIONS => $factionIDs,
+            WareDef::KEY_SPECS => $specs
         );
 
         $this->wares[] = $ware;
+    }
+
+    /**
+     * @return array{size:string,tags:string[]}
+     */
+    private function extractComponentDetails(string $macroID, DataFolder $dataFolder) : array
+    {
+        $result = ['size' => '', 'tags' => []];
+
+        try {
+            $macro = MacroFileDefs::getInstance()->getByMacroName($macroID, $dataFolder->getID());
+            if (!$macro) return $result; 
+
+             $macroDOM = $macro->getDOM();
+             // Some macros use 'component ref=".."'
+             $compRefEl = $macroDOM->byTagName('component')->getFirst();
+             if(!$compRefEl) return $result;
+             
+             $ref = $compRefEl->getAttribute('ref');
+             if(!$ref) return $result;
+             
+             // Path logic: Assume standard structure ../[component].xml relative to macro folder
+             $macroFolder = $macro->getFile()->getFolderPath();
+             $parentFolder = dirname($macroFolder);
+             // Note: file path construction depends on OS, but PHP handles / fine
+             $compPath = $parentFolder . '/' . $ref . '.xml';
+             
+             if(file_exists($compPath)) {
+                 $compDOM = DOMExtended::createFromFile($compPath);
+                 
+                 // Look for 'container' connection
+                 $container = $compDOM->bySelector('connection[name="container"]')->getFirst();
+                 $rawTags = [];
+                 
+                 if($container) {
+                     $rawTags = ConvertHelper::explodeTrim(' ', $container->getAttribute('tags'));
+                 } else {
+                     // Fallback: connection01
+                     $c01 = $compDOM->bySelector('connection[name="connection01"]')->getFirst();
+                     if($c01) $rawTags = ConvertHelper::explodeTrim(' ', $c01->getAttribute('tags'));
+                 }
+                 
+                 $result['tags'] = $rawTags;
+                 foreach($rawTags as $tag) {
+                     if($tag === 'small' || $tag === 'size_s') $result['size'] = 's';
+                     if($tag === 'medium' || $tag === 'size_m') $result['size'] = 'm';
+                     if($tag === 'large' || $tag === 'size_l') $result['size'] = 'l';
+                     if($tag === 'extra_large' || $tag === 'extralarge' || $tag === 'size_xl') $result['size'] = 'xl';
+                 }
+             }
+
+             // Heuristic Fallback: If size not found in tags, try to parse from macro name
+             if (empty($result['size'])) {
+                 $name = strtolower($macroID);
+                 if (preg_match('/_(size_s|s)_/', $name)) $result['size'] = 's';
+                 elseif (preg_match('/_(size_m|m)_/', $name)) $result['size'] = 'm';
+                 elseif (preg_match('/_(size_l|l)_/', $name)) $result['size'] = 'l';
+                 elseif (preg_match('/_(size_xl|xl)_/', $name)) $result['size'] = 'xl';
+             }
+
+        } catch (\Throwable $e) {
+            // Ignore missing macros or files
+        }
+
+        return $result;
     }
 }

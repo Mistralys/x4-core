@@ -38,6 +38,7 @@ class WareDef implements CollectionItemInterface
     public const KEY_FACTIONS = 'factions';
     public const KEY_MACRO_ID = 'macroID';
     public const KEY_VARIANT_ID = 'variantID';
+    public const KEY_SPECS = 'specs';
 
     private string $id;
     private string $label;
@@ -57,6 +58,11 @@ class WareDef implements CollectionItemInterface
     private array $factionIDs;
     private string $macroID;
     private VariantID $variantID;
+    
+    /**
+     * @var array{size:string,tags:string[]}
+     */
+    private array $specs;
 
     /**
      * @param string $id
@@ -67,9 +73,19 @@ class WareDef implements CollectionItemInterface
      * @param string[] $tags
      * @param string $dataSourceID
      * @param string[] $factionIDs
+     * @param array{size:string,tags:string[]} $specs
      */
-    public function __construct(string $id, string $macroID, string $label, string $groupID, VariantID $variantID, array $tags, string $dataSourceID, array $factionIDs)
-    {
+    public function __construct(
+        string $id, 
+        string $macroID, 
+        string $label, 
+        string $groupID, 
+        VariantID $variantID, 
+        array $tags, 
+        string $dataSourceID, 
+        array $factionIDs,
+        array $specs
+    ) {
         $this->id = $id;
         $this->label = $label;
         $this->groupID = $groupID;
@@ -78,6 +94,7 @@ class WareDef implements CollectionItemInterface
         $this->tags = $tags;
         $this->dataSourceID = $dataSourceID;
         $this->factionIDs = $factionIDs;
+        $this->specs = $specs;
     }
 
     public function getID() : string
@@ -186,13 +203,39 @@ class WareDef implements CollectionItemInterface
             VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
             $data->getArray(self::KEY_TAGS),
             $data->getString(self::KEY_DATA_SOURCE_ID),
-            $data->getArray(self::KEY_FACTIONS)
+            $data->getArray(self::KEY_FACTIONS),
+            $data->getArray(self::KEY_SPECS)
         );
     }
 
     public function hasTag(string $tag) : bool
     {
         return in_array($tag, $this->tags, true);
+    }
+    
+    /**
+     * Gets the physical specifications of the item component (Size, compatibility tags).
+     * @return array{size:string,tags:string[]}
+     */
+    public function getSpecs() : array
+    {
+        return $this->specs;
+    }
+    
+    public function getSize() : string
+    {
+        return $this->specs['size'] ?? '';
+    }
+    
+    /**
+     * @return string[]
+     */
+    public function getCompatibilityTags() : array
+    {
+        $specTags = $this->specs['tags'] ?? [];
+        $wareTags = $this->getTags();
+
+        return array_unique(array_merge($specTags, $wareTags));
     }
 
     public function toArray() : array
@@ -205,7 +248,8 @@ class WareDef implements CollectionItemInterface
             self::KEY_TAGS => $this->getTags(),
             self::KEY_DATA_SOURCE_ID => $this->getDataSourceID(),
             self::KEY_FACTIONS => $this->getFactionIDs(),
-            self::KEY_MACRO_ID => $this->getMacroID()
+            self::KEY_MACRO_ID => $this->getMacroID(),
+            self::KEY_SPECS => $this->getSpecs()
         );
     }
 }

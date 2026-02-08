@@ -13,7 +13,9 @@ use Mistralys\X4\Database\DataSources\DataSourceDefs;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
 use Mistralys\X4\Database\Factions\KnownFactions;
+use Mistralys\X4\Database\Ships\Equipment\ShipSlotDefinition;
 use Mistralys\X4\Database\SlotTypes\KnownSlotTypes;
+use Mistralys\X4\Database\Wares\WareDef;
 
 class ShipDef implements CollectionItemInterface
 {
@@ -35,6 +37,7 @@ class ShipDef implements CollectionItemInterface
     public const KEY_PEOPLE = 'people';
     public const KEY_STORAGE_MISSILE = 'storageMissile';
     public const KEY_SLOTS = 'slots';
+    public const KEY_EQUIPMENT = 'equipment';
 
     private string $id;
     private string $classID;
@@ -58,6 +61,11 @@ class ShipDef implements CollectionItemInterface
      * @var array<string,int>
      */
     private array $slots;
+    
+    /**
+     * @var array<string,mixed>
+     */
+    private array $equipment;
 
     /**
      * @var string[]
@@ -81,6 +89,7 @@ class ShipDef implements CollectionItemInterface
      * @param int $people Crew capacity.
      * @param int $storageMissile Missile storage capacity.
      * @param array<string,int> $slots Map of slot type ID to count.
+     * @param array<string,mixed> $equipment Detailed equipment slots.
      */
     public function __construct(
         string $id,
@@ -98,7 +107,8 @@ class ShipDef implements CollectionItemInterface
         float $inertiaPitch,
         int $people,
         int $storageMissile,
-        array $slots
+        array $slots,
+        array $equipment
     )
     {
         $this->id = $id;
@@ -117,6 +127,7 @@ class ShipDef implements CollectionItemInterface
         $this->people = $people;
         $this->storageMissile = $storageMissile;
         $this->slots = $slots;
+        $this->equipment = $equipment;
     }
 
     public static function fromArray(array $def) : ShipDef
@@ -139,8 +150,17 @@ class ShipDef implements CollectionItemInterface
             $data->getFloat(self::KEY_INERTIA_PITCH, 0.0),
             $data->getInt(self::KEY_PEOPLE, 0),
             $data->getInt(self::KEY_STORAGE_MISSILE, 0),
-            $data->getArray(self::KEY_SLOTS)
+            $data->getArray(self::KEY_SLOTS),
+            $data->getArray(self::KEY_EQUIPMENT)
         );
+    }
+
+    /**
+     * @return array<string,mixed>
+     */
+    public function getEquipment() : array
+    {
+        return $this->equipment;
     }
 
     public function getID(): string
@@ -298,6 +318,56 @@ class ShipDef implements CollectionItemInterface
         return $this->getSlotCount(KnownSlotTypes::ENGINE);
     }
 
+    /**
+     * @param string|null $type Optional filter (engines, shields, turrets, weapons, docks, countermeasures)
+     * @return ShipSlotDefinition[]
+     */
+    public function getEquipmentGroups(?string $type = null) : array
+    {
+        $result = [];
+        $sources = $this->equipment;
+        
+        if ($type !== null) {
+            if (!isset($sources[$type])) {
+                return [];
+            }
+            $sources = [$type => $sources[$type]];
+        }
+
+        foreach ($sources as $groupData) {
+            // Handle single object (like Engines) vs Array of objects (like Shields)
+            if (isset($groupData['size']) || isset($groupData['count'])) {
+                // Single object
+                $result[] = ShipSlotDefinition::fromArray($groupData);
+            } elseif (is_array($groupData)) {
+                // Array of objects
+                foreach ($groupData as $item) {
+                    if (is_array($item)) {
+                        $result[] = ShipSlotDefinition::fromArray($item);
+                    }
+                }
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * Checks if the ship has at least one slot compatible with the given ware.
+     * 
+     * @param WareDef $ware
+     * @return bool
+     */
+    public function canEquip(WareDef $ware) : bool
+    {
+        $slots = $this->getEquipmentGroups();
+        foreach ($slots as $slot) {
+            if ($slot->canEquip($ware)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public function toArray(): array
     {
         return array(
@@ -316,7 +386,8 @@ class ShipDef implements CollectionItemInterface
             self::KEY_INERTIA_PITCH => $this->inertiaPitch,
             self::KEY_PEOPLE => $this->people,
             self::KEY_STORAGE_MISSILE => $this->storageMissile,
-            self::KEY_SLOTS => $this->slots
+            self::KEY_SLOTS => $this->slots,
+            self::KEY_EQUIPMENT => $this->equipment
         );
     }
 }

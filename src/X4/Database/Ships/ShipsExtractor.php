@@ -127,6 +127,22 @@ class ShipsExtractor
 
         $stats = $this->extractStats($dom, $domAlias);
 
+        $slots = [];
+        $equipment = [];
+
+        $ref = $this->getAttributeFromDOM($dom, 'component', 'ref');
+        if(!$ref && $domAlias) {
+            $ref = $this->getAttributeFromDOM($domAlias, 'component', 'ref');
+        }
+
+        if(!empty($ref)) {
+            $componentDom = $this->resolveComponentDOM($ref, $macroDef);
+            if($componentDom) {
+                $slots = $this->countSlots($componentDom);
+                $equipment = $this->extractEquipment($componentDom);
+            }
+        }
+
         $this->ships[$shipID] = array(
             ShipDef::KEY_WARE_ID => $shipID,
             ShipDef::KEY_LABEL => $def->getLabel(),
@@ -142,8 +158,24 @@ class ShipsExtractor
             ShipDef::KEY_INERTIA_PITCH => $stats[ShipDef::KEY_INERTIA_PITCH],
             ShipDef::KEY_PEOPLE => $stats[ShipDef::KEY_PEOPLE],
             ShipDef::KEY_STORAGE_MISSILE => $stats[ShipDef::KEY_STORAGE_MISSILE],
-            ShipDef::KEY_SLOTS => $this->extractSlots($dom, $domAlias, $macroDef)
+            ShipDef::KEY_SLOTS => $slots,
+            ShipDef::KEY_EQUIPMENT => $equipment
         );
+    }
+
+    private function extractEquipment(DOMExtended $componentDom): array
+    {
+        $aggregator = new ShipSlotAggregator();
+        $connections = $componentDom->byTagName('connection')->getAll();
+        foreach($connections as $conn) {
+             $tags = $conn->getAttribute('tags');
+             $aggregator->addStructureConnection([
+                 'name' => $conn->getAttribute('name'),
+                 'group' => $conn->getAttribute('group'),
+                 'tags' => !empty($tags) ? explode(' ', $tags) : []
+             ]);
+        }
+        return $aggregator->getAggregatedData();
     }
 
     private function resolveShipClass(DOMExtended $dom, string $shipID) : string
@@ -260,24 +292,7 @@ class ShipsExtractor
         ];
     }
 
-    private function extractSlots(DOMExtended $dom, ?DOMExtended $domAlias, MacroFileDef $macroDef) : array
-    {
-        $ref = $this->getAttributeFromDOM($dom, 'component', 'ref');
-        if(!$ref && $domAlias) {
-            $ref = $this->getAttributeFromDOM($domAlias, 'component', 'ref');
-        }
 
-        if(empty($ref)) {
-            return [];
-        }
-
-        $componentDom = $this->resolveComponentDOM($ref, $macroDef);
-        if(!$componentDom) {
-            return [];
-        }
-
-        return $this->countSlots($componentDom);
-    }
 
     private function resolveComponentDOM(string $ref, MacroFileDef $macroDef) : ?DOMExtended
     {
