@@ -160,7 +160,7 @@ class TranslationExtractor
             }
             else
             {
-                echo '- Reference not found: '.$matchedText.PHP_EOL;
+                Console::line1('Reference not found: %s', $matchedText);
                 $text = str_replace($matchedText, '', $text);
             }
         }
