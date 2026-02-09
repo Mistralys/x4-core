@@ -13,7 +13,9 @@ use AppUtils\FileHelper\FolderInfo;
 use Mistral\X4\Database\Blueprints\BlueprintExtractor;
 use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DataSources\DataSourcesExtractor;
+use Mistralys\X4\Database\Engines\EnginesExtractor;
 use Mistralys\X4\Database\Factions\FactionsExtractor;
+use Mistralys\X4\Database\Shields\ShieldsExtractor;
 use Mistral\X4\Database\Wares\WaresExtractor;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\DataSources\DataSourceDefs;
@@ -96,6 +98,20 @@ class DatabaseBuilder
         new ModuleExtractor(self::getDataFolders())->extract();
     }
 
+    public static function extractEngines() : void
+    {
+        self::init();
+
+        new EnginesExtractor(self::getDataFolders())->extract();
+    }
+
+    public static function extractShields() : void
+    {
+        self::init();
+
+        new ShieldsExtractor(self::getDataFolders())->extract();
+    }
+
     public static function build() : void
     {
         // Prerequisites
@@ -106,6 +122,8 @@ class DatabaseBuilder
         self::extractWares();
 
         // Based on the wares
+        self::extractEngines();
+        self::extractShields();
         self::extractModules();
         self::extractBlueprints();
         self::extractShips();
