@@ -103,6 +103,51 @@ Request Data via Collection
 
 ---
 
+### 2.1. Ship Equipment Query Flow
+
+```
+UI Component / Page
+    │
+    ↓
+Get Ship Instance
+    │
+    └─→ ShipDefs::getInstance()->getByID('ship_arg_l_destroyer_01_a')
+            │
+            └─→ ShipDef instance
+                    │
+                    ↓
+Request Compatible Equipment
+    │
+    ├─→ ship.getEngines()
+    ├─→ ship.getShields()
+    ├─→ ship.getWeapons()
+    └─→ ship.findEquipmentForSlot(slotTypeID)
+            │
+            └─→ ShipEquipmentFinder instance
+                    │
+                    ├─→ selectDataSource(...)
+                    ├─→ selectSize('l')
+                    ├─→ selectTag('equipment')
+                    └─→ getAll()
+                            │
+                            └─→ Filter WareDefs collection
+                                    │
+                                    ├─→ Check ware is equipment
+                                    ├─→ Match ware group to slot type
+                                    ├─→ Verify ship.canEquip(ware)
+                                    ├─→ Apply additional filters
+                                    └─→ Return compatible WareDef[]
+```
+
+**Key Points:**
+- Ship-specific filtering combines slot type + ship compatibility
+- Leverages existing `ShipDef::canEquip()` compatibility logic
+- Pre-filters by ware group for performance (engines, shields, etc.)
+- Returns standard `WareDef` instances (not equipment-specific classes)
+- Supports all Finder features (data source, label search, custom filters)
+
+---
+
 ### 3. Page Rendering Flow
 
 #### Simple Page

@@ -761,6 +761,29 @@ getUsedBy(): array // Returns FactionDef[]
 toArray(): array
 getWareID(): string
 getWare(): WareDef
+
+// Slot count methods
+getSlotCount(string $typeID): int
+countWeapons(): int
+countShields(): int
+countTurrets(): int
+countDockingBays(): int
+countCountermeasures(): int
+countEngines(): int
+
+// Equipment compatibility methods - return finder for compatible equipment
+findEquipmentForSlot(string $slotTypeID): Equipment\ShipEquipmentFinder
+getEngines(): Equipment\ShipEquipmentFinder
+getShields(): Equipment\ShipEquipmentFinder
+getWeapons(): Equipment\ShipEquipmentFinder
+getTurrets(): Equipment\ShipEquipmentFinder
+getCountermeasures(): Equipment\ShipEquipmentFinder
+getDockingBays(): Equipment\ShipEquipmentFinder
+
+// Equipment groups and compatibility checking
+getEquipmentGroups(?string $type = null): array // Returns ShipSlotDefinition[]
+canEquip(WareDef $ware): bool
+getEquipment(): array // Returns raw equipment data
 ```
 
 ---
@@ -781,6 +804,33 @@ getDataSources(): array // Returns DataSourceDef[]
 getByID(string $id): ShipDef
 getAll(): array // Returns ShipDef[]
 getDefault(): ShipDef
+```
+
+---
+
+#### Mistralys\X4\Database\Ships\Equipment\ShipEquipmentFinder
+
+Finder for filtering equipment compatible with a specific ship and slot type.  
+Extends `BaseFinder`, implements `DataSourceSelectionInterface`.
+
+**Usage:**
+```php
+$ship = ShipDefs::getInstance()->getByID('ship_arg_l_destroyer_01_a');
+$engines = $ship->getEngines()
+    ->selectDataSource(KnownDataSources::DATA_SOURCE_BASE_GAME)
+    ->selectSize('l')
+    ->getAll();
+```
+
+##### Methods
+```php
+__construct(ShipDef $ship, string $slotTypeID): void
+getCollection(): ItemCollectionInterface // Returns WareDefs instance
+selectSize(string $size): self // Filter by equipment size (s, m, l, xl)
+selectTag(string $tag): self // Filter by ware tag
+selectDataSource(string|DataSourceDef $source): self // Filter by data source
+selectLabelSearch(string $searchTerm): self // Filter by label text (inherited)
+getAll(): array // Returns WareDef[] matching all filters
 ```
 
 ---

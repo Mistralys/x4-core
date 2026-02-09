@@ -416,12 +416,215 @@ final class ShipDefTests extends X4TestCase
     {
         $ship = $this->getSampleShip();
 
-        $this->assertIsInt($ship->getWeaponSlots());
-        $this->assertIsInt($ship->getShieldSlots());
-        $this->assertIsInt($ship->getTurretSlots());
-        $this->assertIsInt($ship->getDockingBays());
-        $this->assertIsInt($ship->getCountermeasures());
-        $this->assertIsInt($ship->getEngines());
+        $this->assertIsInt($ship->countWeapons());
+        $this->assertIsInt($ship->countShields());
+        $this->assertIsInt($ship->countTurrets());
+        $this->assertIsInt($ship->countDockingBays());
+        $this->assertIsInt($ship->countCountermeasures());
+        $this->assertIsInt($ship->countEngines());
+    }
+
+    // =========================================================================
+    // Equipment Compatibility Tests
+    // =========================================================================
+
+    public function test_getEngines_returnsShipEquipmentFinder(): void
+    {
+        $ship = $this->getSampleShip();
+        $finder = $ship->getEngines();
+        
+        $this->assertInstanceOf(\Mistralys\X4\Database\Ships\Equipment\ShipEquipmentFinder::class, $finder);
+    }
+
+    public function test_getEngines_returnsCompatibleWares(): void
+    {
+        $ship = $this->getSampleShip();
+        $engines = $ship->getEngines()->getAll();
+        
+        $this->assertIsArray($engines);
+        
+        // If ship has engine slots, there should be compatible engines
+        if ($ship->countEngines() > 0) {
+            $this->assertNotEmpty($engines, 'Ship with engine slots should have compatible engines');
+            
+            foreach ($engines as $engine) {
+                $this->assertInstanceOf(\Mistralys\X4\Database\Wares\WareDef::class, $engine);
+                $this->assertTrue($engine->hasTag('equipment'), 'Engine must be tagged as equipment');
+                $this->assertTrue($ship->canEquip($engine), 'Ship should be able to equip the returned engine');
+            }
+        }
+    }
+
+    public function test_getShields_returnsCompatibleWares(): void
+    {
+        $ship = $this->getSampleShip();
+        $shields = $ship->getShields()->getAll();
+        
+        $this->assertIsArray($shields);
+        
+        if ($ship->countShields() > 0) {
+            $this->assertNotEmpty($shields, 'Ship with shield slots should have compatible shields');
+            
+            foreach ($shields as $shield) {
+                $this->assertInstanceOf(\Mistralys\X4\Database\Wares\WareDef::class, $shield);
+                $this->assertTrue($shield->hasTag('equipment'), 'Shield must be tagged as equipment');
+                $this->assertTrue($ship->canEquip($shield), 'Ship should be able to equip the returned shield');
+            }
+        }
+    }
+
+    public function test_getWeapons_returnsCompatibleWares(): void
+    {
+        $ship = $this->getSampleShip();
+        $weapons = $ship->getWeapons()->getAll();
+        
+        $this->assertIsArray($weapons);
+        
+        if ($ship->countWeapons() > 0) {
+            $this->assertNotEmpty($weapons, 'Ship with weapon slots should have compatible weapons');
+            
+            foreach ($weapons as $weapon) {
+                $this->assertInstanceOf(\Mistralys\X4\Database\Wares\WareDef::class, $weapon);
+                $this->assertTrue($weapon->hasTag('equipment'), 'Weapon must be tagged as equipment');
+                $this->assertTrue($ship->canEquip($weapon), 'Ship should be able to equip the returned weapon');
+            }
+        }
+    }
+
+    public function test_getTurrets_returnsCompatibleWares(): void
+    {
+        $ship = $this->getSampleShip();
+        $turrets = $ship->getTurrets()->getAll();
+        
+        $this->assertIsArray($turrets);
+        
+        if ($ship->countTurrets() > 0) {
+            $this->assertNotEmpty($turrets, 'Ship with turret slots should have compatible turrets');
+            
+            foreach ($turrets as $turret) {
+                $this->assertInstanceOf(\Mistralys\X4\Database\Wares\WareDef::class, $turret);
+                $this->assertTrue($turret->hasTag('equipment'), 'Turret must be tagged as equipment');
+                $this->assertTrue($ship->canEquip($turret), 'Ship should be able to equip the returned turret');
+            }
+        }
+    }
+
+    public function test_equipmentFinder_filterByDataSource(): void
+    {
+        $ship = $this->getSampleShip();
+        
+        if ($ship->countEngines() > 0) {
+            $vanillaEngines = $ship->getEngines()
+                ->selectDataSource(KnownDataSources::DATA_SOURCE_BASE_GAME)
+                ->getAll();
+            
+            $this->assertIsArray($vanillaEngines);
+            
+            foreach ($vanillaEngines as $engine) {
+                $this->assertEquals(
+                    KnownDataSources::DATA_SOURCE_BASE_GAME,
+                    $engine->getDataSourceID(),
+                    'All returned engines should be from vanilla data source'
+                );
+            }
+        } else {
+            $this->markTestSkipped('Sample ship has no engine slots');
+        }
+    }
+
+    public function test_equipmentFinder_filterBySize(): void
+    {
+        $ship = $this->getSampleShip();
+        
+        if ($ship->countEngines() > 0) {
+            $allEngines = $ship->getEngines()->getAll();
+            
+            if (!empty($allEngines)) {
+                // Get the size of the first engine
+                $firstSize = $allEngines[0]->getSize();
+                
+                $filteredEngines = $ship->getEngines()
+                    ->selectSize($firstSize)
+                    ->getAll();
+                
+                $this->assertNotEmpty($filteredEngines);
+                
+                foreach ($filteredEngines as $engine) {
+                    $this->assertEquals(
+                        $firstSize,
+                        $engine->getSize(),
+                        'All returned engines should match the selected size'
+                    );
+                }
+            }
+        } else {
+            $this->markTestSkipped('Sample ship has no engine slots');
+        }
+    }
+
+    public function test_equipmentFinder_filterByLabelSearch(): void
+    {
+        $ship = $this->getSampleShip();
+        
+        if ($ship->countEngines() > 0) {
+            $allEngines = $ship->getEngines()->getAll();
+            
+            if (!empty($allEngines)) {
+                // Use a search term from the first engine's label
+                $searchTerm = substr($allEngines[0]->getLabel(), 0, 3);
+                
+                $filteredEngines = $ship->getEngines()
+                    ->selectLabelSearch($searchTerm)
+                    ->getAll();
+                
+                $this->assertNotEmpty($filteredEngines);
+                
+                foreach ($filteredEngines as $engine) {
+                    $this->assertStringContainsStringIgnoringCase(
+                        $searchTerm,
+                        $engine->getLabel(),
+                        'All returned engines should contain the search term'
+                    );
+                }
+            }
+        } else {
+            $this->markTestSkipped('Sample ship has no engine slots');
+        }
+    }
+
+    public function test_equipmentFinder_chainedFilters(): void
+    {
+        $ship = $this->getSampleShip();
+        
+        if ($ship->countShields() > 0) {
+            $filteredShields = $ship->getShields()
+                ->selectDataSource(KnownDataSources::DATA_SOURCE_BASE_GAME)
+                ->selectTag('equipment')
+                ->getAll();
+            
+            $this->assertIsArray($filteredShields);
+            
+            foreach ($filteredShields as $shield) {
+                $this->assertEquals(KnownDataSources::DATA_SOURCE_BASE_GAME, $shield->getDataSourceID());
+                $this->assertTrue($shield->hasTag('equipment'));
+                $this->assertTrue($ship->canEquip($shield));
+            }
+        } else {
+            $this->markTestSkipped('Sample ship has no shield slots');
+        }
+    }
+
+    public function test_findEquipmentForSlot_genericMethod(): void
+    {
+        $ship = $this->getSampleShip();
+        
+        $engines = $ship->findEquipmentForSlot(\Mistralys\X4\Database\SlotTypes\KnownSlotTypes::ENGINE)->getAll();
+        $this->assertIsArray($engines);
+        
+        foreach ($engines as $engine) {
+            $this->assertInstanceOf(\Mistralys\X4\Database\Wares\WareDef::class, $engine);
+            $this->assertTrue($ship->canEquip($engine));
+        }
     }
 
     // =========================================================================

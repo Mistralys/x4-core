@@ -149,6 +149,9 @@ src/X4/
 │   │   ├── ModuleFinder.php
 │   │   └── ModuleMacroExtractor.php
 │   ├── Ships/                # Ship database
+│   │   ├── Equipment/        # Ship equipment compatibility
+│   │   │   ├── ShipEquipmentFinder.php
+│   │   │   └── ShipSlotDefinition.php
 │   │   ├── KnownShips.php
 │   │   ├── ShipClass.php
 │   │   ├── ShipClasses.php

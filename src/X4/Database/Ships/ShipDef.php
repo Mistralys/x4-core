@@ -288,22 +288,22 @@ class ShipDef implements CollectionItemInterface
         return $this->slots[$typeID] ?? 0;
     }
 
-    public function getWeaponSlots() : int
+    public function countWeapons() : int
     {
         return $this->getSlotCount(KnownSlotTypes::WEAPON);
     }
 
-    public function getShieldSlots() : int
+    public function countShields() : int
     {
         return $this->getSlotCount(KnownSlotTypes::SHIELD);
     }
 
-    public function getTurretSlots() : int
+    public function countTurrets() : int
     {
         return $this->getSlotCount(KnownSlotTypes::TURRET);
     }
 
-    public function getDockingBays() : int
+    public function countDockingBays() : int
     {
         return $this->getSlotCount(KnownSlotTypes::DOCKING_BAY);
     }
@@ -314,15 +314,85 @@ class ShipDef implements CollectionItemInterface
      * 
      * @return int
      */
-    public function getCountermeasures() : int
+    public function countCountermeasures() : int
     {
         return $this->equipment['countermeasures'] ?? 0;
     }
     
-    public function getEngines() : int
+    public function countEngines() : int
     {
         return $this->getSlotCount(KnownSlotTypes::ENGINE);
     }
+
+    // region: Equipment Compatibility Finders
+
+    /**
+     * Get a finder for all equipment compatible with this ship for a specific slot type.
+     * Use the returned finder to filter by data source, size, tags, etc.
+     *
+     * @param string $slotTypeID The slot type ID (use KnownSlotTypes constants)
+     * @return Equipment\ShipEquipmentFinder
+     */
+    public function findEquipmentForSlot(string $slotTypeID): Equipment\ShipEquipmentFinder
+    {
+        return new Equipment\ShipEquipmentFinder($this, $slotTypeID);
+    }
+
+    /**
+     * Get all engines compatible with this ship.
+     * @return Equipment\ShipEquipmentFinder
+     */
+    public function getEngines(): Equipment\ShipEquipmentFinder
+    {
+        return $this->findEquipmentForSlot(KnownSlotTypes::ENGINE);
+    }
+
+    /**
+     * Get all shields compatible with this ship.
+     * @return Equipment\ShipEquipmentFinder
+     */
+    public function getShields(): Equipment\ShipEquipmentFinder
+    {
+        return $this->findEquipmentForSlot(KnownSlotTypes::SHIELD);
+    }
+
+    /**
+     * Get all weapons compatible with this ship.
+     * @return Equipment\ShipEquipmentFinder
+     */
+    public function getWeapons(): Equipment\ShipEquipmentFinder
+    {
+        return $this->findEquipmentForSlot(KnownSlotTypes::WEAPON);
+    }
+
+    /**
+     * Get all turrets compatible with this ship.
+     * @return Equipment\ShipEquipmentFinder
+     */
+    public function getTurrets(): Equipment\ShipEquipmentFinder
+    {
+        return $this->findEquipmentForSlot(KnownSlotTypes::TURRET);
+    }
+
+    /**
+     * Get all countermeasures compatible with this ship.
+     * @return Equipment\ShipEquipmentFinder
+     */
+    public function getCountermeasures(): Equipment\ShipEquipmentFinder
+    {
+        return $this->findEquipmentForSlot(KnownSlotTypes::COUNTERMEASURES);
+    }
+
+    /**
+     * Get all docking bays/modules compatible with this ship.
+     * @return Equipment\ShipEquipmentFinder
+     */
+    public function getDockingBays(): Equipment\ShipEquipmentFinder
+    {
+        return $this->findEquipmentForSlot(KnownSlotTypes::DOCKING_BAY);
+    }
+
+    // endregion
 
     /**
      * @param string|null $type Optional filter (engines, shields, turrets, weapons, docks, countermeasures)

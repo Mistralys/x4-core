@@ -58,10 +58,27 @@ The codebase extensively uses a **Collection-Item** pattern for managing game da
 Specialized finder classes provide fluent filtering interfaces:
 
 ```
-WareFinder, ShipFinder, ModuleFinder
-  - Chainable selection methods (selectDataSource, selectGroup, etc.)
+WareFinder, ShipFinder, ModuleFinder, ShipEquipmentFinder
+  - Chainable selection methods (selectDataSource, selectGroup, selectSize, etc.)
   - Final getAll() returns filtered results
   - Implements FinderInterface
+```
+
+**Example - Ship Equipment Compatibility:**
+```php
+$ship = ShipDefs::getInstance()->getByID('ship_arg_l_destroyer_01_a');
+
+// Get all compatible engines for this ship
+$engines = $ship->getEngines()
+    ->selectDataSource(KnownDataSources::DATA_SOURCE_BASE_GAME)
+    ->selectSize('l')
+    ->getAll();
+
+// Filter shields from specific DLC
+$shields = $ship->getShields()
+    ->selectDataSource(KnownDataSources::DATA_SOURCE_SPLIT_VENDETTA)
+    ->selectTag('equipment')
+    ->getAll();
 ```
 
 ### 3. Extraction-Builder Pattern
