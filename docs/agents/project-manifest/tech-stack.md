@@ -98,6 +98,20 @@ $shields = $ship->getShields()
     ->getAll();
 ```
 
+**Collections in the Project:**
+- `FactionDefs` → `FactionDef`
+- `WareDefs` → `WareDef`
+- `ShipDefs` → `ShipDef`
+- `ModuleDefs` → `ModuleDef`
+- `BlueprintDefs` → `BlueprintDef`
+- `ShieldDefs` → `ShieldDef`
+- `EngineDefs` → `EngineDef`
+- `WeaponDefs` → `WeaponDef`
+- `SlotTypes` → `SlotType` (hardcoded metadata)
+- `WeaponSystems` → `WeaponSystem` (hardcoded metadata)
+- `DataSources` → `DataSource`
+- `Translations` → `Translation`
+
 ### 3. Extraction-Builder Pattern
 
 Database building follows a two-phase approach:
@@ -183,6 +197,7 @@ ship-settings.json
 shields.json
 ships.json
 wares.json
+weapons.json
 lang-{id}_{locale}.json (translations)
 ```
 

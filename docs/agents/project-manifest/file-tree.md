@@ -21,7 +21,8 @@ x4-core/
 │   ├── ship-settings.json
 │   ├── shields.json
 │   ├── ships.json
-│   └── wares.json
+│   ├── wares.json
+│   └── weapons.json
 ├── docs/                       # Documentation
 │   └── agents/
 │       └── project-manifest/  # AI agent manifest (this folder)
@@ -194,6 +195,18 @@ src/X4/
 │   │   ├── WareGroup.php
 │   │   ├── WareGroups.php
 │   │   └── WaresExtractor.php
+│   ├── Weapons/              # Weapon performance database
+│   │   ├── BulletMacroExtractor.php
+│   │   ├── WeaponDef.php
+│   │   ├── WeaponDefs.php
+│   │   ├── WeaponException.php
+│   │   ├── WeaponFinder.php
+│   │   ├── WeaponMacroExtractor.php
+│   │   └── WeaponsExtractor.php
+│   ├── WeaponSystems/        # Weapon system classification
+│   │   ├── KnownWeaponSystems.php
+│   │   ├── WeaponSystem.php
+│   │   └── WeaponSystems.php
 │   └── DatabaseBuilder.php   # Main build orchestrator
 ├── Game/                     # Game installation integration
 │   └── X4Game.php

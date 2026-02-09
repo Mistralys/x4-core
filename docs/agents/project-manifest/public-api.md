@@ -858,6 +858,279 @@ getDefault(): WareGroup
 
 ---
 
+### Weapons
+
+#### Mistralys\X4\Database\Weapons\WeaponDef
+
+Definition of a weapon with performance characteristics.
+
+##### Constants
+```php
+KEY_WARE_ID: string = 'wareID'
+KEY_MACRO_ID: string = 'macroID'
+KEY_BULLET_CLASS: string = 'bulletClass'
+KEY_LABEL: string = 'label'
+KEY_SIZE: string = 'size'
+KEY_DATA_SOURCE_ID: string = 'dataSourceID'
+KEY_MAKER_RACE: string = 'makerRace'
+KEY_MK: string = 'mk'
+KEY_VARIANT_ID: string = 'variantID'
+KEY_WEAPON_SYSTEM: string = 'weaponSystem'
+KEY_WEAPON_CATEGORY: string = 'weaponCategory'
+KEY_HEAT_OVERHEAT: string = 'heatOverheat'
+KEY_HEAT_COOLDELAY: string = 'heatCooldelay'
+KEY_HEAT_COOLRATE: string = 'heatCoolrate'
+KEY_HEAT_REENABLE: string = 'heatReenable'
+KEY_ROTATION_SPEED: string = 'rotationSpeed'
+KEY_ROTATION_ACCELERATION: string = 'rotationAcceleration'
+KEY_HULL_MAX: string = 'hullMax'
+KEY_HULL_HITTABLE: string = 'hullHittable'
+KEY_AMMO_VALUE: string = 'ammoValue'
+KEY_AMMO_RELOAD: string = 'ammoReload'
+KEY_BULLET_SPEED: string = 'bulletSpeed'
+KEY_BULLET_LIFETIME: string = 'bulletLifetime'
+KEY_BULLET_RANGE: string = 'bulletRange'
+KEY_BULLET_AMOUNT: string = 'bulletAmount'
+KEY_BULLET_BARRELAMOUNT: string = 'bulletBarrelamount'
+KEY_BULLET_ICON: string = 'bulletIcon'
+KEY_BULLET_TIMEDIFF: string = 'bulletTimediff'
+KEY_BULLET_ANGLE: string = 'bulletAngle'
+KEY_BULLET_MAXHITS: string = 'bulletMaxhits'
+KEY_BULLET_RICOCHET: string = 'bulletRicochet'
+KEY_BULLET_ATTACH: string = 'bulletAttach'
+KEY_HEAT_PER_SHOT: string = 'heatPerShot'
+KEY_RELOAD_RATE: string = 'reloadRate'
+KEY_DAMAGE_VALUE: string = 'damageValue'
+KEY_REPAIR_VALUE: string = 'repairValue'
+```
+
+##### Methods
+```php
+static fromArray(mixed $weaponDef): WeaponDef
+getID(): string
+getLabel(): string
+getVariantID(): VariantID
+getWareID(): string
+getMacroID(): string
+getBulletClass(): string
+getSize(): string
+getDataSourceID(): string
+getMakerRace(): string
+getMk(): int
+getWeaponSystem(): string
+getWeaponCategory(): string
+getHeatOverheat(): float
+getHeatCooldelay(): float
+getHeatCoolrate(): float
+getHeatReenable(): float
+getRotationSpeed(): float
+getRotationAcceleration(): float
+getHullMax(): float
+getHullHittable(): int
+isHullHittable(): bool
+getAmmoValue(): float
+getAmmoReload(): float
+getBulletSpeed(): float
+getBulletLifetime(): float
+getBulletRange(): float
+getBulletAmount(): int
+getBulletBarrelamount(): int
+getBulletIcon(): string
+getBulletTimediff(): float
+getBulletAngle(): float
+getBulletMaxhits(): int
+getBulletRicochet(): int
+canRicochet(): bool
+getBulletAttach(): int
+canAttach(): bool
+getHeatPerShot(): float
+getReloadRate(): float
+getDamageValue(): float
+getRepairValue(): float
+isRepairWeapon(): bool
+getDPS(): float
+getShotsUntilOverheat(): float
+getTimeUntilOverheat(): float
+getCooldownTime(): float
+isTurret(): bool
+isBeamWeapon(): bool
+isMissileWeapon(): bool
+isMiningWeapon(): bool
+```
+
+---
+
+#### Mistralys\X4\Database\Weapons\WeaponDefs
+
+Collection of all weapon definitions.
+
+##### Constants
+```php
+DATA_FILE: string = 'weapons.json'
+ERROR_WEAPON_NOT_FOUND: int = 143001
+```
+
+##### Methods
+```php
+static getInstance(): WeaponDefs
+getDataFile(): JSONFile
+find(string $idOrMacro): ?WeaponDef
+findByMacro(string $macro): ?WeaponDef
+findByBulletClass(string $bulletClass): ?WeaponDef
+getByWeaponSystem(string $weaponSystem): array // Returns WeaponDef[]
+getByCategory(string $category): array // Returns WeaponDef[]
+getDefaultID(): string
+findWeapons(): WeaponFinder
+getByID(string $id): WeaponDef
+getAll(): array // Returns WeaponDef[]
+getDefault(): WeaponDef
+```
+
+---
+
+#### Mistralys\X4\Database\Weapons\WeaponFinder
+
+Finder for filtering weapon collections.
+
+##### Methods
+```php
+getCollection(): ItemCollectionInterface
+selectSize(string $size): self
+selectSizes(array $sizes): self
+selectMakerRace(string $race): self
+selectWeaponSystem(string $system): self
+selectWeaponCategory(string $category): self
+selectMk(int $mk): self
+selectMinMk(int $minMk): self
+selectMinDamage(float $minDamage): self
+selectMaxDamage(float $maxDamage): self
+selectMinDPS(float $minDPS): self
+selectMaxDPS(float $maxDPS): self
+selectMinRange(float $minRange): self
+selectMaxRange(float $maxRange): self
+selectMinReloadRate(float $minReloadRate): self
+selectMaxReloadRate(float $maxReloadRate): self
+selectMinBulletSpeed(float $minBulletSpeed): self
+selectMinRotationSpeed(float $minRotationSpeed): self
+selectTurret(bool $isTurret = true): self
+selectBeamWeapons(bool $isBeam = true): self
+selectMissileWeapons(bool $isMissile = true): self
+selectMiningWeapons(bool $isMining = true): self
+selectRepairWeapons(bool $isRepair = true): self
+selectDataSource(string|DataSourceDef $dataSource): self
+sortByDPS(): self
+sortByDamage(): self
+sortByRange(): self
+sortByReloadRate(): self
+sortByLabel(): self
+getAll(): array // Returns WeaponDef[]
+```
+
+---
+
+#### Mistralys\X4\Database\Weapons\WeaponException
+
+Exception class for weapon-related errors.
+
+##### Constants
+```php
+ERROR_WEAPON_NOT_FOUND: int = 143001
+ERROR_INVALID_WEAPON_SIZE: int = 143002
+ERROR_INVALID_WEAPON_DATA: int = 143003
+ERROR_INVALID_WEAPON_SYSTEM: int = 143004
+ERROR_UNKNOWN_WEAPON_SYSTEM: int = 143005
+```
+
+---
+
+### Weapon Systems
+
+#### Mistralys\X4\Database\WeaponSystems\WeaponSystems
+
+Singleton collection of all weapon system types. Provides centralized metadata for weapon system classification (turrets, missiles, torpedoes, etc.) with human-readable labels.
+
+##### Methods
+```php
+static getInstance(): WeaponSystems
+getCollectionName(): string // Returns 'Weapon Systems'
+getCollectionDescription(): string
+getDefaultID(): string // Returns 'weapon_standard'
+getAll(): array // Returns WeaponSystem[]
+getByID(string $id): ?WeaponSystem
+idExists(string $id): bool
+getIDs(): array // Returns string[]
+isKnownSystem(string $systemID): bool
+requireKnownSystem(string $systemID): void // Throws WeaponException if unknown
+getTurretSystems(): array // Returns WeaponSystem[]
+getMissileSystems(): array // Returns WeaponSystem[]
+getStandardWeaponSystems(): array // Returns WeaponSystem[]
+```
+
+**Usage:**
+```php
+$systems = WeaponSystems::getInstance();
+$shortRange = $systems->getByID(KnownWeaponSystems::TURRET_SHORTRANGE);
+echo $shortRange->getLabel(); // "Short-Range Turret"
+
+// Validate weapon system during extraction
+$systems->requireKnownSystem('turret_shortrange'); // OK
+$systems->requireKnownSystem('fake_system'); // Throws WeaponException
+```
+
+---
+
+#### Mistralys\X4\Database\WeaponSystems\WeaponSystem
+
+Represents a single weapon system type with metadata.
+
+##### Constants
+```php
+KEY_LABEL: string = 'label'
+KEY_DESCRIPTION: string = 'description'
+```
+
+##### Methods
+```php
+getID(): string
+getVariantID(): VariantID
+getLabel(): string // Human-readable label (e.g., 'Short-Range Turret')
+getDescription(): string // Detailed description
+isTurret(): bool
+isMissile(): bool
+isStandardWeapon(): bool
+```
+
+---
+
+#### Mistralys\X4\Database\WeaponSystems\KnownWeaponSystems
+
+Type-safe constants for weapon system IDs.
+
+##### Constants
+```php
+TURRET_SHORTRANGE: string = 'turret_shortrange'
+TURRET_MIDRANGE: string = 'turret_midrange'
+TURRET_LONGRANGE: string = 'turret_longrange'
+WEAPON_STANDARD: string = 'weapon_standard'
+WEAPON_MINING: string = 'weapon_mining'
+MISSILE_DUMBFIRE: string = 'missile_dumbfire'
+MISSILE_GUIDED: string = 'missile_guided'
+TORPEDO: string = 'torpedo'
+```
+
+**Usage:**
+```php
+use Mistralys\X4\Database\WeaponSystems\KnownWeaponSystems;
+use Mistralys\X4\Database\Weapons\WeaponDefs;
+
+$weapons = WeaponDefs::getInstance()->findWeapons()
+    ->selectWeaponSystem(KnownWeaponSystems::TURRET_SHORTRANGE)
+    ->selectMinDPS(1000.0)
+    ->getAll();
+```
+
+---
+
 ### Ships
 
 #### Mistralys\X4\Database\Ships\ShipDef

@@ -17,6 +17,7 @@ use Mistralys\X4\Database\Engines\EnginesExtractor;
 use Mistralys\X4\Database\Factions\FactionsExtractor;
 use Mistralys\X4\Database\Shields\ShieldsExtractor;
 use Mistral\X4\Database\Wares\WaresExtractor;
+use Mistralys\X4\Database\Weapons\WeaponsExtractor;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\DataSources\DataSourceDefs;
 use Mistralys\X4\Database\MacroIndex\MacroIndexExtractor;
@@ -112,6 +113,13 @@ class DatabaseBuilder
         new ShieldsExtractor(self::getDataFolders())->extract();
     }
 
+    public static function extractWeapons() : void
+    {
+        self::init();
+
+        new WeaponsExtractor(self::getDataFolders())->extract();
+    }
+
     public static function build() : void
     {
         // Prerequisites
@@ -124,6 +132,7 @@ class DatabaseBuilder
         // Based on the wares
         self::extractEngines();
         self::extractShields();
+        self::extractWeapons();
         self::extractModules();
         self::extractBlueprints();
         self::extractShips();
