@@ -35,6 +35,7 @@ The library is designed as a dependency for other projects and tools in the X4 e
 | [Public API](public-api.md) | Complete public method signatures (no implementations) |
 | [Data Flows](data-flows.md) | How UI interacts with services and data flows through the system |
 | [Constraints & Rules](constraints.md) | Established coding rules, conventions, and constraints |
+| [Extraction Reference](extraction-reference.md) | XML data extraction patterns, algorithms, and troubleshooting (modular) |
 
 ---
 
@@ -160,6 +161,32 @@ The library is designed as a dependency for other projects and tools in the X4 e
 - Reviewing code
 - Ensuring consistency with existing patterns
 - Making architectural decisions
+
+---
+
+### [Extraction Reference](extraction-reference.md)
+
+**What you'll find:**
+- **Modular documentation** split across 6 focused documents:
+  - XML Sources & Schema - Data locations and file structure
+  - Extraction Patterns - Macro resolution, Two-Phase/Single-Phase patterns
+  - Advanced Features - Variant IDs, DLC inheritance
+  - Equipment Compatibility - Filtering algorithms
+  - Troubleshooting - Common errors and solutions
+  - Development Guide - Step-by-step extractor creation
+- XML file location mappings for all game data
+- Complete extractor inventory (11 extractors)
+- Build dependency chain
+- DOM query patterns
+- Error handling strategies
+- Complete working examples
+
+**Use this when:**
+- Creating new extractors
+- Debugging extraction failures
+- Understanding where game data is stored
+- Learning the extraction architecture
+- Troubleshooting build errors
 
 ---
 
