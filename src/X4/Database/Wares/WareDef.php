@@ -35,10 +35,11 @@ class WareDef implements CollectionItemInterface
     public const KEY_GROUP = 'group';
     public const KEY_TAGS = 'tags';
     public const KEY_DATA_SOURCE_ID = 'dataSourceID';
+    public const KEY_SIZE = 'size';
     public const KEY_FACTIONS = 'factions';
     public const KEY_MACRO_ID = 'macroID';
     public const KEY_VARIANT_ID = 'variantID';
-    public const KEY_SPECS = 'specs';
+    public const KEY_COMPONENT = 'component';
 
     private string $id;
     private string $label;
@@ -50,6 +51,7 @@ class WareDef implements CollectionItemInterface
      */
     private array $tags;
     private string $dataSourceID;
+    private string $size;
 
     /**
      * The IDs of the factions that own this ware.
@@ -60,9 +62,9 @@ class WareDef implements CollectionItemInterface
     private VariantID $variantID;
     
     /**
-     * @var array{size:string,tags:string[]}
+     * @var array{tags:string[]}
      */
-    private array $specs;
+    private array $component;
 
     /**
      * @param string $id
@@ -72,8 +74,9 @@ class WareDef implements CollectionItemInterface
      * @param VariantID $variantID
      * @param string[] $tags
      * @param string $dataSourceID
+     * @param string $size
      * @param string[] $factionIDs
-     * @param array{size:string,tags:string[]} $specs
+     * @param array{tags:string[]} $component
      */
     public function __construct(
         string $id, 
@@ -83,8 +86,9 @@ class WareDef implements CollectionItemInterface
         VariantID $variantID, 
         array $tags, 
         string $dataSourceID, 
+        string $size,
         array $factionIDs,
-        array $specs
+        array $component
     ) {
         $this->id = $id;
         $this->label = $label;
@@ -93,8 +97,9 @@ class WareDef implements CollectionItemInterface
         $this->variantID = $variantID;
         $this->tags = $tags;
         $this->dataSourceID = $dataSourceID;
+        $this->size = $size;
         $this->factionIDs = $factionIDs;
-        $this->specs = $specs;
+        $this->component = $component;
     }
 
     public function getID() : string
@@ -197,14 +202,15 @@ class WareDef implements CollectionItemInterface
 
         return new WareDef(
             $data->getString(self::KEY_WARE_ID),
-            $data->getString(self::KEY_MACRO_ID),
+            $data->getString(self::KEY_MACRO_ID, ''),
             $data->getString(self::KEY_LABEL),
             $data->getString(self::KEY_GROUP),
-            VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
-            $data->getArray(self::KEY_TAGS),
+            VariantID::fromID($data->getString(self::KEY_VARIANT_ID, '::')),
+            $data->getArray(self::KEY_TAGS, []),
             $data->getString(self::KEY_DATA_SOURCE_ID),
-            $data->getArray(self::KEY_FACTIONS),
-            $data->getArray(self::KEY_SPECS)
+            $data->getString(self::KEY_SIZE, ''),
+            $data->getArray(self::KEY_FACTIONS, []),
+            $data->getArray(self::KEY_COMPONENT, ['tags' => []])
         );
     }
 
@@ -214,17 +220,26 @@ class WareDef implements CollectionItemInterface
     }
     
     /**
-     * Gets the physical specifications of the item component (Size, compatibility tags).
-     * @return array{size:string,tags:string[]}
+     * Gets the component data (compatibility tags from the physical component).
+     * @return array{tags:string[]}
+     */
+    public function getComponent() : array
+    {
+        return $this->component;
+    }
+    
+    /**
+     * @deprecated Use getComponent() instead
+     * @return array{tags:string[]}
      */
     public function getSpecs() : array
     {
-        return $this->specs;
+        return $this->getComponent();
     }
     
     public function getSize() : string
     {
-        return $this->specs['size'] ?? '';
+        return $this->size;
     }
     
     /**
@@ -232,24 +247,52 @@ class WareDef implements CollectionItemInterface
      */
     public function getCompatibilityTags() : array
     {
-        $specTags = $this->specs['tags'] ?? [];
+        $componentTags = $this->component['tags'] ?? [];
         $wareTags = $this->getTags();
 
-        return array_unique(array_merge($specTags, $wareTags));
+        return array_unique(array_merge($componentTags, $wareTags));
     }
 
     public function toArray() : array
     {
-        return array(
+        $result = array(
             self::KEY_WARE_ID => $this->getID(),
             self::KEY_LABEL => $this->getLabel(),
             self::KEY_GROUP => $this->getGroupID(),
-            self::KEY_VARIANT_ID => $this->getVariantID()->getID(),
-            self::KEY_TAGS => $this->getTags(),
             self::KEY_DATA_SOURCE_ID => $this->getDataSourceID(),
-            self::KEY_FACTIONS => $this->getFactionIDs(),
-            self::KEY_MACRO_ID => $this->getMacroID(),
-            self::KEY_SPECS => $this->getSpecs()
         );
+        
+        // Only include size if not empty
+        if (!empty($this->getSize())) {
+            $result[self::KEY_SIZE] = $this->getSize();
+        }
+        
+        // Only include tags if not empty
+        if (!empty($this->getTags())) {
+            $result[self::KEY_TAGS] = $this->getTags();
+        }
+        
+        // Only include macroID if not empty
+        if (!empty($this->getMacroID())) {
+            $result[self::KEY_MACRO_ID] = $this->getMacroID();
+        }
+        
+        // Only include variantID if not default "::"
+        if ($this->getVariantID()->getID() !== '::') {
+            $result[self::KEY_VARIANT_ID] = $this->getVariantID()->getID();
+        }
+        
+        // Only include factions if not empty
+        if (!empty($this->getFactionIDs())) {
+            $result[self::KEY_FACTIONS] = $this->getFactionIDs();
+        }
+        
+        // Only include component if tags is not empty
+        $component = $this->getComponent();
+        if (!empty($component['tags'])) {
+            $result[self::KEY_COMPONENT] = $component;
+        }
+        
+        return $result;
     }
 }

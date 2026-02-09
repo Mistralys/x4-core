@@ -308,9 +308,15 @@ class ShipDef implements CollectionItemInterface
         return $this->getSlotCount(KnownSlotTypes::DOCKING_BAY);
     }
 
+    /**
+     * Get the number of countermeasure launchers.
+     * Note: Countermeasures are stored in equipment, not slots.
+     * 
+     * @return int
+     */
     public function getCountermeasures() : int
     {
-        return $this->getSlotCount(KnownSlotTypes::COUNTERMEASURES);
+        return $this->equipment['countermeasures'] ?? 0;
     }
     
     public function getEngines() : int
@@ -366,6 +372,60 @@ class ShipDef implements CollectionItemInterface
             }
         }
         return false;
+    }
+    
+    /**
+     * Get dock size breakdown as an associative array.
+     * 
+     * @return array<string,int> Map of dock sizes to counts (e.g., ['s' => 8, 'm' => 4])
+     */
+    public function getDocks(): array
+    {
+        $docks = $this->equipment['docks'] ?? [];
+        
+        return is_array($docks) ? $docks : [];
+    }
+    
+    /**
+     * Get count of docks for a specific size.
+     * 
+     * @param string $size Dock size: s, m, l, xl
+     * @return int Number of docks of this size
+     */
+    public function getDockCount(string $size): int
+    {
+        $docks = $this->getDocks();
+        return $docks[$size] ?? 0;
+    }
+    
+    /**
+     * Get total number of docks (all sizes).
+     * 
+     * @return int Total dock count
+     */
+    public function getTotalDockCount(): int
+    {
+        return array_sum($this->getDocks());
+    }
+    
+    /**
+     * Check if ship has any docks.
+     * 
+     * @return bool True if ship has docks
+     */
+    public function hasDocks(): bool
+    {
+        return !empty($this->getDocks());
+    }
+    
+    /**
+     * Get all dock sizes available on this ship.
+     * 
+     * @return string[] Array of size keys (s, m, l, xl)
+     */
+    public function getDockSizes(): array
+    {
+        return array_keys($this->getDocks());
     }
 
     public function toArray(): array

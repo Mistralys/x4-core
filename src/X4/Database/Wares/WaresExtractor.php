@@ -99,9 +99,10 @@ class WaresExtractor
             }
 
             $group = WareGroups::GROUP_OTHER;
+            $wareTags = $ware[WareDef::KEY_TAGS] ?? [];
 
             foreach($this->autoTagGroups as $tag => $autoGroup) {
-                if(in_array($tag, $ware[WareDef::KEY_TAGS], true)) {
+                if(in_array($tag, $wareTags, true)) {
                     $group = $autoGroup;
                     break;
                 }
@@ -120,7 +121,10 @@ class WaresExtractor
             }
 
             // Some ships are grouped as "ships" but do not have the "ship" tag.
-            if($group === 'ships' && !in_array(self::TAG_SHIP, $ware[WareDef::KEY_TAGS], true)) {
+            if($group === 'ships' && !in_array(self::TAG_SHIP, $wareTags, true)) {
+                if (!isset($this->wares[$idx][WareDef::KEY_TAGS])) {
+                    $this->wares[$idx][WareDef::KEY_TAGS] = [];
+                }
                 $this->wares[$idx][WareDef::KEY_TAGS][] = self::TAG_SHIP;
             }
 
@@ -249,23 +253,53 @@ class WaresExtractor
         }
         
         $xmlGroup = $wareElement->getAttribute('group');
-        $specs = ['size' => '', 'tags' => []];
+        $component = ['size' => '', 'tags' => []];
+        $size = '';
 
         if(!empty($componentID) && ($xmlGroup === 'ships' || $xmlGroup === 'modules' || in_array(self::TAG_EQUIPMENT, $tags, true) || in_array(self::TAG_SHIP, $tags, true))) {
-             $specs = $this->extractComponentDetails($componentID, $dataFolder);
+             $componentDetails = $this->extractComponentDetails($componentID, $dataFolder);
+             $size = $componentDetails['size'];
+             $component = ['tags' => $componentDetails['tags']];
         }
+
+        $variantID = (string)VariantID::resolveWareVariantID($id);
 
         $ware = array(
             WareDef::KEY_WARE_ID => $id,
             WareDef::KEY_LABEL => $this->language->ts($wareElement->getAttribute('name')),
             WareDef::KEY_GROUP => $xmlGroup,
-            WareDef::KEY_MACRO_ID => $componentID,
-            WareDef::KEY_VARIANT_ID => (string)VariantID::resolveWareVariantID($id),
-            WareDef::KEY_TAGS => $tags,
             WareDef::KEY_DATA_SOURCE_ID => $dataFolder->getID(),
-            WareDef::KEY_FACTIONS => $factionIDs,
-            WareDef::KEY_SPECS => $specs
         );
+        
+        // Only include size if not empty
+        if (!empty($size)) {
+            $ware[WareDef::KEY_SIZE] = $size;
+        }
+        
+        // Only include tags if not empty
+        if (!empty($tags)) {
+            $ware[WareDef::KEY_TAGS] = $tags;
+        }
+        
+        // Only include macroID if not empty
+        if (!empty($componentID)) {
+            $ware[WareDef::KEY_MACRO_ID] = $componentID;
+        }
+        
+        // Only include variantID if not default "::"
+        if ($variantID !== '::') {
+            $ware[WareDef::KEY_VARIANT_ID] = $variantID;
+        }
+        
+        // Only include factions if not empty
+        if (!empty($factionIDs)) {
+            $ware[WareDef::KEY_FACTIONS] = $factionIDs;
+        }
+        
+        // Only include component if tags is not empty
+        if (!empty($component['tags'])) {
+            $ware[WareDef::KEY_COMPONENT] = $component;
+        }
 
         $this->wares[] = $ware;
     }

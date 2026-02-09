@@ -613,14 +613,16 @@ KEY_LABEL: string = 'label'
 KEY_GROUP: string = 'group'
 KEY_TAGS: string = 'tags'
 KEY_DATA_SOURCE_ID: string = 'dataSourceID'
+KEY_SIZE: string = 'size'
 KEY_FACTIONS: string = 'factions'
 KEY_MACRO_ID: string = 'macroID'
 KEY_VARIANT_ID: string = 'variantID'
+KEY_COMPONENT: string = 'component'
 ```
 
 ##### Methods
 ```php
-__construct(string $id, string $macroID, string $label, string $groupID, VariantID $variantID, array $tags, string $dataSourceID, array $factionIDs): void
+__construct(string $id, string $macroID, string $label, string $groupID, VariantID $variantID, array $tags, string $dataSourceID, string $size, array $factionIDs, array $component): void
 getID(): string
 getLabel(): string
 getVariantID(): VariantID
@@ -632,12 +634,16 @@ getDataSourceID(): string
 getDataSource(): DataSourceDef
 getMacroID(): string
 getMacro(): MacroFileDef
+getSize(): string
 getFactionIDs(): array // Returns string[]
 getFactions(): array // Returns FactionDef[]
+getComponent(): array // Returns array{tags:string[]}
+getCompatibilityTags(): array // Returns string[] - Merged ware + component tags
 static fromArray(array $wareDef): WareDef
 hasTag(string $tag): bool
 toArray(): array
 getWareID(): string
+getSpecs(): array // DEPRECATED: Use getComponent() instead
 ```
 
 ---

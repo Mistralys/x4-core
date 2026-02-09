@@ -139,7 +139,7 @@ class ShipsExtractor
             $componentDom = $this->resolveComponentDOM($ref, $macroDef);
             if($componentDom) {
                 $slots = $this->countSlots($componentDom);
-                $equipment = $this->extractEquipment($componentDom);
+                $equipment = $this->extractEquipment($componentDom, $dom, $def->getDataSourceID());
             }
         }
 
@@ -163,16 +163,27 @@ class ShipsExtractor
         );
     }
 
-    private function extractEquipment(DOMExtended $componentDom): array
+    private function extractEquipment(DOMExtended $componentDom, ?DOMExtended $shipMacroDom = null, ?string $dataSourceID = null): array
     {
         $aggregator = new ShipSlotAggregator();
+        
+        // Build dock size map from ship macro if available
+        $dockSizes = [];
+        if ($shipMacroDom && $dataSourceID) {
+            $dockSizes = $this->extractDockSizesFromShipMacro($shipMacroDom, $dataSourceID);
+        }
+        
         $connections = $componentDom->byTagName('connection')->getAll();
         foreach($connections as $conn) {
              $tags = $conn->getAttribute('tags');
+             $name = $conn->getAttribute('name');
+             $dockSize = $dockSizes[$name] ?? null;
+             
              $aggregator->addStructureConnection([
-                 'name' => $conn->getAttribute('name'),
+                 'name' => $name,
                  'group' => $conn->getAttribute('group'),
-                 'tags' => !empty($tags) ? explode(' ', $tags) : []
+                 'tags' => !empty($tags) ? explode(' ', $tags) : [],
+                 'dockSize' => $dockSize
              ]);
         }
         return $aggregator->getAggregatedData();
@@ -316,6 +327,10 @@ class ShipsExtractor
         $slotTypes = SlotTypes::getInstance()->getAll();
 
         foreach($slotTypes as $type) {
+            // Exclude countermeasures from slots - they're equipment, not slots
+            if ($type->getID() === 'countermeasures') {
+                continue;
+            }
             $counts[$type->getID()] = 0;
         }
 
@@ -327,6 +342,10 @@ class ShipsExtractor
             }
 
             foreach($slotTypes as $type) {
+                // Exclude countermeasures from slots
+                if ($type->getID() === 'countermeasures') {
+                    continue;
+                }
                 if(str_contains($tags, $type->getPrimaryTag())) {
                     $counts[$type->getID()]++;
                 }
@@ -364,5 +383,86 @@ class ShipsExtractor
             }
         }
         return null;
+    }
+    
+    /**
+     * Extracts dock sizes from ship macro XML by looking up dock macro references.
+     * 
+     * @param DOMExtended $shipMacroDom Ship macro DOM document
+     * @param string $dataSourceID Data source ID for macro lookup
+     * @return array<string,string> Map of connection names to dock sizes (s, m, l, xl)
+     */
+    private function extractDockSizesFromShipMacro(DOMExtended $shipMacroDom, string $dataSourceID): array
+    {
+        $dockSizes = [];
+        
+        $connections = $shipMacroDom->byTagName('connection')->getAll();
+        foreach ($connections as $connection) {
+            $connectionRef = $connection->getAttribute('ref');
+            
+            // Find macro child elements
+            $children = $connection->getChildren();
+            foreach ($children as $child) {
+                // Check if this is a macro element
+                $domElement = $child->getDOMElement();
+                if ($domElement->nodeName !== 'macro') {
+                    continue;
+                }
+                
+                $dockMacroName = $child->getAttribute('ref');
+                if (empty($dockMacroName)) {
+                    continue;
+                }
+                
+                // Extract dock size from the dock macro
+                $size = $this->extractDockSizeFromMacro($dockMacroName, $dataSourceID);
+                if ($size !== null) {
+                    $dockSizes[$connectionRef] = $size;
+                }
+            }
+        }
+        
+        return $dockSizes;
+    }
+    
+    /**
+     * Extracts dock size from a dock macro XML file.
+     * 
+     * @param string $macroName Name of the dock macro (e.g., "launchtube_arg_s_01_macro")
+     * @param string $dataSourceID Data source ID for macro lookup
+     * @return string|null Dock size (xs, s, m, l, xl) or null if not found
+     */
+    private function extractDockSizeFromMacro(string $macroName, string $dataSourceID): ?string
+    {
+        try {
+            // Get macro file from macro index
+            $macroDef = MacroFileDefs::getInstance()->getByMacroName($macroName, $dataSourceID);
+            
+            if ($macroDef === null) {
+                return null;
+            }
+            
+            $macroDOM = $macroDef->getDOM();
+            
+            // Find <docksize tags="dock_s"/> element
+            $docksizeNodes = $macroDOM->byTagName('docksize')->getAll();
+            if (empty($docksizeNodes)) {
+                return null;
+            }
+            
+            $tags = $docksizeNodes[0]->getAttribute('tags');
+            
+            // Extract size from tags (e.g., "dock_s" -> "s")
+            if (preg_match('/dock_(xs|s|m|l|xl)/', $tags, $matches)) {
+                return $matches[1];
+            }
+            
+            return null;
+            
+        } catch (\Exception $e) {
+            // Log but don't fail extraction for missing macros
+            // Silently continue
+            return null;
+        }
     }
 }

@@ -7,10 +7,32 @@ namespace Mistralys\X4\Database\Ships;
 class ShipSlotAggregator
 {
     private array $connections = [];
+    private array $dockSizeCounts = [];
+    private int $countermeasuresCount = 0;
 
     public function addStructureConnection(array $connectionData) : void
     {
         $this->connections[] = $connectionData;
+        
+        $tags = $connectionData['tags'] ?? [];
+        $type = $this->resolveType($tags);
+        
+        // Track docks with sizes separately
+        if ($type === 'dockingbay') {
+            $dockSize = $connectionData['dockSize'] ?? null;
+            if ($dockSize !== null && $dockSize !== 'xs') {
+                // Filter out xs docks (spacesuit docks)
+                if (!isset($this->dockSizeCounts[$dockSize])) {
+                    $this->dockSizeCounts[$dockSize] = 0;
+                }
+                $this->dockSizeCounts[$dockSize]++;
+            }
+        }
+        
+        // Track countermeasures as simple count
+        if ($type === 'countermeasures') {
+            $this->countermeasuresCount++;
+        }
     }
 
     public function getAggregatedData() : array
@@ -50,12 +72,18 @@ class ShipSlotAggregator
                 $this->addCount($slots['turrets'], $size, $tags);
             }
             elseif($type === 'dockingbay') {
-                 $this->addCount($slots['docks'], $size, $tags);
+                 // Skip - we use dockSizeCounts
             }
             elseif($type === 'countermeasures') {
-                 $this->addCount($slots['countermeasures'], $size, $tags);
+                 // Skip - tracked separately as simple count
             }
         }
+        
+        // Use the new dock size format
+        $slots['docks'] = $this->dockSizeCounts;
+        
+        // Set countermeasures as simple count
+        $slots['countermeasures'] = $this->countermeasuresCount;
         
         return $this->cleanOutput($slots);
     }
@@ -103,6 +131,25 @@ class ShipSlotAggregator
     {
         $final = [];
         foreach($slots as $type => $groups) {
+            // Special handling for docks - they're now stored as object/associative array
+            if ($type === 'docks') {
+                if (!empty($groups)) {
+                    // Sort dock sizes alphabetically
+                    ksort($groups);
+                    $final[$type] = $groups;
+                }
+                // Skip empty docks entirely
+                continue;
+            }
+            
+            // Special handling for countermeasures - output as simple number
+            if ($type === 'countermeasures') {
+                if ($groups > 0) {
+                    $final[$type] = $groups;
+                }
+                continue;
+            }
+            
             $values = array_values($groups);
             
             // Clean up: if empty, omit (or keep empty array? Plan implied partial objects)

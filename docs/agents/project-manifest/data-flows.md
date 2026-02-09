@@ -388,7 +388,9 @@ WareDef
     ├─→ DataSourceDef (via dataSourceID)
     ├─→ MacroFileDef (via macroID)
     ├─→ FactionDef[] (via factionIDs)
-    └─→ VariantID
+    ├─→ VariantID
+    ├─→ size (string: 's', 'm', 'l', 'xl' for equipment size)
+    └─→ component (object with tags[] for component compatibility)
 
 ShipDef
     ├─→ WareDef (via wareID) [Ships are wares]
