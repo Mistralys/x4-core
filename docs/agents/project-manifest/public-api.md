@@ -1189,6 +1189,10 @@ getTurrets(): Equipment\ShipEquipmentFinder
 getCountermeasures(): Equipment\ShipEquipmentFinder
 getDockingBays(): Equipment\ShipEquipmentFinder
 
+// Weapon performance data methods - return WeaponDef[] with performance stats
+getCompatibleWeapons(): array // Returns WeaponDef[] for compatible weapons
+getCompatibleTurrets(): array // Returns WeaponDef[] for compatible turrets
+
 // Equipment groups and compatibility checking
 getEquipmentGroups(?string $type = null): array // Returns ShipSlotDefinition[]
 canEquip(WareDef $ware): bool
