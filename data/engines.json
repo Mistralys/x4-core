@@ -1,0 +1,6197 @@
+[
+    {
+        "wareID": "engine_arg_l_allround_01_mk1",
+        "macroID": "engine_arg_l_allround_01_mk1_macro",
+        "label": "ARG L All-round Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 27,
+        "boostRecharge": 92,
+        "boostThrust": 6.89,
+        "boostAcceleration": 4.33,
+        "boostAttack": 10,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 20,
+        "travelThrust": 30.53,
+        "travelAttack": 91,
+        "travelRelease": 22.5,
+        "thrustForward": 3900,
+        "thrustReverse": 3705,
+        "hullMax": 4033,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_l_travel_01_mk1",
+        "macroID": "engine_arg_l_travel_01_mk1_macro",
+        "label": "ARG L Travel Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 24.3,
+        "boostRecharge": 92,
+        "boostThrust": 5.74,
+        "boostAcceleration": 3.61,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 18,
+        "travelThrust": 42.4,
+        "travelAttack": 82,
+        "travelRelease": 37.5,
+        "thrustForward": 3159,
+        "thrustReverse": 3001.05,
+        "hullMax": 4033,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 15
+            },
+            {
+                "position": 2.5,
+                "value": 21
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_allround_01_mk1",
+        "macroID": "engine_arg_m_allround_01_mk1_macro",
+        "label": "ARG M All-round Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 12.5,
+        "boostRecharge": 92,
+        "boostThrust": 7.38,
+        "boostAcceleration": 6.27,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 8,
+        "travelThrust": 10.51,
+        "travelAttack": 41.8,
+        "travelRelease": 20,
+        "thrustForward": 960,
+        "thrustReverse": 960,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_allround_01_mk2",
+        "macroID": "engine_arg_m_allround_01_mk2_macro",
+        "label": "ARG M All-round Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 12.5,
+        "boostRecharge": 92,
+        "boostThrust": 7.38,
+        "boostAcceleration": 6.27,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 8,
+        "travelThrust": 10.51,
+        "travelAttack": 41.8,
+        "travelRelease": 20,
+        "thrustForward": 1152,
+        "thrustReverse": 1152,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_allround_01_mk3",
+        "macroID": "engine_arg_m_allround_01_mk3_macro",
+        "label": "ARG M All-round Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 12.5,
+        "boostRecharge": 92,
+        "boostThrust": 7.38,
+        "boostAcceleration": 6.27,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 8,
+        "travelThrust": 10.51,
+        "travelAttack": 41.8,
+        "travelRelease": 20,
+        "thrustForward": 1296,
+        "thrustReverse": 1296,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_combat_01_mk1",
+        "macroID": "engine_arg_m_combat_01_mk1_macro",
+        "label": "ARG M Combat Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 15,
+        "boostRecharge": 82.8,
+        "boostThrust": 7.9,
+        "boostAcceleration": 7.79,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 8,
+        "travelThrust": 8.04,
+        "travelAttack": 44.3,
+        "travelRelease": 10,
+        "thrustForward": 1084.8,
+        "thrustReverse": 1084.8,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.6,
+                "value": 5
+            },
+            {
+                "position": 1.9,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 12
+            },
+            {
+                "position": 2.8,
+                "value": 15
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_combat_01_mk2",
+        "macroID": "engine_arg_m_combat_01_mk2_macro",
+        "label": "ARG M Combat Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 15,
+        "boostRecharge": 82.8,
+        "boostThrust": 7.9,
+        "boostAcceleration": 7.79,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 8,
+        "travelThrust": 8.04,
+        "travelAttack": 44.3,
+        "travelRelease": 10,
+        "thrustForward": 1301.76,
+        "thrustReverse": 1301.76,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.6,
+                "value": 5
+            },
+            {
+                "position": 1.9,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 12
+            },
+            {
+                "position": 2.8,
+                "value": 15
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_combat_01_mk3",
+        "macroID": "engine_arg_m_combat_01_mk3_macro",
+        "label": "ARG M Combat Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 15,
+        "boostRecharge": 82.8,
+        "boostThrust": 7.9,
+        "boostAcceleration": 7.79,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 8,
+        "travelThrust": 8.04,
+        "travelAttack": 44.3,
+        "travelRelease": 10,
+        "thrustForward": 1464.48,
+        "thrustReverse": 1464.48,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.6,
+                "value": 5
+            },
+            {
+                "position": 1.9,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 12
+            },
+            {
+                "position": 2.8,
+                "value": 15
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_corvette_01_mk1",
+        "macroID": "engine_arg_m_corvette_01_mk1_macro",
+        "label": "ARG Envoy M Engine Mk1",
+        "size": "m",
+        "dataSourceID": "ego_dlc_mini_02",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 15,
+        "boostRecharge": 92,
+        "boostThrust": 7.38,
+        "boostAcceleration": 7,
+        "boostAttack": 0,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 7,
+        "travelThrust": 12.5,
+        "travelAttack": 38,
+        "travelRelease": 10,
+        "thrustForward": 1484.1,
+        "thrustReverse": 1336,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_corvette_01_mk2",
+        "macroID": "engine_arg_m_corvette_01_mk2_macro",
+        "label": "ARG Envoy M Engine Mk2",
+        "size": "m",
+        "dataSourceID": "ego_dlc_mini_02",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 15,
+        "boostRecharge": 92,
+        "boostThrust": 7.38,
+        "boostAcceleration": 7,
+        "boostAttack": 0,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 7,
+        "travelThrust": 12,
+        "travelAttack": 38,
+        "travelRelease": 10,
+        "thrustForward": 1706,
+        "thrustReverse": 1535,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_travel_01_mk1",
+        "macroID": "engine_arg_m_travel_01_mk1_macro",
+        "label": "ARG M Travel Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 11.25,
+        "boostRecharge": 92,
+        "boostThrust": 6.15,
+        "boostAcceleration": 5.23,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 7,
+        "travelThrust": 14.39,
+        "travelAttack": 37.6,
+        "travelRelease": 30,
+        "thrustForward": 864,
+        "thrustReverse": 864,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_travel_01_mk2",
+        "macroID": "engine_arg_m_travel_01_mk2_macro",
+        "label": "ARG M Travel Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 11.25,
+        "boostRecharge": 92,
+        "boostThrust": 6.15,
+        "boostAcceleration": 5.23,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 7,
+        "travelThrust": 14.39,
+        "travelAttack": 37.6,
+        "travelRelease": 30,
+        "thrustForward": 1036.8,
+        "thrustReverse": 1036.8,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_m_travel_01_mk3",
+        "macroID": "engine_arg_m_travel_01_mk3_macro",
+        "label": "ARG M Travel Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 11.25,
+        "boostRecharge": 92,
+        "boostThrust": 6.15,
+        "boostAcceleration": 5.23,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 7,
+        "travelThrust": 14.39,
+        "travelAttack": 37.6,
+        "travelRelease": 30,
+        "thrustForward": 1166.4,
+        "thrustReverse": 1166.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_allround_01_mk1",
+        "macroID": "engine_arg_s_allround_01_mk1_macro",
+        "label": "ARG S All-round Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 10,
+        "boostRecharge": 92,
+        "boostThrust": 8.2,
+        "boostAcceleration": 6.97,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 6,
+        "travelThrust": 14.2,
+        "travelAttack": 38,
+        "travelRelease": 20,
+        "thrustForward": 384,
+        "thrustReverse": 384,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_allround_01_mk2",
+        "macroID": "engine_arg_s_allround_01_mk2_macro",
+        "label": "ARG S All-round Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 10,
+        "boostRecharge": 92,
+        "boostThrust": 8.2,
+        "boostAcceleration": 6.97,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 6,
+        "travelThrust": 14.2,
+        "travelAttack": 38,
+        "travelRelease": 20,
+        "thrustForward": 460.8,
+        "thrustReverse": 460.8,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_allround_01_mk3",
+        "macroID": "engine_arg_s_allround_01_mk3_macro",
+        "label": "ARG S All-round Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 10,
+        "boostRecharge": 92,
+        "boostThrust": 8.2,
+        "boostAcceleration": 6.97,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 6,
+        "travelThrust": 14.2,
+        "travelAttack": 38,
+        "travelRelease": 20,
+        "thrustForward": 518.4,
+        "thrustReverse": 518.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_combat_01_mk1",
+        "macroID": "engine_arg_s_combat_01_mk1_macro",
+        "label": "ARG S Combat Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 12,
+        "boostRecharge": 82.8,
+        "boostThrust": 8.78,
+        "boostAcceleration": 8.65,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 6,
+        "travelThrust": 10.87,
+        "travelAttack": 40.28,
+        "travelRelease": 10,
+        "thrustForward": 433.92,
+        "thrustReverse": 433.92,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_combat_01_mk2",
+        "macroID": "engine_arg_s_combat_01_mk2_macro",
+        "label": "ARG S Combat Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 12,
+        "boostRecharge": 82.8,
+        "boostThrust": 8.78,
+        "boostAcceleration": 8.65,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 6,
+        "travelThrust": 10.87,
+        "travelAttack": 40.28,
+        "travelRelease": 10,
+        "thrustForward": 520.7,
+        "thrustReverse": 520.7,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_combat_01_mk3",
+        "macroID": "engine_arg_s_combat_01_mk3_macro",
+        "label": "ARG S Combat Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 12,
+        "boostRecharge": 82.8,
+        "boostThrust": 8.78,
+        "boostAcceleration": 8.65,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 6,
+        "travelThrust": 10.87,
+        "travelAttack": 40.28,
+        "travelRelease": 10,
+        "thrustForward": 585.79,
+        "thrustReverse": 585.79,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_racer_01_mk1",
+        "macroID": "engine_arg_s_racer_01_mk1_macro",
+        "label": "ARG S Racing Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk1",
+        "boostDuration": 2,
+        "boostRecharge": 10,
+        "boostThrust": 4.4,
+        "boostAcceleration": 5,
+        "boostAttack": 0.75,
+        "boostRelease": 2,
+        "boostCoast": 1.4,
+        "travelCharge": 0,
+        "travelThrust": 1,
+        "travelAttack": 1,
+        "travelRelease": 1,
+        "thrustForward": 563,
+        "thrustReverse": 710,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.2
+            },
+            {
+                "position": 1.3,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 3
+            },
+            {
+                "position": 1.7,
+                "value": 4
+            },
+            {
+                "position": 2.1,
+                "value": 5
+            },
+            {
+                "position": 2.5,
+                "value": 8
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_travel_01_mk1",
+        "macroID": "engine_arg_s_travel_01_mk1_macro",
+        "label": "ARG S Travel Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 9,
+        "boostRecharge": 92,
+        "boostThrust": 6.83,
+        "boostAcceleration": 5.8,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 4,
+        "travelThrust": 19.72,
+        "travelAttack": 34.2,
+        "travelRelease": 30,
+        "thrustForward": 345.6,
+        "thrustReverse": 345.6,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_travel_01_mk2",
+        "macroID": "engine_arg_s_travel_01_mk2_macro",
+        "label": "ARG S Travel Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 9,
+        "boostRecharge": 92,
+        "boostThrust": 6.83,
+        "boostAcceleration": 5.8,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 4,
+        "travelThrust": 19.72,
+        "travelAttack": 34.2,
+        "travelRelease": 30,
+        "thrustForward": 414.72,
+        "thrustReverse": 414.72,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_s_travel_01_mk3",
+        "macroID": "engine_arg_s_travel_01_mk3_macro",
+        "label": "ARG S Travel Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 9,
+        "boostRecharge": 92,
+        "boostThrust": 6.83,
+        "boostAcceleration": 5.8,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 4,
+        "travelThrust": 19.72,
+        "travelAttack": 34.2,
+        "travelRelease": 30,
+        "thrustForward": 466.56,
+        "thrustReverse": 466.56,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_xl_allround_01_mk1",
+        "macroID": "engine_arg_xl_allround_01_mk1_macro",
+        "label": "ARG XL All-round Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 27,
+        "boostRecharge": 92,
+        "boostThrust": 6.89,
+        "boostAcceleration": 4.33,
+        "boostAttack": 10,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 20,
+        "travelThrust": 30.53,
+        "travelAttack": 91,
+        "travelRelease": 22.5,
+        "thrustForward": 10550,
+        "thrustReverse": 10022.5,
+        "hullMax": 12193,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 17
+            },
+            {
+                "position": 2.4,
+                "value": 25
+            }
+        ]
+    },
+    {
+        "wareID": "engine_arg_xl_travel_01_mk1",
+        "macroID": "engine_arg_xl_travel_01_mk1_macro",
+        "label": "ARG XL Travel Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 24.3,
+        "boostRecharge": 92,
+        "boostThrust": 5.74,
+        "boostAcceleration": 3.61,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 18,
+        "travelThrust": 42.4,
+        "travelAttack": 82,
+        "travelRelease": 37.5,
+        "thrustForward": 8545.5,
+        "thrustReverse": 8118.23,
+        "hullMax": 9955,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2,
+                "value": 11
+            },
+            {
+                "position": 2.1,
+                "value": 19
+            },
+            {
+                "position": 2.4,
+                "value": 26
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_l_travel_01_mk1",
+        "macroID": "engine_bor_l_travel_01_mk1_macro",
+        "label": "BOR L All-round Engine Mk1",
+        "size": "l",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 46,
+        "boostRecharge": 200,
+        "boostThrust": 5.04,
+        "boostAcceleration": 1.61,
+        "boostAttack": 14,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 41.8,
+        "travelAttack": 95.5,
+        "travelRelease": 1.25,
+        "thrustForward": 3000,
+        "thrustReverse": 3300,
+        "hullMax": 4033,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.5
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.3,
+                "value": 4
+            },
+            {
+                "position": 1.4,
+                "value": 7
+            },
+            {
+                "position": 1.75,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 12
+            },
+            {
+                "position": 2.4,
+                "value": 14
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_m_allround_01_mk1",
+        "macroID": "engine_bor_m_allround_01_mk1_macro",
+        "label": "BOR M All-round Engine Mk1",
+        "size": "m",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 28.6,
+        "boostRecharge": 200,
+        "boostThrust": 8,
+        "boostAcceleration": 2.88,
+        "boostAttack": 0.35,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 13.3,
+        "travelAttack": 55,
+        "travelRelease": 1,
+        "thrustForward": 750,
+        "thrustReverse": 825,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.5
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.3,
+                "value": 4
+            },
+            {
+                "position": 1.4,
+                "value": 7
+            },
+            {
+                "position": 1.75,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 12
+            },
+            {
+                "position": 2.4,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_m_allround_01_mk2",
+        "macroID": "engine_bor_m_allround_01_mk2_macro",
+        "label": "BOR M All-round Engine Mk2",
+        "size": "m",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 28.6,
+        "boostRecharge": 200,
+        "boostThrust": 8,
+        "boostAcceleration": 2.88,
+        "boostAttack": 0.35,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 13.3,
+        "travelAttack": 55,
+        "travelRelease": 1,
+        "thrustForward": 930,
+        "thrustReverse": 1023,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.5
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.3,
+                "value": 4
+            },
+            {
+                "position": 1.4,
+                "value": 7
+            },
+            {
+                "position": 1.75,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 12
+            },
+            {
+                "position": 2.4,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_m_allround_01_mk3",
+        "macroID": "engine_bor_m_allround_01_mk3_macro",
+        "label": "BOR M All-round Engine Mk3",
+        "size": "m",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 28.6,
+        "boostRecharge": 200,
+        "boostThrust": 8,
+        "boostAcceleration": 2.88,
+        "boostAttack": 0.35,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 13.3,
+        "travelAttack": 55,
+        "travelRelease": 1,
+        "thrustForward": 1035,
+        "thrustReverse": 1138.5,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.5
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.3,
+                "value": 4
+            },
+            {
+                "position": 1.4,
+                "value": 7
+            },
+            {
+                "position": 1.75,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 12
+            },
+            {
+                "position": 2.4,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_s_allround_01_mk1",
+        "macroID": "engine_bor_s_allround_01_mk1_macro",
+        "label": "BOR S All-round Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 22,
+        "boostRecharge": 200,
+        "boostThrust": 8,
+        "boostAcceleration": 3.2,
+        "boostAttack": 0.35,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 19,
+        "travelAttack": 44,
+        "travelRelease": 1,
+        "thrustForward": 300,
+        "thrustReverse": 330,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.7,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_s_allround_01_mk2",
+        "macroID": "engine_bor_s_allround_01_mk2_macro",
+        "label": "BOR S All-round Engine Mk2",
+        "size": "s",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 22,
+        "boostRecharge": 200,
+        "boostThrust": 8,
+        "boostAcceleration": 3.2,
+        "boostAttack": 0.35,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 19,
+        "travelAttack": 44,
+        "travelRelease": 1,
+        "thrustForward": 372,
+        "thrustReverse": 409.2,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.7,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_s_allround_01_mk3",
+        "macroID": "engine_bor_s_allround_01_mk3_macro",
+        "label": "BOR S All-round Engine Mk3",
+        "size": "s",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 22,
+        "boostRecharge": 200,
+        "boostThrust": 8,
+        "boostAcceleration": 3.2,
+        "boostAttack": 0.35,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 19,
+        "travelAttack": 44,
+        "travelRelease": 1,
+        "thrustForward": 415,
+        "thrustReverse": 455.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.7,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_bor_xl_travel_01_mk1",
+        "macroID": "engine_bor_xl_travel_01_mk1_macro",
+        "label": "BOR XL All-round Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "ego_dlc_boron",
+        "makerRace": "boron",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 46,
+        "boostRecharge": 200,
+        "boostThrust": 5.04,
+        "boostAcceleration": 1.61,
+        "boostAttack": 14,
+        "boostRelease": 4,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 41.8,
+        "travelAttack": 95.5,
+        "travelRelease": 1.25,
+        "thrustForward": 7912.5,
+        "thrustReverse": 8703.75,
+        "hullMax": 9955,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.5
+            },
+            {
+                "position": 1.2,
+                "value": 3
+            },
+            {
+                "position": 1.3,
+                "value": 4
+            },
+            {
+                "position": 1.4,
+                "value": 7
+            },
+            {
+                "position": 1.75,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 12
+            },
+            {
+                "position": 2.4,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_gen_m_yacht_01_mk1",
+        "macroID": "engine_gen_m_yacht_01_mk1_macro",
+        "label": "Astrid M Engine",
+        "size": "m",
+        "dataSourceID": "ego_dlc_pirate",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 14,
+        "boostRecharge": 150,
+        "boostThrust": 7,
+        "boostAcceleration": 6.4,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.3,
+        "travelCharge": 4,
+        "travelThrust": 12,
+        "travelAttack": 33,
+        "travelRelease": 15,
+        "thrustForward": 2415,
+        "thrustReverse": 3250,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 0.9,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.25,
+                "value": 5
+            },
+            {
+                "position": 1.7,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 15
+            },
+            {
+                "position": 2.4,
+                "value": 24
+            }
+        ]
+    },
+    {
+        "wareID": "engine_gen_spacesuit_01_mk1",
+        "macroID": "engine_gen_spacesuit_01_mk1_macro",
+        "label": "Spacesuit Thrusters Mk1",
+        "size": "",
+        "dataSourceID": "vanilla",
+        "makerRace": "unknown",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 3600,
+        "boostRecharge": 0,
+        "boostThrust": 2,
+        "boostAcceleration": 2,
+        "boostAttack": 0,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 0,
+        "travelAttack": 0,
+        "travelRelease": 0,
+        "thrustForward": 0.3,
+        "thrustReverse": 0.3,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2
+            },
+            {
+                "position": 1.75,
+                "value": 4
+            },
+            {
+                "position": 2.1,
+                "value": 4
+            },
+            {
+                "position": 2.5,
+                "value": 4
+            }
+        ]
+    },
+    {
+        "wareID": "engine_gen_spacesuit_01_mk2",
+        "macroID": "engine_gen_spacesuit_01_mk2_macro",
+        "label": "Spacesuit Thrusters Mk2",
+        "size": "",
+        "dataSourceID": "vanilla",
+        "makerRace": "unknown",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 3600,
+        "boostRecharge": 0,
+        "boostThrust": 3,
+        "boostAcceleration": 1.8,
+        "boostAttack": 0,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 0,
+        "travelAttack": 0,
+        "travelRelease": 0,
+        "thrustForward": 0.75,
+        "thrustReverse": 0.5,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2
+            },
+            {
+                "position": 1.75,
+                "value": 4
+            }
+        ]
+    },
+    {
+        "wareID": "engine_gen_s_racer_01_mk1",
+        "macroID": "engine_gen_s_racer_01_mk1_macro",
+        "label": "S Racing Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "unknown",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 7,
+        "boostRecharge": 36,
+        "boostThrust": 4.6,
+        "boostAcceleration": 4,
+        "boostAttack": 0.25,
+        "boostRelease": 1,
+        "boostCoast": 1.5,
+        "travelCharge": 0,
+        "travelThrust": 1,
+        "travelAttack": 1,
+        "travelRelease": 1,
+        "thrustForward": 710,
+        "thrustReverse": 710,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.3,
+                "value": 6
+            },
+            {
+                "position": 1.6,
+                "value": 8
+            },
+            {
+                "position": 1.9,
+                "value": 10
+            },
+            {
+                "position": 2.3,
+                "value": 15
+            },
+            {
+                "position": 3,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_gen_s_racer_01_mk2",
+        "macroID": "engine_gen_s_racer_01_mk2_macro",
+        "label": "S Racing Engine Mk2",
+        "size": "s",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "unknown",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 7,
+        "boostRecharge": 36,
+        "boostThrust": 4.6,
+        "boostAcceleration": 4.6,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.35,
+        "travelCharge": 0,
+        "travelThrust": 9.5,
+        "travelAttack": 38,
+        "travelRelease": 30,
+        "thrustForward": 710,
+        "thrustReverse": 710,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.3,
+                "value": 6
+            },
+            {
+                "position": 1.6,
+                "value": 8
+            },
+            {
+                "position": 1.9,
+                "value": 10
+            },
+            {
+                "position": 2.3,
+                "value": 15
+            },
+            {
+                "position": 3,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_kha_l_destroyer_01_allround_01_mk1",
+        "macroID": "engine_kha_l_destroyer_01_allround_01_mk1_macro",
+        "label": "Kha'ak L Engine",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "khaak",
+        "mk": 1,
+        "variantID": "01:allround-01:mk1",
+        "boostDuration": 0,
+        "boostRecharge": 0,
+        "boostThrust": 1,
+        "boostAcceleration": 1,
+        "boostAttack": 0,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 0,
+        "travelAttack": 0,
+        "travelRelease": 0,
+        "thrustForward": 5058,
+        "thrustReverse": 5564,
+        "hullMax": 7500,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_kha_m_combat_01_mk1",
+        "macroID": "engine_kha_m_combat_01_mk1_macro",
+        "label": "KHA M Combat Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "khaak",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 6,
+        "boostRecharge": 50,
+        "boostThrust": 4,
+        "boostAcceleration": 5,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 3,
+        "travelThrust": 7,
+        "travelAttack": 15,
+        "travelRelease": 10,
+        "thrustForward": 1400,
+        "thrustReverse": 1600,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 5
+            },
+            {
+                "position": 1.75,
+                "value": 8
+            },
+            {
+                "position": 2.1,
+                "value": 10
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_kha_m_combat_02_mk1",
+        "macroID": "engine_kha_m_combat_02_mk1_macro",
+        "label": "KHA M Combat Engine Array Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "khaak",
+        "mk": 1,
+        "variantID": "02::mk1",
+        "boostDuration": 6,
+        "boostRecharge": 50,
+        "boostThrust": 5,
+        "boostAcceleration": 5,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 3,
+        "travelThrust": 7,
+        "travelAttack": 15,
+        "travelRelease": 10,
+        "thrustForward": 1400,
+        "thrustReverse": 1662,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 5
+            },
+            {
+                "position": 1.75,
+                "value": 8
+            },
+            {
+                "position": 2.1,
+                "value": 10
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_kha_s_combat_01_mk1",
+        "macroID": "engine_kha_s_combat_01_mk1_macro",
+        "label": "KHA S Combat Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "khaak",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 4,
+        "boostRecharge": 40,
+        "boostThrust": 4,
+        "boostAcceleration": 5,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 2,
+        "travelThrust": 7,
+        "travelAttack": 15,
+        "travelRelease": 10,
+        "thrustForward": 500,
+        "thrustReverse": 770,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 5
+            },
+            {
+                "position": 1.75,
+                "value": 8
+            },
+            {
+                "position": 2.1,
+                "value": 10
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_kha_xl_battleship_01_allround_01_mk1",
+        "macroID": "engine_kha_xl_battleship_01_allround_01_mk1_macro",
+        "label": "Kha'ak XL Engine",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "khaak",
+        "mk": 1,
+        "variantID": "01:allround-01:mk1",
+        "boostDuration": 0,
+        "boostRecharge": 0,
+        "boostThrust": 1,
+        "boostAcceleration": 1,
+        "boostAttack": 0,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 0,
+        "travelAttack": 0,
+        "travelRelease": 0,
+        "thrustForward": 36000,
+        "thrustReverse": 39000,
+        "hullMax": 150000,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_l_allround_01_mk1",
+        "macroID": "engine_par_l_allround_01_mk1_macro",
+        "label": "PAR L All-round Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 33.6,
+        "boostRecharge": 136,
+        "boostThrust": 4.2,
+        "boostAcceleration": 1.58,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 16,
+        "travelThrust": 30.6,
+        "travelAttack": 72,
+        "travelRelease": 22.5,
+        "thrustForward": 4420,
+        "thrustReverse": 3978,
+        "hullMax": 4018,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.4,
+                "value": 2
+            },
+            {
+                "position": 1.8,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 11
+            },
+            {
+                "position": 2.5,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_l_travel_01_mk1",
+        "macroID": "engine_par_l_travel_01_mk1_macro",
+        "label": "PAR L Travel Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 27.89,
+        "boostRecharge": 136,
+        "boostThrust": 3.63,
+        "boostAcceleration": 1.66,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 14,
+        "travelThrust": 45.2,
+        "travelAttack": 67,
+        "travelRelease": 37.5,
+        "thrustForward": 3500,
+        "thrustReverse": 3151,
+        "hullMax": 4018,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.4,
+                "value": 2
+            },
+            {
+                "position": 1.8,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 11
+            },
+            {
+                "position": 2.4,
+                "value": 16
+            },
+            {
+                "position": 2.8,
+                "value": 19
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_allround_01_mk1",
+        "macroID": "engine_par_m_allround_01_mk1_macro",
+        "label": "PAR M All-round Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 15,
+        "boostRecharge": 136,
+        "boostThrust": 4.86,
+        "boostAcceleration": 3.35,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 6,
+        "travelThrust": 10.5,
+        "travelAttack": 36.8,
+        "travelRelease": 20,
+        "thrustForward": 1045,
+        "thrustReverse": 1045,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_allround_01_mk2",
+        "macroID": "engine_par_m_allround_01_mk2_macro",
+        "label": "PAR M All-round Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 15,
+        "boostRecharge": 136,
+        "boostThrust": 4.86,
+        "boostAcceleration": 3.35,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 6,
+        "travelThrust": 10.5,
+        "travelAttack": 36.8,
+        "travelRelease": 20,
+        "thrustForward": 1251,
+        "thrustReverse": 1251,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_allround_01_mk3",
+        "macroID": "engine_par_m_allround_01_mk3_macro",
+        "label": "PAR M All-round Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 15,
+        "boostRecharge": 136,
+        "boostThrust": 4.86,
+        "boostAcceleration": 3.35,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 6,
+        "travelThrust": 10.5,
+        "travelAttack": 36.8,
+        "travelRelease": 20,
+        "thrustForward": 1410.75,
+        "thrustReverse": 1410.75,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_combat_01_mk1",
+        "macroID": "engine_par_m_combat_01_mk1_macro",
+        "label": "PAR M Combat Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 18,
+        "boostRecharge": 122.4,
+        "boostThrust": 5.71,
+        "boostAcceleration": 4.78,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 6,
+        "travelThrust": 7.67,
+        "travelAttack": 39.7,
+        "travelRelease": 10,
+        "thrustForward": 1201.75,
+        "thrustReverse": 1201.75,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_combat_01_mk2",
+        "macroID": "engine_par_m_combat_01_mk2_macro",
+        "label": "PAR M Combat Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 18,
+        "boostRecharge": 122.4,
+        "boostThrust": 5.71,
+        "boostAcceleration": 4.78,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 6,
+        "travelThrust": 7.67,
+        "travelAttack": 39.7,
+        "travelRelease": 10,
+        "thrustForward": 1442.1,
+        "thrustReverse": 1442.1,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_combat_01_mk3",
+        "macroID": "engine_par_m_combat_01_mk3_macro",
+        "label": "PAR M Combat Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 18,
+        "boostRecharge": 122.4,
+        "boostThrust": 5.71,
+        "boostAcceleration": 4.78,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 6,
+        "travelThrust": 7.67,
+        "travelAttack": 39.7,
+        "travelRelease": 10,
+        "thrustForward": 1622.36,
+        "thrustReverse": 1622.36,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_travel_01_mk1",
+        "macroID": "engine_par_m_travel_01_mk1_macro",
+        "label": "PAR M Travel Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 12.45,
+        "boostRecharge": 136,
+        "boostThrust": 4.2,
+        "boostAcceleration": 3.51,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 15.51,
+        "travelAttack": 34.2,
+        "travelRelease": 30,
+        "thrustForward": 919.6,
+        "thrustReverse": 919.6,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_travel_01_mk2",
+        "macroID": "engine_par_m_travel_01_mk2_macro",
+        "label": "PAR M Travel Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 12.45,
+        "boostRecharge": 136,
+        "boostThrust": 4.2,
+        "boostAcceleration": 3.51,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 15.51,
+        "travelAttack": 34.2,
+        "travelRelease": 30,
+        "thrustForward": 1103.52,
+        "thrustReverse": 1103.52,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_m_travel_01_mk3",
+        "macroID": "engine_par_m_travel_01_mk3_macro",
+        "label": "PAR M Travel Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 12.45,
+        "boostRecharge": 136,
+        "boostThrust": 4.2,
+        "boostAcceleration": 3.51,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 15.51,
+        "travelAttack": 34.2,
+        "travelRelease": 30,
+        "thrustForward": 1241.46,
+        "thrustReverse": 1241.46,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 4
+            },
+            {
+                "position": 1.6,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_allround_01_mk1",
+        "macroID": "engine_par_s_allround_01_mk1_macro",
+        "label": "PAR S All-round Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 12,
+        "boostRecharge": 136,
+        "boostThrust": 5.4,
+        "boostAcceleration": 3.38,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 15,
+        "travelAttack": 32,
+        "travelRelease": 20,
+        "thrustForward": 412,
+        "thrustReverse": 412,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_allround_01_mk2",
+        "macroID": "engine_par_s_allround_01_mk2_macro",
+        "label": "PAR S All-round Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 12,
+        "boostRecharge": 136,
+        "boostThrust": 5.4,
+        "boostAcceleration": 3.38,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 15,
+        "travelAttack": 32,
+        "travelRelease": 20,
+        "thrustForward": 494.4,
+        "thrustReverse": 494.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_allround_01_mk3",
+        "macroID": "engine_par_s_allround_01_mk3_macro",
+        "label": "PAR S All-round Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 12,
+        "boostRecharge": 136,
+        "boostThrust": 5.4,
+        "boostAcceleration": 3.38,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 15,
+        "travelAttack": 32,
+        "travelRelease": 20,
+        "thrustForward": 556.2,
+        "thrustReverse": 556.2,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_combat_01_mk1",
+        "macroID": "engine_par_s_combat_01_mk1_macro",
+        "label": "PAR S Combat Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 14.4,
+        "boostRecharge": 122.4,
+        "boostThrust": 6.34,
+        "boostAcceleration": 4.83,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 10.96,
+        "travelAttack": 34.56,
+        "travelRelease": 10,
+        "thrustForward": 473.8,
+        "thrustReverse": 473.8,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_combat_01_mk2",
+        "macroID": "engine_par_s_combat_01_mk2_macro",
+        "label": "PAR S Combat Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 14.4,
+        "boostRecharge": 122.4,
+        "boostThrust": 6.34,
+        "boostAcceleration": 4.83,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 10.96,
+        "travelAttack": 34.56,
+        "travelRelease": 10,
+        "thrustForward": 568.56,
+        "thrustReverse": 568.56,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_combat_01_mk3",
+        "macroID": "engine_par_s_combat_01_mk3_macro",
+        "label": "PAR S Combat Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 14.4,
+        "boostRecharge": 122.4,
+        "boostThrust": 6.34,
+        "boostAcceleration": 4.83,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 4,
+        "travelThrust": 10.96,
+        "travelAttack": 34.56,
+        "travelRelease": 10,
+        "thrustForward": 639.63,
+        "thrustReverse": 639.63,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_racer_01_mk1",
+        "macroID": "engine_par_s_racer_01_mk1_macro",
+        "label": "PAR S Racing Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "paranid",
+        "mk": 2,
+        "variantID": "01::mk1",
+        "boostDuration": 5,
+        "boostRecharge": 18,
+        "boostThrust": 2.5,
+        "boostAcceleration": 3,
+        "boostAttack": 0.75,
+        "boostRelease": 2.5,
+        "boostCoast": 1.25,
+        "travelCharge": 0,
+        "travelThrust": 1,
+        "travelAttack": 1,
+        "travelRelease": 1,
+        "thrustForward": 500,
+        "thrustReverse": 720,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1,
+                "value": 1
+            },
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.25
+            },
+            {
+                "position": 1.3,
+                "value": 1.75
+            },
+            {
+                "position": 1.7,
+                "value": 4
+            },
+            {
+                "position": 2.1,
+                "value": 5
+            },
+            {
+                "position": 2.5,
+                "value": 8
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_travel_01_mk1",
+        "macroID": "engine_par_s_travel_01_mk1_macro",
+        "label": "PAR S Travel Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 9.96,
+        "boostRecharge": 136,
+        "boostThrust": 4.66,
+        "boostAcceleration": 3.55,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 2,
+        "travelThrust": 22.16,
+        "travelAttack": 29.76,
+        "travelRelease": 30,
+        "thrustForward": 362.56,
+        "thrustReverse": 362.56,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_travel_01_mk2",
+        "macroID": "engine_par_s_travel_01_mk2_macro",
+        "label": "PAR S Travel Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 9.96,
+        "boostRecharge": 136,
+        "boostThrust": 4.66,
+        "boostAcceleration": 3.55,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 2,
+        "travelThrust": 22.16,
+        "travelAttack": 29.76,
+        "travelRelease": 30,
+        "thrustForward": 435.07,
+        "thrustReverse": 435.07,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_s_travel_01_mk3",
+        "macroID": "engine_par_s_travel_01_mk3_macro",
+        "label": "PAR S Travel Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 9.96,
+        "boostRecharge": 136,
+        "boostThrust": 4.66,
+        "boostAcceleration": 3.55,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 2,
+        "travelThrust": 22.16,
+        "travelAttack": 29.76,
+        "travelRelease": 30,
+        "thrustForward": 489.46,
+        "thrustReverse": 489.46,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_xl_allround_01_mk1",
+        "macroID": "engine_par_xl_allround_01_mk1_macro",
+        "label": "PAR XL All-round Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 33.6,
+        "boostRecharge": 136,
+        "boostThrust": 4.2,
+        "boostAcceleration": 1.58,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 16,
+        "travelThrust": 30.6,
+        "travelAttack": 72,
+        "travelRelease": 22.5,
+        "thrustForward": 11600,
+        "thrustReverse": 10440,
+        "hullMax": 9899,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.4,
+                "value": 2
+            },
+            {
+                "position": 1.8,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 11
+            },
+            {
+                "position": 2.5,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_par_xl_travel_01_mk1",
+        "macroID": "engine_par_xl_travel_01_mk1_macro",
+        "label": "PAR XL Travel Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "paranid",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 27.89,
+        "boostRecharge": 136,
+        "boostThrust": 3.63,
+        "boostAcceleration": 1.66,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 14,
+        "travelThrust": 45.2,
+        "travelAttack": 67,
+        "travelRelease": 37.5,
+        "thrustForward": 9187,
+        "thrustReverse": 8268,
+        "hullMax": 9955,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.4,
+                "value": 2
+            },
+            {
+                "position": 1.8,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 11
+            },
+            {
+                "position": 2.5,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_pir_xl_battleship_01_allround_01_mk1",
+        "macroID": "engine_pir_xl_battleship_01_allround_01_mk1_macro",
+        "label": "Erlking XL Engine",
+        "size": "xl",
+        "dataSourceID": "ego_dlc_pirate",
+        "makerRace": "argon",
+        "mk": 1,
+        "variantID": "01:allround-01:mk1",
+        "boostDuration": 24,
+        "boostRecharge": 130,
+        "boostThrust": 2.6,
+        "boostAcceleration": 1.5,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.3,
+        "travelCharge": 30,
+        "travelThrust": 33,
+        "travelAttack": 75,
+        "travelRelease": 22.5,
+        "thrustForward": 18504,
+        "thrustReverse": 18504,
+        "hullMax": 10973,
+        "hullThreshold": 0.15,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2,
+                "value": 10
+            },
+            {
+                "position": 2.1,
+                "value": 15
+            },
+            {
+                "position": 2.4,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spacesuit_weak",
+        "macroID": "engine_spacesuit_weak_macro",
+        "label": "Disrupted Engine",
+        "size": "",
+        "dataSourceID": "ego_dlc_terran",
+        "makerRace": "unknown",
+        "mk": 1,
+        "variantID": "::",
+        "boostDuration": 5,
+        "boostRecharge": 0,
+        "boostThrust": 2,
+        "boostAcceleration": 1,
+        "boostAttack": 0,
+        "boostRelease": 5,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 0,
+        "travelAttack": 0,
+        "travelRelease": 0,
+        "thrustForward": 0.01,
+        "thrustReverse": 0.01,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2
+            },
+            {
+                "position": 1.75,
+                "value": 4
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_l_allround_01_mk1",
+        "macroID": "engine_spl_l_allround_01_mk1_macro",
+        "label": "SPL L All-round Engine Mk1",
+        "size": "l",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 33.6,
+        "boostRecharge": 128,
+        "boostThrust": 5.04,
+        "boostAcceleration": 2.05,
+        "boostAttack": 10,
+        "boostRelease": 4,
+        "boostCoast": 1.2,
+        "travelCharge": 17,
+        "travelThrust": 16.77,
+        "travelAttack": 72.8,
+        "travelRelease": 22.5,
+        "thrustForward": 5200,
+        "thrustReverse": 5200,
+        "hullMax": 4018,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.5
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_l_travel_01_mk1",
+        "macroID": "engine_spl_l_travel_01_mk1_macro",
+        "label": "SPL L Travel Engine Mk1",
+        "size": "l",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 28.56,
+        "boostRecharge": 128,
+        "boostThrust": 3.92,
+        "boostAcceleration": 1.77,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 17,
+        "travelThrust": 23.29,
+        "travelAttack": 69.2,
+        "travelRelease": 37.5,
+        "thrustForward": 4212,
+        "thrustReverse": 4212,
+        "hullMax": 4018,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 15
+            },
+            {
+                "position": 2.5,
+                "value": 21
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_allround_01_mk1",
+        "macroID": "engine_spl_m_allround_01_mk1_macro",
+        "label": "SPL M All-round Engine Mk1",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 17.5,
+        "boostRecharge": 128,
+        "boostThrust": 5.04,
+        "boostAcceleration": 3.33,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 7,
+        "travelThrust": 5.772,
+        "travelAttack": 33.6,
+        "travelRelease": 20,
+        "thrustForward": 1300,
+        "thrustReverse": 1300,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_allround_01_mk2",
+        "macroID": "engine_spl_m_allround_01_mk2_macro",
+        "label": "SPL M All-round Engine Mk2",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 17.5,
+        "boostRecharge": 128,
+        "boostThrust": 5.04,
+        "boostAcceleration": 3.33,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 7,
+        "travelThrust": 5.772,
+        "travelAttack": 33.6,
+        "travelRelease": 20,
+        "thrustForward": 1560,
+        "thrustReverse": 1560,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_allround_01_mk3",
+        "macroID": "engine_spl_m_allround_01_mk3_macro",
+        "label": "SPL M All-round Engine Mk3",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 17.5,
+        "boostRecharge": 128,
+        "boostThrust": 5.04,
+        "boostAcceleration": 3.33,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 7,
+        "travelThrust": 5.772,
+        "travelAttack": 33.6,
+        "travelRelease": 20,
+        "thrustForward": 1755,
+        "thrustReverse": 1755,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_combat_01_mk1",
+        "macroID": "engine_spl_m_combat_01_mk1_macro",
+        "label": "SPL M Combat Engine Mk1",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 21.86,
+        "boostRecharge": 128,
+        "boostThrust": 5.35,
+        "boostAcceleration": 3.72,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 4.56,
+        "travelAttack": 38.6,
+        "travelRelease": 10,
+        "thrustForward": 1482,
+        "thrustReverse": 1482,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.6,
+                "value": 4.5
+            },
+            {
+                "position": 2,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_combat_01_mk2",
+        "macroID": "engine_spl_m_combat_01_mk2_macro",
+        "label": "SPL M Combat Engine Mk2",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 21.86,
+        "boostRecharge": 128,
+        "boostThrust": 5.35,
+        "boostAcceleration": 3.72,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 4.56,
+        "travelAttack": 38.6,
+        "travelRelease": 10,
+        "thrustForward": 1778.4,
+        "thrustReverse": 1778.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.65,
+                "value": 4.5
+            },
+            {
+                "position": 2,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_combat_01_mk3",
+        "macroID": "engine_spl_m_combat_01_mk3_macro",
+        "label": "SPL M Combat Engine Mk3",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 21.86,
+        "boostRecharge": 128,
+        "boostThrust": 5.35,
+        "boostAcceleration": 3.72,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 4.56,
+        "travelAttack": 38.6,
+        "travelRelease": 10,
+        "thrustForward": 2000.7,
+        "thrustReverse": 2000.7,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.65,
+                "value": 4.5
+            },
+            {
+                "position": 2,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_combat_01_mk4",
+        "macroID": "engine_spl_m_combat_01_mk4_macro",
+        "label": "SPL M Combat Engine Mk4",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 4,
+        "variantID": "01:mk4:",
+        "boostDuration": 21.86,
+        "boostRecharge": 128,
+        "boostThrust": 5.35,
+        "boostAcceleration": 3.72,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 4.56,
+        "travelAttack": 38.6,
+        "travelRelease": 10,
+        "thrustForward": 2104,
+        "thrustReverse": 2104,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.6,
+                "value": 4
+            },
+            {
+                "position": 2,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_travel_01_mk1",
+        "macroID": "engine_spl_m_travel_01_mk1_macro",
+        "label": "SPL M Travel Engine Mk1",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 14.86,
+        "boostRecharge": 128,
+        "boostThrust": 3.92,
+        "boostAcceleration": 2.87,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 7,
+        "travelThrust": 8.02,
+        "travelAttack": 31.9,
+        "travelRelease": 30,
+        "thrustForward": 1170,
+        "thrustReverse": 1170,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_travel_01_mk2",
+        "macroID": "engine_spl_m_travel_01_mk2_macro",
+        "label": "SPL M Travel Engine Mk2",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 14.86,
+        "boostRecharge": 128,
+        "boostThrust": 3.92,
+        "boostAcceleration": 2.87,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 7,
+        "travelThrust": 8.02,
+        "travelAttack": 31.9,
+        "travelRelease": 30,
+        "thrustForward": 1404,
+        "thrustReverse": 1404,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_m_travel_01_mk3",
+        "macroID": "engine_spl_m_travel_01_mk3_macro",
+        "label": "SPL M Travel Engine Mk3",
+        "size": "m",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 14.86,
+        "boostRecharge": 128,
+        "boostThrust": 3.92,
+        "boostAcceleration": 2.87,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 7,
+        "travelThrust": 8.02,
+        "travelAttack": 31.9,
+        "travelRelease": 30,
+        "thrustForward": 1579.5,
+        "thrustReverse": 1579.5,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_allround_01_mk1",
+        "macroID": "engine_spl_s_allround_01_mk1_macro",
+        "label": "SPL S All-round Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 14,
+        "boostRecharge": 128,
+        "boostThrust": 5.6,
+        "boostAcceleration": 3.08,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 7.8,
+        "travelAttack": 28,
+        "travelRelease": 20,
+        "thrustForward": 510,
+        "thrustReverse": 510,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 7
+            },
+            {
+                "position": 2.5,
+                "value": 9
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_allround_01_mk2",
+        "macroID": "engine_spl_s_allround_01_mk2_macro",
+        "label": "SPL S All-round Engine Mk2",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 14,
+        "boostRecharge": 128,
+        "boostThrust": 5.6,
+        "boostAcceleration": 3.08,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 7.8,
+        "travelAttack": 28,
+        "travelRelease": 20,
+        "thrustForward": 612,
+        "thrustReverse": 612,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_allround_01_mk3",
+        "macroID": "engine_spl_s_allround_01_mk3_macro",
+        "label": "SPL S All-round Engine Mk3",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 14,
+        "boostRecharge": 128,
+        "boostThrust": 5.6,
+        "boostAcceleration": 3.08,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 7.8,
+        "travelAttack": 28,
+        "travelRelease": 20,
+        "thrustForward": 688.5,
+        "thrustReverse": 688.5,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_combat_01_mk1",
+        "macroID": "engine_spl_s_combat_01_mk1_macro",
+        "label": "SPL S Combat Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 17.5,
+        "boostRecharge": 128,
+        "boostThrust": 5.94,
+        "boostAcceleration": 3.44,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 3,
+        "travelThrust": 6.16,
+        "travelAttack": 32.2,
+        "travelRelease": 10,
+        "thrustForward": 581.4,
+        "thrustReverse": 581.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_combat_01_mk2",
+        "macroID": "engine_spl_s_combat_01_mk2_macro",
+        "label": "SPL S Combat Engine Mk2",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 17.5,
+        "boostRecharge": 128,
+        "boostThrust": 5.94,
+        "boostAcceleration": 3.44,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 3,
+        "travelThrust": 6.16,
+        "travelAttack": 32.2,
+        "travelRelease": 10,
+        "thrustForward": 697.68,
+        "thrustReverse": 697.68,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_combat_01_mk3",
+        "macroID": "engine_spl_s_combat_01_mk3_macro",
+        "label": "SPL S Combat Engine Mk3",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 17.5,
+        "boostRecharge": 128,
+        "boostThrust": 5.94,
+        "boostAcceleration": 3.44,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 3,
+        "travelThrust": 6.16,
+        "travelAttack": 32.2,
+        "travelRelease": 10,
+        "thrustForward": 784.89,
+        "thrustReverse": 784.89,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_combat_01_mk4",
+        "macroID": "engine_spl_s_combat_01_mk4_macro",
+        "label": "SPL S Combat Engine Mk4",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 4,
+        "variantID": "01:mk4:",
+        "boostDuration": 17.5,
+        "boostRecharge": 128,
+        "boostThrust": 5.94,
+        "boostAcceleration": 3.44,
+        "boostAttack": 0.25,
+        "boostRelease": 4,
+        "boostCoast": 1.15,
+        "travelCharge": 3,
+        "travelThrust": 6.16,
+        "travelAttack": 32.2,
+        "travelRelease": 10,
+        "thrustForward": 826,
+        "thrustReverse": 826,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 3.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_travel_01_mk1",
+        "macroID": "engine_spl_s_travel_01_mk1_macro",
+        "label": "SPL S Travel Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 11.9,
+        "boostRecharge": 128,
+        "boostThrust": 4.36,
+        "boostAcceleration": 2.66,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 10.83,
+        "travelAttack": 26.6,
+        "travelRelease": 30,
+        "thrustForward": 459,
+        "thrustReverse": 459,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_travel_01_mk2",
+        "macroID": "engine_spl_s_travel_01_mk2_macro",
+        "label": "SPL S Travel Engine Mk2",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 11.9,
+        "boostRecharge": 128,
+        "boostThrust": 4.36,
+        "boostAcceleration": 2.66,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 10.83,
+        "travelAttack": 26.6,
+        "travelRelease": 30,
+        "thrustForward": 550.8,
+        "thrustReverse": 550.8,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_s_travel_01_mk3",
+        "macroID": "engine_spl_s_travel_01_mk3_macro",
+        "label": "SPL S Travel Engine Mk3",
+        "size": "s",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 11.9,
+        "boostRecharge": 128,
+        "boostThrust": 4.36,
+        "boostAcceleration": 2.66,
+        "boostAttack": 0.25,
+        "boostRelease": 3,
+        "boostCoast": 1.15,
+        "travelCharge": 5,
+        "travelThrust": 10.83,
+        "travelAttack": 26.6,
+        "travelRelease": 30,
+        "thrustForward": 619.65,
+        "thrustReverse": 619.65,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_xl_allround_01_mk1",
+        "macroID": "engine_spl_xl_allround_01_mk1_macro",
+        "label": "SPL XL All-round Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 33.6,
+        "boostRecharge": 128,
+        "boostThrust": 5.04,
+        "boostAcceleration": 2.05,
+        "boostAttack": 10,
+        "boostRelease": 4,
+        "boostCoast": 1.2,
+        "travelCharge": 17,
+        "travelThrust": 16.77,
+        "travelAttack": 72.8,
+        "travelRelease": 22.5,
+        "thrustForward": 13715,
+        "thrustReverse": 13715,
+        "hullMax": 9899,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_spl_xl_travel_01_mk1",
+        "macroID": "engine_spl_xl_travel_01_mk1_macro",
+        "label": "SPL XL Travel Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "ego_dlc_split",
+        "makerRace": "split",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 28.56,
+        "boostRecharge": 128,
+        "boostThrust": 3.92,
+        "boostAcceleration": 1.77,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 17,
+        "travelThrust": 23.29,
+        "travelAttack": 69.2,
+        "travelRelease": 37.5,
+        "thrustForward": 11109.15,
+        "thrustReverse": 11109.15,
+        "hullMax": 9955,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 15
+            },
+            {
+                "position": 2.5,
+                "value": 21
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_l_allround_01_mk1",
+        "macroID": "engine_tel_l_allround_01_mk1_macro",
+        "label": "TEL L All-round Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 44,
+        "boostRecharge": 120,
+        "boostThrust": 3.75,
+        "boostAcceleration": 1.69,
+        "boostAttack": 10,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 10,
+        "travelThrust": 28.6,
+        "travelAttack": 57,
+        "travelRelease": 18,
+        "thrustForward": 4000,
+        "thrustReverse": 4400,
+        "hullMax": 6027,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_l_travel_01_mk1",
+        "macroID": "engine_tel_l_travel_01_mk1_macro",
+        "label": "TEL L Travel Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 35,
+        "boostRecharge": 120,
+        "boostThrust": 2.66,
+        "boostAcceleration": 1.08,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 10,
+        "travelThrust": 37.5,
+        "travelAttack": 49,
+        "travelRelease": 30,
+        "thrustForward": 3384,
+        "thrustReverse": 3722,
+        "hullMax": 6027,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_allround_01_mk1",
+        "macroID": "engine_tel_m_allround_01_mk1_macro",
+        "label": "TEL M All-round Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 26.4,
+        "boostRecharge": 120,
+        "boostThrust": 4.5,
+        "boostAcceleration": 3.04,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 8.65,
+        "travelAttack": 25,
+        "travelRelease": 16,
+        "thrustForward": 940,
+        "thrustReverse": 1034,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_allround_01_mk2",
+        "macroID": "engine_tel_m_allround_01_mk2_macro",
+        "label": "TEL M All-round Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 26.4,
+        "boostRecharge": 120,
+        "boostThrust": 4.5,
+        "boostAcceleration": 3.04,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 8.65,
+        "travelAttack": 25,
+        "travelRelease": 16,
+        "thrustForward": 1128,
+        "thrustReverse": 1240.8,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_allround_01_mk3",
+        "macroID": "engine_tel_m_allround_01_mk3_macro",
+        "label": "TEL M All-round Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 26.4,
+        "boostRecharge": 120,
+        "boostThrust": 4.5,
+        "boostAcceleration": 3.04,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 8.65,
+        "travelAttack": 25,
+        "travelRelease": 16,
+        "thrustForward": 1269,
+        "thrustReverse": 1395.9,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_combat_01_mk1",
+        "macroID": "engine_tel_m_combat_01_mk1_macro",
+        "label": "TEL M Combat Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 31.68,
+        "boostRecharge": 114,
+        "boostThrust": 5.19,
+        "boostAcceleration": 4.04,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 6.28,
+        "travelAttack": 25,
+        "travelRelease": 8,
+        "thrustForward": 1099.8,
+        "thrustReverse": 1209.78,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_combat_01_mk2",
+        "macroID": "engine_tel_m_combat_01_mk2_macro",
+        "label": "TEL M Combat Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 31.68,
+        "boostRecharge": 114,
+        "boostThrust": 5.19,
+        "boostAcceleration": 4.04,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 6.28,
+        "travelAttack": 25,
+        "travelRelease": 8,
+        "thrustForward": 1319.76,
+        "thrustReverse": 1451.74,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_combat_01_mk3",
+        "macroID": "engine_tel_m_combat_01_mk3_macro",
+        "label": "TEL M Combat Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 31.68,
+        "boostRecharge": 114,
+        "boostThrust": 5.19,
+        "boostAcceleration": 4.04,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 6.28,
+        "travelAttack": 25,
+        "travelRelease": 8,
+        "thrustForward": 1484.73,
+        "thrustReverse": 1633.203,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_corvette_01_mk1",
+        "macroID": "engine_tel_m_corvette_01_mk1_macro",
+        "label": "TEL Envoy M Engine Mk1",
+        "size": "m",
+        "dataSourceID": "ego_dlc_mini_02",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 22,
+        "boostRecharge": 114,
+        "boostThrust": 5.9,
+        "boostAcceleration": 4.2,
+        "boostAttack": 0,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 3,
+        "travelThrust": 14.3,
+        "travelAttack": 24,
+        "travelRelease": 10,
+        "thrustForward": 1342,
+        "thrustReverse": 1208,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 14
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_corvette_01_mk2",
+        "macroID": "engine_tel_m_corvette_01_mk2_macro",
+        "label": "TEL Envoy M Engine Mk2",
+        "size": "m",
+        "dataSourceID": "ego_dlc_mini_02",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 22,
+        "boostRecharge": 114,
+        "boostThrust": 5.9,
+        "boostAcceleration": 4.2,
+        "boostAttack": 0,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 3,
+        "travelThrust": 13.8,
+        "travelAttack": 24,
+        "travelRelease": 10,
+        "thrustForward": 1543,
+        "thrustReverse": 1389,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 14
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_travel_01_mk1",
+        "macroID": "engine_tel_m_travel_01_mk1_macro",
+        "label": "TEL M Travel Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 23.76,
+        "boostRecharge": 120,
+        "boostThrust": 3.19,
+        "boostAcceleration": 1.86,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 11.53,
+        "travelAttack": 20.5,
+        "travelRelease": 24,
+        "thrustForward": 902.4,
+        "thrustReverse": 992.64,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_travel_01_mk2",
+        "macroID": "engine_tel_m_travel_01_mk2_macro",
+        "label": "TEL M Travel Engine Mk2",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 23.76,
+        "boostRecharge": 120,
+        "boostThrust": 3.19,
+        "boostAcceleration": 1.86,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 11.53,
+        "travelAttack": 20.5,
+        "travelRelease": 24,
+        "thrustForward": 1082.88,
+        "thrustReverse": 1191.17,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_m_travel_01_mk3",
+        "macroID": "engine_tel_m_travel_01_mk3_macro",
+        "label": "TEL M Travel Engine Mk3",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 23.76,
+        "boostRecharge": 120,
+        "boostThrust": 3.19,
+        "boostAcceleration": 1.86,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 6,
+        "travelThrust": 11.53,
+        "travelAttack": 20.5,
+        "travelRelease": 24,
+        "thrustForward": 1218.24,
+        "thrustReverse": 1340.06,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_allround_01_mk1",
+        "macroID": "engine_tel_s_allround_01_mk1_macro",
+        "label": "TEL S All-round Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 22,
+        "boostRecharge": 120,
+        "boostThrust": 5,
+        "boostAcceleration": 3.75,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 13.3,
+        "travelAttack": 18,
+        "travelRelease": 16,
+        "thrustForward": 370,
+        "thrustReverse": 407,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_allround_01_mk2",
+        "macroID": "engine_tel_s_allround_01_mk2_macro",
+        "label": "TEL S All-round Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 22,
+        "boostRecharge": 120,
+        "boostThrust": 5,
+        "boostAcceleration": 3.75,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 13.3,
+        "travelAttack": 18,
+        "travelRelease": 16,
+        "thrustForward": 444,
+        "thrustReverse": 488.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_allround_01_mk3",
+        "macroID": "engine_tel_s_allround_01_mk3_macro",
+        "label": "TEL S All-round Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 22,
+        "boostRecharge": 120,
+        "boostThrust": 5,
+        "boostAcceleration": 3.75,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 13.3,
+        "travelAttack": 18,
+        "travelRelease": 16,
+        "thrustForward": 499.5,
+        "thrustReverse": 549.45,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_combat_01_mk1",
+        "macroID": "engine_tel_s_combat_01_mk1_macro",
+        "label": "TEL S Combat Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 26.4,
+        "boostRecharge": 114,
+        "boostThrust": 5.77,
+        "boostAcceleration": 5,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 9.66,
+        "travelAttack": 18,
+        "travelRelease": 8,
+        "thrustForward": 432.9,
+        "thrustReverse": 476.19,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_combat_01_mk2",
+        "macroID": "engine_tel_s_combat_01_mk2_macro",
+        "label": "TEL S Combat Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 26.4,
+        "boostRecharge": 114,
+        "boostThrust": 5.77,
+        "boostAcceleration": 5,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 9.66,
+        "travelAttack": 18,
+        "travelRelease": 8,
+        "thrustForward": 519.48,
+        "thrustReverse": 571.43,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_combat_01_mk3",
+        "macroID": "engine_tel_s_combat_01_mk3_macro",
+        "label": "TEL S Combat Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 26.4,
+        "boostRecharge": 114,
+        "boostThrust": 5.77,
+        "boostAcceleration": 5,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 9.66,
+        "travelAttack": 18,
+        "travelRelease": 8,
+        "thrustForward": 584.42,
+        "thrustReverse": 642.86,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_racer_01_mk1",
+        "macroID": "engine_tel_s_racer_01_mk1_macro",
+        "label": "TEL S Racing Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk1",
+        "boostDuration": 9,
+        "boostRecharge": 20,
+        "boostThrust": 3,
+        "boostAcceleration": 2,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.15,
+        "travelCharge": 0,
+        "travelThrust": 1,
+        "travelAttack": 1,
+        "travelRelease": 1,
+        "thrustForward": 488,
+        "thrustReverse": 555,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1,
+                "value": 1
+            },
+            {
+                "position": 1.01,
+                "value": 1.2
+            },
+            {
+                "position": 1.15,
+                "value": 1.5
+            },
+            {
+                "position": 1.25,
+                "value": 2
+            },
+            {
+                "position": 1.7,
+                "value": 4
+            },
+            {
+                "position": 2.1,
+                "value": 5
+            },
+            {
+                "position": 2.5,
+                "value": 8
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_travel_01_mk1",
+        "macroID": "engine_tel_s_travel_01_mk1_macro",
+        "label": "TEL S Travel Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 19.8,
+        "boostRecharge": 120,
+        "boostThrust": 3.54,
+        "boostAcceleration": 2,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 17.73,
+        "travelAttack": 14.76,
+        "travelRelease": 24,
+        "thrustForward": 355.2,
+        "thrustReverse": 390.72,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_travel_01_mk2",
+        "macroID": "engine_tel_s_travel_01_mk2_macro",
+        "label": "TEL S Travel Engine Mk2",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 2,
+        "variantID": "01::mk2",
+        "boostDuration": 19.8,
+        "boostRecharge": 120,
+        "boostThrust": 3.54,
+        "boostAcceleration": 2,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 17.73,
+        "travelAttack": 14.76,
+        "travelRelease": 24,
+        "thrustForward": 426.24,
+        "thrustReverse": 468.86,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_s_travel_01_mk3",
+        "macroID": "engine_tel_s_travel_01_mk3_macro",
+        "label": "TEL S Travel Engine Mk3",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 3,
+        "variantID": "01::mk3",
+        "boostDuration": 19.8,
+        "boostRecharge": 120,
+        "boostThrust": 3.54,
+        "boostAcceleration": 2,
+        "boostAttack": 0.25,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 4,
+        "travelThrust": 17,
+        "travelAttack": 14.76,
+        "travelRelease": 24,
+        "thrustForward": 479.52,
+        "thrustReverse": 527.47,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 4
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 10
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_xl_allround_01_mk1",
+        "macroID": "engine_tel_xl_allround_01_mk1_macro",
+        "label": "TEL XL All-round Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 44,
+        "boostRecharge": 120,
+        "boostThrust": 3.75,
+        "boostAcceleration": 1.69,
+        "boostAttack": 10,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 10,
+        "travelThrust": 28.6,
+        "travelAttack": 57,
+        "travelRelease": 18,
+        "thrustForward": 10400,
+        "thrustReverse": 11440,
+        "hullMax": 13915,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 21
+            }
+        ]
+    },
+    {
+        "wareID": "engine_tel_xl_travel_01_mk1",
+        "macroID": "engine_tel_xl_travel_01_mk1_macro",
+        "label": "TEL XL Travel Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "teladi",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 35,
+        "boostRecharge": 120,
+        "boostThrust": 2.66,
+        "boostAcceleration": 1.08,
+        "boostAttack": 10,
+        "boostRelease": 3,
+        "boostCoast": 1.25,
+        "travelCharge": 10,
+        "travelThrust": 37.5,
+        "travelAttack": 49,
+        "travelRelease": 30,
+        "thrustForward": 8898,
+        "thrustReverse": 9678,
+        "hullMax": 13915,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 3
+            },
+            {
+                "position": 1.75,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 21
+            }
+        ]
+    },
+    {
+        "wareID": "engine_ter_l_allround_02_mk1",
+        "macroID": "engine_ter_l_allround_02_mk1_macro",
+        "label": "TER L Frontier Engine Mk1",
+        "size": "l",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "terran",
+        "mk": 1,
+        "variantID": "02::mk1",
+        "boostDuration": 32,
+        "boostRecharge": 90,
+        "boostThrust": 4.8,
+        "boostAcceleration": 2.2,
+        "boostAttack": 7,
+        "boostRelease": 3,
+        "boostCoast": 1.4,
+        "travelCharge": 8,
+        "travelThrust": 32,
+        "travelAttack": 66,
+        "travelRelease": 22.5,
+        "thrustForward": 3696,
+        "thrustReverse": 4250.4,
+        "hullMax": 4000,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 1.2
+            },
+            {
+                "position": 1.3,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 3
+            },
+            {
+                "position": 1.7,
+                "value": 4
+            },
+            {
+                "position": 2.1,
+                "value": 5
+            },
+            {
+                "position": 2.5,
+                "value": 8
+            }
+        ]
+    },
+    {
+        "wareID": "engine_ter_m_virtual_01_mk1",
+        "macroID": "engine_ter_m_virtual_01_mk1_macro",
+        "label": "TER M Frontier Engine Mk1",
+        "size": "m",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "terran",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 16,
+        "boostRecharge": 100,
+        "boostThrust": 6.8,
+        "boostAcceleration": 4.8,
+        "boostAttack": 0.13,
+        "boostRelease": 3,
+        "boostCoast": 1.2,
+        "travelCharge": 0,
+        "travelThrust": 8,
+        "travelAttack": 18.5,
+        "travelRelease": 1,
+        "thrustForward": 1170,
+        "thrustReverse": 2004,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.5
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 9
+            },
+            {
+                "position": 2.5,
+                "value": 13
+            }
+        ]
+    },
+    {
+        "wareID": "engine_ter_s_virtual_01_mk1",
+        "macroID": "engine_ter_s_virtual_01_mk1_macro",
+        "label": "TER S Frontier Engine Mk1",
+        "size": "s",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "terran",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 18,
+        "boostRecharge": 130,
+        "boostThrust": 6.89,
+        "boostAcceleration": 4.7,
+        "boostAttack": 0.13,
+        "boostRelease": 2,
+        "boostCoast": 1.25,
+        "travelCharge": 1,
+        "travelThrust": 13,
+        "travelAttack": 16,
+        "travelRelease": 1,
+        "thrustForward": 462,
+        "thrustReverse": 554.4,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.4,
+                "value": 11
+            },
+            {
+                "position": 2.7,
+                "value": 16
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_l_allround_01_mk1",
+        "macroID": "engine_xen_l_allround_01_mk1_macro",
+        "label": "XEN L All-round Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 30,
+        "boostRecharge": 150,
+        "boostThrust": 2.5,
+        "boostAcceleration": 1.5,
+        "boostAttack": 10,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 18,
+        "travelThrust": 25,
+        "travelAttack": 49,
+        "travelRelease": 15,
+        "thrustForward": 4206,
+        "thrustReverse": 4627,
+        "hullMax": 4033,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_l_allround_02_mk1",
+        "macroID": "engine_xen_l_allround_02_mk1_macro",
+        "label": "XEN L All-round Engine Mk1",
+        "size": "l",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "02::mk1",
+        "boostDuration": 30,
+        "boostRecharge": 150,
+        "boostThrust": 2.5,
+        "boostAcceleration": 1.5,
+        "boostAttack": 10,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 18,
+        "travelThrust": 25,
+        "travelAttack": 49,
+        "travelRelease": 15,
+        "thrustForward": 4206,
+        "thrustReverse": 4627,
+        "hullMax": 4033,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_m_combat_01_mk1",
+        "macroID": "engine_xen_m_combat_01_mk1_macro",
+        "label": "XEN M Combat Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 18,
+        "boostRecharge": 150,
+        "boostThrust": 6,
+        "boostAcceleration": 7,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 3,
+        "travelThrust": 8,
+        "travelAttack": 15,
+        "travelRelease": 10,
+        "thrustForward": 1286,
+        "thrustReverse": 1486,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_m_travel_01_mk1",
+        "macroID": "engine_xen_m_travel_01_mk1_macro",
+        "label": "XEN M Travel Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 12,
+        "boostRecharge": 150,
+        "boostThrust": 6,
+        "boostAcceleration": 6,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 3,
+        "travelThrust": 12,
+        "travelAttack": 20,
+        "travelRelease": 30,
+        "thrustForward": 1224,
+        "thrustReverse": 1102,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_m_virtual_01_mk1",
+        "macroID": "engine_xen_m_virtual_01_mk1_macro",
+        "label": "XEN M Combat Engine Mk1",
+        "size": "m",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 18,
+        "boostRecharge": 150,
+        "boostThrust": 6,
+        "boostAcceleration": 8,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 8,
+        "travelAttack": 15,
+        "travelRelease": 10,
+        "thrustForward": 1286,
+        "thrustReverse": 1486,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 12
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_s_combat_01_mk1",
+        "macroID": "engine_xen_s_combat_01_mk1_macro",
+        "label": "XEN S Combat Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 16,
+        "boostRecharge": 150,
+        "boostThrust": 6,
+        "boostAcceleration": 6,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 1,
+        "travelThrust": 18,
+        "travelAttack": 15,
+        "travelRelease": 10,
+        "thrustForward": 503,
+        "thrustReverse": 768,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_s_virtual_01_mk1",
+        "macroID": "engine_xen_s_virtual_01_mk1_macro",
+        "label": "XEN S Combat Engine Mk1",
+        "size": "s",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 16,
+        "boostRecharge": 150,
+        "boostThrust": 6,
+        "boostAcceleration": 8,
+        "boostAttack": 0.25,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 18,
+        "travelAttack": 15,
+        "travelRelease": 10,
+        "thrustForward": 503,
+        "thrustReverse": 768,
+        "hullMax": 0,
+        "hullThreshold": 0,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.25,
+                "value": 2.2
+            },
+            {
+                "position": 1.75,
+                "value": 4.5
+            },
+            {
+                "position": 2.1,
+                "value": 8
+            },
+            {
+                "position": 2.5,
+                "value": 11
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_xl_allround_01_mk1",
+        "macroID": "engine_xen_xl_allround_01_mk1_macro",
+        "label": "XEN XL All-round Engine Mk1",
+        "size": "xl",
+        "dataSourceID": "vanilla",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01::mk1",
+        "boostDuration": 30,
+        "boostRecharge": 150,
+        "boostThrust": 2.5,
+        "boostAcceleration": 1.5,
+        "boostAttack": 10,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 20,
+        "travelThrust": 25,
+        "travelAttack": 49,
+        "travelRelease": 15,
+        "thrustForward": 11076,
+        "thrustReverse": 12184,
+        "hullMax": 29561,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.1,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 5
+            },
+            {
+                "position": 2.1,
+                "value": 14
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    },
+    {
+        "wareID": "engine_xen_xl_mothership_01_allround_mk1",
+        "macroID": "engine_xen_xl_mothership_01_allround_mk1_macro",
+        "label": "Xenon XL Engine",
+        "size": "xl",
+        "dataSourceID": "ego_dlc_timelines",
+        "makerRace": "xenon",
+        "mk": 1,
+        "variantID": "01:allround:mk1",
+        "boostDuration": 0,
+        "boostRecharge": 0,
+        "boostThrust": 1,
+        "boostAcceleration": 1,
+        "boostAttack": 0,
+        "boostRelease": 0,
+        "boostCoast": 1,
+        "travelCharge": 0,
+        "travelThrust": 0,
+        "travelAttack": 0,
+        "travelRelease": 0,
+        "thrustForward": 35312,
+        "thrustReverse": 38844,
+        "hullMax": 151600,
+        "hullThreshold": 0.3,
+        "decelerationCurve": [
+            {
+                "position": 1.01,
+                "value": 1
+            },
+            {
+                "position": 1.2,
+                "value": 2
+            },
+            {
+                "position": 1.5,
+                "value": 4
+            },
+            {
+                "position": 1.7,
+                "value": 6
+            },
+            {
+                "position": 2.1,
+                "value": 10
+            },
+            {
+                "position": 2.5,
+                "value": 20
+            }
+        ]
+    }
+]
