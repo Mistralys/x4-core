@@ -628,6 +628,116 @@ final class ShipDefTests extends X4TestCase
     }
 
     // =========================================================================
+    // Weapon Performance Data Tests
+    // =========================================================================
+
+    public function test_getCompatibleWeapons_returnsWeaponDefs(): void
+    {
+        $ship = $this->getSampleShip();
+        $weapons = $ship->getCompatibleWeapons();
+        
+        $this->assertIsArray($weapons);
+        
+        if ($ship->countWeapons() > 0) {
+            $this->assertNotEmpty($weapons, 'Ship with weapon slots should have compatible weapons');
+            
+            foreach ($weapons as $weapon) {
+                $this->assertInstanceOf(\Mistralys\X4\Database\Weapons\WeaponDef::class, $weapon);
+                
+                // Verify the weapon system is valid
+                $this->assertNotEmpty($weapon->getWeaponSystem());
+                
+                // Verify weapon has performance data (DPS, bullet range, etc.)
+                $this->assertIsFloat($weapon->getDPS());
+                $this->assertIsFloat($weapon->getBulletRange());
+            }
+        } else {
+            // If no weapon slots, should return empty array
+            $this->assertEmpty($weapons);
+        }
+    }
+
+    public function test_getCompatibleTurrets_returnsWeaponDefs(): void
+    {
+        $ship = $this->getSampleShip();
+        $turrets = $ship->getCompatibleTurrets();
+        
+        $this->assertIsArray($turrets);
+        
+        if ($ship->countTurrets() > 0) {
+            $this->assertNotEmpty($turrets, 'Ship with turret slots should have compatible turrets');
+            
+            foreach ($turrets as $turret) {
+                $this->assertInstanceOf(\Mistralys\X4\Database\Weapons\WeaponDef::class, $turret);
+                
+                // Verify the weapon system is valid
+                $this->assertNotEmpty($turret->getWeaponSystem());
+                
+                // Verify turret has performance data
+                $this->assertIsFloat($turret->getDPS());
+                $this->assertIsFloat($turret->getBulletRange());
+            }
+        } else {
+            // If no turret slots, should return empty array
+            $this->assertEmpty($turrets);
+        }
+    }
+
+    public function test_compatibleWeapons_matchEquipmentFinder(): void
+    {
+        $ship = $this->getSampleShip();
+        
+        // Get ware IDs from equipment finder
+        $equipmentWareIDs = array_map(
+            fn($ware) => $ware->getID(),
+            $ship->getWeapons()->getAll()
+        );
+        
+        // Get weapon ware IDs from WeaponDef collection
+        $weaponWareIDs = array_map(
+            fn($weapon) => $weapon->getWareID(),
+            $ship->getCompatibleWeapons()
+        );
+        
+        // Both should return the same ware IDs (one returns WareDef, other returns WeaponDef)
+        sort($equipmentWareIDs);
+        sort($weaponWareIDs);
+        
+        $this->assertEquals(
+            $equipmentWareIDs,
+            $weaponWareIDs,
+            'getCompatibleWeapons() should return WeaponDefs for the same wares as getWeapons()'
+        );
+    }
+
+    public function test_compatibleTurrets_matchEquipmentFinder(): void
+    {
+        $ship = $this->getSampleShip();
+        
+        // Get ware IDs from equipment finder
+        $equipmentWareIDs = array_map(
+            fn($ware) => $ware->getID(),
+            $ship->getTurrets()->getAll()
+        );
+        
+        // Get weapon ware IDs from WeaponDef collection
+        $weaponWareIDs = array_map(
+            fn($weapon) => $weapon->getWareID(),
+            $ship->getCompatibleTurrets()
+        );
+        
+        // Both should return the same ware IDs (one returns WareDef, other returns WeaponDef)
+        sort($equipmentWareIDs);
+        sort($weaponWareIDs);
+        
+        $this->assertEquals(
+            $equipmentWareIDs,
+            $weaponWareIDs,
+            'getCompatibleTurrets() should return WeaponDefs for the same wares as getTurrets()'
+        );
+    }
+
+    // =========================================================================
     // Helper Methods
     // =========================================================================
 

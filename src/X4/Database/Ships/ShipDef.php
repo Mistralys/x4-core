@@ -16,6 +16,8 @@ use Mistralys\X4\Database\Factions\KnownFactions;
 use Mistralys\X4\Database\Ships\Equipment\ShipSlotDefinition;
 use Mistralys\X4\Database\SlotTypes\KnownSlotTypes;
 use Mistralys\X4\Database\Wares\WareDef;
+use Mistralys\X4\Database\Weapons\WeaponDef;
+use Mistralys\X4\Database\Weapons\WeaponDefs;
 
 class ShipDef implements CollectionItemInterface
 {
@@ -390,6 +392,65 @@ class ShipDef implements CollectionItemInterface
     public function getDockingBays(): Equipment\ShipEquipmentFinder
     {
         return $this->findEquipmentForSlot(KnownSlotTypes::DOCKING_BAY);
+    }
+
+    /**
+     * Get all weapon performance data for weapons compatible with this ship's weapon slots.
+     * Returns WeaponDef instances (performance stats) for weapons that match this ship's
+     * weapon slot compatibility.
+     *
+     * @return WeaponDef[]
+     */
+    public function getCompatibleWeapons(): array
+    {
+        // Get compatible weapon ware IDs from equipment finder
+        $compatibleWares = $this->getWeapons()->getAll();
+        $compatibleWareIDs = array_map(fn(WareDef $ware) => $ware->getID(), $compatibleWares);
+
+        // Filter WeaponDefs to match compatible ware IDs
+        return $this->filterWeaponsByWareIDs($compatibleWareIDs);
+    }
+
+    /**
+     * Get all weapon performance data for turrets compatible with this ship's turret slots.
+     * Returns WeaponDef instances (performance stats) for turrets that match this ship's
+     * turret slot compatibility.
+     *
+     * @return WeaponDef[]
+     */
+    public function getCompatibleTurrets(): array
+    {
+        // Get compatible turret ware IDs from equipment finder
+        $compatibleWares = $this->getTurrets()->getAll();
+        $compatibleWareIDs = array_map(fn(WareDef $ware) => $ware->getID(), $compatibleWares);
+
+        // Filter WeaponDefs to match compatible ware IDs
+        return $this->filterWeaponsByWareIDs($compatibleWareIDs);
+    }
+
+    /**
+     * Filter WeaponDefs by an array of ware IDs.
+     *
+     * @param string[] $wareIDs
+     * @return WeaponDef[]
+     */
+    private function filterWeaponsByWareIDs(array $wareIDs): array
+    {
+        if (empty($wareIDs)) {
+            return [];
+        }
+
+        $weaponDefs = WeaponDefs::getInstance();
+        $result = [];
+
+        foreach ($wareIDs as $wareID) {
+            $weapon = $weaponDefs->find($wareID);
+            if ($weapon !== null) {
+                $result[] = $weapon;
+            }
+        }
+
+        return $result;
     }
 
     // endregion
