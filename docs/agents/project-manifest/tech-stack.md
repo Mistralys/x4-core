@@ -40,25 +40,42 @@
 
 The codebase extensively uses a **Collection-Item** pattern for managing game data:
 
-- **Collection Classes** (e.g., `FactionDefs`, `WareDefs`, `ShipDefs`):
+- **Collection Classes** (e.g., `FactionDefs`, `WareDefs`, `ShipDefs`, `ShieldDefs`):
   - Implement singleton pattern via `getInstance()`
   - Provide `getAll()` to retrieve all items
   - Provide `getByID()` for specific item lookup
   - Manage data loading from JSON files
   - Act as factories for their respective item types
 
-- **Item Classes** (e.g., `FactionDef`, `WareDef`, `ShipDef`):
+- **Item Classes** (e.g., `FactionDef`, `WareDef`, `ShipDef`, `ShieldDef`):
   - Implement `CollectionItemInterface`
   - Provide domain-specific getter methods
   - Support serialization via `toArray()` and `fromArray()`
   - Use `VariantID` for variant identification
+
+**Example - Shields:**
+```php
+// Get shield by ID
+$shield = ShieldDefs::getInstance()->getByID('shield_arg_l_standard_01_mk1');
+echo $shield->getCapacity();  // 38844
+echo $shield->getRechargeRate();  // 173
+echo $shield->getFullRechargeTime();  // ~224 seconds
+
+// Filter shields with finder
+$racers = ShieldDefs::getInstance()->findShields()
+    ->selectType('racer')
+    ->selectSize('m')
+    ->selectMinCapacity(10000)
+    ->sortByRechargeRate()
+    ->getAll();
+```
 
 ### 2. Finder Pattern
 
 Specialized finder classes provide fluent filtering interfaces:
 
 ```
-WareFinder, ShipFinder, ModuleFinder, ShipEquipmentFinder
+WareFinder, ShipFinder, ModuleFinder, ShipEquipmentFinder, ShieldFinder
   - Chainable selection methods (selectDataSource, selectGroup, selectSize, etc.)
   - Final getAll() returns filtered results
   - Implements FinderInterface
@@ -158,10 +175,12 @@ All extracted game data is stored in the `/data` folder:
 ```
 blueprints.json
 data-sources.json
+engines.json
 factions.json
 macro-index.json
 modules.json
 ship-settings.json
+shields.json
 ships.json
 wares.json
 lang-{id}_{locale}.json (translations)

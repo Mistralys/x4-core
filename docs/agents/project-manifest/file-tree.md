@@ -13,11 +13,13 @@ x4-core/
 ├── data/                       # Extracted game data (JSON)
 │   ├── blueprints.json
 │   ├── data-sources.json
+│   ├── engines.json
 │   ├── factions.json
 │   ├── lang-*.json            # Translation files (7 languages)
 │   ├── macro-index.json
 │   ├── modules.json
 │   ├── ship-settings.json
+│   ├── shields.json
 │   ├── ships.json
 │   └── wares.json
 ├── docs/                       # Documentation
@@ -129,6 +131,13 @@ src/X4/
 │   │   ├── DataSourcesExtractor.php
 │   │   ├── DLCs.php
 │   │   └── KnownDataSources.php
+│   ├── Engines/              # Engine performance database
+│   │   ├── EngineDef.php
+│   │   ├── EngineDefs.php
+│   │   ├── EngineException.php
+│   │   ├── EngineExtractor.php
+│   │   ├── EngineFinder.php
+│   │   └── EngineMacroExtractor.php
 │   ├── Factions/             # Faction database
 │   │   ├── FactionDef.php
 │   │   ├── FactionDefs.php
@@ -161,6 +170,13 @@ src/X4/
 │   │   ├── ShipSize.php
 │   │   ├── ShipSizes.php
 │   │   └── ShipsExtractor.php
+│   ├── Shields/              # Shield performance database
+│   │   ├── ShieldDef.php
+│   │   ├── ShieldDefs.php
+│   │   ├── ShieldException.php
+│   │   ├── ShieldFinder.php
+│   │   ├── ShieldMacroExtractor.php
+│   │   └── ShieldsExtractor.php
 │   ├── SlotTypes/            # Equipment slot types
 │   │   ├── KnownSlotTypes.php
 │   │   ├── SlotType.php

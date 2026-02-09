@@ -518,6 +518,142 @@ appendConstantSuffix(string $constant, ?string $exceptionSuffix = null): string
 
 ---
 
+### Engines
+
+#### Mistralys\X4\Database\Engines\EngineException
+
+Exception for engine-related errors.
+
+##### Constants
+```php
+ERROR_ENGINE_NOT_FOUND: int = 142001
+ERROR_INVALID_ENGINE_SIZE: int = 142002
+ERROR_INVALID_ENGINE_DATA: int = 142003
+```
+
+---
+
+#### Mistralys\X4\Database\Engines\EngineDef
+
+Definition of an engine with performance characteristics.
+
+##### Constants
+```php
+KEY_WARE_ID: string = 'wareID'
+KEY_MACRO_ID: string = 'macroID'
+KEY_LABEL: string = 'label'
+KEY_SIZE: string = 'size'
+KEY_DATA_SOURCE_ID: string = 'dataSourceID'
+KEY_MAKER_RACE: string = 'makerRace'
+KEY_MK: string = 'mk'
+KEY_VARIANT_ID: string = 'variantID'
+KEY_BOOST_DURATION: string = 'boostDuration'
+KEY_BOOST_RECHARGE: string = 'boostRecharge'
+KEY_BOOST_THRUST: string = 'boostThrust'
+KEY_BOOST_ACCELERATION: string = 'boostAcceleration'
+KEY_BOOST_ATTACK: string = 'boostAttack'
+KEY_BOOST_RELEASE: string = 'boostRelease'
+KEY_BOOST_COAST: string = 'boostCoast'
+KEY_TRAVEL_CHARGE: string = 'travelCharge'
+KEY_TRAVEL_THRUST: string = 'travelThrust'
+KEY_TRAVEL_ATTACK: string = 'travelAttack'
+KEY_TRAVEL_RELEASE: string = 'travelRelease'
+KEY_THRUST_FORWARD: string = 'thrustForward'
+KEY_THRUST_REVERSE: string = 'thrustReverse'
+KEY_HULL_MAX: string = 'hullMax'
+KEY_HULL_THRESHOLD: string = 'hullThreshold'
+KEY_DECELERATION_CURVE: string = 'decelerationCurve'
+```
+
+##### Methods
+```php
+__construct(string $wareID, string $macroID, string $label, string $size, string $dataSourceID, string $makerRace, int $mk, VariantID $variantID, float $boostDuration, float $boostRecharge, float $boostThrust, float $boostAcceleration, float $boostAttack, float $boostRelease, float $boostCoast, float $travelCharge, float $travelThrust, float $travelAttack, float $travelRelease, float $thrustForward, float $thrustReverse, float $hullMax, float $hullThreshold, array $decelerationCurve): void
+static fromArray(mixed $engineDef): EngineDef
+getID(): string
+getLabel(): string
+getVariantID(): VariantID
+getMacroID(): string
+getSize(): string
+getDataSourceID(): string
+getMakerRace(): string
+getMk(): int
+getBoostDuration(): float
+getBoostRecharge(): float
+getBoostThrust(): float
+getBoostAcceleration(): float
+getBoostAttack(): float
+getBoostRelease(): float
+getBoostCoast(): float
+getTravelCharge(): float
+getTravelThrust(): float
+getTravelAttack(): float
+getTravelRelease(): float
+getThrustForward(): float
+getThrustReverse(): float
+getHullMax(): float  
+getHullThreshold(): float
+getDecelerationCurve(): array
+hasDecelerationCurve(): bool
+getWareID(): string
+getWare(): WareDef
+```
+
+---
+
+#### Mistralys\X4\Database\Engines\EngineDefs
+
+Collection of all engine definitions.
+
+##### Constants
+```php
+DATA_FILE: string = 'engines.json'
+ERROR_ENGINE_NOT_FOUND: int = 142001
+```
+
+##### Methods
+```php
+static getInstance(): EngineDefs
+__construct(): void
+getDataFile(): JSONFile
+find(string $idOrMacro): ?EngineDef
+findByMacro(string $macro): ?EngineDef
+getDefaultID(): string
+findEngines(): EngineFinder
+getByID(string $id): EngineDef
+getAll(): array // Returns EngineDef[]
+getDefault(): EngineDef
+```
+
+---
+
+####Mistralys\X4\Database\Engines\EngineFinder
+
+Finder for filtering engine collections.
+
+##### Methods
+```php
+getCollection(): ItemCollectionInterface
+selectSize(string $size): self
+selectSizes(array $sizes): self
+selectMakerRace(string $race): self
+selectMk(int $mk): self
+selectMinMk(int $minMk): self
+selectMinThrust(float $minThrust): self
+selectMaxThrust(float $maxThrust): self
+selectMinBoostDuration(float $minDuration): self
+selectMaxBoostRecharge(float $maxRecharge): self
+selectMinBoostThrust(float $minMultiplier): self
+selectMinTravelThrust(float $minTravel): self
+selectMaxTravelCharge(float $maxCharge): self
+selectMinHull(float $minHull): self
+selectWithDecelerationCurve(): self
+selectDataSource(string|DataSourceDef $dataSource): self
+selectLabelSearch(string $searchTerm): self
+getAll(): array // Returns EngineDef[]
+```
+
+---
+
 ### Factions
 
 #### Mistralys\X4\Database\Factions\FactionException
@@ -922,6 +1058,136 @@ selectSize(string|ShipSize $size): self
 selectDataSource(string|DataSourceDef $dataSource): self
 selectLabel(string $label): self
 getAll(): array // Returns ShipDef[]
+```
+
+---
+
+### Shields
+
+#### Mistralys\X4\Database\Shields\ShieldException
+
+Exception for shield-related errors.
+
+##### Constants
+```php
+ERROR_SHIELD_NOT_FOUND: int = 143001
+ERROR_INVALID_SHIELD_SIZE: int = 143002
+ERROR_INVALID_SHIELD_DATA: int = 143003
+ERROR_INVALID_SHIELD_TYPE: int = 143004
+```
+
+---
+
+#### Mistralys\X4\Database\Shields\ShieldDef
+
+Definition of a shield with performance characteristics.
+
+##### Constants
+```php
+KEY_WARE_ID: string = 'wareID'
+KEY_MACRO_ID: string = 'macroID'
+KEY_LABEL: string = 'label'
+KEY_SIZE: string = 'size'
+KEY_DATA_SOURCE_ID: string = 'dataSourceID'
+KEY_MAKER_RACE: string = 'makerRace'
+KEY_MK: string = 'mk'
+KEY_VARIANT_ID: string = 'variantID'
+KEY_SHIELD_TYPE: string = 'shieldType'
+KEY_RECHARGE_MAX: string = 'rechargeMax'
+KEY_RECHARGE_RATE: string = 'rechargeRate'
+KEY_RECHARGE_DELAY: string = 'rechargeDelay'
+KEY_HULL_MAX: string = 'hullMax'
+KEY_HULL_THRESHOLD: string = 'hullThreshold'
+KEY_HULL_INTEGRATED: string = 'hullIntegrated'
+```
+
+##### Methods
+```php
+__construct(string $wareID, string $macroID, string $label, string $size, string $dataSourceID, string $makerRace, int $mk, VariantID $variantID, string $shieldType, float $rechargeMax, float $rechargeRate, float $rechargeDelay, float $hullMax, float $hullThreshold, bool $hullIntegrated): void
+static fromArray(mixed $shieldDef): ShieldDef
+getID(): string
+getLabel(): string
+getVariantID(): VariantID
+getMacroID(): string
+getSize(): string
+getDataSourceID(): string
+getMakerRace(): string
+getMk(): int
+getShieldType(): string
+getRechargeMax(): float
+getRechargeRate(): float
+getRechargeDelay(): float
+getCapacity(): float
+getFullRechargeTime(): float
+getHullMax(): float
+getHullThreshold(): float
+isHullIntegrated(): bool
+hasHull(): bool
+isStandard(): bool
+isRacer(): bool
+isCorvette(): bool
+isMothership(): bool
+isYacht(): bool
+isExperimental(): bool
+isVirtual(): bool
+getWareID(): string
+getWare(): WareDef
+```
+
+---
+
+#### Mistralys\X4\Database\Shields\ShieldDefs
+
+Collection of all shield definitions.
+
+##### Constants
+```php
+DATA_FILE: string = 'shields.json'
+ERROR_SHIELD_NOT_FOUND: int = 143001
+```
+
+##### Methods
+```php
+static getInstance(): ShieldDefs
+__construct(): void
+getDataFile(): JSONFile
+find(string $idOrMacro): ?ShieldDef
+findByMacro(string $macro): ?ShieldDef
+getByType(string $type): array // Returns ShieldDef[]
+getDefaultID(): string
+findShields(): ShieldFinder
+getByID(string $id): ShieldDef
+getAll(): array // Returns ShieldDef[]
+getDefault(): ShieldDef
+```
+
+---
+
+#### Mistralys\X4\Database\Shields\ShieldFinder
+
+Finder for filtering shield collections.
+
+##### Methods
+```php
+getCollection(): ItemCollectionInterface
+selectSize(string $size): self
+selectSizes(array $sizes): self
+selectMakerRace(string $race): self
+selectMk(int $mk): self
+selectMinMk(int $minMk): self
+selectType(string $type): self
+selectTypes(array $types): self
+selectMinCapacity(float $minCapacity): self
+selectMaxCapacity(float $maxCapacity): self
+selectMinRechargeRate(float $minRate): self
+selectMaxRechargeDelay(float $maxDelay): self
+selectMinHull(float $minHull): self
+selectWithHull(): self
+selectIntegrated(): self
+selectNonIntegrated(): self
+selectDataSource(string|DataSourceDef $dataSource): self
+selectLabelSearch(string $searchTerm): self
+getAll(): array // Returns ShieldDef[]
 ```
 
 ---

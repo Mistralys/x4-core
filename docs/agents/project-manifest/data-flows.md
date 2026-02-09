@@ -336,6 +336,12 @@ composer build
             ├─→ extractWares()
             │       └─→ Parse wares → wares.json
             │
+            ├─→ extractEngines()
+            │       └─→ Parse engines from wares → engines.json
+            │
+            ├─→ extractShields()
+            │       └─→ Parse shields from wares → shields.json
+            │
             ├─→ extractModules()
             │       └─→ Parse modules → modules.json
             │
