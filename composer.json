@@ -52,6 +52,8 @@
     "extract-wares": "Mistralys\\X4\\Database\\DatabaseBuilder::extractWares",
     "extract-factions": "Mistralys\\X4\\Database\\DatabaseBuilder::extractFactions",
     "extract-ships": "Mistralys\\X4\\Database\\DatabaseBuilder::extractShips",
+    "extract-engines": "Mistralys\\X4\\Database\\DatabaseBuilder::extractEngines",
+    "extract-shields": "Mistralys\\X4\\Database\\DatabaseBuilder::extractShields",
     "extract-modules": "Mistralys\\X4\\Database\\DatabaseBuilder::extractModules",
     "extract-macro-index": "Mistralys\\X4\\Database\\DatabaseBuilder::extractMacroIndex",
     "extract-datasources": "Mistralys\\X4\\Database\\DatabaseBuilder::extractDataSources"
