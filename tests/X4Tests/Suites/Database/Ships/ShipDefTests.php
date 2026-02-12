@@ -156,10 +156,29 @@ final class ShipDefTests extends X4TestCase
             [],
             0,
             0.0,
-            0.0,
-            0.0,
+            0.0, // dragForward
+            0.0, // dragReverse
+            0.0, // dragHorizontal
+            0.0, // dragVertical
+            0.0, // dragPitch
+            0.0, // dragYaw
+            0.0, // dragRoll
+            0.0, // inertiaPitch
+            0.0, // inertiaYaw
+            0.0, // inertiaRoll
+            0.0, // jerkStrafe
+            0.0, // jerkAngular
+            0.0, // jerkForwardAccel
+            0.0, // jerkForwardDecel
+            0.0, // jerkForwardRatio
+            0.0, // jerkBoostAccel
+            0.0, // jerkBoostRatio
+            0.0, // jerkTravelAccel
+            0.0, // jerkTravelDecel
+            0.0, // jerkTravelRatio
             0,
             0,
+            [],
             []
         );
         
@@ -193,10 +212,29 @@ final class ShipDefTests extends X4TestCase
             [],
             0,
             0.0,
-            0.0,
-            0.0,
+            0.0, // dragForward
+            0.0, // dragReverse
+            0.0, // dragHorizontal
+            0.0, // dragVertical
+            0.0, // dragPitch
+            0.0, // dragYaw
+            0.0, // dragRoll
+            0.0, // inertiaPitch
+            0.0, // inertiaYaw
+            0.0, // inertiaRoll
+            0.0, // jerkStrafe
+            0.0, // jerkAngular
+            0.0, // jerkForwardAccel
+            0.0, // jerkForwardDecel
+            0.0, // jerkForwardRatio
+            0.0, // jerkBoostAccel
+            0.0, // jerkBoostRatio
+            0.0, // jerkTravelAccel
+            0.0, // jerkTravelDecel
+            0.0, // jerkTravelRatio
             0,
             0,
+            [],
             []
         );
         

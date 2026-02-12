@@ -155,7 +155,25 @@ class ShipsExtractor
             ShipDef::KEY_HULL => $stats[ShipDef::KEY_HULL],
             ShipDef::KEY_MASS => $stats[ShipDef::KEY_MASS],
             ShipDef::KEY_DRAG_FORWARD => $stats[ShipDef::KEY_DRAG_FORWARD],
+            ShipDef::KEY_DRAG_REVERSE => $stats[ShipDef::KEY_DRAG_REVERSE],
+            ShipDef::KEY_DRAG_HORIZONTAL => $stats[ShipDef::KEY_DRAG_HORIZONTAL],
+            ShipDef::KEY_DRAG_VERTICAL => $stats[ShipDef::KEY_DRAG_VERTICAL],
+            ShipDef::KEY_DRAG_PITCH => $stats[ShipDef::KEY_DRAG_PITCH],
+            ShipDef::KEY_DRAG_YAW => $stats[ShipDef::KEY_DRAG_YAW],
+            ShipDef::KEY_DRAG_ROLL => $stats[ShipDef::KEY_DRAG_ROLL],
             ShipDef::KEY_INERTIA_PITCH => $stats[ShipDef::KEY_INERTIA_PITCH],
+            ShipDef::KEY_INERTIA_YAW => $stats[ShipDef::KEY_INERTIA_YAW],
+            ShipDef::KEY_INERTIA_ROLL => $stats[ShipDef::KEY_INERTIA_ROLL],
+            ShipDef::KEY_JERK_STRAFE => $stats[ShipDef::KEY_JERK_STRAFE],
+            ShipDef::KEY_JERK_ANGULAR => $stats[ShipDef::KEY_JERK_ANGULAR],
+            ShipDef::KEY_JERK_FORWARD_ACCEL => $stats[ShipDef::KEY_JERK_FORWARD_ACCEL],
+            ShipDef::KEY_JERK_FORWARD_DECEL => $stats[ShipDef::KEY_JERK_FORWARD_DECEL],
+            ShipDef::KEY_JERK_FORWARD_RATIO => $stats[ShipDef::KEY_JERK_FORWARD_RATIO],
+            ShipDef::KEY_JERK_BOOST_ACCEL => $stats[ShipDef::KEY_JERK_BOOST_ACCEL],
+            ShipDef::KEY_JERK_BOOST_RATIO => $stats[ShipDef::KEY_JERK_BOOST_RATIO],
+            ShipDef::KEY_JERK_TRAVEL_ACCEL => $stats[ShipDef::KEY_JERK_TRAVEL_ACCEL],
+            ShipDef::KEY_JERK_TRAVEL_DECEL => $stats[ShipDef::KEY_JERK_TRAVEL_DECEL],
+            ShipDef::KEY_JERK_TRAVEL_RATIO => $stats[ShipDef::KEY_JERK_TRAVEL_RATIO],
             ShipDef::KEY_PEOPLE => $stats[ShipDef::KEY_PEOPLE],
             ShipDef::KEY_STORAGE_MISSILE => $stats[ShipDef::KEY_STORAGE_MISSILE],
             ShipDef::KEY_SLOTS => $slots,
@@ -296,11 +314,94 @@ class ShipsExtractor
         return [
             ShipDef::KEY_HULL => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'hull', 'max', 0),
             ShipDef::KEY_MASS => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'physics', 'mass', 0),
+            // Drag coefficients
             ShipDef::KEY_DRAG_FORWARD => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'forward', 0),
+            ShipDef::KEY_DRAG_REVERSE => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'reverse', 0),
+            ShipDef::KEY_DRAG_HORIZONTAL => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'horizontal', 0),
+            ShipDef::KEY_DRAG_VERTICAL => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'vertical', 0),
+            ShipDef::KEY_DRAG_PITCH => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'pitch', 0),
+            ShipDef::KEY_DRAG_YAW => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'yaw', 0),
+            ShipDef::KEY_DRAG_ROLL => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'drag', 'roll', 0),
+            // Inertia coefficients
             ShipDef::KEY_INERTIA_PITCH => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'inertia', 'pitch', 0),
+            ShipDef::KEY_INERTIA_YAW => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'inertia', 'yaw', 0),
+            ShipDef::KEY_INERTIA_ROLL => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'inertia', 'roll', 0),
+            // Jerk values (nested elements)
+            ShipDef::KEY_JERK_STRAFE => (float)$this->resolveJerkAttribute($dom, $parentDom, 'strafe', 'value', 0),
+            ShipDef::KEY_JERK_ANGULAR => (float)$this->resolveJerkAttribute($dom, $parentDom, 'angular', 'value', 0),
+            ShipDef::KEY_JERK_FORWARD_ACCEL => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward', 'accel', 0),
+            ShipDef::KEY_JERK_FORWARD_DECEL => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward', 'decel', 0),
+            ShipDef::KEY_JERK_FORWARD_RATIO => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward', 'ratio', 0),
+            ShipDef::KEY_JERK_BOOST_ACCEL => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_boost', 'accel', 0),
+            ShipDef::KEY_JERK_BOOST_RATIO => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_boost', 'ratio', 0),
+            ShipDef::KEY_JERK_TRAVEL_ACCEL => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_travel', 'accel', 0),
+            ShipDef::KEY_JERK_TRAVEL_DECEL => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_travel', 'decel', 0),
+            ShipDef::KEY_JERK_TRAVEL_RATIO => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_travel', 'ratio', 0),
+            // Other stats
             ShipDef::KEY_PEOPLE => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'people', 'capacity', 0),
             ShipDef::KEY_STORAGE_MISSILE => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'storage', 'missile', 0)
         ];
+    }
+
+    /**
+     * Resolves an attribute from a child element of the <jerk> element.
+     * Jerk has nested structure like <jerk><strafe value="X"/><forward accel="Y" decel="Z"/></jerk>
+     *
+     * @param DOMExtended $dom The ship macro DOM
+     * @param DOMExtended|null $parentDom The parent macro DOM (for inheritance)
+     * @param string $childTagName The child element name (e.g., 'strafe', 'forward')
+     * @param string $attributeName The attribute name on the child element
+     * @param mixed $defaultValue Default value if not found
+     * @return mixed The attribute value or default
+     */
+    private function resolveJerkAttribute(DOMExtended $dom, ?DOMExtended $parentDom, string $childTagName, string $attributeName, mixed $defaultValue): mixed
+    {
+        // Try to find the jerk element in the main DOM
+        $val = $this->getJerkAttributeFromDOM($dom, $childTagName, $attributeName);
+        if ($val !== null) {
+            return $val;
+        }
+
+        // Fall back to parent DOM if available
+        if ($parentDom) {
+            $val = $this->getJerkAttributeFromDOM($parentDom, $childTagName, $attributeName);
+            if ($val !== null) {
+                return $val;
+            }
+        }
+
+        return $defaultValue;
+    }
+
+    /**
+     * Gets an attribute from a child element of the <jerk> element.
+     *
+     * @param DOMExtended $dom The DOM to search
+     * @param string $childTagName The child element name
+     * @param string $attributeName The attribute name
+     * @return string|null The attribute value or null if not found
+     */
+    private function getJerkAttributeFromDOM(DOMExtended $dom, string $childTagName, string $attributeName): ?string
+    {
+        // Find the jerk element
+        $jerkEl = $dom->byTagName('jerk')->getFirst();
+        if (!$jerkEl) {
+            return null;
+        }
+
+        // Find the child element within jerk
+        $children = $jerkEl->getChildren();
+        foreach ($children as $child) {
+            $domElement = $child->getDOMElement();
+            if ($domElement->nodeName === $childTagName) {
+                $val = $child->getAttribute($attributeName);
+                if ($val !== '') {
+                    return $val;
+                }
+            }
+        }
+
+        return null;
     }
 
 

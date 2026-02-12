@@ -35,7 +35,25 @@ class ShipDef implements CollectionItemInterface
     public const KEY_HULL = 'hull';
     public const KEY_MASS = 'mass';
     public const KEY_DRAG_FORWARD = 'dragForward';
+    public const KEY_DRAG_REVERSE = 'dragReverse';
+    public const KEY_DRAG_HORIZONTAL = 'dragHorizontal';
+    public const KEY_DRAG_VERTICAL = 'dragVertical';
+    public const KEY_DRAG_PITCH = 'dragPitch';
+    public const KEY_DRAG_YAW = 'dragYaw';
+    public const KEY_DRAG_ROLL = 'dragRoll';
     public const KEY_INERTIA_PITCH = 'inertiaPitch';
+    public const KEY_INERTIA_YAW = 'inertiaYaw';
+    public const KEY_INERTIA_ROLL = 'inertiaRoll';
+    public const KEY_JERK_STRAFE = 'jerkStrafe';
+    public const KEY_JERK_ANGULAR = 'jerkAngular';
+    public const KEY_JERK_FORWARD_ACCEL = 'jerkForwardAccel';
+    public const KEY_JERK_FORWARD_DECEL = 'jerkForwardDecel';
+    public const KEY_JERK_FORWARD_RATIO = 'jerkForwardRatio';
+    public const KEY_JERK_BOOST_ACCEL = 'jerkBoostAccel';
+    public const KEY_JERK_BOOST_RATIO = 'jerkBoostRatio';
+    public const KEY_JERK_TRAVEL_ACCEL = 'jerkTravelAccel';
+    public const KEY_JERK_TRAVEL_DECEL = 'jerkTravelDecel';
+    public const KEY_JERK_TRAVEL_RATIO = 'jerkTravelRatio';
     public const KEY_PEOPLE = 'people';
     public const KEY_STORAGE_MISSILE = 'storageMissile';
     public const KEY_SLOTS = 'slots';
@@ -56,7 +74,25 @@ class ShipDef implements CollectionItemInterface
     private int $hull;
     private float $mass;
     private float $dragForward;
+    private float $dragReverse;
+    private float $dragHorizontal;
+    private float $dragVertical;
+    private float $dragPitch;
+    private float $dragYaw;
+    private float $dragRoll;
     private float $inertiaPitch;
+    private float $inertiaYaw;
+    private float $inertiaRoll;
+    private float $jerkStrafe;
+    private float $jerkAngular;
+    private float $jerkForwardAccel;
+    private float $jerkForwardDecel;
+    private float $jerkForwardRatio;
+    private float $jerkBoostAccel;
+    private float $jerkBoostRatio;
+    private float $jerkTravelAccel;
+    private float $jerkTravelDecel;
+    private float $jerkTravelRatio;
     private int $people;
     private int $storageMissile;
     /**
@@ -87,7 +123,25 @@ class ShipDef implements CollectionItemInterface
      * @param int $hull Hull strength.
      * @param float $mass Physics mass.
      * @param float $dragForward Forward drag coefficient involved in acceleration.
+     * @param float $dragReverse Reverse drag coefficient.
+     * @param float $dragHorizontal Horizontal (strafing) drag coefficient.
+     * @param float $dragVertical Vertical drag coefficient.
+     * @param float $dragPitch Pitch rotational drag coefficient.
+     * @param float $dragYaw Yaw rotational drag coefficient.
+     * @param float $dragRoll Roll rotational drag coefficient.
      * @param float $inertiaPitch Pitch inertia coefficient.
+     * @param float $inertiaYaw Yaw inertia coefficient.
+     * @param float $inertiaRoll Roll inertia coefficient.
+     * @param float $jerkStrafe Strafe jerk (rate of acceleration change).
+     * @param float $jerkAngular Angular jerk (rotation acceleration change).
+     * @param float $jerkForwardAccel Forward jerk acceleration.
+     * @param float $jerkForwardDecel Forward jerk deceleration.
+     * @param float $jerkForwardRatio Forward jerk ratio.
+     * @param float $jerkBoostAccel Boost jerk acceleration.
+     * @param float $jerkBoostRatio Boost jerk ratio.
+     * @param float $jerkTravelAccel Travel mode jerk acceleration.
+     * @param float $jerkTravelDecel Travel mode jerk deceleration.
+     * @param float $jerkTravelRatio Travel mode jerk ratio.
      * @param int $people Crew capacity.
      * @param int $storageMissile Missile storage capacity.
      * @param array<string,int> $slots Map of slot type ID to count.
@@ -106,7 +160,25 @@ class ShipDef implements CollectionItemInterface
         int $hull,
         float $mass,
         float $dragForward,
+        float $dragReverse,
+        float $dragHorizontal,
+        float $dragVertical,
+        float $dragPitch,
+        float $dragYaw,
+        float $dragRoll,
         float $inertiaPitch,
+        float $inertiaYaw,
+        float $inertiaRoll,
+        float $jerkStrafe,
+        float $jerkAngular,
+        float $jerkForwardAccel,
+        float $jerkForwardDecel,
+        float $jerkForwardRatio,
+        float $jerkBoostAccel,
+        float $jerkBoostRatio,
+        float $jerkTravelAccel,
+        float $jerkTravelDecel,
+        float $jerkTravelRatio,
         int $people,
         int $storageMissile,
         array $slots,
@@ -125,7 +197,25 @@ class ShipDef implements CollectionItemInterface
         $this->hull = $hull;
         $this->mass = $mass;
         $this->dragForward = $dragForward;
+        $this->dragReverse = $dragReverse;
+        $this->dragHorizontal = $dragHorizontal;
+        $this->dragVertical = $dragVertical;
+        $this->dragPitch = $dragPitch;
+        $this->dragYaw = $dragYaw;
+        $this->dragRoll = $dragRoll;
         $this->inertiaPitch = $inertiaPitch;
+        $this->inertiaYaw = $inertiaYaw;
+        $this->inertiaRoll = $inertiaRoll;
+        $this->jerkStrafe = $jerkStrafe;
+        $this->jerkAngular = $jerkAngular;
+        $this->jerkForwardAccel = $jerkForwardAccel;
+        $this->jerkForwardDecel = $jerkForwardDecel;
+        $this->jerkForwardRatio = $jerkForwardRatio;
+        $this->jerkBoostAccel = $jerkBoostAccel;
+        $this->jerkBoostRatio = $jerkBoostRatio;
+        $this->jerkTravelAccel = $jerkTravelAccel;
+        $this->jerkTravelDecel = $jerkTravelDecel;
+        $this->jerkTravelRatio = $jerkTravelRatio;
         $this->people = $people;
         $this->storageMissile = $storageMissile;
         $this->slots = $slots;
@@ -149,7 +239,25 @@ class ShipDef implements CollectionItemInterface
             $data->getInt(self::KEY_HULL, 0),
             $data->getFloat(self::KEY_MASS, 0.0),
             $data->getFloat(self::KEY_DRAG_FORWARD, 0.0),
+            $data->getFloat(self::KEY_DRAG_REVERSE, 0.0),
+            $data->getFloat(self::KEY_DRAG_HORIZONTAL, 0.0),
+            $data->getFloat(self::KEY_DRAG_VERTICAL, 0.0),
+            $data->getFloat(self::KEY_DRAG_PITCH, 0.0),
+            $data->getFloat(self::KEY_DRAG_YAW, 0.0),
+            $data->getFloat(self::KEY_DRAG_ROLL, 0.0),
             $data->getFloat(self::KEY_INERTIA_PITCH, 0.0),
+            $data->getFloat(self::KEY_INERTIA_YAW, 0.0),
+            $data->getFloat(self::KEY_INERTIA_ROLL, 0.0),
+            $data->getFloat(self::KEY_JERK_STRAFE, 0.0),
+            $data->getFloat(self::KEY_JERK_ANGULAR, 0.0),
+            $data->getFloat(self::KEY_JERK_FORWARD_ACCEL, 0.0),
+            $data->getFloat(self::KEY_JERK_FORWARD_DECEL, 0.0),
+            $data->getFloat(self::KEY_JERK_FORWARD_RATIO, 0.0),
+            $data->getFloat(self::KEY_JERK_BOOST_ACCEL, 0.0),
+            $data->getFloat(self::KEY_JERK_BOOST_RATIO, 0.0),
+            $data->getFloat(self::KEY_JERK_TRAVEL_ACCEL, 0.0),
+            $data->getFloat(self::KEY_JERK_TRAVEL_DECEL, 0.0),
+            $data->getFloat(self::KEY_JERK_TRAVEL_RATIO, 0.0),
             $data->getInt(self::KEY_PEOPLE, 0),
             $data->getInt(self::KEY_STORAGE_MISSILE, 0),
             $data->getArray(self::KEY_SLOTS),
@@ -270,9 +378,99 @@ class ShipDef implements CollectionItemInterface
         return $this->dragForward;
     }
 
+    public function getDragReverse() : float
+    {
+        return $this->dragReverse;
+    }
+
+    public function getDragHorizontal() : float
+    {
+        return $this->dragHorizontal;
+    }
+
+    public function getDragVertical() : float
+    {
+        return $this->dragVertical;
+    }
+
+    public function getDragPitch() : float
+    {
+        return $this->dragPitch;
+    }
+
+    public function getDragYaw() : float
+    {
+        return $this->dragYaw;
+    }
+
+    public function getDragRoll() : float
+    {
+        return $this->dragRoll;
+    }
+
     public function getInertiaPitch() : float
     {
         return $this->inertiaPitch;
+    }
+
+    public function getInertiaYaw() : float
+    {
+        return $this->inertiaYaw;
+    }
+
+    public function getInertiaRoll() : float
+    {
+        return $this->inertiaRoll;
+    }
+
+    public function getJerkStrafe() : float
+    {
+        return $this->jerkStrafe;
+    }
+
+    public function getJerkAngular() : float
+    {
+        return $this->jerkAngular;
+    }
+
+    public function getJerkForwardAccel() : float
+    {
+        return $this->jerkForwardAccel;
+    }
+
+    public function getJerkForwardDecel() : float
+    {
+        return $this->jerkForwardDecel;
+    }
+
+    public function getJerkForwardRatio() : float
+    {
+        return $this->jerkForwardRatio;
+    }
+
+    public function getJerkBoostAccel() : float
+    {
+        return $this->jerkBoostAccel;
+    }
+
+    public function getJerkBoostRatio() : float
+    {
+        return $this->jerkBoostRatio;
+    }
+
+    public function getJerkTravelAccel() : float
+    {
+        return $this->jerkTravelAccel;
+    }
+
+    public function getJerkTravelDecel() : float
+    {
+        return $this->jerkTravelDecel;
+    }
+
+    public function getJerkTravelRatio() : float
+    {
+        return $this->jerkTravelRatio;
     }
 
     public function getPeopleCapacity() : int
@@ -574,7 +772,25 @@ class ShipDef implements CollectionItemInterface
             self::KEY_HULL => $this->hull,
             self::KEY_MASS => $this->mass,
             self::KEY_DRAG_FORWARD => $this->dragForward,
+            self::KEY_DRAG_REVERSE => $this->dragReverse,
+            self::KEY_DRAG_HORIZONTAL => $this->dragHorizontal,
+            self::KEY_DRAG_VERTICAL => $this->dragVertical,
+            self::KEY_DRAG_PITCH => $this->dragPitch,
+            self::KEY_DRAG_YAW => $this->dragYaw,
+            self::KEY_DRAG_ROLL => $this->dragRoll,
             self::KEY_INERTIA_PITCH => $this->inertiaPitch,
+            self::KEY_INERTIA_YAW => $this->inertiaYaw,
+            self::KEY_INERTIA_ROLL => $this->inertiaRoll,
+            self::KEY_JERK_STRAFE => $this->jerkStrafe,
+            self::KEY_JERK_ANGULAR => $this->jerkAngular,
+            self::KEY_JERK_FORWARD_ACCEL => $this->jerkForwardAccel,
+            self::KEY_JERK_FORWARD_DECEL => $this->jerkForwardDecel,
+            self::KEY_JERK_FORWARD_RATIO => $this->jerkForwardRatio,
+            self::KEY_JERK_BOOST_ACCEL => $this->jerkBoostAccel,
+            self::KEY_JERK_BOOST_RATIO => $this->jerkBoostRatio,
+            self::KEY_JERK_TRAVEL_ACCEL => $this->jerkTravelAccel,
+            self::KEY_JERK_TRAVEL_DECEL => $this->jerkTravelDecel,
+            self::KEY_JERK_TRAVEL_RATIO => $this->jerkTravelRatio,
             self::KEY_PEOPLE => $this->people,
             self::KEY_STORAGE_MISSILE => $this->storageMissile,
             self::KEY_SLOTS => $this->slots,

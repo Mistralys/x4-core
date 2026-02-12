@@ -1139,6 +1139,7 @@ Ship definition.
 
 ##### Constants
 ```php
+// Identity
 KEY_WARE_ID: string = 'wareID'
 KEY_LABEL: string = 'label'
 KEY_SIZE: string = 'size'
@@ -1148,11 +1149,47 @@ KEY_USED_BY: string = 'usedBy'
 KEY_DATA_SOURCE_ID: string = 'dataSourceID'
 KEY_VARIANT_ID: string = 'variantID'
 KEY_VARIANTS: string = 'variants'
+
+// Hull & Mass
+KEY_HULL: string = 'hull'
+KEY_MASS: string = 'mass'
+
+// Drag Coefficients
+KEY_DRAG_FORWARD: string = 'dragForward'
+KEY_DRAG_REVERSE: string = 'dragReverse'
+KEY_DRAG_HORIZONTAL: string = 'dragHorizontal'
+KEY_DRAG_VERTICAL: string = 'dragVertical'
+KEY_DRAG_PITCH: string = 'dragPitch'
+KEY_DRAG_YAW: string = 'dragYaw'
+KEY_DRAG_ROLL: string = 'dragRoll'
+
+// Inertia Coefficients
+KEY_INERTIA_PITCH: string = 'inertiaPitch'
+KEY_INERTIA_YAW: string = 'inertiaYaw'
+KEY_INERTIA_ROLL: string = 'inertiaRoll'
+
+// Jerk Values (rate of acceleration change)
+KEY_JERK_STRAFE: string = 'jerkStrafe'
+KEY_JERK_ANGULAR: string = 'jerkAngular'
+KEY_JERK_FORWARD_ACCEL: string = 'jerkForwardAccel'
+KEY_JERK_FORWARD_DECEL: string = 'jerkForwardDecel'
+KEY_JERK_FORWARD_RATIO: string = 'jerkForwardRatio'
+KEY_JERK_BOOST_ACCEL: string = 'jerkBoostAccel'
+KEY_JERK_BOOST_RATIO: string = 'jerkBoostRatio'
+KEY_JERK_TRAVEL_ACCEL: string = 'jerkTravelAccel'
+KEY_JERK_TRAVEL_DECEL: string = 'jerkTravelDecel'
+KEY_JERK_TRAVEL_RATIO: string = 'jerkTravelRatio'
+
+// Storage
+KEY_PEOPLE: string = 'people'
+KEY_STORAGE_MISSILE: string = 'storageMissile'
+KEY_SLOTS: string = 'slots'
+KEY_EQUIPMENT: string = 'equipment'
 ```
 
 ##### Methods
 ```php
-__construct(string $id, string $label, VariantID $variantID, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID, array $variants): void
+__construct(string $id, string $label, VariantID $variantID, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID, array $variants, int $hull, float $mass, float $dragForward, float $dragReverse, float $dragHorizontal, float $dragVertical, float $dragPitch, float $dragYaw, float $dragRoll, float $inertiaPitch, float $inertiaYaw, float $inertiaRoll, float $jerkStrafe, float $jerkAngular, float $jerkForwardAccel, float $jerkForwardDecel, float $jerkForwardRatio, float $jerkBoostAccel, float $jerkBoostRatio, float $jerkTravelAccel, float $jerkTravelDecel, float $jerkTravelRatio, int $people, int $storageMissile, array $slots, array $equipment): void
 static fromArray(array $def): ShipDef
 getID(): string
 getLabel(): string
@@ -1170,6 +1207,40 @@ getUsedBy(): array // Returns FactionDef[]
 toArray(): array
 getWareID(): string
 getWare(): WareDef
+
+// Physics - Hull & Mass
+getHull(): int
+getMass(): float
+
+// Physics - Drag Coefficients
+getDragForward(): float
+getDragReverse(): float
+getDragHorizontal(): float
+getDragVertical(): float
+getDragPitch(): float
+getDragYaw(): float
+getDragRoll(): float
+
+// Physics - Inertia Coefficients
+getInertiaPitch(): float
+getInertiaYaw(): float
+getInertiaRoll(): float
+
+// Physics - Jerk Values
+getJerkStrafe(): float
+getJerkAngular(): float
+getJerkForwardAccel(): float
+getJerkForwardDecel(): float
+getJerkForwardRatio(): float
+getJerkBoostAccel(): float
+getJerkBoostRatio(): float
+getJerkTravelAccel(): float
+getJerkTravelDecel(): float
+getJerkTravelRatio(): float
+
+// Storage & People
+getPeopleCapacity(): int
+getMissileStorage(): int
 
 // Slot count methods
 getSlotCount(string $typeID): int
@@ -1197,6 +1268,13 @@ getCompatibleTurrets(): array // Returns WeaponDef[] for compatible turrets
 getEquipmentGroups(?string $type = null): array // Returns ShipSlotDefinition[]
 canEquip(WareDef $ware): bool
 getEquipment(): array // Returns raw equipment data
+
+// Dock information
+getDocks(): array // Map of dock sizes to counts
+getDockCount(string $size): int
+getTotalDockCount(): int
+hasDocks(): bool
+getDockSizes(): array // Array of size keys
 ```
 
 ---
