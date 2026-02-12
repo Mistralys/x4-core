@@ -1,0 +1,249 @@
+{
+  "plan_file": "docs/agents/plans/2026-02-12-full-physics-data/plan.md",
+  "date_created": "2026-02-12 12:00:00",
+  "last_updated": "2026-02-12 12:00:00",
+  "status": "IN_PROGRESS",
+  "total_work_packages": 7,
+  "pending_work_packages": 7,
+  "work_packages": [
+    {
+      "work_package_id": "WP-001",
+      "work_package_file": "docs/agents/plans/2026-02-12-full-physics-data/work.md",
+      "title": "Add Missing Drag Fields",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer Agent",
+      "dependencies": [],
+      "acceptance_criteria": [
+        {
+          "criterion": "6 new constants added to ShipDef.php (KEY_DRAG_REVERSE, KEY_DRAG_HORIZONTAL, KEY_DRAG_VERTICAL, KEY_DRAG_PITCH, KEY_DRAG_YAW, KEY_DRAG_ROLL)",
+          "met": false
+        },
+        {
+          "criterion": "6 new getter methods added to ShipDef.php",
+          "met": false
+        },
+        {
+          "criterion": "6 new fields extracted in ShipsExtractor::extractStats()",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan passes with no errors",
+          "met": false
+        },
+        {
+          "criterion": "Existing tests continue to pass",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-002",
+      "work_package_file": "docs/agents/plans/2026-02-12-full-physics-data/work.md",
+      "title": "Add Missing Inertia Fields",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer Agent",
+      "dependencies": [],
+      "acceptance_criteria": [
+        {
+          "criterion": "2 new constants added to ShipDef.php (KEY_INERTIA_YAW, KEY_INERTIA_ROLL)",
+          "met": false
+        },
+        {
+          "criterion": "2 new getter methods added to ShipDef.php",
+          "met": false
+        },
+        {
+          "criterion": "2 new fields extracted in ShipsExtractor::extractStats()",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan passes with no errors",
+          "met": false
+        },
+        {
+          "criterion": "Existing tests continue to pass",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-003",
+      "work_package_file": "docs/agents/plans/2026-02-12-full-physics-data/work.md",
+      "title": "Add Jerk Fields",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer Agent",
+      "dependencies": ["WP-001", "WP-002"],
+      "acceptance_criteria": [
+        {
+          "criterion": "10 new constants added to ShipDef.php for jerk values",
+          "met": false
+        },
+        {
+          "criterion": "10 new getter methods added to ShipDef.php",
+          "met": false
+        },
+        {
+          "criterion": "10 new fields extracted in ShipsExtractor::extractStats() using nested XML element extraction",
+          "met": false
+        },
+        {
+          "criterion": "Default values (0.0) used for missing jerk elements",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan passes with no errors",
+          "met": false
+        },
+        {
+          "criterion": "Existing tests continue to pass",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-004",
+      "work_package_file": "docs/agents/plans/2026-02-12-full-physics-data/work.md",
+      "title": "Regenerate Data and Verify",
+      "status": "READY",
+      "assigned_to": "QA/Validation Agent",
+      "dependencies": ["WP-001", "WP-002", "WP-003"],
+      "acceptance_criteria": [
+        {
+          "criterion": "composer build:ships completes without errors",
+          "met": false
+        },
+        {
+          "criterion": "ships.json contains all 18 new physics fields",
+          "met": false
+        },
+        {
+          "criterion": "Values are correctly extracted (non-zero for ships with data)",
+          "met": false
+        },
+        {
+          "criterion": "Spot-check of 4+ ships (S, M, L, XL) shows correct values against source XML",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-005",
+      "work_package_file": "docs/agents/plans/2026-02-12-full-physics-data/work.md",
+      "title": "Update Manifest Documentation",
+      "status": "READY",
+      "assigned_to": "Documentation Agent",
+      "dependencies": ["WP-004"],
+      "acceptance_criteria": [
+        {
+          "criterion": "public-api.md updated with all 18 new constants",
+          "met": false
+        },
+        {
+          "criterion": "public-api.md updated with all 18 new getter method signatures",
+          "met": false
+        },
+        {
+          "criterion": "Documentation matches actual implementation",
+          "met": false
+        },
+        {
+          "criterion": "Last Updated date updated in manifest",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-006",
+      "work_package_file": "docs/agents/plans/2026-02-12-full-physics-data/work.md",
+      "title": "Add Acceleration Factors (Nice-to-Have)",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer Agent",
+      "dependencies": ["WP-004"],
+      "acceptance_criteria": [
+        {
+          "criterion": "4 new constants added to ShipDef.php for accfactors",
+          "met": false
+        },
+        {
+          "criterion": "4 new getter methods added to ShipDef.php",
+          "met": false
+        },
+        {
+          "criterion": "4 new fields extracted with default of 1.0",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan passes with no errors",
+          "met": false
+        },
+        {
+          "criterion": "Manifest documentation updated",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-007",
+      "work_package_file": "docs/agents/plans/2026-02-12-full-physics-data/work.md",
+      "title": "Research Cargo Capacity Extraction (Nice-to-Have)",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer Agent",
+      "dependencies": ["WP-005"],
+      "acceptance_criteria": [
+        {
+          "criterion": "Storage XML structure documented",
+          "met": false
+        },
+        {
+          "criterion": "Ship-storage relationship understood and documented",
+          "met": false
+        },
+        {
+          "criterion": "Implementation complexity assessed",
+          "met": false
+        },
+        {
+          "criterion": "Proposal document created with Go/No-Go recommendation",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    }
+  ],
+  "project_comments": [
+    {
+      "type": "recommendation",
+      "priority": "medium",
+      "timestamp": "2026-02-12 12:00:00",
+      "agent": "Project Manager Agent",
+      "note": "WP-001 and WP-002 can be implemented in parallel as they have no dependencies. Consider combining them into a single implementation session for efficiency."
+    },
+    {
+      "type": "risk",
+      "priority": "medium",
+      "timestamp": "2026-02-12 12:00:00",
+      "agent": "Project Manager Agent",
+      "note": "WP-003 (Jerk fields) requires nested XML element extraction which differs from the existing flat attribute pattern. Developer may need to create a helper function or use direct DOM queries."
+    },
+    {
+      "type": "recommendation",
+      "priority": "low",
+      "timestamp": "2026-02-12 12:00:00",
+      "agent": "Project Manager Agent",
+      "note": "Nice-to-have work packages (WP-006, WP-007) are intentionally lower priority. Core physics data (WP-001 through WP-005) should be completed first to unblock the Cargo Sizes Mod GUI."
+    }
+  ]
+}
