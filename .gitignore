@@ -14,3 +14,4 @@ dev-config.php
 .idea/copilot.data.migration.ask2agent.xml
 .idea/copilot.data.migration.ask.xml
 docs/X4-Core-Manifest.md
+docs/agents/project-ledger-schema.md
