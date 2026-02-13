@@ -351,7 +351,11 @@ composer build
             └─→ extractShips()
                     └─→ Derive ships from wares → ships.json
                             ├─→ Extract physics (drag, inertia, jerk, accfactors)
+                            │   └─→ Uses BaseExtractor::resolveNestedPropertyAttribute()
+                            │       to extract nested <property> elements with attributes
                             └─→ Resolve storage macros → cargoCapacity + cargoType
+                                └─→ Uses str_starts_with($ref, 'con_storage') for
+                                    precise matching of X4's cargo storage connections
 ```
 
 **Key Points:**

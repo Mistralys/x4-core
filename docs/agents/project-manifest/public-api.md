@@ -468,6 +468,49 @@ AJAX method registry.
 
 ## Database Namespace
 
+### Mistralys\X4\Database\BaseExtractor
+
+Abstract base class for data extractors. Provides common XML processing utilities.
+
+#### Methods
+
+##### `resolveNestedPropertyAttribute()`
+```php
+protected function resolveNestedPropertyAttribute(
+    AppUtils\XMLHelper\ElementExtended $element,
+    string $childTagName,
+    string $attributeName
+): float
+```
+
+Resolves an attribute value from a nested property element within a parent element. Searches for a child `<property name="{$childTagName}">` element and extracts the specified attribute value. Returns `0.0` if the property or attribute is not found.
+
+**Example XML Structure:**
+```xml
+<ship>
+    <properties>
+        <property name="angular" min="1.5" max="3.0"/>
+        <property name="forward" min="2.0" max="4.0"/>
+    </properties>
+</ship>
+```
+
+**Usage:**
+```php
+// Extract the 'min' attribute from the 'angular' property
+$minValue = $this->resolveNestedPropertyAttribute($shipElement, 'angular', 'min');
+// Returns 1.5 if found, 0.0 if not found
+```
+
+**Parameters:**
+- `$element` - Parent DOM element containing child property elements
+- `$childTagName` - Name attribute value of the child `<property>` element to find
+- `$attributeName` - Attribute name to extract from the found property element
+
+**Returns:** The attribute value as float, or `0.0` if property or attribute not found
+
+---
+
 ### Core Abstractions
 
 #### Mistralys\X4\Database\Core\CollectionItemInterface
@@ -1189,8 +1232,8 @@ KEY_ACCFACTOR_VERTICAL: string = 'accFactorVertical'
 // Storage
 KEY_PEOPLE: string = 'people'
 KEY_STORAGE_MISSILE: string = 'storageMissile'
-KEY_CARGO_CAPACITY: string = 'cargoCapacity'
-KEY_CARGO_TYPE: string = 'cargoType'
+KEY_CARGO_CAPACITY = 'cargoCapacity'
+KEY_CARGO_TYPE = 'cargoType'
 KEY_SLOTS: string = 'slots'
 KEY_EQUIPMENT: string = 'equipment'
 ```
