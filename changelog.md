@@ -1,3 +1,9 @@
+## v1.3.0 - Complete Ship Physics Data
+- Ships: Added 24 new physics fields (drag coefficients, inertia, jerk values, acceleration factors)
+- Ships: Added cargo capacity extraction (cargoCapacity, cargoType)
+- Ships: Regenerated ships.json with complete physics data for all 256 ships
+- Documentation: Updated public-api.md and handbook with complete physics API reference
+
 ## v1.2.1 - Cache folder fix
 - Core: Fixed cache folder not being created automatically due to FolderInfo behavior change.
 - Core: Added `.gitkeep` file to ensure cache directory is always tracked in git.
