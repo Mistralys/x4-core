@@ -350,6 +350,8 @@ composer build
             │
             └─→ extractShips()
                     └─→ Derive ships from wares → ships.json
+                            ├─→ Extract physics (drag, inertia, jerk, accfactors)
+                            └─→ Resolve storage macros → cargoCapacity + cargoType
 ```
 
 **Key Points:**
@@ -450,7 +452,8 @@ ShipDef
     ├─→ FactionDef (builder via builderFactionID)
     ├─→ FactionDef[] (used by via usedBy)
     ├─→ DataSourceDef (via dataSourceID)
-    └─→ VariantID
+    ├─→ VariantID
+    └─→ StorageMacro (via con_storage connection → cargoCapacity, cargoType)
 
 BlueprintDef
     ├─→ WareDef (via wareID)

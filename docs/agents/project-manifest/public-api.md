@@ -1180,16 +1180,24 @@ KEY_JERK_TRAVEL_ACCEL: string = 'jerkTravelAccel'
 KEY_JERK_TRAVEL_DECEL: string = 'jerkTravelDecel'
 KEY_JERK_TRAVEL_RATIO: string = 'jerkTravelRatio'
 
+// Acceleration Factors (multipliers affecting acceleration scaling)
+KEY_ACCFACTOR_FORWARD: string = 'accFactorForward'
+KEY_ACCFACTOR_REVERSE: string = 'accFactorReverse'
+KEY_ACCFACTOR_HORIZONTAL: string = 'accFactorHorizontal'
+KEY_ACCFACTOR_VERTICAL: string = 'accFactorVertical'
+
 // Storage
 KEY_PEOPLE: string = 'people'
 KEY_STORAGE_MISSILE: string = 'storageMissile'
+KEY_CARGO_CAPACITY: string = 'cargoCapacity'
+KEY_CARGO_TYPE: string = 'cargoType'
 KEY_SLOTS: string = 'slots'
 KEY_EQUIPMENT: string = 'equipment'
 ```
 
 ##### Methods
 ```php
-__construct(string $id, string $label, VariantID $variantID, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID, array $variants, int $hull, float $mass, float $dragForward, float $dragReverse, float $dragHorizontal, float $dragVertical, float $dragPitch, float $dragYaw, float $dragRoll, float $inertiaPitch, float $inertiaYaw, float $inertiaRoll, float $jerkStrafe, float $jerkAngular, float $jerkForwardAccel, float $jerkForwardDecel, float $jerkForwardRatio, float $jerkBoostAccel, float $jerkBoostRatio, float $jerkTravelAccel, float $jerkTravelDecel, float $jerkTravelRatio, int $people, int $storageMissile, array $slots, array $equipment): void
+__construct(string $id, string $label, VariantID $variantID, string $size, string $builderFactionID, string $classID, array $usedBy, string $dataSourceID, array $variants, int $hull, float $mass, float $dragForward, float $dragReverse, float $dragHorizontal, float $dragVertical, float $dragPitch, float $dragYaw, float $dragRoll, float $inertiaPitch, float $inertiaYaw, float $inertiaRoll, float $jerkStrafe, float $jerkAngular, float $jerkForwardAccel, float $jerkForwardDecel, float $jerkForwardRatio, float $jerkBoostAccel, float $jerkBoostRatio, float $jerkTravelAccel, float $jerkTravelDecel, float $jerkTravelRatio, float $accFactorForward, float $accFactorReverse, float $accFactorHorizontal, float $accFactorVertical, int $people, int $storageMissile, int $cargoCapacity, string $cargoType, array $slots, array $equipment): void
 static fromArray(array $def): ShipDef
 getID(): string
 getLabel(): string
@@ -1238,9 +1246,17 @@ getJerkTravelAccel(): float
 getJerkTravelDecel(): float
 getJerkTravelRatio(): float
 
+// Physics - Acceleration Factors
+getAccFactorForward(): float
+getAccFactorReverse(): float
+getAccFactorHorizontal(): float
+getAccFactorVertical(): float
+
 // Storage & People
 getPeopleCapacity(): int
 getMissileStorage(): int
+getCargoCapacity(): int      // Cargo storage capacity in m³ (0 if no storage)
+getCargoType(): string       // Cargo type: container, liquid, solid, or none
 
 // Slot count methods
 getSlotCount(string $typeID): int

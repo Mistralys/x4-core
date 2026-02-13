@@ -189,22 +189,110 @@ foreach ($ship->getUsedBy() as $faction) {
 
 ### Physical & Performance Stats
 
+#### Hull & Mass
+
 | Method | Description | Returns |
-|--------|-------------|---------|
+|--------|-------------|---------|  
 | `getHull()` | Hull strength | `int` |
-| `getMass()` | Physics mass | `float` |
-| `getDragForward()` | Forward drag coefficient | `float` |
-| `getInertiaPitch()` | Pitch inertia coefficient | `float` |
+| `getMass()` | Physics mass (kg) | `float` |
 | `getPeopleCapacity()` | Crew capacity | `int` |
 | `getMissileStorage()` | Missile storage capacity | `int` |
 
+#### Cargo Storage
+
+| Method | Description | Returns |
+|--------|-------------|---------|  
+| `getCargoCapacity()` | Cargo storage capacity (m³) | `int` |
+| `getCargoType()` | Cargo type (container, liquid, solid, none, or composite) | `string` |
+
 ```php
 echo "Hull: " . $ship->getHull();
+echo "Mass: " . $ship->getMass() . " kg";
 echo "Crew: " . $ship->getPeopleCapacity();
 echo "Missiles: " . $ship->getMissileStorage();
+echo "Cargo: " . $ship->getCargoCapacity() . " m³ (" . $ship->getCargoType() . ")";
 ```
 
-### Ware Cross-Reference
+**Note:** Ships without cargo storage return `0` for capacity and `'none'` for type.
+
+#### Drag Coefficients
+
+Drag coefficients affect how quickly a ship slows down when not accelerating. Lower values mean the ship maintains momentum longer.
+
+| Method | Description | Returns |
+|--------|-------------|---------|  
+| `getDragForward()` | Forward drag coefficient | `float` |
+| `getDragReverse()` | Reverse drag coefficient | `float` |
+| `getDragHorizontal()` | Horizontal (strafe) drag | `float` |
+| `getDragVertical()` | Vertical drag | `float` |
+| `getDragPitch()` | Pitch rotation drag | `float` |
+| `getDragYaw()` | Yaw rotation drag | `float` |
+| `getDragRoll()` | Roll rotation drag | `float` |
+
+```php
+echo "Forward drag: " . $ship->getDragForward();
+echo "Reverse drag: " . $ship->getDragReverse();
+echo "Pitch drag: " . $ship->getDragPitch();
+```
+
+#### Inertia Coefficients
+
+Inertia coefficients affect rotational acceleration. Higher values mean slower rotation.
+
+| Method | Description | Returns |
+|--------|-------------|---------|  
+| `getInertiaPitch()` | Pitch inertia coefficient | `float` |
+| `getInertiaYaw()` | Yaw inertia coefficient | `float` |
+| `getInertiaRoll()` | Roll inertia coefficient | `float` |
+
+```php
+echo "Pitch inertia: " . $ship->getInertiaPitch();
+echo "Yaw inertia: " . $ship->getInertiaYaw();
+echo "Roll inertia: " . $ship->getInertiaRoll();
+```
+
+#### Jerk Values
+
+Jerk represents the rate of change of acceleration - how quickly a ship can change its thrust level. Higher values mean more responsive throttle control.
+
+| Method | Description | Returns |
+|--------|-------------|---------|  
+| `getJerkStrafe()` | Strafe jerk | `float` |
+| `getJerkAngular()` | Angular (rotation) jerk | `float` |
+| `getJerkForwardAccel()` | Forward acceleration jerk | `float` |
+| `getJerkForwardDecel()` | Forward deceleration jerk | `float` |
+| `getJerkForwardRatio()` | Forward jerk ratio | `float` |
+| `getJerkBoostAccel()` | Boost acceleration jerk | `float` |
+| `getJerkBoostRatio()` | Boost jerk ratio | `float` |
+| `getJerkTravelAccel()` | Travel acceleration jerk | `float` |
+| `getJerkTravelDecel()` | Travel deceleration jerk | `float` |
+| `getJerkTravelRatio()` | Travel jerk ratio | `float` |
+
+```php
+echo "Strafe jerk: " . $ship->getJerkStrafe();
+echo "Forward accel jerk: " . $ship->getJerkForwardAccel();
+echo "Travel accel jerk: " . $ship->getJerkTravelAccel();
+```
+
+**Note:** Ships without jerk data default to `0.0` for all jerk values.
+
+#### Acceleration Factors
+
+Acceleration factors are multipliers that scale the base acceleration provided by engines. Default is `1.0` (no modification).
+
+| Method | Description | Returns |
+|--------|-------------|---------|  
+| `getAccFactorForward()` | Forward acceleration multiplier | `float` |
+| `getAccFactorReverse()` | Reverse acceleration multiplier | `float` |
+| `getAccFactorHorizontal()` | Horizontal strafe multiplier | `float` |
+| `getAccFactorVertical()` | Vertical strafe multiplier | `float` |
+
+```php
+echo "Forward multiplier: " . $ship->getAccFactorForward();
+echo "Reverse multiplier: " . $ship->getAccFactorReverse();
+```
+
+**Note:** Values less than `1.0` reduce acceleration; values greater than `1.0` increase it.
 
 ```php
 $ware = $ship->getWare();      // WareDef object
