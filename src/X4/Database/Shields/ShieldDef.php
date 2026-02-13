@@ -33,6 +33,7 @@ class ShieldDef implements CollectionItemInterface
     public const KEY_SIZE = 'size';
     public const KEY_DATA_SOURCE_ID = 'dataSourceID';
     public const KEY_MAKER_RACE = 'makerRace';
+    public const KEY_MAKER_RACES = 'makerRaces';
     public const KEY_MK = 'mk';
     public const KEY_VARIANT_ID = 'variantID';
     public const KEY_SHIELD_TYPE = 'shieldType';
@@ -51,7 +52,10 @@ class ShieldDef implements CollectionItemInterface
     private string $label;
     private string $size;
     private string $dataSourceID;
-    private string $makerRace;
+    /**
+     * @var string[]
+     */
+    private array $makerRaces;
     private int $mk;
     private VariantID $variantID;
     private string $shieldType;
@@ -72,7 +76,7 @@ class ShieldDef implements CollectionItemInterface
         string $label,
         string $size,
         string $dataSourceID,
-        string $makerRace,
+        array $makerRaces,
         int $mk,
         VariantID $variantID,
         string $shieldType,
@@ -89,7 +93,7 @@ class ShieldDef implements CollectionItemInterface
         $this->label = $label;
         $this->size = $size;
         $this->dataSourceID = $dataSourceID;
-        $this->makerRace = $makerRace;
+        $this->makerRaces = $makerRaces;
         $this->mk = $mk;
         $this->variantID = $variantID;
         $this->shieldType = $shieldType;
@@ -107,13 +111,27 @@ class ShieldDef implements CollectionItemInterface
     {
         $data = ArrayDataCollection::create($shieldDef);
 
+        // Handle both new array format and old string format for backward compatibility
+        $makerRaces = [];
+        if ($data->hasKey(self::KEY_MAKER_RACES)) {
+            $makerRaces = $data->getArray(self::KEY_MAKER_RACES);
+        } elseif ($data->hasKey(self::KEY_MAKER_RACE)) {
+            $raceString = $data->getString(self::KEY_MAKER_RACE, 'unknown');
+            $makerRaces = array_values(array_filter(explode(' ', $raceString)));
+        }
+        
+        // Default to unknown if empty
+        if (empty($makerRaces)) {
+            $makerRaces = ['unknown'];
+        }
+
         return new ShieldDef(
             $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_MACRO_ID),
             $data->getString(self::KEY_LABEL),
             $data->getString(self::KEY_SIZE),
             $data->getString(self::KEY_DATA_SOURCE_ID),
-            $data->getString(self::KEY_MAKER_RACE, 'unknown'),
+            $makerRaces,
             $data->getInt(self::KEY_MK, 1),
             VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
             $data->getString(self::KEY_SHIELD_TYPE, 'standard'),
@@ -158,7 +176,28 @@ class ShieldDef implements CollectionItemInterface
 
     public function getMakerRace(): string
     {
-        return $this->makerRace;
+        if (empty($this->makerRaces)) {
+            return 'unknown';
+        }
+        return $this->makerRaces[0];
+    }
+
+    /**
+     * Returns all maker races for this shield.
+     * @return string[]
+     */
+    public function getMakerRaces(): array
+    {
+        return $this->makerRaces;
+    }
+
+    /**
+     * Checks if this shield has multiple maker races.
+     * @return bool
+     */
+    public function hasMultipleMakerRaces(): bool
+    {
+        return count($this->makerRaces) > 1;
     }
 
     public function getMk(): int
@@ -262,5 +301,26 @@ class ShieldDef implements CollectionItemInterface
     public function isVirtual(): bool
     {
         return $this->shieldType === 'virtual';
+    }
+
+    public function toArray(): array
+    {
+        return [
+            self::KEY_WARE_ID => $this->wareID,
+            self::KEY_MACRO_ID => $this->macroID,
+            self::KEY_LABEL => $this->label,
+            self::KEY_SIZE => $this->size,
+            self::KEY_DATA_SOURCE_ID => $this->dataSourceID,
+            self::KEY_MAKER_RACES => $this->makerRaces,
+            self::KEY_MK => $this->mk,
+            self::KEY_VARIANT_ID => $this->variantID->getID(),
+            self::KEY_SHIELD_TYPE => $this->shieldType,
+            self::KEY_RECHARGE_MAX => $this->rechargeMax,
+            self::KEY_RECHARGE_RATE => $this->rechargeRate,
+            self::KEY_RECHARGE_DELAY => $this->rechargeDelay,
+            self::KEY_HULL_MAX => $this->hullMax,
+            self::KEY_HULL_THRESHOLD => $this->hullThreshold,
+            self::KEY_HULL_INTEGRATED => $this->hullIntegrated
+        ];
     }
 }

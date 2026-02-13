@@ -102,8 +102,11 @@ class ShipFinder extends BaseFinder implements DataSourceSelectionInterface
      */
     protected function isMatch(CollectionItemInterface $item) : bool
     {
-        if(!empty($this->builderFactions) && !in_array($item->getBuilderFactionID(), $this->builderFactions, true)) {
-            return false;
+        if(!empty($this->builderFactions)) {
+            $intersection = array_intersect($item->getBuilderFactionIDs(), $this->builderFactions);
+            if (empty($intersection)) {
+                return false;
+            }
         }
 
         if(!empty($this->classes) && !in_array($item->getClassID(), $this->classes, true)) {

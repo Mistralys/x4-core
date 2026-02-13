@@ -240,15 +240,21 @@ class ShipsExtractor extends BaseExtractor
         return null;
     }
 
-    private function resolveFaction(DOMExtended $dom, string $shipID) : string
+    /**
+     * @return string[]
+     */
+    private function resolveFaction(DOMExtended $dom, string $shipID) : array
     {
-        $factionID = $dom
+        $factionString = $dom
             ->byTagName('identification')
             ->requireFirst(sprintf('ERROR | No identification element found for ship macro [%s].', $shipID))
             ->getAttribute('makerrace');
 
-        if(!empty($factionID)) {
-            return $factionID;
+        if(!empty($factionString)) {
+            $factionIDs = array_values(array_filter(explode(' ', $factionString)));
+            if (!empty($factionIDs)) {
+                return $factionIDs;
+            }
         }
 
         $factionID = KnownFactions::FACTION_GENERIC;
@@ -261,7 +267,7 @@ class ShipsExtractor extends BaseExtractor
             Console::line1('WARNING | The ship [%s] has no builder faction. Defaulting to [%s].', $shipID, $factionID);
         }
 
-        return $factionID;
+        return [$factionID];
     }
 
     /**

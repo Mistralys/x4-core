@@ -271,8 +271,11 @@ class ShieldFinder extends BaseFinder implements DataSourceSelectionInterface
             return false;
         }
 
-        if (!empty($this->makerRaces) && !in_array($item->getMakerRace(), $this->makerRaces, true)) {
-            return false;
+        if (!empty($this->makerRaces)) {
+            $intersection = array_intersect($item->getMakerRaces(), $this->makerRaces);
+            if (empty($intersection)) {
+                return false;
+            }
         }
 
         if (!empty($this->mks) && !in_array($item->getMk(), $this->mks, true)) {

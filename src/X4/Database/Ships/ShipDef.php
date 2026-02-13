@@ -27,6 +27,7 @@ class ShipDef implements CollectionItemInterface
     public const KEY_LABEL = 'label';
     public const KEY_SIZE = 'size';
     public const KEY_BUILDER_FACTION_ID = 'builderFactionID';
+    public const KEY_BUILDER_FACTION_IDS = 'builderFactionIDs';
     public const KEY_CLASS_ID = 'classID';
     public const KEY_USED_BY = 'usedBy';
     public const KEY_DATA_SOURCE_ID = 'dataSourceID';
@@ -68,7 +69,10 @@ class ShipDef implements CollectionItemInterface
     private string $id;
     private string $classID;
     private string $size;
-    private string $builderFactionID;
+    /**
+     * @var string[]
+     */
+    private array $builderFactionIDs;
 
     /**
      * @var string[]
@@ -127,7 +131,7 @@ class ShipDef implements CollectionItemInterface
      * @param string $label
      * @param VariantID $variantID
      * @param string $size
-     * @param string $builderFactionID
+     * @param string[] $builderFactionIDs
      * @param string $classID
      * @param array $usedBy
      * @param string $dataSourceID
@@ -170,7 +174,7 @@ class ShipDef implements CollectionItemInterface
         string $label,
         VariantID $variantID,
         string $size,
-        string $builderFactionID,
+        array $builderFactionIDs,
         string $classID,
         array $usedBy,
         string $dataSourceID,
@@ -213,7 +217,7 @@ class ShipDef implements CollectionItemInterface
         $this->label = $label;
         $this->variantID = $variantID;
         $this->size = $size;
-        $this->builderFactionID = $builderFactionID;
+        $this->builderFactionIDs = $builderFactionIDs;
         $this->classID = $classID;
         $this->usedBy = $usedBy;
         $this->dataSourceID = $dataSourceID;
@@ -256,12 +260,26 @@ class ShipDef implements CollectionItemInterface
     {
         $data = ArrayDataCollection::create($def);
 
+        // Handle both new array format and old string format for backward compatibility
+        $builderFactionIDs = [];
+        if ($data->hasKey(self::KEY_BUILDER_FACTION_IDS)) {
+            $builderFactionIDs = $data->getArray(self::KEY_BUILDER_FACTION_IDS);
+        } elseif ($data->hasKey(self::KEY_BUILDER_FACTION_ID)) {
+            $factionString = $data->getString(self::KEY_BUILDER_FACTION_ID);
+            $builderFactionIDs = array_values(array_filter(explode(' ', $factionString)));
+        }
+        
+        // Default to generic if empty
+        if (empty($builderFactionIDs)) {
+            $builderFactionIDs = [KnownFactions::FACTION_GENERIC];
+        }
+
         return new self(
             $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_LABEL),
             VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
             $data->getString(self::KEY_SIZE),
-            $data->getString(self::KEY_BUILDER_FACTION_ID),
+            $builderFactionIDs,
             $data->getString(self::KEY_CLASS_ID),
             $data->getArray(self::KEY_USED_BY),
             $data->getString(self::KEY_DATA_SOURCE_ID),
@@ -353,16 +371,47 @@ class ShipDef implements CollectionItemInterface
 
     public function getBuilderFactionID(): string
     {
-        if(empty($this->builderFactionID)) {
+        if(empty($this->builderFactionIDs)) {
             return KnownFactions::FACTION_GENERIC;
         }
 
-        return $this->builderFactionID;
+        return $this->builderFactionIDs[0];
+    }
+
+    /**
+     * Returns all builder faction IDs for this ship.
+     * @return string[]
+     */
+    public function getBuilderFactionIDs(): array
+    {
+        return $this->builderFactionIDs;
     }
 
     public function getBuilderFaction() : FactionDef
     {
         return FactionDefs::getInstance()->getByID($this->getBuilderFactionID());
+    }
+
+    /**
+     * Returns all builder factions for this ship.
+     * @return FactionDef[]
+     */
+    public function getBuilderFactions() : array
+    {
+        $result = [];
+        foreach ($this->builderFactionIDs as $factionID) {
+            $result[] = FactionDefs::getInstance()->getByID($factionID);
+        }
+        return $result;
+    }
+
+    /**
+     * Checks if this ship has multiple builder factions.
+     * @return bool
+     */
+    public function hasMultipleBuilderFactions(): bool
+    {
+        return count($this->builderFactionIDs) > 1;
     }
 
     public function getClassID(): string
@@ -838,7 +887,7 @@ class ShipDef implements CollectionItemInterface
             self::KEY_LABEL => $this->label,
             self::KEY_VARIANT_ID => $this->variantID,
             self::KEY_SIZE => $this->size,
-            self::KEY_BUILDER_FACTION_ID => $this->builderFactionID,
+            self::KEY_BUILDER_FACTION_IDS => $this->builderFactionIDs,
             self::KEY_CLASS_ID => $this->classID,
             self::KEY_USED_BY => $this->usedBy,
             self::KEY_DATA_SOURCE_ID => $this->dataSourceID,

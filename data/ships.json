@@ -6,7 +6,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers",
@@ -128,7 +130,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -248,7 +252,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "argon",
@@ -371,7 +377,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers",
@@ -470,7 +478,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers",
@@ -569,7 +579,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers",
@@ -680,7 +692,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers",
@@ -791,7 +805,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -889,7 +905,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -987,7 +1005,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -1085,7 +1105,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -1183,7 +1205,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -1281,7 +1305,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -1379,7 +1405,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -1477,7 +1505,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -1575,7 +1605,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -1673,7 +1705,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -1771,7 +1805,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -1887,7 +1923,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -2003,7 +2041,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "scavenger",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -2120,7 +2160,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -2238,7 +2280,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -2356,7 +2400,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers",
@@ -2441,7 +2487,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers",
@@ -2526,7 +2574,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers",
@@ -2624,7 +2674,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers",
@@ -2722,7 +2774,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "alliance",
             "argon",
@@ -2806,7 +2860,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -2889,7 +2945,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "alliance",
             "argon",
@@ -2973,7 +3031,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -3056,7 +3116,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -3159,7 +3221,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -3262,7 +3326,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "alliance",
             "argon",
@@ -3348,7 +3414,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -3433,7 +3501,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -3595,7 +3665,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -3727,7 +3799,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon"
         ],
@@ -3864,7 +3938,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone"
         ],
@@ -3998,7 +4074,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -4136,7 +4214,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "miner",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "argon",
@@ -4224,7 +4304,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -4296,7 +4378,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "alliance",
             "argon",
@@ -4402,7 +4486,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers",
@@ -4507,7 +4593,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "alliance",
             "argon",
@@ -4594,7 +4682,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers",
@@ -4680,7 +4770,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "alliance",
             "argon",
@@ -4786,7 +4878,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers",
@@ -4891,7 +4985,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -4990,7 +5086,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -5089,7 +5187,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -5201,7 +5301,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -5313,7 +5415,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "argon",
@@ -5426,7 +5530,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "argon",
             "buccaneers"
@@ -5525,7 +5631,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "antigone",
             "buccaneers"
@@ -5624,7 +5732,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "terran"
         ],
@@ -5754,7 +5864,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "battleship",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "terran"
         ],
@@ -5898,7 +6010,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "carrier",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -5992,7 +6106,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6109,7 +6225,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6203,7 +6321,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6309,7 +6429,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6403,7 +6525,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6543,7 +6667,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6683,7 +6809,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "gunboat",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6776,7 +6904,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6858,7 +6988,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -6951,7 +7083,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7045,7 +7179,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7146,7 +7282,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7261,7 +7399,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "miner",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7348,7 +7488,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "miner",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [],
         "hull": 4000,
         "mass": 9.6,
@@ -7433,7 +7575,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7516,7 +7660,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7599,7 +7745,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7670,7 +7818,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7764,7 +7914,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7858,7 +8010,9 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "boron",
+        "builderFactionID": [
+            "boron"
+        ],
         "usedBy": [
             "boron"
         ],
@@ -7952,7 +8106,10 @@
         "dataSourceID": "ego_dlc_mini_02",
         "size": "m",
         "classID": "envoy",
-        "builderFactionID": "argon teladi",
+        "builderFactionID": [
+            "argon",
+            "teladi"
+        ],
         "usedBy": [
             "argon",
             "ministry"
@@ -8075,7 +8232,9 @@
         "dataSourceID": "ego_dlc_mini_02",
         "size": "m",
         "classID": "envoy",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "scaleplate"
         ],
@@ -8197,7 +8356,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "tug",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "alliance",
             "scaleplate",
@@ -8281,7 +8442,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark"
         ],
@@ -8393,7 +8556,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance"
         ],
@@ -8477,7 +8642,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance"
         ],
@@ -8561,7 +8728,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "generic",
+        "builderFactionID": [
+            "generic"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -8631,7 +8800,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "khaak",
+        "builderFactionID": [
+            "khaak"
+        ],
         "usedBy": [
             "khaak"
         ],
@@ -8736,7 +8907,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "heavyfighter",
-        "builderFactionID": "khaak",
+        "builderFactionID": [
+            "khaak"
+        ],
         "usedBy": [
             "khaak"
         ],
@@ -8838,7 +9011,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "heavyfighter",
-        "builderFactionID": "khaak",
+        "builderFactionID": [
+            "khaak"
+        ],
         "usedBy": [
             "khaak"
         ],
@@ -8924,7 +9099,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "khaak",
+        "builderFactionID": [
+            "khaak"
+        ],
         "usedBy": [
             "khaak"
         ],
@@ -9026,7 +9203,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "khaak",
+        "builderFactionID": [
+            "khaak"
+        ],
         "usedBy": [
             "khaak"
         ],
@@ -9112,7 +9291,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "battleship",
-        "builderFactionID": "khaak",
+        "builderFactionID": [
+            "khaak"
+        ],
         "usedBy": [
             "khaak"
         ],
@@ -9231,7 +9412,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -9353,7 +9536,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -9475,7 +9660,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance",
             "buccaneers",
@@ -9599,7 +9786,9 @@
         "dataSourceID": "ego_dlc_mini_01",
         "size": "l",
         "classID": "expeditionary",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "holyorder",
             "paranid",
@@ -9775,7 +9964,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -9875,7 +10066,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -9975,7 +10168,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -10075,7 +10270,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -10189,7 +10386,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -10303,7 +10502,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -10417,7 +10618,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -10529,7 +10732,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -10641,7 +10846,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -10753,7 +10960,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -10865,7 +11074,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -10978,7 +11189,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -11138,7 +11351,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -11298,7 +11513,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -11399,7 +11616,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -11500,7 +11719,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -11585,7 +11806,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -11670,7 +11893,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -11768,7 +11993,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -11866,7 +12093,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance",
             "buccaneers",
@@ -11951,7 +12180,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -12035,7 +12266,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance",
             "buccaneers",
@@ -12120,7 +12353,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -12204,7 +12439,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers"
         ],
@@ -12325,7 +12562,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -12411,7 +12650,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -12497,7 +12738,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -12614,7 +12857,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -12731,7 +12976,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -12867,7 +13114,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "miner",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "hatikvah",
@@ -12958,7 +13207,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -13030,7 +13281,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance",
             "buccaneers",
@@ -13117,7 +13370,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -13203,7 +13458,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance",
             "buccaneers",
@@ -13293,7 +13550,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -13382,7 +13641,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "alliance",
             "buccaneers",
@@ -13483,7 +13744,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -13583,7 +13846,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -13696,7 +13961,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -13809,7 +14076,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -13923,7 +14192,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "paranid",
@@ -14023,7 +14294,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -14123,7 +14396,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "buccaneers",
             "holyorder",
@@ -14224,7 +14499,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark"
         ],
@@ -14330,7 +14607,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "scavenger",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark"
         ],
@@ -14440,7 +14719,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "scavenger",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [],
         "hull": 114000,
         "mass": 243.18,
@@ -14548,7 +14829,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "l",
         "classID": "compactor",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "scavenger"
         ],
@@ -14642,7 +14925,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark"
         ],
@@ -14746,7 +15031,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark"
         ],
@@ -14850,7 +15137,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark"
         ],
@@ -14984,7 +15273,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark",
             "scavenger"
@@ -15072,7 +15363,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark",
             "scavenger"
@@ -15160,7 +15453,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "xl",
         "classID": "battleship",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -15287,7 +15582,9 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "argon",
+        "builderFactionID": [
+            "argon"
+        ],
         "usedBy": [
             "loanshark",
             "scavenger"
@@ -15332,7 +15629,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -15491,7 +15790,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -15587,7 +15888,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -15695,7 +15998,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -15804,7 +16109,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "split"
@@ -15982,7 +16289,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit"
@@ -16160,7 +16469,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "split"
@@ -16288,7 +16599,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -16375,7 +16688,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -16495,7 +16810,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -16582,7 +16899,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "split"
@@ -16685,7 +17004,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "split"
@@ -16802,7 +17123,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit"
@@ -16919,7 +17242,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "split"
@@ -17066,7 +17391,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit"
@@ -17201,7 +17528,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "miner",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -17309,7 +17638,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -17395,7 +17726,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -17501,7 +17834,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -17597,7 +17932,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -17706,7 +18043,9 @@
         "dataSourceID": "ego_dlc_split",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "split",
+        "builderFactionID": [
+            "split"
+        ],
         "usedBy": [
             "court",
             "freesplit",
@@ -17802,7 +18141,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -17922,7 +18263,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -18042,7 +18385,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry",
             "teladi"
@@ -18162,7 +18507,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "teladi"
@@ -18261,7 +18608,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry"
@@ -18360,7 +18709,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry",
@@ -18459,7 +18810,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "teladi"
@@ -18572,7 +18925,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry"
@@ -18685,7 +19040,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry",
@@ -18798,7 +19155,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -18896,7 +19255,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -18994,7 +19355,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -19092,7 +19455,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -19190,7 +19555,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry",
             "teladi"
@@ -19288,7 +19655,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -19385,7 +19754,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "gunboat",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -19482,7 +19853,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -19581,7 +19954,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -19680,7 +20055,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "teladi"
@@ -19763,7 +20140,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry"
@@ -19846,7 +20225,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "teladi"
@@ -19942,7 +20323,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry"
@@ -20038,7 +20421,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "alliance",
             "teladi"
@@ -20121,7 +20506,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -20203,7 +20590,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "alliance",
             "teladi"
@@ -20286,7 +20675,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -20368,7 +20759,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -20465,7 +20858,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "scaleplate",
@@ -20551,7 +20946,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry",
@@ -20637,7 +21034,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -20752,7 +21151,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -20867,7 +21268,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "miner",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry",
@@ -20954,7 +21357,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -21026,7 +21431,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "alliance",
             "hatikvah",
@@ -21113,7 +21520,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "hatikvah",
             "ministry",
@@ -21199,7 +21608,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "alliance",
             "teladi"
@@ -21284,7 +21695,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -21368,7 +21781,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "alliance",
             "scaleplate",
@@ -21454,7 +21869,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry",
             "scaleplate"
@@ -21539,7 +21956,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -21623,7 +22042,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -21721,7 +22142,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -21819,7 +22242,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -21930,7 +22355,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -22041,7 +22468,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "teladi"
         ],
@@ -22139,7 +22568,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "teladi",
+        "builderFactionID": [
+            "teladi"
+        ],
         "usedBy": [
             "ministry"
         ],
@@ -22237,7 +22668,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -22357,7 +22790,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -22461,7 +22896,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -22556,7 +22993,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "largeminer",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -22663,7 +23102,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [],
         "hull": 36000,
         "mass": 260,
@@ -22755,7 +23196,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
         "classID": "freighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -22850,7 +23293,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -23002,7 +23447,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -23142,7 +23589,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "frigate",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "terran"
         ],
@@ -23293,7 +23742,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "gunboat",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "terran"
         ],
@@ -23388,7 +23839,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -23471,7 +23924,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -23568,7 +24023,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "transporter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -23651,7 +24108,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -23774,7 +24233,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers"
         ],
@@ -23880,7 +24341,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers"
         ],
@@ -23986,7 +24449,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -24069,7 +24534,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "terran"
         ],
@@ -24207,7 +24674,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "miner",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -24295,7 +24764,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -24381,7 +24852,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "terran"
         ],
@@ -24466,7 +24939,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "courier",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -24539,7 +25014,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "ownerless"
         ],
@@ -24697,7 +25174,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "builder",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -24792,7 +25271,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "carrier",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "terran"
         ],
@@ -24886,7 +25367,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "xl",
         "classID": "resupplier",
-        "builderFactionID": "terran",
+        "builderFactionID": [
+            "terran"
+        ],
         "usedBy": [
             "pioneers",
             "terran"
@@ -24981,7 +25464,9 @@
         "dataSourceID": "vanilla",
         "size": "l",
         "classID": "destroyer",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25090,7 +25575,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25219,7 +25706,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25315,7 +25804,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25429,7 +25920,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25524,7 +26017,9 @@
         "dataSourceID": "vanilla",
         "size": "m",
         "classID": "miner",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25616,7 +26111,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25718,7 +26215,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25820,7 +26319,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "heavyfighter",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -25937,7 +26438,9 @@
         "dataSourceID": "vanilla",
         "size": "s",
         "classID": "scout",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -26023,7 +26526,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "battleship",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -26128,7 +26633,9 @@
         "dataSourceID": "vanilla",
         "size": "xl",
         "classID": "destroyer",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -26233,7 +26740,9 @@
         "dataSourceID": "ego_dlc_timelines",
         "size": "xl",
         "classID": "battleship",
-        "builderFactionID": "xenon",
+        "builderFactionID": [
+            "xenon"
+        ],
         "usedBy": [
             "xenon"
         ],
@@ -26326,7 +26835,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
         "classID": "corvette",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "yaki"
         ],
@@ -26484,7 +26995,9 @@
         "dataSourceID": "ego_dlc_terran",
         "size": "s",
         "classID": "fighter",
-        "builderFactionID": "paranid",
+        "builderFactionID": [
+            "paranid"
+        ],
         "usedBy": [
             "yaki"
         ],

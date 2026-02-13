@@ -52,9 +52,10 @@ class ShipDefs extends BaseStringPrimaryCollection implements ItemCollectionInte
         $result = array();
 
         foreach($this->getAll() as $ship) {
-            $factionID = $ship->getBuilderFactionID();
-            if (!isset($result[$factionID])) {
-                $result[$factionID] = $ship->getBuilderFaction();
+            foreach ($ship->getBuilderFactionIDs() as $factionID) {
+                if (!isset($result[$factionID])) {
+                    $result[$factionID] = FactionDefs::getInstance()->getByID($factionID);
+                }
             }
         }
 

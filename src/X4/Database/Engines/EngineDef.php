@@ -32,6 +32,7 @@ class EngineDef implements CollectionItemInterface
     public const KEY_SIZE = 'size';
     public const KEY_DATA_SOURCE_ID = 'dataSourceID';
     public const KEY_MAKER_RACE = 'makerRace';
+    public const KEY_MAKER_RACES = 'makerRaces';
     public const KEY_MK = 'mk';
     public const KEY_VARIANT_ID = 'variantID';
     
@@ -67,7 +68,10 @@ class EngineDef implements CollectionItemInterface
     private string $label;
     private string $size;
     private string $dataSourceID;
-    private string $makerRace;
+    /**
+     * @var string[]
+     */
+    private array $makerRaces;
     private int $mk;
     private VariantID $variantID;
     
@@ -106,7 +110,7 @@ class EngineDef implements CollectionItemInterface
         string $label,
         string $size,
         string $dataSourceID,
-        string $makerRace,
+        array $makerRaces,
         int $mk,
         VariantID $variantID,
         float $boostDuration,
@@ -132,7 +136,7 @@ class EngineDef implements CollectionItemInterface
         $this->label = $label;
         $this->size = $size;
         $this->dataSourceID = $dataSourceID;
-        $this->makerRace = $makerRace;
+        $this->makerRaces = $makerRaces;
         $this->mk = $mk;
         $this->variantID = $variantID;
         
@@ -162,13 +166,27 @@ class EngineDef implements CollectionItemInterface
     {
         $data = ArrayDataCollection::create($engineDef);
 
+        // Handle both new array format and old string format for backward compatibility
+        $makerRaces = [];
+        if ($data->hasKey(self::KEY_MAKER_RACES)) {
+            $makerRaces = $data->getArray(self::KEY_MAKER_RACES);
+        } elseif ($data->hasKey(self::KEY_MAKER_RACE)) {
+            $raceString = $data->getString(self::KEY_MAKER_RACE, 'unknown');
+            $makerRaces = array_values(array_filter(explode(' ', $raceString)));
+        }
+        
+        // Default to unknown if empty
+        if (empty($makerRaces)) {
+            $makerRaces = ['unknown'];
+        }
+
         return new EngineDef(
             $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_MACRO_ID),
             $data->getString(self::KEY_LABEL),
             $data->getString(self::KEY_SIZE),
             $data->getString(self::KEY_DATA_SOURCE_ID),
-            $data->getString(self::KEY_MAKER_RACE, 'unknown'),
+            $makerRaces,
             $data->getInt(self::KEY_MK, 1),
             VariantID::fromID($data->getString(self::KEY_VARIANT_ID)),
             $data->getFloat(self::KEY_BOOST_DURATION, 0.0),
@@ -222,7 +240,28 @@ class EngineDef implements CollectionItemInterface
 
     public function getMakerRace(): string
     {
-        return $this->makerRace;
+        if (empty($this->makerRaces)) {
+            return 'unknown';
+        }
+        return $this->makerRaces[0];
+    }
+
+    /**
+     * Returns all maker races for this engine.
+     * @return string[]
+     */
+    public function getMakerRaces(): array
+    {
+        return $this->makerRaces;
+    }
+
+    /**
+     * Checks if this engine has multiple maker races.
+     * @return bool
+     */
+    public function hasMultipleMakerRaces(): bool
+    {
+        return count($this->makerRaces) > 1;
     }
 
     public function getMk(): int
@@ -321,5 +360,35 @@ class EngineDef implements CollectionItemInterface
     public function hasDecelerationCurve(): bool
     {
         return !empty($this->decelerationCurve);
+    }
+
+    public function toArray(): array
+    {
+        return [
+            self::KEY_WARE_ID => $this->wareID,
+            self::KEY_MACRO_ID => $this->macroID,
+            self::KEY_LABEL => $this->label,
+            self::KEY_SIZE => $this->size,
+            self::KEY_DATA_SOURCE_ID => $this->dataSourceID,
+            self::KEY_MAKER_RACES => $this->makerRaces,
+            self::KEY_MK => $this->mk,
+            self::KEY_VARIANT_ID => $this->variantID->getID(),
+            self::KEY_BOOST_DURATION => $this->boostDuration,
+            self::KEY_BOOST_RECHARGE => $this->boostRecharge,
+            self::KEY_BOOST_THRUST => $this->boostThrust,
+            self::KEY_BOOST_ACCELERATION => $this->boostAcceleration,
+            self::KEY_BOOST_ATTACK => $this->boostAttack,
+            self::KEY_BOOST_RELEASE => $this->boostRelease,
+            self::KEY_BOOST_COAST => $this->boostCoast,
+            self::KEY_TRAVEL_CHARGE => $this->travelCharge,
+            self::KEY_TRAVEL_THRUST => $this->travelThrust,
+            self::KEY_TRAVEL_ATTACK => $this->travelAttack,
+            self::KEY_TRAVEL_RELEASE => $this->travelRelease,
+            self::KEY_THRUST_FORWARD => $this->thrustForward,
+            self::KEY_THRUST_REVERSE => $this->thrustReverse,
+            self::KEY_HULL_MAX => $this->hullMax,
+            self::KEY_HULL_THRESHOLD => $this->hullThreshold,
+            self::KEY_DECELERATION_CURVE => $this->decelerationCurve
+        ];
     }
 }

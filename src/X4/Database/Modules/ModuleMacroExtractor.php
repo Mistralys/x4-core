@@ -6,6 +6,7 @@ namespace Mistralys\X4\Database\Modules;
 
 use AppUtils\ConvertHelper;
 use Mistralys\X4\Database\Factions\FactionDefs;
+use Mistralys\X4\Database\Factions\KnownFactions;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\XML\DOMExtended;
 use Mistralys\X4\XML\ElementExtended;
@@ -143,14 +144,25 @@ class ModuleMacroExtractor
         return null;
     }
 
-    private function resolveFactionID() : ?string
+    /**
+     * @return string[]
+     */
+    private function resolveFactionID() : array
     {
-        $faction = $this->tagIdentification()->getAttribute('makerrace');
-        if(!empty($faction)) {
-            return $faction;
+        $factionString = $this->tagIdentification()->getAttribute('makerrace');
+        if(!empty($factionString)) {
+            $factionIDs = array_values(array_filter(explode(' ', $factionString)));
+            if (!empty($factionIDs)) {
+                return $factionIDs;
+            }
         }
 
-        return FactionDefs::getInstance()->detectFactionByID($this->ware->getID());
+        $detected = FactionDefs::getInstance()->detectFactionByID($this->ware->getID());
+        if ($detected !== null) {
+            return [$detected];
+        }
+
+        return [KnownFactions::FACTION_GENERIC];
     }
 
     private function tagIdentification() : ElementExtended

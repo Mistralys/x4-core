@@ -379,8 +379,11 @@ class WeaponFinder extends BaseFinder implements DataSourceSelectionInterface
         }
 
         // Maker race filter
-        if (!empty($this->makerRaces) && !in_array($item->getMakerRace(), $this->makerRaces, true)) {
-            return false;
+        if (!empty($this->makerRaces)) {
+            $intersection = array_intersect($item->getMakerRaces(), $this->makerRaces);
+            if (empty($intersection)) {
+                return false;
+            }
         }
 
         // Weapon system filter

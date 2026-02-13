@@ -74,16 +74,22 @@ class EngineMacroExtractor
         );
     }
 
-    private function resolveMakerRace(): string
+    /**
+     * @return string[]
+     */
+    private function resolveMakerRace(): array
     {
         $el = $this->tagIdentification();
         if ($el) {
-            $race = $el->getAttribute('makerrace');
-            if (!empty($race)) {
-                return $race;
+            $raceString = $el->getAttribute('makerrace');
+            if (!empty($raceString)) {
+                $races = array_values(array_filter(explode(' ', $raceString)));
+                if (!empty($races)) {
+                    return $races;
+                }
             }
         }
-        return 'unknown';
+        return ['unknown'];
     }
 
     private function resolveMk(): int

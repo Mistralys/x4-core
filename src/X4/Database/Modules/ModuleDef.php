@@ -18,6 +18,7 @@ class ModuleDef implements CollectionItemInterface
 
     public const KEY_CATEGORY = 'category';
     public const KEY_BUILDER_FACTION_ID = 'builderFactionID';
+    public const KEY_BUILDER_FACTION_IDS = 'builderFactionIDs';
     public const KEY_REQUIRED_WORKFORCE = 'requiredWorkforce';
     public const KEY_WARES_PRODUCED = 'waresProduced';
     public const KEY_SIZE = 'size';
@@ -36,7 +37,10 @@ class ModuleDef implements CollectionItemInterface
     private string $label;
     private string $categoryID;
     private string $macroID;
-    private string $builderFactionID;
+    /**
+     * @var string[]
+     */
+    private array $builderFactionIDs;
     private string $size;
     private int $hull;
     private int $droneCapacity;
@@ -55,7 +59,7 @@ class ModuleDef implements CollectionItemInterface
         string $label,
         string $categoryID,
         string $macroID,
-        string $builderFactionID,
+        array $builderFactionIDs,
         string $size,
         int $hull,
         int $droneCapacity,
@@ -71,7 +75,7 @@ class ModuleDef implements CollectionItemInterface
         $this->label = $label;
         $this->categoryID = $categoryID;
         $this->macroID = $macroID;
-        $this->builderFactionID = $builderFactionID;
+        $this->builderFactionIDs = $builderFactionIDs;
         $this->size = $size;
         $this->hull = $hull;
         $this->droneCapacity = $droneCapacity;
@@ -82,8 +86,8 @@ class ModuleDef implements CollectionItemInterface
         $this->variantID = $variantID;
         $this->waresProduced = $waresProduced;
 
-        if(empty($this->builderFactionID)) {
-            $this->builderFactionID = KnownFactions::FACTION_GENERIC;
+        if(empty($this->builderFactionIDs)) {
+            $this->builderFactionIDs = [KnownFactions::FACTION_GENERIC];
         }
     }
 
@@ -91,12 +95,26 @@ class ModuleDef implements CollectionItemInterface
     {
         $data = ArrayDataCollection::create($moduleDef);
 
+        // Handle both new array format and old string format for backward compatibility
+        $builderFactionIDs = [];
+        if ($data->hasKey(self::KEY_BUILDER_FACTION_IDS)) {
+            $builderFactionIDs = $data->getArray(self::KEY_BUILDER_FACTION_IDS);
+        } elseif ($data->hasKey(self::KEY_BUILDER_FACTION_ID)) {
+            $factionString = $data->getString(self::KEY_BUILDER_FACTION_ID);
+            $builderFactionIDs = array_values(array_filter(explode(' ', $factionString)));
+        }
+        
+        // Default to generic if empty
+        if (empty($builderFactionIDs)) {
+            $builderFactionIDs = [KnownFactions::FACTION_GENERIC];
+        }
+
         return new ModuleDef(
             $data->getString(self::KEY_WARE_ID),
             $data->getString(self::KEY_LABEL),
             $data->getString(self::KEY_CATEGORY),
             $data->getString(self::KEY_MACRO_ID),
-            $data->getString(self::KEY_BUILDER_FACTION_ID),
+            $builderFactionIDs,
             $data->getString(self::KEY_SIZE),
             $data->getInt(self::KEY_HULL),
             $data->getInt(self::KEY_DRONE_CAPACITY),
@@ -198,7 +216,41 @@ class ModuleDef implements CollectionItemInterface
 
     public function getBuilderFactionID() : string
     {
-        return $this->builderFactionID;
+        if(empty($this->builderFactionIDs)) {
+            return KnownFactions::FACTION_GENERIC;
+        }
+        return $this->builderFactionIDs[0];
+    }
+
+    /**
+     * Returns all builder faction IDs for this module.
+     * @return string[]
+     */
+    public function getBuilderFactionIDs(): array
+    {
+        return $this->builderFactionIDs;
+    }
+
+    /**
+     * Returns all builder factions for this module.
+     * @return FactionDef[]
+     */
+    public function getBuilderFactions() : array
+    {
+        $result = [];
+        foreach ($this->builderFactionIDs as $factionID) {
+            $result[] = FactionDefs::getInstance()->getByID($factionID);
+        }
+        return $result;
+    }
+
+    /**
+     * Checks if this module has multiple builder factions.
+     * @return bool
+     */
+    public function hasMultipleBuilderFactions(): bool
+    {
+        return count($this->builderFactionIDs) > 1;
     }
 
     public function isProduction() : bool
@@ -212,5 +264,25 @@ class ModuleDef implements CollectionItemInterface
     public function getProducedWares() : array
     {
         return $this->waresProduced;
+    }
+
+    public function toArray(): array
+    {
+        return [
+            self::KEY_WARE_ID => $this->wareID,
+            self::KEY_LABEL => $this->label,
+            self::KEY_CATEGORY => $this->categoryID,
+            self::KEY_MACRO_ID => $this->macroID,
+            self::KEY_BUILDER_FACTION_IDS => $this->builderFactionIDs,
+            self::KEY_SIZE => $this->size,
+            self::KEY_HULL => $this->hull,
+            self::KEY_DRONE_CAPACITY => $this->droneCapacity,
+            self::KEY_CARGO_CAPACITY => $this->cargoCapacity,
+            self::KEY_CARGO_TYPE => $this->cargoType,
+            self::KEY_HOUSING_CAPACITY => $this->housingCapacity,
+            self::KEY_HOUSING_FACTION_ID => $this->housingFactionID,
+            self::KEY_VARIANT_ID => $this->variantID->getID(),
+            self::KEY_WARES_PRODUCED => $this->waresProduced
+        ];
     }
 }

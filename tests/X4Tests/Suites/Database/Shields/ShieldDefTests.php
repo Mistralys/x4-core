@@ -221,4 +221,62 @@ final class ShieldDefTests extends X4TestCase
         // The correct type should match
         $this->assertTrue($typeChecks[$type], "Type check for '{$type}' should return true");
     }
+
+    // =========================================================================
+    // Multi-Maker Race Tests
+    // =========================================================================
+
+    /**
+     * Test multi-maker-race support for shields.
+     * Some shields have multiple maker races (e.g., "argon teladi").
+     */
+    public function test_multiMakerRace(): void
+    {
+        $shields = ShieldDefs::getInstance();
+        
+        // Try to find a shield with compound makerRace
+        // Look through all shields to find one with multiple races
+        $multiRaceShield = null;
+        foreach ($shields->getAll() as $shield) {
+            if ($shield->hasMultipleMakerRaces()) {
+                $multiRaceShield = $shield;
+                break;
+            }
+        }
+        
+        // If no multi-race shield found, test with mock data
+        if ($multiRaceShield === null) {
+            // Test fromArray with compound makerRace string (old format)
+            $mockData = [
+                ShieldDef::KEY_WARE_ID => 'shield_test_multi',
+                ShieldDef::KEY_MACRO_ID => 'shield_test_multi_macro',
+                ShieldDef::KEY_LABEL => 'Test Multi-Race Shield',
+                ShieldDef::KEY_SIZE => 'm',
+                ShieldDef::KEY_DATA_SOURCE_ID => 'vanilla',
+                ShieldDef::KEY_MAKER_RACE => 'argon teladi',
+                ShieldDef::KEY_MK => 1,
+                ShieldDef::KEY_VARIANT_ID => '01',
+                ShieldDef::KEY_SHIELD_TYPE => 'standard',
+                ShieldDef::KEY_RECHARGE_MAX => 1000.0,
+                ShieldDef::KEY_RECHARGE_RATE => 100.0,
+                ShieldDef::KEY_RECHARGE_DELAY => 2.0,
+                ShieldDef::KEY_HULL_MAX => 500.0,
+                ShieldDef::KEY_HULL_THRESHOLD => 0.5,
+                ShieldDef::KEY_HULL_INTEGRATED => false
+            ];
+            
+            $multiRaceShield = ShieldDef::fromArray($mockData);
+        }
+        
+        // Test the new methods
+        $this->assertTrue($multiRaceShield->hasMultipleMakerRaces(), 'Shield should have multiple maker races');
+        $races = $multiRaceShield->getMakerRaces();
+        $this->assertIsArray($races, 'getMakerRaces() should return an array');
+        $this->assertGreaterThanOrEqual(2, count($races), 'Should have at least 2 maker races');
+        $this->assertContains('argon', $races, 'Should have argon as a maker race');
+        $this->assertContains('teladi', $races, 'Should have teladi as a maker race');
+        
+        // Test backward compatibility - should return the first (primary) race
+        $this->assertEquals('argon', $multiRaceShield->getMakerRace(), 'Primary maker race should be argon');
+    }
 }

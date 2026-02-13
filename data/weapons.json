@@ -6,7 +6,9 @@
         "label": "ARG L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -44,7 +46,9 @@
         "label": "ARG L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -82,7 +86,9 @@
         "label": "ARG L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -120,7 +126,9 @@
         "label": "ARG L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -158,7 +166,9 @@
         "label": "ARG L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -196,7 +206,9 @@
         "label": "ARG L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -234,7 +246,9 @@
         "label": "ARG M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -272,7 +286,9 @@
         "label": "ARG M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -310,7 +326,9 @@
         "label": "ARG M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "dumbfire",
@@ -348,7 +366,9 @@
         "label": "ARG M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -386,7 +406,9 @@
         "label": "ARG M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -424,7 +446,9 @@
         "label": "ARG M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -462,7 +486,9 @@
         "label": "ARG M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "heavy",
@@ -500,7 +526,9 @@
         "label": "ARG M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -538,7 +566,9 @@
         "label": "ARG M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "guided",
@@ -576,7 +606,9 @@
         "label": "ARG M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -614,7 +646,9 @@
         "label": "ARG M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -652,7 +686,9 @@
         "label": "ARG M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -690,7 +726,9 @@
         "label": "ARG M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "mining",
@@ -728,7 +766,9 @@
         "label": "ARG M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -766,7 +806,9 @@
         "label": "ARG M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "heavy",
@@ -804,7 +846,9 @@
         "label": "ARG M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -842,7 +886,9 @@
         "label": "ARG M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -880,7 +926,9 @@
         "label": "ARG M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -918,7 +966,9 @@
         "label": "BOR L Ion Net Launcher Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -956,7 +1006,9 @@
         "label": "BOR L Ion Flak Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -994,7 +1046,9 @@
         "label": "BOR L Phase Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1032,7 +1086,9 @@
         "label": "BOR L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1070,7 +1126,9 @@
         "label": "BOR M Arc Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1108,7 +1166,9 @@
         "label": "BOR M Arc Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -1146,7 +1206,9 @@
         "label": "BOR M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1184,7 +1246,9 @@
         "label": "BOR M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1222,7 +1286,9 @@
         "label": "BOR M Phase Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1260,7 +1326,9 @@
         "label": "BOR M Phase Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -1298,7 +1366,9 @@
         "label": "BOR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1336,7 +1406,9 @@
         "label": "BOR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -1374,7 +1446,9 @@
         "label": "BOR M Ion Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1412,7 +1486,9 @@
         "label": "BOR M Ion Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -1450,7 +1526,9 @@
         "label": "TEL M Distortion Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1488,7 +1566,9 @@
         "label": "M Autocannon Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1526,7 +1606,9 @@
         "label": "Scrap Tractor",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1564,7 +1646,9 @@
         "label": "ARG M Scalar Aperture Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1602,7 +1686,9 @@
         "label": "Astrid M Turret",
         "size": "m",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1640,7 +1726,9 @@
         "label": "KHA L Kyon Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "khaak",
+        "makerRace": [
+            "khaak"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1678,7 +1766,9 @@
         "label": "KHA M Kyon Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "khaak",
+        "makerRace": [
+            "khaak"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1716,7 +1806,9 @@
         "label": "PAR L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1754,7 +1846,9 @@
         "label": "PAR L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1792,7 +1886,9 @@
         "label": "PAR L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1830,7 +1926,9 @@
         "label": "PAR L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1868,7 +1966,9 @@
         "label": "PAR L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1906,7 +2006,9 @@
         "label": "PAR L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1944,7 +2046,9 @@
         "label": "PAR M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -1982,7 +2086,9 @@
         "label": "PAR M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2020,7 +2126,9 @@
         "label": "PAR M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2058,7 +2166,9 @@
         "label": "PAR M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2096,7 +2206,9 @@
         "label": "PAR M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2134,7 +2246,9 @@
         "label": "PAR M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2172,7 +2286,9 @@
         "label": "PAR M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2210,7 +2326,9 @@
         "label": "PAR M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2248,7 +2366,9 @@
         "label": "PAR M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2286,7 +2406,9 @@
         "label": "PAR M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2324,7 +2446,9 @@
         "label": "PAR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2362,7 +2486,9 @@
         "label": "PAR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2400,7 +2526,9 @@
         "label": "PAR M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2438,7 +2566,9 @@
         "label": "PAR M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2476,7 +2606,9 @@
         "label": "PAR M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2514,7 +2646,9 @@
         "label": "PAR M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -2552,7 +2686,9 @@
         "label": "Erlking L Turret",
         "size": "l",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01:laser-01:mk1",
         "weaponCategory": "standard",
@@ -2590,7 +2726,9 @@
         "label": "Erlking M Turret",
         "size": "m",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01:gatling-02:mk1",
         "weaponCategory": "standard",
@@ -2628,7 +2766,9 @@
         "label": "SPL L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2666,7 +2806,9 @@
         "label": "SPL L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2704,7 +2846,9 @@
         "label": "SPL L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2742,7 +2886,9 @@
         "label": "SPL L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2780,7 +2926,9 @@
         "label": "SPL L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2818,7 +2966,9 @@
         "label": "SPL L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -2856,7 +3006,9 @@
         "label": "SPL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "energy",
@@ -2894,7 +3046,9 @@
         "label": "SPL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "energy",
@@ -2932,7 +3086,9 @@
         "label": "SPL M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "dumbfire",
@@ -2970,7 +3126,9 @@
         "label": "SPL M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "dumbfire",
@@ -3008,7 +3166,9 @@
         "label": "SPL M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3046,7 +3206,9 @@
         "label": "SPL M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -3084,7 +3246,9 @@
         "label": "SPL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "heavy",
@@ -3122,7 +3286,9 @@
         "label": "SPL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "heavy",
@@ -3160,7 +3326,9 @@
         "label": "SPL M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "guided",
@@ -3198,7 +3366,9 @@
         "label": "SPL M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "guided",
@@ -3236,7 +3406,9 @@
         "label": "SPL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3274,7 +3446,9 @@
         "label": "SPL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -3312,7 +3486,9 @@
         "label": "SPL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "mining",
@@ -3350,7 +3526,9 @@
         "label": "SPL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "mining",
@@ -3388,7 +3566,9 @@
         "label": "SPL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "heavy",
@@ -3426,7 +3606,9 @@
         "label": "SPL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "heavy",
@@ -3464,7 +3646,9 @@
         "label": "SPL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3502,7 +3686,9 @@
         "label": "SPL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -3540,7 +3726,9 @@
         "label": "TEL L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3578,7 +3766,9 @@
         "label": "TEL L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3616,7 +3806,9 @@
         "label": "TEL L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3654,7 +3846,9 @@
         "label": "TEL L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3692,7 +3886,9 @@
         "label": "TEL L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3730,7 +3926,9 @@
         "label": "TEL L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -3768,7 +3966,9 @@
         "label": "TEL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "energy",
@@ -3806,7 +4006,9 @@
         "label": "TEL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "energy",
@@ -3844,7 +4046,9 @@
         "label": "TEL M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "dumbfire",
@@ -3882,7 +4086,9 @@
         "label": "TEL M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "dumbfire",
@@ -3920,7 +4126,9 @@
         "label": "TEL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "heavy",
@@ -3958,7 +4166,9 @@
         "label": "TEL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "heavy",
@@ -3996,7 +4206,9 @@
         "label": "TEL M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "guided",
@@ -4034,7 +4246,9 @@
         "label": "TEL M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "guided",
@@ -4072,7 +4286,9 @@
         "label": "TEL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4110,7 +4326,9 @@
         "label": "TEL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -4148,7 +4366,9 @@
         "label": "TEL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "mining",
@@ -4186,7 +4406,9 @@
         "label": "TEL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "mining",
@@ -4224,7 +4446,9 @@
         "label": "TEL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "heavy",
@@ -4262,7 +4486,9 @@
         "label": "TEL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "heavy",
@@ -4300,7 +4526,9 @@
         "label": "TEL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4338,7 +4566,9 @@
         "label": "TEL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -4376,7 +4606,9 @@
         "label": "TER L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4414,7 +4646,9 @@
         "label": "TER L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4452,7 +4686,9 @@
         "label": "TER L Bolt Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4490,7 +4726,9 @@
         "label": "TER L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4528,7 +4766,9 @@
         "label": "TER L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4566,7 +4806,9 @@
         "label": "TER L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4604,7 +4846,9 @@
         "label": "TER M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4642,7 +4886,9 @@
         "label": "TER M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -4680,7 +4926,9 @@
         "label": "TER M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4718,7 +4966,9 @@
         "label": "TER M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -4756,7 +5006,9 @@
         "label": "TER M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4794,7 +5046,9 @@
         "label": "TER M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -4832,7 +5086,9 @@
         "label": "TER M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4870,7 +5126,9 @@
         "label": "TER M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -4908,7 +5166,9 @@
         "label": "TER M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -4946,7 +5206,9 @@
         "label": "TER M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -4984,7 +5246,9 @@
         "label": "TER M Electromagnetic Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "03::mk1",
         "weaponCategory": "standard",
@@ -5022,7 +5286,9 @@
         "label": "TER M Electromagnetic Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "04::mk1",
         "weaponCategory": "standard",
@@ -5060,7 +5326,9 @@
         "label": "TER M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5098,7 +5366,9 @@
         "label": "TER M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -5136,7 +5406,9 @@
         "label": "XEN L Graviton Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5174,7 +5446,9 @@
         "label": "XEN L Seismic Charge Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5212,7 +5486,9 @@
         "label": "XEN M Positron Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -5250,7 +5526,9 @@
         "label": "XEN M Needler Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5288,7 +5566,9 @@
         "label": "XEN M Needler Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -5326,7 +5606,9 @@
         "label": "XEN M Impulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5364,7 +5646,9 @@
         "label": "XEN M Impulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -5402,7 +5686,9 @@
         "label": "XEN XL Omega Turret Mk1",
         "size": "xl",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5440,7 +5726,9 @@
         "label": "ARG Behemoth Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5478,7 +5766,9 @@
         "label": "ARG M Ion Blaster Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5516,7 +5806,9 @@
         "label": "ARG M Ion Blaster Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -5554,7 +5846,9 @@
         "label": "ARG S Ion Blaster Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5592,7 +5886,9 @@
         "label": "ARG S Ion Blaster Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -5630,7 +5926,9 @@
         "label": "ATF XL Main Battery",
         "size": "xl",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5668,7 +5966,9 @@
         "label": "BOR Ray Ion Projector",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5706,7 +6006,9 @@
         "label": "BOR M Dumbfire Launcher Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5744,7 +6046,9 @@
         "label": "BOR M Ion Atomiser Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5782,7 +6086,9 @@
         "label": "BOR M Tracking Launcher Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5820,7 +6126,9 @@
         "label": "BOR M Phase Cannon Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5858,7 +6166,9 @@
         "label": "BOR M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5896,7 +6206,9 @@
         "label": "BOR M Ion Pulse Railgun Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5934,7 +6246,9 @@
         "label": "BOR M Torpedo Launcher Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -5972,7 +6286,9 @@
         "label": "BOR S Arc Gun Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6010,7 +6326,9 @@
         "label": "BOR S Dumbfire Launcher Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6048,7 +6366,9 @@
         "label": "BOR S Ion Gatling Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6086,7 +6406,9 @@
         "label": "BOR S Tracking Launcher Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6124,7 +6446,9 @@
         "label": "BOR S Phase Gun Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6162,7 +6486,9 @@
         "label": "BOR S Mining Drill Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6200,7 +6526,9 @@
         "label": "BOR S Torpedo Launcher Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": "boron",
+        "makerRace": [
+            "boron"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6238,7 +6566,9 @@
         "label": "M Beam Emitter Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6276,7 +6606,9 @@
         "label": "M Beam Emitter Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6314,7 +6646,9 @@
         "label": "M Heavy Distortion Pulsor Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6352,7 +6686,9 @@
         "label": "M Dumbfire Launcher Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6390,7 +6726,9 @@
         "label": "M Dumbfire Launcher Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6428,7 +6766,9 @@
         "label": "M Bolt Repeater Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6466,7 +6806,9 @@
         "label": "M Bolt Repeater Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6504,7 +6846,9 @@
         "label": "M Tracking Launcher Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6542,7 +6886,9 @@
         "label": "M Tracking Launcher Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6580,7 +6926,9 @@
         "label": "M Pulse Laser Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6618,7 +6966,9 @@
         "label": "M Pulse Laser Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6656,7 +7006,9 @@
         "label": "M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6694,7 +7046,9 @@
         "label": "M Mining Drill Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6732,7 +7086,9 @@
         "label": "M Plasma Cannon Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6770,7 +7126,9 @@
         "label": "M Plasma Cannon Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6808,7 +7166,9 @@
         "label": "M Heavy Scalar Aperture Emitter Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6846,7 +7206,9 @@
         "label": "M Shard Battery Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6884,7 +7246,9 @@
         "label": "M Shard Battery Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6922,7 +7286,9 @@
         "label": "M Torpedo Launcher Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -6960,7 +7326,9 @@
         "label": "M Torpedo Launcher Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -6998,7 +7366,9 @@
         "label": "Astrid Primary Weapon",
         "size": "m",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7036,7 +7406,9 @@
         "label": "S Beam Emitter Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7074,7 +7446,9 @@
         "label": "S Beam Emitter Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7112,7 +7486,9 @@
         "label": "S Burst Ray Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7150,7 +7526,9 @@
         "label": "S Burst Ray Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7188,7 +7566,9 @@
         "label": "S Blast Mortar Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7226,7 +7606,9 @@
         "label": "S Blast Mortar Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7264,7 +7646,9 @@
         "label": "S Dumbfire Launcher Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7302,7 +7686,9 @@
         "label": "S Dumbfire Launcher Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7340,7 +7726,9 @@
         "label": "S Bolt Repeater Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7378,7 +7766,9 @@
         "label": "S Bolt Repeater Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7416,7 +7806,9 @@
         "label": "S Tracking Launcher Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7454,7 +7846,9 @@
         "label": "S Tracking Launcher Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7492,7 +7886,9 @@
         "label": "S Pulse Laser Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7530,7 +7926,9 @@
         "label": "S Pulse Laser Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7568,7 +7966,9 @@
         "label": "S Mining Drill Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7606,7 +8006,9 @@
         "label": "S Mining Drill Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7644,7 +8046,9 @@
         "label": "S Plasma Cannon Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7682,7 +8086,9 @@
         "label": "S Plasma Cannon Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7720,7 +8126,9 @@
         "label": "S Shard Battery Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7758,7 +8166,9 @@
         "label": "S Shard Battery Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7796,7 +8206,9 @@
         "label": "S Torpedo Launcher Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7834,7 +8246,9 @@
         "label": "S Torpedo Launcher Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -7872,7 +8286,9 @@
         "label": "Bomb Launcher",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7910,7 +8326,9 @@
         "label": "Hand Laser",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -7948,7 +8366,9 @@
         "label": "Personal Blaster",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -7986,7 +8406,9 @@
         "label": "Sporting Rifle",
         "size": "",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "03::mk1",
         "weaponCategory": "standard",
@@ -8024,7 +8446,9 @@
         "label": "Repair Laser",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8062,7 +8486,9 @@
         "label": "KHA Ravager Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8100,7 +8526,9 @@
         "label": "KHA M Kyon Emitter Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "khaak",
+        "makerRace": [
+            "khaak"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8138,7 +8566,9 @@
         "label": "KHA S Kyon Emitter Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "khaak",
+        "makerRace": [
+            "khaak"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8176,7 +8606,9 @@
         "label": "KHA Obliterator Main Battery",
         "size": "xl",
         "dataSourceID": "vanilla",
-        "makerRace": "unknown",
+        "makerRace": [
+            "unknown"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8214,7 +8646,9 @@
         "label": "PAR Odysseus Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8252,7 +8686,9 @@
         "label": "PAR Hyperion Main Battery",
         "size": "l",
         "dataSourceID": "ego_dlc_mini_01",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8290,7 +8726,9 @@
         "label": "PAR M Mass Driver Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8328,7 +8766,9 @@
         "label": "PAR M Mass Driver Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8366,7 +8806,9 @@
         "label": "PAR S Mass Driver Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8404,7 +8846,9 @@
         "label": "PAR S Mass Driver Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "paranid",
+        "makerRace": [
+            "paranid"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8442,7 +8886,9 @@
         "label": "Erlking Main Battery",
         "size": "xl",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8480,7 +8926,9 @@
         "label": "SPL Rattlesnake Main Battery",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8518,7 +8966,9 @@
         "label": "SPL M Neutron Gatling Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8556,7 +9006,9 @@
         "label": "SPL M Neutron Gatling Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8594,7 +9046,9 @@
         "label": "SPL M Boson Lance Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8632,7 +9086,9 @@
         "label": "SPL M Boson Lance Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8670,7 +9126,9 @@
         "label": "SPL M Tau Accelerator Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8708,7 +9166,9 @@
         "label": "SPL M Tau Accelerator Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8746,7 +9206,9 @@
         "label": "SPL M Thermal Disintegrator Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8784,7 +9246,9 @@
         "label": "SPL M Thermal Disintegrator Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8822,7 +9286,9 @@
         "label": "SPL S Neutron Gatling Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8860,7 +9326,9 @@
         "label": "SPL S Neutron Gatling Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8898,7 +9366,9 @@
         "label": "SPL S Boson Lance Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -8936,7 +9406,9 @@
         "label": "SPL S Boson Lance Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -8974,7 +9446,9 @@
         "label": "SPL S Tau Accelerator Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9012,7 +9486,9 @@
         "label": "SPL S Tau Accelerator Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9050,7 +9526,9 @@
         "label": "SPL S Thermal Disintegrator Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9088,7 +9566,9 @@
         "label": "SPL S Thermal Disintegrator Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": "split",
+        "makerRace": [
+            "split"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9126,7 +9606,9 @@
         "label": "TEL Phoenix Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9164,7 +9646,9 @@
         "label": "TEL M Muon Charger Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9202,7 +9686,9 @@
         "label": "TEL M Muon Charger Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9240,7 +9726,9 @@
         "label": "TEL S Muon Charger Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9278,7 +9766,9 @@
         "label": "TEL S Muon Charger Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "teladi",
+        "makerRace": [
+            "teladi"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9316,7 +9806,9 @@
         "label": "Terran Main Battery",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9354,7 +9846,9 @@
         "label": "TER Sapporo Launcher Array",
         "size": "l",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9392,7 +9886,9 @@
         "label": "TER M Meson Stream Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9430,7 +9926,9 @@
         "label": "TER M Meson Stream Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9468,7 +9966,9 @@
         "label": "TER M Proton Barrage Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9506,7 +10006,9 @@
         "label": "TER M Proton Barrage Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9544,7 +10046,9 @@
         "label": "TER M Pulse Laser Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9582,7 +10086,9 @@
         "label": "TER M Pulse Laser Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9620,7 +10126,9 @@
         "label": "TER M Electromagnetic Cannon Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -9658,7 +10166,9 @@
         "label": "TER S Meson Stream Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9696,7 +10206,9 @@
         "label": "TER S Meson Stream Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9734,7 +10246,9 @@
         "label": "TER S Proton Barrage Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9772,7 +10286,9 @@
         "label": "TER S Proton Barrage Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9810,7 +10326,9 @@
         "label": "TER S Pulse Laser Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9848,7 +10366,9 @@
         "label": "TER S Pulse Laser Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 2,
         "variantID": "01::mk2",
         "weaponCategory": "standard",
@@ -9886,7 +10406,9 @@
         "label": "TER S Electromagnetic Gun Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "terran",
+        "makerRace": [
+            "terran"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -9924,7 +10446,9 @@
         "label": "ARG S Gamma HEPT Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": "argon",
+        "makerRace": [
+            "argon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -9962,7 +10486,9 @@
         "label": "XEN M Plasma Cutter Beam Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -10000,7 +10526,9 @@
         "label": "XEN M Impulse Projector Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -10038,7 +10566,9 @@
         "label": "XEN M Impulse Projector Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -10076,7 +10606,9 @@
         "label": "XEN M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -10114,7 +10646,9 @@
         "label": "XEN M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "02::mk1",
         "weaponCategory": "standard",
@@ -10152,7 +10686,9 @@
         "label": "XEN S Needler Gun Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
@@ -10190,7 +10726,9 @@
         "label": "XEN S Impulse Projector Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": "xenon",
+        "makerRace": [
+            "xenon"
+        ],
         "mk": 1,
         "variantID": "01::mk1",
         "weaponCategory": "standard",
