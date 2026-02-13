@@ -54,8 +54,14 @@ class ShipDef implements CollectionItemInterface
     public const KEY_JERK_TRAVEL_ACCEL = 'jerkTravelAccel';
     public const KEY_JERK_TRAVEL_DECEL = 'jerkTravelDecel';
     public const KEY_JERK_TRAVEL_RATIO = 'jerkTravelRatio';
+    public const KEY_ACCFACTOR_FORWARD = 'accFactorForward';
+    public const KEY_ACCFACTOR_REVERSE = 'accFactorReverse';
+    public const KEY_ACCFACTOR_HORIZONTAL = 'accFactorHorizontal';
+    public const KEY_ACCFACTOR_VERTICAL = 'accFactorVertical';
     public const KEY_PEOPLE = 'people';
     public const KEY_STORAGE_MISSILE = 'storageMissile';
+    public const string KEY_CARGO_CAPACITY = 'cargoCapacity';
+    public const string KEY_CARGO_TYPE = 'cargoType';
     public const KEY_SLOTS = 'slots';
     public const KEY_EQUIPMENT = 'equipment';
 
@@ -93,8 +99,14 @@ class ShipDef implements CollectionItemInterface
     private float $jerkTravelAccel;
     private float $jerkTravelDecel;
     private float $jerkTravelRatio;
+    private float $accFactorForward;
+    private float $accFactorReverse;
+    private float $accFactorHorizontal;
+    private float $accFactorVertical;
     private int $people;
     private int $storageMissile;
+    private int $cargoCapacity;
+    private string $cargoType;
     /**
      * @var array<string,int>
      */
@@ -142,8 +154,14 @@ class ShipDef implements CollectionItemInterface
      * @param float $jerkTravelAccel Travel mode jerk acceleration.
      * @param float $jerkTravelDecel Travel mode jerk deceleration.
      * @param float $jerkTravelRatio Travel mode jerk ratio.
+     * @param float $accFactorForward Forward acceleration factor.
+     * @param float $accFactorReverse Reverse acceleration factor.
+     * @param float $accFactorHorizontal Horizontal acceleration factor.
+     * @param float $accFactorVertical Vertical acceleration factor.
      * @param int $people Crew capacity.
      * @param int $storageMissile Missile storage capacity.
+     * @param int $cargoCapacity Cargo storage capacity in m³.
+     * @param string $cargoType Cargo type (container, liquid, solid, or none).
      * @param array<string,int> $slots Map of slot type ID to count.
      * @param array<string,mixed> $equipment Detailed equipment slots.
      */
@@ -179,8 +197,14 @@ class ShipDef implements CollectionItemInterface
         float $jerkTravelAccel,
         float $jerkTravelDecel,
         float $jerkTravelRatio,
+        float $accFactorForward,
+        float $accFactorReverse,
+        float $accFactorHorizontal,
+        float $accFactorVertical,
         int $people,
         int $storageMissile,
+        int $cargoCapacity,
+        string $cargoType,
         array $slots,
         array $equipment
     )
@@ -216,8 +240,14 @@ class ShipDef implements CollectionItemInterface
         $this->jerkTravelAccel = $jerkTravelAccel;
         $this->jerkTravelDecel = $jerkTravelDecel;
         $this->jerkTravelRatio = $jerkTravelRatio;
+        $this->accFactorForward = $accFactorForward;
+        $this->accFactorReverse = $accFactorReverse;
+        $this->accFactorHorizontal = $accFactorHorizontal;
+        $this->accFactorVertical = $accFactorVertical;
         $this->people = $people;
         $this->storageMissile = $storageMissile;
+        $this->cargoCapacity = $cargoCapacity;
+        $this->cargoType = $cargoType;
         $this->slots = $slots;
         $this->equipment = $equipment;
     }
@@ -258,8 +288,14 @@ class ShipDef implements CollectionItemInterface
             $data->getFloat(self::KEY_JERK_TRAVEL_ACCEL, 0.0),
             $data->getFloat(self::KEY_JERK_TRAVEL_DECEL, 0.0),
             $data->getFloat(self::KEY_JERK_TRAVEL_RATIO, 0.0),
+            $data->getFloat(self::KEY_ACCFACTOR_FORWARD, 1.0),
+            $data->getFloat(self::KEY_ACCFACTOR_REVERSE, 1.0),
+            $data->getFloat(self::KEY_ACCFACTOR_HORIZONTAL, 1.0),
+            $data->getFloat(self::KEY_ACCFACTOR_VERTICAL, 1.0),
             $data->getInt(self::KEY_PEOPLE, 0),
             $data->getInt(self::KEY_STORAGE_MISSILE, 0),
+            $data->getInt(self::KEY_CARGO_CAPACITY, 0),
+            $data->getString(self::KEY_CARGO_TYPE, 'none'),
             $data->getArray(self::KEY_SLOTS),
             $data->getArray(self::KEY_EQUIPMENT)
         );
@@ -473,6 +509,26 @@ class ShipDef implements CollectionItemInterface
         return $this->jerkTravelRatio;
     }
 
+    public function getAccFactorForward() : float
+    {
+        return $this->accFactorForward;
+    }
+
+    public function getAccFactorReverse() : float
+    {
+        return $this->accFactorReverse;
+    }
+
+    public function getAccFactorHorizontal() : float
+    {
+        return $this->accFactorHorizontal;
+    }
+
+    public function getAccFactorVertical() : float
+    {
+        return $this->accFactorVertical;
+    }
+
     public function getPeopleCapacity() : int
     {
         return $this->people;
@@ -481,6 +537,24 @@ class ShipDef implements CollectionItemInterface
     public function getMissileStorage() : int
     {
         return $this->storageMissile;
+    }
+
+    /**
+     * Returns the cargo storage capacity in m³.
+     * Returns 0 if the ship has no storage connection.
+     */
+    public function getCargoCapacity() : int
+    {
+        return $this->cargoCapacity;
+    }
+
+    /**
+     * Returns the cargo type (container, liquid, solid).
+     * Returns "none" if the ship has no storage connection.
+     */
+    public function getCargoType() : string
+    {
+        return $this->cargoType;
     }
 
     public function getSlotCount(string $typeID) : int
@@ -791,8 +865,14 @@ class ShipDef implements CollectionItemInterface
             self::KEY_JERK_TRAVEL_ACCEL => $this->jerkTravelAccel,
             self::KEY_JERK_TRAVEL_DECEL => $this->jerkTravelDecel,
             self::KEY_JERK_TRAVEL_RATIO => $this->jerkTravelRatio,
+            self::KEY_ACCFACTOR_FORWARD => $this->accFactorForward,
+            self::KEY_ACCFACTOR_REVERSE => $this->accFactorReverse,
+            self::KEY_ACCFACTOR_HORIZONTAL => $this->accFactorHorizontal,
+            self::KEY_ACCFACTOR_VERTICAL => $this->accFactorVertical,
             self::KEY_PEOPLE => $this->people,
             self::KEY_STORAGE_MISSILE => $this->storageMissile,
+            self::KEY_CARGO_CAPACITY => $this->cargoCapacity,
+            self::KEY_CARGO_TYPE => $this->cargoType,
             self::KEY_SLOTS => $this->slots,
             self::KEY_EQUIPMENT => $this->equipment
         );

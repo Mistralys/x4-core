@@ -176,8 +176,14 @@ final class ShipDefTests extends X4TestCase
             0.0, // jerkTravelAccel
             0.0, // jerkTravelDecel
             0.0, // jerkTravelRatio
+            1.0, // accFactorForward
+            1.0, // accFactorReverse
+            1.0, // accFactorHorizontal
+            1.0, // accFactorVertical
             0,
             0,
+            0, // cargoCapacity
+            'none', // cargoType
             [],
             []
         );
@@ -232,8 +238,14 @@ final class ShipDefTests extends X4TestCase
             0.0, // jerkTravelAccel
             0.0, // jerkTravelDecel
             0.0, // jerkTravelRatio
+            1.0, // accFactorForward
+            1.0, // accFactorReverse
+            1.0, // accFactorHorizontal
+            1.0, // accFactorVertical
             0,
             0,
+            0, // cargoCapacity
+            'none', // cargoType
             [],
             []
         );

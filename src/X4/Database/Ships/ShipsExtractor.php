@@ -126,6 +126,7 @@ class ShipsExtractor
         }
 
         $stats = $this->extractStats($dom, $domAlias);
+        $storageInfo = $this->resolveStorageCapacity($dom, $domAlias, $def->getDataSourceID());
 
         $slots = [];
         $equipment = [];
@@ -174,8 +175,14 @@ class ShipsExtractor
             ShipDef::KEY_JERK_TRAVEL_ACCEL => $stats[ShipDef::KEY_JERK_TRAVEL_ACCEL],
             ShipDef::KEY_JERK_TRAVEL_DECEL => $stats[ShipDef::KEY_JERK_TRAVEL_DECEL],
             ShipDef::KEY_JERK_TRAVEL_RATIO => $stats[ShipDef::KEY_JERK_TRAVEL_RATIO],
+            ShipDef::KEY_ACCFACTOR_FORWARD => $stats[ShipDef::KEY_ACCFACTOR_FORWARD],
+            ShipDef::KEY_ACCFACTOR_REVERSE => $stats[ShipDef::KEY_ACCFACTOR_REVERSE],
+            ShipDef::KEY_ACCFACTOR_HORIZONTAL => $stats[ShipDef::KEY_ACCFACTOR_HORIZONTAL],
+            ShipDef::KEY_ACCFACTOR_VERTICAL => $stats[ShipDef::KEY_ACCFACTOR_VERTICAL],
             ShipDef::KEY_PEOPLE => $stats[ShipDef::KEY_PEOPLE],
             ShipDef::KEY_STORAGE_MISSILE => $stats[ShipDef::KEY_STORAGE_MISSILE],
+            ShipDef::KEY_CARGO_CAPACITY => $storageInfo['capacity'],
+            ShipDef::KEY_CARGO_TYPE => $storageInfo['type'],
             ShipDef::KEY_SLOTS => $slots,
             ShipDef::KEY_EQUIPMENT => $equipment
         );
@@ -337,6 +344,11 @@ class ShipsExtractor
             ShipDef::KEY_JERK_TRAVEL_ACCEL => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_travel', 'accel', 0),
             ShipDef::KEY_JERK_TRAVEL_DECEL => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_travel', 'decel', 0),
             ShipDef::KEY_JERK_TRAVEL_RATIO => (float)$this->resolveJerkAttribute($dom, $parentDom, 'forward_travel', 'ratio', 0),
+            // Acceleration factors (default to 1.0 as multipliers)
+            ShipDef::KEY_ACCFACTOR_FORWARD => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'accfactors', 'forward', 1.0),
+            ShipDef::KEY_ACCFACTOR_REVERSE => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'accfactors', 'reverse', 1.0),
+            ShipDef::KEY_ACCFACTOR_HORIZONTAL => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'accfactors', 'horizontal', 1.0),
+            ShipDef::KEY_ACCFACTOR_VERTICAL => (float)$this->resolvePropertyAttribute($dom, $parentDom, 'accfactors', 'vertical', 1.0),
             // Other stats
             ShipDef::KEY_PEOPLE => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'people', 'capacity', 0),
             ShipDef::KEY_STORAGE_MISSILE => (int)$this->resolvePropertyAttribute($dom, $parentDom, 'storage', 'missile', 0)
@@ -486,6 +498,116 @@ class ShipsExtractor
         return null;
     }
     
+    /**
+     * Resolves cargo storage capacity and type from the ship's storage connection.
+     *
+     * Ships reference storage via a <connection ref="con_storage*"> element
+     * that points to a storage macro containing <cargo max="N" tags="type"/>.
+     *
+     * @param DOMExtended $dom The ship macro DOM
+     * @param DOMExtended|null $parentDom The parent macro DOM (for inheritance)
+     * @param string $dataSourceID Data source ID for macro lookup
+     * @return array{capacity: int, type: string} Capacity in m³ and cargo type
+     */
+    private function resolveStorageCapacity(DOMExtended $dom, ?DOMExtended $parentDom, string $dataSourceID): array
+    {
+        $default = ['capacity' => 0, 'type' => 'none'];
+
+        // Try the main DOM first, then the parent DOM
+        $result = $this->findStorageInDOM($dom, $dataSourceID);
+        if ($result !== null) {
+            return $result;
+        }
+
+        if ($parentDom !== null) {
+            $result = $this->findStorageInDOM($parentDom, $dataSourceID);
+            if ($result !== null) {
+                return $result;
+            }
+        }
+
+        return $default;
+    }
+
+    /**
+     * Searches a DOM for storage connections and resolves the storage macro.
+     *
+     * @param DOMExtended $dom The DOM to search
+     * @param string $dataSourceID Data source ID for macro lookup
+     * @return array{capacity: int, type: string}|null Storage info or null if not found
+     */
+    private function findStorageInDOM(DOMExtended $dom, string $dataSourceID): ?array
+    {
+        $connections = $dom->byTagName('connection')->getAll();
+
+        foreach ($connections as $connection) {
+            $connectionRef = $connection->getAttribute('ref');
+
+            // Storage connections are named con_storage01, con_storage02, etc.
+            if (empty($connectionRef) || !str_contains($connectionRef, 'storage')) {
+                continue;
+            }
+
+            // Find the macro child element
+            $children = $connection->getChildren();
+            foreach ($children as $child) {
+                $domElement = $child->getDOMElement();
+                if ($domElement->nodeName !== 'macro') {
+                    continue;
+                }
+
+                $storageMacroName = $child->getAttribute('ref');
+                if (empty($storageMacroName)) {
+                    continue;
+                }
+
+                // Resolve the storage macro and extract cargo data
+                $result = $this->extractCargoFromStorageMacro($storageMacroName, $dataSourceID);
+                if ($result !== null) {
+                    return $result;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Extracts cargo capacity and type from a storage macro XML file.
+     *
+     * @param string $macroName Name of the storage macro
+     * @param string $dataSourceID Data source ID for macro lookup
+     * @return array{capacity: int, type: string}|null Cargo info or null if not found
+     */
+    private function extractCargoFromStorageMacro(string $macroName, string $dataSourceID): ?array
+    {
+        try {
+            $macroDef = MacroFileDefs::getInstance()->getByMacroName($macroName, $dataSourceID);
+            $macroDOM = $macroDef->getDOM();
+
+            $cargoElements = $macroDOM->byTagName('cargo')->getAll();
+            if (empty($cargoElements)) {
+                return null;
+            }
+
+            $cargoEl = $cargoElements[0];
+            $max = $cargoEl->getAttribute('max');
+            $tags = $cargoEl->getAttribute('tags');
+
+            if ($max === '') {
+                return null;
+            }
+
+            return [
+                'capacity' => (int)$max,
+                'type' => $tags !== '' ? $tags : 'none'
+            ];
+        } catch (\Exception $e) {
+            // Storage macro not found - not all data sources may have the referenced macro
+            return null;
+        }
+    }
+
     /**
      * Extracts dock sizes from ship macro XML by looking up dock macro references.
      * 
