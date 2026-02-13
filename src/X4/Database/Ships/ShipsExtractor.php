@@ -7,6 +7,7 @@ namespace Mistralys\X4\Database\Ships;
 use AppUtils\ArrayDataCollection;
 use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
+use Mistralys\X4\Database\BaseExtractor;
 use Mistralys\X4\Database\Builder\KnownItemsClassGenerator;
 use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Factions\KnownFactions;
@@ -21,7 +22,7 @@ use Mistralys\X4\X4Application;
 use Mistralys\X4\XML\DOMExtended;
 use function AppUtils\array_remove_values;
 
-class ShipsExtractor
+class ShipsExtractor extends BaseExtractor
 {
     /**
      * @var array<string,array<string,mixed>>
@@ -369,51 +370,26 @@ class ShipsExtractor
     private function resolveJerkAttribute(DOMExtended $dom, ?DOMExtended $parentDom, string $childTagName, string $attributeName, mixed $defaultValue): mixed
     {
         // Try to find the jerk element in the main DOM
-        $val = $this->getJerkAttributeFromDOM($dom, $childTagName, $attributeName);
-        if ($val !== null) {
-            return $val;
-        }
-
-        // Fall back to parent DOM if available
-        if ($parentDom) {
-            $val = $this->getJerkAttributeFromDOM($parentDom, $childTagName, $attributeName);
-            if ($val !== null) {
+        $jerkEl = $dom->byTagName('jerk')->getFirst();
+        if ($jerkEl) {
+            $val = $this->resolveNestedPropertyAttribute($jerkEl, $childTagName, $attributeName);
+            if ($val !== 0.0) {
                 return $val;
             }
         }
 
-        return $defaultValue;
-    }
-
-    /**
-     * Gets an attribute from a child element of the <jerk> element.
-     *
-     * @param DOMExtended $dom The DOM to search
-     * @param string $childTagName The child element name
-     * @param string $attributeName The attribute name
-     * @return string|null The attribute value or null if not found
-     */
-    private function getJerkAttributeFromDOM(DOMExtended $dom, string $childTagName, string $attributeName): ?string
-    {
-        // Find the jerk element
-        $jerkEl = $dom->byTagName('jerk')->getFirst();
-        if (!$jerkEl) {
-            return null;
-        }
-
-        // Find the child element within jerk
-        $children = $jerkEl->getChildren();
-        foreach ($children as $child) {
-            $domElement = $child->getDOMElement();
-            if ($domElement->nodeName === $childTagName) {
-                $val = $child->getAttribute($attributeName);
-                if ($val !== '') {
+        // Fall back to parent DOM if available
+        if ($parentDom) {
+            $jerkEl = $parentDom->byTagName('jerk')->getFirst();
+            if ($jerkEl) {
+                $val = $this->resolveNestedPropertyAttribute($jerkEl, $childTagName, $attributeName);
+                if ($val !== 0.0) {
                     return $val;
                 }
             }
         }
 
-        return null;
+        return $defaultValue;
     }
 
 
@@ -543,8 +519,8 @@ class ShipsExtractor
         foreach ($connections as $connection) {
             $connectionRef = $connection->getAttribute('ref');
 
-            // Storage connections are named con_storage01, con_storage02, etc.
-            if (empty($connectionRef) || !str_contains($connectionRef, 'storage')) {
+            // X4 uses 'con_storage*' prefix for cargo storage connections
+            if (empty($connectionRef) || !str_starts_with($connectionRef, 'con_storage')) {
                 continue;
             }
 

@@ -60,8 +60,8 @@ class ShipDef implements CollectionItemInterface
     public const KEY_ACCFACTOR_VERTICAL = 'accFactorVertical';
     public const KEY_PEOPLE = 'people';
     public const KEY_STORAGE_MISSILE = 'storageMissile';
-    public const string KEY_CARGO_CAPACITY = 'cargoCapacity';
-    public const string KEY_CARGO_TYPE = 'cargoType';
+    public const KEY_CARGO_CAPACITY = 'cargoCapacity';
+    public const KEY_CARGO_TYPE = 'cargoType';
     public const KEY_SLOTS = 'slots';
     public const KEY_EQUIPMENT = 'equipment';
 
