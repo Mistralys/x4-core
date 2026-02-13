@@ -17,11 +17,17 @@ class AjaxMethods extends GenericStringPrimaryBasket
     public const string REQUEST_PARAM_AJAX = 'ajax';
     private UserInterface $ui;
 
-    public function __construct(UserInterface $ui)
+    /**
+     * @param UserInterface $ui
+     * @param AjaxMethodInterface ...$initialItems
+     * @phpstan-param AjaxMethodInterface ...$initialItems
+     * @phpstan-ignore parameter.notOptional
+     */
+    public function __construct(UserInterface $ui, ...$initialItems)
     {
         $this->ui = $ui;
 
-        parent::__construct();
+        parent::__construct(...$initialItems);
     }
 
     public function getUI(): UserInterface

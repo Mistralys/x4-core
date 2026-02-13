@@ -64,7 +64,7 @@ class WareDefs extends BaseStringPrimaryCollection implements ItemCollectionInte
 
     public function findWares() : WareFinder
     {
-        return new WareFinder($this);
+        return new WareFinder();
     }
 
     protected function registerItems(): void
