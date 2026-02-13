@@ -47,6 +47,8 @@
     "roave/security-advisories": "dev-latest"
   },
   "scripts": {
+    "test": "phpunit",
+    "analyze": "phpstan analyze",
     "build": "Mistralys\\X4\\Database\\DatabaseBuilder::build",
     "extract-blueprints": "Mistralys\\X4\\Database\\DatabaseBuilder::extractBlueprints",
     "extract-wares": "Mistralys\\X4\\Database\\DatabaseBuilder::extractWares",
