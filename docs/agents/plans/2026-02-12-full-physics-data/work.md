@@ -1,15 +1,17 @@
 # Work Packages: Full Ship Physics Data
 
-> **Version:** 1.0  
+> **Version:** 1.1  
 > **Created:** February 12, 2026  
+> **Updated:** February 13, 2026  
 > **Plan Reference:** [plan.md](plan.md)  
+> **Research Reference:** [cargo-capacity-research.md](cargo-capacity-research.md)  
 > **Project:** X4 Core - Ship Physics Data Extension
 
 ---
 
 ## Overview
 
-This document defines work packages for extending the `ShipDef` class and `ShipsExtractor` to include complete physics data (drag, inertia, jerk). The implementation adds 18 new fields to support the Cargo Sizes Mod's Physics Tuning GUI.
+This document defines work packages for extending the `ShipDef` class and `ShipsExtractor` to include complete physics data (drag, inertia, jerk) and per-ship cargo capacity. The implementation adds 18 physics fields and 2 cargo fields to support the Cargo Sizes Mod's Physics Tuning GUI.
 
 ---
 
@@ -23,9 +25,11 @@ This document defines work packages for extending the `ShipDef` class and `Ships
 | WP-004 | Regenerate Data and Verify | WP-001, WP-002, WP-003 | High | 30 min | READY |
 | WP-005 | Update Manifest Documentation | WP-004 | Medium | 1 hour | READY |
 | WP-006 | Add Acceleration Factors (Nice-to-Have) | WP-004 | Low | 1-2 hours | READY |
-| WP-007 | Research Cargo Capacity (Nice-to-Have) | WP-005 | Low | 2-4 hours | READY |
+| WP-007 | Implement Cargo Capacity Extraction | WP-004 | Medium | 2-3 hours | READY |
+| WP-008 | Regenerate Data and Verify Cargo Values | WP-007 | Medium | 30 min | READY |
+| WP-009 | Update Manifest for Cargo Capacity | WP-008 | Medium | 30 min | READY |
 
-**Total Estimated Effort:** 8-13 hours
+**Total Estimated Effort:** 10-15 hours
 
 ---
 
@@ -488,63 +492,220 @@ public const string KEY_ACCFACTOR_VERTICAL = 'accFactorVertical';
 
 ---
 
-## WP-007: Research Cargo Capacity Extraction (Nice-to-Have)
+## WP-007: Implement Cargo Capacity Extraction
 
 ### Objective
-Research and document the complexity of extracting per-ship cargo capacity values.
+Add per-ship cargo capacity (`cargoCapacity`) and cargo type (`cargoType`) to `ShipDef` by resolving connected storage macros from ship XML data.
 
 ### Priority
-**Low** - Nice-to-have but complex. This is **research only**, not implementation.
+**Medium** - Provides real cargo values to replace hardcoded estimates in the Physics Tuning GUI.
 
 ### Context
-Currently, cargo capacity is not in `ShipDef`. The Physics Tuning GUI uses hardcoded estimates:
-- S ships: 5,000 m³
-- M ships: 12,000 m³
-- L ships: 30,000 m³
-- XL ships: 50,000 m³
+Research completed in [cargo-capacity-research.md](cargo-capacity-research.md) confirms this is feasible. Ships reference storage via `<connections>` sections that point to storage macro files containing `<cargo max="N" tags="type"/>` elements. The pattern is universal across all ship types.
 
-Real cargo values come from `storage_*.xml` files, which are separate macro files referenced through ship component connections. This architecture is more complex than direct attribute extraction.
+**Current state:** GUI uses hardcoded estimates (S=5000, M=12000, L=30000, XL=50000 m³).  
+**Target state:** Real per-ship values (e.g., Argon L Freighter = 36,000 m³ container).
 
-### Research Tasks
+### Dependencies
+- WP-004: Data regeneration working
 
-1. **Document Storage XML Structure**
-   - Locate storage macro files in extracted data
-   - Document XML schema for cargo definitions
-   - Identify how storage is connected to ships
+### Files to Modify
 
-2. **Analyze Ship-Storage Relationship**
-   - How ship macros reference storage components
-   - Direct vs indirect component connections
-   - Variations across ship sizes/types
+| File | Location | Action |
+|------|----------|--------|
+| `ShipDef.php` | `src/X4/Database/Ships/ShipDef.php` | Add 2 constants + 2 properties + 2 getter methods |
+| `ShipsExtractor.php` | `src/X4/Database/Ships/ShipsExtractor.php` | Add `resolveStorageCapacity()` method, integrate into `processWare()` |
 
-3. **Assess Implementation Complexity**
-   - Can existing extraction patterns handle this?
-   - New helper functions or patterns needed?
-   - Estimated development time
+### Implementation Details
 
-4. **Create Proposal**
-   - Document findings in a design proposal
-   - Include recommended approach
-   - List dependencies and requirements
+#### 1. ShipDef.php - Add Constants
+```php
+public const string KEY_CARGO_CAPACITY = 'cargoCapacity';
+public const string KEY_CARGO_TYPE = 'cargoType';
+```
 
-### Deliverables
-- Research document: `docs/agents/plans/cargo-capacity-research.md`
-- Go/No-Go recommendation for implementation
-- Estimated effort if proceeding
+#### 2. ShipDef.php - Add Getter Methods
+```php
+public function getCargoCapacity(): int
+{
+    return $this->getIntKey(self::KEY_CARGO_CAPACITY);
+}
+
+public function getCargoType(): string
+{
+    return $this->getStringKey(self::KEY_CARGO_TYPE);
+}
+```
+
+#### 3. ShipsExtractor.php - Add Storage Macro Resolution
+
+New method `resolveStorageCapacity()` with the following algorithm:
+
+1. Find `<connection ref="con_storage01">` in ship macro DOM
+2. Extract the `<macro ref="storage_*_macro">` reference name
+3. Resolve the storage macro file using `MacroFileDefs`
+4. Parse the storage macro XML and extract `<cargo max="..." tags="..."/>`
+5. Return `['capacity' => int, 'type' => string]`
+
+```php
+private function resolveStorageCapacity(
+    DOMExtended $dom,
+    ?DOMExtended $parentDom,
+    string $dataSourceID
+): array
+{
+    // 1. Find storage connection
+    // 2. Get macro reference
+    // 3. Resolve macro file via MacroFileDefs
+    // 4. Extract cargo max and tags
+    // 5. Return ['capacity' => int, 'type' => string]
+    // Default: ['capacity' => 0, 'type' => 'none']
+}
+```
+
+#### 4. ShipsExtractor.php - Update processWare()
+```php
+$storageInfo = $this->resolveStorageCapacity($dom, $parentDom, $dataSourceID);
+// Add to ship data array:
+'cargoCapacity' => $storageInfo['capacity'],
+'cargoType'     => $storageInfo['type'],
+```
+
+### Error Handling
+- **Missing storage connection:** Default to `0` capacity, `"none"` type
+- **Storage macro not found:** Default to `0` capacity, `"none"` type, log warning
+- **Missing cargo element:** Default to `0` capacity, `"none"` type
+
+### Reference Values (from research)
+
+| Ship | Expected Capacity | Expected Type |
+|------|-------------------|---------------|
+| Argon L Freighter | 36,000 m³ | container |
+| Boron L Freighter | 30,000 m³ | container |
+| Argon S Fighter | 240 m³ | container |
+| Argon L Miner (Liquid) | ~35,000 m³ | liquid |
+| Argon L Miner (Solid) | ~35,000 m³ | solid |
 
 ### Acceptance Criteria
-- [ ] Storage XML structure documented
-- [ ] Ship-storage relationship understood
-- [ ] Implementation complexity assessed
-- [ ] Proposal document created with recommendation
+- [ ] 2 new constants added to `ShipDef.php` (`KEY_CARGO_CAPACITY`, `KEY_CARGO_TYPE`)
+- [ ] 2 new getter methods added (`getCargoCapacity(): int`, `getCargoType(): string`)
+- [ ] `resolveStorageCapacity()` method implemented in `ShipsExtractor.php`
+- [ ] Storage macro resolution works across all data sources
+- [ ] Default values (0 / "none") used for missing storage connections
+- [ ] PHPStan passes with no errors
+- [ ] Existing tests continue to pass
+
+### Verification
+1. Run `composer analyze` - should pass
+2. Run `composer test` - should pass
+3. Run `composer build:ships` - verify no errors during extraction
+
+---
+
+## WP-008: Regenerate Data and Verify Cargo Values
+
+### Objective
+Rebuild ships.json and verify cargo capacity and type values are correctly extracted.
+
+### Dependencies
+- WP-007: Cargo capacity extraction implemented
+
+### Tasks
+
+1. **Run Full Build**
+   ```bash
+   composer build:ships
+   ```
+
+2. **Verify ships.json Structure**
+   - Open `data/ships.json`
+   - Verify `cargoCapacity` and `cargoType` present in entries
+   - Check that freighters have high values, fighters have low values
+
+3. **Spot-Check Against Research**
+   Compare extracted values against known values from [cargo-capacity-research.md](cargo-capacity-research.md).
+
+### Validation Checklist
+
+| Ship Type | Expected Capacity Range | Expected Type | Verified |
+|-----------|------------------------|---------------|----------|
+| S Fighter | 100-500 m³ | container | [ ] |
+| M Freighter | 5,000-15,000 m³ | container | [ ] |
+| L Freighter | 25,000-40,000 m³ | container | [ ] |
+| L Miner (Liquid) | 25,000-40,000 m³ | liquid | [ ] |
+| L Miner (Solid) | 25,000-40,000 m³ | solid | [ ] |
+| XL Carrier | 10,000-100,000 m³ | container | [ ] |
+
+### Acceptance Criteria
+- [ ] `composer build:ships` completes without errors
+- [ ] `ships.json` contains `cargoCapacity` and `cargoType` fields for all ships
+- [ ] Values are non-zero for ships with storage connections
+- [ ] Cargo types include `container`, `liquid`, and `solid` where expected
+- [ ] Spot-check of 6+ ships matches expected ranges
+
+---
+
+## WP-009: Update Manifest Documentation for Cargo Capacity
+
+### Objective
+Update the project manifest with cargo capacity additions to `ShipDef`.
+
+### Dependencies
+- WP-008: Cargo data verified and working
+
+### Files to Update
+
+| File | Section | Changes |
+|------|---------|--------|
+| `public-api.md` | `ShipDef` class | Add 2 constants + 2 getter method signatures |
+| `data-flows.md` | Extraction flows | Document storage macro resolution pattern |
+| `extraction-reference.md` | Ships extractor | Document connected macro resolution for storage |
+
+### Implementation Details
+
+#### public-api.md Updates
+
+Add to the `ShipDef` class section:
+
+**Constants:**
+```markdown
+#### Cargo Constants
+KEY_CARGO_CAPACITY: string
+KEY_CARGO_TYPE: string
+```
+
+**Methods:**
+```markdown
+#### Cargo Methods
+getCargoCapacity(): int
+getCargoType(): string
+```
+
+#### data-flows.md Updates
+
+Document the storage macro resolution flow:
+```
+Ship Macro XML
+  → Find <connection ref="con_storage01">
+  → Extract storage macro reference
+  → Resolve via MacroFileDefs
+  → Parse storage macro XML
+  → Extract <cargo max="N" tags="type"/>
+  → Return capacity + type
+```
+
+### Acceptance Criteria
+- [ ] `public-api.md` updated with 2 new constants and 2 getter methods
+- [ ] `data-flows.md` updated with storage macro resolution flow
+- [ ] Documentation matches actual implementation
+- [ ] "Last Updated" date updated in manifest
 
 ---
 
 ## Change Log
 
 | Date | Version | Changes |
-|------|---------|---------|
-| 2026-02-12 | 1.0 | Initial work package definition |
+|------|---------|---------|| 2026-02-13 | 1.1 | Replaced WP-007 (research) with WP-007/008/009 (cargo capacity implementation) based on completed research || 2026-02-12 | 1.0 | Initial work package definition |
 
 ---
 
@@ -556,3 +717,4 @@ Real cargo values come from `storage_*.xml` files, which are separate macro file
 - **Constraints:** [project-manifest/constraints.md](../../project-manifest/constraints.md)
 - **ShipDef Location:** `src/X4/Database/Ships/ShipDef.php`
 - **ShipsExtractor Location:** `src/X4/Database/Ships/ShipsExtractor.php`
+- **Cargo Capacity Research:** [cargo-capacity-research.md](cargo-capacity-research.md)
