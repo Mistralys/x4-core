@@ -138,6 +138,9 @@ Before committing code changes:
 - [ ] Updated "Last Updated" date in affected documents
 - [ ] Updated version number if architectural changes made
 
+**After creating NEW classes:**
+- [ ] Run `composer dump-autoload` to register new classes with autoloader
+
 ---
 
 ## ⚡ Efficiency Rules - Search Smart
