@@ -1,10 +1,11 @@
 {
     "plan_file": "docs/agents/plans/2026-02-13-multi-builder-factions/plan.md",
     "date_created": "2026-02-13 10:00:00",
-    "last_updated": "2026-02-13 13:15:00",
-    "status": "IN_PROGRESS",
+    "last_updated": "2026-02-15 19:30:00",
+    "status": "COMPLETE",
+    "synthesis_completed": true,
     "total_work_packages": 8,
-    "pending_work_packages": 2,
+    "pending_work_packages": 0,
     "work_packages": [
         {
             "work_package_id": "WP-001",
@@ -285,7 +286,7 @@
         {
             "work_package_id": "WP-006",
             "work_package_file": "docs/agents/plans/2026-02-13-multi-builder-factions/work.md",
-            "status": "FAILED",
+            "status": "PASS",
             "assigned_to": "Lead Implementation Engineer",
             "dependencies": [
                 "WP-001",
@@ -297,30 +298,30 @@
             "acceptance_criteria": [
                 {
                     "criterion": "test_factionsHaveShips() passes with new data format",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "test_multiBuilderFaction() passes \u2014 validates all new ShipDef API methods",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "test_finderMatchesMultiFaction() passes \u2014 validates ShipFinder intersection matching",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "test_multiMakerRace() passes \u2014 validates ShieldDef multi-race support",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "Full PHPUnit suite passes (composer test)",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "PHPStan analysis passes (composer analyze)",
-                    "met": false
+                    "met": true
                 }
             ],
-            "revision": 1,
+            "revision": 2,
             "pipelines": [
                 {
                     "stage": "implementation",
@@ -362,6 +363,22 @@
                         }
                     ],
                     "summary": "QA FAILED - Critical runtime error in test_multiBuilderFaction(). Test calls non-existent ShipDefs::find() method instead of getByID(). Test cannot execute until this is fixed. Implementation code (WP-001 through WP-005) appears correct based on code inspection: ShipDef has all required methods (getBuilderFactionID(), getBuilderFactionIDs(), getBuilderFactions(), hasMultipleBuilderFactions()), ShipFinder::isMatch() correctly uses array_intersect(), ShipDefs::getFactions() correctly iterates through getBuilderFactionIDs(). The bug is isolated to the test implementation only."
+                },
+                {
+                    "stage": "implementation",
+                    "status": "PASS",
+                    "timestamp": "2026-02-13 14:30:00",
+                    "agent": "Lead Implementation Engineer",
+                    "artifacts": [
+                        "src/X4/Database/Ships/ShipDefs.php",
+                        "src/X4/Database/Ships/ShipDef.php",
+                        "src/X4/Database/Modules/ModuleDef.php",
+                        "src/X4/Database/Shields/ShieldDef.php",
+                        "src/X4/Database/Engines/EngineDef.php",
+                        "src/X4/Database/Weapons/WeaponDef.php",
+                        "tests/X4Tests/Suites/Database/Ships/ShipDefTests.php"
+                    ],
+                    "summary": "Fixed all QA issues: (1) Added ShipDefs::find() method for API consistency with ModuleDefs/ShieldDefs. (2) Fixed fromArray() in all 5 entity types to handle mixed type (array OR string) in old key - critical for backward compatibility with intermediate rebuild data where old key already contains array. Used isset() on raw array instead of non-existent hasKey() method. (3) Added missing FactionDefs import to ShipDefs.php. (4) Fixed test constructor calls to use array parameter. (5) Updated test assertions to expect new KEY_BUILDER_FACTION_IDS key name."
                 }
             ]
         },
@@ -403,7 +420,7 @@
                     "met": true
                 }
             ],
-            "revision": 1,
+            "revision": 2,
             "pipelines": [
                 {
                     "stage": "implementation",
@@ -414,13 +431,256 @@
                         "src/X4/Database/Modules/ModuleMacroExtractor.php"
                     ],
                     "summary": "Fixed missing KnownFactions import in ModuleMacroExtractor. Database rebuild command (composer build) is ready to execute. The build requires X4 game data files to be present. All code changes are in place to generate the new array format (builderFactionIDs, makerRaces) when build runs. Tests added to verify data format when available."
+                },
+                {
+                    "stage": "qa",
+                    "status": "FAIL",
+                    "timestamp": "2026-02-13 15:45:00",
+                    "agent": "QA & Validation",
+                    "artifacts": [
+                        "data/ships.json",
+                        "data/modules.json",
+                        "data/shields.json",
+                        "data/engines.json",
+                        "data/weapons.json"
+                    ],
+                    "metrics": {
+                        "build_result": "SUCCESS",
+                        "ac_met": 1,
+                        "ac_failed": 6,
+                        "critical_bugs_found": 5
+                    },
+                    "comments": [
+                        {
+                            "severity": "CRITICAL",
+                            "category": "DATA_FORMAT_ERROR",
+                            "location": "src/X4/Database/Ships/ShipsExtractor.php:157",
+                            "issue": "ShipsExtractor using old constant KEY_BUILDER_FACTION_ID instead of KEY_BUILDER_FACTION_IDS",
+                            "details": "JSON output written by extractor uses old key name 'builderFactionID' (singular) instead of new key name 'builderFactionIDs' (plural). While data is correctly an array, the key name violates AC. ships.json verified contains: \"builderFactionID\": [\"argon\", \"teladi\"] but should contain: \"builderFactionIDs\": [\"argon\", \"teladi\"]",
+                            "fix_required": "Change line 157 from: ShipDef::KEY_BUILDER_FACTION_ID => TO: ShipDef::KEY_BUILDER_FACTION_IDS =>",
+                            "blocks_ac": [
+                                "ships.json uses builderFactionIDs (array) instead of builderFactionID (string)",
+                                "Envoy ship has builderFactionIDs: [argon, teladi]"
+                            ]
+                        },
+                        {
+                            "severity": "CRITICAL",
+                            "category": "DATA_FORMAT_ERROR",
+                            "location": "src/X4/Database/Modules/ModuleMacroExtractor.php:38",
+                            "issue": "ModuleMacroExtractor using old constant KEY_BUILDER_FACTION_ID instead of KEY_BUILDER_FACTION_IDS",
+                            "details": "JSON output contains 'builderFactionID' key instead of 'builderFactionIDs'. modules.json verified has old key name with array data.",
+                            "fix_required": "Change line 38 from: ModuleDef::KEY_BUILDER_FACTION_ID => TO: ModuleDef::KEY_BUILDER_FACTION_IDS =>",
+                            "blocks_ac": [
+                                "modules.json uses builderFactionIDs (array)"
+                            ]
+                        },
+                        {
+                            "severity": "CRITICAL",
+                            "category": "DATA_FORMAT_ERROR",
+                            "location": "src/X4/Database/Shields/ShieldMacroExtractor.php:45",
+                            "issue": "ShieldMacroExtractor using old constant KEY_MAKER_RACE instead of KEY_MAKER_RACES",
+                            "details": "JSON output contains 'makerRace' key instead of 'makerRaces'. shields.json verified has old key name with array data.",
+                            "fix_required": "Change line 45 from: ShieldDef::KEY_MAKER_RACE => TO: ShieldDef::KEY_MAKER_RACES =>",
+                            "blocks_ac": [
+                                "shields.json uses makerRaces (array) instead of makerRace (string)"
+                            ]
+                        },
+                        {
+                            "severity": "CRITICAL",
+                            "category": "DATA_FORMAT_ERROR",
+                            "location": "src/X4/Database/Engines/EngineMacroExtractor.php:45",
+                            "issue": "EngineMacroExtractor using old constant KEY_MAKER_RACE instead of KEY_MAKER_RACES",
+                            "details": "JSON output contains 'makerRace' key instead of 'makerRaces'. engines.json verified has old key name with array data.",
+                            "fix_required": "Change line 45 from: EngineDef::KEY_MAKER_RACE => TO: EngineDef::KEY_MAKER_RACES =>",
+                            "blocks_ac": [
+                                "engines.json uses makerRaces (array)"
+                            ]
+                        },
+                        {
+                            "severity": "CRITICAL",
+                            "category": "DATA_FORMAT_ERROR",
+                            "location": "src/X4/Database/Weapons/WeaponMacroExtractor.php:68",
+                            "issue": "WeaponMacroExtractor using old constant KEY_MAKER_RACE instead of KEY_MAKER_RACES",
+                            "details": "JSON output contains 'makerRace' key instead of 'makerRaces'. weapons.json verified has old key name with array data.",
+                            "fix_required": "Change line 68 from: WeaponDef::KEY_MAKER_RACE => TO: WeaponDef::KEY_MAKER_RACES =>",
+                            "blocks_ac": [
+                                "weapons.json uses makerRaces (array)"
+                            ]
+                        }
+                    ],
+                    "summary": "QA FAILED - Systemic bug affecting ALL 5 entity types. The *Def classes (ShipDef, ModuleDef, ShieldDef, EngineDef, WeaponDef) were correctly updated with new constants and toArray() methods, BUT the corresponding *Extractor classes (ShipsExtractor, ModuleMacroExtractor, ShieldMacroExtractor, EngineMacroExtractor, WeaponMacroExtractor) were NOT updated to use the new constants when building JSON output. Result: All JSON files contain arrays (correct) but with OLD key names (incorrect). This violates 6 of 7 acceptance criteria. composer build completes successfully but produces wrong data format. All 5 extractors must be fixed before database can be rebuilt with correct format."
+                },
+                {
+                    "stage": "implementation",
+                    "status": "PASS",
+                    "timestamp": "2026-02-15 16:30:00",
+                    "agent": "Lead Implementation Engineer",
+                    "artifacts": [
+                        "src/X4/Database/Ships/ShipsExtractor.php",
+                        "src/X4/Database/Modules/ModuleMacroExtractor.php",
+                        "src/X4/Database/Shields/ShieldMacroExtractor.php",
+                        "src/X4/Database/Engines/EngineMacroExtractor.php",
+                        "src/X4/Database/Weapons/WeaponMacroExtractor.php",
+                        "data/ships.json",
+                        "data/modules.json",
+                        "data/shields.json",
+                        "data/engines.json",
+                        "data/weapons.json"
+                    ],
+                    "summary": "Fixed all 5 extractor classes to use new plural constant names when writing JSON output. Changed ShipsExtractor line 156 from KEY_BUILDER_FACTION_ID to KEY_BUILDER_FACTION_IDS. Changed ModuleMacroExtractor line 38 from KEY_BUILDER_FACTION_ID to KEY_BUILDER_FACTION_IDS. Changed ShieldMacroExtractor line 45 from KEY_MAKER_RACE to KEY_MAKER_RACES. Changed EngineMacroExtractor line 45 from KEY_MAKER_RACE to KEY_MAKER_RACES. Changed WeaponMacroExtractor line 68 from KEY_MAKER_RACE to KEY_MAKER_RACES. Rebuilt database with composer build. Verified all JSON files now use correct plural key names with array data. Confirmed Envoy ship has builderFactionIDs: [argon, teladi]. All acceptance criteria met. Multi-faction tests passing."
+                },
+                {
+                    "stage": "qa",
+                    "status": "PASS",
+                    "timestamp": "2026-02-15 17:45:00",
+                    "agent": "QA & Validation",
+                    "artifacts": [
+                        "data/ships.json",
+                        "data/modules.json",
+                        "data/shields.json",
+                        "data/engines.json",
+                        "data/weapons.json"
+                    ],
+                    "metrics": {
+                        "build_result": "SUCCESS",
+                        "ac_met": 7,
+                        "ac_failed": 0,
+                        "tests_run": 773,
+                        "tests_passed": 773,
+                        "tests_failed": 0,
+                        "tests_errored": 0,
+                        "tests_skipped": 8,
+                        "tests_warnings": 2,
+                        "assertions": 84420,
+                        "multi_faction_ships_found": 1,
+                        "critical_bugs_found": 0
+                    },
+                    "comments": [
+                        {
+                            "severity": "INFO",
+                            "category": "VERIFICATION_SUCCESS",
+                            "location": "All extractors",
+                            "issue": "All extractor classes now correctly use plural constant names",
+                            "details": "Verified: ShipsExtractor line 156 uses KEY_BUILDER_FACTION_IDS ✓, ModuleMacroExtractor line 38 uses KEY_BUILDER_FACTION_IDS ✓, ShieldMacroExtractor line 45 uses KEY_MAKER_RACES ✓, EngineMacroExtractor line 45 uses KEY_MAKER_RACES ✓, WeaponMacroExtractor line 68 uses KEY_MAKER_RACES ✓. All issues from previous QA round have been resolved."
+                        },
+                        {
+                            "severity": "INFO",
+                            "category": "DATA_VERIFICATION",
+                            "location": "data/*.json",
+                            "issue": "All JSON files use correct plural key names with array values",
+                            "details": "ships.json contains 'builderFactionIDs': [...] ✓, modules.json contains 'builderFactionIDs': [...] ✓, shields.json contains 'makerRaces': [...] ✓, engines.json contains 'makerRaces': [...] ✓, weapons.json contains 'makerRaces': [...] ✓. Sample verification: Envoy ship (ship_gen_m_corvette_01) has builderFactionIDs: ['argon', 'teladi'] ✓. Database contains 256 ships, 129 engines, 107 shields, 269 weapons."
+                        },
+                        {
+                            "severity": "INFO",
+                            "category": "REGRESSION_TESTING",
+                            "location": "Full PHPUnit test suite",
+                            "issue": "All tests passing",
+                            "details": "PHPUnit test run completed successfully. 773 total tests, 84,420 assertions, 0 failures, 0 errors. Multi-faction specific tests: test_multiBuilderFaction() ✓, test_finderMatchesMultiFaction() ✓, test_multiMakerRace() ✓. All backward compatibility preserved. Execution time: 03:04.854."
+                        },
+                        {
+                            "severity": "NOTE",
+                            "category": "EDGE_CASE",
+                            "location": "Game data",
+                            "issue": "Only 1 ship with multiple builder factions found in game data",
+                            "details": "Multi-faction pattern works correctly but is rare in actual game data. Envoy (ship_gen_m_corvette_01) is the only ship with multiple builder factions [argon, teladi]. Pattern correctly handles this case and will support future multi-faction entities when game data includes them."
+                        }
+                    ],
+                    "summary": "QA PASSED - All 7 acceptance criteria met. Build completes successfully (composer build), all JSON files use correct plural key names (builderFactionIDs, makerRaces), Envoy ship correctly has builderFactionIDs: [argon, teladi]. Full regression test suite passes (773 tests, 84,420 assertions, 0 failures, 0 errors). Code changes verified in all 5 extractor classes. Multi-faction pattern implemented correctly throughout codebase. All bugs from previous QA round resolved. Ready for review stage."
+                },
+                {
+                    "stage": "code-review",
+                    "status": "PASS",
+                    "timestamp": "2026-02-15 18:30:00",
+                    "agent": "Senior Technical Reviewer",
+                    "summary": "Comprehensive architectural review completed across all 7 work packages. Implementation demonstrates excellent pattern consistency, proper backward compatibility, and strong defensive programming. Multi-faction pattern applied uniformly across 5 entity types (Ship, Module, Shield, Engine, Weapon). All architectural constraints met. Zero critical issues. Zero blocking issues. Code is production-ready.",
+                    "metrics": {
+                        "implementation_score": 9,
+                        "maintainability_score": 9,
+                        "best_practices_score": 9,
+                        "security_score": 10,
+                        "performance_score": 9,
+                        "critical_issues_found": 0,
+                        "blocking_issues_found": 0,
+                        "non_blocking_suggestions": 5,
+                        "strategic_insights": 1,
+                        "files_reviewed": 20,
+                        "lines_reviewed_estimate": 2500
+                    },
+                    "comments": [
+                        {
+                            "type": "praise",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:05:00",
+                            "note": "EXCELLENT: Pattern consistency across all 5 entity types. The same multi-value pattern is applied uniformly (Ships/Modules use builderFactionIDs, Shields/Engines/Weapons use makerRaces), making the codebase highly maintainable and predictable."
+                        },
+                        {
+                            "type": "praise",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:08:00",
+                            "note": "EXCELLENT: Backward compatibility implementation handles 3 scenarios flawlessly: (1) new array format, (2) old string format with space-separated values, (3) old key containing array from intermediate rebuild. This is sophisticated defensive programming."
+                        },
+                        {
+                            "type": "praise",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:12:00",
+                            "note": "EXCELLENT: API preservation strategy prevents breaking changes. Original single-value methods (getBuilderFactionID, getMakerRace) return first element, while new multi-value methods (getBuilderFactionIDs, getMakerRaces) provide array access. This is textbook backward-compatible API evolution."
+                        },
+                        {
+                            "type": "suggestion",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:15:00",
+                            "note": "MINOR SUGGESTION: ShipsExtractor.php line 270 logs 'WARNING' for ships with no builder faction, but since it's handled gracefully with a default, consider changing to 'INFO' or 'NOTICE' for consistency with the actual severity level."
+                        },
+                        {
+                            "type": "suggestion",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:18:00",
+                            "note": "MINOR SUGGESTION: Magic string 'unknown' is used as fallback in ShieldDef, EngineDef, and WeaponDef (3 locations). Consider adding KnownFactions::FACTION_UNKNOWN constant for centralized management in a future refactoring."
+                        },
+                        {
+                            "type": "suggestion",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:20:00",
+                            "note": "MINOR SUGGESTION: New methods lack detailed PHPDoc comments explaining WHY multi-faction support is needed (game data contains compound entries like 'argon teladi'). Adding this context would help future maintainers understand the business requirement."
+                        },
+                        {
+                            "type": "suggestion",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:22:00",
+                            "note": "MINOR SUGGESTION: Test coverage could be enhanced with explicit test case for empty string handling in fromArray(). The code handles this correctly (defaults to generic/unknown) but explicit test would document the behavior."
+                        },
+                        {
+                            "type": "strategic",
+                            "priority": "medium",
+                            "timestamp": "2026-02-15 18:25:00",
+                            "note": "GOLD NUGGET: The multi-value faction/race pattern is now established and could be abstracted into a trait or base class method if more entities need similar support in future. Recommend documenting this as a reusable architectural pattern in project manifest (tech-stack.md) for future reference. This pattern successfully handles: (1) array storage, (2) backward-compatible single-value API, (3) new multi-value API, (4) hasMultiple() predicate, (5) space-separated parsing, (6) format migration in fromArray(), (7) array_intersect filtering in Finders."
+                        },
+                        {
+                            "type": "security",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:27:00",
+                            "note": "SECURITY ANALYSIS PASSED: No SQL injection risk (no database), no XSS risk (server-side library), no user input handling vulnerabilities, explode on space is safe (controlled data from XML files), array operations are safe and properly typed. Code follows secure coding practices."
+                        },
+                        {
+                            "type": "performance",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:28:00",
+                            "note": "PERFORMANCE ANALYSIS PASSED: Array operations (intersect, explode, filter) are efficient for expected dataset sizes. No N+1 issues. Lazy loading of FactionDefs appropriate. No premature optimization. ShipDefs::getFactions() could cache results but given collection size (~256 ships) this is unnecessary optimization."
+                        },
+                        {
+                            "type": "architecture",
+                            "priority": "low",
+                            "timestamp": "2026-02-15 18:29:00",
+                            "note": "ARCHITECTURE COMPLIANCE VERIFIED: Follows x4-core Collection-Item pattern, Extraction-Builder pattern, consistent with existing codebase conventions. No technical debt introduced. Future-proof design supports more than 2 factions without code changes. Maintains x4-core manifest constraints (sync file I/O, no databases, strict types)."
+                        }
+                    ]
                 }
             ]
         },
         {
             "work_package_id": "WP-008",
             "work_package_file": "docs/agents/plans/2026-02-13-multi-builder-factions/work.md",
-            "status": "READY",
+            "status": "PASS",
             "assigned_to": "Documentation Agent",
             "dependencies": [
                 "WP-007"
@@ -428,27 +688,49 @@
             "acceptance_criteria": [
                 {
                     "criterion": "public-api.md documents all new methods and constants for all 5 entity types",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "tech-stack.md notes multi-valued builder faction pattern",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "data-flows.md notes array parsing in build flow",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "constraints.md documents the primary = first in list convention",
-                    "met": false
+                    "met": true
                 },
                 {
                     "criterion": "extraction-reference.md notes space-separated makerrace handling",
-                    "met": false
+                    "met": true
                 }
             ],
             "revision": 1,
-            "pipelines": []
+            "pipelines": [
+                {
+                    "type": "documentation",
+                    "status": "PASS",
+                    "timestamp": "2026-02-15 19:15:00",
+                    "agent": "Documentation Agent",
+                    "artifacts": [
+                        "docs/agents/project-manifest/public-api.md",
+                        "docs/agents/project-manifest/tech-stack.md",
+                        "docs/agents/project-manifest/data-flows.md",
+                        "docs/agents/project-manifest/constraints.md",
+                        "docs/agents/project-manifest/extraction-reference/patterns.md"
+                    ],
+                    "summary": "Completed comprehensive documentation updates for multi-faction pattern implementation across all 5 entity types (Ships, Modules, Shields, Engines, Weapons). Updated public-api.md to add missing KEY_MAKER_RACES constant for EngineDef. Added new Pattern #9 (Multi-Value Faction/Race Pattern) to tech-stack.md with complete implementation examples and design decisions. Updated data-flows.md to document array parsing in extraction flow for all affected extractors. Added Multi-Value Fields Convention section to constraints.md documenting the primary=first convention, field naming, API requirements, and format migration rules. Updated extraction-reference/patterns.md to change resolveMakerRace() documentation from returning string to string[] with space-separated value handling. All 5 acceptance criteria met. Documentation is synchronized with implementation.",
+                    "details": {
+                        "documents_updated": 5,
+                        "patterns_documented": 1,
+                        "entity_types_covered": 5,
+                        "api_methods_documented": 15,
+                        "constants_added": 5
+                    }
+                }
+            ]
         }
     ],
     "project_comments": []
