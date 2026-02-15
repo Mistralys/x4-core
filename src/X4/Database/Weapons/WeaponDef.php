@@ -11,7 +11,11 @@ namespace Mistralys\X4\Database\Weapons;
 use AppUtils\ArrayDataCollection;
 use Mistralys\X4\Database\Core\CollectionItemInterface;
 use Mistralys\X4\Database\Core\CollectionItemTrait;
+use Mistralys\X4\Database\Core\MultiValueFieldTrait;
 use Mistralys\X4\Database\Core\VariantID;
+use Mistralys\X4\Database\Factions\FactionDef;
+use Mistralys\X4\Database\Factions\FactionDefs;
+use Mistralys\X4\Database\Factions\KnownFactions;
 
 /**
  * Represents a single weapon with performance characteristics.
@@ -25,6 +29,7 @@ use Mistralys\X4\Database\Core\VariantID;
 class WeaponDef implements CollectionItemInterface
 {
     use CollectionItemTrait;
+    use MultiValueFieldTrait;
 
     // Key constants for JSON structure
     public const KEY_WARE_ID = 'wareID';
@@ -217,28 +222,13 @@ class WeaponDef implements CollectionItemInterface
     {
         $def = (array)$weaponDef;
         
-        // Handle both new array format and old string format for backward compatibility
-        $makerRaces = [];
-        if (isset($def[self::KEY_MAKER_RACES])) {
-            $makerRaces = (array)$def[self::KEY_MAKER_RACES];
-        } elseif (isset($def[self::KEY_MAKER_RACE])) {
-            // Old key might contain either a string or an array (from intermediate rebuild)
-            $oldValue = $def[self::KEY_MAKER_RACE];
-            if (is_array($oldValue)) {
-                $makerRaces = $oldValue;
-            } else {
-                $raceString = (string)$oldValue;
-                if ($raceString === '') {
-                    $raceString = 'unknown';
-                }
-                $makerRaces = array_values(array_filter(explode(' ', $raceString)));
-            }
-        }
-        
-        // Default to unknown if empty
-        if (empty($makerRaces)) {
-            $makerRaces = ['unknown'];
-        }
+        // Use trait method to parse multi-value field
+        $makerRaces = self::parseMultiValueField(
+            $def,
+            self::KEY_MAKER_RACES,
+            self::KEY_MAKER_RACE,
+            KnownFactions::FACTION_UNKNOWN
+        );
 
         $data = ArrayDataCollection::create($def);
 
@@ -329,10 +319,7 @@ class WeaponDef implements CollectionItemInterface
 
     public function getMakerRace(): string
     {
-        if (empty($this->makerRaces)) {
-            return 'unknown';
-        }
-        return $this->makerRaces[0];
+        return $this->getSingleValue($this->makerRaces, KnownFactions::FACTION_UNKNOWN);
     }
 
     /**
@@ -341,7 +328,7 @@ class WeaponDef implements CollectionItemInterface
      */
     public function getMakerRaces(): array
     {
-        return $this->makerRaces;
+        return $this->getMultipleValues($this->makerRaces);
     }
 
     /**
@@ -350,7 +337,19 @@ class WeaponDef implements CollectionItemInterface
      */
     public function hasMultipleMakerRaces(): bool
     {
-        return count($this->makerRaces) > 1;
+        return $this->hasMultipleValues($this->makerRaces);
+    }
+
+    /**
+     * Returns all maker factions for this weapon (resolves race IDs to FactionDef objects).
+     * @return FactionDef[]
+     */
+    public function getMakerFactions(): array
+    {
+        return $this->resolveEntities(
+            $this->makerRaces,
+            fn($id) => FactionDefs::getInstance()->getByID($id)
+        );
     }
 
     public function getMk(): int

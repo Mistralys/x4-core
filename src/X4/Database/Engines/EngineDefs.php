@@ -43,6 +43,8 @@ class EngineDefs extends BaseStringPrimaryCollection implements ItemCollectionIn
         $this->dataFile = JSONFile::factory(X4Application::getDataFolder() . '/' . self::DATA_FILE)
             ->setPrettyPrint(true)
             ->setTrailingNewline(true);
+
+        $this->registerItems();
     }
 
     public static function getInstance(): EngineDefs

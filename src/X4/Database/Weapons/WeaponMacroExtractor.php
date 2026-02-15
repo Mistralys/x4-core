@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Weapons;
 
+use Mistralys\X4\Database\Factions\KnownFactions;
 use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\XML\DOMExtended;
@@ -256,7 +257,7 @@ class WeaponMacroExtractor
                 }
             }
         }
-        return ['unknown'];
+        return [KnownFactions::FACTION_UNKNOWN];
     }
 
     private function resolveMk(): int

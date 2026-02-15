@@ -141,4 +141,196 @@ final class ShipCollectionTests extends X4TestCase
             $this->markTestSkipped('Envoy ship not found in search results - database may need to be rebuilt');
         }
     }
+
+    /**
+     * Test that an empty builder faction string defaults to 'generic'.
+     * 
+     * This tests the edge case where the old format contains an empty string,
+     * which should be handled gracefully by falling back to the generic faction.
+     */
+    public function test_emptyBuilderFactionString(): void
+    {
+        $testData = [
+            'wareID' => 'test_ship_empty_faction',
+            'label' => 'Test Ship',
+            'variantID' => 'test_variant',
+            'size' => 'M',
+            'builderFactionID' => '',  // Empty string
+            'classID' => 'corvette',
+            'usedBy' => [],
+            'dataSourceID' => 'vanilla'
+        ];
+        
+        $ship = \Mistralys\X4\Database\Ships\ShipDef::fromArray($testData);
+        
+        $this->assertEquals(
+            KnownFactions::FACTION_GENERIC,
+            $ship->getBuilderFactionID(),
+            'Empty faction string should default to generic'
+        );
+        
+        $this->assertFalse(
+            $ship->hasMultipleBuilderFactions(),
+            'Single default faction should not report multiple factions'
+        );
+        
+        $this->assertEquals(
+            [KnownFactions::FACTION_GENERIC],
+            $ship->getBuilderFactionIDs(),
+            'Empty string should result in array with generic faction'
+        );
+    }
+
+    /**
+     * Test robust parsing of faction strings with irregular whitespace.
+     * 
+     * This ensures that space-separated faction strings are properly trimmed
+     * and parsed even when they contain extra whitespace.
+     */
+    public function test_whitespaceInFactionString(): void
+    {
+        $testData = [
+            'wareID' => 'test_ship_whitespace',
+            'label' => 'Test Ship',
+            'variantID' => 'test_variant',
+            'size' => 'M',
+            'builderFactionID' => '  argon    teladi  ',  // Extra whitespace
+            'classID' => 'corvette',
+            'usedBy' => [],
+            'dataSourceID' => 'vanilla'
+        ];
+        
+        $ship = \Mistralys\X4\Database\Ships\ShipDef::fromArray($testData);
+        
+        $factionIDs = $ship->getBuilderFactionIDs();
+        
+        $this->assertCount(
+            2,
+            $factionIDs,
+            'Whitespace-padded string should parse to 2 factions'
+        );
+        
+        $this->assertContains(
+            'argon',
+            $factionIDs,
+            'Parsed factions should include argon (whitespace trimmed)'
+        );
+        
+        $this->assertContains(
+            'teladi',
+            $factionIDs,
+            'Parsed factions should include teladi (whitespace trimmed)'
+        );
+        
+        $this->assertTrue(
+            $ship->hasMultipleBuilderFactions(),
+            'Should correctly detect multiple factions despite whitespace'
+        );
+    }
+
+    /**
+     * Test that single-element arrays work correctly and don't report as multiple factions.
+     * 
+     * This verifies backward compatibility when the new array format contains only one faction.
+     */
+    public function test_singleValueInArrayFormat(): void
+    {
+        $testData = [
+            'wareID' => 'test_ship_single_array',
+            'label' => 'Test Ship',
+            'variantID' => 'test_variant',
+            'size' => 'M',
+            'builderFactionIDs' => ['argon'],  // Single-element array (new format)
+            'classID' => 'corvette',
+            'usedBy' => [],
+            'dataSourceID' => 'vanilla'
+        ];
+        
+        $ship = \Mistralys\X4\Database\Ships\ShipDef::fromArray($testData);
+        
+        $this->assertFalse(
+            $ship->hasMultipleBuilderFactions(),
+            'Single-element array should not report multiple factions'
+        );
+        
+        $this->assertEquals(
+            'argon',
+            $ship->getBuilderFactionID(),
+            'Backward-compatible getter should return the single faction'
+        );
+        
+        $this->assertEquals(
+            ['argon'],
+            $ship->getBuilderFactionIDs(),
+            'Multi-value getter should return array with single element'
+        );
+        
+        $factions = $ship->getBuilderFactions();
+        $this->assertCount(
+            1,
+            $factions,
+            'Should resolve to exactly one FactionDef object'
+        );
+        
+        $this->assertEquals(
+            'argon',
+            $factions[0]->getID(),
+            'Resolved faction should be argon'
+        );
+    }
+
+    /**
+     * Test handling of invalid or unknown faction IDs in compound strings.
+     * 
+     * This documents the current behavior when space-separated strings contain
+     * non-existent faction IDs. The system filters out empty strings but does NOT
+     * validate faction IDs during parsing - validation happens later when resolving
+     * to FactionDef objects via getBuilderFactions().
+     */
+    public function test_invalidFactionInCompoundString(): void
+    {
+        $testData = [
+            'wareID' => 'test_ship_invalid_faction',
+            'label' => 'Test Ship',
+            'variantID' => 'test_variant',
+            'size' => 'M',
+            'builderFactionID' => 'argon nonexistent teladi',  // Invalid faction in middle
+            'classID' => 'corvette',
+            'usedBy' => [],
+            'dataSourceID' => 'vanilla'
+        ];
+        
+        $ship = \Mistralys\X4\Database\Ships\ShipDef::fromArray($testData);
+        
+        // The parsing stage does NOT validate faction IDs - it just splits the string
+        $factionIDs = $ship->getBuilderFactionIDs();
+        
+        $this->assertCount(
+            3,
+            $factionIDs,
+            'Parser should split string into 3 IDs without validation'
+        );
+        
+        $this->assertContains(
+            'argon',
+            $factionIDs,
+            'Valid faction argon should be preserved'
+        );
+        
+        $this->assertContains(
+            'nonexistent',
+            $factionIDs,
+            'Invalid faction ID is preserved during parsing (validation happens later)'
+        );
+        
+        $this->assertContains(
+            'teladi',
+            $factionIDs,
+            'Valid faction teladi should be preserved'
+        );
+        
+        // Document that validation happens when resolving to FactionDef objects
+        // getBuilderFactions() will handle invalid IDs via FactionDefs::getByID()
+        // which throws FactionException for unknown IDs
+    }
 }

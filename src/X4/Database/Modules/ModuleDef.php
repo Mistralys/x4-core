@@ -7,6 +7,7 @@ namespace Mistralys\X4\Database\Modules;
 use AppUtils\ArrayDataCollection;
 use Mistralys\X4\Database\Core\CollectionItemInterface;
 use Mistralys\X4\Database\Core\CollectionItemTrait;
+use Mistralys\X4\Database\Core\MultiValueFieldTrait;
 use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
@@ -15,6 +16,7 @@ use Mistralys\X4\Database\Factions\KnownFactions;
 class ModuleDef implements CollectionItemInterface
 {
     use CollectionItemTrait;
+    use MultiValueFieldTrait;
 
     public const KEY_CATEGORY = 'category';
     public const KEY_BUILDER_FACTION_ID = 'builderFactionID';
@@ -95,25 +97,13 @@ class ModuleDef implements CollectionItemInterface
     {
         $def = (array)$moduleDef;
         
-        // Handle both new array format and old string format for backward compatibility
-        $builderFactionIDs = [];
-        if (isset($def[self::KEY_BUILDER_FACTION_IDS])) {
-            $builderFactionIDs = (array)$def[self::KEY_BUILDER_FACTION_IDS];
-        } elseif (isset($def[self::KEY_BUILDER_FACTION_ID])) {
-            // Old key might contain either a string or an array (from intermediate rebuild)
-            $oldValue = $def[self::KEY_BUILDER_FACTION_ID];
-            if (is_array($oldValue)) {
-                $builderFactionIDs = $oldValue;
-            } else {
-                $factionString = (string)$oldValue;
-                $builderFactionIDs = array_values(array_filter(explode(' ', $factionString)));
-            }
-        }
-        
-        // Default to generic if empty
-        if (empty($builderFactionIDs)) {
-            $builderFactionIDs = [KnownFactions::FACTION_GENERIC];
-        }
+        // Use trait method to parse multi-value field
+        $builderFactionIDs = self::parseMultiValueField(
+            $def,
+            self::KEY_BUILDER_FACTION_IDS,
+            self::KEY_BUILDER_FACTION_ID,
+            KnownFactions::FACTION_GENERIC
+        );
 
         $data = ArrayDataCollection::create($def);
 
@@ -224,10 +214,7 @@ class ModuleDef implements CollectionItemInterface
 
     public function getBuilderFactionID() : string
     {
-        if(empty($this->builderFactionIDs)) {
-            return KnownFactions::FACTION_GENERIC;
-        }
-        return $this->builderFactionIDs[0];
+        return $this->getSingleValue($this->builderFactionIDs, KnownFactions::FACTION_GENERIC);
     }
 
     /**
@@ -236,7 +223,7 @@ class ModuleDef implements CollectionItemInterface
      */
     public function getBuilderFactionIDs(): array
     {
-        return $this->builderFactionIDs;
+        return $this->getMultipleValues($this->builderFactionIDs);
     }
 
     /**
@@ -245,11 +232,10 @@ class ModuleDef implements CollectionItemInterface
      */
     public function getBuilderFactions() : array
     {
-        $result = [];
-        foreach ($this->builderFactionIDs as $factionID) {
-            $result[] = FactionDefs::getInstance()->getByID($factionID);
-        }
-        return $result;
+        return $this->resolveEntities(
+            $this->builderFactionIDs,
+            fn($id) => FactionDefs::getInstance()->getByID($id)
+        );
     }
 
     /**
@@ -258,7 +244,7 @@ class ModuleDef implements CollectionItemInterface
      */
     public function hasMultipleBuilderFactions(): bool
     {
-        return count($this->builderFactionIDs) > 1;
+        return $this->hasMultipleValues($this->builderFactionIDs);
     }
 
     public function isProduction() : bool

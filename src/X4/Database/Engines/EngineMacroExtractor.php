@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Mistralys\X4\Database\Engines;
 
+use Mistralys\X4\Database\Factions\KnownFactions;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\XML\DOMExtended;
 use Mistralys\X4\XML\ElementExtended;
@@ -89,7 +90,7 @@ class EngineMacroExtractor
                 }
             }
         }
-        return ['unknown'];
+        return [KnownFactions::FACTION_UNKNOWN];
     }
 
     private function resolveMk(): int

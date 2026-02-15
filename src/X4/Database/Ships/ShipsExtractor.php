@@ -264,7 +264,10 @@ class ShipsExtractor extends BaseExtractor
             $factionID = $exceptions[$shipID];
             Console::line1('INFO | The ship [%s] has a custom faction ID [%s] defined in the settings.', $shipID, $factionID);
         } else {
-            Console::line1('WARNING | The ship [%s] has no builder faction. Defaulting to [%s].', $shipID, $factionID);
+            // INFO severity: This is not an error condition. Ships without explicit
+            // builder data correctly fall back to 'generic' faction. This is normal
+            // operation and does not require developer attention.
+            Console::line1('INFO | The ship [%s] has no builder faction. Defaulting to [%s].', $shipID, $factionID);
         }
 
         return [$factionID];

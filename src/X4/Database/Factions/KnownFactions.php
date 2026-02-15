@@ -60,6 +60,7 @@ class KnownFactions
     public const FACTION_SMUGGLER = 'smuggler';
     public const FACTION_TELADI_COMPANY = 'teladi';
     public const FACTION_TERRAN_PROTECTORATE = 'terran';
+    public const FACTION_UNKNOWN = 'unknown';
     public const FACTION_VIGOR_SYNDICATE = 'loanshark';
     public const FACTION_VISITOR = 'visitor';
     public const FACTION_XENON = 'xenon';
@@ -95,6 +96,7 @@ class KnownFactions
         self::FACTION_SMUGGLER,
         self::FACTION_TELADI_COMPANY,
         self::FACTION_TERRAN_PROTECTORATE,
+        self::FACTION_UNKNOWN,
         self::FACTION_VIGOR_SYNDICATE,
         self::FACTION_VISITOR,
         self::FACTION_XENON,
@@ -258,6 +260,11 @@ class KnownFactions
     public function getTerranProtectorate() : FactionDef
     {
         return $this->defs->getByID(self::FACTION_TERRAN_PROTECTORATE);
+    }
+
+    public function getUnknown() : FactionDef
+    {
+        return $this->defs->getByID(self::FACTION_UNKNOWN);
     }
 
     public function getVigorSyndicate() : FactionDef

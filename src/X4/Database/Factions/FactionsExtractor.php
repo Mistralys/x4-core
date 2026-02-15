@@ -167,7 +167,9 @@ class FactionsExtractor
      */
     private function compileKnownFactions() : array
     {
-        $known = array();
+        $known = array(
+            'unknown' => 'Unknown'
+        );
 
         foreach($this->factions as $factionDef)
         {
