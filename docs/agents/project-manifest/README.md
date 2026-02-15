@@ -1,7 +1,7 @@
 # X4 Core - Project Manifest
 
-**Version:** 1.0  
-**Last Updated:** February 12, 2026  
+**Version:** 1.1  
+**Last Updated:** February 15, 2026  
 **Purpose:** Source of Truth for AI Agent Sessions
 
 ---
@@ -32,7 +32,7 @@ The library is designed as a dependency for other projects and tools in the X4 e
 |----------|-------------|
 | [Tech Stack & Patterns](tech-stack.md) | Runtime environment, dependencies, and architectural patterns |
 | [File Tree](file-tree.md) | Complete directory structure with explanations |
-| [Public API](public-api.md) | Complete public method signatures (no implementations) |
+| **[Public API](api/README.md)** | **Complete public method signatures organized by domain** |
 | [Data Flows](data-flows.md) | How UI interacts with services and data flows through the system |
 | [Constraints & Rules](constraints.md) | Established coding rules, conventions, and constraints |
 | [Extraction Reference](extraction-reference.md) | XML data extraction patterns, algorithms, and troubleshooting (modular) |
@@ -84,27 +84,30 @@ The library is designed as a dependency for other projects and tools in the X4 e
 
 ---
 
-### [Public API](public-api.md)
+### [Public API](api/README.md)
 
 **What you'll find:**
-- **Signatures only** for all public classes
-- Constants, properties, and methods
-- Constructor signatures
+- **Signatures only** for all public classes (no implementations)
+- **Organized by functional domain** for easy navigation:
+  - [Root & Game](api/README.md) - Core application and game installation
+  - [UI Components](api/ui-api.md) - Button, Icon, Text, DataGrid, Pages, Messages
+  - [Core Patterns](api/database-core-api.md) - CollectionItem, Finder, VariantID
+  - [Game Data](api/database-game-data-api.md) - Factions, Wares, DataSources
+  - [Ships & Engines](api/database-ships-api.md) - Ship definitions, engine specs
+  - [Equipment](api/database-equipment-api.md) - Weapons, Shields, Modules
+  - [Blueprints](api/database-crafting-api.md) - Crafting blueprints
+  - [Localization](api/database-localization-api.md) - Translations, Languages, SlotTypes
+  - [XML Utilities](api/xml-api.md) - XML parsing and querying
+- Constants, properties, and methods for each class
 - Return types and parameters
-- **NO implementation details**
-
-**Organized by namespace:**
-- Root (X4Application, Exceptions)
-- Game (X4Game)
-- UI (UserInterface, Components, Pages, DataGrid)
-- Database (Collections, Items, Finders, Extractors)
-- XML (DOM utilities)
+- Usage examples and patterns
 
 **Use this when:**
-- Understanding available APIs
-- Checking method signatures
-- Implementing features that use existing classes
-- Avoiding reading source code
+- Looking up method signatures
+- Understanding class interfaces
+- Finding available methods without reading source code
+- Checking return types and parameters
+- Learning usage patterns for specific domains
 
 ---
 
@@ -264,7 +267,7 @@ BaseSubPage (abstract)
 
 1. Start with [Tech Stack](tech-stack.md) to understand patterns
 2. Check [File Tree](file-tree.md) to locate relevant files
-3. Review [Public API](public-api.md) for available methods
+3. Review [Public API](api/README.md) for available methods
 4. Check [Data Flows](data-flows.md) for interaction patterns
 5. Verify [Constraints](constraints.md) before making changes
 
@@ -272,7 +275,7 @@ BaseSubPage (abstract)
 
 1. Identify pattern from [Tech Stack](tech-stack.md)
 2. Follow naming conventions from [Constraints](constraints.md)
-3. Implement required interfaces from [Public API](public-api.md)
+3. Implement required interfaces from [Public API](api/README.md)
 4. Test data flow using patterns from [Data Flows](data-flows.md)
 5. Document in PHPDoc format
 
@@ -310,7 +313,7 @@ Follow the extraction order documented in [Data Flows § Database Build Flow](da
 3. Register in `X4Application::registerPages()`
 
 **References:**
-- [Public API § UI\Page\BasePage](public-api.md#mistralysx4uipagebasepage)
+- [Public API § UI\Page\BasePage](api/ui-api.md#page-classes)
 - [Data Flows § Page Rendering Flow](data-flows.md#3-page-rendering-flow)
 - [Constraints § Page Structure](constraints.md#page-structure)
 
@@ -328,7 +331,7 @@ ShipDefs::getInstance()
 **References:**
 - [Tech Stack § Finder Pattern](tech-stack.md#2-finder-pattern)
 - [Data Flows § Database Query Flow](data-flows.md#2-database-query-flow)
-- [Public API § Database\Ships\ShipFinder](public-api.md#mistralysx4databaseshipsshipfinder)
+- [Public API § Database\Ships\ShipFinder](api/database-ships-api.md#ship-finder)
 
 ### Task: Create UI Component
 
@@ -344,7 +347,7 @@ echo $grid->render();
 **References:**
 - [Tech Stack § UI Component Pattern](tech-stack.md#4-ui-component-pattern)
 - [Data Flows § DataGrid Rendering Flow](data-flows.md#4-datagrid-rendering-flow)
-- [Public API § UI\DataGrid](public-api.md#mistralysx4uidatagrid)
+- [Public API § UI\DataGrid](api/ui-api.md#datagrid)
 
 ---
 
@@ -378,6 +381,7 @@ When making significant architectural changes:
 
 ### Changelog
 
+- **1.1** (Feb 15, 2026) - Split Public API into domain-focused files for better navigation
 - **1.0** (Feb 8, 2026) - Initial manifest creation
 
 ---

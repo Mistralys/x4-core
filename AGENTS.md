@@ -1,7 +1,7 @@
 # AI Agent Operating System - X4 Core
 
-> **Version:** 1.0  
-> **Last Updated:** February 8, 2026  
+> **Version:** 1.1  
+> **Last Updated:** February 15, 2026  
 > **Purpose:** Source of Truth and Operating Procedures for AI Agents
 
 ---
@@ -31,7 +31,7 @@ If code contradicts the manifest, the **code is likely wrong** and should be fla
 | **1** | [README.md](docs/agents/project-manifest/README.md) | Entry point, navigation, quick reference | **ALWAYS START HERE** |
 | **2** | [tech-stack.md](docs/agents/project-manifest/tech-stack.md) | Runtime, dependencies, architectural patterns | Understanding patterns before coding |
 | **3** | [constraints.md](docs/agents/project-manifest/constraints.md) | Non-negotiable rules and conventions | **BEFORE writing any code** |
-| **4** | [public-api.md](docs/agents/project-manifest/public-api.md) | All public signatures (NO implementations) | Finding methods, understanding APIs |
+| **4** | [public-api/](docs/agents/project-manifest/api/) | All public signatures organized by domain | Finding methods, understanding APIs |
 | **5** | [file-tree.md](docs/agents/project-manifest/file-tree.md) | Complete directory structure | Locating files, understanding organization |
 | **6** | [data-flows.md](docs/agents/project-manifest/data-flows.md) | How data moves through the system | Implementing features, debugging flows |
 
@@ -67,7 +67,7 @@ If code contradicts the manifest, the **code is likely wrong** and should be fla
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
 │ STEP 4: Reference Public API as Needed                     │
-│ Document: public-api.md                                     │
+│ Document: api/ (split by domain)                          │
 │ Usage: Lookup method signatures without reading source     │
 │ Output: Know what methods exist and their contracts        │
 └─────────────────────────────────────────────────────────────┘
@@ -90,7 +90,7 @@ If code contradicts the manifest, the **code is likely wrong** and should be fla
 │ READY: Begin Implementation                                 │
 │ • Follow patterns from tech-stack.md                       │
 │ • Obey rules from constraints.md                           │
-│ • Reference public-api.md for signatures                   │
+│ • Reference api/ for method signatures                     │
 │ • Update manifest when adding features                     │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -108,25 +108,25 @@ If code contradicts the manifest, the **code is likely wrong** and should be fla
 
 | Code Change | Documents to Update | Specific Sections |
 |-------------|---------------------|-------------------|
-| **Add new Collection class** | `tech-stack.md`, `public-api.md`, `file-tree.md`, `data-flows.md` | Collection-Item Pattern, Database namespace, src/X4/Database/, Database Build Flow |
-| **Add new UI Component** | `tech-stack.md`, `public-api.md`, `file-tree.md`, `data-flows.md` | UI Component Pattern, UI namespace, src/X4/UI/, UI Component Creation Flow |
-| **Add new Page class** | `public-api.md`, `file-tree.md`, `data-flows.md` | UI\Page namespace, src/X4/UI/Page/, Page Rendering Flow |
-| **Add new Exception class** | `tech-stack.md`, `public-api.md`, `file-tree.md` | Exception Hierarchy, Root/Database/UI namespace, appropriate folder |
-| **Add new Finder class** | `tech-stack.md`, `public-api.md`, `file-tree.md`, `data-flows.md` | Finder Pattern, Database namespace, src/X4/Database/*/Finder.php, Database Query Flow |
-| **Add new Extractor class** | `tech-stack.md`, `public-api.md`, `file-tree.md`, `data-flows.md` | Extraction-Builder Pattern, Database namespace, src/X4/Database/*/, Database Build Flow |
-| **Add public method** | `public-api.md` | Relevant class section |
-| **Add public constant** | `public-api.md` | Relevant class section |
+| **Add new Collection class** | `tech-stack.md`, `api/database-core-api.md`, `file-tree.md`, `data-flows.md` | Collection-Item Pattern, Database namespace, src/X4/Database/, Database Build Flow |
+| **Add new UI Component** | `tech-stack.md`, `api/ui-api.md`, `file-tree.md`, `data-flows.md` | UI Component Pattern, UI namespace, src/X4/UI/, UI Component Creation Flow |
+| **Add new Page class** | `api/ui-api.md`, `file-tree.md`, `data-flows.md` | UI\Page namespace, src/X4/UI/Page/, Page Rendering Flow |
+| **Add new Exception class** | `tech-stack.md`, `api/README.md`, `file-tree.md` | Exception Hierarchy, Root/Database/UI namespace, appropriate folder |
+| **Add new Finder class** | `tech-stack.md`, `api/database-core-api.md`, `file-tree.md`, `data-flows.md` | Finder Pattern, Database namespace, src/X4/Database/*/Finder.php, Database Query Flow |
+| **Add new Extractor class** | `tech-stack.md`, `api/database-core-api.md`, `file-tree.md`, `data-flows.md` | Extraction-Builder Pattern, Database namespace, src/X4/Database/*/, Database Build Flow |
+| **Add public method** | `api/` (relevant domain) | Relevant class section |
+| **Add public constant** | `api/` (relevant domain) | Relevant class section |
 | **Change naming convention** | `constraints.md`, `tech-stack.md` | Naming Conventions section |
 | **Add new architectural pattern** | `tech-stack.md`, `data-flows.md`, `constraints.md` | Architectural Patterns, relevant flow section, Architectural Constraints |
 | **Add new Composer dependency** | `tech-stack.md`, `constraints.md` | Core Dependencies, Adding Dependencies |
 | **Add new data file** | `file-tree.md`, `data-flows.md` | data/ directory, Data Storage Layer |
 | **Change file I/O approach** | `constraints.md`, `tech-stack.md` | File I/O Constraints, relevant pattern |
-| **Add new UI layer** | `public-api.md`, `file-tree.md`, `data-flows.md` | UI namespace, src/X4/UI/, relevant flow |
+| **Add new UI layer** | `api/ui-api.md`, `file-tree.md`, `data-flows.md` | UI namespace, src/X4/UI/, relevant flow |
 | **Change error handling** | `constraints.md`, `tech-stack.md` | Error Handling, Exception Hierarchy |
 | **Add Composer script** | `tech-stack.md`, `constraints.md` | Composer Scripts, Build Process |
 | **Add new test suite** | `constraints.md`, `file-tree.md` | Testing Constraints, tests/ directory |
 | **Change session usage** | `constraints.md`, `data-flows.md` | Session Management, Message Flow |
-| **Add translation language** | `constraints.md`, `public-api.md` | Localization, Database\Translations namespace |
+| **Add translation language** | `constraints.md`, `api/database-localization-api.md` | Localization, Database\Translations namespace |
 | **Modify database build order** | `data-flows.md`, `constraints.md` | Database Build Flow, Build Process |
 
 ### Maintenance Checklist
@@ -155,7 +155,7 @@ Need to find a file?
     └─ NO  → Continue
     
 Need to understand a method signature?
-    ├─ YES → Check public-api.md
+    ├─ YES → Check api/ (organized by domain)
     └─ NO  → Continue
     
 Need to know what's allowed?
@@ -184,10 +184,11 @@ Before using `grep_search` or `file_search`:
 
 ### **RULE 3: Public API First**
 Before reading class files:
-1. Open [public-api.md](docs/agents/project-manifest/public-api.md)
-2. Search for the class name
-3. Review signatures and contracts
-4. Only read source if implementation logic needed
+1. Open [api/README.md](docs/agents/project-manifest/api/README.md)
+2. Navigate to the relevant domain (UI, Database, XML, etc.)
+3. Search for the class name
+4. Review signatures and contracts
+5. Only read source if implementation logic needed
 
 **Saves:** 90% of source file reads
 
@@ -196,7 +197,7 @@ Before implementing a feature:
 1. Open [data-flows.md](docs/agents/project-manifest/data-flows.md)
 2. Find the relevant flow pattern
 3. Follow the established pattern
-4. Reference public-api.md for specific signatures
+4. Reference api/ for specific method signatures
 
 **Saves:** Hours of architecture discovery
 
@@ -221,7 +222,7 @@ Before writing ANY code:
 | **Manifest/Code conflict** | Trust manifest, flag code for correction | MUST | All manifest docs |
 | **Missing documentation** | Document the gap, implement conservatively, update manifest | MUST | constraints.md for conventions |
 | **Unclear pattern** | Find similar pattern in tech-stack.md, follow it exactly | MUST | tech-stack.md, data-flows.md |
-| **Unknown method signature** | Check public-api.md before reading source | MUST | public-api.md |
+| **Unknown method signature** | Check api/ before reading source | MUST | api/README.md |
 | **Untested code path** | Write tests following constraints.md, mark as new coverage | SHOULD | constraints.md (Testing) |
 | **Performance concern** | Follow "No Premature Optimization" rule | SHOULD | constraints.md (Performance) |
 | **Security question** | Follow constraints.md security rules strictly | MUST | constraints.md (Security) |
@@ -240,7 +241,7 @@ When faced with conflicting information:
 
 ```
 1. constraints.md (Non-negotiable rules)
-2. public-api.md (Established contracts)
+2. api/ (Established contracts)
 3. tech-stack.md (Architectural patterns)
 4. data-flows.md (Established flows)
 5. file-tree.md (Structural organization)
@@ -288,7 +289,7 @@ If user request conflicts with items 1-6, **explicitly state the conflict** and 
 → Open file-tree.md, search for class name
 
 # Find method signature
-→ Open public-api.md, search for class name
+→ Open api/README.md, navigate to relevant domain
 
 # Understand a pattern
 → Open tech-stack.md, find pattern section
@@ -307,23 +308,23 @@ If user request conflicts with items 1-6, **explicitly state the conflict** and 
 → Study: tech-stack.md (Collection-Item Pattern)
 → Follow: data-flows.md (Database Build Flow)
 → Reference: constraints.md (Collection-Item Interface)
-→ Update: All 4 documents + public-api.md + file-tree.md
+→ Update: All 4 documents + api/ + file-tree.md
 
 # Add a new page
 → Study: data-flows.md (Page Rendering Flow)
 → Extend: BasePage or BasePageWithNav
-→ Reference: public-api.md (UI\Page namespace)
-→ Update: public-api.md + file-tree.md
+→ Reference: api/ui-api.md (UI\Page namespace)
+→ Update: api/ui-api.md + file-tree.md
 
 # Filter a collection
 → Study: data-flows.md (Database Query Flow)
 → Use: *Defs::getInstance()->find*()->select*()->getAll()
-→ Reference: public-api.md (Finder signatures)
+→ Reference: api/database-core-api.md (Finder signatures)
 
 # Create UI component
 → Study: data-flows.md (UI Component Creation Flow)
 → Use: Fluent interface pattern
-→ Reference: public-api.md (UI namespace)
+→ Reference: api/ui-api.md (UI namespace)
 ```
 
 ---
@@ -335,7 +336,7 @@ If user request conflicts with items 1-6, **explicitly state the conflict** and 
 - ✅ Follow all constraints.md rules
 - ✅ Update manifest when adding features
 - ✅ Use established patterns from tech-stack.md
-- ✅ Reference public-api.md for signatures
+- ✅ Reference api/ for signatures
 - ✅ Follow data flows from data-flows.md
 - ✅ Flag conflicts between manifest and code
 - ✅ Ask for clarification when uncertain
@@ -376,14 +377,13 @@ If user request conflicts with items 1-6, **explicitly state the conflict** and 
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | Feb 8, 2026 | Initial AGENTS.md with complete manifest integration |
-
+| 1.1 | Feb 15, 2026 | Split Public API into domain-focused files (api/ directory) |
 ---
 
 ## 💡 Pro Tips for Maximum Efficiency
 
 1. **Bookmark the manifest README** - It's your starting point for everything
-2. **Keep public-api.md open** - Reference it constantly
+2. **Keep api/ folder bookmarked** - Reference domain-specific docs constantly
 3. **Memorize the 8 patterns** - Collection-Item, Finder, Extraction-Builder, UI Component, Page-SubPage, Exception Hierarchy, Static Factory, Extended DOM
 4. **Trust the manifest** - If code conflicts, the manifest is probably right
 5. **Update as you go** - Don't batch manifest updates, do them immediately
@@ -401,7 +401,7 @@ If user request conflicts with items 1-6, **explicitly state the conflict** and 
 
 An agent has successfully integrated with this codebase when:
 - ✅ Can navigate to any file using file-tree.md
-- ✅ Can find any method signature using public-api.md
+- ✅ Can find any method signature using api/ (organized by domain)
 - ✅ Knows all 8 architectural patterns by heart
 - ✅ Never violates constraints.md rules
 - ✅ Updates manifest with every code change
