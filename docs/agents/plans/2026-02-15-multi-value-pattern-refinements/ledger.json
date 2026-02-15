@@ -1,0 +1,431 @@
+{
+  "plan_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/plan.md",
+  "date_created": "2026-02-15 12:00:00",
+  "last_updated": "2026-02-15 12:00:00",
+  "status": "READY",
+  "total_work_packages": 8,
+  "pending_work_packages": 8,
+  "work_packages": [
+    {
+      "work_package_id": "WP-001",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer",
+      "dependencies": [],
+      "acceptance_criteria": [
+        {
+          "criterion": "KnownFactions::FACTION_UNKNOWN constant defined with value 'unknown'",
+          "met": false
+        },
+        {
+          "criterion": "FACTIONS array includes new constant",
+          "met": false
+        },
+        {
+          "criterion": "All hardcoded 'unknown' strings replaced in extractor classes (minimum 3 occurrences)",
+          "met": false
+        },
+        {
+          "criterion": "Zero compile errors",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan passes with no new warnings",
+          "met": false
+        },
+        {
+          "criterion": "773 PHPUnit tests pass (no regressions)",
+          "met": false
+        },
+        {
+          "criterion": "api/database-game-data-api.md includes new constant documentation",
+          "met": false
+        },
+        {
+          "criterion": "constraints.md includes constant usage convention",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-002",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer",
+      "dependencies": [],
+      "acceptance_criteria": [
+        {
+          "criterion": "ShipsExtractor.php line ~269 changed from WARNING to INFO",
+          "met": false
+        },
+        {
+          "criterion": "Similar changes applied to other extractors (if applicable)",
+          "met": false
+        },
+        {
+          "criterion": "Code comments explain rationale for INFO severity",
+          "met": false
+        },
+        {
+          "criterion": "Database rebuild log shows INFO instead of WARNING",
+          "met": false
+        },
+        {
+          "criterion": "No functional behavior changes",
+          "met": false
+        },
+        {
+          "criterion": "773 PHPUnit tests pass (no regressions)",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-003",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer",
+      "dependencies": [
+        "WP-001"
+      ],
+      "acceptance_criteria": [
+        {
+          "criterion": "4 new test methods added to ShipCollectionTests.php",
+          "met": false
+        },
+        {
+          "criterion": "test_emptyBuilderFactionString() implemented and passing",
+          "met": false
+        },
+        {
+          "criterion": "test_invalidFactionInCompoundString() implemented and passing",
+          "met": false
+        },
+        {
+          "criterion": "test_whitespaceInFactionString() implemented and passing",
+          "met": false
+        },
+        {
+          "criterion": "test_singleValueInArrayFormat() implemented and passing",
+          "met": false
+        },
+        {
+          "criterion": "All new tests use realistic faction IDs from KnownFactions",
+          "met": false
+        },
+        {
+          "criterion": "Test assertions include descriptive failure messages",
+          "met": false
+        },
+        {
+          "criterion": "Code coverage on fromArray() parsing logic >= 90%",
+          "met": false
+        },
+        {
+          "criterion": "Total test count increased by 4 (773 to 777)",
+          "met": false
+        },
+        {
+          "criterion": "Zero test failures (all 777 tests pass)",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-004",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer",
+      "dependencies": [
+        "WP-001"
+      ],
+      "acceptance_criteria": [
+        {
+          "criterion": "MultiValueFieldTrait.php created in src/X4/Database/Core/",
+          "met": false
+        },
+        {
+          "criterion": "Namespace is Mistralys\\X4\\Database\\Core",
+          "met": false
+        },
+        {
+          "criterion": "All 5 methods implemented: getSingleValue(), getMultipleValues(), hasMultipleValues(), resolveEntities(), parseMultiValueField()",
+          "met": false
+        },
+        {
+          "criterion": "All methods have protected visibility",
+          "met": false
+        },
+        {
+          "criterion": "All methods have complete PHPDoc with parameter types",
+          "met": false
+        },
+        {
+          "criterion": "Generic types documented with @template annotations",
+          "met": false
+        },
+        {
+          "criterion": "Class docblock includes usage examples",
+          "met": false
+        },
+        {
+          "criterion": "How to Use This Trait section in docblock",
+          "met": false
+        },
+        {
+          "criterion": "Design rationale documented",
+          "met": false
+        },
+        {
+          "criterion": "composer dump-autoload executed successfully",
+          "met": false
+        },
+        {
+          "criterion": "Zero compile errors",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan passes with no new warnings",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-005",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "Lead Implementation Engineer",
+      "dependencies": [
+        "WP-004"
+      ],
+      "acceptance_criteria": [
+        {
+          "criterion": "All 5 entity classes use MultiValueFieldTrait",
+          "met": false
+        },
+        {
+          "criterion": "ShipDef refactored and tests pass",
+          "met": false
+        },
+        {
+          "criterion": "ModuleDef refactored and tests pass",
+          "met": false
+        },
+        {
+          "criterion": "ShieldDef refactored and tests pass",
+          "met": false
+        },
+        {
+          "criterion": "EngineDef refactored and tests pass",
+          "met": false
+        },
+        {
+          "criterion": "WeaponDef refactored and tests pass",
+          "met": false
+        },
+        {
+          "criterion": "All public API signatures unchanged",
+          "met": false
+        },
+        {
+          "criterion": "All trait method calls use correct parameters",
+          "met": false
+        },
+        {
+          "criterion": "fromArray() methods use parseMultiValueField()",
+          "met": false
+        },
+        {
+          "criterion": "Zero breaking changes to public API",
+          "met": false
+        },
+        {
+          "criterion": "Backward-compatible getters return first element",
+          "met": false
+        },
+        {
+          "criterion": "Multi-value getters return full array",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-006",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "QA & Validation Agent",
+      "dependencies": [
+        "WP-005"
+      ],
+      "acceptance_criteria": [
+        {
+          "criterion": "777 tests pass (773 existing + 4 new)",
+          "met": false
+        },
+        {
+          "criterion": "Zero test failures",
+          "met": false
+        },
+        {
+          "criterion": "Zero test errors",
+          "met": false
+        },
+        {
+          "criterion": "Assertions count documented",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan passes with no new warnings",
+          "met": false
+        },
+        {
+          "criterion": "Code duplication reduced by >= 100 lines",
+          "met": false
+        },
+        {
+          "criterion": "Public API signatures unchanged (manual verification)",
+          "met": false
+        },
+        {
+          "criterion": "Return types identical to pre-refactoring",
+          "met": false
+        },
+        {
+          "criterion": "Envoy ship data verified (multi-faction example)",
+          "met": false
+        },
+        {
+          "criterion": "Test execution time within acceptable range (no performance regression)",
+          "met": false
+        },
+        {
+          "criterion": "All 5 entity classes successfully use trait",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-007",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "Documentation Agent",
+      "dependencies": [
+        "WP-006"
+      ],
+      "acceptance_criteria": [
+        {
+          "criterion": "tech-stack.md updated with trait reference in Pattern #9",
+          "met": false
+        },
+        {
+          "criterion": "tech-stack.md includes trait architecture section",
+          "met": false
+        },
+        {
+          "criterion": "api/database-core-api.md documents all 5 trait methods",
+          "met": false
+        },
+        {
+          "criterion": "api/database-core-api.md includes usage examples",
+          "met": false
+        },
+        {
+          "criterion": "file-tree.md includes trait file location",
+          "met": false
+        },
+        {
+          "criterion": "constraints.md includes Multi-Value Fields Convention section",
+          "met": false
+        },
+        {
+          "criterion": "constraints.md provides implementation guide for new entity types",
+          "met": false
+        },
+        {
+          "criterion": "api/database-game-data-api.md includes FACTION_UNKNOWN constant",
+          "met": false
+        },
+        {
+          "criterion": "All Last Updated dates current (February 15, 2026)",
+          "met": false
+        },
+        {
+          "criterion": "No contradictions between code and documentation",
+          "met": false
+        },
+        {
+          "criterion": "Documentation is clear and actionable for future agents",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    },
+    {
+      "work_package_id": "WP-008",
+      "work_package_file": "docs/agents/plans/2026-02-15-multi-value-pattern-refinements/work.md",
+      "status": "READY",
+      "assigned_to": "QA & Validation Agent",
+      "dependencies": [
+        "WP-007"
+      ],
+      "acceptance_criteria": [
+        {
+          "criterion": "All work packages (WP-001 through WP-007) acceptance criteria met",
+          "met": false
+        },
+        {
+          "criterion": "Overall project acceptance criteria verified",
+          "met": false
+        },
+        {
+          "criterion": "777 tests pass (final execution)",
+          "met": false
+        },
+        {
+          "criterion": "PHPStan clean (final execution)",
+          "met": false
+        },
+        {
+          "criterion": "All manifest documents complete and accurate",
+          "met": false
+        },
+        {
+          "criterion": "No contradictions found",
+          "met": false
+        },
+        {
+          "criterion": "Production readiness: APPROVED",
+          "met": false
+        },
+        {
+          "criterion": "Risk level: LOW",
+          "met": false
+        },
+        {
+          "criterion": "Breaking changes: NONE",
+          "met": false
+        },
+        {
+          "criterion": "Technical debt: REDUCED",
+          "met": false
+        }
+      ],
+      "revision": 1,
+      "pipelines": []
+    }
+  ],
+  "project_comments": []
+}
