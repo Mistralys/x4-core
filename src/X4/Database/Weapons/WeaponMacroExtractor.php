@@ -65,7 +65,7 @@ class WeaponMacroExtractor
                 WeaponDef::KEY_LABEL => $this->ware->getLabel(),
                 WeaponDef::KEY_SIZE => $this->ware->getSize(),
                 WeaponDef::KEY_DATA_SOURCE_ID => $this->ware->getDataSourceID(),
-                WeaponDef::KEY_MAKER_RACE => $this->resolveMakerRace(),
+                WeaponDef::KEY_MAKER_RACES => $this->resolveMakerRace(),
                 WeaponDef::KEY_MK => $this->resolveMk(),
                 WeaponDef::KEY_VARIANT_ID => (string)$this->ware->getVariantID(),
                 WeaponDef::KEY_WEAPON_CATEGORY => $weaponCategory,

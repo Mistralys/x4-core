@@ -9,6 +9,7 @@ use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\Database\Core\ItemCollectionInterface;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\Factions\FactionDef;
+use Mistralys\X4\Database\Factions\FactionDefs;
 use Mistralys\X4\X4Application;
 
 /**
@@ -45,6 +46,22 @@ class ShipDefs extends BaseStringPrimaryCollection implements ItemCollectionInte
     public function getDataFile() : JSONFile
     {
         return $this->dataFile;
+    }
+
+    /**
+     * Finds a ship by its ID.
+     * Returns null if the ship does not exist.
+     *
+     * @param string $id The ship ware ID (e.g., 'ship_gen_m_corvette_01')
+     * @return ShipDef|null
+     */
+    public function find(string $id): ?ShipDef
+    {
+        if ($this->idExists($id)) {
+            return $this->getByID($id);
+        }
+
+        return null;
     }
 
     public function getFactions() : array

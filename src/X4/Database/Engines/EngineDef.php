@@ -164,21 +164,32 @@ class EngineDef implements CollectionItemInterface
 
     public static function fromArray(mixed $engineDef): EngineDef
     {
-        $data = ArrayDataCollection::create($engineDef);
-
+        $def = (array)$engineDef;
+        
         // Handle both new array format and old string format for backward compatibility
         $makerRaces = [];
-        if ($data->hasKey(self::KEY_MAKER_RACES)) {
-            $makerRaces = $data->getArray(self::KEY_MAKER_RACES);
-        } elseif ($data->hasKey(self::KEY_MAKER_RACE)) {
-            $raceString = $data->getString(self::KEY_MAKER_RACE, 'unknown');
-            $makerRaces = array_values(array_filter(explode(' ', $raceString)));
+        if (isset($def[self::KEY_MAKER_RACES])) {
+            $makerRaces = (array)$def[self::KEY_MAKER_RACES];
+        } elseif (isset($def[self::KEY_MAKER_RACE])) {
+            // Old key might contain either a string or an array (from intermediate rebuild)
+            $oldValue = $def[self::KEY_MAKER_RACE];
+            if (is_array($oldValue)) {
+                $makerRaces = $oldValue;
+            } else {
+                $raceString = (string)$oldValue;
+                if ($raceString === '') {
+                    $raceString = 'unknown';
+                }
+                $makerRaces = array_values(array_filter(explode(' ', $raceString)));
+            }
         }
         
         // Default to unknown if empty
         if (empty($makerRaces)) {
             $makerRaces = ['unknown'];
         }
+
+        $data = ArrayDataCollection::create($def);
 
         return new EngineDef(
             $data->getString(self::KEY_WARE_ID),

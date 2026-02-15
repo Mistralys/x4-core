@@ -42,7 +42,7 @@ class EngineMacroExtractor
             EngineDef::KEY_LABEL => $this->ware->getLabel(),
             EngineDef::KEY_SIZE => $this->ware->getSize(),
             EngineDef::KEY_DATA_SOURCE_ID => $this->ware->getDataSourceID(),
-            EngineDef::KEY_MAKER_RACE => $this->resolveMakerRace(),
+            EngineDef::KEY_MAKER_RACES => $this->resolveMakerRace(),
             EngineDef::KEY_MK => $this->resolveMk(),
             EngineDef::KEY_VARIANT_ID => (string)$this->ware->getVariantID(),
             

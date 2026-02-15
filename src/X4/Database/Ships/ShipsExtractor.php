@@ -152,7 +152,7 @@ class ShipsExtractor extends BaseExtractor
             ShipDef::KEY_DATA_SOURCE_ID => $def->getDataSourceID(),
             ShipDef::KEY_SIZE => $this->resolveShipSize($dom),
             ShipDef::KEY_CLASS_ID => $this->resolveShipClass($domAlias ?? $dom, $shipID),
-            ShipDef::KEY_BUILDER_FACTION_ID => $this->resolveFaction($domAlias ?? $dom, $shipID),
+            ShipDef::KEY_BUILDER_FACTION_IDS => $this->resolveFaction($domAlias ?? $dom, $shipID),
             ShipDef::KEY_USED_BY => $def->getFactionIDs(),
             ShipDef::KEY_HULL => $stats[ShipDef::KEY_HULL],
             ShipDef::KEY_MASS => $stats[ShipDef::KEY_MASS],

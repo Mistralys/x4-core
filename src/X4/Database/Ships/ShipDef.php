@@ -258,21 +258,27 @@ class ShipDef implements CollectionItemInterface
 
     public static function fromArray(array $def) : ShipDef
     {
-        $data = ArrayDataCollection::create($def);
-
         // Handle both new array format and old string format for backward compatibility
         $builderFactionIDs = [];
-        if ($data->hasKey(self::KEY_BUILDER_FACTION_IDS)) {
-            $builderFactionIDs = $data->getArray(self::KEY_BUILDER_FACTION_IDS);
-        } elseif ($data->hasKey(self::KEY_BUILDER_FACTION_ID)) {
-            $factionString = $data->getString(self::KEY_BUILDER_FACTION_ID);
-            $builderFactionIDs = array_values(array_filter(explode(' ', $factionString)));
+        if (isset($def[self::KEY_BUILDER_FACTION_IDS])) {
+            $builderFactionIDs = (array)$def[self::KEY_BUILDER_FACTION_IDS];
+        } elseif (isset($def[self::KEY_BUILDER_FACTION_ID])) {
+            // Old key might contain either a string or an array (from intermediate rebuild)
+            $oldValue = $def[self::KEY_BUILDER_FACTION_ID];
+            if (is_array($oldValue)) {
+                $builderFactionIDs = $oldValue;
+            } else {
+                $factionString = (string)$oldValue;
+                $builderFactionIDs = array_values(array_filter(explode(' ', $factionString)));
+            }
         }
         
         // Default to generic if empty
         if (empty($builderFactionIDs)) {
             $builderFactionIDs = [KnownFactions::FACTION_GENERIC];
         }
+
+        $data = ArrayDataCollection::create($def);
 
         return new self(
             $data->getString(self::KEY_WARE_ID),

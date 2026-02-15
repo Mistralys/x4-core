@@ -149,7 +149,7 @@ final class ShipDefTests extends X4TestCase
             'Test Ship',
             VariantID::fromID('test_ship_01_a'),
             's',
-            '', // Empty builder faction ID
+            [], // Empty builder faction IDs array
             'fighter',
             [],
             KnownDataSources::DATA_SOURCE_BASE_GAME,
@@ -211,7 +211,7 @@ final class ShipDefTests extends X4TestCase
             'Test Ship',
             VariantID::fromID('test_ship_01_a'),
             's',
-            KnownFactions::FACTION_ARGON_FEDERATION,
+            [KnownFactions::FACTION_ARGON_FEDERATION], // Builder faction IDs array
             'fighter',
             [], // Empty used by array
             KnownDataSources::DATA_SOURCE_BASE_GAME,
@@ -288,7 +288,7 @@ final class ShipDefTests extends X4TestCase
         $this->assertArrayHasKey(ShipDef::KEY_WARE_ID, $array);
         $this->assertArrayHasKey(ShipDef::KEY_LABEL, $array);
         $this->assertArrayHasKey(ShipDef::KEY_SIZE, $array);
-        $this->assertArrayHasKey(ShipDef::KEY_BUILDER_FACTION_ID, $array);
+        $this->assertArrayHasKey(ShipDef::KEY_BUILDER_FACTION_IDS, $array); // Updated to new key
         $this->assertArrayHasKey(ShipDef::KEY_CLASS_ID, $array);
         $this->assertArrayHasKey(ShipDef::KEY_USED_BY, $array);
         $this->assertArrayHasKey(ShipDef::KEY_DATA_SOURCE_ID, $array);

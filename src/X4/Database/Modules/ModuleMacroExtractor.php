@@ -35,7 +35,7 @@ class ModuleMacroExtractor
             ModuleDef::KEY_LABEL => $this->ware->getLabel(),
             ModuleDef::KEY_CATEGORY => $this->dom->byTagName('macro')->requireFirst()->getAttribute('class'),
             ModuleDef::KEY_SIZE => $this->resolveSize(),
-            ModuleDef::KEY_BUILDER_FACTION_ID => $this->resolveFactionID(),
+            ModuleDef::KEY_BUILDER_FACTION_IDS => $this->resolveFactionID(),
             ModuleDef::KEY_HULL => $this->resolveHull(),
             ModuleDef::KEY_REQUIRED_WORKFORCE => $this->resolveWorkforce(),
             ModuleDef::KEY_HOUSING_CAPACITY => $this->resolveHousingCapacity(),

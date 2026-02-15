@@ -42,7 +42,7 @@ class ShieldMacroExtractor
             ShieldDef::KEY_LABEL => $this->ware->getLabel(),
             ShieldDef::KEY_SIZE => $this->ware->getSize(),
             ShieldDef::KEY_DATA_SOURCE_ID => $this->ware->getDataSourceID(),
-            ShieldDef::KEY_MAKER_RACE => $this->resolveMakerRace(),
+            ShieldDef::KEY_MAKER_RACES => $this->resolveMakerRace(),
             ShieldDef::KEY_MK => $this->resolveMk(),
             ShieldDef::KEY_VARIANT_ID => (string)$this->ware->getVariantID(),
             ShieldDef::KEY_SHIELD_TYPE => $this->resolveShieldType(),
