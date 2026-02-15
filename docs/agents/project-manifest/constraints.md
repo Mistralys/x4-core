@@ -227,6 +227,45 @@ class WaresExtractor
 - **NEVER** query game files directly at runtime
 - Use extractors to build/update data files
 
+### Multi-Value Fields Convention
+
+Some entity fields support multiple values (e.g., ships built by multiple factions):
+
+**Primary = First Convention:**
+- When a field stores multiple values as an array, the **first element is considered primary**
+- Backward-compatible single-value getters MUST return the first element
+- Example:
+  ```php
+  // Ship has builderFactionIDs: ["argon", "teladi"]
+  $ship->getBuilderFactionID();   // Returns "argon" (first = primary)
+  $ship->getBuilderFactionIDs();  // Returns ["argon", "teladi"]
+  ```
+
+**Field Naming:**
+- Single-value key (deprecated): `builderFactionID`, `makerRace`
+- Multi-value key (current): `builderFactionIDs`, `makerRaces` (plural)
+- Internal storage: `private array $builderFactionIDs` (typed as `string[]`)
+
+**API Requirements:**
+- **MUST** preserve backward-compatible single-value getter (returns first element)
+- **MUST** provide new multi-value getter returning `string[]`
+- **MUST** provide entity array getter (e.g., `getBuilderFactions(): FactionDef[]`)
+- **MUST** provide `hasMultiple*(): bool` predicate
+
+**Format Migration:**
+- `fromArray()` MUST handle:
+  1. New format: `builderFactionIDs: ["argon", "teladi"]`
+  2. Old format (string): `builderFactionID: "argon teladi"` (space-separated)
+  3. Old format (array): `builderFactionID: ["argon", "teladi"]` (intermediate rebuild state)
+- Empty values default to `["generic"]` (Ships/Modules) or `["unknown"]` (Shields/Engines/Weapons)
+
+**Applies To:**
+- Ships: `builderFactionIDs`
+- Modules: `builderFactionIDs`
+- Shields: `makerRaces`
+- Engines: `makerRaces`
+- Weapons: `makerRaces`
+
 ---
 
 ## File I/O Constraints

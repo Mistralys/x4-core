@@ -588,6 +588,7 @@ KEY_LABEL: string = 'label'
 KEY_SIZE: string = 'size'
 KEY_DATA_SOURCE_ID: string = 'dataSourceID'
 KEY_MAKER_RACE: string = 'makerRace'
+KEY_MAKER_RACES: string = 'makerRaces'
 KEY_MK: string = 'mk'
 KEY_VARIANT_ID: string = 'variantID'
 KEY_BOOST_DURATION: string = 'boostDuration'
@@ -619,6 +620,8 @@ getMacroID(): string
 getSize(): string
 getDataSourceID(): string
 getMakerRace(): string
+getMakerRaces(): array // Returns string[]
+hasMultipleMakerRaces(): bool
 getMk(): int
 getBoostDuration(): float
 getBoostRecharge(): float
@@ -916,6 +919,7 @@ KEY_LABEL: string = 'label'
 KEY_SIZE: string = 'size'
 KEY_DATA_SOURCE_ID: string = 'dataSourceID'
 KEY_MAKER_RACE: string = 'makerRace'
+KEY_MAKER_RACES: string = 'makerRaces'
 KEY_MK: string = 'mk'
 KEY_VARIANT_ID: string = 'variantID'
 KEY_WEAPON_SYSTEM: string = 'weaponSystem'
@@ -959,6 +963,8 @@ getBulletClass(): string
 getSize(): string
 getDataSourceID(): string
 getMakerRace(): string
+getMakerRaces(): array // Returns string[]
+hasMultipleMakerRaces(): bool
 getMk(): int
 getWeaponSystem(): string
 getWeaponCategory(): string
@@ -1187,6 +1193,7 @@ KEY_WARE_ID: string = 'wareID'
 KEY_LABEL: string = 'label'
 KEY_SIZE: string = 'size'
 KEY_BUILDER_FACTION_ID: string = 'builderFactionID'
+KEY_BUILDER_FACTION_IDS: string = 'builderFactionIDs'
 KEY_CLASS_ID: string = 'classID'
 KEY_USED_BY: string = 'usedBy'
 KEY_DATA_SOURCE_ID: string = 'dataSourceID'
@@ -1250,6 +1257,9 @@ hasVariants(): bool
 getSize(): ShipSize
 getBuilderFactionID(): string
 getBuilderFaction(): FactionDef
+getBuilderFactionIDs(): array // Returns string[]
+getBuilderFactions(): array // Returns FactionDef[]
+hasMultipleBuilderFactions(): bool
 getClassID(): string
 getClass(): ShipClass
 getDataSourceID(): string
@@ -1348,6 +1358,7 @@ static getInstance(): ShipDefs
 __construct(): void
 getDefaultID(): string
 getDataFile(): JSONFile
+find(string $id): ?ShipDef
 getFactions(): array // Returns FactionDef[]
 findShips(): ShipFinder
 getDataSources(): array // Returns DataSourceDef[]
@@ -1504,6 +1515,7 @@ KEY_LABEL: string = 'label'
 KEY_SIZE: string = 'size'
 KEY_DATA_SOURCE_ID: string = 'dataSourceID'
 KEY_MAKER_RACE: string = 'makerRace'
+KEY_MAKER_RACES: string = 'makerRaces'
 KEY_MK: string = 'mk'
 KEY_VARIANT_ID: string = 'variantID'
 KEY_SHIELD_TYPE: string = 'shieldType'
@@ -1526,6 +1538,8 @@ getMacroID(): string
 getSize(): string
 getDataSourceID(): string
 getMakerRace(): string
+getMakerRaces(): array // Returns string[]
+hasMultipleMakerRaces(): bool
 getMk(): int
 getShieldType(): string
 getRechargeMax(): float
@@ -1775,6 +1789,7 @@ Module definition.
 ```php
 KEY_CATEGORY: string = 'category'
 KEY_BUILDER_FACTION_ID: string = 'builderFactionID'
+KEY_BUILDER_FACTION_IDS: string = 'builderFactionIDs'
 KEY_REQUIRED_WORKFORCE: string = 'requiredWorkforce'
 KEY_WARES_PRODUCED: string = 'waresProduced'
 // ... (additional key constants)
@@ -1800,6 +1815,9 @@ getCategoryID(): string
 getCategory(): ModuleCategory
 getBuilderFaction(): FactionDef
 getBuilderFactionID(): string
+getBuilderFactionIDs(): array // Returns string[]
+getBuilderFactions(): array // Returns FactionDef[]
+hasMultipleBuilderFactions(): bool
 isProduction(): bool
 getProducedWares(): array // Returns string[]
 getWareID(): string

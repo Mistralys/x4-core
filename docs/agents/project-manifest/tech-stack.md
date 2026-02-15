@@ -180,6 +180,107 @@ XML processing uses extended wrappers:
 - Provides fluent finder interfaces (`byTagName()`, `bySelector()`)
 - Uses Symfony CSS Selector for jQuery-like queries
 
+### 9. Multi-Value Faction/Race Pattern
+
+Game entities support multiple builder factions or maker races (e.g., ships built by multiple factions like "argon teladi"):
+
+**Pattern Components:**
+
+1. **Internal Storage**: `string[]` instead of single `string`
+2. **New JSON Key**: Plural form (`builderFactionIDs`, `makerRaces`) for array storage
+3. **Backward-Compatible API**: Original singular getter returns first element
+4. **New API Methods**:
+   - `get*IDs(): string[]` - Returns array of all IDs
+   - `get*s(): EntityDef[]` - Returns array of all entity objects
+   - `hasMultiple*(): bool` - Predicate for multi-value entries
+5. **Format Migration**: `fromArray()` handles both old (string) and new (array) formats, including space-separated values in old key
+6. **Finder Integration**: Uses `array_intersect()` for matching any faction/race
+
+**Implementation Pattern:**
+
+```php
+// Entity Definition (ShipDef, ModuleDef, ShieldDef, EngineDef, WeaponDef)
+class ShipDef {
+    const KEY_BUILDER_FACTION_IDS = 'builderFactionIDs';  // New plural key
+    private array $builderFactionIDs;  // Internal storage
+    
+    // Backward-compatible (returns first)
+    public function getBuilderFactionID(): string { 
+        return $this->builderFactionIDs[0]; 
+    }
+    
+    // New multi-value API
+    public function getBuilderFactionIDs(): array { 
+        return $this->builderFactionIDs; 
+    }
+    
+    public function getBuilderFactions(): array {
+        return array_map(
+            fn($id) => FactionDefs::getInstance()->getByID($id),
+            $this->builderFactionIDs
+        );
+    }
+    
+    public function hasMultipleBuilderFactions(): bool {
+        return count($this->builderFactionIDs) > 1;
+    }
+    
+    // Format migration in fromArray()
+    public static function fromArray(array $data): self {
+        // Try new format first
+        $factionIDs = $data[self::KEY_BUILDER_FACTION_IDS] ?? null;
+        
+        // Fallback to old format
+        if ($factionIDs === null && isset($data[self::KEY_BUILDER_FACTION_ID])) {
+            $old = $data[self::KEY_BUILDER_FACTION_ID];
+            // Handle both string and array in old key
+            $factionIDs = is_array($old) ? $old : explode(' ', $old);
+        }
+        
+        // Default to generic if empty
+        if (empty($factionIDs)) {
+            $factionIDs = [KnownFactions::FACTION_GENERIC];
+        }
+        
+        return new self(...$factionIDs);
+    }
+}
+
+// Finder Integration
+class ShipFinder {
+    private function isMatch(ShipDef $ship): bool {
+        if (!empty($this->builderFactions)) {
+            $shipFactions = $ship->getBuilderFactionIDs();
+            // Match if ANY faction matches (intersection)
+            if (empty(array_intersect($shipFactions, $this->builderFactions))) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+// Extractor (parses space-separated values from XML)
+class ShipsExtractor {
+    private function resolveFaction(string $makerrace): array {
+        return explode(' ', $makerrace);  // Returns string[]
+    }
+}
+```
+
+**Applied To:**
+- **Ships**: `builderFactionIDs` / `getBuilderFactionIDs()` / `getBuilderFactions()` / `hasMultipleBuilderFactions()`
+- **Modules**: Same as Ships
+- **Shields**: `makerRaces` / `getMakerRaces()` / `hasMultipleMakerRaces()`
+- **Engines**: Same as Shields
+- **Weapons**: Same as Shields
+
+**Key Design Decisions:**
+- **Primary = First**: When only one value needed, first element is "primary" (backward compatibility)
+- **Space-Separated Parsing**: Game XML uses space-separated values (e.g., `makerrace="argon teladi"`)
+- **Default Fallback**: Empty values default to `generic` (Ships/Modules) or `unknown` (Shields/Engines/Weapons)
+- **No Breaking Changes**: Original API preserved, new methods added
+
 ## Data Storage
 
 ### JSON Data Files

@@ -471,7 +471,7 @@ class EngineMacroExtractor
             EngineDef::KEY_LABEL => $this->ware->getLabel(),
             EngineDef::KEY_SIZE => $this->ware->getSize(),
             EngineDef::KEY_DATA_SOURCE_ID => $this->ware->getDataSourceID(),
-            EngineDef::KEY_MAKER_RACE => $this->resolveMakerRace(),
+            EngineDef::KEY_MAKER_RACES => $this->resolveMakerRace(),
             EngineDef::KEY_MK => $this->resolveMk(),
             EngineDef::KEY_VARIANT_ID => (string)$this->ware->getVariantID(),
             
@@ -503,16 +503,24 @@ class EngineMacroExtractor
         );
     }
 
-    private function resolveMakerRace(): string
+    /**
+     * Resolves the maker race(s) from the identification tag.
+     * Returns an array to support multi-race entries (e.g., "argon teladi").
+     * 
+     * @return string[] Array of race IDs
+     */
+    private function resolveMakerRace(): array
     {
         $el = $this->tagIdentification();
         if ($el) {
             $race = $el->getAttribute('makerrace');
             if (!empty($race)) {
-                return $race;
+                // Split space-separated values (e.g., "argon teladi" → ["argon", "teladi"])
+                return explode(' ', $race);
             }
         }
-        return 'unknown';
+        // Default to 'unknown' for equipment without maker race
+        return ['unknown'];
     }
 
     private function resolveMk(): int

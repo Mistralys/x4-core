@@ -338,12 +338,15 @@ composer build
             │
             ├─→ extractEngines()
             │       └─→ Parse engines from wares → engines.json
+            │               └─→ Resolve makerRace as array (space-separated)
             │
             ├─→ extractShields()
             │       └─→ Parse shields from wares → shields.json
+            │               └─→ Resolve makerRace as array (space-separated)
             │
             ├─→ extractModules()
             │       └─→ Parse modules → modules.json
+            │               └─→ Resolve builderFaction as array (space-separated)
             │
             ├─→ extractBlueprints()
             │       └─→ Parse blueprints → blueprints.json
@@ -353,9 +356,11 @@ composer build
                             ├─→ Extract physics (drag, inertia, jerk, accfactors)
                             │   └─→ Uses BaseExtractor::resolveNestedPropertyAttribute()
                             │       to extract nested <property> elements with attributes
-                            └─→ Resolve storage macros → cargoCapacity + cargoType
-                                └─→ Uses str_starts_with($ref, 'con_storage') for
-                                    precise matching of X4's cargo storage connections
+                            ├─→ Resolve storage macros → cargoCapacity + cargoType
+                            │   └─→ Uses str_starts_with($ref, 'con_storage') for
+                            │       precise matching of X4's cargo storage connections
+                            └─→ Resolve builderFaction as array (space-separated)
+                                └─→ Handles multi-faction entries like "argon teladi"
 ```
 
 **Key Points:**
@@ -363,6 +368,7 @@ composer build
 - Order matters (macros before wares, wares before ships)
 - Each step is idempotent
 - Can run individual extractors
+- **Multi-faction/race support**: Extractors parse space-separated values from XML (e.g., `makerrace="argon teladi"`) and store as arrays in JSON (`builderFactionIDs: ["argon", "teladi"]` or `makerRaces: ["argon", "teladi"]`)
 
 ---
 
