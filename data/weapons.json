@@ -6,7 +6,7 @@
         "label": "ARG L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -46,7 +46,7 @@
         "label": "ARG L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -86,7 +86,7 @@
         "label": "ARG L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -126,7 +126,7 @@
         "label": "ARG L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -166,7 +166,7 @@
         "label": "ARG L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -206,7 +206,7 @@
         "label": "ARG L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -246,7 +246,7 @@
         "label": "ARG M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -286,7 +286,7 @@
         "label": "ARG M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -326,7 +326,7 @@
         "label": "ARG M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -366,7 +366,7 @@
         "label": "ARG M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -406,7 +406,7 @@
         "label": "ARG M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -446,7 +446,7 @@
         "label": "ARG M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -486,7 +486,7 @@
         "label": "ARG M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -526,7 +526,7 @@
         "label": "ARG M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -566,7 +566,7 @@
         "label": "ARG M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -606,7 +606,7 @@
         "label": "ARG M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -646,7 +646,7 @@
         "label": "ARG M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -686,7 +686,7 @@
         "label": "ARG M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -726,7 +726,7 @@
         "label": "ARG M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -766,7 +766,7 @@
         "label": "ARG M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -806,7 +806,7 @@
         "label": "ARG M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -846,7 +846,7 @@
         "label": "ARG M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -886,7 +886,7 @@
         "label": "ARG M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -926,7 +926,7 @@
         "label": "ARG M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -966,7 +966,7 @@
         "label": "BOR L Ion Net Launcher Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1006,7 +1006,7 @@
         "label": "BOR L Ion Flak Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1046,7 +1046,7 @@
         "label": "BOR L Phase Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1086,7 +1086,7 @@
         "label": "BOR L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1126,7 +1126,7 @@
         "label": "BOR M Arc Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1166,7 +1166,7 @@
         "label": "BOR M Arc Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1206,7 +1206,7 @@
         "label": "BOR M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1246,7 +1246,7 @@
         "label": "BOR M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1286,7 +1286,7 @@
         "label": "BOR M Phase Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1326,7 +1326,7 @@
         "label": "BOR M Phase Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1366,7 +1366,7 @@
         "label": "BOR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1406,7 +1406,7 @@
         "label": "BOR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1446,7 +1446,7 @@
         "label": "BOR M Ion Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1486,7 +1486,7 @@
         "label": "BOR M Ion Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -1526,7 +1526,7 @@
         "label": "TEL M Distortion Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -1566,7 +1566,7 @@
         "label": "M Autocannon Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -1606,7 +1606,7 @@
         "label": "Scrap Tractor",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -1646,7 +1646,7 @@
         "label": "ARG M Scalar Aperture Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -1686,7 +1686,7 @@
         "label": "Astrid M Turret",
         "size": "m",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -1726,7 +1726,7 @@
         "label": "KHA L Kyon Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "khaak"
         ],
         "mk": 1,
@@ -1766,7 +1766,7 @@
         "label": "KHA M Kyon Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "khaak"
         ],
         "mk": 1,
@@ -1806,7 +1806,7 @@
         "label": "PAR L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -1846,7 +1846,7 @@
         "label": "PAR L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -1886,7 +1886,7 @@
         "label": "PAR L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -1926,7 +1926,7 @@
         "label": "PAR L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -1966,7 +1966,7 @@
         "label": "PAR L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2006,7 +2006,7 @@
         "label": "PAR L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2046,7 +2046,7 @@
         "label": "PAR M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2086,7 +2086,7 @@
         "label": "PAR M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2126,7 +2126,7 @@
         "label": "PAR M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2166,7 +2166,7 @@
         "label": "PAR M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2206,7 +2206,7 @@
         "label": "PAR M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2246,7 +2246,7 @@
         "label": "PAR M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2286,7 +2286,7 @@
         "label": "PAR M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2326,7 +2326,7 @@
         "label": "PAR M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2366,7 +2366,7 @@
         "label": "PAR M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2406,7 +2406,7 @@
         "label": "PAR M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2446,7 +2446,7 @@
         "label": "PAR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2486,7 +2486,7 @@
         "label": "PAR M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2526,7 +2526,7 @@
         "label": "PAR M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2566,7 +2566,7 @@
         "label": "PAR M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2606,7 +2606,7 @@
         "label": "PAR M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2646,7 +2646,7 @@
         "label": "PAR M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -2686,7 +2686,7 @@
         "label": "Erlking L Turret",
         "size": "l",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -2726,7 +2726,7 @@
         "label": "Erlking M Turret",
         "size": "m",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -2766,7 +2766,7 @@
         "label": "SPL L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -2806,7 +2806,7 @@
         "label": "SPL L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -2846,7 +2846,7 @@
         "label": "SPL L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -2886,7 +2886,7 @@
         "label": "SPL L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -2926,7 +2926,7 @@
         "label": "SPL L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -2966,7 +2966,7 @@
         "label": "SPL L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3006,7 +3006,7 @@
         "label": "SPL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3046,7 +3046,7 @@
         "label": "SPL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3086,7 +3086,7 @@
         "label": "SPL M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3126,7 +3126,7 @@
         "label": "SPL M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3166,7 +3166,7 @@
         "label": "SPL M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3206,7 +3206,7 @@
         "label": "SPL M Flak Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3246,7 +3246,7 @@
         "label": "SPL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3286,7 +3286,7 @@
         "label": "SPL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3326,7 +3326,7 @@
         "label": "SPL M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3366,7 +3366,7 @@
         "label": "SPL M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3406,7 +3406,7 @@
         "label": "SPL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3446,7 +3446,7 @@
         "label": "SPL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3486,7 +3486,7 @@
         "label": "SPL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3526,7 +3526,7 @@
         "label": "SPL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3566,7 +3566,7 @@
         "label": "SPL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3606,7 +3606,7 @@
         "label": "SPL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3646,7 +3646,7 @@
         "label": "SPL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3686,7 +3686,7 @@
         "label": "SPL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -3726,7 +3726,7 @@
         "label": "TEL L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -3766,7 +3766,7 @@
         "label": "TEL L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -3806,7 +3806,7 @@
         "label": "TEL L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -3846,7 +3846,7 @@
         "label": "TEL L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -3886,7 +3886,7 @@
         "label": "TEL L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -3926,7 +3926,7 @@
         "label": "TEL L Plasma Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -3966,7 +3966,7 @@
         "label": "TEL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4006,7 +4006,7 @@
         "label": "TEL M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4046,7 +4046,7 @@
         "label": "TEL M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4086,7 +4086,7 @@
         "label": "TEL M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4126,7 +4126,7 @@
         "label": "TEL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4166,7 +4166,7 @@
         "label": "TEL M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4206,7 +4206,7 @@
         "label": "TEL M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4246,7 +4246,7 @@
         "label": "TEL M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4286,7 +4286,7 @@
         "label": "TEL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4326,7 +4326,7 @@
         "label": "TEL M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4366,7 +4366,7 @@
         "label": "TEL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4406,7 +4406,7 @@
         "label": "TEL M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4446,7 +4446,7 @@
         "label": "TEL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4486,7 +4486,7 @@
         "label": "TEL M Plasma Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4526,7 +4526,7 @@
         "label": "TEL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4566,7 +4566,7 @@
         "label": "TEL M Shard Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -4606,7 +4606,7 @@
         "label": "TER L Beam Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4646,7 +4646,7 @@
         "label": "TER L Dumbfire Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4686,7 +4686,7 @@
         "label": "TER L Bolt Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4726,7 +4726,7 @@
         "label": "TER L Tracking Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4766,7 +4766,7 @@
         "label": "TER L Pulse Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4806,7 +4806,7 @@
         "label": "TER L Mining Turret Mk1",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4846,7 +4846,7 @@
         "label": "TER M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4886,7 +4886,7 @@
         "label": "TER M Beam Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4926,7 +4926,7 @@
         "label": "TER M Dumbfire Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -4966,7 +4966,7 @@
         "label": "TER M Dumbfire Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5006,7 +5006,7 @@
         "label": "TER M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5046,7 +5046,7 @@
         "label": "TER M Bolt Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5086,7 +5086,7 @@
         "label": "TER M Tracking Turret Mk1",
         "size": "",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5126,7 +5126,7 @@
         "label": "TER M Tracking Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5166,7 +5166,7 @@
         "label": "TER M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5206,7 +5206,7 @@
         "label": "TER M Pulse Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5246,7 +5246,7 @@
         "label": "TER M Electromagnetic Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5286,7 +5286,7 @@
         "label": "TER M Electromagnetic Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5326,7 +5326,7 @@
         "label": "TER M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5366,7 +5366,7 @@
         "label": "TER M Mining Turret Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5406,7 +5406,7 @@
         "label": "XEN L Graviton Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5446,7 +5446,7 @@
         "label": "XEN L Seismic Charge Turret Mk1",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5486,7 +5486,7 @@
         "label": "XEN M Positron Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5526,7 +5526,7 @@
         "label": "XEN M Needler Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5566,7 +5566,7 @@
         "label": "XEN M Needler Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5606,7 +5606,7 @@
         "label": "XEN M Impulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5646,7 +5646,7 @@
         "label": "XEN M Impulse Turret Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5686,7 +5686,7 @@
         "label": "XEN XL Omega Turret Mk1",
         "size": "xl",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -5726,7 +5726,7 @@
         "label": "ARG Behemoth Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -5766,7 +5766,7 @@
         "label": "ARG M Ion Blaster Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -5806,7 +5806,7 @@
         "label": "ARG M Ion Blaster Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 2,
@@ -5846,7 +5846,7 @@
         "label": "ARG S Ion Blaster Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -5886,7 +5886,7 @@
         "label": "ARG S Ion Blaster Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 2,
@@ -5926,7 +5926,7 @@
         "label": "ATF XL Main Battery",
         "size": "xl",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -5966,7 +5966,7 @@
         "label": "BOR Ray Ion Projector",
         "size": "l",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6006,7 +6006,7 @@
         "label": "BOR M Dumbfire Launcher Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6046,7 +6046,7 @@
         "label": "BOR M Ion Atomiser Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6086,7 +6086,7 @@
         "label": "BOR M Tracking Launcher Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6126,7 +6126,7 @@
         "label": "BOR M Phase Cannon Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6166,7 +6166,7 @@
         "label": "BOR M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6206,7 +6206,7 @@
         "label": "BOR M Ion Pulse Railgun Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6246,7 +6246,7 @@
         "label": "BOR M Torpedo Launcher Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6286,7 +6286,7 @@
         "label": "BOR S Arc Gun Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6326,7 +6326,7 @@
         "label": "BOR S Dumbfire Launcher Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6366,7 +6366,7 @@
         "label": "BOR S Ion Gatling Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6406,7 +6406,7 @@
         "label": "BOR S Tracking Launcher Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6446,7 +6446,7 @@
         "label": "BOR S Phase Gun Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6486,7 +6486,7 @@
         "label": "BOR S Mining Drill Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6526,7 +6526,7 @@
         "label": "BOR S Torpedo Launcher Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_boron",
-        "makerRace": [
+        "makerRaces": [
             "boron"
         ],
         "mk": 1,
@@ -6566,7 +6566,7 @@
         "label": "M Beam Emitter Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -6606,7 +6606,7 @@
         "label": "M Beam Emitter Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -6646,7 +6646,7 @@
         "label": "M Heavy Distortion Pulsor Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -6686,7 +6686,7 @@
         "label": "M Dumbfire Launcher Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -6726,7 +6726,7 @@
         "label": "M Dumbfire Launcher Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -6766,7 +6766,7 @@
         "label": "M Bolt Repeater Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -6806,7 +6806,7 @@
         "label": "M Bolt Repeater Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -6846,7 +6846,7 @@
         "label": "M Tracking Launcher Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -6886,7 +6886,7 @@
         "label": "M Tracking Launcher Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -6926,7 +6926,7 @@
         "label": "M Pulse Laser Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -6966,7 +6966,7 @@
         "label": "M Pulse Laser Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7006,7 +7006,7 @@
         "label": "M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7046,7 +7046,7 @@
         "label": "M Mining Drill Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7086,7 +7086,7 @@
         "label": "M Plasma Cannon Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7126,7 +7126,7 @@
         "label": "M Plasma Cannon Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7166,7 +7166,7 @@
         "label": "M Heavy Scalar Aperture Emitter Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_mini_02",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -7206,7 +7206,7 @@
         "label": "M Shard Battery Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7246,7 +7246,7 @@
         "label": "M Shard Battery Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7286,7 +7286,7 @@
         "label": "M Torpedo Launcher Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7326,7 +7326,7 @@
         "label": "M Torpedo Launcher Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7366,7 +7366,7 @@
         "label": "Astrid Primary Weapon",
         "size": "m",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -7406,7 +7406,7 @@
         "label": "S Beam Emitter Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7446,7 +7446,7 @@
         "label": "S Beam Emitter Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7486,7 +7486,7 @@
         "label": "S Burst Ray Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7526,7 +7526,7 @@
         "label": "S Burst Ray Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7566,7 +7566,7 @@
         "label": "S Blast Mortar Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7606,7 +7606,7 @@
         "label": "S Blast Mortar Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7646,7 +7646,7 @@
         "label": "S Dumbfire Launcher Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7686,7 +7686,7 @@
         "label": "S Dumbfire Launcher Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7726,7 +7726,7 @@
         "label": "S Bolt Repeater Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7766,7 +7766,7 @@
         "label": "S Bolt Repeater Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7806,7 +7806,7 @@
         "label": "S Tracking Launcher Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7846,7 +7846,7 @@
         "label": "S Tracking Launcher Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7886,7 +7886,7 @@
         "label": "S Pulse Laser Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -7926,7 +7926,7 @@
         "label": "S Pulse Laser Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -7966,7 +7966,7 @@
         "label": "S Mining Drill Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8006,7 +8006,7 @@
         "label": "S Mining Drill Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -8046,7 +8046,7 @@
         "label": "S Plasma Cannon Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8086,7 +8086,7 @@
         "label": "S Plasma Cannon Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -8126,7 +8126,7 @@
         "label": "S Shard Battery Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8166,7 +8166,7 @@
         "label": "S Shard Battery Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -8206,7 +8206,7 @@
         "label": "S Torpedo Launcher Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8246,7 +8246,7 @@
         "label": "S Torpedo Launcher Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 2,
@@ -8286,7 +8286,7 @@
         "label": "Bomb Launcher",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8326,7 +8326,7 @@
         "label": "Hand Laser",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8366,7 +8366,7 @@
         "label": "Personal Blaster",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8406,7 +8406,7 @@
         "label": "Sporting Rifle",
         "size": "",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8446,7 +8446,7 @@
         "label": "Repair Laser",
         "size": "",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8486,7 +8486,7 @@
         "label": "KHA Ravager Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8526,7 +8526,7 @@
         "label": "KHA M Kyon Emitter Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "khaak"
         ],
         "mk": 1,
@@ -8566,7 +8566,7 @@
         "label": "KHA S Kyon Emitter Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "khaak"
         ],
         "mk": 1,
@@ -8606,7 +8606,7 @@
         "label": "KHA Obliterator Main Battery",
         "size": "xl",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "unknown"
         ],
         "mk": 1,
@@ -8646,7 +8646,7 @@
         "label": "PAR Odysseus Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -8686,7 +8686,7 @@
         "label": "PAR Hyperion Main Battery",
         "size": "l",
         "dataSourceID": "ego_dlc_mini_01",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -8726,7 +8726,7 @@
         "label": "PAR M Mass Driver Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -8766,7 +8766,7 @@
         "label": "PAR M Mass Driver Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 2,
@@ -8806,7 +8806,7 @@
         "label": "PAR S Mass Driver Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 1,
@@ -8846,7 +8846,7 @@
         "label": "PAR S Mass Driver Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "paranid"
         ],
         "mk": 2,
@@ -8886,7 +8886,7 @@
         "label": "Erlking Main Battery",
         "size": "xl",
         "dataSourceID": "ego_dlc_pirate",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -8926,7 +8926,7 @@
         "label": "SPL Rattlesnake Main Battery",
         "size": "l",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -8966,7 +8966,7 @@
         "label": "SPL M Neutron Gatling Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9006,7 +9006,7 @@
         "label": "SPL M Neutron Gatling Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9046,7 +9046,7 @@
         "label": "SPL M Boson Lance Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9086,7 +9086,7 @@
         "label": "SPL M Boson Lance Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9126,7 +9126,7 @@
         "label": "SPL M Tau Accelerator Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9166,7 +9166,7 @@
         "label": "SPL M Tau Accelerator Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9206,7 +9206,7 @@
         "label": "SPL M Thermal Disintegrator Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9246,7 +9246,7 @@
         "label": "SPL M Thermal Disintegrator Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9286,7 +9286,7 @@
         "label": "SPL S Neutron Gatling Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9326,7 +9326,7 @@
         "label": "SPL S Neutron Gatling Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9366,7 +9366,7 @@
         "label": "SPL S Boson Lance Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9406,7 +9406,7 @@
         "label": "SPL S Boson Lance Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9446,7 +9446,7 @@
         "label": "SPL S Tau Accelerator Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9486,7 +9486,7 @@
         "label": "SPL S Tau Accelerator Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9526,7 +9526,7 @@
         "label": "SPL S Thermal Disintegrator Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 1,
@@ -9566,7 +9566,7 @@
         "label": "SPL S Thermal Disintegrator Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_split",
-        "makerRace": [
+        "makerRaces": [
             "split"
         ],
         "mk": 2,
@@ -9606,7 +9606,7 @@
         "label": "TEL Phoenix Main Battery",
         "size": "l",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -9646,7 +9646,7 @@
         "label": "TEL M Muon Charger Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -9686,7 +9686,7 @@
         "label": "TEL M Muon Charger Mk2",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 2,
@@ -9726,7 +9726,7 @@
         "label": "TEL S Muon Charger Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 1,
@@ -9766,7 +9766,7 @@
         "label": "TEL S Muon Charger Mk2",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "teladi"
         ],
         "mk": 2,
@@ -9806,7 +9806,7 @@
         "label": "Terran Main Battery",
         "size": "l",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -9846,7 +9846,7 @@
         "label": "TER Sapporo Launcher Array",
         "size": "l",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -9886,7 +9886,7 @@
         "label": "TER M Meson Stream Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -9926,7 +9926,7 @@
         "label": "TER M Meson Stream Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 2,
@@ -9966,7 +9966,7 @@
         "label": "TER M Proton Barrage Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -10006,7 +10006,7 @@
         "label": "TER M Proton Barrage Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 2,
@@ -10046,7 +10046,7 @@
         "label": "TER M Pulse Laser Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -10086,7 +10086,7 @@
         "label": "TER M Pulse Laser Mk2",
         "size": "m",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 2,
@@ -10126,7 +10126,7 @@
         "label": "TER M Electromagnetic Cannon Mk1",
         "size": "m",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -10166,7 +10166,7 @@
         "label": "TER S Meson Stream Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -10206,7 +10206,7 @@
         "label": "TER S Meson Stream Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 2,
@@ -10246,7 +10246,7 @@
         "label": "TER S Proton Barrage Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -10286,7 +10286,7 @@
         "label": "TER S Proton Barrage Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 2,
@@ -10326,7 +10326,7 @@
         "label": "TER S Pulse Laser Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -10366,7 +10366,7 @@
         "label": "TER S Pulse Laser Mk2",
         "size": "s",
         "dataSourceID": "ego_dlc_terran",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 2,
@@ -10406,7 +10406,7 @@
         "label": "TER S Electromagnetic Gun Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "terran"
         ],
         "mk": 1,
@@ -10446,7 +10446,7 @@
         "label": "ARG S Gamma HEPT Mk1",
         "size": "s",
         "dataSourceID": "ego_dlc_timelines",
-        "makerRace": [
+        "makerRaces": [
             "argon"
         ],
         "mk": 1,
@@ -10486,7 +10486,7 @@
         "label": "XEN M Plasma Cutter Beam Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -10526,7 +10526,7 @@
         "label": "XEN M Impulse Projector Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -10566,7 +10566,7 @@
         "label": "XEN M Impulse Projector Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -10606,7 +10606,7 @@
         "label": "XEN M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -10646,7 +10646,7 @@
         "label": "XEN M Mining Drill Mk1",
         "size": "m",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -10686,7 +10686,7 @@
         "label": "XEN S Needler Gun Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,
@@ -10726,7 +10726,7 @@
         "label": "XEN S Impulse Projector Mk1",
         "size": "s",
         "dataSourceID": "vanilla",
-        "makerRace": [
+        "makerRaces": [
             "xenon"
         ],
         "mk": 1,

@@ -5,7 +5,7 @@
         "label": "Argon Arc Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 290000,
@@ -24,7 +24,7 @@
         "label": "Argon Base Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 150000,
@@ -43,7 +43,7 @@
         "label": "Argon Base Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 237000,
@@ -62,7 +62,7 @@
         "label": "Argon Base Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 280000,
@@ -81,7 +81,7 @@
         "label": "Argon Cross Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 120000,
@@ -100,7 +100,7 @@
         "label": "Argon Cross Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 110000,
@@ -119,7 +119,7 @@
         "label": "Argon Cross Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 100000,
@@ -138,7 +138,7 @@
         "label": "Argon T Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 90000,
@@ -157,7 +157,7 @@
         "label": "Argon L Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 80000,
@@ -176,7 +176,7 @@
         "label": "Argon Vertical Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 79000,
@@ -195,7 +195,7 @@
         "label": "Argon Vertical Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 143000,
@@ -214,7 +214,7 @@
         "label": "Argon Administrative Centre",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 512000,
@@ -233,7 +233,7 @@
         "label": "Argon Disc Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 197400,
@@ -252,7 +252,7 @@
         "label": "Argon Bridge Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 148800,
@@ -271,7 +271,7 @@
         "label": "1M6S Standard Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 240000,
@@ -290,7 +290,7 @@
         "label": "1M6S Luxury Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 275000,
@@ -309,7 +309,7 @@
         "label": "1M6S Basic Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 210000,
@@ -328,7 +328,7 @@
         "label": "3M6S Standard Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 495000,
@@ -347,7 +347,7 @@
         "label": "3M6S Luxury Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 530000,
@@ -366,7 +366,7 @@
         "label": "3M6S Basic Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 460000,
@@ -385,7 +385,7 @@
         "label": "8M Luxury Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1100000,
@@ -404,7 +404,7 @@
         "label": "Argon L Habitat",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 500000,
@@ -423,7 +423,7 @@
         "label": "Argon M Habitat",
         "category": "habitation",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 250000,
@@ -442,7 +442,7 @@
         "label": "Argon S Habitat",
         "category": "habitation",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 120000,
@@ -461,7 +461,7 @@
         "label": "Argon 3-Dock T Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 750000,
@@ -480,7 +480,7 @@
         "label": "Argon 1-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 250000,
@@ -499,7 +499,7 @@
         "label": "Argon 3-Dock E Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -518,7 +518,7 @@
         "label": "Argon 1-Dock Short Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 180000,
@@ -537,7 +537,7 @@
         "label": "Argon Trading Station 1-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 100000,
@@ -556,7 +556,7 @@
         "label": "Food Ration Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 133000,
@@ -577,7 +577,7 @@
         "label": "Meat Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 198000,
@@ -598,7 +598,7 @@
         "label": "Argon Medical Supply Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 197000,
@@ -619,7 +619,7 @@
         "label": "Spacefuel Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 148000,
@@ -640,7 +640,7 @@
         "label": "Wheat Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 262000,
@@ -661,7 +661,7 @@
         "label": "Wide Area Sensor Array",
         "category": "radar",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 110000,
@@ -680,7 +680,7 @@
         "label": "Argon L Container Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 565000,
@@ -699,7 +699,7 @@
         "label": "Argon M Container Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 285000,
@@ -718,7 +718,7 @@
         "label": "Argon S Container Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 114000,
@@ -737,7 +737,7 @@
         "label": "Argon L Liquid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 565000,
@@ -756,7 +756,7 @@
         "label": "Argon M Liquid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 285000,
@@ -775,7 +775,7 @@
         "label": "Argon S Liquid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 114000,
@@ -794,7 +794,7 @@
         "label": "Argon L Solid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 565000,
@@ -813,7 +813,7 @@
         "label": "Argon M Solid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 285000,
@@ -832,7 +832,7 @@
         "label": "Argon S Solid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 114000,
@@ -851,7 +851,7 @@
         "label": "Argon L Universal Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 643000,
@@ -870,7 +870,7 @@
         "label": "Boron S\/M Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 245000,
@@ -889,7 +889,7 @@
         "label": "Boron L Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 450000,
@@ -908,7 +908,7 @@
         "label": "Boron XL Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 780000,
@@ -927,7 +927,7 @@
         "label": "Boron Base Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 74000,
@@ -946,7 +946,7 @@
         "label": "Boron Base Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 140000,
@@ -965,7 +965,7 @@
         "label": "Boron Base Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 213000,
@@ -984,7 +984,7 @@
         "label": "Boron Base Connection Structure 04",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 225000,
@@ -1003,7 +1003,7 @@
         "label": "Boron Base Connection Structure 05",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 260000,
@@ -1022,7 +1022,7 @@
         "label": "Boron Y Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 110000,
@@ -1041,7 +1041,7 @@
         "label": "Boron Hex Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 165000,
@@ -1060,7 +1060,7 @@
         "label": "Boron Vertical Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 68000,
@@ -1079,7 +1079,7 @@
         "label": "Boron Vertical Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 132000,
@@ -1098,7 +1098,7 @@
         "label": "Boron Administrative Centre",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 435000,
@@ -1117,7 +1117,7 @@
         "label": "Boron Disc Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 387000,
@@ -1136,7 +1136,7 @@
         "label": "Boron Bridge Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 295000,
@@ -1155,7 +1155,7 @@
         "label": "Boron 4M14S Luxury Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 580000,
@@ -1174,7 +1174,7 @@
         "label": "Boron S\/M Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 225000,
@@ -1193,7 +1193,7 @@
         "label": "Boron L Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 370000,
@@ -1212,7 +1212,7 @@
         "label": "Boron XL Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 715000,
@@ -1231,7 +1231,7 @@
         "label": "Boron L Oasis",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 480000,
@@ -1250,7 +1250,7 @@
         "label": "Boron M Oasis",
         "category": "habitation",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 260000,
@@ -1269,7 +1269,7 @@
         "label": "Boron S Oasis",
         "category": "habitation",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 140000,
@@ -1288,7 +1288,7 @@
         "label": "Boron 4-Dock T Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 850000,
@@ -1307,7 +1307,7 @@
         "label": "Boron 1-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 325000,
@@ -1326,7 +1326,7 @@
         "label": "Boron 3-Dock E Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 1250000,
@@ -1345,7 +1345,7 @@
         "label": "Boron Trading Station 4-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 575000,
@@ -1364,7 +1364,7 @@
         "label": "Boron Trading Station Hexa-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 2000000,
@@ -1383,7 +1383,7 @@
         "label": "BoFu Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 165000,
@@ -1404,7 +1404,7 @@
         "label": "BoGas Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 185000,
@@ -1425,7 +1425,7 @@
         "label": "Boron Medical Supply Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 204000,
@@ -1446,7 +1446,7 @@
         "label": "Plankton Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 135000,
@@ -1467,7 +1467,7 @@
         "label": "Boron L Container Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 775000,
@@ -1486,7 +1486,7 @@
         "label": "Boron M Container Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 315000,
@@ -1505,7 +1505,7 @@
         "label": "Boron S Container Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 135000,
@@ -1524,7 +1524,7 @@
         "label": "Boron L Liquid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 765000,
@@ -1543,7 +1543,7 @@
         "label": "Boron M Liquid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 307000,
@@ -1562,7 +1562,7 @@
         "label": "Boron S Liquid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 126000,
@@ -1581,7 +1581,7 @@
         "label": "Boron L Solid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 769000,
@@ -1600,7 +1600,7 @@
         "label": "Boron M Solid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 311000,
@@ -1619,7 +1619,7 @@
         "label": "Boron S Solid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 132000,
@@ -1638,7 +1638,7 @@
         "label": "Argon Arc Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 178500,
@@ -1657,7 +1657,7 @@
         "label": "Argon Span Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 245500,
@@ -1676,7 +1676,7 @@
         "label": "Argon Span Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 223000,
@@ -1695,7 +1695,7 @@
         "label": "Drill Support Structure",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -1714,7 +1714,7 @@
         "label": "Drill Access Module",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -1733,7 +1733,7 @@
         "label": "Defence Array",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -1752,7 +1752,7 @@
         "label": "S\/M Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 1020000,
@@ -1771,7 +1771,7 @@
         "label": "L Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 324000,
@@ -1790,7 +1790,7 @@
         "label": "M Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 176000,
@@ -1809,7 +1809,7 @@
         "label": "S Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 176000,
@@ -1828,7 +1828,7 @@
         "label": "XL Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 551000,
@@ -1847,7 +1847,7 @@
         "label": "Conservatory Observation Deck",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 170000,
@@ -1866,7 +1866,7 @@
         "label": "Pavilion Observation Deck",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 170000,
@@ -1885,7 +1885,7 @@
         "label": "Penthouse Observation Deck",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 170000,
@@ -1904,7 +1904,7 @@
         "label": "Venture Base Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 237000,
@@ -1923,7 +1923,7 @@
         "label": "Venture Base Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 150000,
@@ -1942,7 +1942,7 @@
         "label": "Venture Base Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 280000,
@@ -1961,7 +1961,7 @@
         "label": "Venture Cross Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 120000,
@@ -1980,7 +1980,7 @@
         "label": "Venture Vertical Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 79000,
@@ -1999,7 +1999,7 @@
         "label": "Venture Vertical Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 143000,
@@ -2018,7 +2018,7 @@
         "label": "S\/M Venture Sendoff Dock",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 920000,
@@ -2037,7 +2037,7 @@
         "label": "L\/XL Venture Sendoff Dock",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 1610000,
@@ -2056,7 +2056,7 @@
         "label": "S\/M Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 1020000,
@@ -2075,7 +2075,7 @@
         "label": "L Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 324000,
@@ -2094,7 +2094,7 @@
         "label": "XL Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 551000,
@@ -2113,7 +2113,7 @@
         "label": "Scrap Processor",
         "category": "processingmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 150000,
@@ -2132,7 +2132,7 @@
         "label": "Advanced Composite Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 197000,
@@ -2153,7 +2153,7 @@
         "label": "Advanced Electronics Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 160000,
@@ -2174,7 +2174,7 @@
         "label": "Antimatter Cell Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 251000,
@@ -2195,7 +2195,7 @@
         "label": "Antimatter Converter Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 216000,
@@ -2216,7 +2216,7 @@
         "label": "Claytronics Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 195000,
@@ -2237,7 +2237,7 @@
         "label": "Drone Component Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 174000,
@@ -2258,7 +2258,7 @@
         "label": "Energy Cell Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 217000,
@@ -2279,7 +2279,7 @@
         "label": "Engine Part Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 120000,
@@ -2300,7 +2300,7 @@
         "label": "Field Coil Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 149000,
@@ -2321,7 +2321,7 @@
         "label": "Graphene Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 190000,
@@ -2342,7 +2342,7 @@
         "label": "Hull Part Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 146000,
@@ -2363,7 +2363,7 @@
         "label": "Microchip Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 199000,
@@ -2384,7 +2384,7 @@
         "label": "Missile Component Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 159000,
@@ -2405,7 +2405,7 @@
         "label": "Plasma Conductor Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 181000,
@@ -2426,7 +2426,7 @@
         "label": "Quantum Tube Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 148000,
@@ -2447,7 +2447,7 @@
         "label": "Refined Metal Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 210000,
@@ -2468,7 +2468,7 @@
         "label": "Scanning Array Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 169000,
@@ -2489,7 +2489,7 @@
         "label": "Scrap Recycler",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 200000,
@@ -2511,7 +2511,7 @@
         "label": "Shield Component Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 191000,
@@ -2532,7 +2532,7 @@
         "label": "Silicon Wafer Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 186000,
@@ -2553,7 +2553,7 @@
         "label": "Smart Chip Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 104000,
@@ -2574,7 +2574,7 @@
         "label": "Spice Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 151000,
@@ -2595,7 +2595,7 @@
         "label": "Superfluid Coolant Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 177000,
@@ -2616,7 +2616,7 @@
         "label": "Turret Component Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 155000,
@@ -2637,7 +2637,7 @@
         "label": "Water Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 203000,
@@ -2658,7 +2658,7 @@
         "label": "Weapon Component Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 208000,
@@ -2679,7 +2679,7 @@
         "label": "Venture Platform",
         "category": "ventureplatform",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 430000,
@@ -2698,7 +2698,7 @@
         "label": "Casino",
         "category": "welfaremodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 250000,
@@ -2717,7 +2717,7 @@
         "label": "Gambling Den",
         "category": "welfaremodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 100000,
@@ -2736,7 +2736,7 @@
         "label": "Argon L Housing Spire",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 430000,
@@ -2755,7 +2755,7 @@
         "label": "Argon XL Housing Spire",
         "category": "habitation",
         "size": "extralarge",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 680000,
@@ -2774,7 +2774,7 @@
         "label": "Dormitory Module",
         "category": "habitation",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -2793,7 +2793,7 @@
         "label": "Dormitory Module",
         "category": "habitation",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -2812,7 +2812,7 @@
         "label": "Half-Ring Dormitory",
         "category": "habitation",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -2831,7 +2831,7 @@
         "label": "Paranid Base Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 110000,
@@ -2850,7 +2850,7 @@
         "label": "Paranid Base Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 230000,
@@ -2869,7 +2869,7 @@
         "label": "Paranid Base Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 370000,
@@ -2888,7 +2888,7 @@
         "label": "Paranid Cross Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 90000,
@@ -2907,7 +2907,7 @@
         "label": "Paranid Cross Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 370000,
@@ -2926,7 +2926,7 @@
         "label": "Paranid Y Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 230000,
@@ -2945,7 +2945,7 @@
         "label": "Paranid Vertical Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 79000,
@@ -2964,7 +2964,7 @@
         "label": "Paranid Vertical Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 143000,
@@ -2983,7 +2983,7 @@
         "label": "Paranid Administrative Centre",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 532000,
@@ -3002,7 +3002,7 @@
         "label": "Paranid Faction Capital",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 1532000,
@@ -3021,7 +3021,7 @@
         "label": "Paranid Disc Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 197400,
@@ -3040,7 +3040,7 @@
         "label": "Paranid Bridge Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 148800,
@@ -3059,7 +3059,7 @@
         "label": "Paranid L Dome",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 600000,
@@ -3078,7 +3078,7 @@
         "label": "Paranid M Dome",
         "category": "habitation",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 250000,
@@ -3097,7 +3097,7 @@
         "label": "Paranid S Dome",
         "category": "habitation",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 120000,
@@ -3116,7 +3116,7 @@
         "label": "Paranid 3-Dock T Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 810000,
@@ -3135,7 +3135,7 @@
         "label": "Paranid 1-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 270000,
@@ -3154,7 +3154,7 @@
         "label": "Paranid 3-Dock E Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 1080000,
@@ -3173,7 +3173,7 @@
         "label": "Maja Dust Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 245000,
@@ -3194,7 +3194,7 @@
         "label": "Maja Snail Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 236000,
@@ -3215,7 +3215,7 @@
         "label": "Paranid Medical Supply Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 197000,
@@ -3236,7 +3236,7 @@
         "label": "Soja Bean Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 259000,
@@ -3257,7 +3257,7 @@
         "label": "Soja Husk Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 218000,
@@ -3278,7 +3278,7 @@
         "label": "Paranid L Container Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 653000,
@@ -3297,7 +3297,7 @@
         "label": "Paranid M Container Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 304000,
@@ -3316,7 +3316,7 @@
         "label": "Paranid S Container Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 133000,
@@ -3335,7 +3335,7 @@
         "label": "Argon L Container Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 739000,
@@ -3354,7 +3354,7 @@
         "label": "Paranid L Liquid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 653000,
@@ -3373,7 +3373,7 @@
         "label": "Paranid M Liquid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 304000,
@@ -3392,7 +3392,7 @@
         "label": "Paranid S Liquid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 133000,
@@ -3411,7 +3411,7 @@
         "label": "Paranid L Solid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 653000,
@@ -3430,7 +3430,7 @@
         "label": "Paranid M Solid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 304000,
@@ -3449,7 +3449,7 @@
         "label": "Paranid S Solid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "paranid"
         ],
         "hull": 133000,
@@ -3468,7 +3468,7 @@
         "label": "Argon L Dormitory",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 500000,
@@ -3487,7 +3487,7 @@
         "label": "Argon M Dormitory",
         "category": "habitation",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 250000,
@@ -3506,7 +3506,7 @@
         "label": "Argon S Dormitory",
         "category": "habitation",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 120000,
@@ -3525,7 +3525,7 @@
         "label": "Protectyon Shield Generator",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "scavenger"
         ],
         "hull": 1000000,
@@ -3544,7 +3544,7 @@
         "label": "Condensate Containment Facility",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "scavenger"
         ],
         "hull": 100000,
@@ -3563,7 +3563,7 @@
         "label": "Unknown Module",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "generic"
         ],
         "hull": 1000000,
@@ -3582,7 +3582,7 @@
         "label": "Split Base Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 150000,
@@ -3601,7 +3601,7 @@
         "label": "Split Base Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 237000,
@@ -3620,7 +3620,7 @@
         "label": "Split Base Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 280000,
@@ -3639,7 +3639,7 @@
         "label": "Split Y Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 120000,
@@ -3658,7 +3658,7 @@
         "label": "Split Vertical Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 79000,
@@ -3677,7 +3677,7 @@
         "label": "Split Vertical Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 143000,
@@ -3696,7 +3696,7 @@
         "label": "Split Administrative Centre",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 520000,
@@ -3715,7 +3715,7 @@
         "label": "Split Disc Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 197400,
@@ -3734,7 +3734,7 @@
         "label": "Split Bridge Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 148800,
@@ -3753,7 +3753,7 @@
         "label": "Split L Parlour",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 500000,
@@ -3772,7 +3772,7 @@
         "label": "Split M Parlour",
         "category": "habitation",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 250000,
@@ -3791,7 +3791,7 @@
         "label": "Split S Parlour",
         "category": "habitation",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 120000,
@@ -3810,7 +3810,7 @@
         "label": "Split 4-Dock T Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 750000,
@@ -3829,7 +3829,7 @@
         "label": "Split 1-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 250000,
@@ -3848,7 +3848,7 @@
         "label": "Split 3-Dock E Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 1000000,
@@ -3867,7 +3867,7 @@
         "label": "Chelt Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 320000,
@@ -3888,7 +3888,7 @@
         "label": "Split Medical Supply Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 197000,
@@ -3909,7 +3909,7 @@
         "label": "Scruffin Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 280000,
@@ -3930,7 +3930,7 @@
         "label": "Split L Container Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 778000,
@@ -3949,7 +3949,7 @@
         "label": "Split M Container Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 345000,
@@ -3968,7 +3968,7 @@
         "label": "Split S Container Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 157000,
@@ -3987,7 +3987,7 @@
         "label": "Split L Liquid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 778000,
@@ -4006,7 +4006,7 @@
         "label": "Split M Liquid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 345000,
@@ -4025,7 +4025,7 @@
         "label": "Split S Liquid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 157000,
@@ -4044,7 +4044,7 @@
         "label": "Split L Solid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 778000,
@@ -4063,7 +4063,7 @@
         "label": "Split M Solid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 345000,
@@ -4082,7 +4082,7 @@
         "label": "Split S Solid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "split"
         ],
         "hull": 157000,
@@ -4101,7 +4101,7 @@
         "label": "Storage Ring",
         "category": "storage",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -4120,7 +4120,7 @@
         "label": "Storage Arm",
         "category": "storage",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -4139,7 +4139,7 @@
         "label": "Storage Arm",
         "category": "storage",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "argon"
         ],
         "hull": 1000000,
@@ -4158,7 +4158,7 @@
         "label": "Teladi Base Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 150000,
@@ -4177,7 +4177,7 @@
         "label": "Teladi Base Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 238000,
@@ -4196,7 +4196,7 @@
         "label": "Teladi Base Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 280000,
@@ -4215,7 +4215,7 @@
         "label": "Teladi Cross Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 120000,
@@ -4234,7 +4234,7 @@
         "label": "Teladi Vertical Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 79000,
@@ -4253,7 +4253,7 @@
         "label": "Teladi Vertical Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 143000,
@@ -4272,7 +4272,7 @@
         "label": "Teladi Administrative Centre",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 516000,
@@ -4291,7 +4291,7 @@
         "label": "Teladi Disc Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 197400,
@@ -4310,7 +4310,7 @@
         "label": "Teladi Bridge Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 148800,
@@ -4329,7 +4329,7 @@
         "label": "Teladi L Biome",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 450000,
@@ -4348,7 +4348,7 @@
         "label": "Teladi M Biome",
         "category": "habitation",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 200000,
@@ -4367,7 +4367,7 @@
         "label": "Teladi S Biome",
         "category": "habitation",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 100000,
@@ -4386,7 +4386,7 @@
         "label": "Teladi 3-Dock T Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 750000,
@@ -4405,7 +4405,7 @@
         "label": "Teladi 1-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 250000,
@@ -4424,7 +4424,7 @@
         "label": "Teladi 3-Dock E Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 1000000,
@@ -4443,7 +4443,7 @@
         "label": "Teladi Advanced Composite Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 197000,
@@ -4464,7 +4464,7 @@
         "label": "Teladi Engine Part Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 120000,
@@ -4485,7 +4485,7 @@
         "label": "Teladi Hull Part Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 146000,
@@ -4506,7 +4506,7 @@
         "label": "Teladi Medical Supply Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 197000,
@@ -4527,7 +4527,7 @@
         "label": "Nostrop Oil Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 276000,
@@ -4548,7 +4548,7 @@
         "label": "Teladi Scanning Array Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 169000,
@@ -4569,7 +4569,7 @@
         "label": "Spaceweed Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 260000,
@@ -4590,7 +4590,7 @@
         "label": "Sunrise Flower Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 235000,
@@ -4611,7 +4611,7 @@
         "label": "Swamp Plant Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 287000,
@@ -4632,7 +4632,7 @@
         "label": "Teladianium Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 226000,
@@ -4653,7 +4653,7 @@
         "label": "Teladi L Container Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 531000,
@@ -4672,7 +4672,7 @@
         "label": "Teladi M Container Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 259000,
@@ -4691,7 +4691,7 @@
         "label": "Teladi S Container Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 111000,
@@ -4710,7 +4710,7 @@
         "label": "Teladi L Liquid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 531000,
@@ -4729,7 +4729,7 @@
         "label": "Teladi M Liquid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 259000,
@@ -4748,7 +4748,7 @@
         "label": "Teladi S Liquid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 111000,
@@ -4767,7 +4767,7 @@
         "label": "Teladi L Solid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 531000,
@@ -4786,7 +4786,7 @@
         "label": "Teladi M Solid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 259000,
@@ -4805,7 +4805,7 @@
         "label": "Teladi S Solid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 111000,
@@ -4824,7 +4824,7 @@
         "label": "Habitat Bridge",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 500000,
@@ -4843,7 +4843,7 @@
         "label": "Sensor Array",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 200000,
@@ -4862,7 +4862,7 @@
         "label": "Ventilation",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 500000,
@@ -4881,7 +4881,7 @@
         "label": "Habitat Ring Column",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 500000,
@@ -4900,7 +4900,7 @@
         "label": "Support Structure",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 500000,
@@ -4919,7 +4919,7 @@
         "label": "Habitat Service Section",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 1000000,
@@ -4938,7 +4938,7 @@
         "label": "Command Relay",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 500000,
@@ -4957,7 +4957,7 @@
         "label": "Habitat Ring",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 10000000,
@@ -4976,7 +4976,7 @@
         "label": "Maintenance Area",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 2000000,
@@ -4995,7 +4995,7 @@
         "label": "Habitat Centre Complex",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 2000000,
@@ -5014,7 +5014,7 @@
         "label": "Habitat Ring Extension",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 3000000,
@@ -5033,7 +5033,7 @@
         "label": "Habitat Centre Ring",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 500000,
@@ -5052,7 +5052,7 @@
         "label": "Habitat Ring Clamp",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 1000000,
@@ -5071,7 +5071,7 @@
         "label": "Habitat Ring Clamp",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 1000000,
@@ -5090,7 +5090,7 @@
         "label": "Habitat Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 2000000,
@@ -5109,7 +5109,7 @@
         "label": "Habitat City",
         "category": "habitation",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 1000000,
@@ -5128,7 +5128,7 @@
         "label": "Habitat City",
         "category": "habitation",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 1000000,
@@ -5147,7 +5147,7 @@
         "label": "Habitat Trade Centre",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 200000,
@@ -5166,7 +5166,7 @@
         "label": "Habitat Storage B",
         "category": "storage",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 1000000,
@@ -5185,7 +5185,7 @@
         "label": "Habitat Storage A",
         "category": "storage",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "teladi"
         ],
         "hull": 4000000,
@@ -5204,7 +5204,7 @@
         "label": "Terran S\/M Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 1020000,
@@ -5223,7 +5223,7 @@
         "label": "Terran L Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 324000,
@@ -5242,7 +5242,7 @@
         "label": "Terran XL Ship Fabrication Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 551000,
@@ -5261,7 +5261,7 @@
         "label": "Terran Base Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 75000,
@@ -5280,7 +5280,7 @@
         "label": "Terran Base Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 150000,
@@ -5299,7 +5299,7 @@
         "label": "Terran Base Connection Structure 03",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 300000,
@@ -5318,7 +5318,7 @@
         "label": "Terran Cross Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 300000,
@@ -5337,7 +5337,7 @@
         "label": "Terran Vertical Connection Structure 01",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 75000,
@@ -5356,7 +5356,7 @@
         "label": "Terran Vertical Connection Structure 02",
         "category": "connectionmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 150000,
@@ -5375,7 +5375,7 @@
         "label": "Terran Administrative Centre",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 600000,
@@ -5394,7 +5394,7 @@
         "label": "Terran Disc Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 300000,
@@ -5413,7 +5413,7 @@
         "label": "Terran Bridge Defence Platform",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 150000,
@@ -5432,7 +5432,7 @@
         "label": "Terran 4M10S Luxury Dock Area",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 455000,
@@ -5451,7 +5451,7 @@
         "label": "Terran S\/M Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 1020000,
@@ -5470,7 +5470,7 @@
         "label": "Terran L Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 324000,
@@ -5489,7 +5489,7 @@
         "label": "Terran XL Ship Maintenance Bay",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 551000,
@@ -5508,7 +5508,7 @@
         "label": "Terran L Living Quarters",
         "category": "habitation",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 1200000,
@@ -5527,7 +5527,7 @@
         "label": "Terran M Living Quarters",
         "category": "habitation",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 600000,
@@ -5546,7 +5546,7 @@
         "label": "Terran S Living Quarters",
         "category": "habitation",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 300000,
@@ -5565,7 +5565,7 @@
         "label": "Terran 3-Dock T Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 750000,
@@ -5584,7 +5584,7 @@
         "label": "Terran 1-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 250000,
@@ -5603,7 +5603,7 @@
         "label": "Terran 3-Dock E Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 1000000,
@@ -5622,7 +5622,7 @@
         "label": "Terran 4-Dock T Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 250000,
@@ -5641,7 +5641,7 @@
         "label": "Terran Trading Station Hexa-Dock Pier",
         "category": "pier",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 2000000,
@@ -5660,7 +5660,7 @@
         "label": "Computronic Substrate Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 400000,
@@ -5681,7 +5681,7 @@
         "label": "Terran Energy Cell Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 200000,
@@ -5702,7 +5702,7 @@
         "label": "Terran Medical Supply Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 240000,
@@ -5723,7 +5723,7 @@
         "label": "Metallic Microlattice Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 280000,
@@ -5744,7 +5744,7 @@
         "label": "Protein Paste Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 260000,
@@ -5765,7 +5765,7 @@
         "label": "Terran Scrap Recycler",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 200000,
@@ -5787,7 +5787,7 @@
         "label": "Silicon Carbide Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 350000,
@@ -5808,7 +5808,7 @@
         "label": "Stimulant Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 300000,
@@ -5829,7 +5829,7 @@
         "label": "Terran MRE Production",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 270000,
@@ -5850,7 +5850,7 @@
         "label": "Terran L Container Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 1000000,
@@ -5869,7 +5869,7 @@
         "label": "Terran M Container Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 450000,
@@ -5888,7 +5888,7 @@
         "label": "Terran M Trading Station Container Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 600000,
@@ -5907,7 +5907,7 @@
         "label": "Terran S Container Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 150000,
@@ -5926,7 +5926,7 @@
         "label": "Terran L Liquid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 1000000,
@@ -5945,7 +5945,7 @@
         "label": "Terran M Liquid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 450000,
@@ -5964,7 +5964,7 @@
         "label": "Terran S Liquid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 150000,
@@ -5983,7 +5983,7 @@
         "label": "Terran S Trading Station Liquid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 300000,
@@ -6002,7 +6002,7 @@
         "label": "Terran L Solid Storage",
         "category": "storage",
         "size": "large",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 1000000,
@@ -6021,7 +6021,7 @@
         "label": "Terran M Solid Storage",
         "category": "storage",
         "size": "medium",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 450000,
@@ -6040,7 +6040,7 @@
         "label": "Terran S Solid Storage",
         "category": "storage",
         "size": "small",
-        "builderFactionID": [
+        "builderFactionIDs": [
             "terran"
         ],
         "hull": 150000,
@@ -6059,7 +6059,7 @@
         "label": "M Ship Assembly Matrix",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "xenon"
         ],
         "hull": 176000,
@@ -6078,7 +6078,7 @@
         "label": "S Ship Assembly Matrix",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "xenon"
         ],
         "hull": 176000,
@@ -6097,7 +6097,7 @@
         "label": "XL Ship Assembly Matrix",
         "category": "buildmodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "xenon"
         ],
         "hull": 551000,
@@ -6116,7 +6116,7 @@
         "label": "Xenon Base Module",
         "category": "defencemodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "xenon"
         ],
         "hull": 3300000,
@@ -6135,7 +6135,7 @@
         "label": "Xenon Dock",
         "category": "dockarea",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "xenon"
         ],
         "hull": 2700000,
@@ -6154,7 +6154,7 @@
         "label": "Matrix Solar Panel",
         "category": "production",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "xenon"
         ],
         "hull": 1000000,
@@ -6175,7 +6175,7 @@
         "label": "Matrix Storage",
         "category": "storage",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "xenon"
         ],
         "hull": 250000,
@@ -6194,7 +6194,7 @@
         "label": "Pheromone Art Gallery",
         "category": "welfaremodule",
         "size": null,
-        "builderFactionID": [
+        "builderFactionIDs": [
             "boron"
         ],
         "hull": 305000,
