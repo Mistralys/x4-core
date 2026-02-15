@@ -218,44 +218,6 @@ class ShipDef
 - **Default Fallback**: Empty values default to `generic` (Ships/Modules) or `unknown` (Shields/Engines/Weapons)
 - **No Breaking Changes**: Original API preserved, new methods added
 
-### 9. Multi-Value Faction/Race Pattern
-
-**Implementation:** `MultiValueFieldTrait` (`Database/Core/`)
-
-Entities that support multiple factions or races use this trait to:
-- Store values as arrays internally (`string[]`)
-- Provide backward-compatible single-value API (returns first element)
-- Provide new multi-value API (returns full array)
-- Include predicate method (`hasMultiple*(): bool`)
-- Handle format migration (old string → array, new array → array)
-
-**Usage:** Entity classes use this trait and call protected methods.
-
-**Example:**
-```php
-class ShipDef
-{
-    use MultiValueFieldTrait;
-    
-    public function getBuilderFactionID(): string {
-        return $this->getSingleValue($this->builderFactionIDs, KnownFactions::FACTION_GENERIC);
-    }
-}
-```
-
-**Applied To:**
-- **Ships**: `builderFactionIDs` / `getBuilderFactionIDs()` / `getBuilderFactions()` / `hasMultipleBuilderFactions()`
-- **Modules**: Same as Ships
-- **Shields**: `makerRaces` / `getMakerRaces()` / `hasMultipleMakerRaces()`
-- **Engines**: Same as Shields
-- **Weapons**: Same as Shields
-
-**Key Design Decisions:**
-- **Primary = First**: When only one value needed, first element is "primary" (backward compatibility)
-- **Space-Separated Parsing**: Game XML uses space-separated values (e.g., `makerrace="argon teladi"`)
-- **Default Fallback**: Empty values default to `generic` (Ships/Modules) or `unknown` (Shields/Engines/Weapons)
-- **No Breaking Changes**: Original API preserved, new methods added
-
 ## Data Storage
 
 ### JSON Data Files
