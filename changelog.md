@@ -1,11 +1,9 @@
-## v1.4.0 - Multi-Builder Faction Support
+## v1.3.0 - Ship Physics & Multi-Builder Factions
 - Core: Added support for multiple builder factions across Ships, Modules, Shields, Engines, and Weapons.
 - Core: Fixed crash when loading entities with multiple builder factions (e.g., Envoy ship).
 - Core: Reduced log noise by downgrading missing builder faction warnings to info level.
 - API: Added `get*IDs()`, `get*s()`, and `hasMultiple*()` methods to Ship, Module, Shield, Engine, and Weapon definitions for full multi-faction access.
 - API: Existing single-value methods (e.g., `getBuilderFactionID()`) remain fully backward compatible, returning the primary faction.
-
-## v1.3.0 - Complete Ship Physics Data
 - Ships: Added 24 new physics fields (drag coefficients, inertia, jerk values, acceleration factors)
 - Ships: Added cargo capacity extraction (cargoCapacity, cargoType)
 - Ships: Regenerated ships.json with complete physics data for all 256 ships
