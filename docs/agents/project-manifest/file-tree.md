@@ -125,6 +125,7 @@ src/X4/
 │   │   ├── CollectionItemInterface.php
 │   │   ├── CollectionItemTrait.php
 │   │   ├── ItemCollectionInterface.php
+│   │   ├── MultiValueFieldTrait.php
 │   │   └── VariantID.php
 │   ├── DataSources/          # DLC and data source tracking
 │   │   ├── DataSourceDef.php

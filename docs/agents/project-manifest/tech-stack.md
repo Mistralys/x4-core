@@ -182,88 +182,63 @@ XML processing uses extended wrappers:
 
 ### 9. Multi-Value Faction/Race Pattern
 
-Game entities support multiple builder factions or maker races (e.g., ships built by multiple factions like "argon teladi"):
+**Implementation:** `MultiValueFieldTrait` (`Database/Core/`)
 
-**Pattern Components:**
+Entities that support multiple factions or races use this trait to:
+- Store values as arrays internally (`string[]`)
+- Provide backward-compatible single-value API (returns first element)
+- Provide new multi-value API (returns full array)
+- Include predicate method (`hasMultiple*(): bool`)
+- Handle format migration (old string → array, new array → array)
 
-1. **Internal Storage**: `string[]` instead of single `string`
-2. **New JSON Key**: Plural form (`builderFactionIDs`, `makerRaces`) for array storage
-3. **Backward-Compatible API**: Original singular getter returns first element
-4. **New API Methods**:
-   - `get*IDs(): string[]` - Returns array of all IDs
-   - `get*s(): EntityDef[]` - Returns array of all entity objects
-   - `hasMultiple*(): bool` - Predicate for multi-value entries
-5. **Format Migration**: `fromArray()` handles both old (string) and new (array) formats, including space-separated values in old key
-6. **Finder Integration**: Uses `array_intersect()` for matching any faction/race
+**Usage:** Entity classes use this trait and call protected methods.
 
-**Implementation Pattern:**
-
+**Example:**
 ```php
-// Entity Definition (ShipDef, ModuleDef, ShieldDef, EngineDef, WeaponDef)
-class ShipDef {
-    const KEY_BUILDER_FACTION_IDS = 'builderFactionIDs';  // New plural key
-    private array $builderFactionIDs;  // Internal storage
+class ShipDef
+{
+    use MultiValueFieldTrait;
     
-    // Backward-compatible (returns first)
-    public function getBuilderFactionID(): string { 
-        return $this->builderFactionIDs[0]; 
-    }
-    
-    // New multi-value API
-    public function getBuilderFactionIDs(): array { 
-        return $this->builderFactionIDs; 
-    }
-    
-    public function getBuilderFactions(): array {
-        return array_map(
-            fn($id) => FactionDefs::getInstance()->getByID($id),
-            $this->builderFactionIDs
-        );
-    }
-    
-    public function hasMultipleBuilderFactions(): bool {
-        return count($this->builderFactionIDs) > 1;
-    }
-    
-    // Format migration in fromArray()
-    public static function fromArray(array $data): self {
-        // Try new format first
-        $factionIDs = $data[self::KEY_BUILDER_FACTION_IDS] ?? null;
-        
-        // Fallback to old format
-        if ($factionIDs === null && isset($data[self::KEY_BUILDER_FACTION_ID])) {
-            $old = $data[self::KEY_BUILDER_FACTION_ID];
-            // Handle both string and array in old key
-            $factionIDs = is_array($old) ? $old : explode(' ', $old);
-        }
-        
-        // Default to generic if empty
-        if (empty($factionIDs)) {
-            $factionIDs = [KnownFactions::FACTION_GENERIC];
-        }
-        
-        return new self(...$factionIDs);
+    public function getBuilderFactionID(): string {
+        return $this->getSingleValue($this->builderFactionIDs, KnownFactions::FACTION_GENERIC);
     }
 }
+```
 
-// Finder Integration
-class ShipFinder {
-    private function isMatch(ShipDef $ship): bool {
-        if (!empty($this->builderFactions)) {
-            $shipFactions = $ship->getBuilderFactionIDs();
-            // Match if ANY faction matches (intersection)
-            if (empty(array_intersect($shipFactions, $this->builderFactions))) {
-                return false;
-            }
-        }
-        return true;
-    }
-}
+**Applied To:**
+- **Ships**: `builderFactionIDs` / `getBuilderFactionIDs()` / `getBuilderFactions()` / `hasMultipleBuilderFactions()`
+- **Modules**: Same as Ships
+- **Shields**: `makerRaces` / `getMakerRaces()` / `hasMultipleMakerRaces()`
+- **Engines**: Same as Shields
+- **Weapons**: Same as Shields
 
-// Extractor (parses space-separated values from XML)
-class ShipsExtractor {
-    private function resolveFaction(string $makerrace): array {
-        return explode(' ', $makerrace);  // Returns string[]
+**Key Design Decisions:**
+- **Primary = First**: When only one value needed, first element is "primary" (backward compatibility)
+- **Space-Separated Parsing**: Game XML uses space-separated values (e.g., `makerrace="argon teladi"`)
+- **Default Fallback**: Empty values default to `generic` (Ships/Modules) or `unknown` (Shields/Engines/Weapons)
+- **No Breaking Changes**: Original API preserved, new methods added
+
+### 9. Multi-Value Faction/Race Pattern
+
+**Implementation:** `MultiValueFieldTrait` (`Database/Core/`)
+
+Entities that support multiple factions or races use this trait to:
+- Store values as arrays internally (`string[]`)
+- Provide backward-compatible single-value API (returns first element)
+- Provide new multi-value API (returns full array)
+- Include predicate method (`hasMultiple*(): bool`)
+- Handle format migration (old string → array, new array → array)
+
+**Usage:** Entity classes use this trait and call protected methods.
+
+**Example:**
+```php
+class ShipDef
+{
+    use MultiValueFieldTrait;
+    
+    public function getBuilderFactionID(): string {
+        return $this->getSingleValue($this->builderFactionIDs, KnownFactions::FACTION_GENERIC);
     }
 }
 ```

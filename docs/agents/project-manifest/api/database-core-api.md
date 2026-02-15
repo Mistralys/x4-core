@@ -22,6 +22,7 @@ The Database Core namespace defines the fundamental patterns used throughout the
 ## Table of Contents
 
 - [Core Interfaces](#core-interfaces)
+- [Traits](#traits)
 - [VariantID System](#variantid-system)
 - [BaseExtractor Utilities](#baseextractor-utilities)
 
@@ -114,6 +115,27 @@ class SomeFinder {
 - `ShieldFinder` - Filter shields
 - `EngineFinder` - Filter engines
 - `ShipEquipmentFinder` - Filter equipment compatible with a ship
+
+---
+
+## Traits
+
+### Mistralys\X4\Database\Core\MultiValueFieldTrait
+
+Reusable trait for managing entity fields that can have multiple values (e.g., ships built by multiple factions).
+
+#### Methods
+
+```php
+protected function getSingleValue(array $values, string $fallback): string
+protected function getMultipleValues(array $values): array
+protected function hasMultipleValues(array $values): bool
+protected function resolveEntities(array $ids, callable $mapCallback): array
+protected function parseMultiValueField(array $data, string $newKey, string $oldKey, string $default): array
+```
+
+**Usage:**
+See [Pattern #9 in Tech Stack](../tech-stack.md) for full implementation details.
 
 ---
 

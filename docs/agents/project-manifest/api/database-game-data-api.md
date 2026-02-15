@@ -122,6 +122,8 @@ FACTION_TERRAN_PROTECTORATE: string = 'terran'
 FACTION_SCALEPLATE_PACT: string = 'scaleplate'
 FACTION_BUCCANEERS: string = 'buccaneers'
 FACTION_SEGARIS_PIONEERS: string = 'segaris'
+FACTION_GENERIC: string = 'generic'
+FACTION_UNKNOWN: string = 'unknown'
 // ... (35+ faction constants)
 ```
 

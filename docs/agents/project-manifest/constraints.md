@@ -70,6 +70,7 @@ namespace Mistralys\X4\[Domain]\[Subdomain];
 - **ALL_CAPS_SNAKE_CASE**
 - Group related constants with common prefix
 - Example: `ERROR_*`, `KEY_*`, `FACTION_*`
+- **Use constants instead of magic strings**: Always use defined constants like `KnownFactions::FACTION_UNKNOWN` instead of hardcoded string values like `'unknown'`
 
 ### Properties
 
@@ -229,42 +230,26 @@ class WaresExtractor
 
 ### Multi-Value Fields Convention
 
-Some entity fields support multiple values (e.g., ships built by multiple factions):
+When adding multi-value support to an entity type with `MultiValueFieldTrait`:
 
-**Primary = First Convention:**
-- When a field stores multiple values as an array, the **first element is considered primary**
-- Backward-compatible single-value getters MUST return the first element
-- Example:
-  ```php
-  // Ship has builderFactionIDs: ["argon", "teladi"]
-  $ship->getBuilderFactionID();   // Returns "argon" (first = primary)
-  $ship->getBuilderFactionIDs();  // Returns ["argon", "teladi"]
-  ```
+1. **Use the Trait**: Add `use Mistralys\X4\Database\Core\MultiValueFieldTrait;` to the class
+2. **Storage**: Store field as `private array $fieldName = []`
+3. **Plural Key**: Use a plural key constant (e.g., `KEY_BUILDER_FACTION_IDS`)
+4. **Backward Compatibility**: Provide singular getter returning first element (`getBuilderFactionID`)
+5. **New API**: Provide plural getter returning full array (`getBuilderFactionIDs`)
+6. **Predicate**: Add predicate method (`hasMultipleBuilderFactions(): bool`)
+7. **Parsing**: Use `parseMultiValueField()` in `fromArray()`
+   ```php
+   $ids = $this->parseMultiValueField(
+       $data, 
+       self::KEY_NEW_PLURAL, 
+       self::KEY_OLD_SINGULAR, 
+       KnownFactions::FACTION_DEFAULT
+   );
+   ```
+8. **Reference Implementation**: See `ShipDef` implementation.
 
-**Field Naming:**
-- Single-value key (deprecated): `builderFactionID`, `makerRace`
-- Multi-value key (current): `builderFactionIDs`, `makerRaces` (plural)
-- Internal storage: `private array $builderFactionIDs` (typed as `string[]`)
-
-**API Requirements:**
-- **MUST** preserve backward-compatible single-value getter (returns first element)
-- **MUST** provide new multi-value getter returning `string[]`
-- **MUST** provide entity array getter (e.g., `getBuilderFactions(): FactionDef[]`)
-- **MUST** provide `hasMultiple*(): bool` predicate
-
-**Format Migration:**
-- `fromArray()` MUST handle:
-  1. New format: `builderFactionIDs: ["argon", "teladi"]`
-  2. Old format (string): `builderFactionID: "argon teladi"` (space-separated)
-  3. Old format (array): `builderFactionID: ["argon", "teladi"]` (intermediate rebuild state)
-- Empty values default to `["generic"]` (Ships/Modules) or `["unknown"]` (Shields/Engines/Weapons)
-
-**Applies To:**
-- Ships: `builderFactionIDs`
-- Modules: `builderFactionIDs`
-- Shields: `makerRaces`
-- Engines: `makerRaces`
-- Weapons: `makerRaces`
+See: `tech-stack.md` Pattern #9 for details.
 
 ---
 

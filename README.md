@@ -4,6 +4,11 @@ Database and utility classes used to access X4: Foundations game data in
 an OOP way. It is designed to be used as a dependency in other projects
 (see [X4 Tools](#x4-tools-and-libraries), for example).
 
+## Version
+
+**Current Version:** 1.0.1
+**Documentation:** [Project Manifest](docs/agents/project-manifest/README.md)
+
 ## Database features
 
 - Faction database
@@ -18,7 +23,7 @@ an OOP way. It is designed to be used as a dependency in other projects
 
 ## Requirements
 
-- PHP 8.2 or higher.
+- PHP 8.4 or higher.
 - [Composer](https://getcomposer.org/).
 
 ## Installation
