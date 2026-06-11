@@ -1,3 +1,14 @@
+# X4 Core Changelog
+
+## v1.4.0 - Game Update v9 (Breaking-M)
+> Game version v9.0.0.0
+
+- Data: Updated all game data files.
+
+### Breaking Changes
+
+No breaking changes in the X4 Core APIs, but in the data. The v9 update is a massive data update across the board, including removed and added items. Notably, a range of constants from the `KnownBlueprints` class no longer exist. Double-check if you are using any.
+
 ## v1.3.0 - Ship Physics & Multi-Builder Factions
 - Core: Added support for multiple builder factions across Ships, Modules, Shields, Engines, and Weapons.
 - Core: Fixed crash when loading entities with multiple builder factions (e.g., Envoy ship).
