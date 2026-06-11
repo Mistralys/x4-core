@@ -204,6 +204,12 @@
         "categoryID": "engines"
     },
     {
+        "wareID": "engine_gen_m_yacht_01_mk1",
+        "label": "Astrid M Engine",
+        "variantID": "01::mk1",
+        "categoryID": "engines"
+    },
+    {
         "wareID": "engine_gen_s_racer_01_mk1",
         "label": "S Racing Engine Mk1",
         "variantID": "01::mk1",
@@ -822,54 +828,6 @@
         "categoryID": "engines"
     },
     {
-        "wareID": "missile_cluster_heavy_mk1",
-        "label": "Heavy Cluster Missile Mk1",
-        "variantID": "::mk1",
-        "categoryID": "missiles"
-    },
-    {
-        "wareID": "missile_cluster_light_mk1",
-        "label": "Light Cluster Missile Mk1",
-        "variantID": "::mk1",
-        "categoryID": "missiles"
-    },
-    {
-        "wareID": "missile_disruptor_light_mk1",
-        "label": "Light Disruptor Missile Mk1",
-        "variantID": "::mk1",
-        "categoryID": "missiles"
-    },
-    {
-        "wareID": "missile_dumbfire_heavy_mk1",
-        "label": "Heavy Dumbfire Missile Mk1",
-        "variantID": "::mk1",
-        "categoryID": "missiles"
-    },
-    {
-        "wareID": "missile_dumbfire_heavy_mk2",
-        "label": "Heavy Dumbfire Missile Mk2",
-        "variantID": "::mk2",
-        "categoryID": "missiles"
-    },
-    {
-        "wareID": "missile_dumbfire_light_mk1",
-        "label": "Light Dumbfire Missile Mk1",
-        "variantID": "::mk1",
-        "categoryID": "missiles"
-    },
-    {
-        "wareID": "missile_dumbfire_light_mk2",
-        "label": "Light Dumbfire Missile Mk2",
-        "variantID": "::mk2",
-        "categoryID": "missiles"
-    },
-    {
-        "wareID": "missile_emp_mk1",
-        "label": "EMP Missile Mk1",
-        "variantID": "::mk1",
-        "categoryID": "missiles"
-    },
-    {
         "wareID": "missile_flagship_heavy_mk1",
         "label": "Heavy Barrage Missile Mk1",
         "variantID": "::mk1",
@@ -882,81 +840,99 @@
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_guided_heavy_mk1",
-        "label": "Heavy Guided Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_l_dumbfire_01_mk1",
+        "label": "Heavy Cluster Rocket",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_guided_light_mk1",
-        "label": "Light Guided Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_l_guided_01_mk1",
+        "label": "Heavy Guided Missile",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_heatseeker_heavy_mk1",
-        "label": "Heavy Heatseeker Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_m_dumbfire_01_mk1",
+        "label": "Medium Dumbfire Rocket",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_heatseeker_light_mk1",
-        "label": "Light Heatseeker Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_m_dumbfire_01_mk2",
+        "label": "Medium Breaching Rocket",
+        "variantID": "01::mk2",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_interceptor_light_mk1",
-        "label": "Light Interceptor Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_m_guided_01_mk1",
+        "label": "Medium Guided Missile",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_scatter_heavy_mk1",
-        "label": "Heavy Scatter Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_m_smart_01_mk1",
+        "label": "Medium Smart Missile",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_smart_heavy_mk1",
-        "label": "Heavy Smart Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_s_disruptor_01_mk1",
+        "label": "Light Disruptor Missile",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_smart_light_mk1",
-        "label": "Light Smart Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_s_dumbfire_01_mk1",
+        "label": "Light Dumbfire Rocket",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_starburst_heavy_mk1",
-        "label": "Heavy Starburst Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_s_dumbfire_01_mk2",
+        "label": "Light Breaching Rocket",
+        "variantID": "01::mk2",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_swarm_heavy_mk1",
-        "label": "Heavy Swarm Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_s_emp_01_mk1",
+        "label": "Light Guided EMP Missile",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_swarm_light_mk1",
-        "label": "Light Swarm Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_s_guided_01_mk1",
+        "label": "Light Guided Missile",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_torpedo_heavy_mk1",
-        "label": "Heavy Torpedo Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_s_heatseeker_01_mk1",
+        "label": "Light Heatseeker Missile",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
-        "wareID": "missile_torpedo_light_mk1",
-        "label": "Light Torpedo Missile Mk1",
-        "variantID": "::mk1",
+        "wareID": "missile_gen_s_interceptor_01_mk1",
+        "label": "Light Interceptor Missile",
+        "variantID": "01::mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "wareID": "missile_gen_s_smart_01_mk1",
+        "label": "Light Smart Missile",
+        "variantID": "01::mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "wareID": "missile_gen_s_swarm_01_mk1",
+        "label": "Light Swarm Missile",
+        "variantID": "01::mk1",
+        "categoryID": "missiles"
+    },
+    {
+        "wareID": "missile_gen_s_torpedo_01_mk1",
+        "label": "Light Torpedo",
+        "variantID": "01::mk1",
         "categoryID": "missiles"
     },
     {
@@ -1548,9 +1524,27 @@
         "categoryID": "modules"
     },
     {
+        "wareID": "module_gen_dock_m_showroom_01",
+        "label": "Small & Medium Ship Showroom",
+        "variantID": "01::",
+        "categoryID": "modules"
+    },
+    {
         "wareID": "module_gen_dock_m_venturer_01",
         "label": "S\/M Venture Sendoff Dock",
         "variantID": "01::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_gen_dock_s_showroom_01",
+        "label": "Small Ship Showroom 01",
+        "variantID": "01::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_gen_dock_s_showroom_02",
+        "label": "Small Ship Showroom 02",
+        "variantID": "02::",
         "categoryID": "modules"
     },
     {
@@ -1575,6 +1569,12 @@
         "wareID": "module_gen_proc_scrapworks",
         "label": "Scrap Processor",
         "variantID": "::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_gen_proc_scrapworkskhaak_01",
+        "label": "Allographyne Scrap Processor",
+        "variantID": "01::",
         "categoryID": "modules"
     },
     {
@@ -1682,6 +1682,12 @@
     {
         "wareID": "module_gen_prod_scrap_recycler",
         "label": "Scrap Recycler",
+        "variantID": "::",
+        "categoryID": "modules"
+    },
+    {
+        "wareID": "module_gen_prod_scrap_recyclerkhaak",
+        "label": "Allographyne Scrap Recycler",
         "variantID": "::",
         "categoryID": "modules"
     },
@@ -2778,6 +2784,12 @@
         "categoryID": "shields"
     },
     {
+        "wareID": "shield_gen_m_yacht_01_mk1",
+        "label": "Astrid M Shield Generator",
+        "variantID": "01::mk1",
+        "categoryID": "shields"
+    },
+    {
         "wareID": "shield_gen_s_racer_01_mk1",
         "label": "S Racing Shield Generator Mk1",
         "variantID": "01::mk1",
@@ -3534,6 +3546,12 @@
         "categoryID": "ships"
     },
     {
+        "wareID": "ship_bor_m_corvette_02_a",
+        "label": "Hydra Regal",
+        "variantID": "02:a:",
+        "categoryID": "ships"
+    },
+    {
         "wareID": "ship_bor_m_gunboat_01_a",
         "label": "Thresher",
         "variantID": "01:a:",
@@ -3626,6 +3644,12 @@
     {
         "wareID": "ship_gen_m_tugboat_01_a",
         "label": "Manticore",
+        "variantID": "01:a:",
+        "categoryID": "ships"
+    },
+    {
+        "wareID": "ship_gen_m_yacht_01_a",
+        "label": "Astrid",
         "variantID": "01:a:",
         "categoryID": "ships"
     },
@@ -4867,7 +4891,7 @@
     },
     {
         "wareID": "turret_bor_l_disruptor_01_mk1",
-        "label": "BOR L Ion Net Launcher Mk1",
+        "label": "BOR L Kinetic Ion Railgun Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
@@ -4974,8 +4998,14 @@
         "categoryID": "turrets"
     },
     {
+        "wareID": "turret_gen_m_yacht_01_mk1",
+        "label": "Astrid M Turret",
+        "variantID": "01::mk1",
+        "categoryID": "turrets"
+    },
+    {
         "wareID": "turret_par_l_beam_01_mk1",
-        "label": "PAR L Beam Turret Mk1",
+        "label": "PAR L Mass Driver Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
@@ -5011,13 +5041,13 @@
     },
     {
         "wareID": "turret_par_m_beam_01_mk1",
-        "label": "PAR M Beam Turret Mk1",
+        "label": "PAR M Mass Driver Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_par_m_beam_02_mk1",
-        "label": "PAR M Beam Turret Mk1",
+        "label": "PAR M Mass Driver Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
@@ -5083,13 +5113,13 @@
     },
     {
         "wareID": "turret_par_m_shotgun_01_mk1",
-        "label": "PAR M Shard Turret Mk1",
+        "label": "PAR M Blast Mortar Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_par_m_shotgun_02_mk1",
-        "label": "PAR M Shard Turret Mk1",
+        "label": "PAR M Blast Mortar Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
@@ -5107,7 +5137,7 @@
     },
     {
         "wareID": "turret_spl_l_beam_01_mk1",
-        "label": "SPL L Beam Turret Mk1",
+        "label": "SPL L Boson Lance Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
@@ -5143,13 +5173,13 @@
     },
     {
         "wareID": "turret_spl_m_beam_01_mk1",
-        "label": "SPL M Beam Turret Mk1",
+        "label": "SPL M Boson Lance Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_spl_m_beam_02_mk1",
-        "label": "SPL M Beam Turret Mk1",
+        "label": "SPL M Boson Lance Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
@@ -5173,13 +5203,13 @@
     },
     {
         "wareID": "turret_spl_m_gatling_01_mk1",
-        "label": "SPL M Bolt Turret Mk1",
+        "label": "SPL M Neutron Gatling Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_spl_m_gatling_02_mk1",
-        "label": "SPL M Bolt Turret Mk1",
+        "label": "SPL M Neutron Gatling Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
@@ -5227,13 +5257,13 @@
     },
     {
         "wareID": "turret_spl_m_shotgun_01_mk1",
-        "label": "SPL M Shard Turret Mk1",
+        "label": "SPL M Tau Accelerator Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_spl_m_shotgun_02_mk1",
-        "label": "SPL M Shard Turret Mk1",
+        "label": "SPL M Tau Accelerator Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
@@ -5269,7 +5299,7 @@
     },
     {
         "wareID": "turret_tel_l_plasma_01_mk1",
-        "label": "TEL L Plasma Turret Mk1",
+        "label": "TEL L Plasma Shard Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
@@ -5347,19 +5377,19 @@
     },
     {
         "wareID": "turret_tel_m_shotgun_01_mk1",
-        "label": "TEL M Shard Turret Mk1",
+        "label": "TEL M Muon Blaster Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_tel_m_shotgun_02_mk1",
-        "label": "TEL M Shard Turret Mk1",
+        "label": "TEL M Muon Blaster Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_ter_l_beam_01_mk1",
-        "label": "TER L Beam Turret Mk1",
+        "label": "TER L Meson Stream Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
@@ -5371,7 +5401,7 @@
     },
     {
         "wareID": "turret_ter_l_gatling_01_mk1",
-        "label": "TER L Bolt Turret Mk1",
+        "label": "TER L Proton Barrage Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
@@ -5395,13 +5425,13 @@
     },
     {
         "wareID": "turret_ter_m_beam_01_mk1",
-        "label": "TER M Beam Turret Mk1",
+        "label": "TER M Meson Stream Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_ter_m_beam_02_mk1",
-        "label": "TER M Beam Turret Mk1",
+        "label": "TER M Meson Stream Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
@@ -5413,13 +5443,13 @@
     },
     {
         "wareID": "turret_ter_m_gatling_01_mk1",
-        "label": "TER M Bolt Turret Mk1",
+        "label": "TER M Proton Barrage Turret Mk1",
         "variantID": "01::mk1",
         "categoryID": "turrets"
     },
     {
         "wareID": "turret_ter_m_gatling_02_mk1",
-        "label": "TER M Bolt Turret Mk1",
+        "label": "TER M Proton Barrage Turret Mk1",
         "variantID": "02::mk1",
         "categoryID": "turrets"
     },
@@ -5532,20 +5562,8 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_bor_m_dumbfire_01_mk1",
-        "label": "BOR M Dumbfire Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
         "wareID": "weapon_bor_m_flak_01_mk1",
         "label": "BOR M Ion Atomiser Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_bor_m_guided_01_mk1",
-        "label": "BOR M Tracking Launcher Mk1",
         "variantID": "01::mk1",
         "categoryID": "weapons"
     },
@@ -5568,32 +5586,14 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_bor_m_torpedo_01_mk1",
-        "label": "BOR M Torpedo Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
         "wareID": "weapon_bor_s_arc_01_mk1",
         "label": "BOR S Arc Gun Mk1",
         "variantID": "01::mk1",
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_bor_s_dumbfire_01_mk1",
-        "label": "BOR S Dumbfire Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
         "wareID": "weapon_bor_s_gatling_01_mk1",
         "label": "BOR S Ion Gatling Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_bor_s_guided_01_mk1",
-        "label": "BOR S Tracking Launcher Mk1",
         "variantID": "01::mk1",
         "categoryID": "weapons"
     },
@@ -5606,12 +5606,6 @@
     {
         "wareID": "weapon_bor_s_mining_01_mk1",
         "label": "BOR S Mining Drill Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_bor_s_torpedo_01_mk1",
-        "label": "BOR S Torpedo Launcher Mk1",
         "variantID": "01::mk1",
         "categoryID": "weapons"
     },
@@ -5640,15 +5634,9 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_gen_m_dumbfire_01_mk1",
-        "label": "M Dumbfire Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_gen_m_dumbfire_01_mk2",
-        "label": "M Dumbfire Launcher Mk2",
-        "variantID": "01::mk2",
+        "wareID": "weapon_gen_m_dumbfire_02_mk1",
+        "label": "M Dumbfire Launcher",
+        "variantID": "02::mk1",
         "categoryID": "weapons"
     },
     {
@@ -5664,15 +5652,9 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_gen_m_guided_01_mk1",
-        "label": "M Tracking Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_gen_m_guided_01_mk2",
-        "label": "M Tracking Launcher Mk2",
-        "variantID": "01::mk2",
+        "wareID": "weapon_gen_m_guided_02_mk1",
+        "label": "M Tracking Launcher",
+        "variantID": "02::mk1",
         "categoryID": "weapons"
     },
     {
@@ -5730,15 +5712,15 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_gen_m_torpedo_01_mk1",
-        "label": "M Torpedo Launcher Mk1",
-        "variantID": "01::mk1",
+        "wareID": "weapon_gen_m_torpedo_02_mk1",
+        "label": "M Torpedo Launcher",
+        "variantID": "02::mk1",
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_gen_m_torpedo_01_mk2",
-        "label": "M Torpedo Launcher Mk2",
-        "variantID": "01::mk2",
+        "wareID": "weapon_gen_m_yacht_01_mk1",
+        "label": "Astrid Primary Weapon",
+        "variantID": "01::mk1",
         "categoryID": "weapons"
     },
     {
@@ -5796,15 +5778,9 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_gen_s_dumbfire_01_mk1",
-        "label": "S Dumbfire Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_gen_s_dumbfire_01_mk2",
-        "label": "S Dumbfire Launcher Mk2",
-        "variantID": "01::mk2",
+        "wareID": "weapon_gen_s_dumbfire_02_mk1",
+        "label": "S Dumbfire Launcher",
+        "variantID": "02::mk1",
         "categoryID": "weapons"
     },
     {
@@ -5820,15 +5796,9 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_gen_s_guided_01_mk1",
-        "label": "S Tracking Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_gen_s_guided_01_mk2",
-        "label": "S Tracking Launcher Mk2",
-        "variantID": "01::mk2",
+        "wareID": "weapon_gen_s_guided_02_mk1",
+        "label": "S Tracking Launcher",
+        "variantID": "02::mk1",
         "categoryID": "weapons"
     },
     {
@@ -5880,15 +5850,9 @@
         "categoryID": "weapons"
     },
     {
-        "wareID": "weapon_gen_s_torpedo_01_mk1",
-        "label": "S Torpedo Launcher Mk1",
-        "variantID": "01::mk1",
-        "categoryID": "weapons"
-    },
-    {
-        "wareID": "weapon_gen_s_torpedo_01_mk2",
-        "label": "S Torpedo Launcher Mk2",
-        "variantID": "01::mk2",
+        "wareID": "weapon_gen_s_torpedo_02_mk1",
+        "label": "S Torpedo Launcher",
+        "variantID": "02::mk1",
         "categoryID": "weapons"
     },
     {
@@ -6043,25 +6007,25 @@
     },
     {
         "wareID": "weapon_tel_m_charge_01_mk1",
-        "label": "TEL M Muon Charger Mk1",
+        "label": "TEL M Muon Disintegrator Mk1",
         "variantID": "01::mk1",
         "categoryID": "weapons"
     },
     {
         "wareID": "weapon_tel_m_charge_01_mk2",
-        "label": "TEL M Muon Charger Mk2",
+        "label": "TEL M Muon Disintegrator Mk2",
         "variantID": "01::mk2",
         "categoryID": "weapons"
     },
     {
         "wareID": "weapon_tel_s_charge_01_mk1",
-        "label": "TEL S Muon Charger Mk1",
+        "label": "TEL S Muon Disintegrator Mk1",
         "variantID": "01::mk1",
         "categoryID": "weapons"
     },
     {
         "wareID": "weapon_tel_s_charge_01_mk2",
-        "label": "TEL S Muon Charger Mk2",
+        "label": "TEL S Muon Disintegrator Mk2",
         "variantID": "01::mk2",
         "categoryID": "weapons"
     },

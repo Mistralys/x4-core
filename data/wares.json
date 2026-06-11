@@ -288,12 +288,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_allround_01_mk2",
@@ -312,12 +307,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_allround_01_mk3",
@@ -336,12 +326,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_combat_01_mk1",
@@ -361,12 +346,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_combat_01_mk2",
@@ -385,12 +365,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_combat_01_mk3",
@@ -409,12 +384,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_corvette_01_mk1",
@@ -470,12 +440,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_travel_01_mk2",
@@ -494,12 +459,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_m_travel_01_mk3",
@@ -518,12 +478,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_allround_01_mk1",
@@ -543,12 +498,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_allround_01_mk2",
@@ -567,12 +517,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_allround_01_mk3",
@@ -591,12 +536,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_combat_01_mk1",
@@ -616,12 +556,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_combat_01_mk2",
@@ -640,12 +575,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_combat_01_mk3",
@@ -664,12 +594,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_racer_01_mk1",
@@ -685,12 +610,7 @@
         "variantID": "01::mk1",
         "factions": [
             "ownerless"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_travel_01_mk1",
@@ -710,12 +630,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_travel_01_mk2",
@@ -734,12 +649,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_s_travel_01_mk3",
@@ -758,12 +668,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_arg_xl_allround_01_mk1",
@@ -949,19 +854,13 @@
         "size": "m",
         "tags": [
             "engine",
-            "equipment",
-            "noplayerblueprint"
+            "equipment"
         ],
         "macroID": "engine_gen_m_yacht_01_mk1_macro",
         "variantID": "01::mk1",
         "factions": [
             "loanshark"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_gen_spacesuit_01_mk1",
@@ -1087,12 +986,7 @@
         "variantID": "02::mk1",
         "factions": [
             "khaak"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_kha_s_combat_01_mk1",
@@ -1203,12 +1097,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_allround_01_mk2",
@@ -1228,12 +1117,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_allround_01_mk3",
@@ -1253,12 +1137,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_combat_01_mk1",
@@ -1278,12 +1157,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_combat_01_mk2",
@@ -1303,12 +1177,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_combat_01_mk3",
@@ -1328,12 +1197,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_travel_01_mk1",
@@ -1353,12 +1217,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_travel_01_mk2",
@@ -1378,12 +1237,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_m_travel_01_mk3",
@@ -1403,12 +1257,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_allround_01_mk1",
@@ -1428,12 +1277,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_allround_01_mk2",
@@ -1453,12 +1297,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_allround_01_mk3",
@@ -1478,12 +1317,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_combat_01_mk1",
@@ -1503,12 +1337,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_combat_01_mk2",
@@ -1528,12 +1357,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_combat_01_mk3",
@@ -1553,12 +1377,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_racer_01_mk1",
@@ -1574,12 +1393,7 @@
         "variantID": "01::mk1",
         "factions": [
             "ownerless"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_travel_01_mk1",
@@ -1599,12 +1413,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_travel_01_mk2",
@@ -1624,12 +1433,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_s_travel_01_mk3",
@@ -1649,12 +1453,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_par_xl_allround_01_mk1",
@@ -1809,12 +1608,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_allround_01_mk2",
@@ -1832,12 +1626,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_allround_01_mk3",
@@ -1855,12 +1644,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_combat_01_mk1",
@@ -1878,12 +1662,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_combat_01_mk2",
@@ -1901,12 +1680,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_combat_01_mk3",
@@ -1924,12 +1698,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_combat_01_mk4",
@@ -1946,12 +1715,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_travel_01_mk1",
@@ -1969,12 +1733,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_travel_01_mk2",
@@ -1992,12 +1751,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_m_travel_01_mk3",
@@ -2015,12 +1769,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_allround_01_mk1",
@@ -2038,12 +1787,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_allround_01_mk2",
@@ -2061,12 +1805,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_allround_01_mk3",
@@ -2084,12 +1823,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_combat_01_mk1",
@@ -2107,12 +1841,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_combat_01_mk2",
@@ -2130,12 +1859,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_combat_01_mk3",
@@ -2153,12 +1877,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_combat_01_mk4",
@@ -2175,12 +1894,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_travel_01_mk1",
@@ -2198,12 +1912,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_travel_01_mk2",
@@ -2221,12 +1930,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_s_travel_01_mk3",
@@ -2244,12 +1948,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_spl_xl_allround_01_mk1",
@@ -2361,12 +2060,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_allround_01_mk2",
@@ -2384,12 +2078,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_allround_01_mk3",
@@ -2407,12 +2096,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_combat_01_mk1",
@@ -2431,12 +2115,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_combat_01_mk2",
@@ -2455,12 +2134,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_combat_01_mk3",
@@ -2478,12 +2152,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_corvette_01_mk1",
@@ -2539,12 +2208,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_travel_01_mk2",
@@ -2562,12 +2226,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_m_travel_01_mk3",
@@ -2585,12 +2244,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_allround_01_mk1",
@@ -2609,12 +2263,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_allround_01_mk2",
@@ -2632,12 +2281,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_allround_01_mk3",
@@ -2655,12 +2299,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_combat_01_mk1",
@@ -2679,12 +2318,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_combat_01_mk2",
@@ -2703,12 +2337,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_combat_01_mk3",
@@ -2726,12 +2355,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_racer_01_mk1",
@@ -2747,12 +2371,7 @@
         "variantID": "01::mk1",
         "factions": [
             "ownerless"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_travel_01_mk1",
@@ -2771,12 +2390,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_travel_01_mk2",
@@ -2794,12 +2408,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_s_travel_01_mk3",
@@ -2817,12 +2426,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_tel_xl_allround_01_mk1",
@@ -2947,12 +2551,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_allround_01_mk2",
@@ -2969,12 +2568,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_allround_01_mk3",
@@ -2991,12 +2585,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_combat_01_mk1",
@@ -3013,12 +2602,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_combat_01_mk2",
@@ -3035,12 +2619,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_combat_01_mk3",
@@ -3057,12 +2636,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_travel_01_mk1",
@@ -3079,12 +2653,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_travel_01_mk2",
@@ -3101,12 +2670,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_travel_01_mk3",
@@ -3123,12 +2687,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_m_virtual_01_mk1",
@@ -3163,12 +2722,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_allround_01_mk2",
@@ -3185,12 +2739,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_allround_01_mk3",
@@ -3207,12 +2756,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_combat_01_mk1",
@@ -3229,12 +2773,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_combat_01_mk2",
@@ -3251,12 +2790,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_combat_01_mk3",
@@ -3273,12 +2807,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_travel_01_mk1",
@@ -3295,12 +2824,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_travel_01_mk2",
@@ -3317,12 +2841,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_travel_01_mk3",
@@ -3339,12 +2858,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "engine_ter_s_virtual_01_mk1",
@@ -5391,6 +4905,28 @@
         ]
     },
     {
+        "wareID": "khaakalloy",
+        "label": "Allographyne",
+        "group": "hightech",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "container",
+            "economy",
+            "transmutable"
+        ]
+    },
+    {
+        "wareID": "khaakscrapmetal",
+        "label": "Allographyne Fragments",
+        "group": "refined",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "economy",
+            "recycling",
+            "solid"
+        ]
+    },
+    {
         "wareID": "majadust",
         "label": "Maja Dust",
         "group": "pharmaceutical",
@@ -5474,147 +5010,6 @@
         ]
     },
     {
-        "wareID": "missile_cluster_heavy_mk1",
-        "label": "Heavy Cluster Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_cluster_heavy_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_cluster_light_mk1",
-        "label": "Light Cluster Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_cluster_light_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_disruptor_light_mk1",
-        "label": "Light Disruptor Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "ego_dlc_split",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_disruptor_light_mk1_macro",
-        "variantID": "::mk1",
-        "factions": [
-            "court",
-            "freesplit",
-            "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_dumbfire_heavy_mk1",
-        "label": "Heavy Dumbfire Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_dumbfire_heavy_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_dumbfire_heavy_mk2",
-        "label": "Heavy Dumbfire Missile Mk2",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_dumbfire_heavy_mk2_macro",
-        "variantID": "::mk2",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_dumbfire_light_mk1",
-        "label": "Light Dumbfire Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_dumbfire_light_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_dumbfire_light_mk2",
-        "label": "Light Dumbfire Missile Mk2",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_dumbfire_light_mk2_macro",
-        "variantID": "::mk2",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_emp_mk1",
-        "label": "EMP Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_emp_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
         "wareID": "missile_flagship_heavy_mk1",
         "label": "Heavy Barrage Missile Mk1",
         "group": "missiles",
@@ -5645,16 +5040,17 @@
         ]
     },
     {
-        "wareID": "missile_guided_heavy_mk1",
-        "label": "Heavy Guided Missile Mk1",
+        "wareID": "missile_gen_l_dumbfire_01_mk1",
+        "label": "Heavy Cluster Rocket",
         "group": "missiles",
         "dataSourceID": "vanilla",
+        "size": "l",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_guided_heavy_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_l_dumbfire_01_mk1_macro",
+        "variantID": "01::mk1",
         "component": {
             "tags": [
                 "contents"
@@ -5662,16 +5058,17 @@
         }
     },
     {
-        "wareID": "missile_guided_light_mk1",
-        "label": "Light Guided Missile Mk1",
+        "wareID": "missile_gen_l_guided_01_mk1",
+        "label": "Heavy Guided Missile",
         "group": "missiles",
         "dataSourceID": "vanilla",
+        "size": "l",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_guided_light_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_l_guided_01_mk1_macro",
+        "variantID": "01::mk1",
         "component": {
             "tags": [
                 "contents"
@@ -5679,16 +5076,17 @@
         }
     },
     {
-        "wareID": "missile_heatseeker_heavy_mk1",
-        "label": "Heavy Heatseeker Missile Mk1",
+        "wareID": "missile_gen_m_dumbfire_01_mk1",
+        "label": "Medium Dumbfire Rocket",
         "group": "missiles",
         "dataSourceID": "vanilla",
+        "size": "m",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_heatseeker_heavy_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_m_dumbfire_01_mk1_macro",
+        "variantID": "01::mk1",
         "component": {
             "tags": [
                 "contents"
@@ -5696,16 +5094,17 @@
         }
     },
     {
-        "wareID": "missile_heatseeker_light_mk1",
-        "label": "Light Heatseeker Missile Mk1",
+        "wareID": "missile_gen_m_dumbfire_01_mk2",
+        "label": "Medium Breaching Rocket",
         "group": "missiles",
         "dataSourceID": "vanilla",
+        "size": "m",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_heatseeker_light_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_m_dumbfire_01_mk2_macro",
+        "variantID": "01::mk2",
         "component": {
             "tags": [
                 "contents"
@@ -5713,16 +5112,53 @@
         }
     },
     {
-        "wareID": "missile_interceptor_light_mk1",
-        "label": "Light Interceptor Missile Mk1",
+        "wareID": "missile_gen_m_guided_01_mk1",
+        "label": "Medium Guided Missile",
+        "group": "missiles",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "tags": [
+            "equipment",
+            "missile"
+        ],
+        "macroID": "missile_gen_m_guided_01_mk1_macro",
+        "variantID": "01::mk1",
+        "component": {
+            "tags": [
+                "contents"
+            ]
+        }
+    },
+    {
+        "wareID": "missile_gen_m_smart_01_mk1",
+        "label": "Medium Smart Missile",
+        "group": "missiles",
+        "dataSourceID": "vanilla",
+        "size": "m",
+        "tags": [
+            "equipment",
+            "missile"
+        ],
+        "macroID": "missile_gen_m_smart_01_mk1_macro",
+        "variantID": "01::mk1",
+        "component": {
+            "tags": [
+                "contents"
+            ]
+        }
+    },
+    {
+        "wareID": "missile_gen_s_disruptor_01_mk1",
+        "label": "Light Disruptor Missile",
         "group": "missiles",
         "dataSourceID": "ego_dlc_split",
+        "size": "s",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_interceptor_light_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_s_disruptor_01_mk1_macro",
+        "variantID": "01::mk1",
         "factions": [
             "court",
             "freesplit",
@@ -5735,16 +5171,107 @@
         }
     },
     {
-        "wareID": "missile_scatter_heavy_mk1",
-        "label": "Heavy Scatter Missile Mk1",
+        "wareID": "missile_gen_s_dumbfire_01_mk1",
+        "label": "Light Dumbfire Rocket",
         "group": "missiles",
-        "dataSourceID": "ego_dlc_split",
+        "dataSourceID": "vanilla",
+        "size": "s",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_scatter_heavy_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_s_dumbfire_01_mk1_macro",
+        "variantID": "01::mk1",
+        "component": {
+            "tags": [
+                "contents"
+            ]
+        }
+    },
+    {
+        "wareID": "missile_gen_s_dumbfire_01_mk2",
+        "label": "Light Breaching Rocket",
+        "group": "missiles",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "tags": [
+            "equipment",
+            "missile"
+        ],
+        "macroID": "missile_gen_s_dumbfire_01_mk2_macro",
+        "variantID": "01::mk2",
+        "component": {
+            "tags": [
+                "contents"
+            ]
+        }
+    },
+    {
+        "wareID": "missile_gen_s_emp_01_mk1",
+        "label": "Light Guided EMP Missile",
+        "group": "missiles",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "tags": [
+            "equipment",
+            "missile"
+        ],
+        "macroID": "missile_gen_s_emp_01_mk1_macro",
+        "variantID": "01::mk1",
+        "component": {
+            "tags": [
+                "contents"
+            ]
+        }
+    },
+    {
+        "wareID": "missile_gen_s_guided_01_mk1",
+        "label": "Light Guided Missile",
+        "group": "missiles",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "tags": [
+            "equipment",
+            "missile"
+        ],
+        "macroID": "missile_gen_s_guided_01_mk1_macro",
+        "variantID": "01::mk1",
+        "component": {
+            "tags": [
+                "contents"
+            ]
+        }
+    },
+    {
+        "wareID": "missile_gen_s_heatseeker_01_mk1",
+        "label": "Light Heatseeker Missile",
+        "group": "missiles",
+        "dataSourceID": "vanilla",
+        "size": "s",
+        "tags": [
+            "equipment",
+            "missile"
+        ],
+        "macroID": "missile_gen_s_heatseeker_01_mk1_macro",
+        "variantID": "01::mk1",
+        "component": {
+            "tags": [
+                "contents"
+            ]
+        }
+    },
+    {
+        "wareID": "missile_gen_s_interceptor_01_mk1",
+        "label": "Light Interceptor Missile",
+        "group": "missiles",
+        "dataSourceID": "ego_dlc_split",
+        "size": "s",
+        "tags": [
+            "equipment",
+            "missile"
+        ],
+        "macroID": "missile_gen_s_interceptor_01_mk1_macro",
+        "variantID": "01::mk1",
         "factions": [
             "court",
             "freesplit",
@@ -5757,16 +5284,17 @@
         }
     },
     {
-        "wareID": "missile_smart_heavy_mk1",
-        "label": "Heavy Smart Missile Mk1",
+        "wareID": "missile_gen_s_smart_01_mk1",
+        "label": "Light Smart Missile",
         "group": "missiles",
         "dataSourceID": "vanilla",
+        "size": "s",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_smart_heavy_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_s_smart_01_mk1_macro",
+        "variantID": "01::mk1",
         "component": {
             "tags": [
                 "contents"
@@ -5774,16 +5302,17 @@
         }
     },
     {
-        "wareID": "missile_smart_light_mk1",
-        "label": "Light Smart Missile Mk1",
+        "wareID": "missile_gen_s_swarm_01_mk1",
+        "label": "Light Swarm Missile",
         "group": "missiles",
         "dataSourceID": "vanilla",
+        "size": "s",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_smart_light_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_s_swarm_01_mk1_macro",
+        "variantID": "01::mk1",
         "component": {
             "tags": [
                 "contents"
@@ -5791,89 +5320,17 @@
         }
     },
     {
-        "wareID": "missile_starburst_heavy_mk1",
-        "label": "Heavy Starburst Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "ego_dlc_split",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_starburst_heavy_mk1_macro",
-        "variantID": "::mk1",
-        "factions": [
-            "court",
-            "freesplit",
-            "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_swarm_heavy_mk1",
-        "label": "Heavy Swarm Missile Mk1",
+        "wareID": "missile_gen_s_torpedo_01_mk1",
+        "label": "Light Torpedo",
         "group": "missiles",
         "dataSourceID": "vanilla",
+        "size": "s",
         "tags": [
             "equipment",
             "missile"
         ],
-        "macroID": "missile_swarm_heavy_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_swarm_light_mk1",
-        "label": "Light Swarm Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_swarm_light_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_torpedo_heavy_mk1",
-        "label": "Heavy Torpedo Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_torpedo_heavy_mk1_macro",
-        "variantID": "::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "missile_torpedo_light_mk1",
-        "label": "Light Torpedo Missile Mk1",
-        "group": "missiles",
-        "dataSourceID": "vanilla",
-        "tags": [
-            "equipment",
-            "missile"
-        ],
-        "macroID": "missile_torpedo_light_mk1_macro",
-        "variantID": "::mk1",
+        "macroID": "missile_gen_s_torpedo_01_mk1_macro",
+        "variantID": "01::mk1",
         "component": {
             "tags": [
                 "contents"
@@ -7674,6 +7131,25 @@
         ]
     },
     {
+        "wareID": "module_gen_dock_m_showroom_01",
+        "label": "Small & Medium Ship Showroom",
+        "group": "modules",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "module"
+        ],
+        "macroID": "dockarea_gen_m_showroom_01_macro",
+        "variantID": "01::",
+        "factions": [
+            "antigone",
+            "argon",
+            "holyorder",
+            "paranid",
+            "teladi",
+            "trinity"
+        ]
+    },
+    {
         "wareID": "module_gen_dock_m_venturer_01",
         "label": "S/M Venture Sendoff Dock",
         "group": "modules",
@@ -7685,6 +7161,44 @@
         "variantID": "01::",
         "factions": [
             "visitor"
+        ]
+    },
+    {
+        "wareID": "module_gen_dock_s_showroom_01",
+        "label": "Small Ship Showroom 01",
+        "group": "modules",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "module"
+        ],
+        "macroID": "dockarea_gen_s_showroom_01_macro",
+        "variantID": "01::",
+        "factions": [
+            "antigone",
+            "argon",
+            "holyorder",
+            "paranid",
+            "teladi",
+            "trinity"
+        ]
+    },
+    {
+        "wareID": "module_gen_dock_s_showroom_02",
+        "label": "Small Ship Showroom 02",
+        "group": "modules",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "module"
+        ],
+        "macroID": "dockarea_gen_s_showroom_02_macro",
+        "variantID": "02::",
+        "factions": [
+            "antigone",
+            "argon",
+            "holyorder",
+            "paranid",
+            "teladi",
+            "trinity"
         ]
     },
     {
@@ -7771,6 +7285,21 @@
         "factions": [
             "alliance",
             "scaleplate",
+            "teladi"
+        ]
+    },
+    {
+        "wareID": "module_gen_proc_scrapworkskhaak_01",
+        "label": "Allographyne Scrap Processor",
+        "group": "modules",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "module"
+        ],
+        "macroID": "proc_gen_scrapworkskhaak_macro",
+        "variantID": "01::",
+        "factions": [
+            "hatikvah",
             "teladi"
         ]
     },
@@ -8102,6 +7631,20 @@
         "factions": [
             "alliance",
             "scaleplate",
+            "teladi"
+        ]
+    },
+    {
+        "wareID": "module_gen_prod_scrap_recyclerkhaak",
+        "label": "Allographyne Scrap Recycler",
+        "group": "modules",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "module"
+        ],
+        "macroID": "prod_gen_scrap_recyclerkhaak_macro",
+        "factions": [
+            "hatikvah",
             "teladi"
         ]
     },
@@ -14887,6 +14430,17 @@
         ]
     },
     {
+        "wareID": "rawkhaakscrap",
+        "label": "Allographyne Scrap",
+        "group": "refined",
+        "dataSourceID": "vanilla",
+        "tags": [
+            "processed",
+            "recycling",
+            "solid"
+        ]
+    },
+    {
         "wareID": "rawscrap",
         "label": "Raw Scrap",
         "group": "refined",
@@ -15638,12 +15192,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_arg_m_standard_01_mk2",
@@ -15662,12 +15211,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_arg_m_standard_02_mk1",
@@ -15735,7 +15279,10 @@
         ],
         "component": {
             "tags": [
-                "contents"
+                "component",
+                "shield",
+                "small",
+                "small_racer"
             ]
         }
     },
@@ -15757,12 +15304,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_arg_s_standard_01_mk2",
@@ -15781,12 +15323,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_arg_s_standard_01_mk3",
@@ -15805,12 +15342,7 @@
             "antigone",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_arg_xl_standard_01_mk1",
@@ -16088,7 +15620,6 @@
         "size": "m",
         "tags": [
             "equipment",
-            "noplayerblueprint",
             "shield"
         ],
         "macroID": "shield_gen_m_yacht_01_mk1_macro",
@@ -16111,7 +15642,15 @@
         "variantID": "01::mk1",
         "factions": [
             "ownerless"
-        ]
+        ],
+        "component": {
+            "tags": [
+                "component",
+                "shield",
+                "small",
+                "small_racer"
+            ]
+        }
     },
     {
         "wareID": "shield_kha_l_standard_01_mk1",
@@ -16289,12 +15828,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_par_m_standard_01_mk2",
@@ -16314,12 +15848,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_par_m_standard_02_mk1",
@@ -16388,7 +15917,10 @@
         ],
         "component": {
             "tags": [
-                "contents"
+                "component",
+                "shield",
+                "small",
+                "small_racer"
             ]
         }
     },
@@ -16410,12 +15942,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_par_s_standard_01_mk2",
@@ -16435,12 +15962,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_par_s_standard_01_mk3",
@@ -16460,12 +15982,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_par_xl_standard_01_mk1",
@@ -16574,12 +16091,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_spl_m_standard_01_mk2",
@@ -16596,12 +16108,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_spl_m_standard_02_mk1",
@@ -16664,12 +16171,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_spl_s_standard_01_mk2",
@@ -16687,12 +16189,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_spl_s_standard_01_mk3",
@@ -16709,12 +16206,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_spl_xl_standard_01_mk1",
@@ -16803,12 +16295,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_tel_m_standard_01_mk2",
@@ -16826,12 +16313,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_tel_m_standard_02_mk1",
@@ -16897,7 +16379,10 @@
         ],
         "component": {
             "tags": [
-                "contents"
+                "component",
+                "shield",
+                "small",
+                "small_racer"
             ]
         }
     },
@@ -16918,12 +16403,7 @@
             "ministry",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_tel_s_standard_01_mk2",
@@ -16941,12 +16421,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_tel_s_standard_01_mk3",
@@ -16964,12 +16439,7 @@
             "alliance",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_tel_xl_standard_01_mk1",
@@ -17127,12 +16597,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_ter_m_standard_01_mk2",
@@ -17149,12 +16614,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_ter_m_standard_01_mk3",
@@ -17171,12 +16631,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_ter_m_standard_02_mk1",
@@ -17361,12 +16816,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_ter_s_standard_01_mk2",
@@ -17383,12 +16833,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_ter_s_standard_01_mk3",
@@ -17405,12 +16850,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "shield_ter_s_virtual_01_mk1",
@@ -18160,12 +17600,7 @@
         "factions": [
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_bomber_01_b",
@@ -18181,12 +17616,7 @@
         "factions": [
             "antigone",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_bomber_02_a",
@@ -18203,12 +17633,7 @@
             "buccaneers",
             "hatikvah",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_frigate_01_a",
@@ -18224,12 +17649,7 @@
         "factions": [
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_frigate_01_b",
@@ -18245,12 +17665,7 @@
         "factions": [
             "antigone",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_miner_liquid_01_a",
@@ -18267,12 +17682,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_miner_liquid_01_b",
@@ -18289,12 +17699,7 @@
             "antigone",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_miner_solid_01_a",
@@ -18311,12 +17716,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_miner_solid_01_b",
@@ -18333,12 +17733,7 @@
             "antigone",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_trans_container_01_a",
@@ -18355,12 +17750,7 @@
             "alliance",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_trans_container_01_b",
@@ -18376,12 +17766,7 @@
         "factions": [
             "antigone",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_trans_container_02_a",
@@ -18398,12 +17783,7 @@
             "alliance",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_m_trans_container_02_b",
@@ -18419,12 +17799,7 @@
         "factions": [
             "antigone",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_fighter_01_a",
@@ -18440,12 +17815,7 @@
         "factions": [
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_fighter_01_b",
@@ -18461,12 +17831,7 @@
         "factions": [
             "antigone",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_fighter_02_a",
@@ -18483,12 +17848,7 @@
             "alliance",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_fighter_02_b",
@@ -18504,12 +17864,7 @@
         "factions": [
             "antigone",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_fighter_03_a",
@@ -18525,12 +17880,7 @@
         "factions": [
             "antigone",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_fighter_04_a",
@@ -18546,12 +17896,7 @@
         "factions": [
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_heavyfighter_01_a",
@@ -18595,12 +17940,7 @@
         "factions": [
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_miner_solid_01_a",
@@ -18618,12 +17958,7 @@
             "argon",
             "buccaneers",
             "hatikvah"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_racer_01_a",
@@ -18640,12 +17975,7 @@
         "variantID": "01:a:",
         "factions": [
             "ownerless"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_scout_01_a",
@@ -18664,12 +17994,7 @@
             "buccaneers",
             "hatikvah",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_scout_01_b",
@@ -18687,12 +18012,7 @@
             "buccaneers",
             "hatikvah",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_trans_container_01_a",
@@ -18710,12 +18030,7 @@
             "argon",
             "buccaneers",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_trans_container_01_b",
@@ -18732,12 +18047,7 @@
             "antigone",
             "buccaneers",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_trans_container_02_a",
@@ -18755,12 +18065,7 @@
             "argon",
             "buccaneers",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_s_trans_container_02_b",
@@ -18777,12 +18082,7 @@
             "antigone",
             "buccaneers",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_arg_xl_builder_01_a",
@@ -19093,16 +18393,15 @@
         "dataSourceID": "ego_dlc_boron",
         "size": "m",
         "tags": [
-            "noblueprint",
+            "limited",
             "nocustomgamestart",
             "nodiplomacyblueprint",
-            "noplayerbuild",
             "ship"
         ],
         "macroID": "ship_bor_m_corvette_02_a_macro",
         "variantID": "02:a:",
         "factions": [
-            "boron"
+            "ownerless"
         ]
     },
     {
@@ -19363,12 +18662,7 @@
         "variantID": "01:a:",
         "factions": [
             "player"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_gen_m_transdrone_container_02_a",
@@ -19384,12 +18678,7 @@
         "variantID": "02:a:",
         "factions": [
             "player"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_gen_m_tugboat_01_a",
@@ -19404,14 +18693,10 @@
         "variantID": "01:a:",
         "factions": [
             "alliance",
+            "hatikvah",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_gen_m_yacht_01_a",
@@ -19420,21 +18705,16 @@
         "dataSourceID": "ego_dlc_pirate",
         "size": "m",
         "tags": [
-            "noblueprint",
+            "limited",
+            "nocustomgamestart",
             "nodiplomacyblueprint",
-            "noplayerbuild",
             "ship"
         ],
         "macroID": "ship_gen_m_yacht_01_a_macro",
         "variantID": "01:a:",
         "factions": [
-            "loanshark"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+            "ownerless"
+        ]
     },
     {
         "wareID": "ship_gen_s_fighter_01_a",
@@ -19449,12 +18729,7 @@
         "variantID": "01:a:",
         "factions": [
             "alliance"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_gen_s_fighter_01_b",
@@ -19469,12 +18744,7 @@
         "variantID": "01:b:",
         "factions": [
             "alliance"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_gen_s_fightingdrone_01_a",
@@ -19487,12 +18757,7 @@
             "equipment"
         ],
         "macroID": "ship_gen_s_fightingdrone_01_a_macro",
-        "variantID": "01:a:",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        "variantID": "01:a:"
     },
     {
         "wareID": "ship_gen_s_lasertower_01_a",
@@ -19518,12 +18783,7 @@
             "equipment"
         ],
         "macroID": "ship_gen_s_miningdrone_liquid_01_a_macro",
-        "variantID": "01:a:",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        "variantID": "01:a:"
     },
     {
         "wareID": "ship_gen_s_miningdrone_solid_01_a",
@@ -19536,12 +18796,7 @@
             "equipment"
         ],
         "macroID": "ship_gen_s_miningdrone_solid_01_a_macro",
-        "variantID": "01:a:",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        "variantID": "01:a:"
     },
     {
         "wareID": "ship_gen_s_racer_01_a",
@@ -19574,12 +18829,7 @@
         "variantID": "01:a:",
         "factions": [
             "player"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_gen_s_transdrone_container_02_a",
@@ -19595,12 +18845,7 @@
         "variantID": "02:a:",
         "factions": [
             "player"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_gen_xs_buildingdrone_01_a",
@@ -19697,12 +18942,7 @@
         "variantID": "01:a:",
         "factions": [
             "khaak"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_kha_m_fighter_02_a",
@@ -19719,12 +18959,7 @@
         "variantID": "02:a:",
         "factions": [
             "khaak"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_kha_s_fighter_01_a",
@@ -19741,12 +18976,7 @@
         "variantID": "01:a:",
         "factions": [
             "khaak"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_kha_s_fighter_02_a",
@@ -19763,12 +18993,7 @@
         "variantID": "02:a:",
         "factions": [
             "khaak"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_kha_xl_battleship_01_a",
@@ -20137,12 +19362,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_corvette_01_b",
@@ -20159,12 +19379,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_frigate_01_a",
@@ -20181,12 +19396,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_frigate_01_b",
@@ -20203,12 +19413,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_miner_liquid_01_a",
@@ -20226,12 +19431,7 @@
             "hatikvah",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_miner_liquid_01_b",
@@ -20249,12 +19449,7 @@
             "hatikvah",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_miner_solid_01_a",
@@ -20272,12 +19467,7 @@
             "hatikvah",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_miner_solid_01_b",
@@ -20295,12 +19485,7 @@
             "hatikvah",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_trans_container_01_a",
@@ -20318,12 +19503,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_trans_container_01_b",
@@ -20340,12 +19520,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_trans_container_02_a",
@@ -20363,12 +19538,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_trans_container_02_b",
@@ -20385,12 +19555,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_m_trans_container_03_a",
@@ -20405,12 +19570,7 @@
         "variantID": "03:a:",
         "factions": [
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_fighter_01_a",
@@ -20427,12 +19587,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_fighter_01_b",
@@ -20449,12 +19604,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_fighter_02_a",
@@ -20471,12 +19621,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_fighter_02_b",
@@ -20493,12 +19638,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_heavyfighter_01_a",
@@ -20515,12 +19655,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_miner_solid_01_a",
@@ -20539,12 +19674,7 @@
             "holyorder",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_racer_01_a",
@@ -20561,12 +19691,7 @@
         "variantID": "01:a:",
         "factions": [
             "ownerless"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_scout_01_a",
@@ -20584,12 +19709,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_scout_01_b",
@@ -20606,12 +19726,7 @@
             "buccaneers",
             "holyorder",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_trans_container_01_a",
@@ -20630,12 +19745,7 @@
             "paranid",
             "scaleplate",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_s_trans_container_01_b",
@@ -20653,12 +19763,7 @@
             "holyorder",
             "scaleplate",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_par_xl_builder_01_a",
@@ -20950,12 +20055,7 @@
         "variantID": "01:a:",
         "factions": [
             "loanshark"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_pir_s_fighter_02_a",
@@ -20970,12 +20070,7 @@
         "variantID": "02:a:",
         "factions": [
             "loanshark"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_pir_s_heavyfighter_01_a",
@@ -20990,12 +20085,7 @@
         "variantID": "01:a:",
         "factions": [
             "loanshark"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_pir_s_trans_condensate_01_a",
@@ -21011,12 +20101,7 @@
         "factions": [
             "loanshark",
             "scavenger"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_pir_s_trans_container_01_a",
@@ -21032,12 +20117,7 @@
         "factions": [
             "loanshark",
             "scavenger"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_pir_xl_battleship_01_a",
@@ -21178,12 +20258,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_m_corvette_01_b",
@@ -21199,12 +20274,7 @@
         "factions": [
             "court",
             "freesplit"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_m_frigate_01_a",
@@ -21220,12 +20290,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_m_miner_liquid_01_a",
@@ -21242,12 +20307,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_m_miner_solid_01_a",
@@ -21264,12 +20324,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_m_trans_container_01_a",
@@ -21286,12 +20341,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_fighter_01_a",
@@ -21307,12 +20357,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_fighter_02_a",
@@ -21328,12 +20373,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_fighter_02_b",
@@ -21349,12 +20389,7 @@
         "factions": [
             "court",
             "freesplit"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_heavyfighter_01_a",
@@ -21370,12 +20405,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_heavyfighter_02_a",
@@ -21391,12 +20421,7 @@
         "factions": [
             "court",
             "freesplit"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_miner_solid_01_a",
@@ -21413,12 +20438,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_scout_01_a",
@@ -21435,12 +20455,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_s_trans_container_01_a",
@@ -21457,12 +20472,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_spl_xl_builder_01_a",
@@ -21837,12 +20847,7 @@
         "variantID": "01:a:",
         "factions": [
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_bomber_01_b",
@@ -21857,12 +20862,7 @@
         "variantID": "01:b:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_frigate_01_a",
@@ -21877,12 +20877,7 @@
         "variantID": "01:a:",
         "factions": [
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_frigate_01_b",
@@ -21897,12 +20892,7 @@
         "variantID": "01:b:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_miner_liquid_01_a",
@@ -21918,12 +20908,7 @@
         "factions": [
             "hatikvah",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_miner_liquid_01_b",
@@ -21939,12 +20924,7 @@
         "factions": [
             "hatikvah",
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_miner_solid_01_a",
@@ -21960,12 +20940,7 @@
         "factions": [
             "hatikvah",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_miner_solid_01_b",
@@ -21981,12 +20956,7 @@
         "factions": [
             "hatikvah",
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_trans_container_01_a",
@@ -22002,12 +20972,7 @@
         "factions": [
             "alliance",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_trans_container_01_b",
@@ -22022,12 +20987,7 @@
         "variantID": "01:b:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_trans_container_02_a",
@@ -22043,12 +21003,7 @@
         "factions": [
             "alliance",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_trans_container_02_b",
@@ -22063,12 +21018,7 @@
         "variantID": "02:b:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_m_trans_container_03_a",
@@ -22083,12 +21033,7 @@
         "variantID": "03:a:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_fighter_01_a",
@@ -22105,12 +21050,7 @@
             "hatikvah",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_fighter_01_b",
@@ -22127,12 +21067,7 @@
             "hatikvah",
             "ministry",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_fighter_02_a",
@@ -22147,12 +21082,7 @@
         "variantID": "02:a:",
         "factions": [
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_fighter_02_b",
@@ -22167,12 +21097,7 @@
         "variantID": "02:b:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_miner_solid_01_a",
@@ -22189,12 +21114,7 @@
             "hatikvah",
             "ministry",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_racer_01_a",
@@ -22211,12 +21131,7 @@
         "variantID": "01:a:",
         "factions": [
             "ownerless"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_scout_01_a",
@@ -22234,12 +21149,7 @@
             "hatikvah",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_scout_01_b",
@@ -22256,12 +21166,7 @@
             "hatikvah",
             "ministry",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_scout_02_a",
@@ -22277,12 +21182,7 @@
         "factions": [
             "alliance",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_scout_02_b",
@@ -22297,12 +21197,7 @@
         "variantID": "02:b:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_trans_container_01_a",
@@ -22319,12 +21214,7 @@
             "alliance",
             "scaleplate",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_trans_container_01_b",
@@ -22340,12 +21230,7 @@
         "factions": [
             "ministry",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_s_trans_container_02_a",
@@ -22363,12 +21248,7 @@
         "variantID": "02:a:",
         "factions": [
             "ministry"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_tel_xl_builder_01_a",
@@ -22683,12 +21563,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_m_corvette_02_a",
@@ -22719,12 +21594,7 @@
         "variantID": "01:a:",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_m_gunboat_01_a",
@@ -22739,12 +21609,7 @@
         "variantID": "01:a:",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_m_miner_liquid_01_a",
@@ -22760,12 +21625,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_m_miner_solid_01_a",
@@ -22781,12 +21641,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_m_trans_container_01_a",
@@ -22802,12 +21657,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_fighter_01_a",
@@ -22823,12 +21673,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_fighter_02_a",
@@ -22842,13 +21687,9 @@
         "macroID": "ship_ter_s_fighter_02_a_macro",
         "variantID": "02:a:",
         "factions": [
-            "pioneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+            "pioneers",
+            "terran"
+        ]
     },
     {
         "wareID": "ship_ter_s_fighter_03_a",
@@ -22863,12 +21704,7 @@
         "variantID": "03:a:",
         "factions": [
             "pioneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_fighter_04_a",
@@ -22899,12 +21735,7 @@
         "variantID": "01:a:",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_miner_solid_01_a",
@@ -22920,12 +21751,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_scout_01_a",
@@ -22941,12 +21767,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_scout_02_a",
@@ -22960,13 +21781,9 @@
         "macroID": "ship_ter_s_scout_02_a_macro",
         "variantID": "02:a:",
         "factions": [
+            "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_trans_container_01_a",
@@ -22982,12 +21799,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_ter_s_xperimental_01_a",
@@ -23152,12 +21964,7 @@
         "variantID": "01:a:",
         "factions": [
             "xenon"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_xen_m_miner_01_a",
@@ -23173,12 +21980,7 @@
         "variantID": "01:a:",
         "factions": [
             "xenon"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_xen_m_miner_solid_01_a",
@@ -23210,12 +22012,7 @@
         "variantID": "01:a:",
         "factions": [
             "xenon"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_xen_s_fighter_02_a",
@@ -23231,12 +22028,7 @@
         "variantID": "02:a:",
         "factions": [
             "xenon"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_xen_s_heavyfighter_01_a",
@@ -23268,12 +22060,7 @@
         "variantID": "01:a:",
         "factions": [
             "xenon"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_xen_xl_carrier_01_a",
@@ -23347,12 +22134,7 @@
         "variantID": "01:a:",
         "factions": [
             "yaki"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "ship_yak_s_fighter_01_a",
@@ -23368,12 +22150,7 @@
         "variantID": "01:a:",
         "factions": [
             "yaki"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "silicon",
@@ -23438,7 +22215,8 @@
             "equipment",
             "noblueprint",
             "software"
-        ]
+        ],
+        "macroID": "software_dummy_macro"
     },
     {
         "wareID": "software_dockmk2",
@@ -23449,7 +22227,8 @@
             "equipment",
             "noblueprint",
             "software"
-        ]
+        ],
+        "macroID": "software_dummy_macro"
     },
     {
         "wareID": "software_economymk1",
@@ -23469,7 +22248,8 @@
             "equipment",
             "noblueprint",
             "software"
-        ]
+        ],
+        "macroID": "software_dummy_macro"
     },
     {
         "wareID": "software_hackerspacesuitmk1",
@@ -23630,7 +22410,8 @@
             "equipment",
             "noblueprint",
             "software"
-        ]
+        ],
+        "macroID": "software_dummy_macro"
     },
     {
         "wareID": "software_targetmk2",
@@ -23650,7 +22431,8 @@
             "equipment",
             "noblueprint",
             "software"
-        ]
+        ],
+        "macroID": "software_dummy_macro"
     },
     {
         "wareID": "software_trademk2",
@@ -24147,6 +22929,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_arg_l_dumbfire_01_mk1_macro",
@@ -24170,6 +22953,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_arg_l_guided_01_mk1_macro",
@@ -24313,6 +23097,7 @@
         "group": "turrets",
         "dataSourceID": "vanilla",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -24330,6 +23115,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_arg_m_dumbfire_02_mk1_macro",
@@ -24445,6 +23231,7 @@
         "group": "turrets",
         "dataSourceID": "vanilla",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -24462,6 +23249,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_arg_m_guided_02_mk1_macro",
@@ -24675,7 +23463,7 @@
     },
     {
         "wareID": "turret_bor_l_disruptor_01_mk1",
-        "label": "BOR L Ion Net Launcher Mk1",
+        "label": "BOR L Kinetic Ion Railgun Mk1",
         "group": "weapons",
         "dataSourceID": "ego_dlc_boron",
         "size": "l",
@@ -24807,6 +23595,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_bor_m_dumbfire_01_mk1_macro",
@@ -24823,6 +23612,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_bor_m_guided_01_mk1_macro",
@@ -25015,6 +23805,7 @@
         "variantID": "01::mk1",
         "factions": [
             "alliance",
+            "hatikvah",
             "scaleplate",
             "teladi"
         ],
@@ -25055,7 +23846,6 @@
         "size": "m",
         "tags": [
             "equipment",
-            "noplayerblueprint",
             "turret"
         ],
         "macroID": "turret_gen_m_yacht_01_mk1_macro",
@@ -25117,7 +23907,7 @@
     },
     {
         "wareID": "turret_par_l_beam_01_mk1",
-        "label": "PAR L Beam Turret Mk1",
+        "label": "PAR L Mass Driver Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "l",
@@ -25148,6 +23938,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_par_l_dumbfire_01_mk1_macro",
@@ -25172,6 +23963,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_par_l_guided_01_mk1_macro",
@@ -25265,7 +24057,7 @@
     },
     {
         "wareID": "turret_par_m_beam_01_mk1",
-        "label": "PAR M Beam Turret Mk1",
+        "label": "PAR M Mass Driver Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -25290,7 +24082,7 @@
     },
     {
         "wareID": "turret_par_m_beam_02_mk1",
-        "label": "PAR M Beam Turret Mk1",
+        "label": "PAR M Mass Driver Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -25319,6 +24111,7 @@
         "group": "turrets",
         "dataSourceID": "vanilla",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -25337,6 +24130,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_par_m_dumbfire_02_mk1_macro",
@@ -25409,6 +24203,7 @@
         "group": "turrets",
         "dataSourceID": "vanilla",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -25427,6 +24222,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_par_m_guided_02_mk1_macro",
@@ -25595,7 +24391,7 @@
     },
     {
         "wareID": "turret_par_m_shotgun_01_mk1",
-        "label": "PAR M Shard Turret Mk1",
+        "label": "PAR M Blast Mortar Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -25620,7 +24416,7 @@
     },
     {
         "wareID": "turret_par_m_shotgun_02_mk1",
-        "label": "PAR M Shard Turret Mk1",
+        "label": "PAR M Blast Mortar Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -25687,7 +24483,7 @@
     },
     {
         "wareID": "turret_spl_l_beam_01_mk1",
-        "label": "SPL L Beam Turret Mk1",
+        "label": "SPL L Boson Lance Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "size": "l",
@@ -25716,6 +24512,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_spl_l_dumbfire_01_mk1_macro",
@@ -25739,6 +24536,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_spl_l_guided_01_mk1_macro",
@@ -25825,7 +24623,7 @@
     },
     {
         "wareID": "turret_spl_m_beam_01_mk1",
-        "label": "SPL M Beam Turret Mk1",
+        "label": "SPL M Boson Lance Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
@@ -25848,7 +24646,7 @@
     },
     {
         "wareID": "turret_spl_m_beam_02_mk1",
-        "label": "SPL M Beam Turret Mk1",
+        "label": "SPL M Boson Lance Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
@@ -25875,6 +24673,7 @@
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -25894,6 +24693,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_spl_m_dumbfire_02_mk1_macro",
@@ -25955,7 +24755,7 @@
     },
     {
         "wareID": "turret_spl_m_gatling_01_mk1",
-        "label": "SPL M Bolt Turret Mk1",
+        "label": "SPL M Neutron Gatling Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
@@ -25978,7 +24778,7 @@
     },
     {
         "wareID": "turret_spl_m_gatling_02_mk1",
-        "label": "SPL M Bolt Turret Mk1",
+        "label": "SPL M Neutron Gatling Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
@@ -26005,6 +24805,7 @@
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -26024,6 +24825,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_spl_m_guided_02_mk1_macro",
@@ -26179,7 +24981,7 @@
     },
     {
         "wareID": "turret_spl_m_shotgun_01_mk1",
-        "label": "SPL M Shard Turret Mk1",
+        "label": "SPL M Tau Accelerator Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
@@ -26202,7 +25004,7 @@
     },
     {
         "wareID": "turret_spl_m_shotgun_02_mk1",
-        "label": "SPL M Shard Turret Mk1",
+        "label": "SPL M Tau Accelerator Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_split",
         "size": "m",
@@ -26254,6 +25056,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_tel_l_dumbfire_01_mk1_macro",
@@ -26277,6 +25080,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_tel_l_guided_01_mk1_macro",
@@ -26341,7 +25145,7 @@
     },
     {
         "wareID": "turret_tel_l_plasma_01_mk1",
-        "label": "TEL L Plasma Turret Mk1",
+        "label": "TEL L Plasma Shard Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "l",
@@ -26414,6 +25218,7 @@
         "group": "turrets",
         "dataSourceID": "vanilla",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -26431,6 +25236,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_tel_m_dumbfire_02_mk1_macro",
@@ -26498,6 +25304,7 @@
         "group": "turrets",
         "dataSourceID": "vanilla",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -26515,6 +25322,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_tel_m_guided_02_mk1_macro",
@@ -26672,7 +25480,7 @@
     },
     {
         "wareID": "turret_tel_m_shotgun_01_mk1",
-        "label": "TEL M Shard Turret Mk1",
+        "label": "TEL M Muon Blaster Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -26695,7 +25503,7 @@
     },
     {
         "wareID": "turret_tel_m_shotgun_02_mk1",
-        "label": "TEL M Shard Turret Mk1",
+        "label": "TEL M Muon Blaster Turret Mk1",
         "group": "turrets",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -26718,7 +25526,7 @@
     },
     {
         "wareID": "turret_ter_l_beam_01_mk1",
-        "label": "TER L Beam Turret Mk1",
+        "label": "TER L Meson Stream Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
@@ -26746,6 +25554,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_ter_l_dumbfire_01_mk1_macro",
@@ -26762,7 +25571,7 @@
     },
     {
         "wareID": "turret_ter_l_gatling_01_mk1",
-        "label": "TER L Bolt Turret Mk1",
+        "label": "TER L Proton Barrage Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "size": "l",
@@ -26790,6 +25599,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_ter_l_guided_01_mk1_macro",
@@ -26850,7 +25660,7 @@
     },
     {
         "wareID": "turret_ter_m_beam_01_mk1",
-        "label": "TER M Beam Turret Mk1",
+        "label": "TER M Meson Stream Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
@@ -26871,7 +25681,7 @@
     },
     {
         "wareID": "turret_ter_m_beam_02_mk1",
-        "label": "TER M Beam Turret Mk1",
+        "label": "TER M Meson Stream Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
@@ -26896,6 +25706,7 @@
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -26914,6 +25725,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_ter_m_dumbfire_02_mk1_macro",
@@ -26930,7 +25742,7 @@
     },
     {
         "wareID": "turret_ter_m_gatling_01_mk1",
-        "label": "TER M Bolt Turret Mk1",
+        "label": "TER M Proton Barrage Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
@@ -26951,7 +25763,7 @@
     },
     {
         "wareID": "turret_ter_m_gatling_02_mk1",
-        "label": "TER M Bolt Turret Mk1",
+        "label": "TER M Proton Barrage Turret Mk1",
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "size": "m",
@@ -26976,6 +25788,7 @@
         "group": "turrets",
         "dataSourceID": "ego_dlc_terran",
         "tags": [
+            "missilelauncher",
             "noplayerblueprint",
             "turret"
         ],
@@ -26994,6 +25807,7 @@
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "turret"
         ],
         "macroID": "turret_ter_m_guided_02_mk1_macro",
@@ -27370,12 +26184,7 @@
             "buccaneers",
             "hatikvah",
             "scaleplate"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_arg_m_ion_01_mk1",
@@ -27393,12 +26202,7 @@
             "alliance",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_arg_m_ion_01_mk2",
@@ -27416,12 +26220,7 @@
             "alliance",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_arg_s_ion_01_mk1",
@@ -27439,12 +26238,7 @@
             "alliance",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_arg_s_ion_01_mk2",
@@ -27462,12 +26256,7 @@
             "alliance",
             "argon",
             "buccaneers"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_atf_xl_battleship_01_mk1",
@@ -27485,12 +26274,7 @@
         "variantID": "01::mk1",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_bor_l_beam_01_mk1",
@@ -27509,22 +26293,6 @@
         ]
     },
     {
-        "wareID": "weapon_bor_m_dumbfire_01_mk1",
-        "label": "BOR M Dumbfire Launcher Mk1",
-        "group": "weapons",
-        "dataSourceID": "ego_dlc_boron",
-        "size": "m",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_bor_m_dumbfire_01_mk1_macro",
-        "variantID": "01::mk1",
-        "factions": [
-            "boron"
-        ]
-    },
-    {
         "wareID": "weapon_bor_m_flak_01_mk1",
         "label": "BOR M Ion Atomiser Mk1",
         "group": "weapons",
@@ -27535,22 +26303,6 @@
             "weapon"
         ],
         "macroID": "weapon_bor_m_flak_01_mk1_macro",
-        "variantID": "01::mk1",
-        "factions": [
-            "boron"
-        ]
-    },
-    {
-        "wareID": "weapon_bor_m_guided_01_mk1",
-        "label": "BOR M Tracking Launcher Mk1",
-        "group": "weapons",
-        "dataSourceID": "ego_dlc_boron",
-        "size": "m",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_bor_m_guided_01_mk1_macro",
         "variantID": "01::mk1",
         "factions": [
             "boron"
@@ -27605,22 +26357,6 @@
         ]
     },
     {
-        "wareID": "weapon_bor_m_torpedo_01_mk1",
-        "label": "BOR M Torpedo Launcher Mk1",
-        "group": "weapons",
-        "dataSourceID": "ego_dlc_boron",
-        "size": "m",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_bor_m_torpedo_01_mk1_macro",
-        "variantID": "01::mk1",
-        "factions": [
-            "boron"
-        ]
-    },
-    {
         "wareID": "weapon_bor_s_arc_01_mk1",
         "label": "BOR S Arc Gun Mk1",
         "group": "weapons",
@@ -27637,22 +26373,6 @@
         ]
     },
     {
-        "wareID": "weapon_bor_s_dumbfire_01_mk1",
-        "label": "BOR S Dumbfire Launcher Mk1",
-        "group": "weapons",
-        "dataSourceID": "ego_dlc_boron",
-        "size": "s",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_bor_s_dumbfire_01_mk1_macro",
-        "variantID": "01::mk1",
-        "factions": [
-            "boron"
-        ]
-    },
-    {
         "wareID": "weapon_bor_s_gatling_01_mk1",
         "label": "BOR S Ion Gatling Mk1",
         "group": "weapons",
@@ -27663,22 +26383,6 @@
             "weapon"
         ],
         "macroID": "weapon_bor_s_gatling_01_mk1_macro",
-        "variantID": "01::mk1",
-        "factions": [
-            "boron"
-        ]
-    },
-    {
-        "wareID": "weapon_bor_s_guided_01_mk1",
-        "label": "BOR S Tracking Launcher Mk1",
-        "group": "weapons",
-        "dataSourceID": "ego_dlc_boron",
-        "size": "s",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_bor_s_guided_01_mk1_macro",
         "variantID": "01::mk1",
         "factions": [
             "boron"
@@ -27711,22 +26415,6 @@
             "weapon"
         ],
         "macroID": "weapon_bor_s_mining_01_mk1_macro",
-        "variantID": "01::mk1",
-        "factions": [
-            "boron"
-        ]
-    },
-    {
-        "wareID": "weapon_bor_s_torpedo_01_mk1",
-        "label": "BOR S Torpedo Launcher Mk1",
-        "group": "weapons",
-        "dataSourceID": "ego_dlc_boron",
-        "size": "s",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_bor_s_torpedo_01_mk1_macro",
         "variantID": "01::mk1",
         "factions": [
             "boron"
@@ -27825,12 +26513,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_beam_01_mk2",
@@ -27854,12 +26537,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_disabler_01_mk1",
@@ -27881,17 +26559,18 @@
         ]
     },
     {
-        "wareID": "weapon_gen_m_dumbfire_01_mk1",
-        "label": "M Dumbfire Launcher Mk1",
+        "wareID": "weapon_gen_m_dumbfire_02_mk1",
+        "label": "M Dumbfire Launcher",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "weapon"
         ],
-        "macroID": "weapon_gen_m_dumbfire_01_mk1_macro",
-        "variantID": "01::mk1",
+        "macroID": "weapon_gen_m_dumbfire_02_mk1_macro",
+        "variantID": "02::mk1",
         "factions": [
             "alliance",
             "antigone",
@@ -27903,40 +26582,7 @@
             "scaleplate",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "weapon_gen_m_dumbfire_01_mk2",
-        "label": "M Dumbfire Launcher Mk2",
-        "group": "weapons",
-        "dataSourceID": "vanilla",
-        "size": "m",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_gen_m_dumbfire_01_mk2_macro",
-        "variantID": "01::mk2",
-        "factions": [
-            "alliance",
-            "antigone",
-            "argon",
-            "holyorder",
-            "ministry",
-            "paranid",
-            "teladi",
-            "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_gatling_01_mk1",
@@ -27960,12 +26606,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_gatling_01_mk2",
@@ -27989,25 +26630,21 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
-        "wareID": "weapon_gen_m_guided_01_mk1",
-        "label": "M Tracking Launcher Mk1",
+        "wareID": "weapon_gen_m_guided_02_mk1",
+        "label": "M Tracking Launcher",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "weapon"
         ],
-        "macroID": "weapon_gen_m_guided_01_mk1_macro",
-        "variantID": "01::mk1",
+        "macroID": "weapon_gen_m_guided_02_mk1_macro",
+        "variantID": "02::mk1",
         "factions": [
             "alliance",
             "antigone",
@@ -28015,42 +26652,10 @@
             "holyorder",
             "ministry",
             "paranid",
+            "scaleplate",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "weapon_gen_m_guided_01_mk2",
-        "label": "M Tracking Launcher Mk2",
-        "group": "weapons",
-        "dataSourceID": "vanilla",
-        "size": "m",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_gen_m_guided_01_mk2_macro",
-        "variantID": "01::mk2",
-        "factions": [
-            "alliance",
-            "antigone",
-            "argon",
-            "holyorder",
-            "ministry",
-            "paranid",
-            "teladi",
-            "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_laser_01_mk1",
@@ -28076,12 +26681,7 @@
             "scaleplate",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_laser_01_mk2",
@@ -28105,12 +26705,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_mining_01_mk1",
@@ -28136,12 +26731,7 @@
             "scaleplate",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_mining_01_mk2",
@@ -28165,12 +26755,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_plasma_01_mk1",
@@ -28194,12 +26779,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_plasma_01_mk2",
@@ -28223,12 +26803,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_shieldpierce_01_mk1",
@@ -28270,12 +26845,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_shotgun_01_mk2",
@@ -28299,25 +26869,21 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
-        "wareID": "weapon_gen_m_torpedo_01_mk1",
-        "label": "M Torpedo Launcher Mk1",
+        "wareID": "weapon_gen_m_torpedo_02_mk1",
+        "label": "M Torpedo Launcher",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "m",
         "tags": [
             "equipment",
+            "missilelauncher",
             "weapon"
         ],
-        "macroID": "weapon_gen_m_torpedo_01_mk1_macro",
-        "variantID": "01::mk1",
+        "macroID": "weapon_gen_m_torpedo_02_mk1_macro",
+        "variantID": "02::mk1",
         "factions": [
             "alliance",
             "antigone",
@@ -28328,41 +26894,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "weapon_gen_m_torpedo_01_mk2",
-        "label": "M Torpedo Launcher Mk2",
-        "group": "weapons",
-        "dataSourceID": "vanilla",
-        "size": "m",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_gen_m_torpedo_01_mk2_macro",
-        "variantID": "01::mk2",
-        "factions": [
-            "alliance",
-            "antigone",
-            "argon",
-            "buccaneers",
-            "holyorder",
-            "ministry",
-            "paranid",
-            "teladi",
-            "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_m_yacht_01_mk1",
@@ -28372,19 +26904,13 @@
         "size": "m",
         "tags": [
             "equipment",
-            "noplayerblueprint",
             "weapon"
         ],
         "macroID": "weapon_gen_m_yacht_01_mk1_macro",
         "variantID": "01::mk1",
         "factions": [
             "loanshark"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_spacesuit_demolition_01_mk1",
@@ -28401,12 +26927,7 @@
             "weapon"
         ],
         "macroID": "spacesuit_gen_bomblauncher_01_macro",
-        "variantID": "01::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        "variantID": "01::mk1"
     },
     {
         "wareID": "weapon_gen_spacesuit_laser_01_mk1",
@@ -28423,12 +26944,7 @@
             "weapon"
         ],
         "macroID": "spacesuit_gen_laser_01_macro",
-        "variantID": "01::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        "variantID": "01::mk1"
     },
     {
         "wareID": "weapon_gen_spacesuit_laser_02_mk1",
@@ -28445,12 +26961,7 @@
             "weapon"
         ],
         "macroID": "spacesuit_gen_laser_02_macro",
-        "variantID": "02::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        "variantID": "02::mk1"
     },
     {
         "wareID": "weapon_gen_spacesuit_laser_03_mk1",
@@ -28484,12 +26995,7 @@
             "weapon"
         ],
         "macroID": "spacesuit_gen_repairweapon_01_macro",
-        "variantID": "01::mk1",
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        "variantID": "01::mk1"
     },
     {
         "wareID": "weapon_gen_s_beam_01_mk1",
@@ -28513,12 +27019,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_beam_01_mk2",
@@ -28542,12 +27043,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_burst_01_mk1",
@@ -28566,12 +27062,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_burst_01_mk2",
@@ -28590,12 +27081,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_cannon_01_mk1",
@@ -28614,12 +27100,7 @@
             "holyorder",
             "ministry",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_cannon_01_mk2",
@@ -28638,25 +27119,21 @@
             "holyorder",
             "ministry",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
-        "wareID": "weapon_gen_s_dumbfire_01_mk1",
-        "label": "S Dumbfire Launcher Mk1",
+        "wareID": "weapon_gen_s_dumbfire_02_mk1",
+        "label": "S Dumbfire Launcher",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "s",
         "tags": [
             "equipment",
+            "missilelauncher",
             "weapon"
         ],
-        "macroID": "weapon_gen_s_dumbfire_01_mk1_macro",
-        "variantID": "01::mk1",
+        "macroID": "weapon_gen_s_dumbfire_02_mk1_macro",
+        "variantID": "02::mk1",
         "factions": [
             "alliance",
             "antigone",
@@ -28668,40 +27145,7 @@
             "scaleplate",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "weapon_gen_s_dumbfire_01_mk2",
-        "label": "S Dumbfire Launcher Mk2",
-        "group": "weapons",
-        "dataSourceID": "vanilla",
-        "size": "s",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_gen_s_dumbfire_01_mk2_macro",
-        "variantID": "01::mk2",
-        "factions": [
-            "alliance",
-            "antigone",
-            "argon",
-            "holyorder",
-            "ministry",
-            "paranid",
-            "teladi",
-            "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_gatling_01_mk1",
@@ -28725,12 +27169,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_gatling_01_mk2",
@@ -28754,25 +27193,21 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
-        "wareID": "weapon_gen_s_guided_01_mk1",
-        "label": "S Tracking Launcher Mk1",
+        "wareID": "weapon_gen_s_guided_02_mk1",
+        "label": "S Tracking Launcher",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "s",
         "tags": [
             "equipment",
+            "missilelauncher",
             "weapon"
         ],
-        "macroID": "weapon_gen_s_guided_01_mk1_macro",
-        "variantID": "01::mk1",
+        "macroID": "weapon_gen_s_guided_02_mk1_macro",
+        "variantID": "02::mk1",
         "factions": [
             "alliance",
             "antigone",
@@ -28782,40 +27217,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "weapon_gen_s_guided_01_mk2",
-        "label": "S Tracking Launcher Mk2",
-        "group": "weapons",
-        "dataSourceID": "vanilla",
-        "size": "s",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_gen_s_guided_01_mk2_macro",
-        "variantID": "01::mk2",
-        "factions": [
-            "alliance",
-            "antigone",
-            "argon",
-            "holyorder",
-            "ministry",
-            "paranid",
-            "teladi",
-            "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_laser_01_mk1",
@@ -28841,12 +27243,7 @@
             "scaleplate",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_laser_01_mk2",
@@ -28870,12 +27267,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_mining_01_mk1",
@@ -28899,12 +27291,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_mining_01_mk2",
@@ -28928,12 +27315,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_plasma_01_mk1",
@@ -28957,12 +27339,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_plasma_01_mk2",
@@ -28986,12 +27363,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_shotgun_01_mk1",
@@ -29015,12 +27387,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_gen_s_shotgun_01_mk2",
@@ -29044,25 +27411,21 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
-        "wareID": "weapon_gen_s_torpedo_01_mk1",
-        "label": "S Torpedo Launcher Mk1",
+        "wareID": "weapon_gen_s_torpedo_02_mk1",
+        "label": "S Torpedo Launcher",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "s",
         "tags": [
             "equipment",
+            "missilelauncher",
             "weapon"
         ],
-        "macroID": "weapon_gen_s_torpedo_01_mk1_macro",
-        "variantID": "01::mk1",
+        "macroID": "weapon_gen_s_torpedo_02_mk1_macro",
+        "variantID": "02::mk1",
         "factions": [
             "alliance",
             "antigone",
@@ -29073,41 +27436,7 @@
             "paranid",
             "teladi",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
-    },
-    {
-        "wareID": "weapon_gen_s_torpedo_01_mk2",
-        "label": "S Torpedo Launcher Mk2",
-        "group": "weapons",
-        "dataSourceID": "vanilla",
-        "size": "s",
-        "tags": [
-            "equipment",
-            "weapon"
-        ],
-        "macroID": "weapon_gen_s_torpedo_01_mk2_macro",
-        "variantID": "01::mk2",
-        "factions": [
-            "alliance",
-            "antigone",
-            "argon",
-            "buccaneers",
-            "holyorder",
-            "ministry",
-            "paranid",
-            "teladi",
-            "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_kha_l_beam_01_mk1",
@@ -29252,12 +27581,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_par_m_railgun_01_mk2",
@@ -29276,12 +27600,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_par_s_railgun_01_mk1",
@@ -29300,12 +27619,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_par_s_railgun_01_mk2",
@@ -29324,12 +27638,7 @@
             "buccaneers",
             "paranid",
             "trinity"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_pir_xl_battleship_01_mk1",
@@ -29345,12 +27654,7 @@
         "variantID": "01::mk1",
         "factions": [
             "ownerless"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_l_destroyer_01_mk1",
@@ -29368,12 +27672,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_gatling_01_mk1",
@@ -29391,12 +27690,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_gatling_01_mk2",
@@ -29414,12 +27708,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_railgun_01_mk1",
@@ -29436,12 +27725,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_railgun_01_mk2",
@@ -29458,12 +27742,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_shotgun_01_mk1",
@@ -29481,12 +27760,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_shotgun_01_mk2",
@@ -29504,12 +27778,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_sticky_01_mk1",
@@ -29527,12 +27796,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_m_sticky_01_mk2",
@@ -29550,12 +27814,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_gatling_01_mk1",
@@ -29573,12 +27832,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_gatling_01_mk2",
@@ -29596,12 +27850,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_railgun_01_mk1",
@@ -29618,12 +27867,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_railgun_01_mk2",
@@ -29640,12 +27884,7 @@
         "factions": [
             "court",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_shotgun_01_mk1",
@@ -29663,12 +27902,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_shotgun_01_mk2",
@@ -29686,12 +27920,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_sticky_01_mk1",
@@ -29709,12 +27938,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_spl_s_sticky_01_mk2",
@@ -29732,12 +27956,7 @@
             "court",
             "freesplit",
             "split"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_tel_l_destroyer_01_mk1",
@@ -29764,7 +27983,7 @@
     },
     {
         "wareID": "weapon_tel_m_charge_01_mk1",
-        "label": "TEL M Muon Charger Mk1",
+        "label": "TEL M Muon Disintegrator Mk1",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -29777,16 +27996,11 @@
         "factions": [
             "alliance",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_tel_m_charge_01_mk2",
-        "label": "TEL M Muon Charger Mk2",
+        "label": "TEL M Muon Disintegrator Mk2",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "m",
@@ -29799,16 +28013,11 @@
         "factions": [
             "alliance",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_tel_s_charge_01_mk1",
-        "label": "TEL S Muon Charger Mk1",
+        "label": "TEL S Muon Disintegrator Mk1",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "s",
@@ -29821,16 +28030,11 @@
         "factions": [
             "alliance",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_tel_s_charge_01_mk2",
-        "label": "TEL S Muon Charger Mk2",
+        "label": "TEL S Muon Disintegrator Mk2",
         "group": "weapons",
         "dataSourceID": "vanilla",
         "size": "s",
@@ -29843,12 +28047,7 @@
         "factions": [
             "alliance",
             "teladi"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_l_destroyer_01_mk1",
@@ -29865,12 +28064,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_l_flagship_01_mk1",
@@ -29880,6 +28074,7 @@
         "size": "l",
         "tags": [
             "equipment",
+            "missilelauncher",
             "nocustomgamestart",
             "weapon"
         ],
@@ -29903,12 +28098,7 @@
         "variantID": "01::mk1",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_m_beam_01_mk2",
@@ -29924,12 +28114,7 @@
         "variantID": "01::mk2",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_m_gatling_01_mk1",
@@ -29946,12 +28131,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_m_gatling_01_mk2",
@@ -29967,12 +28147,7 @@
         "variantID": "01::mk2",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_m_laser_01_mk1",
@@ -29989,12 +28164,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_m_laser_01_mk2",
@@ -30011,12 +28181,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_m_laser_02_mk1",
@@ -30049,12 +28214,7 @@
         "variantID": "01::mk1",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_s_beam_01_mk2",
@@ -30070,12 +28230,7 @@
         "variantID": "01::mk2",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_s_gatling_01_mk1",
@@ -30092,12 +28247,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_s_gatling_01_mk2",
@@ -30113,12 +28263,7 @@
         "variantID": "01::mk2",
         "factions": [
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_s_laser_01_mk1",
@@ -30135,12 +28280,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_s_laser_01_mk2",
@@ -30157,12 +28297,7 @@
         "factions": [
             "pioneers",
             "terran"
-        ],
-        "component": {
-            "tags": [
-                "contents"
-            ]
-        }
+        ]
     },
     {
         "wareID": "weapon_ter_s_laser_02_mk1",

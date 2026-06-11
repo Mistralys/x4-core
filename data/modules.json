@@ -2013,6 +2013,25 @@
         "variantID": "02::"
     },
     {
+        "wareID": "module_gen_dock_m_showroom_01",
+        "macroID": "dockarea_gen_m_showroom_01_macro",
+        "label": "Small & Medium Ship Showroom",
+        "category": "dockarea",
+        "size": null,
+        "builderFactionIDs": [
+            "generic"
+        ],
+        "hull": 260000,
+        "requiredWorkforce": 0,
+        "housingCapacity": 0,
+        "housingFactionID": null,
+        "cargoCapacity": 0,
+        "cargoType": null,
+        "droneCapacity": 0,
+        "waresProduced": null,
+        "variantID": "01::"
+    },
+    {
         "wareID": "module_gen_dock_m_venturer_01",
         "macroID": "dockarea_gen_m_venturer_01_macro",
         "label": "S\/M Venture Sendoff Dock",
@@ -2030,6 +2049,44 @@
         "droneCapacity": 0,
         "waresProduced": null,
         "variantID": "01::"
+    },
+    {
+        "wareID": "module_gen_dock_s_showroom_01",
+        "macroID": "dockarea_gen_s_showroom_01_macro",
+        "label": "Small Ship Showroom 01",
+        "category": "dockarea",
+        "size": null,
+        "builderFactionIDs": [
+            "generic"
+        ],
+        "hull": 260000,
+        "requiredWorkforce": 0,
+        "housingCapacity": 0,
+        "housingFactionID": null,
+        "cargoCapacity": 0,
+        "cargoType": null,
+        "droneCapacity": 0,
+        "waresProduced": null,
+        "variantID": "01::"
+    },
+    {
+        "wareID": "module_gen_dock_s_showroom_02",
+        "macroID": "dockarea_gen_s_showroom_02_macro",
+        "label": "Small Ship Showroom 02",
+        "category": "dockarea",
+        "size": null,
+        "builderFactionIDs": [
+            "generic"
+        ],
+        "hull": 260000,
+        "requiredWorkforce": 0,
+        "housingCapacity": 0,
+        "housingFactionID": null,
+        "cargoCapacity": 0,
+        "cargoType": null,
+        "droneCapacity": 0,
+        "waresProduced": null,
+        "variantID": "02::"
     },
     {
         "wareID": "module_gen_dock_xl_venturer_01",
@@ -2125,6 +2182,25 @@
         "droneCapacity": 0,
         "waresProduced": null,
         "variantID": "::"
+    },
+    {
+        "wareID": "module_gen_proc_scrapworkskhaak_01",
+        "macroID": "proc_gen_scrapworkskhaak_macro",
+        "label": "Allographyne Scrap Processor",
+        "category": "processingmodule",
+        "size": null,
+        "builderFactionIDs": [
+            "generic"
+        ],
+        "hull": 150000,
+        "requiredWorkforce": 0,
+        "housingCapacity": 0,
+        "housingFactionID": null,
+        "cargoCapacity": 0,
+        "cargoType": null,
+        "droneCapacity": 0,
+        "waresProduced": null,
+        "variantID": "01::"
     },
     {
         "wareID": "module_gen_prod_advancedcomposites_01",
@@ -2502,6 +2578,27 @@
         "waresProduced": [
             "claytronics",
             "hullparts"
+        ],
+        "variantID": "::"
+    },
+    {
+        "wareID": "module_gen_prod_scrap_recyclerkhaak",
+        "macroID": "prod_gen_scrap_recyclerkhaak_macro",
+        "label": "Allographyne Scrap Recycler",
+        "category": "production",
+        "size": null,
+        "builderFactionIDs": [
+            "generic"
+        ],
+        "hull": 200000,
+        "requiredWorkforce": 1250,
+        "housingCapacity": 0,
+        "housingFactionID": null,
+        "cargoCapacity": 0,
+        "cargoType": null,
+        "droneCapacity": 0,
+        "waresProduced": [
+            "khaakalloy"
         ],
         "variantID": "::"
     },
@@ -6119,7 +6216,7 @@
         "builderFactionIDs": [
             "xenon"
         ],
-        "hull": 3300000,
+        "hull": 2640000,
         "requiredWorkforce": 0,
         "housingCapacity": 0,
         "housingFactionID": null,
@@ -6138,7 +6235,7 @@
         "builderFactionIDs": [
             "xenon"
         ],
-        "hull": 2700000,
+        "hull": 2160000,
         "requiredWorkforce": 0,
         "housingCapacity": 0,
         "housingFactionID": null,
@@ -6157,7 +6254,7 @@
         "builderFactionIDs": [
             "xenon"
         ],
-        "hull": 1000000,
+        "hull": 800000,
         "requiredWorkforce": 0,
         "housingCapacity": 0,
         "housingFactionID": null,
