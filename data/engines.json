@@ -13,17 +13,17 @@
         "boostDuration": 27,
         "boostRecharge": 92,
         "boostThrust": 6.89,
-        "boostAcceleration": 4.33,
+        "boostAcceleration": 4.68,
         "boostAttack": 10,
-        "boostRelease": 5,
+        "boostRelease": 6,
         "boostCoast": 1.2,
-        "travelCharge": 20,
+        "travelCharge": 18,
         "travelThrust": 30.53,
         "travelAttack": 91,
         "travelRelease": 22.5,
         "thrustForward": 3900,
         "thrustReverse": 3705,
-        "hullMax": 4033,
+        "hullMax": 6000,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -31,7 +31,7 @@
                 "value": 1
             },
             {
-                "position": 1.1,
+                "position": 1.15,
                 "value": 2
             },
             {
@@ -62,17 +62,17 @@
         "boostDuration": 24.3,
         "boostRecharge": 92,
         "boostThrust": 5.74,
-        "boostAcceleration": 3.61,
+        "boostAcceleration": 3.9,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.2,
-        "travelCharge": 18,
+        "travelCharge": 16,
         "travelThrust": 42.4,
         "travelAttack": 82,
         "travelRelease": 37.5,
         "thrustForward": 3159,
         "thrustReverse": 3001.05,
-        "hullMax": 4033,
+        "hullMax": 6000,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -80,7 +80,7 @@
                 "value": 1
             },
             {
-                "position": 1.1,
+                "position": 1.15,
                 "value": 2
             },
             {
@@ -414,12 +414,12 @@
         ],
         "mk": 1,
         "variantID": "01::mk1",
-        "boostDuration": 15,
+        "boostDuration": 16,
         "boostRecharge": 92,
-        "boostThrust": 7.38,
-        "boostAcceleration": 7,
+        "boostThrust": 7.2,
+        "boostAcceleration": 6,
         "boostAttack": 0,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.2,
         "travelCharge": 7,
         "travelThrust": 12.5,
@@ -463,12 +463,12 @@
         ],
         "mk": 2,
         "variantID": "01::mk2",
-        "boostDuration": 15,
+        "boostDuration": 16,
         "boostRecharge": 92,
-        "boostThrust": 7.38,
-        "boostAcceleration": 7,
+        "boostThrust": 7.2,
+        "boostAcceleration": 6,
         "boostAttack": 0,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.2,
         "travelCharge": 7,
         "travelThrust": 12,
@@ -1160,17 +1160,17 @@
         "boostDuration": 27,
         "boostRecharge": 92,
         "boostThrust": 6.89,
-        "boostAcceleration": 4.33,
+        "boostAcceleration": 4.21,
         "boostAttack": 10,
-        "boostRelease": 5,
+        "boostRelease": 6,
         "boostCoast": 1.2,
-        "travelCharge": 20,
-        "travelThrust": 30.53,
+        "travelCharge": 18,
+        "travelThrust": 27.48,
         "travelAttack": 91,
         "travelRelease": 22.5,
         "thrustForward": 10550,
         "thrustReverse": 10022.5,
-        "hullMax": 12193,
+        "hullMax": 20680,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -1213,17 +1213,17 @@
         "boostDuration": 24.3,
         "boostRecharge": 92,
         "boostThrust": 5.74,
-        "boostAcceleration": 3.61,
+        "boostAcceleration": 3.5,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.2,
-        "travelCharge": 18,
-        "travelThrust": 42.4,
+        "travelCharge": 16,
+        "travelThrust": 38.16,
         "travelAttack": 82,
         "travelRelease": 37.5,
         "thrustForward": 8545.5,
         "thrustReverse": 8118.23,
-        "hullMax": 9955,
+        "hullMax": 20680,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -1266,7 +1266,7 @@
         "boostDuration": 46,
         "boostRecharge": 200,
         "boostThrust": 5.04,
-        "boostAcceleration": 1.61,
+        "boostAcceleration": 2.02,
         "boostAttack": 14,
         "boostRelease": 4,
         "boostCoast": 1.5,
@@ -1276,7 +1276,7 @@
         "travelRelease": 1.25,
         "thrustForward": 3000,
         "thrustReverse": 3300,
-        "hullMax": 4033,
+        "hullMax": 6000,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -1657,17 +1657,17 @@
         "boostDuration": 46,
         "boostRecharge": 200,
         "boostThrust": 5.04,
-        "boostAcceleration": 1.61,
+        "boostAcceleration": 2.02,
         "boostAttack": 14,
         "boostRelease": 4,
         "boostCoast": 1.5,
         "travelCharge": 0,
-        "travelThrust": 41.8,
+        "travelThrust": 37.62,
         "travelAttack": 95.5,
         "travelRelease": 1.25,
         "thrustForward": 7912.5,
         "thrustReverse": 8703.75,
-        "hullMax": 9955,
+        "hullMax": 18000,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -2220,17 +2220,17 @@
         "boostDuration": 33.6,
         "boostRecharge": 136,
         "boostThrust": 4.2,
-        "boostAcceleration": 1.58,
+        "boostAcceleration": 2.1,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.25,
-        "travelCharge": 16,
+        "travelCharge": 14,
         "travelThrust": 30.6,
         "travelAttack": 72,
         "travelRelease": 22.5,
         "thrustForward": 4420,
         "thrustReverse": 3978,
-        "hullMax": 4018,
+        "hullMax": 4800,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -2269,17 +2269,17 @@
         "boostDuration": 27.89,
         "boostRecharge": 136,
         "boostThrust": 3.63,
-        "boostAcceleration": 1.66,
+        "boostAcceleration": 2.1,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.25,
-        "travelCharge": 14,
+        "travelCharge": 12,
         "travelThrust": 45.2,
         "travelAttack": 67,
         "travelRelease": 37.5,
         "thrustForward": 3500,
         "thrustReverse": 3151,
-        "hullMax": 4018,
+        "hullMax": 4800,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -3261,17 +3261,17 @@
         "boostDuration": 33.6,
         "boostRecharge": 136,
         "boostThrust": 4.2,
-        "boostAcceleration": 1.58,
+        "boostAcceleration": 1.84,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.25,
-        "travelCharge": 16,
-        "travelThrust": 30.6,
+        "travelCharge": 14,
+        "travelThrust": 27.54,
         "travelAttack": 72,
         "travelRelease": 22.5,
         "thrustForward": 11600,
         "thrustReverse": 10440,
-        "hullMax": 9899,
+        "hullMax": 18800,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -3310,17 +3310,17 @@
         "boostDuration": 27.89,
         "boostRecharge": 136,
         "boostThrust": 3.63,
-        "boostAcceleration": 1.66,
+        "boostAcceleration": 1.93,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.25,
-        "travelCharge": 14,
-        "travelThrust": 45.2,
+        "travelCharge": 12,
+        "travelThrust": 40.68,
         "travelAttack": 67,
         "travelRelease": 37.5,
         "thrustForward": 9187,
         "thrustReverse": 8268,
-        "hullMax": 9955,
+        "hullMax": 18800,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -3358,18 +3358,18 @@
         "variantID": "01:allround-01:mk1",
         "boostDuration": 24,
         "boostRecharge": 130,
-        "boostThrust": 2.6,
-        "boostAcceleration": 1.5,
+        "boostThrust": 2.5,
+        "boostAcceleration": 1.45,
         "boostAttack": 10,
-        "boostRelease": 3,
-        "boostCoast": 1.3,
-        "travelCharge": 30,
-        "travelThrust": 33,
+        "boostRelease": 5,
+        "boostCoast": 1.2,
+        "travelCharge": 26,
+        "travelThrust": 26,
         "travelAttack": 75,
         "travelRelease": 22.5,
         "thrustForward": 18504,
         "thrustReverse": 18504,
-        "hullMax": 10973,
+        "hullMax": 18800,
         "hullThreshold": 0.15,
         "decelerationCurve": [
             {
@@ -3453,17 +3453,17 @@
         "boostDuration": 33.6,
         "boostRecharge": 128,
         "boostThrust": 5.04,
-        "boostAcceleration": 2.05,
+        "boostAcceleration": 2.44,
         "boostAttack": 10,
-        "boostRelease": 4,
+        "boostRelease": 5,
         "boostCoast": 1.2,
-        "travelCharge": 17,
+        "travelCharge": 15,
         "travelThrust": 16.77,
         "travelAttack": 72.8,
         "travelRelease": 22.5,
         "thrustForward": 5200,
         "thrustReverse": 5200,
-        "hullMax": 4018,
+        "hullMax": 5400,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -3502,17 +3502,17 @@
         "boostDuration": 28.56,
         "boostRecharge": 128,
         "boostThrust": 3.92,
-        "boostAcceleration": 1.77,
+        "boostAcceleration": 2.11,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.25,
-        "travelCharge": 17,
+        "travelCharge": 15,
         "travelThrust": 23.29,
         "travelAttack": 69.2,
         "travelRelease": 37.5,
         "thrustForward": 4212,
         "thrustReverse": 4212,
-        "hullMax": 4018,
+        "hullMax": 5400,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -4531,17 +4531,17 @@
         "boostDuration": 33.6,
         "boostRecharge": 128,
         "boostThrust": 5.04,
-        "boostAcceleration": 2.05,
+        "boostAcceleration": 2.44,
         "boostAttack": 10,
-        "boostRelease": 4,
+        "boostRelease": 5,
         "boostCoast": 1.2,
-        "travelCharge": 17,
-        "travelThrust": 16.77,
+        "travelCharge": 15,
+        "travelThrust": 15.44,
         "travelAttack": 72.8,
         "travelRelease": 22.5,
         "thrustForward": 13715,
         "thrustReverse": 13715,
-        "hullMax": 9899,
+        "hullMax": 20680,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -4580,17 +4580,17 @@
         "boostDuration": 28.56,
         "boostRecharge": 128,
         "boostThrust": 3.92,
-        "boostAcceleration": 1.77,
+        "boostAcceleration": 2.11,
         "boostAttack": 10,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.25,
-        "travelCharge": 17,
-        "travelThrust": 23.29,
+        "travelCharge": 15,
+        "travelThrust": 21.45,
         "travelAttack": 69.2,
         "travelRelease": 37.5,
         "thrustForward": 11109.15,
         "thrustReverse": 11109.15,
-        "hullMax": 9955,
+        "hullMax": 20680,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -4626,20 +4626,20 @@
         ],
         "mk": 1,
         "variantID": "01::mk1",
-        "boostDuration": 44,
+        "boostDuration": 46,
         "boostRecharge": 120,
         "boostThrust": 3.75,
-        "boostAcceleration": 1.69,
+        "boostAcceleration": 2.11,
         "boostAttack": 10,
         "boostRelease": 5,
         "boostCoast": 1.2,
-        "travelCharge": 10,
+        "travelCharge": 9,
         "travelThrust": 28.6,
         "travelAttack": 57,
         "travelRelease": 18,
         "thrustForward": 4000,
         "thrustReverse": 4400,
-        "hullMax": 6027,
+        "hullMax": 6600,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -4675,20 +4675,20 @@
         ],
         "mk": 1,
         "variantID": "01::mk1",
-        "boostDuration": 35,
+        "boostDuration": 36,
         "boostRecharge": 120,
         "boostThrust": 2.66,
-        "boostAcceleration": 1.08,
+        "boostAcceleration": 1.35,
         "boostAttack": 10,
         "boostRelease": 3,
         "boostCoast": 1.25,
-        "travelCharge": 10,
+        "travelCharge": 8,
         "travelThrust": 37.5,
         "travelAttack": 49,
         "travelRelease": 30,
         "thrustForward": 3384,
         "thrustReverse": 3722,
-        "hullMax": 6027,
+        "hullMax": 6600,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -4730,7 +4730,7 @@
         "boostAcceleration": 3.04,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 8.65,
         "travelAttack": 25,
@@ -4754,11 +4754,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -4779,7 +4779,7 @@
         "boostAcceleration": 3.04,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 8.65,
         "travelAttack": 25,
@@ -4803,11 +4803,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -4828,7 +4828,7 @@
         "boostAcceleration": 3.04,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 8.65,
         "travelAttack": 25,
@@ -4852,11 +4852,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -4877,7 +4877,7 @@
         "boostAcceleration": 4.04,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 6.28,
         "travelAttack": 25,
@@ -4901,11 +4901,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -4926,7 +4926,7 @@
         "boostAcceleration": 4.04,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 6.28,
         "travelAttack": 25,
@@ -4950,11 +4950,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -4975,7 +4975,7 @@
         "boostAcceleration": 4.04,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 6.28,
         "travelAttack": 25,
@@ -4999,11 +4999,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -5018,16 +5018,16 @@
         ],
         "mk": 1,
         "variantID": "01::mk1",
-        "boostDuration": 22,
-        "boostRecharge": 114,
-        "boostThrust": 5.9,
-        "boostAcceleration": 4.2,
+        "boostDuration": 26.4,
+        "boostRecharge": 120,
+        "boostThrust": 5.4,
+        "boostAcceleration": 4,
         "boostAttack": 0,
         "boostRelease": 3,
-        "boostCoast": 1.25,
+        "boostCoast": 1.1,
         "travelCharge": 3,
         "travelThrust": 14.3,
-        "travelAttack": 24,
+        "travelAttack": 23,
         "travelRelease": 10,
         "thrustForward": 1342,
         "thrustReverse": 1208,
@@ -5067,16 +5067,16 @@
         ],
         "mk": 2,
         "variantID": "01::mk2",
-        "boostDuration": 22,
-        "boostRecharge": 114,
-        "boostThrust": 5.9,
-        "boostAcceleration": 4.2,
+        "boostDuration": 26.4,
+        "boostRecharge": 120,
+        "boostThrust": 5.4,
+        "boostAcceleration": 4,
         "boostAttack": 0,
         "boostRelease": 3,
-        "boostCoast": 1.25,
+        "boostCoast": 1.1,
         "travelCharge": 3,
         "travelThrust": 13.8,
-        "travelAttack": 24,
+        "travelAttack": 23,
         "travelRelease": 10,
         "thrustForward": 1543,
         "thrustReverse": 1389,
@@ -5122,7 +5122,7 @@
         "boostAcceleration": 1.86,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 11.53,
         "travelAttack": 20.5,
@@ -5146,11 +5146,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -5171,7 +5171,7 @@
         "boostAcceleration": 1.86,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 11.53,
         "travelAttack": 20.5,
@@ -5195,11 +5195,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -5220,7 +5220,7 @@
         "boostAcceleration": 1.86,
         "boostAttack": 0.25,
         "boostRelease": 5,
-        "boostCoast": 1.2,
+        "boostCoast": 1.1,
         "travelCharge": 6,
         "travelThrust": 11.53,
         "travelAttack": 20.5,
@@ -5244,11 +5244,11 @@
             },
             {
                 "position": 2.1,
-                "value": 8
+                "value": 9
             },
             {
                 "position": 2.5,
-                "value": 10
+                "value": 12
             }
         ]
     },
@@ -5761,20 +5761,20 @@
         ],
         "mk": 1,
         "variantID": "01::mk1",
-        "boostDuration": 44,
+        "boostDuration": 46,
         "boostRecharge": 120,
         "boostThrust": 3.75,
-        "boostAcceleration": 1.69,
+        "boostAcceleration": 2.11,
         "boostAttack": 10,
         "boostRelease": 5,
         "boostCoast": 1.2,
-        "travelCharge": 10,
-        "travelThrust": 28.6,
+        "travelCharge": 9,
+        "travelThrust": 25.74,
         "travelAttack": 57,
         "travelRelease": 18,
         "thrustForward": 10400,
         "thrustReverse": 11440,
-        "hullMax": 13915,
+        "hullMax": 22560,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -5810,20 +5810,20 @@
         ],
         "mk": 1,
         "variantID": "01::mk1",
-        "boostDuration": 35,
+        "boostDuration": 36,
         "boostRecharge": 120,
         "boostThrust": 2.66,
-        "boostAcceleration": 1.08,
+        "boostAcceleration": 1.35,
         "boostAttack": 10,
         "boostRelease": 3,
         "boostCoast": 1.25,
-        "travelCharge": 10,
-        "travelThrust": 37.5,
+        "travelCharge": 8,
+        "travelThrust": 33.75,
         "travelAttack": 49,
         "travelRelease": 30,
         "thrustForward": 8898,
         "thrustReverse": 9678,
-        "hullMax": 13915,
+        "hullMax": 22560,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -5859,20 +5859,20 @@
         ],
         "mk": 1,
         "variantID": "02::mk1",
-        "boostDuration": 32,
+        "boostDuration": 36,
         "boostRecharge": 90,
         "boostThrust": 4.8,
         "boostAcceleration": 2.2,
         "boostAttack": 7,
-        "boostRelease": 3,
+        "boostRelease": 4,
         "boostCoast": 1.4,
         "travelCharge": 8,
         "travelThrust": 32,
         "travelAttack": 66,
         "travelRelease": 22.5,
-        "thrustForward": 3696,
-        "thrustReverse": 4250.4,
-        "hullMax": 4000,
+        "thrustForward": 3864,
+        "thrustReverse": 4444,
+        "hullMax": 4800,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -6020,18 +6020,18 @@
         "variantID": "01::mk1",
         "boostDuration": 30,
         "boostRecharge": 150,
-        "boostThrust": 2.5,
+        "boostThrust": 3.5,
         "boostAcceleration": 1.5,
         "boostAttack": 10,
         "boostRelease": 0,
         "boostCoast": 1,
-        "travelCharge": 18,
+        "travelCharge": 16,
         "travelThrust": 25,
-        "travelAttack": 49,
+        "travelAttack": 55,
         "travelRelease": 15,
         "thrustForward": 4206,
         "thrustReverse": 4627,
-        "hullMax": 4033,
+        "hullMax": 5400,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -6069,18 +6069,18 @@
         "variantID": "02::mk1",
         "boostDuration": 30,
         "boostRecharge": 150,
-        "boostThrust": 2.5,
+        "boostThrust": 3.5,
         "boostAcceleration": 1.5,
         "boostAttack": 10,
         "boostRelease": 0,
         "boostCoast": 1,
-        "travelCharge": 18,
+        "travelCharge": 16,
         "travelThrust": 25,
-        "travelAttack": 49,
+        "travelAttack": 55,
         "travelRelease": 15,
         "thrustForward": 4206,
         "thrustReverse": 4627,
-        "hullMax": 4033,
+        "hullMax": 5400,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
@@ -6217,13 +6217,13 @@
         "boostDuration": 18,
         "boostRecharge": 150,
         "boostThrust": 6,
-        "boostAcceleration": 8,
+        "boostAcceleration": 7,
         "boostAttack": 0.25,
         "boostRelease": 0,
         "boostCoast": 1,
-        "travelCharge": 0,
+        "travelCharge": 1,
         "travelThrust": 8,
-        "travelAttack": 15,
+        "travelAttack": 20,
         "travelRelease": 10,
         "thrustForward": 1286,
         "thrustReverse": 1486,
@@ -6272,7 +6272,7 @@
         "boostCoast": 1,
         "travelCharge": 1,
         "travelThrust": 18,
-        "travelAttack": 15,
+        "travelAttack": 22,
         "travelRelease": 10,
         "thrustForward": 503,
         "thrustReverse": 768,
@@ -6321,7 +6321,7 @@
         "boostCoast": 1,
         "travelCharge": 0,
         "travelThrust": 18,
-        "travelAttack": 15,
+        "travelAttack": 22,
         "travelRelease": 10,
         "thrustForward": 503,
         "thrustReverse": 768,
@@ -6370,11 +6370,11 @@
         "boostCoast": 1,
         "travelCharge": 20,
         "travelThrust": 25,
-        "travelAttack": 49,
+        "travelAttack": 55,
         "travelRelease": 15,
         "thrustForward": 11076,
         "thrustReverse": 12184,
-        "hullMax": 29561,
+        "hullMax": 34000,
         "hullThreshold": 0.3,
         "decelerationCurve": [
             {
