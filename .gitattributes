@@ -1,0 +1,11 @@
+# Normalize line endings to LF in the repository and in the working copy,
+# independent of each developer's core.autocrlf setting.
+#
+# The generated data files are written by the database builder with LF
+# line breaks plus a trailing PHP_EOL (CRLF on Windows), which makes them
+# mixed-ending files. The explicit `text` attribute makes git normalize
+# them reliably, where `text=auto` would skip files with mixed endings.
+* text=auto eol=lf
+data/*.json text eol=lf
+*.php text eol=lf
+*.md text eol=lf
