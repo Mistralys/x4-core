@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Mistralys\X4\Database\MacroIndex;
 
 use AppUtils\Collections\BaseStringPrimaryCollection;
+use AppUtils\Collections\RecordNotExistsException;
 use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\X4Application;
 
@@ -69,14 +70,53 @@ class MacroFileDefs extends BaseStringPrimaryCollection
      * This is the recommended way to lookup macros when you have
      * a simple macro name and know which data source it belongs to.
      *
+     * ## Resolution order
+     *
+     * The game does not scope macro references to the data folder of the
+     * file that contains them: every `index/macros.xml` (base game and
+     * extensions alike) feeds one global name-to-file map, and an extension
+     * can both add macros and replace existing ones. A Split ship may thus
+     * reference a vanilla storage macro, or a vanilla ship an extension's.
+     * This method mirrors that behavior:
+     *
+     * 1. The macro as defined in the given data folder (an extension's own
+     *    override takes precedence for its own content).
+     * 2. Otherwise, the macro as defined in any other data folder. If several
+     *    define it, the one from the data folder registered last wins, just as
+     *    the last-loaded extension does in the game.
+     *
+     * Macro names are matched case-insensitively, like the game does.
+     *
      * @param string $name The macro name (e.g., "ship_arg_s_fighter_01_a_macro")
-     * @param string $dataFolderID The data folder ID (defaults to "vanilla")
+     * @param string $dataFolderID The preferred data folder ID (defaults to "vanilla")
      * @return MacroFileDef
-     * @throws \Mistralys\X4\X4Exception If the macro is not found
+     * @throws RecordNotExistsException If no data folder defines the macro
      */
     public function getByMacroName(string $name, string $dataFolderID = 'vanilla'): MacroFileDef
     {
-        return $this->getByID($dataFolderID . '::' . $name);
+        $id = $dataFolderID . '::' . $name;
+
+        if($this->idExists($id)) {
+            return $this->getByID($id);
+        }
+
+        $match = null;
+        $lowerName = strtolower($name);
+
+        // Entries are registered in data folder order (base game first,
+        // then the extensions), so the last match is the highest priority.
+        foreach($this->getAll() as $macro) {
+            if(strtolower($macro->getMacroName()) === $lowerName) {
+                $match = $macro;
+            }
+        }
+
+        if($match !== null) {
+            return $match;
+        }
+
+        // Not defined anywhere: let the collection raise its standard exception.
+        return $this->getByID($id);
     }
 
     /**

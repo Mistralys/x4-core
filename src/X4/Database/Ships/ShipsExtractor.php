@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Mistralys\X4\Database\Ships;
 
 use AppUtils\ArrayDataCollection;
+use AppUtils\Collections\RecordNotExistsException;
 use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\Database\BaseExtractor;
@@ -587,8 +588,11 @@ class ShipsExtractor extends BaseExtractor
                 'capacity' => (int)$max,
                 'type' => $tags !== '' ? $tags : 'none'
             ];
-        } catch (\Exception $e) {
-            // Storage macro not found - not all data sources may have the referenced macro
+        } catch (RecordNotExistsException $e) {
+            // The macro resolves across all data folders, so reaching this
+            // means the game data itself does not define it. Make it visible
+            // instead of silently reporting a cargo hold of 0.
+            Console::line1('WARNING | Storage macro [%s] was not found in any data folder.', $macroName);
             return null;
         }
     }

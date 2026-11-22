@@ -96,6 +96,65 @@ final class MacroCollectionTests extends X4TestCase
     }
 
     /**
+     * The game resolves macro references globally, not per data folder:
+     * the Split carrier references a vanilla (Argon) storage macro.
+     * Asking for it in the DLC data folder must still resolve it.
+     */
+    public function test_getByMacroName_fallsBackToOtherDataFolder(): void
+    {
+        $macroName = 'storage_arg_xl_carrier_01_a_macro';
+
+        $this->assertFalse(
+            $this->getMacroIndex()->idExists('ego_dlc_split::' . $macroName),
+            'Precondition: the macro must not be defined in the Split data folder.'
+        );
+
+        $macro = $this->getMacroIndex()->getByMacroName($macroName, 'ego_dlc_split');
+
+        $this->assertSame($macroName, $macro->getMacroName());
+        $this->assertSame('vanilla', $macro->getDataFolderID());
+    }
+
+    /**
+     * A macro defined in the requested data folder wins over
+     * definitions from other data folders.
+     */
+    public function test_getByMacroName_prefersRequestedDataFolder(): void
+    {
+        $macroName = 'cluster_sm3_background_macro';
+
+        $this->assertGreaterThan(
+            1,
+            count($this->getMacroIndex()->findAllByMacroName($macroName)),
+            'Precondition: the macro must be defined in several data folders.'
+        );
+
+        $macro = $this->getMacroIndex()->getByMacroName($macroName, 'ego_dlc_split');
+
+        $this->assertSame('ego_dlc_split', $macro->getDataFolderID());
+    }
+
+    /**
+     * Macro names are case-insensitive in the game.
+     */
+    public function test_getByMacroName_isCaseInsensitiveOnFallback(): void
+    {
+        $macro = $this->getMacroIndex()->getByMacroName('STORAGE_ARG_XL_CARRIER_01_A_MACRO', 'ego_dlc_split');
+
+        $this->assertSame('storage_arg_xl_carrier_01_a_macro', $macro->getMacroName());
+    }
+
+    /**
+     * A macro that no data folder defines still raises an exception.
+     */
+    public function test_getByMacroName_unknownMacro(): void
+    {
+        $this->expectException(RecordNotExistsException::class);
+
+        $this->getMacroIndex()->getByMacroName('this_macro_does_not_exist_macro', 'ego_dlc_split');
+    }
+
+    /**
      * Test that findAllByMacroName returns array of matching macros
      */
     public function test_findAllByMacroName(): void

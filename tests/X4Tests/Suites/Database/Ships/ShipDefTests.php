@@ -13,6 +13,7 @@ use Mistralys\X4\Database\Ships\ShipClass;
 use Mistralys\X4\Database\Ships\ShipDef;
 use Mistralys\X4\Database\Ships\ShipDefs;
 use Mistralys\X4\Database\Ships\ShipSize;
+use Mistralys\X4\Database\Wares\WareDefs;
 use X4Tests\Helpers\X4TestCase;
 
 final class ShipDefTests extends X4TestCase
@@ -790,6 +791,67 @@ final class ShipDefTests extends X4TestCase
     // =========================================================================
     // Helper Methods
     // =========================================================================
+
+    // =========================================================================
+    // Cargo Tests
+    // =========================================================================
+
+    /**
+     * The Split carrier references a vanilla (Argon) storage macro from
+     * a DLC data folder. This used to resolve to a cargo hold of 0.
+     */
+    public function test_cargoCapacity_crossDataSourceStorageMacro(): void
+    {
+        $ship = $this->ships->getByID('ship_spl_xl_carrier_01_a');
+
+        $this->assertSame(19000, $ship->getCargoCapacity());
+        $this->assertSame('container', $ship->getCargoType());
+    }
+
+    /**
+     * Ships that declare a cargo storage connection in their macro must
+     * never end up with a cargo hold of 0: that means the storage macro
+     * could not be resolved. Ships without such a connection (e.g. Xenon
+     * and Khaa'k ships, racers) legitimately have no cargo hold.
+     */
+    public function test_cargoCapacity_isNeverZeroWhenStorageIsDeclared(): void
+    {
+        $wares = WareDefs::getInstance();
+        $checked = 0;
+        $failures = array();
+
+        foreach($this->ships->getAll() as $ship)
+        {
+            $macroDef = $wares->getByID($ship->getID())->getMacro();
+            if(!$macroDef->getFile()->exists()) {
+                $this->markTestSkipped('The extracted game data is not available.');
+            }
+
+            $declaresStorage = false;
+            foreach($macroDef->getDOM()->byTagName('connection')->getAll() as $connection) {
+                if(str_starts_with((string)$connection->getAttribute('ref'), 'con_storage')) {
+                    $declaresStorage = true;
+                    break;
+                }
+            }
+
+            if(!$declaresStorage) {
+                continue;
+            }
+
+            $checked++;
+            if($ship->getCargoCapacity() <= 0) {
+                $failures[] = $ship->getID();
+            }
+        }
+
+        $this->assertGreaterThan(0, $checked, 'No ships with a storage connection were found.');
+        $this->assertSame(
+            array(),
+            $failures,
+            'Ships declare a cargo storage connection but report no cargo: ' . implode(', ', $failures)
+        );
+    }
 
     private function getSampleShip(): ShipDef
     {
