@@ -43,6 +43,8 @@ composer extract-wares
 
 Run `composer run-script --list` to see all available scripts. For how the extractors work internally, see the [Extraction reference](../agents/project-manifest/extraction-reference.md).
 
+After every build command, the line endings of the files in `data/` are normalized to LF, matching the repository (see `.gitattributes`). The JSON writer otherwise leaves a stray CRLF at the end of each file on Windows, which makes git report unchanged data files as modified. The generated `Known*.php` classes are normalized the same way.
+
 ## Tests and Static Analysis
 
 ```bash

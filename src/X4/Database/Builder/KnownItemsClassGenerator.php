@@ -190,7 +190,7 @@ PHP;
             $this->outputFolder,
             $this->typeName
         ))
-            ->putContents($php);
+            ->putContents(LineEndingNormalizer::normalizeString($php));
 
         Console::line1('Done.');
     }

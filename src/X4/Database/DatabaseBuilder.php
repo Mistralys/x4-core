@@ -11,6 +11,7 @@ namespace Mistralys\X4\Database;
 use AppUtils\ConvertHelper;
 use AppUtils\FileHelper\FolderInfo;
 use Mistral\X4\Database\Blueprints\BlueprintExtractor;
+use Mistralys\X4\Database\Builder\LineEndingNormalizer;
 use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DataSources\DataSourcesExtractor;
 use Mistralys\X4\Database\Engines\EnginesExtractor;
@@ -41,6 +42,40 @@ class DatabaseBuilder
 {
     private static bool $initialized = false;
 
+    /**
+     * Number of nested {@see self::run()} calls currently active.
+     * @var int
+     */
+    private static int $runDepth = 0;
+
+    /**
+     * Runs a build task. Once the outermost task has finished, the
+     * line endings of the written data files are normalized, so that
+     * the files match the repository versions byte for byte.
+     *
+     * Tasks may be nested (e.g. {@see self::build()} runs all the
+     * extract commands), in which case the normalization happens once
+     * at the very end.
+     *
+     * @param callable():void $task
+     */
+    private static function run(callable $task) : void
+    {
+        self::init();
+
+        self::$runDepth++;
+
+        try {
+            $task();
+        } finally {
+            self::$runDepth--;
+        }
+
+        if(self::$runDepth === 0) {
+            LineEndingNormalizer::normalizeDataFiles();
+        }
+    }
+
     private static function init() : void
     {
         if (self::$initialized) {
@@ -60,103 +95,105 @@ class DatabaseBuilder
 
     public static function extractBlueprints() : void
     {
-        self::init();
-
-        new BlueprintExtractor()->extract();
+        self::run(function() : void {
+            new BlueprintExtractor()->extract();
+        });
     }
 
     public static function extractWares() : void
     {
-        self::init();
-
-        new WaresExtractor(self::getDataFolders())->extract();
+        self::run(function() : void {
+            new WaresExtractor(self::getDataFolders())->extract();
+        });
     }
 
     public static function extractFactions() : void
     {
-        self::init();
-
-        new FactionsExtractor(self::getDataFolders())->extract();
+        self::run(function() : void {
+            new FactionsExtractor(self::getDataFolders())->extract();
+        });
     }
 
     public static function extractTranslations() : void
     {
-        self::init();
+        self::run(function() : void {
+            $extractor = new TranslationExtractor(self::getDataFolders());
 
-        $extractor = new TranslationExtractor(self::getDataFolders());
+            foreach(Languages::getInstance()->getIDs() as $langID) {
+                $extractor->selectLanguage($langID);
+            }
 
-        foreach(Languages::getInstance()->getIDs() as $langID) {
-            $extractor->selectLanguage($langID);
-        }
-
-        $extractor->extract();
+            $extractor->extract();
+        });
     }
 
     public static function extractModules() : void
     {
-        self::init();
-
-        new ModuleExtractor(self::getDataFolders())->extract();
+        self::run(function() : void {
+            new ModuleExtractor(self::getDataFolders())->extract();
+        });
     }
 
     public static function extractEngines() : void
     {
-        self::init();
-
-        new EnginesExtractor(self::getDataFolders())->extract();
+        self::run(function() : void {
+            new EnginesExtractor(self::getDataFolders())->extract();
+        });
     }
 
     public static function extractShields() : void
     {
-        self::init();
-
-        new ShieldsExtractor(self::getDataFolders())->extract();
+        self::run(function() : void {
+            new ShieldsExtractor(self::getDataFolders())->extract();
+        });
     }
 
     public static function extractWeapons() : void
     {
-        self::init();
-
-        new WeaponsExtractor(self::getDataFolders())->extract();
+        self::run(function() : void {
+            new WeaponsExtractor(self::getDataFolders())->extract();
+        });
     }
 
     public static function build() : void
     {
-        // Prerequisites
-        self::extractMacroIndex();
-        self::extractTranslations();
-        self::extractDataSources();
-        self::extractFactions();
-        self::extractWares();
+        self::run(function() : void {
+            // Prerequisites
+            self::extractMacroIndex();
+            self::extractTranslations();
+            self::extractDataSources();
+            self::extractFactions();
+            self::extractWares();
 
-        // Based on the wares
-        self::extractEngines();
-        self::extractShields();
-        self::extractWeapons();
-        self::extractModules();
-        self::extractBlueprints();
-        self::extractShips();
+            // Based on the wares
+            self::extractEngines();
+            self::extractShields();
+            self::extractWeapons();
+            self::extractModules();
+            self::extractBlueprints();
+            self::extractShips();
+        });
     }
 
     public static function extractShips() : void
     {
-        self::init();
-
-        new ShipsExtractor()->extract();
+        self::run(function() : void {
+            new ShipsExtractor()->extract();
+        });
     }
 
     public static function extractMacroIndex() : void
     {
-        self::init();
-
-        new MacroIndexExtractor(self::getDataFolders())->extract();
+        self::run(function() : void {
+            new MacroIndexExtractor(self::getDataFolders())->extract();
+        });
     }
 
     public static function extractDataSources() : void
     {
-        self::init();
-
-        new DataSourcesExtractor()->extract();
+        self::run(function() : void {
+            new DataSourcesExtractor()->extract();
+        });
     }
 
     public static ?X4GameInfo $gameInfo = null;
