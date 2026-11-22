@@ -2,6 +2,8 @@
 
 Access X4: Foundations game data from PHP, without parsing game files yourself.
 
+**LAST VERIFIED: November 2026** | X4 Foundations 9.0, Empire Update.
+
 ## What is X4 Core?
 
 X4 Core is a PHP library that gives you factions, wares, ships, station modules and blueprints from X4: Foundations as plain objects. The extracted game data ships with the package, so you can query it right after installing. It is built to be a dependency for your own X4 tools, mods and websites.
