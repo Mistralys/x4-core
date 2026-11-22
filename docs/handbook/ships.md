@@ -213,7 +213,7 @@ echo "Missiles: " . $ship->getMissileStorage();
 echo "Cargo: " . $ship->getCargoCapacity() . " m³ (" . $ship->getCargoType() . ")";
 ```
 
-**Note:** Ships without cargo storage return `0` for capacity and `'none'` for type.
+**Note:** Ships without cargo storage return `0` for capacity and `'none'` for type. This is correct for ships that have no cargo hold at all (for example Xenon and Khaa'k ships, and racers). A ship that has a cargo hold in the game never reports `0`.
 
 #### Drag Coefficients
 
