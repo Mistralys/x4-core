@@ -5883,6 +5883,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -6029,6 +6032,10 @@
                     ]
                 }
             ],
+            "docks": {
+                "m": 1,
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -6124,6 +6131,9 @@
                     "missile",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 1
             },
             "countermeasures": 6
         }
@@ -6244,6 +6254,9 @@
                     "weapon"
                 ]
             },
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -6339,6 +6352,9 @@
                     "missile",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 2
             },
             "countermeasures": 6
         }
@@ -6448,6 +6464,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 2
+            },
             "countermeasures": 6
         }
     },
@@ -6543,6 +6562,9 @@
                     "missile",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 1
             },
             "countermeasures": 6
         }
@@ -7943,6 +7965,10 @@
                     "turret"
                 ]
             },
+            "docks": {
+                "m": 1,
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -8039,6 +8065,10 @@
                     "turret"
                 ]
             },
+            "docks": {
+                "m": 1,
+                "s": 5
+            },
             "countermeasures": 6
         }
     },
@@ -8134,6 +8164,10 @@
                     "missile",
                     "turret"
                 ]
+            },
+            "docks": {
+                "m": 1,
+                "s": 1
             },
             "countermeasures": 6
         }
@@ -9978,6 +10012,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -14671,6 +14708,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -14780,6 +14820,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 7
         },
         "variants": [
@@ -14890,6 +14933,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 7
         },
         "variants": [
@@ -14988,6 +15034,9 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 1
             },
             "countermeasures": 6
         }
@@ -15635,6 +15684,10 @@
                     "weapon"
                 ]
             },
+            "docks": {
+                "m": 1,
+                "s": 1
+            },
             "countermeasures": 4
         }
     },
@@ -15680,8 +15733,8 @@
         "accFactorVertical": 1.25,
         "people": 219,
         "storageMissile": 40,
-        "cargoCapacity": 0,
-        "cargoType": "none",
+        "cargoCapacity": 50,
+        "cargoType": "container",
         "slots": [],
         "equipment": []
     },
@@ -15843,6 +15896,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -15940,6 +15996,9 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 1
             },
             "countermeasures": 4
         }
@@ -16051,6 +16110,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 4
         }
     },
@@ -16162,6 +16224,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 4
         }
     },
@@ -16657,6 +16722,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 1
         }
     },
@@ -17938,8 +18006,8 @@
         "accFactorVertical": 1,
         "people": 182,
         "storageMissile": 40,
-        "cargoCapacity": 0,
-        "cargoType": "none",
+        "cargoCapacity": 50,
+        "cargoType": "container",
         "slots": {
             "dockingbay": 3,
             "engine": 1,
@@ -17990,6 +18058,10 @@
                     "turret"
                 ]
             },
+            "docks": {
+                "m": 1,
+                "s": 1
+            },
             "countermeasures": 4
         }
     },
@@ -18036,8 +18108,8 @@
         "accFactorVertical": 1,
         "people": 309,
         "storageMissile": 320,
-        "cargoCapacity": 0,
-        "cargoType": "none",
+        "cargoCapacity": 19000,
+        "cargoType": "container",
         "slots": {
             "dockingbay": 3,
             "engine": 1,
@@ -18101,6 +18173,10 @@
                     ]
                 }
             ],
+            "docks": {
+                "m": 1,
+                "s": 1
+            },
             "countermeasures": 8
         }
     },
@@ -18198,6 +18274,10 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "m": 1,
+                "s": 9
             },
             "countermeasures": 4
         }
@@ -22920,6 +23000,9 @@
                     "weapon"
                 ]
             },
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -23026,6 +23109,9 @@
                     "weapon"
                 ]
             },
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 6
         }
     },
@@ -23122,6 +23208,9 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 1
             },
             "countermeasures": 4
         }
@@ -23232,6 +23321,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 4
         }
     },
@@ -23325,6 +23417,9 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 1
             },
             "countermeasures": 5
         }
@@ -23422,6 +23517,9 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "s": 1
             },
             "countermeasures": 5
         }
@@ -23860,6 +23958,9 @@
                     ]
                 }
             ],
+            "docks": {
+                "s": 1
+            },
             "countermeasures": 1
         }
     },
@@ -25380,8 +25481,8 @@
         "accFactorVertical": 1,
         "people": 219,
         "storageMissile": 40,
-        "cargoCapacity": 0,
-        "cargoType": "none",
+        "cargoCapacity": 50,
+        "cargoType": "container",
         "slots": {
             "dockingbay": 3,
             "engine": 1,
@@ -25431,6 +25532,10 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "m": 1,
+                "s": 1
             },
             "countermeasures": 4
         }
@@ -25528,6 +25633,10 @@
                     "turret"
                 ]
             },
+            "docks": {
+                "m": 1,
+                "s": 1
+            },
             "countermeasures": 5
         }
     },
@@ -25624,6 +25733,10 @@
                     "standard",
                     "turret"
                 ]
+            },
+            "docks": {
+                "m": 1,
+                "s": 9
             },
             "countermeasures": 6
         }

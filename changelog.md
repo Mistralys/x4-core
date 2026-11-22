@@ -1,5 +1,15 @@
 # X4 Core Changelog
 
+## v1.4.1 - **WIP; UNRELEASED**
+
+- Core: Fixed macro lookups failing for macros that are defined in a different data folder than the referencing file, which the game allows. `MacroFileDefs::getByMacroName()` now prefers the given data folder, then falls back to any other data folder, case-insensitively.
+- Ships: Fixed the Split carrier and the Split, Pirate and Terran builders reporting a cargo capacity of 0. They reference vanilla storage macros.
+- Ships: Dock information is now extracted for ships whose dock macros live in another data folder.
+- Ships: A storage macro that cannot be found is now logged as a warning during extraction instead of silently resulting in 0 cargo.
+- Build: The line endings of the files in `data/` are now normalized to LF after every build command, and the generated `Known*.php` classes are written with LF. This stops git from reporting unchanged data files as modified on Windows.
+- Repo: Added a `.gitattributes` file to normalize line endings to LF.
+- Data: Regenerated `ships.json`.
+
 ## v1.4.0 - Game Update v9 (Breaking-M)
 > Game version v9.0.0.0
 
