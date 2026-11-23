@@ -19,9 +19,23 @@ use Mistralys\X4\Database\MacroIndex\MacroFileDef;
 use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
+use Mistralys\X4\Database\Translations\Language;
+use Mistralys\X4\Database\Translations\Languages;
 
 /**
  * Definition of a ware.
+ *
+ * ## Lazy hydration
+ *
+ * `WareDefs` loads every ware for all consumers, so the price and
+ * production data is kept as raw records and the value objects
+ * ({@see WarePrice}, {@see WareProduction}) are built on first access of
+ * {@see self::getPrice()}, {@see self::getProductions()} or
+ * {@see self::getProduction()}, then cached. The constructor accepts both
+ * value objects and records, and normalizes them to records.
+ * {@see self::hasPrice()}, {@see self::getProductionMethodIDs()},
+ * {@see self::getProductionResourceIDs()} and {@see self::usesResource()}
+ * read the records only and never build any objects.
  *
  * @package X4 Database
  * @subpackage Wares
@@ -40,6 +54,16 @@ class WareDef implements CollectionItemInterface
     public const KEY_MACRO_ID = 'macroID';
     public const KEY_VARIANT_ID = 'variantID';
     public const KEY_COMPONENT = 'component';
+    public const KEY_PRICE_MIN = 'priceMin';
+    public const KEY_PRICE_AVERAGE = 'priceAverage';
+    public const KEY_PRICE_MAX = 'priceMax';
+    public const KEY_PRODUCTIONS = 'productions';
+    public const KEY_LICENCE_ID = 'licenceID';
+    public const KEY_DESCRIPTION_ID = 'descriptionID';
+    public const KEY_ILLEGAL_FACTION_IDS = 'illegalFactionIDs';
+    public const KEY_BUY_RESTRICTED = 'buyRestricted';
+    public const KEY_VOLUME = 'volume';
+    public const KEY_TRANSPORT_TYPE_ID = 'transportTypeID';
 
     private string $id;
     private string $label;
@@ -67,6 +91,36 @@ class WareDef implements CollectionItemInterface
     private array $component;
 
     /**
+     * Raw price record (the three flat `price*` keys), or null.
+     * @var array<string,int>|null
+     */
+    private ?array $priceRecord;
+
+    /**
+     * Raw production records.
+     * @var array<int,array<string,mixed>>
+     */
+    private array $productionRecords;
+
+    private ?string $licenceID;
+    private ?string $descriptionID;
+
+    /**
+     * @var string[]
+     */
+    private array $illegalFactionIDs;
+    private bool $buyRestricted;
+    private ?int $volume;
+    private ?string $transportTypeID;
+
+    private ?WarePrice $priceObject = null;
+
+    /**
+     * @var WareProduction[]|null
+     */
+    private ?array $productionObjects = null;
+
+    /**
      * @param string $id
      * @param string $macroID
      * @param string $label
@@ -77,6 +131,14 @@ class WareDef implements CollectionItemInterface
      * @param string $size
      * @param string[] $factionIDs
      * @param array{tags:string[]} $component
+     * @param WarePrice|array<string,mixed>|null $price Value object or raw record (flat `price*` keys).
+     * @param array<int,WareProduction|array<string,mixed>> $productions Value objects or raw records.
+     * @param string|null $licenceID
+     * @param string|null $descriptionID
+     * @param string[] $illegalFactionIDs
+     * @param bool $buyRestricted
+     * @param int|null $volume
+     * @param string|null $transportTypeID
      */
     public function __construct(
         string $id, 
@@ -88,7 +150,15 @@ class WareDef implements CollectionItemInterface
         string $dataSourceID, 
         string $size,
         array $factionIDs,
-        array $component
+        array $component,
+        WarePrice|array|null $price = null,
+        array $productions = array(),
+        ?string $licenceID = null,
+        ?string $descriptionID = null,
+        array $illegalFactionIDs = array(),
+        bool $buyRestricted = false,
+        ?int $volume = null,
+        ?string $transportTypeID = null
     ) {
         $this->id = $id;
         $this->label = $label;
@@ -100,6 +170,23 @@ class WareDef implements CollectionItemInterface
         $this->size = $size;
         $this->factionIDs = $factionIDs;
         $this->component = $component;
+        $this->licenceID = $licenceID;
+        $this->descriptionID = $descriptionID;
+        $this->illegalFactionIDs = array_values($illegalFactionIDs);
+        $this->buyRestricted = $buyRestricted;
+        $this->volume = $volume;
+        $this->transportTypeID = $transportTypeID;
+
+        if($price instanceof WarePrice) {
+            $price = $price->toArray();
+        }
+
+        $this->priceRecord = !empty($price) ? $price : null;
+
+        $this->productionRecords = array();
+        foreach($productions as $production) {
+            $this->productionRecords[] = $production instanceof WareProduction ? $production->toArray() : $production;
+        }
     }
 
     public function getID() : string
@@ -210,8 +297,257 @@ class WareDef implements CollectionItemInterface
             $data->getString(self::KEY_DATA_SOURCE_ID),
             $data->getString(self::KEY_SIZE, ''),
             $data->getArray(self::KEY_FACTIONS, []),
-            $data->getArray(self::KEY_COMPONENT, ['tags' => []])
+            $data->getArray(self::KEY_COMPONENT, ['tags' => []]),
+            self::extractPriceRecord($wareDef),
+            $data->getArray(self::KEY_PRODUCTIONS, []),
+            $data->getString(self::KEY_LICENCE_ID, '') ?: null,
+            $data->getString(self::KEY_DESCRIPTION_ID, '') ?: null,
+            $data->getArray(self::KEY_ILLEGAL_FACTION_IDS, []),
+            $data->getBool(self::KEY_BUY_RESTRICTED),
+            isset($wareDef[self::KEY_VOLUME]) ? (int)$wareDef[self::KEY_VOLUME] : null,
+            $data->getString(self::KEY_TRANSPORT_TYPE_ID, '') ?: null
         );
+    }
+
+    /**
+     * @param array<string,mixed> $wareDef
+     * @return array<string,int>|null
+     */
+    private static function extractPriceRecord(array $wareDef) : ?array
+    {
+        $record = array();
+
+        foreach(array(self::KEY_PRICE_MIN, self::KEY_PRICE_AVERAGE, self::KEY_PRICE_MAX) as $key) {
+            if(!isset($wareDef[$key])) {
+                return null;
+            }
+
+            $record[$key] = (int)$wareDef[$key];
+        }
+
+        return $record;
+    }
+
+    /**
+     * Gets the reference price of the ware. The object is built
+     * on first access and cached.
+     *
+     * @return WarePrice|null Null if the ware has no price.
+     */
+    public function getPrice() : ?WarePrice
+    {
+        if($this->priceRecord === null) {
+            return null;
+        }
+
+        if($this->priceObject === null) {
+            $this->priceObject = WarePrice::fromArray($this->priceRecord);
+        }
+
+        return $this->priceObject;
+    }
+
+    /**
+     * Whether the ware has a price. Does not build the price object.
+     */
+    public function hasPrice() : bool
+    {
+        return $this->priceRecord !== null;
+    }
+
+    /**
+     * Gets the production recipes of the ware, including those added by
+     * DLC patches. The objects are built on first access and cached.
+     *
+     * @return WareProduction[]
+     */
+    public function getProductions() : array
+    {
+        if($this->productionObjects === null) {
+            $this->productionObjects = array();
+            foreach($this->productionRecords as $record) {
+                $this->productionObjects[] = WareProduction::fromArray($record);
+            }
+        }
+
+        return $this->productionObjects;
+    }
+
+    /**
+     * Gets the first production recipe that uses the given method.
+     *
+     * @param string $methodID
+     * @return WareProduction|null
+     */
+    public function getProduction(string $methodID) : ?WareProduction
+    {
+        foreach($this->getProductions() as $production) {
+            if($production->methodID === $methodID) {
+                return $production;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Gets the IDs of the methods the ware can be produced with.
+     * Reads the raw records and does not build production objects.
+     *
+     * @return string[]
+     */
+    public function getProductionMethodIDs() : array
+    {
+        $result = array();
+        foreach($this->productionRecords as $record) {
+            $result[] = (string)($record[WareProduction::KEY_METHOD_ID] ?? '');
+        }
+
+        return $result;
+    }
+
+    /**
+     * Gets the IDs of all resource wares used by any production recipe,
+     * sorted and unique. Reads the raw records and does not build production objects.
+     *
+     * @return string[]
+     */
+    public function getProductionResourceIDs() : array
+    {
+        $result = array();
+        foreach($this->productionRecords as $record) {
+            foreach(array_keys($record[WareProduction::KEY_RESOURCES] ?? array()) as $wareID) {
+                $result[(string)$wareID] = true;
+            }
+        }
+
+        $ids = array_map('strval', array_keys($result));
+        sort($ids);
+
+        return $ids;
+    }
+
+    /**
+     * Whether any production recipe of this ware consumes the given ware.
+     * Reads the raw records and does not build production objects.
+     *
+     * @param string $wareID
+     * @return bool
+     */
+    public function usesResource(string $wareID) : bool
+    {
+        foreach($this->productionRecords as $record) {
+            if(isset($record[WareProduction::KEY_RESOURCES][$wareID])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Gets the licence type key required to buy the ware, if any.
+     * The key is defined per faction in `libraries/factions.xml`;
+     * there is no licence collection.
+     */
+    public function getLicenceID() : ?string
+    {
+        return $this->licenceID;
+    }
+
+    /**
+     * Gets the translation code (`{page,id}`) of the ware description.
+     */
+    public function getDescriptionID() : ?string
+    {
+        return $this->descriptionID;
+    }
+
+    /**
+     * Gets the ware description. A language that lacks the text falls
+     * back to English. The raw text code is never returned.
+     *
+     * @param Language|null $language Defaults to English.
+     * @return string Empty if the ware has no description, or if neither the language nor English has the text.
+     */
+    public function getDescription(?Language $language = null) : string
+    {
+        if(empty($this->descriptionID)) {
+            return '';
+        }
+
+        $language ??= Languages::getInstance()->getEnglish();
+
+        return $language->tsWithFallback($this->descriptionID);
+    }
+
+    /**
+     * The space one unit of the ware takes in a ship's cargo hold,
+     * in the same unit as the cargo capacity of ships.
+     */
+    public function getVolume() : ?int
+    {
+        return $this->volume;
+    }
+
+    /**
+     * Gets the transport type ID (the `transport` attribute of the game),
+     * see {@see WareTransportTypes}. Note that `container` is not limited
+     * to commodities (it includes station modules, for example).
+     */
+    public function getTransportTypeID() : ?string
+    {
+        return $this->transportTypeID;
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getIllegalFactionIDs() : array
+    {
+        return $this->illegalFactionIDs;
+    }
+
+    /**
+     * Whether the ware is illegal for the given faction.
+     *
+     * @param string|FactionDef $faction
+     * @return bool
+     */
+    public function isIllegalFor(string|FactionDef $faction) : bool
+    {
+        $id = $faction instanceof FactionDef ? $faction->getID() : $faction;
+
+        return in_array($id, $this->illegalFactionIDs, true);
+    }
+
+    /**
+     * Gets the factions that consider this ware illegal.
+     *
+     * @return FactionDef[]
+     */
+    public function getIllegalFactions() : array
+    {
+        $defs = FactionDefs::getInstance();
+        $result = array();
+        foreach($this->illegalFactionIDs as $factionID) {
+            $result[] = $defs->getByID($factionID);
+        }
+
+        usort($result, static function(FactionDef $a, FactionDef $b) : int {
+            return strnatcasecmp($a->getLabel(), $b->getLabel());
+        });
+
+        return $result;
+    }
+
+    /**
+     * Whether the ware carries the raw game flag `<restriction buy="1">`.
+     * The game data does not document its meaning.
+     */
+    public function hasBuyRestriction() : bool
+    {
+        return $this->buyRestricted;
     }
 
     public function hasTag(string $tag) : bool
@@ -291,6 +627,38 @@ class WareDef implements CollectionItemInterface
         $component = $this->getComponent();
         if (!empty($component['tags'])) {
             $result[self::KEY_COMPONENT] = $component;
+        }
+
+        if($this->priceRecord !== null) {
+            $result = array_merge($result, $this->priceRecord);
+        }
+
+        if(!empty($this->productionRecords)) {
+            $result[self::KEY_PRODUCTIONS] = $this->productionRecords;
+        }
+
+        if(!empty($this->licenceID)) {
+            $result[self::KEY_LICENCE_ID] = $this->licenceID;
+        }
+
+        if(!empty($this->descriptionID)) {
+            $result[self::KEY_DESCRIPTION_ID] = $this->descriptionID;
+        }
+
+        if(!empty($this->illegalFactionIDs)) {
+            $result[self::KEY_ILLEGAL_FACTION_IDS] = $this->illegalFactionIDs;
+        }
+
+        if($this->buyRestricted) {
+            $result[self::KEY_BUY_RESTRICTED] = true;
+        }
+
+        if($this->volume !== null) {
+            $result[self::KEY_VOLUME] = $this->volume;
+        }
+
+        if(!empty($this->transportTypeID)) {
+            $result[self::KEY_TRANSPORT_TYPE_ID] = $this->transportTypeID;
         }
         
         return $result;

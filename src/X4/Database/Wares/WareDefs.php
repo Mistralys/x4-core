@@ -7,7 +7,6 @@ namespace Mistralys\X4\Database\Wares;
 use AppUtils\Collections\BaseStringPrimaryCollection;
 use AppUtils\FileHelper;
 use AppUtils\FileHelper\JSONFile;
-use Mistral\X4\Database\Wares\WaresExtractor;
 use Mistralys\X4\Database\Core\ItemCollectionInterface;
 use Mistralys\X4\X4Application;
 

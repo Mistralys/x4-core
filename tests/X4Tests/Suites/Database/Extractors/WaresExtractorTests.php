@@ -6,8 +6,9 @@ namespace X4Tests\Suites\Database\Extractors;
 
 use Mistralys\X4\Database\DatabaseBuilder;
 use Mistralys\X4\Database\Wares\WareDef;
-use Mistral\X4\Database\Wares\WaresExtractor;
+use Mistralys\X4\Database\Wares\WaresExtractor;
 use Mistralys\X4\X4Application;
+use X4Tests\Helpers\RawWareScanner;
 use X4Tests\Helpers\X4TestCase;
 
 class WaresExtractorTests extends X4TestCase
@@ -30,6 +31,17 @@ class WaresExtractorTests extends X4TestCase
         $this->assertFileExists($this->dataFile, 'Wares file not created.');
     }
     
+    public function test_legacyClassNameResolves() : void
+    {
+        $legacy = 'Mistral\X4\Database\Wares\WaresExtractor';
+
+        $this->assertTrue(class_exists($legacy));
+        $this->assertInstanceOf(
+            WaresExtractor::class,
+            new $legacy(DatabaseBuilder::getDataFolders())
+        );
+    }
+
     public function test_outputFileCreated() : void
     {
         $this->assertFileExists($this->dataFile);
@@ -74,5 +86,31 @@ class WaresExtractorTests extends X4TestCase
             }
         }
         return $map;
+    }
+
+    public function test_dlcOwnerPatchesApplied() : void
+    {
+        $map = $this->getDataMap();
+
+        $tugboat = $map['ship_gen_m_tugboat_01_a'];
+        foreach(array('boron', 'freesplit', 'pioneers', 'scavenger') as $factionID) {
+            $this->assertContains($factionID, $tugboat[WareDef::KEY_FACTIONS]);
+        }
+
+        $methods = array_column($tugboat[WareDef::KEY_PRODUCTIONS], 'methodID');
+        $this->assertContains('terran', $methods);
+
+        // Every owner in the raw data (definition and patches) is present, and nothing else is.
+        $checked = 0;
+        foreach(RawWareScanner::getWares() as $id => $raw) {
+            if(!isset($map[$id])) {
+                continue;
+            }
+
+            $checked++;
+            $this->assertSame($raw['owners'], $map[$id][WareDef::KEY_FACTIONS] ?? array(), $id);
+        }
+
+        $this->assertGreaterThan(1000, $checked);
     }
 }
