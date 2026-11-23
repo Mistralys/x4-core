@@ -1031,6 +1031,41 @@ Remember the rule from [constraints.md](../constraints.md):
 
 ---
 
+## 🔌 Connection Resolver Pattern
+
+Ship macros reference child macros (storage, docks, hangars) through `<connection>` elements. `ShipMacroConnectionResolver` implements the walk once: connection, to child `<macro ref>`, to a resolved `MacroFileDef`.
+
+```php
+$resolver = new ShipMacroConnectionResolver();
+foreach ($resolver->resolve($dom, $dataSourceID, 'con_storage') as $connection) {
+    $connection->connectionRef; // e.g. 'con_storage01'
+    $connection->macroID;       // child macro name
+    $connection->macroDef;      // resolved MacroFileDef
+}
+```
+
+- Results come in document order; the optional third argument keeps only connections whose `ref` starts with that prefix.
+- The macro is looked up in the preferred data folder first, then in all data folders, so cross-folder macros resolve.
+- An unresolvable reference logs one `WARNING | Macro [%s] referenced by connection [%s] was not found in any data folder.` and is skipped. Macro elements with an empty `ref` are skipped silently.
+- `ShipCargoInfo` (readonly `capacity`, `type`, `macroID`; defaults `0`, `none`, `null`) is the typed storage result and carries the storage macro name.
+
+Do not re-implement the connection loop in an extractor; call the resolver.
+
+---
+
+## 🩹 DLC Diff Patch Pattern
+
+DLC `libraries/wares.xml` files are `<diff>` documents, not plain ware lists. `WaresPatchReader` reads every DLC folder's file (in `DataFolders` order) and returns one `WarePatch` per `<add>` operation:
+
+- `getWarePatches()` returns only patches targeting a single ware (`/wares/ware[@id='X']`); `WarePatch::targetWareID` holds the ID.
+- `getPatchesForSelector('/wares/production')` returns patches for other supported selectors.
+- `WarePatch::element` is the whole `<add>` element; its children are the content to add.
+- `replace`/`remove` operations and unsupported selectors are skipped with a `WARNING` (also collected in `getWarnings()`).
+
+See [Database Game Data API](../api/database-game-data-api.md#wares) for the class reference.
+
+---
+
 ## 🔗 Related Resources
 
 ### Source Files Referenced

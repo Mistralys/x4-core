@@ -18,6 +18,7 @@ x4-core/
 │   ├── lang-*.json            # Translation files (7 languages)
 │   ├── macro-index.json
 │   ├── modules.json
+│   ├── production-methods.json
 │   ├── ship-settings.json
 │   ├── shields.json
 │   ├── ships.json
@@ -159,15 +160,25 @@ src/X4/
 │   │   ├── ModuleExtractor.php
 │   │   ├── ModuleFinder.php
 │   │   └── ModuleMacroExtractor.php
+│   ├── ProductionMethods/    # Ware production methods
+│   │   ├── ProductionMethodDef.php
+│   │   ├── ProductionMethodDefs.php
+│   │   └── ProductionMethodsExtractor.php
 │   ├── Ships/                # Ship database
 │   │   ├── Equipment/        # Ship equipment compatibility
 │   │   │   ├── ShipEquipmentFinder.php
 │   │   │   └── ShipSlotDefinition.php
 │   │   ├── KnownShips.php
+│   │   ├── MacroProperties/  # Ship macro connection resolution
+│   │   │   ├── ShipCargoInfo.php
+│   │   │   ├── ShipMacroConnection.php
+│   │   │   ├── ShipMacroConnectionResolver.php
+│   │   │   └── ShipMacroProperties.php
 │   │   ├── ShipClass.php
 │   │   ├── ShipClasses.php
 │   │   ├── ShipDef.php
 │   │   ├── ShipDefs.php
+│   │   ├── ShipException.php
 │   │   ├── ShipFinder.php
 │   │   ├── ShipSize.php
 │   │   ├── ShipSizes.php
@@ -195,7 +206,14 @@ src/X4/
 │   │   ├── WareFinder.php
 │   │   ├── WareGroup.php
 │   │   ├── WareGroups.php
-│   │   └── WaresExtractor.php
+│   │   ├── WarePatch.php
+│   │   ├── WarePrice.php
+│   │   ├── WareProduction.php
+│   │   ├── WareTransportTypes.php
+│   │   ├── WaresExtractor.php
+│   │   ├── WaresPatchReader.php
+│   │   └── Legacy/           # Deprecated shims for renamed classes
+│   │       └── WaresExtractor.php  # Old Mistral\ namespace alias
 │   ├── Weapons/              # Weapon performance database
 │   │   ├── BulletMacroExtractor.php
 │   │   ├── WeaponDef.php

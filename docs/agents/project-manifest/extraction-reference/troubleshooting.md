@@ -22,6 +22,9 @@ This guide documents common errors encountered during X4 data extraction, their 
 | **Build Dependency** | 🔴 Critical | Wrong build order | Fix DatabaseBuilder |
 | **Data Source Missing** | 🟡 Warning | Missing DLC folder | Verify extraction path |
 | **Type Conversion** | 🟡 Warning | Invalid attribute value | Add validation |
+| **Unresolved Connection Macro** | 🟡 Warning | Child macro of a ship connection not in any data folder | Check the raw XML and extraction |
+| **Unknown Production Method** | 🟡 Warning | A ware production references a method missing from `production-methods.json` | Run `composer extract-production-methods` before `extract-wares` |
+| **Unsupported Ware Diff** | 🟡 Warning | DLC `wares.xml` uses an operation or selector the reader skips | Extend `WaresPatchReader` |
 
 ---
 
@@ -672,6 +675,8 @@ public function build(): void
     $this->buildWares();             // Required by: All equipment extractors
     $this->buildDataSources();       // Independent
     $this->buildFactions();          // Independent
+    // Note: production methods must be built before wares, since
+    // WaresExtractor checks each production's method against them.
     $this->buildTranslations();      // Independent
     
     // ===== PHASE 3: EQUIPMENT =====
@@ -1230,6 +1235,61 @@ private function extractProperties(DOMExtended $dom): array
     return $properties;
 }
 ```
+
+---
+
+### Error 7: Unresolved Connection Macro
+
+#### Symptoms
+`WARNING | Macro [x] referenced by connection [y] was not found in any data folder.` during ship extraction. The connection is skipped, so e.g. cargo capacity may be 0 or dock information missing for that ship.
+
+#### Root Cause
+`ShipMacroConnectionResolver` could not resolve the child macro in any data folder: the macro file was not extracted, or the game data references a macro that does not exist.
+
+#### Solution
+1. Search all data folders for the macro name; check `MacroIndex` contains it.
+2. If the file exists but is missing from the index, re-extract the data and rebuild the MacroIndex.
+3. If the raw XML itself references a missing macro, the warning is expected and can be ignored.
+
+---
+
+### Error 9: Unknown Production Method
+
+**Symptom:** `composer extract-wares` logs a `NOTICE` that a production uses an unknown method. The production is kept in `wares.json`, but `WareProduction::getMethod()` returns `null` for it.
+
+**Cause:** The method ID is not in `data/production-methods.json`, usually because `extract-production-methods` was not run first, or because a DLC defines the method in a `wares.xml` patch the extractor did not read.
+
+**Fix:** Run `composer extract-production-methods`, then `composer extract-wares`. In a full `composer build` the order is already correct. If the NOTICE persists, check the raw `libraries/wares.xml` of the data folders for the method definition.
+
+---
+
+### Error 8: Unsupported Ware Diff Operation or Selector
+
+#### Symptoms
+`WARNING` lines logged by `WaresPatchReader` while reading a DLC `libraries/wares.xml`, naming an unsupported operation (`replace`, `remove`) or an unsupported `sel` value. The affected patch is skipped, so its data is missing from `wares.json`.
+
+#### Root Cause
+DLC ware files are `<diff>` documents. The reader only supports `<add>` operations with the selectors `/wares`, `/wares/production` and `/wares/ware[@id='X']`. A game update introduced something else.
+
+#### Solution
+1. Open the named DLC `libraries/wares.xml` and find the operation or selector.
+2. Extend `WaresPatchReader` to support it, and `WaresExtractor` to apply it.
+3. Add a fixture case to `WaresPatchReaderTests`. Warnings are also available programmatically via `WaresPatchReader::getWarnings()`.
+
+---
+
+### Error 9: wares.json Shows Whole-File Diff After Running Tests
+
+#### Symptoms
+`git diff` reports every line of `data/wares.json` as changed, although the content is identical.
+
+#### Root Cause
+Line endings differ by writer. `WaresExtractorTests::test_extract` (PHPUnit) writes `data/wares.json` with LF endings, while `composer extract-wares` normalizes it to CRLF.
+
+#### Solution
+Re-run `composer extract-wares` after a test run to restore the CRLF endings. The content is identical either way.
+
+Related: the full test suite needs `php -d memory_limit=2G`, because the Translations tests exhaust the default 128M limit.
 
 ---
 

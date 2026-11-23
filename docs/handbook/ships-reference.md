@@ -216,3 +216,7 @@ Countermeasures are stored in the equipment array, not the slots array.
 // Gets from equipment array, not slots
 $count = $ship->countCountermeasures();
 ```
+
+### 7. Cargo Helpers Use a Derived Rule
+
+`ShipDef::canTransport()` and `getCargoUnits()` rely on the ship's cargo types matching the ware's transport type. This rule is derived from the data, not stated by the game. See [ships.md](ships.md#cargo-helpers).

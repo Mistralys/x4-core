@@ -1,7 +1,7 @@
 # Database Core API Reference
 
 > **Domain**: Core Database Patterns - CollectionItem, ItemCollection, Finder, VariantID  
-> **Last Updated**: February 15, 2026
+> **Last Updated**: November 22, 2026
 
 [← Back to API Index](README.md)
 
@@ -16,6 +16,7 @@ The Database Core namespace defines the fundamental patterns used throughout the
 - **Finder Pattern**: Fluent filtering interface for querying collections
 - **VariantID**: Ship/ware variant identification system (mk1, mk2, mk3)
 - **BaseExtractor**: Common XML processing utilities for data extraction
+  - Note: `WaresExtractor` does not extend it; it lives in `Mistralys\X4\Database\Wares` (the old `Mistral\` name is a deprecated shim, see [Game Data API](database-game-data-api.md))
 
 ---
 
@@ -361,7 +362,7 @@ $engines = $ship->getEngines()
 
 The Collection-Item pattern provides a consistent interface for all game data:
 
-1. **Collections** (e.g., `ShipDefs`) hold all items of a type
+1. **Collections** (e.g., `ShipDefs`, `ProductionMethodDefs`) hold all items of a type
 2. **Items** (e.g., `ShipDef`) represent individual entities
 3. **Finders** provide fluent filtering across collections
 4. **Interfaces** ensure consistency across all implementations

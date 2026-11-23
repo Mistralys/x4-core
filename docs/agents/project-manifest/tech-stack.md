@@ -52,6 +52,7 @@ The codebase extensively uses a **Collection-Item** pattern for managing game da
   - Provide domain-specific getter methods
   - Support serialization via `toArray()` and `fromArray()`
   - Use `VariantID` for variant identification
+  - May hydrate heavy value objects lazily: `WareDef` keeps raw price/production records and builds `WarePrice` / `WareProduction` on first access, because `WareDefs` is loaded by every domain
 
 **Example - Shields:**
 ```php
@@ -102,6 +103,7 @@ $shields = $ship->getShields()
 - `FactionDefs` → `FactionDef`
 - `WareDefs` → `WareDef`
 - `ShipDefs` → `ShipDef`
+- `ProductionMethodDefs` → `ProductionMethodDef`
 - `ModuleDefs` → `ModuleDef`
 - `BlueprintDefs` → `BlueprintDef`
 - `ShieldDefs` → `ShieldDef`
@@ -157,6 +159,8 @@ X4Exception (base)
   ├─ BlueprintException
   ├─ ModuleException
   ├─ XMLException
+  ├─ ShipException
+  ├─ WareException
   └─ TranslationException
 ```
 
@@ -231,6 +235,7 @@ engines.json
 factions.json
 macro-index.json
 modules.json
+production-methods.json
 ship-settings.json
 shields.json
 ships.json
@@ -302,6 +307,7 @@ composer build              # Full rebuild
 composer extract-blueprints # Extract blueprints only
 composer extract-wares      # Extract wares only
 composer extract-factions   # Extract factions only
+composer extract-production-methods # Extract production methods only
 composer extract-ships      # Extract ships only
 composer extract-modules    # Extract modules only
 composer extract-macro-index    # Extract macro index

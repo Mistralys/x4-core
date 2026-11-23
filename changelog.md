@@ -1,5 +1,50 @@
 # X4 Core Changelog
 
+## v1.5.0 - **WIP; UNRELEASED**
+
+**Missing translations now fall back to English, or an empty string, instead of a raw code.**
+Wares now carry prices, production recipes, licences, cargo volume and transport type, and the
+regenerated ware data now includes them. Production methods can now be browsed as a
+collection, with their label, tags, player-buildable status and default races. Translation codes can
+also be checked for existence. The ware extractor moved to a new namespace, and the old class name
+keeps working.
+
+- Translations: Missing translations now fall back to English, or an empty string, not `{page,id}`.
+- Wares: Added price, production recipes, licence, description, illegal factions and buy restriction.
+- Wares: Added production resource lookups with total cost, cost per unit and production method.
+- Wares: Added cargo volume and transport type; ten transport types, four of them cargo types.
+- Wares: Records without the new data still load; empty values are omitted on export.
+- Wares: Price and production data are now built on first access, not at load.
+- Translations: Added checks for whether a translation code exists. Existing lookups are unchanged.
+- ProductionMethods: Added collection with label, tags, player-buildable flag and default races.
+- Ships: Storage and dock lookups now share one connection resolver; the storage macro name is kept. Extracted values are unchanged.
+- Wares: Added a reader for DLC ware diff files; unsupported operations are logged as warnings.
+- Wares: Moved extractor to the Mistralys namespace; old class name kept as deprecated shim.
+- Ships: Added immutable types for steering curve, explosion damage, hangar capacity and modifiers.
+- Ships: Added the eight ship purposes (fight, trade, mine, build, auxiliary, racing, salvage, dismantling).
+- Ships: Added types for default and optional software and for the built-in default loadout.
+- Ships: Added a macro properties object with links, purpose, thruster size, capacities, software, modifiers, steering curve and default loadout.
+- Ships: Added base, variation and short variation names, falling back to English, or an empty string.
+- Ships: Added a per-ship macro reader that extracts the macro properties from the ship's own macro, falling back to its alias target.
+- Ships: The steering curve is a plain point list; `ShipDef::getMacroProperties()` exposes the new types.
+- Wares: Fixed DLC ware patches being ignored; patched owners and illegal factions are merged, and patched productions appended. 196 wares gained 547 owners, which also changes the ship `usedBy` data.
+- Wares: The extractor now reads price, productions, licence, description, illegal factions, buy restriction, volume and transport type. Unknown transport types and non-numeric volumes are logged as warnings.
+- ProductionMethods: Added extractor reading vanilla methods and DLC `/wares/production` patches; a method defined twice keeps the later data folder's definition and logs a notice.
+- ProductionMethods: Added the `extract-production-methods` Composer script; the build now runs it between the factions and wares steps.
+- Wares: The extractor now logs a notice for a production with an unknown method and keeps the production.
+- Data: Added production-methods.json with 12 methods, sorted by ID.
+- Ships: `ShipDef` gained `getMacroProperties()` and delegators for the macro links (`getMacroID()`, `getMacro()`, `getCargoMacroID()`, `hasCargoMacro()`, `getCargoMacro()`, `getAliasMacroID()`, `isAliasMacro()`, `hasOwnAccFactors()`).
+- Ships: `ShipDef` gained ware delegators `getPrice()`, `getProductions()`, `getLicenceID()`, `getDescription()` and `getIllegalFactionIDs()`.
+- Wares: Added cargo volume and transport type; ships gain `getCargoTypeIDs()`, `canTransport()` and `getCargoUnits()`. The transport rule is derived from the matching vocabularies.
+- Ships: Added `ShipException`; `getMacro()` throws it when the macro ID is empty instead of guessing the ID.
+- Ships: Added macro information to ships.json: macro and cargo macro IDs, alias macro, own acceleration factors flag, purpose, thruster size, capacities, hangar, software, modifiers, names, steering curve, explosion damage and default loadouts. Existing values are unchanged.
+- Data: Regenerated wares.json and ships.json; all 256 ships keep their IDs and order, and `usedBy` gained owners on 13 ships from DLC ware patches. Other data files are unchanged.
+- Finders: Added `WareFinder::selectProducedBy()`, `selectUsingResource()`, `selectLicence()`, `selectIllegalFor()` and `selectTransportType()`. Single-valued attributes combine as any, capability filters (resources) as all; different filters combine as AND.
+- Ships: Added `ShipFinder::selectPurpose()`, `selectThrusterSize()`, `selectCapturable()`, `selectWithHangar()` and `selectWithSoftware()`. Purposes and thruster sizes combine as any, hangar sizes and software as all, capturable is a single value (last call wins); an unknown purpose throws `ShipException`.
+- Wares: Added `WareException`; an unknown transport type throws it, while unknown production method, ware or faction IDs throw the collection's `RecordNotExistsException`.
+- API: All additions are backward compatible; the `ShipDef` constructor only gains a trailing optional parameter.
+- Data: Regenerated wares.json with 1695 productions on 1305 wares (4820 resource lines over 98 resource wares), licences on 1083 wares and illegal factions on 18 wares. Existing keys are unchanged except owners, which only gain entries.
+
 ## v1.4.1 - Cross-Folder Macro Fixes
 > Game version v9.0.0.0
 

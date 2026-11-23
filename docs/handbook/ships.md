@@ -126,6 +126,63 @@ $cerberusVariants = ShipDefs::getInstance()
 
 **Note:** Case-insensitive substring match
 
+### Filter by Purpose
+
+```php
+use Mistralys\X4\Database\Ships\ShipPurposes;
+
+$traders = ShipDefs::getInstance()
+    ->findShips()
+    ->selectPurpose(ShipPurposes::PURPOSE_TRADE)
+    ->getAll();
+```
+
+**Accepts:** Purpose ID string. **Rule:** any. An unknown ID throws a `ShipException` (`ERROR_UNKNOWN_PURPOSE`, code 144003).
+
+### Filter by Thruster Size
+
+```php
+$mediumThrusters = ShipDefs::getInstance()
+    ->findShips()
+    ->selectThrusterSize(ShipSizes::SIZE_M)
+    ->getAll();
+```
+
+**Accepts:** Size ID string or `ShipSize` object. **Rule:** any. Selecting two sizes returns the union.
+
+### Filter by Capturability
+
+```php
+$notCapturable = ShipDefs::getInstance()
+    ->findShips()
+    ->selectCapturable(false)
+    ->getAll();
+```
+
+**Accepts:** `bool`, default `true`. **Rule:** single value, the last call wins. The non-capturable ships belong to more than one faction, so do not assume they all share one.
+
+### Filter by Hangar Capacity
+
+```php
+$carriers = ShipDefs::getInstance()
+    ->findShips()
+    ->selectWithHangar(ShipSizes::SIZE_M)
+    ->getAll();
+```
+
+**Accepts:** Size ID string or `ShipSize` object. **Rule:** all. A ship matches only if it has hangar capacity above 0 for every selected size.
+
+### Filter by Installable Software
+
+```php
+$ships = ShipDefs::getInstance()
+    ->findShips()
+    ->selectWithSoftware('software_dockmk2')
+    ->getAll();
+```
+
+**Accepts:** Software ware ID string or `WareDef` object; the ID does not have to exist in `WareDefs`. **Rule:** all. A ship matches only if the software is installable (default or optional) for every selected ware.
+
 ### Chain Multiple Filters
 
 ```php
@@ -139,7 +196,7 @@ $ships = ShipDefs::getInstance()
     ->getAll();
 ```
 
-**Filter Logic:** Filters are cumulative (AND logic). Multiple calls to the same filter type add alternatives (OR logic within that filter).
+**Filter Logic:** Filters are cumulative (AND logic). Multiple calls to the same filter type add alternatives (OR logic within that filter), except hangar sizes and software, which require all selected values (AND), and capturable, where the last call wins.
 
 ---
 
@@ -212,6 +269,30 @@ echo "Crew: " . $ship->getPeopleCapacity();
 echo "Missiles: " . $ship->getMissileStorage();
 echo "Cargo: " . $ship->getCargoCapacity() . " m³ (" . $ship->getCargoType() . ")";
 ```
+
+#### Cargo Helpers
+
+`getCargoType()` returns the raw storage tags. Use the helpers to work with them and to find out what a ship can carry:
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `getCargoTypeIDs()` | The individual cargo types; empty for ships without a hold | `string[]` |
+| `canTransport(WareDef $ware)` | Whether the ware's transport type is one of the ship's cargo types | `bool` |
+| `getCargoUnits(WareDef $ware)` | Number of units of the ware that fit (`cargoCapacity` divided by the ware's volume), `0` if not transportable | `int` |
+
+```php
+$ware = WareDefs::getInstance()->getByID('energycells');
+
+if($ship->canTransport($ware)) {
+    echo $ship->getCargoUnits($ware) . ' units of ' . $ware->getLabel();
+}
+```
+
+**Note:** `canTransport()` applies a derived rule. The game data shows that ware transport types and ship cargo types use matching vocabularies, but it does not state the rule, and it knows nothing about trade rules.
+
+#### Ware Data and Macro Links
+
+A ship delegates `getPrice()`, `getProductions()`, `getLicenceID()`, `getDescription()` and `getIllegalFactionIDs()` to its ware. `getMacroID()`, `getMacro()`, `getCargoMacroID()`, `hasCargoMacro()`, `getCargoMacro()`, `getAliasMacroID()`, `isAliasMacro()` and `hasOwnAccFactors()` expose the macro links, which `ships.json` stores for every ship. `getMacro()` and `getCargoMacro()` throw a `ShipException` when the ship has no (storage) macro ID, and never guess a name. Further macro values are read through `getMacroProperties()`.
 
 **Note:** Ships without cargo storage return `0` for capacity and `'none'` for type. This is correct for ships that have no cargo hold at all (for example Xenon and Khaa'k ships, and racers). A ship that has a cargo hold in the game never reports `0`.
 

@@ -461,10 +461,12 @@ if (PHP_SAPI !== 'cli') {
 composer build              # Full rebuild
 composer extract-wares      # Individual extractor
 composer extract-factions   # Individual extractor
+composer extract-production-methods   # Individual extractor
 # etc.
 ```
 - Each extractor is callable independently
-- Order matters: macros → translations → wares → ships
+- Order matters: macros → translations → factions → production methods → wares → ships
+- `extractProductionMethods()` must run before `extractWares()`, which checks each production's method against `production-methods.json`
 
 ### Database Updates
 - Run after game patches

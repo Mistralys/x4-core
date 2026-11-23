@@ -1,7 +1,7 @@
 # Database Localization & Metadata API Reference
 
 > **Domain**: Translations, Languages, SlotTypes, MacroIndex  
-> **Last Updated**: February 15, 2026
+> **Last Updated**: November 22, 2026
 
 [← Back to API Index](README.md)
 
@@ -38,7 +38,9 @@ __construct(int $id, string $locale): void
 getID(): int
 getLocale(): string
 ts(string $code): string // Translates a translation code e.g. {1005,42}
-t(int $pageID, int $textID): string // Translates a text ID
+t(int $pageID, int $textID): string // Translates a text ID; a missing entry returns the {page,id} placeholder
+hasCode(string $code): bool // Whether an entry exists for the code
+tsWithFallback(string $code, ?Language $fallback = null): string // Own text, else fallback text (English by default), else ''
 getTranslator(): TranslationDefs
 ```
 
@@ -54,6 +56,16 @@ $text = $english->ts('{1005,42}');
 // Translate text using page and text IDs
 $text = $english->t(1005, 42);
 ```
+
+// Check existence and translate with an English fallback
+if($german->hasCode('{1005,42}')) { /* entry exists */ }
+$text = $german->tsWithFallback('{1005,42}'); // never returns the raw code
+```
+
+**Notes:**
+- `hasCode()` returns false for an unknown text ID, an unknown page and a malformed code.
+- `tsWithFallback()` skips the fallback when it is the same language, and returns an empty string when no language has an entry or the code is malformed.
+- `TranslationDefs::hasCode()` (via `getTranslator()`) offers the same existence check; `ts()` and `t()` are unchanged.
 
 ---
 
@@ -315,12 +327,8 @@ foreach ($macroIndex as $macroName => $ware) {
 $german = Languages::getInstance()->getGerman();
 $shipName = $german->t(1001, 100); // Page 1001, Text 100
 
-// Fallback to English if translation missing
-$english = Languages::getInstance()->getEnglish();
-$fallbackName = $english->t(1001, 100);
-
-echo "German: " . $shipName;
-echo "English: " . $fallbackName;
+// Fall back to English if the translation is missing
+$name = $german->tsWithFallback('{1001,100}');
 ```
 
 ---

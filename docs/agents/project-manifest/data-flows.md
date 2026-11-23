@@ -333,8 +333,13 @@ composer build
             ├─→ extractFactions()
             │       └─→ Parse factions → factions.json
             │
+            ├─→ extractProductionMethods()
+            │       └─→ Parse wares.xml methods (vanilla + DLC patches) → production-methods.json
+            │
             ├─→ extractWares()
-            │       └─→ Parse wares → wares.json
+            │       └─→ Parse wares → wares.json (unknown production methods log a NOTICE)
+            │               ├─→ Pass 1: base wares (price, productions, licence, illegal factions, volume, transport)
+            │               └─→ Pass 2: apply DLC ware patches (owners, illegal factions, productions)
             │
             ├─→ extractEngines()
             │       └─→ Parse engines from wares → engines.json
@@ -359,6 +364,7 @@ composer build
                             ├─→ Resolve storage macros → cargoCapacity + cargoType
                             │   └─→ Uses str_starts_with($ref, 'con_storage') for
                             │       precise matching of X4's cargo storage connections
+                            ├─→ Add macroID, cargoMacroID (when set) and ShipMacroPropertiesExtractor output
                             └─→ Resolve builderFaction as array (space-separated)
                                 └─→ Handles multi-faction entries like "argon teladi"
 ```
@@ -371,6 +377,23 @@ composer build
 - **Multi-faction/race support**: Extractors parse space-separated values from XML (e.g., `makerrace="argon teladi"`) and store as arrays in JSON (`builderFactionIDs: ["argon", "teladi"]` or `makerRaces: ["argon", "teladi"]`)
 
 ---
+
+### 7.1. Ship Macro Connection Resolution (Build Time)
+
+`ShipsExtractor` resolves child macros of a ship macro through `ShipMacroConnectionResolver`:
+
+```
+Ship macro DOM
+    ↓ <connection ref="con_storage…"> with child <macro ref="…">
+ShipMacroConnectionResolver::resolve()
+    ↓ MacroFileDefs lookup: preferred data folder first, then all data folders
+ShipMacroConnection[] (connectionRef, macroID, macroDef), document order
+    ↓
+Storage: first con_storage* connection whose macro has <cargo max> → ShipCargoInfo
+Docks:   all dock connections → equipment.docks sizes
+```
+
+Storage is read from the ship's own DOM first, then from the alias DOM. Unresolvable references log a `WARNING` and are skipped. Hangar resolution reuses the same resolver.
 
 ### 8. UI Component Creation Flow
 

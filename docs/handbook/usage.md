@@ -42,6 +42,19 @@ $engines = WareDefs::getInstance()
     ->getAll();
 ```
 
+Further filters are `selectProducedBy()`, `selectUsingResource()`, `selectLicence()`, `selectIllegalFor()` and `selectTransportType()`. Filters on single-valued attributes combine as any, capability filters (tags, resources) as all, and different filters combine as AND. Unknown production method, ware or faction IDs throw the collection's `RecordNotExistsException`; an unknown transport type throws a `WareException`.
+
+**Licences and production costs:** A licence ID is an opaque key. It is defined per faction in the game's faction data, and there is no licence collection to resolve it against. `WareProduction::getResourceCost()` and `getResourceCostPerUnit()` sum the input resources at their reference average price only. They ignore production effects and production time, and return `null` when a resource is unknown or has no price.
+
+```php
+// Wares produced with the terran method that are illegal for the Pioneers
+$wares = WareDefs::getInstance()
+    ->findWares()
+    ->selectProducedBy('terran')
+    ->selectIllegalFor('pioneers')
+    ->getAll();
+```
+
 ## Ships
 
 ```php

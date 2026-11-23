@@ -229,13 +229,14 @@ $this->buildShips();
 | **2** | TranslationsExtractor | lang-*.json (7 files) | None | Single-Phase | ~50,000 strings/lang |
 | **3** | DataSourcesExtractor | data-sources.json | None | Single-Phase | 8 data sources |
 | **4** | FactionsExtractor | factions.json | Translations | Single-Phase | ~20 factions |
-| **5** | WaresExtractor | wares.json | Translations, Factions | Single-Phase | ~500 wares |
-| **6** | EnginesExtractor | engines.json | Wares, MacroIndex | Two-Phase | ~150 engines |
-| **7** | ShieldsExtractor | shields.json | Wares, MacroIndex | Two-Phase | ~100 shields |
-| **8** | WeaponsExtractor | weapons.json | Wares, MacroIndex | Two-Phase | ~200 weapons |
-| **9** | ModulesExtractor | modules.json | Wares, MacroIndex | Two-Phase | ~300 modules |
-| **10** | BlueprintsExtractor | blueprints.json | Wares | Single-Phase | ~400 blueprints |
-| **11** | ShipsExtractor | ships.json | Wares, MacroIndex, Engines, Shields, Weapons | Two-Phase | ~60 ships |
+| **5** | ProductionMethodsExtractor | production-methods.json | Translations | Single-Phase | ~12 methods |
+| **6** | WaresExtractor | wares.json | Translations, Factions, Production Methods | Single-Phase | ~500 wares |
+| **7** | EnginesExtractor | engines.json | Wares, MacroIndex | Two-Phase | ~150 engines |
+| **8** | ShieldsExtractor | shields.json | Wares, MacroIndex | Two-Phase | ~100 shields |
+| **9** | WeaponsExtractor | weapons.json | Wares, MacroIndex | Two-Phase | ~200 weapons |
+| **10** | ModulesExtractor | modules.json | Wares, MacroIndex | Two-Phase | ~300 modules |
+| **11** | BlueprintsExtractor | blueprints.json | Wares | Single-Phase | ~400 blueprints |
+| **12** | ShipsExtractor | ships.json | Wares, MacroIndex, Engines, Shields, Weapons | Two-Phase | ~60 ships |
 
 ### Extractor Details
 
@@ -303,6 +304,22 @@ $this->buildShips();
 
 ---
 
+#### ProductionMethodsExtractor
+**Location:** [src/X4/Database/ProductionMethods/ProductionMethodsExtractor.php](../../../../src/X4/Database/ProductionMethods/ProductionMethodsExtractor.php)  
+**Source XML:** `{dataSource}/libraries/wares.xml` (vanilla `<production><method>` elements; DLC `<add sel="/wares/production">` patches via `WaresPatchReader`)  
+**Output:** [data/production-methods.json](../../../data/production-methods.json)  
+**Purpose:** Extract the ware production methods so that `WareProduction::getMethod()` can resolve them, and so tooling can exclude non-buildable methods.
+
+**Key Properties:**
+- `id` - Method identifier (e.g., `terran`, `recycling`)
+- `name` - Label, translated to English
+- `tags` - Space-separated tags (e.g., `noplayerbuild`)
+- `<default race="...">` children - Default races, stored as given (not validated against factions)
+
+A method ID defined more than once keeps the later data folder's definition and logs a `NOTICE`. The output is sorted by ID.
+
+---
+
 #### 5. WaresExtractor
 **Location:** [src/X4/Database/Wares/WaresExtractor.php](../../../../src/X4/Database/Wares/WaresExtractor.php)  
 **Source XML:** `{dataSource}/libraries/wares.xml`  
@@ -315,6 +332,19 @@ $this->buildShips();
 - `group` - Ware type (`engine`, `shield`, `weapon`, `module`, etc.)
 - `transport` - Cargo class
 - `tags` - String array of tags for filtering
+- `priceMin` / `priceAverage` / `priceMax` - From `<price>`
+- `productions` - From direct-child `<production>` elements (method, time, amount, resources)
+- `licenceID`, `buyRestricted` (only when true) - From `<restriction licence buy>`
+- `illegalFactionIDs` - From `<illegal factions>`
+- `descriptionID`, `volume`, `transportTypeID` - From the `description`, `volume` and `transport` attributes
+
+Empty optional keys are omitted. An unknown `transport` value logs `WARNING | Ware [%s] | Unknown transport type [%s].` and keeps the raw value; a non-numeric `volume` logs a `WARNING` and is omitted.
+
+**DLC patches:** DLC `libraries/wares.xml` files are `<diff>` documents. [WaresPatchReader.php](../../../../src/X4/Database/Wares/WaresPatchReader.php) reads their `<add>` operations (selectors `/wares`, `/wares/production`, `/wares/ware[@id='X']`) into `WarePatch` objects; see [patterns.md](patterns.md).
+
+**Two passes:** Pass 1 reads the base `<ware>` elements of every data source. A ware with one unknown owner faction is dropped entirely. Pass 2 applies the `<add sel="/wares/ware[@id]">` patches in data-folder order: owners and illegal factions are merged, sorted and de-duplicated, and productions are appended. Patches for excluded or unknown wares log a `NOTICE` and are skipped, as do unknown child elements. An unknown faction in a patch logs a `WARNING` and skips only that owner. Owner, illegal-faction and production parsing is shared by both passes. Direct-child lookups use a private `getChildren()`, because `findChildren()->byTagName()` searches all descendants.
+
+**Current data figures:** 196 wares gained 547 owners from DLC patches; 1695 productions on 1305 wares; 4820 resource lines over 98 distinct resource wares.
 
 **Source Link:** [WaresExtractor.php](../../../../src/X4/Database/Wares/WaresExtractor.php)
 
@@ -413,6 +443,9 @@ $this->buildShips();
 - Crew capacity
 - Equipment slots (engines, shields, weapons) with size/tag constraints
 - Compatible equipment lists
+- Macro properties (purpose, thrusters, software, loadout, hangar, modifiers and more), read per ship by [ShipMacroPropertiesExtractor.php](../../../../src/X4/Database/Ships/MacroProperties/ShipMacroPropertiesExtractor.php)
+
+**Macro property lookup:** values are read from the ship's own macro first, then from the alias target (`alias=` attribute), attribute by attribute. All paths are read below `/macros/macro/properties`, so loadout entries such as `<thruster macro>` are never mistaken for the ship's own thruster. `extract()` omits `macroID` and `cargoMacroID`; `ShipsExtractor::processWare()` sets `macroID` from the ware and `cargoMacroID` from the storage info (only when non-null), then merges the rest into each ship record after the existing keys. Hidden hangar bays (`hidden="1"`) are skipped, and loadout group entries without an `exact` count use their max.
 
 **Source Link:** [ShipsExtractor.php](../../../../src/X4/Database/Ships/ShipsExtractor.php)
 
@@ -428,6 +461,7 @@ $this->buildShips();
 | **TranslationsExtractor** | `t/0001-L*.xml` | `<language>` | `<page>`→`<t>` | `id` (text key) |
 | **DataSourcesExtractor** | `info.json` (filesystem) | N/A | N/A | `id`, `name`, `description` |
 | **FactionsExtractor** | `libraries/characters.xml` | `<characters>` | `<character>` | `id`, `name`, `race` |
+| **ProductionMethodsExtractor** | `libraries/wares.xml` | `<wares>`→`<production>` | `<method>`, `<default>` | `id`, `name`, `tags`, `race` |
 | **WaresExtractor** | `libraries/wares.xml` | `<wares>` | `<ware>` | `id`, `name`, `group`, `transport`, `tags` |
 | **EnginesExtractor** | Wares + `assets/props/Engines/macros/*.xml` | `<macro>`→`<component>` | `<engine>`, `<boost>`, `<travel>` | `forward`, `reverse`, `boost`, `duration` |
 | **ShieldsExtractor** | Wares + `assets/props/ShipUpgrades/macros/*.xml` | `<macro>`→`<component>` | `<recharge>`, `<hull>` | `max`, `rate`, `delay`, `threshold` |
