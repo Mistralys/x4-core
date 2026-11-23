@@ -1,0 +1,98 @@
+[
+    {
+        "id": "argon",
+        "label": "Argon",
+        "tags": [],
+        "defaultRaceIDs": [
+            "argon"
+        ]
+    },
+    {
+        "id": "boron",
+        "label": "Boron",
+        "tags": [],
+        "defaultRaceIDs": [
+            "boron"
+        ]
+    },
+    {
+        "id": "closedloop",
+        "label": "Closed Loop",
+        "tags": [],
+        "defaultRaceIDs": []
+    },
+    {
+        "id": "default",
+        "label": "Universal",
+        "tags": [],
+        "defaultRaceIDs": []
+    },
+    {
+        "id": "paranid",
+        "label": "Paranid",
+        "tags": [],
+        "defaultRaceIDs": [
+            "paranid"
+        ]
+    },
+    {
+        "id": "processing",
+        "label": "Processing",
+        "tags": [
+            "noplayerbuild",
+            "recycling"
+        ],
+        "defaultRaceIDs": []
+    },
+    {
+        "id": "recycling",
+        "label": "Recycling",
+        "tags": [
+            "noplayerbuild",
+            "recycling"
+        ],
+        "defaultRaceIDs": []
+    },
+    {
+        "id": "research",
+        "label": "Research",
+        "tags": [
+            "noplayerbuild"
+        ],
+        "defaultRaceIDs": []
+    },
+    {
+        "id": "split",
+        "label": "Split",
+        "tags": [],
+        "defaultRaceIDs": [
+            "split"
+        ]
+    },
+    {
+        "id": "teladi",
+        "label": "Teladi",
+        "tags": [],
+        "defaultRaceIDs": [
+            "teladi"
+        ]
+    },
+    {
+        "id": "terran",
+        "label": "Terran",
+        "tags": [],
+        "defaultRaceIDs": [
+            "terran"
+        ]
+    },
+    {
+        "id": "xenon",
+        "label": "Xenon",
+        "tags": [
+            "noplayerbuild"
+        ],
+        "defaultRaceIDs": [
+            "xenon"
+        ]
+    }
+]

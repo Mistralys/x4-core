@@ -16,8 +16,9 @@ use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\DataSources\DataSourcesExtractor;
 use Mistralys\X4\Database\Engines\EnginesExtractor;
 use Mistralys\X4\Database\Factions\FactionsExtractor;
+use Mistralys\X4\Database\ProductionMethods\ProductionMethodsExtractor;
 use Mistralys\X4\Database\Shields\ShieldsExtractor;
-use Mistral\X4\Database\Wares\WaresExtractor;
+use Mistralys\X4\Database\Wares\WaresExtractor;
 use Mistralys\X4\Database\Weapons\WeaponsExtractor;
 use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\DataSources\DataSourceDefs;
@@ -107,6 +108,13 @@ class DatabaseBuilder
         });
     }
 
+    public static function extractProductionMethods() : void
+    {
+        self::run(function() : void {
+            new ProductionMethodsExtractor(self::getDataFolders())->extract();
+        });
+    }
+
     public static function extractFactions() : void
     {
         self::run(function() : void {
@@ -163,6 +171,7 @@ class DatabaseBuilder
             self::extractTranslations();
             self::extractDataSources();
             self::extractFactions();
+            self::extractProductionMethods();
             self::extractWares();
 
             // Based on the wares
