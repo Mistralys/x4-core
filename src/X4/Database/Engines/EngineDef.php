@@ -20,7 +20,8 @@ use Mistralys\X4\Database\Factions\KnownFactions;
 /**
  * Represents a single engine with performance characteristics.
  * 
- * Links to WareDef via wareID for basic ware info (label, tags, price).
+ * Links to WareDef via wareID for basic ware info (label, tags). The price
+ * is not stored here: see {@see \Mistralys\X4\Database\Wares\WareDef::getPrice()}.
  * Stores engine-specific performance data extracted from X4 macro XML.
  *
  * @package X4Core

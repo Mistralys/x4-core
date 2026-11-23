@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Mistralys\X4\Database\Ships;
 
 use AppUtils\ArrayDataCollection;
-use AppUtils\Collections\RecordNotExistsException;
 use AppUtils\FileHelper\FolderInfo;
 use AppUtils\FileHelper\JSONFile;
 use Mistralys\X4\Database\BaseExtractor;
@@ -14,6 +13,9 @@ use Mistralys\X4\Database\Core\VariantID;
 use Mistralys\X4\Database\Factions\KnownFactions;
 use Mistralys\X4\Database\MacroIndex\MacroFileDef;
 use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
+use Mistralys\X4\Database\Ships\MacroProperties\ShipCargoInfo;
+use Mistralys\X4\Database\Ships\MacroProperties\ShipMacroConnectionResolver;
+use Mistralys\X4\Database\Ships\MacroProperties\ShipMacroPropertiesExtractor;
 use Mistralys\X4\Database\SlotTypes\SlotTypes;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\Database\Wares\WareDefs;
@@ -23,12 +25,29 @@ use Mistralys\X4\X4Application;
 use Mistralys\X4\XML\DOMExtended;
 use function AppUtils\array_remove_values;
 
+/**
+ * Extracts the ships from the ware and macro files into `ships.json`.
+ *
+ * The core stats, slots and equipment are read here. The macro information
+ * is added after them: the ship's macro name (from the ware), the name of the
+ * storage macro that supplied the cargo values, and everything that
+ * {@see ShipMacroPropertiesExtractor} reads from the macro file (alias macro,
+ * steering curve, explosion damage, purpose, hangar, software, names and more).
+ * The `usedBy` list comes from the ware, including the DLC owner patches.
+ */
 class ShipsExtractor extends BaseExtractor
 {
     /**
      * @var array<string,array<string,mixed>>
      */
     private array $ships = array();
+
+    private ShipMacroConnectionResolver $connectionResolver;
+
+    public function __construct()
+    {
+        $this->connectionResolver = new ShipMacroConnectionResolver();
+    }
 
     public function extract() : void
     {
@@ -183,11 +202,32 @@ class ShipsExtractor extends BaseExtractor
             ShipDef::KEY_ACCFACTOR_VERTICAL => $stats[ShipDef::KEY_ACCFACTOR_VERTICAL],
             ShipDef::KEY_PEOPLE => $stats[ShipDef::KEY_PEOPLE],
             ShipDef::KEY_STORAGE_MISSILE => $stats[ShipDef::KEY_STORAGE_MISSILE],
-            ShipDef::KEY_CARGO_CAPACITY => $storageInfo['capacity'],
-            ShipDef::KEY_CARGO_TYPE => $storageInfo['type'],
+            ShipDef::KEY_CARGO_CAPACITY => $storageInfo->capacity,
+            ShipDef::KEY_CARGO_TYPE => $storageInfo->type,
             ShipDef::KEY_SLOTS => $slots,
             ShipDef::KEY_EQUIPMENT => $equipment
         );
+
+        // The macro information is appended after the existing values,
+        // so that no existing key changes its value or position.
+        $this->ships[$shipID][ShipDef::KEY_MACRO_ID] = $def->getMacroID();
+
+        if($storageInfo->macroID !== null) {
+            $this->ships[$shipID][ShipDef::KEY_CARGO_MACRO_ID] = $storageInfo->macroID;
+        }
+
+        $macroProperties = new ShipMacroPropertiesExtractor(
+            $dom,
+            $domAlias,
+            $alias,
+            $def->getDataSourceID(),
+            $shipID,
+            $this->connectionResolver
+        );
+
+        foreach($macroProperties->extract() as $key => $value) {
+            $this->ships[$shipID][$key] = $value;
+        }
     }
 
     private function extractEquipment(DOMExtended $componentDom, ?DOMExtended $shipMacroDom = null, ?string $dataSourceID = null): array
@@ -493,12 +533,10 @@ class ShipsExtractor extends BaseExtractor
      * @param DOMExtended $dom The ship macro DOM
      * @param DOMExtended|null $parentDom The parent macro DOM (for inheritance)
      * @param string $dataSourceID Data source ID for macro lookup
-     * @return array{capacity: int, type: string} Capacity in m³ and cargo type
+     * @return ShipCargoInfo Capacity in m³, cargo type and the storage macro
      */
-    private function resolveStorageCapacity(DOMExtended $dom, ?DOMExtended $parentDom, string $dataSourceID): array
+    private function resolveStorageCapacity(DOMExtended $dom, ?DOMExtended $parentDom, string $dataSourceID): ShipCargoInfo
     {
-        $default = ['capacity' => 0, 'type' => 'none'];
-
         // Try the main DOM first, then the parent DOM
         $result = $this->findStorageInDOM($dom, $dataSourceID);
         if ($result !== null) {
@@ -512,7 +550,7 @@ class ShipsExtractor extends BaseExtractor
             }
         }
 
-        return $default;
+        return new ShipCargoInfo();
     }
 
     /**
@@ -520,38 +558,15 @@ class ShipsExtractor extends BaseExtractor
      *
      * @param DOMExtended $dom The DOM to search
      * @param string $dataSourceID Data source ID for macro lookup
-     * @return array{capacity: int, type: string}|null Storage info or null if not found
+     * @return ShipCargoInfo|null Storage info or null if not found
      */
-    private function findStorageInDOM(DOMExtended $dom, string $dataSourceID): ?array
+    private function findStorageInDOM(DOMExtended $dom, string $dataSourceID): ?ShipCargoInfo
     {
-        $connections = $dom->byTagName('connection')->getAll();
-
-        foreach ($connections as $connection) {
-            $connectionRef = $connection->getAttribute('ref');
-
-            // X4 uses 'con_storage*' prefix for cargo storage connections
-            if (empty($connectionRef) || !str_starts_with($connectionRef, 'con_storage')) {
-                continue;
-            }
-
-            // Find the macro child element
-            $children = $connection->getChildren();
-            foreach ($children as $child) {
-                $domElement = $child->getDOMElement();
-                if ($domElement->nodeName !== 'macro') {
-                    continue;
-                }
-
-                $storageMacroName = $child->getAttribute('ref');
-                if (empty($storageMacroName)) {
-                    continue;
-                }
-
-                // Resolve the storage macro and extract cargo data
-                $result = $this->extractCargoFromStorageMacro($storageMacroName, $dataSourceID);
-                if ($result !== null) {
-                    return $result;
-                }
+        // X4 uses the 'con_storage*' prefix for cargo storage connections
+        foreach ($this->connectionResolver->resolve($dom, $dataSourceID, 'con_storage') as $connection) {
+            $result = $this->extractCargoFromStorageMacro($connection->macroDef);
+            if ($result !== null) {
+                return $result;
             }
         }
 
@@ -561,45 +576,34 @@ class ShipsExtractor extends BaseExtractor
     /**
      * Extracts cargo capacity and type from a storage macro XML file.
      *
-     * @param string $macroName Name of the storage macro
-     * @param string $dataSourceID Data source ID for macro lookup
-     * @return array{capacity: int, type: string}|null Cargo info or null if not found
+     * @param MacroFileDef $macroDef The storage macro
+     * @return ShipCargoInfo|null Cargo info or null if the macro has no cargo definition
      */
-    private function extractCargoFromStorageMacro(string $macroName, string $dataSourceID): ?array
+    private function extractCargoFromStorageMacro(MacroFileDef $macroDef): ?ShipCargoInfo
     {
-        try {
-            $macroDef = MacroFileDefs::getInstance()->getByMacroName($macroName, $dataSourceID);
-            $macroDOM = $macroDef->getDOM();
-
-            $cargoElements = $macroDOM->byTagName('cargo')->getAll();
-            if (empty($cargoElements)) {
-                return null;
-            }
-
-            $cargoEl = $cargoElements[0];
-            $max = $cargoEl->getAttribute('max');
-            $tags = $cargoEl->getAttribute('tags');
-
-            if ($max === '') {
-                return null;
-            }
-
-            return [
-                'capacity' => (int)$max,
-                'type' => $tags !== '' ? $tags : 'none'
-            ];
-        } catch (RecordNotExistsException $e) {
-            // The macro resolves across all data folders, so reaching this
-            // means the game data itself does not define it. Make it visible
-            // instead of silently reporting a cargo hold of 0.
-            Console::line1('WARNING | Storage macro [%s] was not found in any data folder.', $macroName);
+        $cargoElements = $macroDef->getDOM()->byTagName('cargo')->getAll();
+        if (empty($cargoElements)) {
             return null;
         }
+
+        $cargoEl = $cargoElements[0];
+        $max = (string)$cargoEl->getAttribute('max');
+        $tags = (string)$cargoEl->getAttribute('tags');
+
+        if ($max === '') {
+            return null;
+        }
+
+        return new ShipCargoInfo(
+            (int)$max,
+            $tags !== '' ? $tags : ShipCargoInfo::DEFAULT_TYPE,
+            $macroDef->getMacroName()
+        );
     }
 
     /**
      * Extracts dock sizes from ship macro XML by looking up dock macro references.
-     * 
+     *
      * @param DOMExtended $shipMacroDom Ship macro DOM document
      * @param string $dataSourceID Data source ID for macro lookup
      * @return array<string,string> Map of connection names to dock sizes (s, m, l, xl)
@@ -607,74 +611,38 @@ class ShipsExtractor extends BaseExtractor
     private function extractDockSizesFromShipMacro(DOMExtended $shipMacroDom, string $dataSourceID): array
     {
         $dockSizes = [];
-        
-        $connections = $shipMacroDom->byTagName('connection')->getAll();
-        foreach ($connections as $connection) {
-            $connectionRef = $connection->getAttribute('ref');
-            
-            // Find macro child elements
-            $children = $connection->getChildren();
-            foreach ($children as $child) {
-                // Check if this is a macro element
-                $domElement = $child->getDOMElement();
-                if ($domElement->nodeName !== 'macro') {
-                    continue;
-                }
-                
-                $dockMacroName = $child->getAttribute('ref');
-                if (empty($dockMacroName)) {
-                    continue;
-                }
-                
-                // Extract dock size from the dock macro
-                $size = $this->extractDockSizeFromMacro($dockMacroName, $dataSourceID);
-                if ($size !== null) {
-                    $dockSizes[$connectionRef] = $size;
-                }
+
+        foreach ($this->connectionResolver->resolve($shipMacroDom, $dataSourceID) as $connection) {
+            $size = $this->extractDockSizeFromMacro($connection->macroDef);
+            if ($size !== null) {
+                $dockSizes[$connection->connectionRef] = $size;
             }
         }
-        
+
         return $dockSizes;
     }
-    
+
     /**
      * Extracts dock size from a dock macro XML file.
-     * 
-     * @param string $macroName Name of the dock macro (e.g., "launchtube_arg_s_01_macro")
-     * @param string $dataSourceID Data source ID for macro lookup
+     *
+     * @param MacroFileDef $macroDef The dock macro (e.g., "launchtube_arg_s_01_macro")
      * @return string|null Dock size (xs, s, m, l, xl) or null if not found
      */
-    private function extractDockSizeFromMacro(string $macroName, string $dataSourceID): ?string
+    private function extractDockSizeFromMacro(MacroFileDef $macroDef): ?string
     {
-        try {
-            // Get macro file from macro index
-            $macroDef = MacroFileDefs::getInstance()->getByMacroName($macroName, $dataSourceID);
-            
-            if ($macroDef === null) {
-                return null;
-            }
-            
-            $macroDOM = $macroDef->getDOM();
-            
-            // Find <docksize tags="dock_s"/> element
-            $docksizeNodes = $macroDOM->byTagName('docksize')->getAll();
-            if (empty($docksizeNodes)) {
-                return null;
-            }
-            
-            $tags = $docksizeNodes[0]->getAttribute('tags');
-            
-            // Extract size from tags (e.g., "dock_s" -> "s")
-            if (preg_match('/dock_(xs|s|m|l|xl)/', $tags, $matches)) {
-                return $matches[1];
-            }
-            
-            return null;
-            
-        } catch (\Exception $e) {
-            // Log but don't fail extraction for missing macros
-            // Silently continue
+        // Find <docksize tags="dock_s"/> element
+        $docksizeNodes = $macroDef->getDOM()->byTagName('docksize')->getAll();
+        if (empty($docksizeNodes)) {
             return null;
         }
+
+        $tags = (string)$docksizeNodes[0]->getAttribute('tags');
+
+        // Extract size from tags (e.g., "dock_s" -> "s")
+        if (preg_match('/dock_(xs|s|m|l|xl)/', $tags, $matches)) {
+            return $matches[1];
+        }
+
+        return null;
     }
 }

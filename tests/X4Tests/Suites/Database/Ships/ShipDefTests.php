@@ -9,15 +9,24 @@ use Mistralys\X4\Database\DataSources\DataSourceDef;
 use Mistralys\X4\Database\DataSources\KnownDataSources;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\KnownFactions;
+use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
 use Mistralys\X4\Database\Ships\ShipClass;
 use Mistralys\X4\Database\Ships\ShipDef;
 use Mistralys\X4\Database\Ships\ShipDefs;
+use Mistralys\X4\Database\Ships\MacroProperties\ShipMacroProperties;
+use Mistralys\X4\Database\Ships\ShipException;
 use Mistralys\X4\Database\Ships\ShipSize;
 use Mistralys\X4\Database\Wares\WareDefs;
+use Mistralys\X4\Database\Wares\WareTransportTypes;
+use Mistralys\X4\Database\Translations\Languages;
+use X4Tests\Helpers\RawShipMacroScanner;
+use X4Tests\Helpers\RawWareScanner;
 use X4Tests\Helpers\X4TestCase;
 
 final class ShipDefTests extends X4TestCase
 {
+    private const TUGBOAT_SHIP_ID = 'ship_gen_m_tugboat_01_a';
+
     private ShipDefs $ships;
 
     protected function setUp(): void
@@ -851,6 +860,619 @@ final class ShipDefTests extends X4TestCase
             $failures,
             'Ships declare a cargo storage connection but report no cargo: ' . implode(', ', $failures)
         );
+    }
+
+    // =========================================================================
+    // Macro properties, ware delegators and cargo helpers
+    // =========================================================================
+
+    /**
+     * @return array<string,mixed> A legacy record: the ship record without any of the macro property keys.
+     */
+    private function getLegacyRecord() : array
+    {
+        $record = $this->getSampleShip()->toArray();
+
+        // All key constants declared after KEY_EQUIPMENT belong to the macro properties.
+        $constants = (new \ReflectionClass(ShipDef::class))->getConstants();
+        $macroKeys = array_slice($constants, array_search(ShipDef::KEY_EQUIPMENT, array_values($constants), true) + 1);
+
+        foreach($macroKeys as $key) {
+            unset($record[$key]);
+        }
+
+        return $record;
+    }
+
+    /**
+     * @param string $cargoType
+     * @param int $capacity
+     * @return ShipDef
+     */
+    private function createCargoShip(string $cargoType, int $capacity) : ShipDef
+    {
+        $record = $this->getLegacyRecord();
+        $record[ShipDef::KEY_CARGO_TYPE] = $cargoType;
+        $record[ShipDef::KEY_CARGO_CAPACITY] = $capacity;
+
+        return ShipDef::fromArray($record);
+    }
+
+    public function test_constructorWithoutProperties_createsEmptyProperties() : void
+    {
+        $ship = $this->createCargoShip('container', 100);
+
+        $this->assertSame('', $ship->getMacroID());
+        $this->assertNull($ship->getCargoMacroID());
+        $this->assertFalse($ship->hasCargoMacro());
+        $this->assertNull($ship->getAliasMacroID());
+        $this->assertFalse($ship->isAliasMacro());
+        $this->assertFalse($ship->hasOwnAccFactors());
+        $this->assertSame(array(), $ship->getMacroProperties()->defaultLoadout?->toArray() ?? array());
+    }
+
+    public function test_fromArray_legacyRecordWithoutNewKeys() : void
+    {
+        $record = $this->getLegacyRecord();
+
+        $ship = ShipDef::fromArray($record);
+
+        $this->assertSame($record[ShipDef::KEY_WARE_ID], $ship->getID());
+        $this->assertSame('', $ship->getMacroID());
+        $this->assertNull($ship->getCargoMacroID());
+        $this->assertNull($ship->getAliasMacroID());
+    }
+
+    public function test_serialization_newKeys() : void
+    {
+        $legacyKeys = array_keys($this->getLegacyRecord());
+
+        $properties = new ShipMacroProperties(
+            'ship_test_macro',
+            'storage_test_macro',
+            'ship_alias_macro',
+            true
+        );
+
+        $ship = ShipDef::fromArray(array_merge($this->getLegacyRecord(), $properties->toArray()));
+        $array = $ship->toArray();
+
+        $this->assertSame($legacyKeys, array_slice(array_keys($array), 0, count($legacyKeys)), 'Existing keys must come first.');
+        $this->assertSame('ship_test_macro', $array[ShipDef::KEY_MACRO_ID]);
+        $this->assertSame('storage_test_macro', $array[ShipDef::KEY_CARGO_MACRO_ID]);
+        $this->assertSame('ship_alias_macro', $array[ShipDef::KEY_ALIAS_MACRO_ID]);
+        $this->assertTrue($array[ShipDef::KEY_HAS_OWN_ACC_FACTORS]);
+
+        $this->assertSame('ship_test_macro', $ship->getMacroID());
+        $this->assertSame('storage_test_macro', $ship->getCargoMacroID());
+        $this->assertTrue($ship->hasCargoMacro());
+        $this->assertSame('ship_alias_macro', $ship->getAliasMacroID());
+        $this->assertTrue($ship->isAliasMacro());
+        $this->assertTrue($ship->hasOwnAccFactors());
+        $this->assertSame($ship->getMacroProperties()->toArray(), ShipDef::fromArray($array)->getMacroProperties()->toArray());
+    }
+
+    public function test_macroProperties_noPartBDelegators() : void
+    {
+        foreach(array('getSteeringCurve', 'getHangar', 'getSoftware', 'getModifiers', 'getDefaultLoadout', 'getPurposeID') as $method) {
+            $this->assertFalse(method_exists(ShipDef::class, $method), $method.'() must be reached through getMacroProperties().');
+            $this->assertTrue(method_exists(ShipMacroProperties::class, $method), $method);
+        }
+    }
+
+    public function test_getMacro_throwsWhenMacroIDEmpty() : void
+    {
+        $ship = $this->createCargoShip('container', 100);
+
+        try {
+            $ship->getMacro();
+            $this->fail('An exception should have been thrown.');
+        } catch (ShipException $e) {
+            $this->assertSame(ShipException::ERROR_NO_MACRO_ID, $e->getCode());
+        }
+
+        try {
+            $ship->getCargoMacro();
+            $this->fail('An exception should have been thrown.');
+        } catch (ShipException $e) {
+            $this->assertSame(ShipException::ERROR_NO_CARGO_MACRO_ID, $e->getCode());
+        }
+    }
+
+    public function test_getMacro_resolvesStoredMacroID() : void
+    {
+        $ware = WareDefs::getInstance()->getByID('ship_arg_s_fighter_01_a');
+        $record = $this->getLegacyRecord();
+        $record[ShipDef::KEY_WARE_ID] = $ware->getID();
+        $record[ShipDef::KEY_DATA_SOURCE_ID] = $ware->getDataSourceID();
+        $record[ShipDef::KEY_MACRO_ID] = $ware->getMacroID();
+
+        $ship = ShipDef::fromArray($record);
+
+        $this->assertSame($ware->getMacroID(), $ship->getMacro()->getMacroName());
+    }
+
+    public function test_wareDelegators() : void
+    {
+        $checked = 0;
+
+        foreach($this->ships->getAll() as $ship) {
+            $ware = $ship->getWare();
+
+            $this->assertEquals($ware->getPrice(), $ship->getPrice(), $ship->getID());
+            $this->assertEquals($ware->getProductions(), $ship->getProductions(), $ship->getID());
+            $this->assertSame($ware->getLicenceID(), $ship->getLicenceID(), $ship->getID());
+            $this->assertSame($ware->getDescription(), $ship->getDescription(), $ship->getID());
+            $this->assertSame($ware->getIllegalFactionIDs(), $ship->getIllegalFactionIDs(), $ship->getID());
+            $checked++;
+        }
+
+        $this->assertGreaterThan(0, $checked);
+    }
+
+    public function test_getCargoTypeIDs() : void
+    {
+        $this->assertSame(array(), $this->createCargoShip('none', 0)->getCargoTypeIDs());
+        $this->assertSame(array('container'), $this->createCargoShip('container', 10)->getCargoTypeIDs());
+        $this->assertSame(
+            array('container', 'solid', 'liquid'),
+            $this->createCargoShip('container solid liquid', 10)->getCargoTypeIDs()
+        );
+
+        foreach($this->ships->getAll() as $ship) {
+            $this->assertSame(
+                $ship->getCargoType() === 'none',
+                empty($ship->getCargoTypeIDs()),
+                $ship->getID()
+            );
+        }
+    }
+
+    public function test_canTransport_and_getCargoUnits() : void
+    {
+        $wares = WareDefs::getInstance();
+        $energy = $wares->getByID('energycells');
+        $hullParts = $wares->getByID('hullparts');
+        $ore = $wares->getByID('ore');
+
+        $containerShip = $this->createCargoShip('container', 1200);
+
+        $this->assertTrue($containerShip->canTransport($energy));
+        $this->assertSame(1200, $containerShip->getCargoUnits($energy));
+
+        $this->assertTrue($containerShip->canTransport($hullParts));
+        $this->assertSame(12, $hullParts->getVolume());
+        $this->assertSame(intdiv(1200, 12), $containerShip->getCargoUnits($hullParts));
+
+        $this->assertFalse($containerShip->canTransport($ore));
+        $this->assertSame(0, $containerShip->getCargoUnits($ore));
+
+        $mixedShip = $this->createCargoShip('container solid liquid', 1200);
+        $this->assertSame(WareTransportTypes::TRANSPORT_SOLID, $ore->getTransportTypeID());
+        $this->assertTrue($mixedShip->canTransport($ore));
+        $this->assertGreaterThan(0, $mixedShip->getCargoUnits($ore));
+
+        $noHold = $this->createCargoShip('none', 0);
+        $this->assertFalse($noHold->canTransport($energy));
+        $this->assertSame(0, $noHold->getCargoUnits($energy));
+    }
+
+    public function test_cargoTypeIDs_matchStorageMacro() : void
+    {
+        $checked = 0;
+
+        foreach($this->ships->getAll() as $ship) {
+            $expected = $this->scanStorageCargoTypes($ship);
+
+            $this->assertSame($expected, $ship->getCargoTypeIDs(), $ship->getID());
+
+            foreach($ship->getCargoTypeIDs() as $typeID) {
+                $this->assertTrue(WareTransportTypes::isCargoTypeID($typeID), $ship->getID().': '.$typeID);
+            }
+
+            $checked++;
+        }
+
+        $this->assertGreaterThan(0, $checked);
+    }
+
+    /**
+     * Independent scan of the raw XML: the `<cargo tags>` tokens of the
+     * ship's storage macro, following one macro alias if needed.
+     *
+     * @return string[]
+     */
+    private function scanStorageCargoTypes(ShipDef $ship) : array
+    {
+        $macroDefs = MacroFileDefs::getInstance();
+        $macroName = $ship->getWare()->getMacroID();
+        $dataSourceID = $ship->getDataSourceID();
+
+        for($hop = 0; $hop < 2; $hop++)
+        {
+            $xml = simplexml_load_file($macroDefs->getByMacroName($macroName, $dataSourceID)->getFile()->getPath());
+            $this->assertNotFalse($xml);
+
+            foreach($xml->xpath('//connection[starts-with(@ref,"con_storage")]/macro/@ref') ?: array() as $storageRef)
+            {
+                $storage = simplexml_load_file($macroDefs->getByMacroName((string)$storageRef, $dataSourceID)->getFile()->getPath());
+                $cargo = $storage === false ? null : ($storage->xpath('//cargo') ?: array())[0] ?? null;
+
+                if($cargo === null || (string)$cargo['max'] === '') {
+                    continue;
+                }
+
+                $tags = trim((string)$cargo['tags']);
+                $tokens = $tags === '' ? array() : preg_split('/\s+/', $tags);
+
+                return array_values(array_diff($tokens ?: array(), array('none')));
+            }
+
+            $alias = (string)($xml->xpath('//macro/@alias')[0] ?? '');
+            if($alias === '') {
+                break;
+            }
+
+            $macroName = $alias;
+        }
+
+        return array();
+    }
+
+    // =========================================================================
+    // Real-data tests: macro information (Part A) and macro properties (Part B)
+    // =========================================================================
+
+    public function test_macroID_matchesWareMacro() : void
+    {
+        foreach($this->ships->getAll() as $ship) {
+            $this->assertNotSame('', $ship->getMacroID(), $ship->getID());
+            $this->assertSame($ship->getWare()->getMacroID(), $ship->getMacroID(), $ship->getID());
+            $this->assertSame($ship->getMacroID(), $ship->getMacro()->getMacroName(), $ship->getID());
+        }
+
+        $mothershipID = 'ship_xen_xl_mothership_01';
+        $this->assertTrue($this->ships->idExists($mothershipID));
+        $this->assertNotSame($mothershipID.'_macro', $this->ships->getByID($mothershipID)->getMacroID(), 'The macro name must not be derived from the ware ID.');
+    }
+
+    public function test_cargoMacro_crossFolderCarrier() : void
+    {
+        $carrier = $this->ships->getByID('ship_spl_xl_carrier_01_a');
+
+        $this->assertTrue($carrier->hasCargoMacro());
+        $this->assertSame('storage_arg_xl_carrier_01_a_macro', $carrier->getCargoMacroID());
+        $this->assertSame('storage_arg_xl_carrier_01_a_macro', $carrier->getCargoMacro()->getMacroName());
+    }
+
+    public function test_cargoMacro_consistentWithCargo() : void
+    {
+        foreach($this->ships->getAll() as $ship) {
+            $this->assertSame($ship->getCargoType() !== 'none', $ship->hasCargoMacro(), $ship->getID());
+
+            if(!$ship->hasCargoMacro()) {
+                $this->assertSame(0, $ship->getCargoCapacity(), $ship->getID());
+                continue;
+            }
+
+            $cargo = $ship->getCargoMacro()->getDOM()->byTagName('cargo')->getFirst();
+            $this->assertNotNull($cargo, $ship->getID());
+            $this->assertSame($ship->getCargoCapacity(), (int)$cargo->getAttribute('max'), $ship->getID());
+        }
+    }
+
+    public function test_hasOwnAccFactors_matchesRawXml() : void
+    {
+        $withOwn = 0;
+
+        foreach($this->ships->getAll() as $ship) {
+            $raw = !empty(RawShipMacroScanner::getOwnMacro($ship)->xpath('//accfactors'));
+
+            $this->assertSame($raw, $ship->hasOwnAccFactors(), $ship->getID());
+            $withOwn += $raw ? 1 : 0;
+        }
+
+        $this->assertGreaterThan(0, $withOwn);
+    }
+
+    public function test_hasOwnAccFactors_explicitVersusDefault() : void
+    {
+        $explicit = 0;
+        $default = 0;
+
+        foreach($this->ships->getAll() as $ship)
+        {
+            if($ship->hasOwnAccFactors()) {
+                $explicit++;
+                continue;
+            }
+
+            // Without own factors the ship uses the alias target's or the game default.
+            if(!$ship->isAliasMacro()) {
+                $default++;
+                $this->assertSame(1.0, $ship->getAccFactorForward(), $ship->getID());
+                $this->assertSame(1.0, $ship->getAccFactorReverse(), $ship->getID());
+                $this->assertSame(1.0, $ship->getAccFactorHorizontal(), $ship->getID());
+                $this->assertSame(1.0, $ship->getAccFactorVertical(), $ship->getID());
+            }
+        }
+
+        $this->assertGreaterThan(0, $explicit);
+        $this->assertGreaterThan(0, $default);
+    }
+
+    public function test_aliasMacro() : void
+    {
+        $aliased = 0;
+
+        foreach($this->ships->getAll() as $ship) {
+            $raw = RawShipMacroScanner::getAliasName($ship);
+
+            $this->assertSame($raw, $ship->getAliasMacroID(), $ship->getID());
+            $this->assertSame($raw !== null, $ship->isAliasMacro(), $ship->getID());
+            $aliased += $raw !== null ? 1 : 0;
+        }
+
+        $this->assertGreaterThan(0, $aliased);
+    }
+
+    public function test_usedBy_includesPatchedOwners() : void
+    {
+        $tugboat = $this->ships->getByID(self::TUGBOAT_SHIP_ID);
+        $usedBy = array_map(static fn($faction) => $faction->getID(), $tugboat->getUsedBy());
+        $raw = RawWareScanner::getWares()[self::TUGBOAT_SHIP_ID];
+
+        $this->assertNotEmpty($raw['owners']);
+
+        foreach($raw['owners'] as $factionID) {
+            $this->assertContains($factionID, $usedBy);
+        }
+    }
+
+    public function test_steeringCurve_matchesRawXml() : void
+    {
+        foreach($this->ships->getAll() as $ship)
+        {
+            $expected = array();
+            foreach(RawShipMacroScanner::elements($ship, 'steeringcurve/point') as $point) {
+                $expected[] = array((float)$point['position'], (float)$point['value']);
+            }
+
+            $actual = array();
+            foreach($ship->getMacroProperties()->getSteeringCurve()->getPoints() as $point) {
+                $actual[] = array($point->position, $point->value);
+            }
+
+            $this->assertSame($expected, $actual, $ship->getID());
+            $this->assertNotEmpty($actual, $ship->getID());
+        }
+    }
+
+    public function test_explosionDamage_matchesRawXml() : void
+    {
+        foreach($this->ships->getAll() as $ship)
+        {
+            $props = $ship->getMacroProperties();
+            $hull = RawShipMacroScanner::floatAttr($ship, 'explosiondamage', 'value');
+            $shield = RawShipMacroScanner::floatAttr($ship, 'explosiondamage', 'shield');
+            $disruption = RawShipMacroScanner::floatAttr($ship, 'explosiondamage', 'shielddisruption');
+
+            if($hull === null && $shield === null && $disruption === null) {
+                $this->assertNull($props->getExplosionDamage(), $ship->getID());
+                continue;
+            }
+
+            $damage = $props->getExplosionDamage();
+            $this->assertNotNull($damage, $ship->getID());
+            $this->assertSame($hull, $damage->hull, $ship->getID());
+            $this->assertSame($shield, $damage->shield, $ship->getID());
+            $this->assertSame($disruption, $damage->shieldDisruption, $ship->getID());
+        }
+    }
+
+    public function test_classificationFields_matchRawXml() : void
+    {
+        $thrusterSizes = array('small' => 's', 'medium' => 'm', 'large' => 'l', 'extralarge' => 'xl');
+
+        foreach($this->ships->getAll() as $ship)
+        {
+            $props = $ship->getMacroProperties();
+
+            $this->assertSame((string)RawShipMacroScanner::attr($ship, 'purpose', 'primary'), $props->getPurposeID(), $ship->getID());
+            $this->assertSame((string)RawShipMacroScanner::attr($ship, 'identification', 'icon'), $props->getIconID(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::intAttr($ship, 'secrecy', 'level'), $props->getSecrecyLevel(), $ship->getID());
+
+            $expectedSize = '';
+            foreach(preg_split('/\s+/', trim((string)RawShipMacroScanner::attr($ship, 'thruster', 'tags')), -1, PREG_SPLIT_NO_EMPTY) ?: array() as $tag) {
+                if(isset($thrusterSizes[$tag])) {
+                    $expectedSize = $thrusterSizes[$tag];
+                    break;
+                }
+            }
+
+            $this->assertSame($expectedSize, $props->getThrusterSizeID(), $ship->getID());
+            $this->assertNotSame('', $props->getPurposeID(), $ship->getID());
+        }
+    }
+
+    public function test_hangar_matchesRawXml() : void
+    {
+        $withHangar = 0;
+
+        foreach($this->ships->getAll() as $ship) {
+            $expected = RawShipMacroScanner::hangar($ship);
+
+            $this->assertSame($expected, $ship->getMacroProperties()->getHangar()->capacities, $ship->getID());
+            $withHangar += empty($expected) ? 0 : 1;
+        }
+
+        $this->assertGreaterThan(0, $withHangar);
+
+        $carrier = $this->ships->getByID('ship_spl_xl_carrier_01_a')->getMacroProperties();
+        $this->assertSame(array('xs' => 10, 's' => 100, 'm' => 4), $carrier->getHangar()->capacities);
+    }
+
+    public function test_storageOverrides_matchRawXml() : void
+    {
+        foreach($this->ships->getAll() as $ship) {
+            $props = $ship->getMacroProperties();
+
+            $this->assertSame(RawShipMacroScanner::intAttr($ship, 'storage', 'unit') ?? 0, $props->getDroneCapacity(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::intAttr($ship, 'storage', 'deployable'), $props->getDeployableCapacityOverride(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::intAttr($ship, 'storage', 'countermeasure'), $props->getCountermeasureCapacityOverride(), $ship->getID());
+        }
+    }
+
+    public function test_software_matchesRawXml() : void
+    {
+        foreach($this->ships->getAll() as $ship)
+        {
+            $default = array();
+            $optional = array();
+
+            foreach(RawShipMacroScanner::elements($ship, 'software/software') as $software) {
+                $wareID = (string)$software['ware'];
+
+                if($wareID === '') {
+                    continue;
+                }
+
+                if((string)$software['default'] === '1') {
+                    $default[] = $wareID;
+                }
+
+                if((string)$software['compatible'] === '1') {
+                    $optional[] = $wareID;
+                }
+            }
+
+            $software = $ship->getMacroProperties()->getSoftware();
+
+            $this->assertEqualsCanonicalizing($default, $software->defaultWareIDs, $ship->getID());
+            $this->assertEqualsCanonicalizing($optional, $software->optionalWareIDs, $ship->getID());
+        }
+    }
+
+    public function test_specialisedFields_matchRawXml() : void
+    {
+        foreach($this->ships->getAll() as $ship)
+        {
+            $props = $ship->getMacroProperties();
+            $modifiers = $props->getModifiers();
+
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'traveldrivestability', 'maxvalue'), $props->getTravelDriveStability(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'gatherrate', 'gas'), $props->getGasGatherRate(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'radar', 'range'), $props->getRadarRangeOverride(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'modifiers/weapon', 'heat'), $modifiers->weaponHeat, $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'modifiers/shield', 'capacity'), $modifiers->shieldCapacity, $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'modifiers/shield', 'rechargerate'), $modifiers->shieldRechargeRate, $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'modifiers/shield', 'rechargedelay'), $modifiers->shieldRechargeDelay, $ship->getID());
+        }
+    }
+
+    public function test_namesAndFlags_matchRawXml() : void
+    {
+        $capturableFalse = 0;
+
+        foreach($this->ships->getAll() as $ship)
+        {
+            $props = $ship->getMacroProperties();
+
+            $this->assertSame(RawShipMacroScanner::attr($ship, 'identification', 'basename'), $props->getBaseNameID(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::attr($ship, 'identification', 'variation'), $props->getVariationNameID(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::attr($ship, 'identification', 'shortvariation'), $props->getShortVariationNameID(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::attr($ship, 'capture', 'allow') !== '0', $props->isCapturable(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::intAttr($ship, 'ship', 'prestige'), $props->getPrestige(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'boost', 'rechargedelay'), $props->getBoostRechargeDelay(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::floatAttr($ship, 'boost', 'minduration'), $props->getBoostMinDuration(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::intAttr($ship, 'threatscore', 'value'), $props->getThreatScore(), $ship->getID());
+            $this->assertSame(RawShipMacroScanner::attr($ship, 'ownership', 'playercoverable') === '1', $props->isPlayerCoverable(), $ship->getID());
+
+            $capturableFalse += $props->isCapturable() ? 0 : 1;
+        }
+
+        $this->assertGreaterThan(0, $capturableFalse);
+    }
+
+    public function test_getBaseName_translates() : void
+    {
+        $checked = 0;
+
+        foreach($this->ships->getAll() as $ship) {
+            $props = $ship->getMacroProperties();
+
+            if($props->getBaseNameID() === null) {
+                $this->assertSame('', $props->getBaseName(), $ship->getID());
+                continue;
+            }
+
+            $name = $props->getBaseName();
+            $this->assertNotSame('', $name, $ship->getID());
+            $this->assertStringStartsNotWith('{', $name, $ship->getID());
+            $checked++;
+        }
+
+        $this->assertGreaterThan(0, $checked);
+    }
+
+    public function test_getBaseName_fallsBackToEnglish() : void
+    {
+        $ship = null;
+        foreach($this->ships->getAll() as $candidate) {
+            if($candidate->getMacroProperties()->getBaseNameID() !== null) {
+                $ship = $candidate;
+                break;
+            }
+        }
+
+        $this->assertNotNull($ship);
+
+        $english = $ship->getMacroProperties()->getBaseName();
+
+        foreach(Languages::getInstance()->getAll() as $language) {
+            $name = $ship->getMacroProperties()->getBaseName($language);
+
+            $this->assertNotSame('', $name, $language->getID().' returned an empty name.');
+            $this->assertStringStartsNotWith('{', $name);
+        }
+
+        $this->assertSame($english, $ship->getMacroProperties()->getBaseName(Languages::getInstance()->getEnglish()));
+    }
+
+    public function test_defaultLoadout_matchesRawXml() : void
+    {
+        $withLoadout = 0;
+
+        foreach($this->ships->getAll() as $ship)
+        {
+            $rawLoadouts = array();
+            foreach(RawShipMacroScanner::getMacros($ship) as $xml) {
+                $found = $xml->xpath('/macros/macro/properties/loadouts/loadout[@id="default"]');
+                if(!empty($found)) {
+                    $rawLoadouts = $found;
+                    break;
+                }
+            }
+
+            $loadout = $ship->getMacroProperties()->getDefaultLoadout();
+
+            $this->assertSame(!empty($rawLoadouts), $loadout !== null, $ship->getID());
+
+            if($loadout !== null) {
+                $withLoadout++;
+                $this->assertNotEmpty($loadout->getItems(), $ship->getID());
+            }
+        }
+
+        $this->assertGreaterThan(0, $withLoadout);
+
+        $destroyer = $this->ships->getByID('ship_kha_l_destroyer_01_a')->getMacroProperties()->getDefaultLoadout();
+        $this->assertNotNull($destroyer);
+        $this->assertSame(1, $destroyer->countByType('engine'));
+        $this->assertSame(3, $destroyer->countByType('shield'));
+        $this->assertSame(1, $destroyer->countByType('weapon'));
+        $this->assertSame(8, $destroyer->countByType('turret'));
+        $this->assertSame(1, $destroyer->countByType('thruster'));
     }
 
     private function getSampleShip(): ShipDef

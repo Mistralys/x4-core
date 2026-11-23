@@ -14,8 +14,15 @@ use Mistralys\X4\Database\DataSources\DataSourceDefs;
 use Mistralys\X4\Database\Factions\FactionDef;
 use Mistralys\X4\Database\Factions\FactionDefs;
 use Mistralys\X4\Database\Factions\KnownFactions;
+use Mistralys\X4\Database\MacroIndex\MacroFileDef;
+use Mistralys\X4\Database\MacroIndex\MacroFileDefs;
 use Mistralys\X4\Database\Ships\Equipment\ShipSlotDefinition;
+use Mistralys\X4\Database\Ships\MacroProperties\ShipMacroProperties;
 use Mistralys\X4\Database\SlotTypes\KnownSlotTypes;
+use Mistralys\X4\Database\Translations\Language;
+use Mistralys\X4\Database\Wares\WarePrice;
+use Mistralys\X4\Database\Wares\WareProduction;
+use Mistralys\X4\Database\Wares\WareTransportTypes;
 use Mistralys\X4\Database\Wares\WareDef;
 use Mistralys\X4\Database\Weapons\WeaponDef;
 use Mistralys\X4\Database\Weapons\WeaponDefs;
@@ -67,6 +74,41 @@ class ShipDef implements CollectionItemInterface
     public const KEY_CARGO_TYPE = 'cargoType';
     public const KEY_SLOTS = 'slots';
     public const KEY_EQUIPMENT = 'equipment';
+    public const KEY_MACRO_ID = 'macroID';
+    public const KEY_CARGO_MACRO_ID = 'cargoMacroID';
+    public const KEY_ALIAS_MACRO_ID = 'aliasMacroID';
+    public const KEY_HAS_OWN_ACC_FACTORS = 'hasOwnAccFactors';
+    public const KEY_STEERING_CURVE = 'steeringCurve';
+    public const KEY_EXPLOSION_DAMAGE_HULL = 'explosionDamageHull';
+    public const KEY_EXPLOSION_DAMAGE_SHIELD = 'explosionDamageShield';
+    public const KEY_EXPLOSION_SHIELD_DISRUPTION = 'explosionShieldDisruption';
+    public const KEY_PURPOSE_ID = 'purposeID';
+    public const KEY_THRUSTER_SIZE = 'thrusterSize';
+    public const KEY_ICON_ID = 'iconID';
+    public const KEY_SECRECY_LEVEL = 'secrecyLevel';
+    public const KEY_DRONE_CAPACITY = 'droneCapacity';
+    public const KEY_DEPLOYABLE_CAPACITY = 'deployableCapacity';
+    public const KEY_COUNTERMEASURE_CAPACITY = 'countermeasureCapacity';
+    public const KEY_HANGAR_CAPACITY = 'hangarCapacity';
+    public const KEY_DEFAULT_SOFTWARE_IDS = 'defaultSoftwareIDs';
+    public const KEY_OPTIONAL_SOFTWARE_IDS = 'optionalSoftwareIDs';
+    public const KEY_TRAVEL_DRIVE_STABILITY = 'travelDriveStability';
+    public const KEY_GAS_GATHER_RATE = 'gasGatherRate';
+    public const KEY_RADAR_RANGE = 'radarRange';
+    public const KEY_WEAPON_HEAT_MODIFIER = 'weaponHeatModifier';
+    public const KEY_SHIELD_CAPACITY_MODIFIER = 'shieldCapacityModifier';
+    public const KEY_SHIELD_RECHARGE_RATE_MODIFIER = 'shieldRechargeRateModifier';
+    public const KEY_SHIELD_RECHARGE_DELAY_MODIFIER = 'shieldRechargeDelayModifier';
+    public const KEY_BASE_NAME_ID = 'baseNameID';
+    public const KEY_VARIATION_NAME_ID = 'variationNameID';
+    public const KEY_SHORT_VARIATION_NAME_ID = 'shortVariationNameID';
+    public const KEY_CAPTURABLE = 'capturable';
+    public const KEY_PRESTIGE = 'prestige';
+    public const KEY_BOOST_RECHARGE_DELAY = 'boostRechargeDelay';
+    public const KEY_BOOST_MIN_DURATION = 'boostMinDuration';
+    public const KEY_THREAT_SCORE = 'threatScore';
+    public const KEY_PLAYER_COVERABLE = 'playerCoverable';
+    public const KEY_DEFAULT_LOADOUT = 'defaultLoadout';
 
     private string $id;
     private string $classID;
@@ -128,6 +170,8 @@ class ShipDef implements CollectionItemInterface
      */
     private array $variants;
 
+    private ShipMacroProperties $macroProperties;
+
     /**
      * @param string $id
      * @param string $label
@@ -170,6 +214,7 @@ class ShipDef implements CollectionItemInterface
      * @param string $cargoType Cargo type (container, liquid, solid, or none).
      * @param array<string,int> $slots Map of slot type ID to count.
      * @param array<string,mixed> $equipment Detailed equipment slots.
+     * @param ShipMacroProperties|null $macroProperties Values from the ship's macro file. Null is the same as an empty set of properties.
      */
     public function __construct(
         string $id,
@@ -212,7 +257,8 @@ class ShipDef implements CollectionItemInterface
         int $cargoCapacity,
         string $cargoType,
         array $slots,
-        array $equipment
+        array $equipment,
+        ?ShipMacroProperties $macroProperties = null
     )
     {
         $this->id = $id;
@@ -256,6 +302,7 @@ class ShipDef implements CollectionItemInterface
         $this->cargoType = $cargoType;
         $this->slots = $slots;
         $this->equipment = $equipment;
+        $this->macroProperties = $macroProperties ?? new ShipMacroProperties();
     }
 
     public static function fromArray(array $def) : ShipDef
@@ -311,7 +358,8 @@ class ShipDef implements CollectionItemInterface
             $data->getInt(self::KEY_CARGO_CAPACITY, 0),
             $data->getString(self::KEY_CARGO_TYPE, 'none'),
             $data->getArray(self::KEY_SLOTS),
-            $data->getArray(self::KEY_EQUIPMENT)
+            $data->getArray(self::KEY_EQUIPMENT),
+            ShipMacroProperties::fromArray($def)
         );
     }
 
@@ -582,6 +630,10 @@ class ShipDef implements CollectionItemInterface
     /**
      * Returns the cargo storage capacity in m³.
      * Returns 0 if the ship has no storage connection.
+     *
+     * This is the capacity of the storage macro (see {@see self::getCargoMacroID()}).
+     * It is not the hangar capacity for docked ships ({@see ShipMacroProperties::getHangar()})
+     * and not the number of docking points ({@see self::getDocks()}).
      */
     public function getCargoCapacity() : int
     {
@@ -591,6 +643,9 @@ class ShipDef implements CollectionItemInterface
     /**
      * Returns the cargo type (container, liquid, solid).
      * Returns "none" if the ship has no storage connection.
+     *
+     * This is the raw, space-separated `<cargo tags>` string of the storage
+     * macro. Use {@see self::getCargoTypeIDs()} to get the individual types.
      */
     public function getCargoType() : string
     {
@@ -819,6 +874,10 @@ class ShipDef implements CollectionItemInterface
     
     /**
      * Get dock size breakdown as an associative array.
+     *
+     * These are docking points for ships (the ship's own connections). They are
+     * not the internal hangar storage ({@see ShipMacroProperties::getHangar()})
+     * and not the cargo storage macro ({@see self::getCargoMacroID()}).
      * 
      * @return array<string,int> Map of dock sizes to counts (e.g., ['s' => 8, 'm' => 4])
      */
@@ -873,7 +932,7 @@ class ShipDef implements CollectionItemInterface
 
     public function toArray(): array
     {
-        return array(
+        return array_merge(array(
             self::KEY_WARE_ID => $this->id,
             self::KEY_LABEL => $this->label,
             self::KEY_VARIANT_ID => $this->variantID,
@@ -915,6 +974,219 @@ class ShipDef implements CollectionItemInterface
             self::KEY_CARGO_TYPE => $this->cargoType,
             self::KEY_SLOTS => $this->slots,
             self::KEY_EQUIPMENT => $this->equipment
-        );
+        ), $this->macroProperties->toArray());
     }
+
+    // region: Macro properties
+
+    /**
+     * Gets the values read from the ship's macro file that are not
+     * part of the core ship stats (steering curve, hangar, software,
+     * modifiers, names, default loadout and more).
+     *
+     * Only the macro links are delegated by the ship itself (see below).
+     * For everything else, use the accessors of {@see ShipMacroProperties}.
+     */
+    public function getMacroProperties() : ShipMacroProperties
+    {
+        return $this->macroProperties;
+    }
+
+    /**
+     * @return string The ship's own macro name, e.g. `ship_arg_s_fighter_01_a_macro`. Empty if unknown.
+     */
+    public function getMacroID() : string
+    {
+        return $this->macroProperties->getMacroID();
+    }
+
+    /**
+     * Gets the ship's own macro file. The macro name is the stored one;
+     * it is never guessed from the ship ID.
+     *
+     * @return MacroFileDef
+     * @throws ShipException {@see ShipException::ERROR_NO_MACRO_ID} if the ship has no macro ID.
+     */
+    public function getMacro() : MacroFileDef
+    {
+        $macroID = $this->getMacroID();
+
+        if($macroID === '') {
+            throw new ShipException(
+                sprintf('The ship [%s] has no macro ID.', $this->id),
+                '',
+                ShipException::ERROR_NO_MACRO_ID
+            );
+        }
+
+        return MacroFileDefs::getInstance()->getByMacroName($macroID, $this->dataSourceID);
+    }
+
+    /**
+     * @return string|null Canonical name of the storage macro that supplied the cargo values.
+     */
+    public function getCargoMacroID() : ?string
+    {
+        return $this->macroProperties->getCargoMacroID();
+    }
+
+    public function hasCargoMacro() : bool
+    {
+        return $this->getCargoMacroID() !== null;
+    }
+
+    /**
+     * Gets the storage macro file the cargo values come from.
+     *
+     * @return MacroFileDef
+     * @throws ShipException {@see ShipException::ERROR_NO_CARGO_MACRO_ID} if the ship has no storage macro.
+     */
+    public function getCargoMacro() : MacroFileDef
+    {
+        $macroID = $this->getCargoMacroID();
+
+        if($macroID === null) {
+            throw new ShipException(
+                sprintf('The ship [%s] has no cargo macro.', $this->id),
+                '',
+                ShipException::ERROR_NO_CARGO_MACRO_ID
+            );
+        }
+
+        return MacroFileDefs::getInstance()->getByMacroName($macroID, $this->dataSourceID);
+    }
+
+    /**
+     * @return string|null The `alias=` target of the ship's own macro.
+     */
+    public function getAliasMacroID() : ?string
+    {
+        return $this->macroProperties->getAliasMacroID();
+    }
+
+    public function isAliasMacro() : bool
+    {
+        return $this->getAliasMacroID() !== null;
+    }
+
+    /**
+     * Whether the ship's own macro contains an `<accfactors>` element.
+     * The alias target is never inspected.
+     */
+    public function hasOwnAccFactors() : bool
+    {
+        return $this->macroProperties->hasOwnAccFactors();
+    }
+
+    // endregion
+
+    // region: Ware data
+
+    /**
+     * Same as {@see WareDef::getPrice()} of the ship's ware.
+     */
+    public function getPrice() : ?WarePrice
+    {
+        return $this->getWare()->getPrice();
+    }
+
+    /**
+     * Same as {@see WareDef::getProductions()} of the ship's ware.
+     *
+     * @return WareProduction[]
+     */
+    public function getProductions() : array
+    {
+        return $this->getWare()->getProductions();
+    }
+
+    /**
+     * Same as {@see WareDef::getLicenceID()} of the ship's ware.
+     */
+    public function getLicenceID() : ?string
+    {
+        return $this->getWare()->getLicenceID();
+    }
+
+    /**
+     * Same as {@see WareDef::getDescription()} of the ship's ware.
+     */
+    public function getDescription(?Language $language = null) : string
+    {
+        return $this->getWare()->getDescription($language);
+    }
+
+    /**
+     * Same as {@see WareDef::getIllegalFactionIDs()} of the ship's ware.
+     *
+     * @return string[]
+     */
+    public function getIllegalFactionIDs() : array
+    {
+        return $this->getWare()->getIllegalFactionIDs();
+    }
+
+    // endregion
+
+    // region: Cargo helpers
+
+    /**
+     * Gets the individual cargo types of the ship's storage, split from
+     * the raw {@see self::getCargoType()} string.
+     *
+     * @return string[] {@see WareTransportTypes} cargo type IDs. Empty exactly when the cargo type is `none`.
+     */
+    public function getCargoTypeIDs() : array
+    {
+        $result = array();
+        $tokens = preg_split('/\s+/', trim($this->cargoType), -1, PREG_SPLIT_NO_EMPTY);
+
+        foreach($tokens === false ? array() : $tokens as $typeID) {
+            if($typeID !== 'none') {
+                $result[] = $typeID;
+            }
+        }
+
+        return array_values(array_unique($result));
+    }
+
+    /**
+     * Whether the ship has a hold that can carry the ware: true exactly
+     * when the ware's transport type is one of the ship's cargo types.
+     *
+     * NOTE: This rule is derived. The game data shows that the transport
+     * types of wares ({@see WareTransportTypes}) and the cargo types of
+     * ship storage use matching vocabularies, but it does not state the
+     * rule explicitly.
+     *
+     * @param WareDef $ware
+     * @return bool
+     */
+    public function canTransport(WareDef $ware) : bool
+    {
+        $transportTypeID = $ware->getTransportTypeID();
+
+        return $transportTypeID !== null && in_array($transportTypeID, $this->getCargoTypeIDs(), true);
+    }
+
+    /**
+     * Number of units of the ware that fit into the ship's cargo
+     * hold: the cargo capacity divided by the ware's volume.
+     *
+     * @param WareDef $ware
+     * @return int 0 if the ship cannot transport the ware or the ware has no positive volume.
+     * @see self::canTransport()
+     */
+    public function getCargoUnits(WareDef $ware) : int
+    {
+        $volume = $ware->getVolume();
+
+        if($volume === null || $volume <= 0 || !$this->canTransport($ware)) {
+            return 0;
+        }
+
+        return intdiv($this->cargoCapacity, $volume);
+    }
+
+    // endregion
 }
