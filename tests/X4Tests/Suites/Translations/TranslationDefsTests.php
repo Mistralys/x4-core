@@ -392,6 +392,33 @@ final class TranslationDefsTests extends X4TestCase
     }
 
     /**
+     * hasCode() is true only for entries that really exist.
+     */
+    public function test_hasCode(): void
+    {
+        $translator = new TranslationDefs(Languages::LANGUAGE_ENGLISH);
+
+        $this->assertTrue($translator->hasCode('{1001,1}'), 'Existing code');
+        $this->assertTrue($translator->hasCode('1001,1'), 'Braces are optional, as in ts()');
+        $this->assertFalse($translator->hasCode('{1001,999999}'), 'Unknown text ID');
+        $this->assertFalse($translator->hasCode('{999999,1}'), 'Unknown page');
+        $this->assertFalse($translator->hasCode('{1001}'), 'Malformed: no comma');
+        $this->assertFalse($translator->hasCode('{1001,1,2}'), 'Malformed: too many parts');
+        $this->assertFalse($translator->hasCode(''), 'Empty code');
+    }
+
+    /**
+     * ts() and t() keep returning the placeholder for a missing entry.
+     */
+    public function test_ts_missingEntryReturnsSentinel(): void
+    {
+        $translator = new TranslationDefs(Languages::LANGUAGE_ENGLISH);
+
+        $this->assertSame('{999999,999999}', $translator->ts('{999999,999999}'));
+        $this->assertSame('{999999,999999}', $translator->t(999999, 999999));
+    }
+
+    /**
      * Extract all languages for comprehensive testing
      */
     private function ensureAllLanguagesExtracted(): void

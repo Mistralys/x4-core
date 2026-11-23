@@ -35,14 +35,52 @@ class TranslationDefs
      */
     public function ts(string $code) : string
     {
-        $parsed = trim($code, '{}');
-        $parts = ConvertHelper::explodeTrim(',', $parsed);
+        $ids = $this->parseCode($code);
 
-        if(count($parts) === 2) {
-            return $this->t((int)$parts[0], (int)$parts[1]);
+        if($ids !== null) {
+            return $this->t($ids[0], $ids[1]);
         }
 
         return '';
+    }
+
+    /**
+     * Whether an entry exists for the translation code, e.g.
+     * <code>{1005,42}</code>. Unlike {@see self::ts()}, this does not
+     * fall back to a placeholder: a malformed code, an unknown page
+     * or an unknown text ID all return false.
+     *
+     * @param string $code
+     * @return bool
+     */
+    public function hasCode(string $code) : bool
+    {
+        $ids = $this->parseCode($code);
+
+        if($ids === null) {
+            return false;
+        }
+
+        $this->load();
+
+        return isset($this->texts[$ids[0]][$ids[1]]);
+    }
+
+    /**
+     * Splits a translation code into its page and text IDs.
+     *
+     * @param string $code
+     * @return array{0:int,1:int}|null NULL if the code is malformed.
+     */
+    private function parseCode(string $code) : ?array
+    {
+        $parts = ConvertHelper::explodeTrim(',', trim($code, '{}'));
+
+        if(count($parts) === 2) {
+            return array((int)$parts[0], (int)$parts[1]);
+        }
+
+        return null;
     }
 
     /**

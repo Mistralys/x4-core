@@ -50,6 +50,42 @@ class Language implements IntegerPrimaryRecordInterface
         return $this->getTranslator()->t($pageID, $textID);
     }
 
+    /**
+     * Whether the translation code exists in this language.
+     *
+     * @param string $code E.g. <code>{1005,42}</code>
+     * @return bool
+     */
+    public function hasCode(string $code) : bool
+    {
+        return $this->getTranslator()->hasCode($code);
+    }
+
+    /**
+     * Translates a translation code, falling back to another language
+     * (English by default) when this language has no entry for it.
+     * Never returns the raw <code>{page,id}</code> code: if no language
+     * has an entry, or the code is malformed, an empty string is returned.
+     *
+     * @param string $code E.g. <code>{1005,42}</code>
+     * @param Language|null $fallback Defaults to English.
+     * @return string
+     */
+    public function tsWithFallback(string $code, ?Language $fallback = null) : string
+    {
+        if($this->hasCode($code)) {
+            return $this->ts($code);
+        }
+
+        $fallback ??= Languages::getInstance()->getEnglish();
+
+        if($fallback->getID() !== $this->getID() && $fallback->hasCode($code)) {
+            return $fallback->ts($code);
+        }
+
+        return '';
+    }
+
     private ?TranslationDefs $translator = null;
 
     public function getTranslator() : TranslationDefs
